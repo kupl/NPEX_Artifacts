@@ -1,0 +1,4 @@
+We are applying for the Available and Reusable badges. We believe our artifact deserves the badges for the following reasons:
+1. The artifact is available on the public repository: https://github.com/kupl/NPEX_Artifacts
+2. We provided the benchmarks used in the evaluation and scripts for conveniently reproducing the main results of the paper.
+3. We provided detailed instructions to run the tool for an arbitrary Java NPE bug, so other researchers can easily evaluate our tool in their research.
