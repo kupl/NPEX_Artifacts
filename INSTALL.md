@@ -1,4 +1,9 @@
-# Getting Started
+# Installation
+We provide a VirtualBox image to install NPEX, which contains all the benchmarks, dependencies, and other tools
+Also, we have wrote some scripts to conveniently reproduce our paper's results.
+
+
+# Instructions for Running NPEX 
 NPEX를 이용하여 당신이 원하는 NPE 버그를 수정하는데 방법을 설명한다. 우리는 벤치마크 중 하나인 Math-4 프로젝트를 가지고
 설명할것이다.
 
