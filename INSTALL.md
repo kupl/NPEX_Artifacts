@@ -1,9 +1,43 @@
-# Installation
-We provide a VirtualBox image to install NPEX, which contains all the benchmarks, dependencies, and other tools
-Also, we have wrote some scripts to conveniently reproduce our paper's results.
+# Download & Installation
+우리는 NPEX 설치를 위해 (1) 모든 디펜던시와 실행 환경이 셋업된 VirtualBox image와 (2) 툴 소스코드로 부터 빌드하는
+두 가지 옵션을 제공한다.
+버츄얼 박스 이미지에는 실험 결과 재현을 위한 벤치마크, 다른 툴, 실험 스크립트 등이 포함되어 있기 때문에,
+실험 결과 재현을 원하는 사람 (e.g., Artifact Reviewers)은 이 옵션을 추천한다.
+<!-- We provide a VirtualBox image to install NPEX, which contains all the benchmarks, dependencies, and other tools
+Also, we have wrote some scripts to conveniently reproduce our paper's results. -->
+
+## Installation from a VirtualBox image
 
 
-# Instructions for Running NPEX 
+
+## Build from Source Codes
+### Requirements:
+  * Java 15+
+  * Maven 3.6+
+  * Ocaml 4.10+
+  * Python 3.8+
+
+### Building Instructions:
+  1. Clone NPEX Sources from GitHub and go into the cloned directory:
+      ```
+      git clone https://github.com/kupl/NPEX --recursive && cd ./NPEX
+      ```
+		Please don't forget the `--recursive` option because we manage our specification inference & validation module
+		as git submodules. The option will automatically checkouts its latest version.
+
+  2. Build NPEX Java modules. We implemented those modules using the maven build system.
+  Please run the following command:
+     ```
+     mvn compile
+     ```
+  3. Build the specification inference & validation module, which is implemented on top of the [Infer](inferlink) framework. 
+  	Please run the following command:
+      ```
+      cd npex-analyzer && ./build-infer.sh java
+      ```
+
+
+# Running NPEX
 NPEX를 이용하여 당신이 원하는 NPE 버그를 수정하는데 방법을 설명한다. 우리는 벤치마크 중 하나인 Math-4 프로젝트를 가지고
 설명할것이다.
 
