@@ -16,7 +16,8 @@ Also, we have wrote some scripts to conveniently reproduce our paper's results. 
   * Maven 3.6+
   * Ocaml 4.10+
   * Python 3.8+
-
+  * Opam 2+
+  * Sqlite 3+
 ### Building Instructions:
   1. Clone NPEX Sources from GitHub and go into the cloned directory:
       ```
