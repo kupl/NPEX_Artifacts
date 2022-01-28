@@ -1,0 +1,6 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3383)
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3338)
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3230)
+	at Main.testJoin_Objectarray(Main.java:179)
+	at Main.main(Main.java:8)

@@ -1,0 +1,5 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver.java:89)
+	at org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver.java:66)
+	at org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver.java:72)
+	at Main.main(Main.java:17)

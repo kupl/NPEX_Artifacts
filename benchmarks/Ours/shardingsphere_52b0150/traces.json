@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/test/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilderTest.java",
+        "line": 92,
+        "method_name": "assertBuildRouteSQLRewriteResultWithEmptyPrimaryKeyMeta"
+    }
+]

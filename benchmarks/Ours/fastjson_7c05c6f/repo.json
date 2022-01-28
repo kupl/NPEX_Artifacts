@@ -1,0 +1,25 @@
+{
+    "repo": "fastjson",
+    "commit_id": "7c05c6f",
+    "repo_url": "https://github.com/alibaba/fastjson",
+    "commit_url": "https://github.com/alibaba/fastjson/commit/7c05c6ffcb29213b6cb1d02f4907684726cc501b",
+    "parent_url": "https://github.com/alibaba/fastjson/commit/650a300f53f17dd5fd72c48b176fae886b191f5d",
+    "date": "2019-09-08",
+    "changed_files": [
+        "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+        "src/test/java/com/alibaba/fastjson/deserializer/issue2711/PageRequest.java",
+        "src/test/java/com/alibaba/fastjson/deserializer/issue2711/TestIssue.java",
+        "src/test/java/com/alibaba/fastjson/deserializer/issue2711/User.java"
+    ],
+    "patch_files": [
+        "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java"
+    ],
+    "test_files": [
+        "src/test/java/com/alibaba/fastjson/deserializer/issue2711/PageRequest.java",
+        "src/test/java/com/alibaba/fastjson/deserializer/issue2711/TestIssue.java",
+        "src/test/java/com/alibaba/fastjson/deserializer/issue2711/User.java"
+    ],
+    "size": 166405,
+    "is_maven": true,
+    "is_java": true
+}

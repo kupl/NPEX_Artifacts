@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+    "line": 40,
+    "deref_field": "dep2",
+    "npe_class": "CommittedQueueBox",
+    "npe_method": "<init>"
+}

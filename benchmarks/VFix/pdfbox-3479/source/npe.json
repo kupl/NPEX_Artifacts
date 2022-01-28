@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+	"line": 136,
+	"deref_field": "rect",
+	"sink_field": "getWidth",
+	"npe_class": "AppearanceGeneratorHelper",
+	"npe_method": "setAppearanceValue",
+	"jvmti_identify_succeed": true
+}

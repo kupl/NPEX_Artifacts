@@ -1,0 +1,10 @@
+{
+    "filepath": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+    "line": 272,
+    "sink_field": "getSyntaxChecker",
+    "npe_class": "Value",
+    "npe_method": "<init>",
+    "jvmti_identify_succeed": true,
+    "deref_field": "getSyntax",
+    "nullpointer": "attributeType.getSyntax()"
+}

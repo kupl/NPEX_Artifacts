@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+        "line": 574,
+        "method_name": "getCategoryIndex"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 33,
+        "method_name": "testGetCategoryIndex"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 13,
+        "method_name": "testChart16A"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 8,
+        "method_name": "main"
+    }
+]

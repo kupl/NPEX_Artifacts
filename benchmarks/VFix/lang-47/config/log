@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.commons.lang3.text.StrBuilder.appendFixedWidthPadRight(StrBuilder.java:1319)
+	at Main.testLang412Right(Main.java:15)
+	at Main.main(Main.java:9)

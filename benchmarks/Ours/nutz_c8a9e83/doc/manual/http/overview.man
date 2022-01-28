@@ -1,0 +1,143 @@
+#title: 小巧的Http客户端
+#author:wendal(wendal1985@gmail.com)
+#index:0,1
+------------------------------------------------------------------------
+为什么有这个package
+
+	简单来说, 这个package是对UrlConnection操作的薄封装.
+	
+	远没有apache http client的完善,但足以满足一般的http请求了.
+	
+------------------------------------------------------------------------
+基本请求
+
+	GET请求
+	
+	{{{<JAVA>
+		Response response = Http.get("https://nutz.cn/");
+        assertNotNull(response);
+        assertNotNull(response.getContent());
+        assertNotNull(response.getDetail());
+        assertNotNull(response.getHeader());
+        assertNotNull(response.getProtocal());
+        assertTrue(response.getStatus() > 0);
+        assertNotNull(response.getStream());
+	}}}
+	
+	POST请求
+	
+	{{{<JAVA>
+	    Map<String, Object> parms = new HashMap<String, Object>();
+        parms.put("version", "NutzTest");
+        parms.put("website", Nutz.version());
+        String response = Http.post("http://nutztest.herokuapp.com/",
+                                    parms,
+                                    5 * 1000); // 可以同时设置超时时间
+        assertNotNull(response);
+        assertTrue(response.length() > 0);
+        // 该post的返回值是"version: #{params[:version]}, website: #{params[:website]}"
+        assertEquals(response,
+                     String.format("version: %s, website: %s",
+                                   "NutzTest",
+                                   Nutz.version()));
+	}}}
+	
+	响应的编码
+	
+	{{{<JAVA>
+		// 根据Http头的Content-Type自动识别编码类型
+        Response response1 = Http.get("www.duokan.com");
+        assertEquals("utf-8", response1.getEncodeType().toLowerCase());
+        assertTrue(response1.getContent().indexOf("多看") > 0);
+
+        // 如果Http头中没有指定编码类型，用户也可以手工指定
+        Response response2 = Http.get("www.exam8.com/SiteMap/Article1.htm");
+        assertTrue(response2.getContent("GBK").indexOf("考试吧") > 0);
+	}}}
+	
+	上传文件
+	
+	{{{<JAVA>
+		Request req = Request.create(getBaseURL()+"/upload/image",METHOD.POST);
+        File f = File.createTempFile("nutz", "data");
+        FileWriter fw = new FileWriter(f);
+        fw.write("abc");
+        fw.flush();
+        fw.close();
+        req.getParams().put("file", f);
+        FilePostSender sender = new FilePostSender(req);
+        Response resp = sender.send();
+        assertEquals("image&3", resp.getContent());
+	}}}
+	
+设置代理及代理回落
+------------------------------------------------------------------------
+
+	设置http代理
+	
+	{{{<JAVA>
+	Http.setHttpProxy("fuck_fbx.com", 8080);
+	}}}
+	
+	代理回落, 即代理服务器不可连接时,尝试直连
+	
+	{{{<JAVA>
+	Http.setAutoSwitch(true);
+	}}}
+
+------------------------------------------------------------------------
+关于自签名的Https证书
+
+	关闭jvm的证书检查(Nutz全局).
+	
+	{{{<JAVA>
+		Http.disableJvmHttpsCheck();
+		String url = "https://kyfw.12306.cn/otn/leftTicket/queryT?leftTicketDTO.train_date=2015-01-12&leftTicketDTO.from_station=UXP&leftTicketDTO.to_station=SJP&purpose_codes=ADULT";
+        Http.get(url);
+	}}}
+	
+------------------------------------------------------------------------
+异步执行
+
+	基本流程
+	
+	{{{<JAVA>
+		// 初始化线程池, 只需要执行一次
+		Sender.setup(null); 
+		
+		// 传入回调,可以是null,如果你不在意结果的话.
+		Sender.create(req).send(new Callback<Response>() {
+			public void invoke(Response resp) {
+				// 对resp进行xxoo
+			}
+		});
+		
+		
+		// 程序结束前, shutdown之. 注意,是整个程序关闭前,不是方法执行之后.
+		Sender.shutdown();
+		
+	}}}
+	
+----------------------------------------------------------------------
+设置SSLSocketFactory
+
+	如铁道部网站的https证书是自签名的,然后不想全局关闭https检查,那么可以为Sender单独设置SSLSocketFactory
+
+	{{{<JAVA>
+	Sender.create(req).setSSLSocketFactory(Http.nopSSLSocketFactory()).send();
+	}}}
+	
+----------------------------------------------------------------------
+Cookie的用法
+
+	发送cookie
+
+	{{{<JAVA>
+        Request req = Request.create("https://nutz.cn", METHOD.GET);
+        Cookie cookie = new Cookie();
+        cookie.set("sid", "aabbcceeddff");
+        ...
+        Sender sender = Sender.create(req);
+        sender.setInterceptor(cookie);
+        sender.send();
+	}}}

@@ -1,0 +1,5 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.jfree.data.category.DefaultIntervalCategoryDataset.getCategoryIndex(DefaultIntervalCategoryDataset.java:574)
+	at Main.testGetCategoryIndex(Main.java:33)
+	at Main.testChart16A(Main.java:13)
+	at Main.main(Main.java:8)

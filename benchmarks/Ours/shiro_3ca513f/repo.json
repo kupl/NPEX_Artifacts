@@ -1,0 +1,20 @@
+{
+    "repo": "shiro",
+    "commit_id": "3ca513f",
+    "commit_url": "https://github.com/apache/shiro/commit/3ca513f1f2f0472251b73c16c1507034a7028b24",
+    "parent_url": "https://github.com/apache/shiro/commit/08a860f5ac0fcf9c64309981bdac6325a3360876",
+    "date": "2016-07-01",
+    "changed_files": [
+        "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+        "core/src/test/java/org/apache/shiro/aop/AnnotationResolverTest.java"
+    ],
+    "patch_files": [
+        "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java"
+    ],
+    "test_files": [
+        "core/src/test/java/org/apache/shiro/aop/AnnotationResolverTest.java"
+    ],
+    "size": 31421,
+    "is_maven": true,
+    "is_java": true
+}

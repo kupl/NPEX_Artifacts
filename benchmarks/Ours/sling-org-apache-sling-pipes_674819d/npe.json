@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+    "line": 230,
+    "sink_field": "getClass",
+    "npe_class": "PipeBindings",
+    "npe_method": "instantiateObject",
+    "jvmti_identify_succeed": true,
+    "deref_field": "result",
+    "nullpointer": "result"
+}

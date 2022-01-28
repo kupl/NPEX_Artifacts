@@ -1,0 +1,20 @@
+{
+    "repo": "shardingsphere",
+    "commit_id": "48237c8",
+    "commit_url": "https://github.com/apache/shardingsphere/commit/48237c83fefe02562083f66963f88b20297522e1",
+    "parent_url": "https://github.com/apache/shardingsphere/commit/c08f4f18efeecf0bb6426f6bb40a96b3c38a5c10",
+    "date": "2020-08-28",
+    "changed_files": [
+        "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+        "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/test/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngineTest.java"
+    ],
+    "patch_files": [
+        "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java"
+    ],
+    "test_files": [
+        "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/test/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngineTest.java"
+    ],
+    "size": 117387,
+    "is_maven": true,
+    "is_java": true
+}

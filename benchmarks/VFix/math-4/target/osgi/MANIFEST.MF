@@ -1,0 +1,95 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1534760957432
+Build-Jdk: 1.8.0_181
+Built-By: xuezheng
+Bundle-Description: The Math project is a library of lightweight, self-c
+ ontained mathematics and statistics components addressing the most comm
+ on practical problems not immediately available in the Java programming
+  language or commons-lang.
+Bundle-DocURL: http://commons.apache.org/proper/commons-math/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Commons Math
+Bundle-SymbolicName: org.apache.commons.math3
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.3.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.math3.geometry.partitioning.utilities
+ ;version="3.3.0.SNAPSHOT",org.apache.commons.math3.geometry.partitionin
+ g.utilities.doc-files;version="3.3.0.SNAPSHOT",org.apache.commons.math3
+ .optim.nonlinear.vector.jacobian;version="3.3.0.SNAPSHOT",org.apache.co
+ mmons.math3.exception;version="3.3.0.SNAPSHOT",org.apache.commons.math3
+ .optim.nonlinear.vector;version="3.3.0.SNAPSHOT",org.apache.commons.mat
+ h3.geometry.partitioning;version="3.3.0.SNAPSHOT",org.apache.commons.ma
+ th3.geometry.euclidean.threed;version="3.3.0.SNAPSHOT",org.apache.commo
+ ns.math3.special;version="3.3.0.SNAPSHOT",org.apache.commons.math3.stat
+ .correlation;version="3.3.0.SNAPSHOT",org.apache.commons.math3.fraction
+ ;version="3.3.0.SNAPSHOT",org.apache.commons.math3.ml;version="3.3.0.SN
+ APSHOT",org.apache.commons.math3.ml.distance;version="3.3.0.SNAPSHOT",o
+ rg.apache.commons.math3.optim.nonlinear.scalar.noderiv;version="3.3.0.S
+ NAPSHOT",org.apache.commons.math3;version="3.3.0.SNAPSHOT",org.apache.c
+ ommons.math3.analysis.function;version="3.3.0.SNAPSHOT",org.apache.comm
+ ons.math3.exception.util;version="3.3.0.SNAPSHOT",org.apache.commons.ma
+ th3.ode.nonstiff;version="3.3.0.SNAPSHOT",org.apache.commons.math3.gene
+ tics;version="3.3.0.SNAPSHOT",org.apache.commons.math3.random;version="
+ 3.3.0.SNAPSHOT",org.apache.commons.math3.dfp;version="3.3.0.SNAPSHOT",o
+ rg.apache.commons.math3.optimization.direct;version="3.3.0.SNAPSHOT",or
+ g.apache.commons.math3.stat.descriptive.rank;version="3.3.0.SNAPSHOT",o
+ rg.apache.commons.math3.analysis.integration.gauss;version="3.3.0.SNAPS
+ HOT",org.apache.commons.math3.filter;version="3.3.0.SNAPSHOT",org.apach
+ e.commons.math3.distribution.fitting;version="3.3.0.SNAPSHOT",org.apach
+ e.commons.math3.optimization.fitting;version="3.3.0.SNAPSHOT",org.apach
+ e.commons.math3.stat.ranking;version="3.3.0.SNAPSHOT",org.apache.common
+ s.math3.stat.descriptive.summary;version="3.3.0.SNAPSHOT",org.apache.co
+ mmons.math3.ode;version="3.3.0.SNAPSHOT",org.apache.commons.math3.prime
+ s;version="3.3.0.SNAPSHOT",org.apache.commons.math3.ode.events;version=
+ "3.3.0.SNAPSHOT",org.apache.commons.math3.optim.nonlinear.scalar.gradie
+ nt;version="3.3.0.SNAPSHOT",org.apache.commons.math3.stat.inference;ver
+ sion="3.3.0.SNAPSHOT",org.apache.commons.math3.util;version="3.3.0.SNAP
+ SHOT",org.apache.commons.math3.linear;version="3.3.0.SNAPSHOT",org.apac
+ he.commons.math3.ml.clustering;version="3.3.0.SNAPSHOT",org.apache.comm
+ ons.math3.analysis.integration;version="3.3.0.SNAPSHOT",org.apache.comm
+ ons.math3.geometry;version="3.3.0.SNAPSHOT",org.apache.commons.math3.st
+ at.descriptive;version="3.3.0.SNAPSHOT",org.apache.commons.math3.analys
+ is.solvers;version="3.3.0.SNAPSHOT",org.apache.commons.math3.optim.line
+ ar;version="3.3.0.SNAPSHOT",org.apache.commons.math3.optimization.linea
+ r;version="3.3.0.SNAPSHOT",org.apache.commons.math3.optim.univariate;ve
+ rsion="3.3.0.SNAPSHOT",org.apache.commons.math3.geometry.euclidean.oned
+ ;version="3.3.0.SNAPSHOT",org.apache.commons.math3.analysis.polynomials
+ ;version="3.3.0.SNAPSHOT",org.apache.commons.math3.fitting;version="3.3
+ .0.SNAPSHOT",org.apache.commons.math3.optim.nonlinear.scalar;version="3
+ .3.0.SNAPSHOT",org.apache.commons.math3.analysis.differentiation;versio
+ n="3.3.0.SNAPSHOT",org.apache.commons.math3.optimization.univariate;ver
+ sion="3.3.0.SNAPSHOT",org.apache.commons.math3.ode.sampling;version="3.
+ 3.0.SNAPSHOT",org.apache.commons.math3.transform;version="3.3.0.SNAPSHO
+ T",org.apache.commons.math3.stat;version="3.3.0.SNAPSHOT",org.apache.co
+ mmons.math3.stat.descriptive.moment;version="3.3.0.SNAPSHOT",org.apache
+ .commons.math3.optimization.general;version="3.3.0.SNAPSHOT",org.apache
+ .commons.math3.analysis.interpolation;version="3.3.0.SNAPSHOT",org.apac
+ he.commons.math3.distribution;version="3.3.0.SNAPSHOT",org.apache.commo
+ ns.math3.optimization;version="3.3.0.SNAPSHOT",org.apache.commons.math3
+ .complex;version="3.3.0.SNAPSHOT",org.apache.commons.math3.analysis;ver
+ sion="3.3.0.SNAPSHOT",org.apache.commons.math3.geometry.euclidean.twod;
+ version="3.3.0.SNAPSHOT",org.apache.commons.math3.stat.regression;versi
+ on="3.3.0.SNAPSHOT",org.apache.commons.math3.stat.clustering;version="3
+ .3.0.SNAPSHOT",org.apache.commons.math3.optim;version="3.3.0.SNAPSHOT"
+Implementation-Build: UNKNOWN_BRANCH@r??????; 2018-08-15 06:41:31+0000
+Implementation-Title: Commons Math
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.3-SNAPSHOT
+Include-Resource: assets/org/apache/commons/math3/exception/util/Localiz
+ edFormats_fr.properties=src/main/resources/assets/org/apache/commons/ma
+ th3/exception/util/LocalizedFormats_fr.properties,assets/org/apache/com
+ mons/math3/random/new-joe-kuo-6.1000=src/main/resources/assets/org/apac
+ he/commons/math3/random/new-joe-kuo-6.1000,META-INF/NOTICE.txt=NOTICE.t
+ xt,META-INF/LICENSE.txt=LICENSE.txt
+Originally-Created-By: Apache Maven Bundle Plugin
+Private-Package: assets.org.apache.commons.math3.random,.,assets.org.apa
+ che.commons.math3.exception.util
+Specification-Title: Commons Math
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.3-SNAPSHOT
+Tool: Bnd-1.50.0
+X-Compile-Source-JDK: 1.5
+X-Compile-Target-JDK: 1.5

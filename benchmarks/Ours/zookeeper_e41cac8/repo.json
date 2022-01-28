@@ -1,0 +1,20 @@
+{
+    "repo": "zookeeper",
+    "commit_id": "e41cac8",
+    "commit_url": "https://github.com/apache/zookeeper/commit/e41cac853de416026e0c2011e0429e858e5823b8",
+    "parent_url": "https://github.com/apache/zookeeper/commit/ef3649f599b4213a918c7a84cfe663d6cb1fa26e",
+    "date": "2019-11-06",
+    "changed_files": [
+        "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+        "zookeeper-server/src/test/java/org/apache/zookeeper/server/ZooKeeperServerCreationTest.java"
+    ],
+    "patch_files": [
+        "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java"
+    ],
+    "test_files": [
+        "zookeeper-server/src/test/java/org/apache/zookeeper/server/ZooKeeperServerCreationTest.java"
+    ],
+    "size": 100613,
+    "is_maven": true,
+    "is_java": true
+}

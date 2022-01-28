@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/test/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngineTest.java",
+        "line": 128,
+        "method_name": "assertLogin"
+    },
+    {
+        "filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/test/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngineTest.java",
+        "line": 94,
+        "method_name": "assertLoginSuccessful"
+    }
+]

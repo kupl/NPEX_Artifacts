@@ -1,0 +1,47 @@
+{
+    "bug_id": "picocli_758f4c0",
+    "repository_info": {
+        "repo": "picocli",
+        "commit_id": "758f4c0",
+        "repo_url": "https://github.com/remkop/picocli",
+        "commit_url": "https://github.com/remkop/picocli/commit/758f4c0c581b12b9953f5dec2de93b698735d21b",
+        "parent_url": "https://github.com/remkop/picocli/commit/06283710c11674f4e5f610cb53c91b3c07f5cc6a",
+        "date": "2017-06-08",
+        "changed_files": [
+            "src/main/java/picocli/CommandLine.java",
+            "src/test/java/picocli/CommandLineTest.java"
+        ],
+        "patch_files": [
+            "src/main/java/picocli/CommandLine.java"
+        ],
+        "test_files": [
+            "src/test/java/picocli/CommandLineTest.java"
+        ],
+        "size": 6694,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 8,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -DskipIT -Dtest=CommandLineTest -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "picocli.CommandLineTest",
+                "method": "testIssue141Npe",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException: Called method 'index' on null object at bci 9\n\tat picocli.CommandLine$Range.parameterIndex(CommandLine.java:1024)\n\tat picocli.CommandLine$PositionalParametersSorter.compare(CommandLine.java:1767)\n\tat picocli.CommandLine$PositionalParametersSorter.compare(CommandLine.java:1765)\n\tat java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)\n\tat java.util.TimSort.sort(TimSort.java:220)\n\tat java.util.Arrays.sort(Arrays.java:1512)\n\tat java.util.ArrayList.sort(ArrayList.java:1464)\n\tat java.util.Collections.sort(Collections.java:177)\n\tat picocli.CommandLine$Interpreter.parse(CommandLine.java:1248)\n\tat picocli.CommandLine$Interpreter.parse(CommandLine.java:1238)\n\tat picocli.CommandLine.parse(CommandLine.java:293)\n\tat picocli.CommandLineTest.testIssue141Npe(CommandLineTest.java:2724)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

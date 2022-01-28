@@ -1,0 +1,27 @@
+{
+    "repo": "opengrok",
+    "commit_id": "6a95adb",
+    "repo_url": "https://github.com/oracle/opengrok",
+    "commit_url": "https://github.com/oracle/opengrok/commit/6a95adbc991b534d2bc23a3e0eef8ab33c98e946",
+    "parent_url": "https://github.com/oracle/opengrok/commit/8bce35a7ec29b090075c0de493479b9e3dad4a41",
+    "date": "2017-10-14",
+    "changed_files": [
+        "src/org/opensolaris/opengrok/analysis/IteratorReader.java",
+        "src/org/opensolaris/opengrok/history/TagEntry.java",
+        "test/org/opensolaris/opengrok/analysis/IteratorReaderTest.java",
+        "test/org/opensolaris/opengrok/authorization/AuthorizationFrameworkTest.java",
+        "test/org/opensolaris/opengrok/condition/DeliberateRuntimeException.java"
+    ],
+    "patch_files": [
+        "src/org/opensolaris/opengrok/history/TagEntry.java",
+        "src/org/opensolaris/opengrok/analysis/IteratorReader.java"
+    ],
+    "test_files": [
+        "test/org/opensolaris/opengrok/analysis/IteratorReaderTest.java",
+        "test/org/opensolaris/opengrok/authorization/AuthorizationFrameworkTest.java",
+        "test/org/opensolaris/opengrok/condition/DeliberateRuntimeException.java"
+    ],
+    "size": 50637,
+    "is_maven": true,
+    "is_java": true
+}

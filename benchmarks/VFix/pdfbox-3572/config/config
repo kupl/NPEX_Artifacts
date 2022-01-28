@@ -1,0 +1,4 @@
+main=Main
+test=TestMain
+nullpointer=b
+deps=/lib/bcprov-jdk15on-1.54.jar

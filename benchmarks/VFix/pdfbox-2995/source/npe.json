@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+	"line": 445,
+	"deref_field": "defaultAppearance",
+	"sink_field": "getString",
+	"npe_class": "PDAcroForm",
+	"npe_method": "getDefaultAppearance",
+	"jvmti_identify_succeed": true
+}

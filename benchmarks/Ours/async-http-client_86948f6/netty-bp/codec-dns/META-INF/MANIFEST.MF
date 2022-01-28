@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1618210033179
+Build-Jdk: 1.8.0_275
+Built-By: anon
+Bundle-Description: The Async Http Client Netty Backport parent.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Netty/Codec/DNS
+Bundle-SymbolicName: org.asynchttpclient.netty-codec-dns
+Bundle-Vendor: Sonatype
+Bundle-Version: 2.0.0.RC1120210412-0647
+Created-By: Apache Maven Bundle Plugin
+Export-Package: io.netty.handler.codec.dns;uses:="io.netty.buffer,io.net
+ ty.channel,io.netty.channel.socket,io.netty.handler.codec,io.netty.util
+ ";version="2.0.0.RC1120210412-0647"
+Import-Package: io.netty.buffer;version="[4.0,5)",io.netty.channel;versi
+ on="[4.0,5)",io.netty.channel.socket;version="[4.0,5)",io.netty.handler
+ .codec,io.netty.util;version="[4.0,5)",io.netty.util.collection;version
+ ="[4.0,5)",io.netty.util.internal;version="[4.0,5)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-2.4.1.201501161923

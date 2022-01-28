@@ -1,0 +1,47 @@
+{
+    "bug_id": "nutz_c8a9e83",
+    "repository_info": {
+        "repo": "nutz",
+        "commit_id": "c8a9e83",
+        "repo_url": "https://github.com/nutzam/nutz",
+        "commit_url": "https://github.com/nutzam/nutz/commit/c8a9e83843ff903e47e28488ea42f97dfb7e2377",
+        "parent_url": "https://github.com/nutzam/nutz/commit/87a4b2123d76541e56c6ec2889e0689d91a0b2ad",
+        "date": "2018-04-10",
+        "changed_files": [
+            "src/org/nutz/lang/Mirror.java",
+            "test/org/nutz/lang/MirrorTest.java"
+        ],
+        "patch_files": [
+            "src/org/nutz/lang/Mirror.java"
+        ],
+        "test_files": [
+            "test/org/nutz/lang/MirrorTest.java"
+        ],
+        "size": 91868,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 8,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -DskipIT -Dtest=MirrorTest -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "org.nutz.lang.MirrorTest",
+                "method": "test_annotation_NPE",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException: Called method 'getAnnotation' on null object at bci 7\n\tat org.nutz.lang.MirrorTest.test_annotation_NPE(MirrorTest.java:654)\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

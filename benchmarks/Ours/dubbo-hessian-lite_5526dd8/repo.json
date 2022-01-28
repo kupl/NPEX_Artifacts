@@ -1,0 +1,20 @@
+{
+    "repo": "dubbo-hessian-lite",
+    "commit_id": "5526dd8",
+    "commit_url": "https://github.com/apache/dubbo-hessian-lite/commit/5526dd8d2e80741e311e5466fc24392b2421eb00",
+    "parent_url": "https://github.com/apache/dubbo-hessian-lite/commit/c5c017dcba089d8b4c7e7e42b51cd2664194c138",
+    "date": "2017-09-29",
+    "changed_files": [
+        "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+        "dubbo-common/src/test/java/com/alibaba/dubbo/common/URLTest.java"
+    ],
+    "patch_files": [
+        "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java"
+    ],
+    "test_files": [
+        "dubbo-common/src/test/java/com/alibaba/dubbo/common/URLTest.java"
+    ],
+    "size": 105136,
+    "is_maven": true,
+    "is_java": true
+}

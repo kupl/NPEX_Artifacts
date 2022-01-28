@@ -1,0 +1,27 @@
+{
+    "repo": "easy-rules",
+    "commit_id": "72d7bff",
+    "repo_url": "https://github.com/j-easy/easy-rules",
+    "commit_url": "https://github.com/j-easy/easy-rules/commit/72d7bff9402cabf43b19900fbfd463cc693799e8",
+    "parent_url": "https://github.com/j-easy/easy-rules/commit/d5385af524dc062d7764591c46ddd6dd1bbf945f",
+    "date": "2018-03-28",
+    "changed_files": [
+        "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java",
+        "easy-rules-mvel/src/test/java/org/jeasy/rules/mvel/MVELRuleDefinitionReaderTest.java",
+        "easy-rules-mvel/src/test/resources/adult-rule-with-default-values.yml",
+        "easy-rules-mvel/src/test/resources/adult-rule-without-actions.yml",
+        "easy-rules-mvel/src/test/resources/adult-rule-without-condition.yml"
+    ],
+    "patch_files": [
+        "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java"
+    ],
+    "test_files": [
+        "easy-rules-mvel/src/test/java/org/jeasy/rules/mvel/MVELRuleDefinitionReaderTest.java",
+        "easy-rules-mvel/src/test/resources/adult-rule-with-default-values.yml",
+        "easy-rules-mvel/src/test/resources/adult-rule-without-actions.yml",
+        "easy-rules-mvel/src/test/resources/adult-rule-without-condition.yml"
+    ],
+    "size": 3647,
+    "is_maven": true,
+    "is_java": true
+}

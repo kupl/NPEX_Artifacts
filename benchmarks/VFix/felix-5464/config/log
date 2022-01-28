@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.felix.scrplugin.helper.ClassScanner.processClass(ClassScanner.java:211)
+	at Main.testFelix5464(Main.java:17)
+	at Main.main(Main.java:9)

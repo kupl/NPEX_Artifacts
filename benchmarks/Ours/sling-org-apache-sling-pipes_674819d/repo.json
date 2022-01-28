@@ -1,0 +1,20 @@
+{
+    "repo": "sling-org-apache-sling-pipes",
+    "commit_id": "674819d",
+    "commit_url": "https://github.com/apache/sling-org-apache-sling-pipes/commit/674819dddcb7e5e8282264b4b20e12b3da0ec32d",
+    "parent_url": "https://github.com/apache/sling-org-apache-sling-pipes/commit/81059025b63218e11c216677988f123902ed02bc",
+    "date": "2016-01-15",
+    "changed_files": [
+        "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+        "src/test/java/org/apache/sling/pipes/PipeBindingsTest.java"
+    ],
+    "patch_files": [
+        "src/main/java/org/apache/sling/pipes/PipeBindings.java"
+    ],
+    "test_files": [
+        "src/test/java/org/apache/sling/pipes/PipeBindingsTest.java"
+    ],
+    "size": 2342,
+    "is_maven": true,
+    "is_java": true
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+        "line": 145,
+        "method_name": "equals"
+    },
+    {
+        "filepath": "src/test/java/org/springframework/hateoas/ResourceSupportUnitTest.java",
+        "line": 144,
+        "method_name": "doesNotEqualNull"
+    }
+]

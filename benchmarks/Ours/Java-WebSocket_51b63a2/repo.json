@@ -1,0 +1,21 @@
+{
+    "repo": "Java-WebSocket",
+    "commit_id": "51b63a2",
+    "repo_url": "https://github.com/TooTallNate/Java-WebSocket",
+    "commit_url": "https://github.com/TooTallNate/Java-WebSocket/commit/51b63a28a29aa05bff226dda4d6d95ab58841fe8",
+    "parent_url": "https://github.com/TooTallNate/Java-WebSocket/commit/a2b3548238289c0ea82a75baa02933251fc278b2",
+    "date": "2018-02-05",
+    "changed_files": [
+        "src/main/java/org/java_websocket/server/WebSocketServer.java",
+        "src/test/java/org/java_websocket/issues/Issue661Test.java"
+    ],
+    "patch_files": [
+        "src/main/java/org/java_websocket/server/WebSocketServer.java"
+    ],
+    "test_files": [
+        "src/test/java/org/java_websocket/issues/Issue661Test.java"
+    ],
+    "size": 10787,
+    "is_maven": true,
+    "is_java": true
+}

@@ -1,0 +1,30 @@
+{
+    "repo": "commons-io",
+    "commit_id": "1ac7bef",
+    "commit_url": "https://github.com/apache/commons-io/commit/1ac7befa44528dab09fb4864be9d7a95db8a25b6",
+    "parent_url": "https://github.com/apache/commons-io/commit/89bfb64c1091ca80e407077707c6121228db5329",
+    "date": "2020-10-31",
+    "changed_files": [
+        "src/main/java/org/apache/commons/io/IOCase.java",
+        "src/main/java/org/apache/commons/io/filefilter/NameFileFilter.java",
+        "src/main/java/org/apache/commons/io/filefilter/PrefixFileFilter.java",
+        "src/main/java/org/apache/commons/io/filefilter/SuffixFileFilter.java",
+        "src/main/java/org/apache/commons/io/filefilter/WildcardFileFilter.java",
+        "src/main/java/org/apache/commons/io/filefilter/WildcardFilter.java",
+        "src/test/java/org/apache/commons/io/IOCaseTestCase.java"
+    ],
+    "patch_files": [
+        "src/main/java/org/apache/commons/io/filefilter/NameFileFilter.java",
+        "src/main/java/org/apache/commons/io/filefilter/WildcardFileFilter.java",
+        "src/main/java/org/apache/commons/io/filefilter/SuffixFileFilter.java",
+        "src/main/java/org/apache/commons/io/filefilter/WildcardFilter.java",
+        "src/main/java/org/apache/commons/io/IOCase.java",
+        "src/main/java/org/apache/commons/io/filefilter/PrefixFileFilter.java"
+    ],
+    "test_files": [
+        "src/test/java/org/apache/commons/io/IOCaseTestCase.java"
+    ],
+    "size": 38420,
+    "is_maven": true,
+    "is_java": true
+}

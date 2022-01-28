@@ -1,0 +1,10 @@
+{
+    "filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
+    "line": 129,
+    "sink_field": "getPrimaryKeyColumns",
+    "npe_class": "ExecutionContextBuilder",
+    "npe_method": "getPrimaryKeyColumns",
+    "jvmti_identify_succeed": true,
+    "deref_field": "get",
+    "nullpointer": "metaData.getRuleSchemaMetaData().getSchemaMetaData().get(each.getLogicName())"
+}

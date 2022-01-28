@@ -1,0 +1,3 @@
+Main.java
+org/apache/sling/security/impl/ContentDispositionFilter.java
+org/apache/sling/security/impl/ReferrerFilter.java

@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1618210036148
+Build-Jdk: 1.8.0_275
+Built-By: anon
+Bundle-Description: The Async Http Client Netty Backport parent.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Netty/Resolver/DNS
+Bundle-SymbolicName: org.asynchttpclient.netty-resolver-dns
+Bundle-Vendor: Sonatype
+Bundle-Version: 2.0.0.RC1120210412-0647
+Created-By: Apache Maven Bundle Plugin
+Export-Package: io.netty.resolver.dns;uses:="io.netty.bootstrap,io.netty
+ .channel,io.netty.channel.socket,io.netty.handler.codec.dns,io.netty.re
+ solver,io.netty.util.concurrent";version="2.0.0.RC1120210412-0647",io.n
+ etty.channel;version="4.0.34.Final";uses:="io.netty.bootstrap,io.netty.
+ buffer,io.netty.util,io.netty.util.concurrent"
+Import-Package: io.netty.bootstrap;version="[4.0,5)",io.netty.buffer;ver
+ sion="[4.0,5)",io.netty.channel.nio;version="[4.0,5)",io.netty.channel.
+ socket;version="[4.0,5)",io.netty.handler.codec.dns;version="[2.0,3)",i
+ o.netty.resolver,io.netty.util,io.netty.util.collection;version="[4.0,5
+ )",io.netty.util.concurrent;version="[4.0,5)",io.netty.util.internal.ch
+ mv8;version="[4.0,5)",io.netty.util.internal.logging;version="[4.0,5)",
+ javassist,javax.security.cert,sun.misc
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-2.4.1.201501161923

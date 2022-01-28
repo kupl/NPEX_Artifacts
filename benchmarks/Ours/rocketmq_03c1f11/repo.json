@@ -1,0 +1,20 @@
+{
+    "repo": "rocketmq",
+    "commit_id": "03c1f11",
+    "commit_url": "https://github.com/apache/rocketmq/commit/03c1f11d6bc3034daca519de043fd4d2f69bb047",
+    "parent_url": "https://github.com/apache/rocketmq/commit/f5a119f197cf7cdf9a065adf5ad87578e0c57c5f",
+    "date": "2020-11-01",
+    "changed_files": [
+        "client/src/main/java/org/apache/rocketmq/client/impl/factory/MQClientInstance.java",
+        "client/src/test/java/org/apache/rocketmq/client/impl/factory/MQClientInstanceTest.java"
+    ],
+    "patch_files": [
+        "client/src/main/java/org/apache/rocketmq/client/impl/factory/MQClientInstance.java"
+    ],
+    "test_files": [
+        "client/src/test/java/org/apache/rocketmq/client/impl/factory/MQClientInstanceTest.java"
+    ],
+    "size": 97234,
+    "is_maven": true,
+    "is_java": true
+}

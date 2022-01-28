@@ -1,0 +1,51 @@
+{
+    "bug_id": "Activiti_0d83e98",
+    "repository_info": {
+        "repo": "Activiti",
+        "commit_id": "0d83e98",
+        "repo_url": "https://github.com/Activiti/Activiti",
+        "commit_url": "https://github.com/Activiti/Activiti/commit/0d83e98dadccfb9874cf19c3b2883987231c3f4e",
+        "parent_url": "https://github.com/Activiti/Activiti/commit/c45d6c3cb2b441baa50d77fc1d816b5e6b6abc86",
+        "date": "2016-01-27",
+        "changed_files": [
+            "modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessInstanceHistoryLogQueryImpl.java",
+            "modules/activiti-engine/src/test/java/org/activiti/standalone/jpa/HistoricJPAVariableTest.java",
+            "modules/activiti-engine/src/test/resources/org/activiti/standalone/jpa/HistoricJPAVariableTest.testGetJPAEntityAsHistoricLog.bpmn20.xml",
+            "modules/activiti-engine/src/test/resources/org/activiti/standalone/jpa/HistoricJPAVariableTest.testGetJPAEntityAsHistoricVariable.bpmn20.xml"
+        ],
+        "patch_files": [
+            "modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessInstanceHistoryLogQueryImpl.java"
+        ],
+        "test_files": [
+            "modules/activiti-engine/src/test/java/org/activiti/standalone/jpa/HistoricJPAVariableTest.java",
+            "modules/activiti-engine/src/test/resources/org/activiti/standalone/jpa/HistoricJPAVariableTest.testGetJPAEntityAsHistoricLog.bpmn20.xml",
+            "modules/activiti-engine/src/test/resources/org/activiti/standalone/jpa/HistoricJPAVariableTest.testGetJPAEntityAsHistoricVariable.bpmn20.xml"
+        ],
+        "size": 195147,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 8,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -DskipIT -Dtest=HistoricJPAVariableTest -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "org.activiti.standalone.jpa.HistoricJPAVariableTest",
+                "method": "testGetJPAEntityAsHistoricLog",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException: Called method 'getSession' on null object at bci 5\n\tat org.activiti.engine.impl.variable.JPAEntityMappings.findEntity(JPAEntityMappings.java:127)\n\tat org.activiti.engine.impl.variable.JPAEntityMappings.getJPAEntity(JPAEntityMappings.java:121)\n\tat org.activiti.engine.impl.variable.JPAEntityVariableType.getValue(JPAEntityVariableType.java:79)\n\tat org.activiti.engine.impl.persistence.entity.HistoricVariableInstanceEntity.getValue(HistoricVariableInstanceEntity.java:128)\n\tat org.activiti.standalone.jpa.HistoricJPAVariableTest.testGetJPAEntityAsHistoricLog(HistoricJPAVariableTest.java:121)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat junit.framework.TestCase.runTest(TestCase.java:176)\n\tat org.activiti.engine.impl.test.PvmTestCase.runTest(PvmTestCase.java:65)\n\tat junit.framework.TestCase.runBare(TestCase.java:141)\n\tat org.activiti.engine.impl.test.AbstractActivitiTestCase.runBare(AbstractActivitiTestCase.java:100)\n\tat junit.framework.TestResult$1.protect(TestResult.java:122)\n\tat junit.framework.TestResult.runProtected(TestResult.java:142)\n\tat junit.framework.TestResult.run(TestResult.java:125)\n\tat junit.framework.TestCase.run(TestCase.java:129)\n\tat junit.framework.TestSuite.runTest(TestSuite.java:255)\n\tat junit.framework.TestSuite.run(TestSuite.java:250)\n\tat org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:146)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)\n\tat com.sun.proxy.$Proxy0.invoke(Unknown Source)\n\tat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)\n\tat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

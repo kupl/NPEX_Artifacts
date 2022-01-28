@@ -1,0 +1,9 @@
+{
+	"filepath": "org/jfree/chart/plot/CategoryPlot.java",
+	"line": 2166,
+	"sink_field": "remove",
+	"deref_field": "markers",
+	"npe_class": "CategoryPlot",
+	"npe_method": "removeDomainMarker",
+	"jvmti_identify_succeed": true
+}

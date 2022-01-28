@@ -1,0 +1,7 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper.setAppearanceValue(AppearanceGeneratorHelper.java:136)
+	at org.apache.pdfbox.pdmodel.interactive.form.PDTextField.constructAppearances(PDTextField.java:263)
+	at org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField.applyChange(PDTerminalField.java:225)
+	at org.apache.pdfbox.pdmodel.interactive.form.PDTextField.setValue(PDTextField.java:218)
+	at Main.testPDFBOX3479(Main.java:64)
+	at Main.main(Main.java:17)

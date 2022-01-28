@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "jest-common/src/test/java/io/searchbox/client/config/discovery/NodeCheckerTest.java",
+        "line": 328,
+        "method_name": "testNodesInfoExceptionBeforeNodesDiscovered"
+    }
+]

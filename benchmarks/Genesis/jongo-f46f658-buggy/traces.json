@@ -1,0 +1,42 @@
+[
+    {
+        "filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+        "line": 85,
+        "method_name": "isObjectId"
+    },
+    {
+        "filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+        "line": 34,
+        "method_name": "mustGenerateObjectId"
+    },
+    {
+        "filepath": "src/main/java/org/jongo/Insert.java",
+        "line": 72,
+        "method_name": "preparePojo"
+    },
+    {
+        "filepath": "src/main/java/org/jongo/Insert.java",
+        "line": 47,
+        "method_name": "save"
+    },
+    {
+        "filepath": "src/main/java/org/jongo/MongoCollection.java",
+        "line": 132,
+        "method_name": "save"
+    },
+    {
+        "filepath": "src/test/java/org/jongo/JacksonAnnotationsHandlingTest.java",
+        "line": 94,
+        "method_name": "canHandleAnnotatedGetter"
+    },
+    {
+        "filepath": "src/test/java/org/jongo/util/compatibility/CompatibilitySuite.java",
+        "line": 108,
+        "method_name": "runChild"
+    },
+    {
+        "filepath": "src/test/java/org/jongo/util/compatibility/CompatibilitySuite.java",
+        "line": 82,
+        "method_name": "runChild"
+    }
+]

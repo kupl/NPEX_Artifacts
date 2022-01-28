@@ -1,0 +1,8 @@
+{
+	"filepath": "src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+	"line": 1136,
+	"sink_field": "getChildren",
+	"npe_class": "MTree",
+	"npe_method": "findChildNodePathInNextLevel",
+	"jvmti_identify_succeed": true
+}

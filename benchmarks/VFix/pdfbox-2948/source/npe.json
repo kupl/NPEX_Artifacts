@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+	"line": 254,
+	"deref_field": "filters",
+	"sink_field": "size",
+	"npe_class": "PDStream",
+	"npe_method": "createInputStream",
+	"jvmti_identify_succeed": true
+}

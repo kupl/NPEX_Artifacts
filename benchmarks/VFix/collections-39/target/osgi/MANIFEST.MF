@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1542191903437
+Build-Jdk: 1.8.0_191
+Built-By: xuezheng
+Bundle-Description: Types that extend and augment the Java Collections F
+ ramework.
+Bundle-DocURL: http://commons.apache.org/collections/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons Collections
+Bundle-SymbolicName: org.apache.commons.collections
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.2.2
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.collections;version="3.2.2",org.apach
+ e.commons.collections.bag;version="3.2.2",org.apache.commons.collection
+ s.bidimap;version="3.2.2",org.apache.commons.collections.buffer;version
+ ="3.2.2",org.apache.commons.collections.collection;version="3.2.2",org.
+ apache.commons.collections.comparators;version="3.2.2",org.apache.commo
+ ns.collections.functors;version="3.2.2",org.apache.commons.collections.
+ iterators;version="3.2.2",org.apache.commons.collections.keyvalue;versi
+ on="3.2.2",org.apache.commons.collections.list;version="3.2.2",org.apac
+ he.commons.collections.map;version="3.2.2",org.apache.commons.collectio
+ ns.set;version="3.2.2"
+Include-Resource: META-INF/NOTICE.txt=NOTICE.txt,META-INF/LICENSE.txt=LI
+ CENSE.txt
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.3))"
+Tool: Bnd-2.3.0.201405100607

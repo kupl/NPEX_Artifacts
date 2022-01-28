@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.apache.sling.scripting.thymeleaf.internal.ResourceBundleMessageResolver" immediate="true" activate="activate" deactivate="deactivate" modified="modified">
+  <implementation class="org.apache.sling.scripting.thymeleaf.internal.ResourceBundleMessageResolver"/>
+  <service>
+    <provide interface="org.thymeleaf.messageresolver.IMessageResolver"/>
+  </service>
+  <reference name="absentMessageRepresentationProvider" cardinality="0..1" policy="dynamic" interface="org.apache.sling.scripting.thymeleaf.AbsentMessageRepresentationProvider" bind="setAbsentMessageRepresentationProvider" unbind="unsetAbsentMessageRepresentationProvider" policy-option="greedy" field="absentMessageRepresentationProvider"/>
+  <reference name="resourceBundleProvider" cardinality="1..1" policy="dynamic" interface="org.apache.sling.i18n.ResourceBundleProvider" bind="setResourceBundleProvider" unbind="unsetResourceBundleProvider" policy-option="greedy" field="resourceBundleProvider"/>
+  <property name="service.vendor" type="String" value="The Apache Software Foundation"/>
+  <property name="service.description" type="String" value="ResourceBundle MessageResolver for Sling Scripting Thymeleaf"/>
+  <property name="order" type="Integer" value="0"/>
+  <property name="absentMessageRepresentationType" type="String" value="KEY"/>
+</scr:component>

@@ -1,0 +1,22 @@
+{
+    "repo": "cxf",
+    "commit_id": "aebfb0d",
+    "commit_url": "https://github.com/apache/cxf/commit/aebfb0d712b503bee9627c036b67a1ed5c40db9a",
+    "parent_url": "https://github.com/apache/cxf/commit/7cfc8d07e1175c35877e7368f020db0749a78fab",
+    "date": "2020-09-08",
+    "changed_files": [
+        "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+        "rt/rs/security/jose-parent/jose/src/test/java/org/apache/cxf/rs/security/jose/jws/JwsUtilsTest.java",
+        "rt/rs/security/jose-parent/jose/src/test/resources/jws/signature.properties"
+    ],
+    "patch_files": [
+        "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java"
+    ],
+    "test_files": [
+        "rt/rs/security/jose-parent/jose/src/test/java/org/apache/cxf/rs/security/jose/jws/JwsUtilsTest.java",
+        "rt/rs/security/jose-parent/jose/src/test/resources/jws/signature.properties"
+    ],
+    "size": 682450,
+    "is_maven": true,
+    "is_java": true
+}

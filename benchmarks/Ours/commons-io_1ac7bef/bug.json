@@ -1,0 +1,74 @@
+{
+    "bug_id": "commons-io_1ac7bef",
+    "repository_info": {
+        "repo": "commons-io",
+        "commit_id": "1ac7bef",
+        "commit_url": "https://github.com/apache/commons-io/commit/1ac7befa44528dab09fb4864be9d7a95db8a25b6",
+        "parent_url": "https://github.com/apache/commons-io/commit/89bfb64c1091ca80e407077707c6121228db5329",
+        "date": "2020-10-31",
+        "changed_files": [
+            "src/main/java/org/apache/commons/io/IOCase.java",
+            "src/main/java/org/apache/commons/io/filefilter/NameFileFilter.java",
+            "src/main/java/org/apache/commons/io/filefilter/PrefixFileFilter.java",
+            "src/main/java/org/apache/commons/io/filefilter/SuffixFileFilter.java",
+            "src/main/java/org/apache/commons/io/filefilter/WildcardFileFilter.java",
+            "src/main/java/org/apache/commons/io/filefilter/WildcardFilter.java",
+            "src/test/java/org/apache/commons/io/IOCaseTestCase.java"
+        ],
+        "patch_files": [
+            "src/main/java/org/apache/commons/io/filefilter/NameFileFilter.java",
+            "src/main/java/org/apache/commons/io/filefilter/WildcardFileFilter.java",
+            "src/main/java/org/apache/commons/io/filefilter/SuffixFileFilter.java",
+            "src/main/java/org/apache/commons/io/filefilter/WildcardFilter.java",
+            "src/main/java/org/apache/commons/io/IOCase.java",
+            "src/main/java/org/apache/commons/io/filefilter/PrefixFileFilter.java"
+        ],
+        "test_files": [
+            "src/test/java/org/apache/commons/io/IOCaseTestCase.java"
+        ],
+        "size": 38420,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 15,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -Dtest=IOCaseTestCase -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "org.apache.commons.io.IOCaseTestCase",
+                "method": "test_checkEndsWith_functionality",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException: Cannot invoke \"String.length()\" because \"end\" is null\n\tat org.apache.commons.io.IOCaseTestCase.test_checkEndsWith_functionality(IOCaseTestCase.java:206)\n"
+            },
+            {
+                "classname": "org.apache.commons.io.IOCaseTestCase",
+                "method": "test_checkStartsWith_functionality",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException: Cannot invoke \"String.length()\" because \"end\" is null\n\tat org.apache.commons.io.IOCaseTestCase.test_checkEndsWith_functionality(IOCaseTestCase.java:206)\n"
+            },
+            {
+                "classname": "org.apache.commons.io.IOCaseTestCase",
+                "method": "test_checkEndsWith_functionality",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException: Cannot invoke \"String.length()\" because \"start\" is null\n\tat org.apache.commons.io.IOCaseTestCase.test_checkStartsWith_functionality(IOCaseTestCase.java:176)\n"
+            },
+            {
+                "classname": "org.apache.commons.io.IOCaseTestCase",
+                "method": "test_checkStartsWith_functionality",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException: Cannot invoke \"String.length()\" because \"start\" is null\n\tat org.apache.commons.io.IOCaseTestCase.test_checkStartsWith_functionality(IOCaseTestCase.java:176)\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

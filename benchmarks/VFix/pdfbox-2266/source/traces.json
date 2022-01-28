@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+        "line": 130,
+        "method_name": "toPaint"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 11,
+        "method_name": "main"
+    }
+]

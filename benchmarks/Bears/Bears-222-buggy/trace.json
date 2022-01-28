@@ -1,0 +1,2504 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/test/java/org/jgrapht/generate/WattsStrogatzGraphGeneratorTest.java",
+        "line_number": 32,
+        "description": "WattsStrogatzGraphGeneratorTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/test/java/org/jgrapht/generate/WattsStrogatzGraphGeneratorTest.java",
+        "line_number": 32,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/test/java/org/jgrapht/generate/WattsStrogatzGraphGeneratorTest.java",
+        "line_number": 187,
+        "description": "testNonIntegerVertices"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/test/java/org/jgrapht/generate/WattsStrogatzGraphGeneratorTest.java",
+        "line_number": 189,
+        "description": "org.jgrapht.generate.WattsStrogatzGraphGenerator"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 101,
+        "description": "WattsStrogatzGraphGenerator"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 101,
+        "description": "java.util.Random"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 101,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 116,
+        "description": "WattsStrogatzGraphGenerator"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 116,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 136,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/test/java/org/jgrapht/generate/WattsStrogatzGraphGeneratorTest.java",
+        "line_number": 192,
+        "description": "createStringSupplier"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 37,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 38,
+        "description": "createSupplier"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 60,
+        "description": "createSupplier"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 44,
+        "description": "createSupplier"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 60,
+        "description": "createSupplier"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 49,
+        "description": "createSupplier"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 60,
+        "description": "createSupplier"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 161,
+        "description": "createStringSupplier"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 161,
+        "description": "org.jgrapht.util.SupplierUtil$StringSupplier"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 216,
+        "description": "SupplierUtil$StringSupplier"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 216,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/test/java/org/jgrapht/generate/WattsStrogatzGraphGeneratorTest.java",
+        "line_number": 192,
+        "description": "org.jgrapht.graph.SimpleGraph"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/SimpleGraph.java",
+        "line_number": 60,
+        "description": "SimpleGraph"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/SimpleGraph.java",
+        "line_number": 60,
+        "description": "org.jgrapht.graph.DefaultGraphType$Builder"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 299,
+        "description": "DefaultGraphType$Builder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 299,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/SimpleGraph.java",
+        "line_number": 63,
+        "description": "undirected"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 365,
+        "description": "undirected"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/SimpleGraph.java",
+        "line_number": 63,
+        "description": "allowMultipleEdges"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 402,
+        "description": "allowMultipleEdges"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/SimpleGraph.java",
+        "line_number": 63,
+        "description": "allowSelfLoops"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 390,
+        "description": "allowSelfLoops"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/SimpleGraph.java",
+        "line_number": 63,
+        "description": "weighted"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 414,
+        "description": "weighted"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/SimpleGraph.java",
+        "line_number": 64,
+        "description": "build"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 449,
+        "description": "build"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 449,
+        "description": "org.jgrapht.graph.DefaultGraphType"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 40,
+        "description": "DefaultGraphType"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 40,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 58,
+        "description": "DefaultGraphType"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 58,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/SimpleGraph.java",
+        "line_number": 60,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 86,
+        "description": "AbstractBaseGraph"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 86,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractGraph.java",
+        "line_number": 44,
+        "description": "AbstractGraph"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractGraph.java",
+        "line_number": 44,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 94,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 95,
+        "description": "isMixed"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 83,
+        "description": "isMixed"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 98,
+        "description": "org.jgrapht.graph.AbstractBaseGraph$BackwardsCompatibleGraphSpecificsStrategy"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 596,
+        "description": "AbstractBaseGraph$BackwardsCompatibleGraphSpecificsStrategy"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 596,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 100,
+        "description": "getSpecificsFactory"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 609,
+        "description": "getSpecificsFactory"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 100,
+        "description": "apply"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 610,
+        "description": "lambda$getSpecificsFactory$1"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 610,
+        "description": "isDirected"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 71,
+        "description": "isDirected"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 610,
+        "description": "createSpecifics"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 567,
+        "description": "createSpecifics"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 570,
+        "description": "org.jgrapht.graph.specifics.FastLookupUndirectedSpecifics"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 57,
+        "description": "FastLookupUndirectedSpecifics"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 57,
+        "description": "java.util.LinkedHashMap"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 57,
+        "description": "org.jgrapht.graph.specifics.ArrayUnenforcedSetEdgeSetFactory"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 35,
+        "description": "ArrayUnenforcedSetEdgeSetFactory"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 35,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 57,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 88,
+        "description": "FastLookupUndirectedSpecifics"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 88,
+        "description": "java.util.HashMap"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 88,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 105,
+        "description": "FastLookupUndirectedSpecifics"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 105,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 87,
+        "description": "UndirectedSpecifics"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 87,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 88,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 89,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 90,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 106,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 99,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 103,
+        "description": "getIntrusiveEdgesSpecificsFactory"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 603,
+        "description": "getIntrusiveEdgesSpecificsFactory"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 103,
+        "description": "apply"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 603,
+        "description": "lambda$getIntrusiveEdgesSpecificsFactory$0"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 603,
+        "description": "isWeighted"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 101,
+        "description": "isWeighted"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 603,
+        "description": "createIntrusiveEdgesSpecifics"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 585,
+        "description": "createIntrusiveEdgesSpecifics"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 588,
+        "description": "org.jgrapht.graph.UniformIntrusiveEdgesSpecifics"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/UniformIntrusiveEdgesSpecifics.java",
+        "line_number": 52,
+        "description": "UniformIntrusiveEdgesSpecifics"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/UniformIntrusiveEdgesSpecifics.java",
+        "line_number": 52,
+        "description": "java.util.LinkedHashMap"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/UniformIntrusiveEdgesSpecifics.java",
+        "line_number": 52,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/UniformIntrusiveEdgesSpecifics.java",
+        "line_number": 62,
+        "description": "UniformIntrusiveEdgesSpecifics"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/UniformIntrusiveEdgesSpecifics.java",
+        "line_number": 62,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 102,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/test/java/org/jgrapht/generate/WattsStrogatzGraphGeneratorTest.java",
+        "line_number": 193,
+        "description": "generateGraph"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 150,
+        "description": "generateGraph"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 158,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 159,
+        "description": "java.util.LinkedHashMap"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 162,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 280,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 284,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 286,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "org.jgrapht.graph.specifics.UndirectedEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "UndirectedEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 48,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 163,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 162,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 280,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 284,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 286,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "org.jgrapht.graph.specifics.UndirectedEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "UndirectedEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 48,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 163,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 162,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 280,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 284,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 286,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "org.jgrapht.graph.specifics.UndirectedEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "UndirectedEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 48,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 163,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 162,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 280,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 284,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 286,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "org.jgrapht.graph.specifics.UndirectedEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "UndirectedEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 48,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 163,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 162,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 280,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 284,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 286,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "org.jgrapht.graph.specifics.UndirectedEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "UndirectedEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 48,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 163,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 162,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 280,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 284,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 286,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "org.jgrapht.graph.specifics.UndirectedEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "UndirectedEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 48,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 163,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 162,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 280,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 284,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 286,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "org.jgrapht.graph.specifics.UndirectedEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "UndirectedEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 48,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 163,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 162,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 280,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 284,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 286,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "org.jgrapht.graph.specifics.UndirectedEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "UndirectedEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 48,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 163,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 162,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 280,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 284,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 286,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "org.jgrapht.graph.specifics.UndirectedEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "UndirectedEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 48,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 163,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 162,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 280,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 284,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 206,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 223,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 286,
+        "description": "addVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "addVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "org.jgrapht.graph.specifics.UndirectedEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "UndirectedEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 47,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 48,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 101,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 163,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 164,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 168,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 169,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 169,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 172,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 172,
+        "description": "addEdge"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 225,
+        "description": "addEdge"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 225,
+        "description": "assertVertexExist"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractGraph.java",
+        "line_number": 126,
+        "description": "assertVertexExist"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractGraph.java",
+        "line_number": 126,
+        "description": "containsVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 380,
+        "description": "containsVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 380,
+        "description": "getVertexSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 113,
+        "description": "getVertexSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 113,
+        "description": "keySet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 380,
+        "description": "contains"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 226,
+        "description": "assertVertexExist"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractGraph.java",
+        "line_number": 126,
+        "description": "assertVertexExist"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractGraph.java",
+        "line_number": 126,
+        "description": "containsVertex"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 380,
+        "description": "containsVertex"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 380,
+        "description": "getVertexSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 113,
+        "description": "getVertexSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 113,
+        "description": "keySet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 380,
+        "description": "contains"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 228,
+        "description": "isAllowingMultipleEdges"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 89,
+        "description": "isAllowingMultipleEdges"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 228,
+        "description": "containsEdge"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractGraph.java",
+        "line_number": 53,
+        "description": "containsEdge"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractGraph.java",
+        "line_number": 53,
+        "description": "getEdge"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 216,
+        "description": "getEdge"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 216,
+        "description": "getEdge"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 136,
+        "description": "getEdge"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 136,
+        "description": "org.jgrapht.alg.util.UnorderedPair"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 52,
+        "description": "UnorderedPair"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 52,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/Pair.java",
+        "line_number": 57,
+        "description": "Pair"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/Pair.java",
+        "line_number": 57,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 137,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 78,
+        "description": "hashCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 78,
+        "description": "hashCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 79,
+        "description": "hashCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 232,
+        "description": "isAllowingSelfLoops"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphType.java",
+        "line_number": 95,
+        "description": "isAllowingSelfLoops"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 232,
+        "description": "equals"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 240,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 62,
+        "description": "lambda$createSupplier$32fc57c8$1"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 62,
+        "description": "getDeclaredConstructor"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/SupplierUtil.java",
+        "line_number": 62,
+        "description": "newInstance"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultEdge.java",
+        "line_number": 27,
+        "description": "DefaultEdge"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/DefaultEdge.java",
+        "line_number": 27,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/IntrusiveEdge.java",
+        "line_number": 28,
+        "description": "IntrusiveEdge"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/IntrusiveEdge.java",
+        "line_number": 28,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 241,
+        "description": "add"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/UniformIntrusiveEdgesSpecifics.java",
+        "line_number": 69,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/UniformIntrusiveEdgesSpecifics.java",
+        "line_number": 78,
+        "description": "putIfAbsent"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 242,
+        "description": "addEdgeToTouchingVertices"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 150,
+        "description": "addEdgeToTouchingVertices"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 150,
+        "description": "getEdgeSource"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 314,
+        "description": "getEdgeSource"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 314,
+        "description": "getEdgeSource"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/UniformIntrusiveEdgesSpecifics.java",
+        "line_number": 84,
+        "description": "getIntrusiveEdge"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/TypeUtil.java",
+        "line_number": 39,
+        "description": "uncheckedCast"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 151,
+        "description": "getEdgeTarget"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 323,
+        "description": "getEdgeTarget"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java",
+        "line_number": 323,
+        "description": "getEdgeTarget"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/UniformIntrusiveEdgesSpecifics.java",
+        "line_number": 84,
+        "description": "getIntrusiveEdge"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/TypeUtil.java",
+        "line_number": 39,
+        "description": "uncheckedCast"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 153,
+        "description": "getEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 282,
+        "description": "getEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 282,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 153,
+        "description": "addEdge"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 71,
+        "description": "addEdge"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 71,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 156,
+        "description": "org.jgrapht.alg.util.UnorderedPair"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 52,
+        "description": "UnorderedPair"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 52,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/Pair.java",
+        "line_number": 57,
+        "description": "Pair"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/Pair.java",
+        "line_number": 57,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 157,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 78,
+        "description": "hashCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 78,
+        "description": "hashCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 79,
+        "description": "hashCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 161,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "createEdgeSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/ArrayUnenforcedSetEdgeSetFactory.java",
+        "line_number": 50,
+        "description": "org.jgrapht.util.ArrayUnenforcedSet"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "ArrayUnenforcedSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java",
+        "line_number": 71,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 162,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 163,
+        "description": "put"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 78,
+        "description": "hashCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 78,
+        "description": "hashCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/alg/util/UnorderedPair.java",
+        "line_number": 79,
+        "description": "hashCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 166,
+        "description": "equals"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 167,
+        "description": "getEdgeContainer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 282,
+        "description": "getEdgeContainer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedSpecifics.java",
+        "line_number": 282,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/FastLookupUndirectedSpecifics.java",
+        "line_number": 167,
+        "description": "addEdge"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 71,
+        "description": "addEdge"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/graph/specifics/UndirectedEdgeContainer.java",
+        "line_number": 71,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+        "line_number": 172,
+        "description": "add"
+    }
+]

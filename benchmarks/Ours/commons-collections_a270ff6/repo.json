@@ -1,0 +1,21 @@
+{
+    "repo": "commons-collections",
+    "commit_id": "a270ff6",
+    "commit_url": "https://github.com/apache/commons-collections/commit/a270ff62852e62b5ac0f943a7e57292a72b77271",
+    "parent_url": "https://github.com/apache/commons-collections/commit/796114ea4a9cc57ab17170536e1caa5933520c47",
+    "date": "2016-08-04",
+    "changed_files": [
+        "src/changes/changes.xml",
+        "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+        "src/test/java/org/apache/commons/collections4/trie/PatriciaTrieTest.java"
+    ],
+    "patch_files": [
+        "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java"
+    ],
+    "test_files": [
+        "src/test/java/org/apache/commons/collections4/trie/PatriciaTrieTest.java"
+    ],
+    "size": 61637,
+    "is_maven": true,
+    "is_java": true
+}

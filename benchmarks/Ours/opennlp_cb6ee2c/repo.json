@@ -1,0 +1,22 @@
+{
+    "repo": "opennlp",
+    "commit_id": "cb6ee2c",
+    "commit_url": "https://github.com/apache/opennlp/commit/cb6ee2cbdeadad5d277a6e7293d88bb915090c4f",
+    "parent_url": "https://github.com/apache/opennlp/commit/60792b8f369b73316fce6310330c28a7a0d45246",
+    "date": "2017-05-11",
+    "changed_files": [
+        "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+        "opennlp-tools/src/test/java/opennlp/tools/lemmatizer/DictionaryLemmatizerTest.java",
+        "opennlp-tools/src/test/resources/opennlp/tools/lemmatizer/smalldictionary.dict"
+    ],
+    "patch_files": [
+        "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java"
+    ],
+    "test_files": [
+        "opennlp-tools/src/test/java/opennlp/tools/lemmatizer/DictionaryLemmatizerTest.java",
+        "opennlp-tools/src/test/resources/opennlp/tools/lemmatizer/smalldictionary.dict"
+    ],
+    "size": 63830,
+    "is_maven": true,
+    "is_java": true
+}

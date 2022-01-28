@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.apache.sling.scripting.thymeleaf.internal.dialect.SlingDialect" immediate="true">
+  <implementation class="org.apache.sling.scripting.thymeleaf.internal.dialect.SlingDialect"/>
+  <service>
+    <provide interface="org.thymeleaf.dialect.IDialect"/>
+  </service>
+  <property name="service.description" type="String" value="Sling Dialect for Sling Scripting Thymeleaf"/>
+  <property name="service.vendor" type="String" value="The Apache Software Foundation"/>
+</scr:component>

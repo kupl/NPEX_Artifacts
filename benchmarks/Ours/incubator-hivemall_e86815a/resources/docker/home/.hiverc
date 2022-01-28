@@ -1,0 +1,2 @@
+add jar /root/hivemall/hivemall-all.jar;
+source /root/hivemall/define-all.hive;

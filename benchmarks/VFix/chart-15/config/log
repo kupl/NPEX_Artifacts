@@ -1,0 +1,6 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.jfree.chart.plot.PiePlot.getMaximumExplodePercent(PiePlot.java:1379)
+	at org.jfree.chart.plot.PiePlot3D.draw(PiePlot3D.java:309)
+	at org.jfree.chart.JFreeChart.draw(JFreeChart.java:1219)
+	at Main.testDrawWithNullDataset(Main.java:19)
+	at Main.main(Main.java:11)

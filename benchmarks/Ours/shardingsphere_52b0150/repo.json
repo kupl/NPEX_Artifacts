@@ -1,0 +1,20 @@
+{
+    "repo": "shardingsphere",
+    "commit_id": "52b0150",
+    "commit_url": "https://github.com/apache/shardingsphere/commit/52b015065be9b33c065eca01faf7a3bcea612240",
+    "parent_url": "https://github.com/apache/shardingsphere/commit/82b1b9d51cbceeb283573a80c684a98091fa43d7",
+    "date": "2020-09-24",
+    "changed_files": [
+        "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
+        "shardingsphere-infra/shardingsphere-infra-executor/src/test/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilderTest.java"
+    ],
+    "patch_files": [
+        "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java"
+    ],
+    "test_files": [
+        "shardingsphere-infra/shardingsphere-infra-executor/src/test/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilderTest.java"
+    ],
+    "size": 123406,
+    "is_maven": true,
+    "is_java": true
+}

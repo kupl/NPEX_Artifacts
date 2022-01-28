@@ -1,0 +1,27 @@
+[
+    {
+        "filepath": "org/apache/commons/math3/geometry/euclidean/threed/Line.java",
+        "line": 114,
+        "method_name": "getAbscissa"
+    },
+    {
+        "filepath": "org/apache/commons/math3/geometry/euclidean/threed/Line.java",
+        "line": 129,
+        "method_name": "toSubSpace"
+    },
+    {
+        "filepath": "org/apache/commons/math3/geometry/euclidean/threed/SubLine.java",
+        "line": 116,
+        "method_name": "intersection"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 16,
+        "method_name": "testIntersectionNotIntersecting"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 10,
+        "method_name": "main"
+    }
+]

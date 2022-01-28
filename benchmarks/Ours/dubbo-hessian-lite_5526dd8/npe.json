@@ -1,0 +1,10 @@
+{
+    "filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+    "line": 974,
+    "sink_field": "equals",
+    "npe_class": "URL",
+    "npe_method": "addParameters",
+    "jvmti_identify_succeed": true,
+    "deref_field": "value",
+    "nullpointer": "value"
+}

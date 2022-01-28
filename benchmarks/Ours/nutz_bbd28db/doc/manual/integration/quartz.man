@@ -1,0 +1,10 @@
+#title: 集成Quartz
+#index:0,1
+#author:wendal(wendal1985@gmail.com)
+
+-----------------------------------------------
+用法
+
+	请查阅插件的README
+	
+	[https://github.com/nutzam/nutzmore/tree/master/nutz-integration-quartz nutz-integration-quartz]

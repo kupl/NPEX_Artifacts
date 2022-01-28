@@ -1,0 +1,23 @@
+{
+    "repo": "logging-log4j2",
+    "commit_id": "2d266d9",
+    "commit_url": "https://github.com/apache/logging-log4j2/commit/2d266d98b8cb01885691b6c6b8f4018936644973",
+    "parent_url": "https://github.com/apache/logging-log4j2/commit/7441d3c3cc57130a56535dbbd15a5d819f0a3834",
+    "date": "2016-12-15",
+    "changed_files": [
+        "log4j-core/src/main/java/org/apache/logging/log4j/core/appender/rolling/CronTriggeringPolicy.java",
+        "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+        "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/rolling/CronTriggeringPolicyTest.java",
+        "src/changes/changes.xml"
+    ],
+    "patch_files": [
+        "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+        "log4j-core/src/main/java/org/apache/logging/log4j/core/appender/rolling/CronTriggeringPolicy.java"
+    ],
+    "test_files": [
+        "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/rolling/CronTriggeringPolicyTest.java"
+    ],
+    "size": 120161,
+    "is_maven": true,
+    "is_java": true
+}

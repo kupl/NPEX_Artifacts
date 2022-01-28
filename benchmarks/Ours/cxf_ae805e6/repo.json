@@ -1,0 +1,20 @@
+{
+    "repo": "cxf",
+    "commit_id": "ae805e6",
+    "commit_url": "https://github.com/apache/cxf/commit/ae805e6f6b78d9a4e44fdc42750edc2997b0b39c",
+    "parent_url": "https://github.com/apache/cxf/commit/209407e09d8b1466d1c524184690915c1aa1a3ea",
+    "date": "2020-08-25",
+    "changed_files": [
+        "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+        "rt/frontend/jaxrs/src/test/java/org/apache/cxf/jaxrs/impl/UriInfoImplTest.java"
+    ],
+    "patch_files": [
+        "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java"
+    ],
+    "test_files": [
+        "rt/frontend/jaxrs/src/test/java/org/apache/cxf/jaxrs/impl/UriInfoImplTest.java"
+    ],
+    "size": 682293,
+    "is_maven": true,
+    "is_java": true
+}

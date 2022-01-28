@@ -1,0 +1,21 @@
+{
+    "repo": "async-http-client",
+    "commit_id": "86948f6",
+    "repo_url": "https://github.com/AsyncHttpClient/async-http-client",
+    "commit_url": "https://github.com/AsyncHttpClient/async-http-client/commit/86948f69320e3e84e510de9ba73c6ed8fdd40252",
+    "parent_url": "https://github.com/AsyncHttpClient/async-http-client/commit/fbc6d48666bafddf6a620df8692a26e28e22e8c5",
+    "date": "2016-02-19",
+    "changed_files": [
+        "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+        "client/src/test/java/org/asynchttpclient/RequestBuilderTest.java"
+    ],
+    "patch_files": [
+        "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java"
+    ],
+    "test_files": [
+        "client/src/test/java/org/asynchttpclient/RequestBuilderTest.java"
+    ],
+    "size": 32494,
+    "is_maven": true,
+    "is_java": true
+}

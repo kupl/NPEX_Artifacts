@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "jspwiki-util/src/test/java/org/apache/wiki/util/HttpUtilTest.java",
+        "line": 65,
+        "method_name": "testRetrieveCookieValue"
+    }
+]

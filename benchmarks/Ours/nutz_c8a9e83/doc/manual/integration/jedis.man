@@ -1,0 +1,8 @@
+#title: 集成Jedis
+#index:0,1
+#author:wendal(wendal1985@gmail.com)
+
+-----------------------------------------------
+简介
+
+	本文档已移动到 [../nosql/jedis.man NoSQL-Redis]

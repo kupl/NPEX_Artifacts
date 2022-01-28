@@ -1,0 +1,144 @@
+{
+    "bug_id": "Bears-200-buggy",
+    "repository_info": null,
+    "build_info": {
+        "compiled": true,
+        "build_command": "mvn clean test-compile -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true",
+        "java_version": 8,
+        "error_message": null,
+        "time": 14.864632061915472
+    },
+    "test_info": {
+        "test_command": "mvn clean test -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Dtest=org.axonframework.axonserver.connector.event.axon.ErrorCodeTest#testConvertWithoutSource",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "org.axonframework.axonserver.connector.event.axon.ErrorCodeTest",
+                "method": "testConvertWithoutSource",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.axonframework.axonserver.connector.event.axon.ErrorCodeTest.testConvertWithoutSource(ErrorCodeTest.java:56)\n"
+            }
+        ]
+    },
+    "npe_info": [
+        {
+            "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "line": 130,
+            "deref_field": "source",
+            "npe_class": "ErrorCode",
+            "npe_method": "convert",
+            "sink_field": null,
+            "jvmti_identify_succeed": null,
+            "is_original": true
+        },
+        {
+            "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "line": 119,
+            "deref_field": "null",
+            "npe_class": "ErrorCode",
+            "npe_method": "convert",
+            "sink_field": null,
+            "jvmti_identify_succeed": null,
+            "is_original": null
+        }
+    ],
+    "patch_results": [
+        {
+            "patch_id": "SkipReturn_130-129_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/SkipReturn_130-129_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": true,
+            "pass_testcase": false,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_130-130_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/InitPointerVar_130-130_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "SkipSinkStatement_130-130_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/SkipSinkStatement_130-130_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerObject_130-130_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/InitPointerObject_130-130_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerObject_130-130_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/ReplacePointerObject_130-130_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_130-130_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/ReplacePointerVar_130-130_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "SkipReturn_130-129_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/SkipReturn_130-129_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": true,
+            "pass_testcase": false,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_130-130_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/InitPointerVar_130-130_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "SkipSinkStatement_130-130_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/SkipSinkStatement_130-130_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerObject_130-130_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/InitPointerObject_130-130_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerObject_130-130_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/ReplacePointerObject_130-130_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_130-130_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-200-buggy/patches/ReplacePointerVar_130-130_1",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        }
+    ]
+}

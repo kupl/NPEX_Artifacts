@@ -1,0 +1,7 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.jfree.chart.plot.CategoryPlot.removeDomainMarker(CategoryPlot.java:2166)
+	at org.jfree.chart.plot.CategoryPlot.removeDomainMarker(CategoryPlot.java:2139)
+	at org.jfree.chart.plot.CategoryPlot.removeDomainMarker(CategoryPlot.java:2122)
+	at org.jfree.chart.plot.CategoryPlot.removeDomainMarker(CategoryPlot.java:2106)
+	at Main.testRemoveDomainMarker(Main.java:13)
+	at Main.main(Main.java:8)

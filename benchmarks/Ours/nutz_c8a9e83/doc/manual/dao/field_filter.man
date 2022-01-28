@@ -1,0 +1,191 @@
+#title: 过滤字段
+#index:0,1
+---------------------------------------------------------------------------------------------------
+为什么需要过滤字段
+	 例如insert时需要忽略某个特定属性, update时只更新某些属性, 查询时需要跳过大字段等。
+	 
+	 FieldFilter/FieldMatcher提供细致的过滤选项,包括:
+	 
+	 * 黑名单(locked)
+	 * 白名单(actived)
+	 * 忽略空值(ignoreNull)
+	 * 忽略数值0(ignoreZero)
+	 * 忽略日期属性(ignoreDate)
+	 * 忽略空字符串(ignoreBlankStr)
+	 * 忽略数值型主键(ignoreId), 仅insert操作有效
+	 * 忽略字符型主键(ignoreName), 仅insert操作有效
+	 * 忽略复合主键(ignorePk), 仅insert操作有效
+	 
+	 FieldFilter是FieldMatcher的包装,相当于```Map<Class, FieldMatcher>```
+	 
+	 黑名单和白名单,均为正则表达式,匹配是Java属性名!!
+	 
+	 ignoreNull/ignoreZero/ignoreDate/ignoreBlankStr对insert(pet)无效,有多参数的insert替代.
+	 
+---------------------------------------------------------------------------------------------------
+如何过滤字段
+	如下代码，将只更新 Pet 的 id 和 name 属性：
+	{{{<JAVA>
+	// 第二个参数是正则表达式
+	FieldFilter ff = FieldFilter.create(Pet.class, "^id|name$");
+	ff.run(new Atom() {
+		public void run() {
+			Pet pet = dao.fetch(Pet.class, 24);
+			pet.setName("ABC");
+			pet.setNickname("XiaoBai");
+			dao.update(pet);
+		}
+	});
+	// 或者
+	Daos.ext(dao, ff).update(pet);
+	}}}
+	
+	以下代码, 将只查询id和name属性
+	
+	{{{<JAVA>
+	FieldFilter ff = FieldFilter.create(Pet.class, "^id|name$");
+	Pet pet = ff.run(new Molecule() {
+		public void run() {
+			setObj(dao.fetch(Pet.class, "ABC"));
+		}
+	});
+	// 或者用Daos.ext
+	Pet pet = Daos.ext(dao, ff).fetch(Pet.class, "ABC");
+	}}}
+
+---------------------------------------------------------------------------------------------------
+字段过滤器的原理
+    
+    字段过滤，不过是要在一个地方记录一下下面两个信息：
+     # 对什么实体
+     # 过滤哪些字段
+    并且它希望 Nutz.Dao 自行能获取到这些信息。当然，ThreadLocal 就是一个很好的选择。实际上，你如果
+    看看 FieldFilter 里面的方法，你其实就能猜到。为了能为多个实体保存字段过滤配置信息，它实际上在
+    ThreadLoacal 里保存了自身的一个实例，同时，它自己有一个私有的  `Map<Class<?>, FieldMatcher>`，
+    具体的，你可以看 FieldFilter 这个类的定义:
+    {{{
+    public class FieldFilter {
+
+        ...
+        private static ThreadLocal<FieldFilter> FF = new ThreadLocal<FieldFilter>();
+        ...
+        private Map<Class<?>, FieldMatcher> map;
+        ...
+
+    }}}
+
+    而且既然在 ThreadLocal 设置了数据，它就不得不考虑
+    如何让你清除这个数据。因此，它的写法也保证了你一定会清掉你的数据了。
+    {{{<JAVA>
+    FieldFilter ... run(new Atom(){  // <-- 开始将自身加入 ThreadLocal
+        public void run(){
+            // 这里是你的代码，你的 Dao 调用都会得到 ThreadLocal 中你对于实体字段过滤的设置
+        }
+    }); //  <-- run 方法结束前，会从 ThreadLocal 清除自身
+    }}}
+
+---------------------------------------------------------------------------------------------------
+字段过滤器的创建
+    下面是一个最简单和常用的例子：
+    {{{<JAVA>
+    FieldFilter.create(Pet.class, "^id|name$").run(new Atom(){
+        public void run(){
+            // TODO 你的 DAO 操作代码
+        }
+    });
+    }}}
+     * 这样，无论你查询或者更新等操作，对 Pet 这个实体只会针对能被正则表达式 "id|name" 匹配的字段进行操作
+         * 实际上，上例的正则表达式表示: {#F00; 所有包括 id 和 name 字符的字段}
+     * 如果你想仅仅让 id 和 name 字段受到匹配，你的正则表达式最好写的严格一些，比如 "^id|name$"
+     * 当然，SQL 的条件部分不会受到字段过滤器的影响
+
+    如果你读完上面的介绍，你应该就很了解字段过滤器如何使用了，但是你可能还有个几个小疑问:
+     * 如果我字段比较多怎么办呢？
+     * 如果我想忽略所有之为空的字段怎么办呢？
+     * 如果我想同时为多个实体设置字段过滤怎么办呢？
+
+---------------------------------------------------------------------------------------------------
+忽略少数字段
+        {{{<JAVA>
+        FieldFilter.locked(Pet.class, "^last|age$").run(new Atom(){
+            public void run(){
+                // TODO 你的 DAO 操作代码
+            }
+        });
+        }}}
+
+---------------------------------------------------------------------------------------------------
+忽略空值
+        {{{<JAVA>
+        FieldFilter.create(Pet.class, true).run(new Atom(){
+            public void run(){
+                // TODO 你的 DAO 操作代码
+            }
+        });
+        }}}
+
+---------------------------------------------------------------------------------------------------
+保留几个字段且忽略空值
+        {{{<JAVA>
+        FieldFilter.create(Pet.class,"^id|name|age|last$", true).run(new Atom(){
+            public void run(){
+                // TODO 你的 DAO 操作代码
+            }
+        });
+        }}}
+
+---------------------------------------------------------------------------------------------------
+忽略少数字段且忽略空值
+        {{{<JAVA>
+        FieldFilter.create(Pet.class, null, "^age|last$", true).run(new Atom(){
+            public void run(){
+                // TODO 你的 DAO 操作代码
+            }
+        });
+        }}}
+
+---------------------------------------------------------------------------------------------------
+为多个实体设置字段过滤
+        {{{<JAVA>
+        FieldFilter.create(Pet.class, true)
+                   .set(Master.class, "^id|name$")
+                   .run(new Atom(){
+            public void run(){
+                // TODO 你的 DAO 操作代码
+            }
+        });
+        }}}
+        
+---------------------------------------------------------------------------------------------------
+使用FieldMatcher创建复杂规则
+
+	{{{<JAVA>
+	FieldMatcher fm = FieldMatcher.make(actived, locked, ignoreNull, 
+                                    ignoreZero, ignoreDate, 
+                                    ignoreId,
+                                    ignoreName,
+                                    ignorePk);
+	FieldFilter ff = FieldFilter.create(Pet.class, fm);
+	}}}
+
+---------------------------------------------------------------------------------------------------
+无需匿名内部类的写法
+
+	从1.b.51开始支持不使用匿名内部类的方法, Daos.ext方法. 该方法有两个变种, 分别支持字段过滤和动态表名.
+	
+	示例
+	
+    {{{<JAVA>
+    //原写法
+    FieldFilter.create(Pet.class, "^id|name$").run(new Atom(){
+        public void run(){
+            dao.update(pet); // 这里的pet必须是final
+        }
+    });
+    // 新的写法
+    Daos.ext(dao, FieldFilter.create(Pet.class, "^id|name$")).update(pet);
+    // ext方法会返回一个Dao实例,是对原有dao对象的封装
+    }}}
+
+	FieldFilter实例及Daos.ext返回的Dao实例,可重复使用,均为线程安全的.
+

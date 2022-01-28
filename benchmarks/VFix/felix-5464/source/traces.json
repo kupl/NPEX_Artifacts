@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+        "line": 211,
+        "method_name": "processClass"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 17,
+        "method_name": "testFelix5464"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 9,
+        "method_name": "main"
+    }
+]

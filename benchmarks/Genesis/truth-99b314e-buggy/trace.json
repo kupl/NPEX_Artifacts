@@ -1,0 +1,314 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 36,
+        "description": "MapTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 36,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 127,
+        "description": "failMapHasKeyWithNullValuePresentExpected"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/Truth.java",
+        "line_number": 54,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/Truth.java",
+        "line_number": 54,
+        "description": "org.truth0.Truth$1"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/Truth.java",
+        "line_number": 55,
+        "description": "Truth$1"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/Truth.java",
+        "line_number": 55,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/Truth.java",
+        "line_number": 62,
+        "description": "org.truth0.Truth$2"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/Truth.java",
+        "line_number": 63,
+        "description": "Truth$2"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/Truth.java",
+        "line_number": 63,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/Truth.java",
+        "line_number": 69,
+        "description": "org.truth0.TestVerb"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/TestVerb.java",
+        "line_number": 40,
+        "description": "TestVerb"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/TestVerb.java",
+        "line_number": 40,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/AbstractVerb.java",
+        "line_number": 14,
+        "description": "AbstractVerb"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/AbstractVerb.java",
+        "line_number": 14,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/Truth.java",
+        "line_number": 72,
+        "description": "org.truth0.TestVerb"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/TestVerb.java",
+        "line_number": 40,
+        "description": "TestVerb"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/TestVerb.java",
+        "line_number": 40,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/AbstractVerb.java",
+        "line_number": 14,
+        "description": "AbstractVerb"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/AbstractVerb.java",
+        "line_number": 14,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 127,
+        "description": "map"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 182,
+        "description": "map"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 182,
+        "description": "newHashMap"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 186,
+        "description": "cast"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 186,
+        "description": "cast"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 186,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 127,
+        "description": "that"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/TestVerb.java",
+        "line_number": 84,
+        "description": "that"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/TestVerb.java",
+        "line_number": 84,
+        "description": "getFailureStrategy"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/AbstractVerb.java",
+        "line_number": 19,
+        "description": "getFailureStrategy"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/TestVerb.java",
+        "line_number": 84,
+        "description": "create"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 98,
+        "description": "create"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 98,
+        "description": "org.truth0.subjects.MapSubject"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 33,
+        "description": "MapSubject"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 33,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/subjects/Subject.java",
+        "line_number": 41,
+        "description": "Subject"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/Subject.java",
+        "line_number": 41,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 128,
+        "description": "hasKey"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 58,
+        "description": "hasKey"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 58,
+        "description": "getSubject"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/subjects/Subject.java",
+        "line_number": 110,
+        "description": "getSubject"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 58,
+        "description": "containsKey"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 61,
+        "description": "org.truth0.subjects.MapSubject$1"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 61,
+        "description": "MapSubject$1"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 61,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line_number": 128,
+        "description": "withValue"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 63,
+        "description": "withValue"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 63,
+        "description": "getSubject"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "core/src/main/java/org/truth0/subjects/Subject.java",
+        "line_number": 110,
+        "description": "getSubject"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 63,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 66,
+        "description": "of"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line_number": 67,
+        "description": "of"
+    }
+]

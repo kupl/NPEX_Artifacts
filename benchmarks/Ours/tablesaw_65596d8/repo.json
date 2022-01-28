@@ -1,0 +1,21 @@
+{
+    "repo": "tablesaw",
+    "commit_id": "65596d8",
+    "repo_url": "https://github.com/jtablesaw/tablesaw",
+    "commit_url": "https://github.com/jtablesaw/tablesaw/commit/65596d88be9ac03070544c04c4d9215244fd3ee7",
+    "parent_url": "https://github.com/jtablesaw/tablesaw/commit/7337d269b667a97a2ed65397058b7575f2497954",
+    "date": "2020-05-07",
+    "changed_files": [
+        "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+        "core/src/test/java/tech/tablesaw/api/TableTest.java"
+    ],
+    "patch_files": [
+        "core/src/main/java/tech/tablesaw/api/ColumnType.java"
+    ],
+    "test_files": [
+        "core/src/test/java/tech/tablesaw/api/TableTest.java"
+    ],
+    "size": 49407,
+    "is_maven": true,
+    "is_java": true
+}

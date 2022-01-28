@@ -1,0 +1,43 @@
+Apache OpenNLP ${pom.version}
+===============================
+
+Requirements
+------------
+Java 1.8 is required to run OpenNLP
+Maven 3.3.9 is required for building it
+
+Building from the Source Distribution
+-------------------------------------
+
+To build everything execute the following command in the root folder:
+    mvn clean install
+
+The results of the build will be placed  in:
+    opennlp-distr/target/apache-opennlp-[version]-bin.tar-gz (or .zip)
+
+What is new in Apache OpenNLP ${pom.version}
+---------------------------------------
+
+This release introduces many new features, improvements and bug fixes. The API
+has been improved for a better consistency and many deprecated methods were
+removed. Java 1.8 is required.
+
+Additionally the release contains the following noteworthy changes:
+
+- POS Tagger context generator now supports feature generation XML
+- Add a Name Finder feature generator that adds POS Tag features
+- Add CONLL-U format support
+- Improve default Name Finder settings
+- TokenNameFinderEvaluator CLI now support nameTypes argument
+- Stupid backoff is now the default in NGramLanguageModel
+- Language codes now are ISO 639-3 compliant
+- Add many unit tests
+- Distribution package now includes example parameters file
+- Now prefix and suffix feature generators are configurable
+- Remove API in Document Categorizer for user specified tokenizer
+- Learnable lemmatizer now returns all possible lemmas for a given word and pos tag
+- Add stemmer, detokenizer and sentence detection abbreviations for Irish
+- Chunker SequenceValidator signature changed to allow access to both token and POS tag
+
+A detailed list of the issues related to this release can be found in the release
+notes.

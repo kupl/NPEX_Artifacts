@@ -1,0 +1,24 @@
+{
+    "repo": "maven-surefire",
+    "commit_id": "08163fa",
+    "commit_url": "https://github.com/apache/maven-surefire/commit/08163fa6d0d161070a6add1c05a1058781160415",
+    "parent_url": "https://github.com/apache/maven-surefire/commit/e9f595bbdf2800d678b1ef34a7d1c70af51f3a8c",
+    "date": "2020-10-05",
+    "changed_files": [
+        "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+        "surefire-providers/common-java5/src/test/java/org/apache/maven/surefire/report/ATestClass.java",
+        "surefire-providers/common-java5/src/test/java/org/apache/maven/surefire/report/SmartStackTraceParserTest.java",
+        "surefire-providers/common-java5/src/test/java/org/apache/maven/surefire/report/SomeMockedException.java"
+    ],
+    "patch_files": [
+        "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java"
+    ],
+    "test_files": [
+        "surefire-providers/common-java5/src/test/java/org/apache/maven/surefire/report/ATestClass.java",
+        "surefire-providers/common-java5/src/test/java/org/apache/maven/surefire/report/SmartStackTraceParserTest.java",
+        "surefire-providers/common-java5/src/test/java/org/apache/maven/surefire/report/SomeMockedException.java"
+    ],
+    "size": 87463,
+    "is_maven": true,
+    "is_java": true
+}

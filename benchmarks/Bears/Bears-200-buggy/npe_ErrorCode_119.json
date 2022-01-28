@@ -1,0 +1,7 @@
+{
+  "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+  "line": 119,
+  "deref_field": "null",
+  "npe_class": "ErrorCode",
+  "npe_method": "convert"
+ }

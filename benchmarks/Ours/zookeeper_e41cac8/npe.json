@@ -1,0 +1,10 @@
+{
+    "filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+    "line": 1304,
+    "sink_field": "isConnectionWeightEnabled",
+    "npe_class": "ZooKeeperServer",
+    "npe_method": "processConnectRequest",
+    "jvmti_identify_succeed": true,
+    "deref_field": "connThrottle",
+    "nullpointer": "connThrottle"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/org.apache.sling.scripting.thymeleaf.internal.ResourceBundleMessageResolverConfiguration">
+  <OCD id="org.apache.sling.scripting.thymeleaf.internal.ResourceBundleMessageResolverConfiguration" name="Apache Sling Scripting Thymeleaf “ResourceBundle MessageResolver”" description="Resolves messages by using Sling's resource bundle provider from Sling i18n.">
+    <AD id="order" type="Integer" name="order" description="Property for ordering message resolvers inside the Thymeleaf template engine." default="0"/>
+    <AD id="absentMessageRepresentationType" type="String" name="absent message representation type" description="If no AbsentMessageRepresentationProvider is present, empty (''), blank (' ') or the message key can represent an absent message." default="KEY">
+      <Option label="EMPTY" value="EMPTY"/>
+      <Option label="BLANK" value="BLANK"/>
+      <Option label="KEY" value="KEY"/>
+    </AD>
+  </OCD>
+  <Designate pid="org.apache.sling.scripting.thymeleaf.internal.ResourceBundleMessageResolver">
+    <Object ocdref="org.apache.sling.scripting.thymeleaf.internal.ResourceBundleMessageResolverConfiguration"/>
+  </Designate>
+</metatype:MetaData>

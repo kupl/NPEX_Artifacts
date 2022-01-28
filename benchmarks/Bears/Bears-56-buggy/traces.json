@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "src/test/java/spoon/test/imports/ImportScannerTest.java",
+        "line": 107,
+        "method_name": "testTargetTypeNull"
+    }
+]

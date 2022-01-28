@@ -1,0 +1,518 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "test/org/traccar/BaseTest.java",
+        "line_number": 10,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/BaseTest.java",
+        "line_number": 10,
+        "description": "org.traccar.BaseTest$1"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "test/org/traccar/BaseTest.java",
+        "line_number": 10,
+        "description": "BaseTest$1"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/BaseTest.java",
+        "line_number": 10,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/BaseTest.java",
+        "line_number": 10,
+        "description": "init"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/Context.java",
+        "line_number": 167,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/Context.java",
+        "line_number": 167,
+        "description": "com.ning.http.client.AsyncHttpClient"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/Context.java",
+        "line_number": 351,
+        "description": "init"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/Context.java",
+        "line_number": 351,
+        "description": "org.traccar.Config"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/Config.java",
+        "line_number": 23,
+        "description": "Config"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/Config.java",
+        "line_number": 23,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/Config.java",
+        "line_number": 25,
+        "description": "java.util.Properties"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/Context.java",
+        "line_number": 352,
+        "description": "com.fasterxml.jackson.databind.ObjectMapper"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "test/org/traccar/protocol/Gl200BinaryProtocolDecoderTest.java",
+        "line_number": 6,
+        "description": "Gl200BinaryProtocolDecoderTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/protocol/Gl200BinaryProtocolDecoderTest.java",
+        "line_number": 6,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 24,
+        "description": "ProtocolTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 24,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "test/org/traccar/BaseTest.java",
+        "line_number": 7,
+        "description": "BaseTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/BaseTest.java",
+        "line_number": 7,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "test/org/traccar/protocol/Gl200BinaryProtocolDecoderTest.java",
+        "line_number": 11,
+        "description": "testDecode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/protocol/Gl200BinaryProtocolDecoderTest.java",
+        "line_number": 11,
+        "description": "org.traccar.protocol.Gl200Protocol"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/protocol/Gl200Protocol.java",
+        "line_number": 31,
+        "description": "Gl200Protocol"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200Protocol.java",
+        "line_number": 31,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/BaseProtocol.java",
+        "line_number": 37,
+        "description": "BaseProtocol"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/BaseProtocol.java",
+        "line_number": 37,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/BaseProtocol.java",
+        "line_number": 32,
+        "description": "java.util.HashSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/BaseProtocol.java",
+        "line_number": 33,
+        "description": "java.util.HashSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200Protocol.java",
+        "line_number": 32,
+        "description": "setSupportedDataCommands"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/BaseProtocol.java",
+        "line_number": 47,
+        "description": "setSupportedDataCommands"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/BaseProtocol.java",
+        "line_number": 47,
+        "description": "asList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/BaseProtocol.java",
+        "line_number": 47,
+        "description": "addAll"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/protocol/Gl200BinaryProtocolDecoderTest.java",
+        "line_number": 11,
+        "description": "org.traccar.protocol.Gl200BinaryProtocolDecoder"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 34,
+        "description": "Gl200BinaryProtocolDecoder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 34,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/BaseProtocolDecoder.java",
+        "line_number": 150,
+        "description": "BaseProtocolDecoder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/BaseProtocolDecoder.java",
+        "line_number": 150,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/BaseProtocolDecoder.java",
+        "line_number": 72,
+        "description": "java.util.HashMap"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/protocol/Gl200BinaryProtocolDecoderTest.java",
+        "line_number": 13,
+        "description": "binary"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 51,
+        "description": "binary"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 51,
+        "description": "binary"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 55,
+        "description": "binary"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 56,
+        "description": "concatenateStrings"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 43,
+        "description": "concatenateStrings"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 43,
+        "description": "java.lang.StringBuilder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 45,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 47,
+        "description": "toString"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 56,
+        "description": "parseHexBinary"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 55,
+        "description": "wrappedBuffer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/protocol/Gl200BinaryProtocolDecoderTest.java",
+        "line_number": 13,
+        "description": "verifyPosition"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 98,
+        "description": "verifyPosition"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line_number": 98,
+        "description": "decode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 41,
+        "description": "decode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 43,
+        "description": "readBytes"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 43,
+        "description": "toString"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 45,
+        "description": "equals"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 47,
+        "description": "org.traccar.model.Position"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/model/Position.java",
+        "line_number": 20,
+        "description": "Position"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/model/Position.java",
+        "line_number": 20,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/model/Message.java",
+        "line_number": 18,
+        "description": "Message"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/model/Message.java",
+        "line_number": 18,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/model/Extensible.java",
+        "line_number": 21,
+        "description": "Extensible"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/model/Extensible.java",
+        "line_number": 21,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/model/Extensible.java",
+        "line_number": 33,
+        "description": "java.util.LinkedHashMap"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 48,
+        "description": "getProtocolName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/BaseProtocolDecoder.java",
+        "line_number": 68,
+        "description": "getProtocolName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/BaseProtocolDecoder.java",
+        "line_number": 68,
+        "description": "getName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/BaseProtocol.java",
+        "line_number": 43,
+        "description": "getName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 48,
+        "description": "setProtocol"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/model/Position.java",
+        "line_number": 135,
+        "description": "setProtocol"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 50,
+        "description": "readUnsignedByte"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 52,
+        "description": "readUnsignedInt"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 54,
+        "description": "readUnsignedShort"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 55,
+        "description": "readUnsignedByte"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 56,
+        "description": "readUnsignedShort"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 58,
+        "description": "readUnsignedShort"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 58,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 58,
+        "description": "set"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/model/Extensible.java",
+        "line_number": 84,
+        "description": "set"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/model/Extensible.java",
+        "line_number": 84,
+        "description": "isEmpty"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/model/Extensible.java",
+        "line_number": 85,
+        "description": "put"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 61,
+        "description": "readLong"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 61,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 61,
+        "description": "format"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/protocol/Gl200BinaryProtocolDecoder.java",
+        "line_number": 60,
+        "description": "getDeviceSession"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/org/traccar/BaseProtocolDecoder.java",
+        "line_number": 109,
+        "description": "getDeviceSession"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/org/traccar/BaseProtocolDecoder.java",
+        "line_number": 109,
+        "description": "getPipeline"
+    }
+]

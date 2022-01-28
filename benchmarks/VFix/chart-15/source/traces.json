@@ -1,0 +1,27 @@
+[
+    {
+        "filepath": "org/jfree/chart/plot/PiePlot.java",
+        "line": 1379,
+        "method_name": "getMaximumExplodePercent"
+    },
+    {
+        "filepath": "org/jfree/chart/plot/PiePlot3D.java",
+        "line": 309,
+        "method_name": "draw"
+    },
+    {
+        "filepath": "org/jfree/chart/JFreeChart.java",
+        "line": 1219,
+        "method_name": "draw"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 19,
+        "method_name": "testDrawWithNullDataset"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 11,
+        "method_name": "main"
+    }
+]

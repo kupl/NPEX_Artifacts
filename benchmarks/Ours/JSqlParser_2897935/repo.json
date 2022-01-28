@@ -1,0 +1,21 @@
+{
+    "repo": "JSqlParser",
+    "commit_id": "2897935",
+    "repo_url": "https://github.com/JSQLParser/JSqlParser",
+    "commit_url": "https://github.com/JSQLParser/JSqlParser/commit/2897935037560dbf47088924efe958dcd1605761",
+    "parent_url": "https://github.com/JSQLParser/JSqlParser/commit/66e44c956be74810018d3567b076c6d09a8dfd9c",
+    "date": "2016-12-20",
+    "changed_files": [
+        "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+        "src/test/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapterTest.java"
+    ],
+    "patch_files": [
+        "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java"
+    ],
+    "test_files": [
+        "src/test/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapterTest.java"
+    ],
+    "size": 13002,
+    "is_maven": true,
+    "is_java": true
+}

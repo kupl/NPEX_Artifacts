@@ -1,0 +1,134 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 44,
+        "description": "RepositoryBeanNameGeneratorUnitTests"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 44,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 54,
+        "description": "setUp"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 54,
+        "description": "org.springframework.data.repository.config.RepositoryBeanNameGenerator"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 36,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 36,
+        "description": "org.springframework.context.annotation.AnnotationBeanNameGenerator"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 34,
+        "description": "RepositoryBeanNameGenerator"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 34,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 55,
+        "description": "currentThread"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 55,
+        "description": "getContextClassLoader"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 55,
+        "description": "setBeanClassLoader"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 45,
+        "description": "setBeanClassLoader"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 58,
+        "description": "org.springframework.beans.factory.support.DefaultListableBeanFactory"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 85,
+        "description": "usesClassNameOfAnnotatedBeanDefinition"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 85,
+        "description": "org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line_number": 87,
+        "description": "generateBeanName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 54,
+        "description": "generateBeanName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 54,
+        "description": "getRepositoryInterfaceFrom"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 68,
+        "description": "getRepositoryInterfaceFrom"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 68,
+        "description": "getConstructorArgumentValues"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 68,
+        "description": "getArgumentValue"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+        "line_number": 68,
+        "description": "getValue"
+    }
+]

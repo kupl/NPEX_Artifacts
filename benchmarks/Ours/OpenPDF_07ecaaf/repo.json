@@ -1,0 +1,21 @@
+{
+    "repo": "OpenPDF",
+    "commit_id": "07ecaaf",
+    "repo_url": "https://github.com/LibrePDF/OpenPDF",
+    "commit_url": "https://github.com/LibrePDF/OpenPDF/commit/07ecaaf9db95124f3f6f02ac26b97d3a12adf049",
+    "parent_url": "https://github.com/LibrePDF/OpenPDF/commit/a89dfdf535be39f7d2c750bf145b33f29f667ca3",
+    "date": "2020-10-31",
+    "changed_files": [
+        "openpdf/src/main/java/com/lowagie/text/pdf/StandardDecryption.java",
+        "openpdf/src/test/java/com/lowagie/text/pdf/StandardDecryptionTest.java"
+    ],
+    "patch_files": [
+        "openpdf/src/main/java/com/lowagie/text/pdf/StandardDecryption.java"
+    ],
+    "test_files": [
+        "openpdf/src/test/java/com/lowagie/text/pdf/StandardDecryptionTest.java"
+    ],
+    "size": 92373,
+    "is_maven": true,
+    "is_java": true
+}

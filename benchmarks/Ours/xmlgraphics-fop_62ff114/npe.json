@@ -1,0 +1,10 @@
+{
+    "filepath": "fop-core/src/main/java/org/apache/fop/render/AbstractRenderer.java",
+    "line": 527,
+    "sink_field": "getPageIndex",
+    "npe_class": "AbstractRenderer",
+    "npe_method": "renderMainReference",
+    "jvmti_identify_succeed": true,
+    "deref_field": "currentPageViewport",
+    "nullpointer": "currentPageViewport"
+}

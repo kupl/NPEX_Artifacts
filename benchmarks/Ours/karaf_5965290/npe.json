@@ -1,0 +1,10 @@
+{
+    "filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+    "line": 103,
+    "sink_field": "matches",
+    "npe_class": "WikiParser",
+    "npe_method": "parseHeading",
+    "jvmti_identify_succeed": true,
+    "deref_field": "level",
+    "nullpointer": "level"
+}

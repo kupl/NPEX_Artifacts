@@ -1,0 +1,27 @@
+[
+    {
+        "filepath": "src/main/java/javaslang/Tuples.java",
+        "line": 840,
+        "method_name": "decycle"
+    },
+    {
+        "filepath": "src/main/java/javaslang/Tuples.java",
+        "line": 819,
+        "method_name": "hashCode"
+    },
+    {
+        "filepath": "src/main/java/javaslang/Strings.java",
+        "line": 379,
+        "method_name": "toString"
+    },
+    {
+        "filepath": "src/main/java/javaslang/Strings.java",
+        "line": 62,
+        "method_name": "toString"
+    },
+    {
+        "filepath": "src/test/java/javaslang/StringsTest.java",
+        "line": 40,
+        "method_name": "shouldDetectIndirectLoopOnToString"
+    }
+]

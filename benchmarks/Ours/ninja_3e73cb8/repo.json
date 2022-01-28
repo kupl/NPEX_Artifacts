@@ -1,0 +1,27 @@
+{
+    "repo": "ninja",
+    "commit_id": "3e73cb8",
+    "repo_url": "https://github.com/ninjaframework/ninja",
+    "commit_url": "https://github.com/ninjaframework/ninja/commit/3e73cb8085f1137e1ea9f7a79a68522ff6833fae",
+    "parent_url": "https://github.com/ninjaframework/ninja/commit/16aa9c14a65cd1a60efd245d774cfa8d8472d749",
+    "date": "2017-02-23",
+    "changed_files": [
+        "ninja-core/src/main/java/ninja/Route.java",
+        "ninja-core/src/test/java/ninja/RouterImplTest.java",
+        "ninja-servlet-integration-test/src/main/java/assets/robots.txt",
+        "ninja-servlet-integration-test/src/main/java/conf/Routes.java",
+        "ninja-servlet-integration-test/src/test/java/controllers/AssetsControllerTest.java"
+    ],
+    "patch_files": [
+        "ninja-core/src/main/java/ninja/Route.java"
+    ],
+    "test_files": [
+        "ninja-core/src/test/java/ninja/RouterImplTest.java",
+        "ninja-servlet-integration-test/src/main/java/assets/robots.txt",
+        "ninja-servlet-integration-test/src/main/java/conf/Routes.java",
+        "ninja-servlet-integration-test/src/test/java/controllers/AssetsControllerTest.java"
+    ],
+    "size": 30547,
+    "is_maven": true,
+    "is_java": true
+}

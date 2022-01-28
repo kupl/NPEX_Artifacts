@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolver" immediate="true" activate="activate" deactivate="deactivate" modified="modified">
+  <implementation class="org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolver"/>
+  <service>
+    <provide interface="org.thymeleaf.templateresolver.ITemplateResolver"/>
+  </service>
+  <reference name="scriptingResourceResolverProvider" cardinality="1..1" policy="dynamic" interface="org.apache.sling.scripting.api.resource.ScriptingResourceResolverProvider" policy-option="greedy" field="scriptingResourceResolverProvider"/>
+  <reference name="templateModeProvider" cardinality="1..1" policy="dynamic" interface="org.apache.sling.scripting.thymeleaf.TemplateModeProvider" bind="setTemplateModeProvider" unbind="unsetTemplateModeProvider" policy-option="greedy" field="templateModeProvider"/>
+  <property name="service.vendor" type="String" value="The Apache Software Foundation"/>
+  <property name="useDecoupledLogic" type="Boolean" value="true"/>
+  <property name="service.description" type="String" value="Sling Resource TemplateResolver for Sling Scripting Thymeleaf"/>
+  <property name="order" type="Integer" value="0"/>
+</scr:component>

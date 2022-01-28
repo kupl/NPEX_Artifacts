@@ -1,0 +1,20 @@
+{
+    "repo": "xmlgraphics-fop",
+    "commit_id": "62ff114",
+    "commit_url": "https://github.com/apache/xmlgraphics-fop/commit/62ff114b7f1e67d782285955c682bddfb6ec18ed",
+    "parent_url": "https://github.com/apache/xmlgraphics-fop/commit/2eb9e215bc94a28a5d8f1a1b06b5bf1fd37609f8",
+    "date": "2020-07-22",
+    "changed_files": [
+        "fop-core/src/main/java/org/apache/fop/render/java2d/Java2DRenderer.java",
+        "fop-core/src/test/java/org/apache/fop/render/java2d/Java2DRendererTestCase.java"
+    ],
+    "patch_files": [
+        "fop-core/src/main/java/org/apache/fop/render/java2d/Java2DRenderer.java"
+    ],
+    "test_files": [
+        "fop-core/src/test/java/org/apache/fop/render/java2d/Java2DRendererTestCase.java"
+    ],
+    "size": 215534,
+    "is_maven": true,
+    "is_java": true
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "filepath": "fop-core/src/main/java/org/apache/fop/render/AbstractRenderer.java",
+        "line": 527,
+        "method_name": "renderMainReference"
+    },
+    {
+        "filepath": "fop-core/src/main/java/org/apache/fop/render/AbstractRenderer.java",
+        "line": 433,
+        "method_name": "renderBodyRegion"
+    },
+    {
+        "filepath": "fop-core/src/main/java/org/apache/fop/render/AbstractRenderer.java",
+        "line": 380,
+        "method_name": "renderRegionViewport"
+    },
+    {
+        "filepath": "fop-core/src/main/java/org/apache/fop/render/AbstractRenderer.java",
+        "line": 345,
+        "method_name": "renderPageAreas"
+    },
+    {
+        "filepath": "fop-core/src/main/java/org/apache/fop/render/java2d/Java2DRenderer.java",
+        "line": 1008,
+        "method_name": "print"
+    },
+    {
+        "filepath": "fop-core/src/test/java/org/apache/fop/render/java2d/Java2DRendererTestCase.java",
+        "line": 58,
+        "method_name": "testPrint"
+    }
+]

@@ -1,0 +1,99 @@
+<?xml version='1.0'?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<configuration xmlns="urn:activemq"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="urn:activemq /schema/artemis-configuration.xsd">
+
+   <jms xmlns="urn:activemq:jms">
+      <queue name="DLQ"/>
+      <queue name="ExpiryQueue"/>${jms-list.settings}
+   </jms>
+
+   <core xmlns="urn:activemq:core">
+
+      <name>${name}</name>
+
+      <persistence-enabled>${persistence-enabled}</persistence-enabled>
+
+      <!-- this could be ASYNCIO or NIO
+       -->
+      <journal-type>${journal.settings}</journal-type>
+
+      <paging-directory>${data.dir}/paging</paging-directory>
+
+      <bindings-directory>${data.dir}/bindings</bindings-directory>
+
+      <journal-directory>${data.dir}/journal</journal-directory>
+
+      <large-messages-directory>${data.dir}/large-messages</large-messages-directory>
+
+      <journal-min-files>2</journal-min-files>
+
+      <journal-pool-files>-1</journal-pool-files>
+${journal-buffer.settings}
+${connector-config.settings}
+      <!-- how often we are looking for how many bytes are being used on the disk in ms -->
+      <disk-scan-period>5000</disk-scan-period>
+
+      <!-- once the disk hits this limit the system will block, or close the connection in certain protocols
+           that won't support flow control. -->
+      <max-disk-usage>90</max-disk-usage>
+
+      <!-- the system will enter into page mode once you hit this limit.
+           This is an estimate in bytes of how much the messages are using in memory -->
+      <global-max-size>104857600</global-max-size>
+
+      <acceptors>
+         <!-- Default ActiveMQ Artemis Acceptor.  Multi-protocol adapter.  Currently supports ActiveMQ Artemis Core, OpenWire, STOMP, AMQP, MQTT, and HornetQ Core. -->
+         <!-- performance tests have shown that openWire performs best with these buffer sizes -->
+         <acceptor name="artemis">tcp://${host}:${default.port}?tcpSendBufferSize=1048576;tcpReceiveBufferSize=1048576</acceptor>
+${amqp-acceptor}${stomp-acceptor}${hornetq-acceptor}${mqtt-acceptor}
+      </acceptors>
+
+${cluster-security.settings}${cluster.settings}${replicated.settings}${shared-store.settings}
+      <security-settings>
+         <security-setting match="#">
+            <permission type="createNonDurableQueue" roles="${role}"/>
+            <permission type="deleteNonDurableQueue" roles="${role}"/>
+            <permission type="createDurableQueue" roles="${role}"/>
+            <permission type="deleteDurableQueue" roles="${role}"/>
+            <permission type="consume" roles="${role}"/>
+            <permission type="browse" roles="${role}"/>
+            <permission type="send" roles="${role}"/>
+            <!-- we need this otherwise ./artemis data imp wouldn't work -->
+            <permission type="manage" roles="${role}"/>
+         </security-setting>
+      </security-settings>
+
+      <address-settings>
+         <!--default for catch all-->
+         <address-setting match="#">
+            <dead-letter-address>jms.queue.DLQ</dead-letter-address>
+            <expiry-address>jms.queue.ExpiryQueue</expiry-address>
+            <redelivery-delay>0</redelivery-delay>
+            <!-- with -1 only the global-max-size is in use for limiting -->
+            <max-size-bytes>-1</max-size-bytes>
+            <message-counter-history-day-limit>10</message-counter-history-day-limit>
+            <address-full-policy>PAGE</address-full-policy>
+         </address-setting>
+      </address-settings>
+   </core>
+</configuration>

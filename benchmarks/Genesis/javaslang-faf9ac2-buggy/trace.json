@@ -1,0 +1,110 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/javaslang/TuplesTest.java",
+        "line_number": 18,
+        "description": "TuplesTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/javaslang/TuplesTest.java",
+        "line_number": 18,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/javaslang/TuplesTest.java",
+        "line_number": 98,
+        "description": "shouldDetectLoopOnEquals"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/javaslang/TuplesTest.java",
+        "line_number": 98,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/javaslang/TuplesTest.java",
+        "line_number": 99,
+        "description": "of"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/javaslang/Tuples.java",
+        "line_number": 29,
+        "description": "of"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/javaslang/Tuples.java",
+        "line_number": 29,
+        "description": "javaslang.Tuples$Tuple1"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/javaslang/Tuples.java",
+        "line_number": 134,
+        "description": "Tuples$Tuple1"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/javaslang/Tuples.java",
+        "line_number": 134,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/javaslang/TuplesTest.java",
+        "line_number": 100,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/javaslang/TuplesTest.java",
+        "line_number": 103,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/javaslang/TuplesTest.java",
+        "line_number": 104,
+        "description": "of"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/javaslang/Tuples.java",
+        "line_number": 29,
+        "description": "of"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/javaslang/Tuples.java",
+        "line_number": 29,
+        "description": "javaslang.Tuples$Tuple1"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/javaslang/Tuples.java",
+        "line_number": 134,
+        "description": "Tuples$Tuple1"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/javaslang/Tuples.java",
+        "line_number": 134,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/javaslang/TuplesTest.java",
+        "line_number": 105,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/javaslang/TuplesTest.java",
+        "line_number": 108,
+        "description": "equals"
+    }
+]

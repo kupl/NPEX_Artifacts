@@ -1,0 +1,67 @@
+[
+    {
+        "filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+        "line": 11,
+        "method_name": "lowerCase"
+    },
+    {
+        "filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+        "line": 547,
+        "method_name": "testValidProtocol"
+    },
+    {
+        "filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+        "line": 507,
+        "method_name": "isSafeAttribute"
+    },
+    {
+        "filepath": "src/main/java/org/jsoup/safety/Cleaner.java",
+        "line": 154,
+        "method_name": "createSafeElement"
+    },
+    {
+        "filepath": "src/main/java/org/jsoup/safety/Cleaner.java",
+        "line": 35,
+        "method_name": "access$100"
+    },
+    {
+        "filepath": "src/main/java/org/jsoup/safety/Cleaner.java",
+        "line": 111,
+        "method_name": "head"
+    },
+    {
+        "filepath": "src/main/java/org/jsoup/select/NodeTraversor.java",
+        "line": 45,
+        "method_name": "traverse"
+    },
+    {
+        "filepath": "src/main/java/org/jsoup/safety/Cleaner.java",
+        "line": 142,
+        "method_name": "copySafeNodes"
+    },
+    {
+        "filepath": "src/main/java/org/jsoup/safety/Cleaner.java",
+        "line": 58,
+        "method_name": "clean"
+    },
+    {
+        "filepath": "src/main/java/org/jsoup/Jsoup.java",
+        "line": 200,
+        "method_name": "clean"
+    },
+    {
+        "filepath": "src/main/java/org/jsoup/Jsoup.java",
+        "line": 215,
+        "method_name": "clean"
+    },
+    {
+        "filepath": "src/test/java/org/jsoup/safety/CleanerTest.java",
+        "line": 304,
+        "method_name": "handlesAttributesWithNoValue"
+    },
+    {
+        "filepath": "src/test/java/org/jsoup/MultiLocaleRule.java",
+        "line": 22,
+        "method_name": "evaluate"
+    }
+]

@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.felix.framework.BundleRevisionImpl.getResourcesLocal(BundleRevisionImpl.java:526)
+	at Main.testGetResourcesLocalNullContentPath(Main.java:14)
+	at Main.main(Main.java:7)

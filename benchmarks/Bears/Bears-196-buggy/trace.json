@@ -1,0 +1,884 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 33,
+        "description": "EnumConverterTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 33,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 35,
+        "description": "org.apache.tamaya.spisupport.EnumConverter"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 41,
+        "description": "EnumConverter"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 41,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 37,
+        "description": "getName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 37,
+        "description": "getLogger"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 42,
+        "description": "isAssignableFrom"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 45,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 47,
+        "description": "getMethod"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 37,
+        "description": "of"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 44,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 73,
+        "description": "of"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 73,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 75,
+        "description": "org.apache.tamaya.TypeLiteral"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 52,
+        "description": "TypeLiteral"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 52,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 53,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 37,
+        "description": "org.apache.tamaya.spi.ConversionContext$Builder"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 200,
+        "description": "ConversionContext$Builder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 200,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 209,
+        "description": "ConversionContext$Builder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 209,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 178,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 184,
+        "description": "java.util.LinkedHashSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 212,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 38,
+        "description": "build"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 295,
+        "description": "build"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 295,
+        "description": "org.apache.tamaya.spi.ConversionContext"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 34,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 34,
+        "description": "of"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 73,
+        "description": "of"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 73,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 75,
+        "description": "org.apache.tamaya.TypeLiteral"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 52,
+        "description": "TypeLiteral"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 52,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 53,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 34,
+        "description": "org.apache.tamaya.spi.ConversionContext$Builder"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 191,
+        "description": "ConversionContext$Builder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 191,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 209,
+        "description": "ConversionContext$Builder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 209,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 178,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 184,
+        "description": "java.util.LinkedHashSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 212,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 34,
+        "description": "build"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 295,
+        "description": "build"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 295,
+        "description": "org.apache.tamaya.spi.ConversionContext"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 46,
+        "description": "ConversionContext"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 46,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 40,
+        "description": "java.util.LinkedHashSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 47,
+        "description": "access$000"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$000"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 48,
+        "description": "access$100"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$100"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 49,
+        "description": "access$200"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$200"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 50,
+        "description": "access$300"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$300"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 50,
+        "description": "addAll"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 51,
+        "description": "access$400"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$400"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 52,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 53,
+        "description": "access$500"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$500"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 53,
+        "description": "addAll"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 54,
+        "description": "unmodifiableList"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 46,
+        "description": "ConversionContext"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 46,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 40,
+        "description": "java.util.LinkedHashSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 47,
+        "description": "access$000"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$000"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 48,
+        "description": "access$100"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$100"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 49,
+        "description": "access$200"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$200"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 50,
+        "description": "access$300"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$300"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 50,
+        "description": "addAll"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 51,
+        "description": "access$400"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$400"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 52,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 53,
+        "description": "access$500"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$500"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 53,
+        "description": "addAll"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 54,
+        "description": "unmodifiableList"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 60,
+        "description": "testConvert_Nulls"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 60,
+        "description": "of"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 73,
+        "description": "of"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 73,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 75,
+        "description": "org.apache.tamaya.TypeLiteral"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 52,
+        "description": "TypeLiteral"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 52,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/TypeLiteral.java",
+        "line_number": 53,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 60,
+        "description": "org.apache.tamaya.spi.ConversionContext$Builder"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 191,
+        "description": "ConversionContext$Builder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 191,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 209,
+        "description": "ConversionContext$Builder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 209,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 178,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 184,
+        "description": "java.util.LinkedHashSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 212,
+        "description": "requireNonNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 60,
+        "description": "build"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 295,
+        "description": "build"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 295,
+        "description": "org.apache.tamaya.spi.ConversionContext"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 46,
+        "description": "ConversionContext"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 46,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 40,
+        "description": "java.util.LinkedHashSet"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 47,
+        "description": "access$000"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$000"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 48,
+        "description": "access$100"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$100"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 49,
+        "description": "access$200"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$200"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 50,
+        "description": "access$300"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$300"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 50,
+        "description": "addAll"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 51,
+        "description": "access$400"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$400"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 52,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 53,
+        "description": "access$500"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 170,
+        "description": "access$500"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 53,
+        "description": "addAll"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 54,
+        "description": "unmodifiableList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/test/java/org/apache/tamaya/spisupport/EnumConverterTest.java",
+        "line_number": 61,
+        "description": "convert"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 56,
+        "description": "convert"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 56,
+        "description": "getClass"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 56,
+        "description": "addSupportedFormats"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 128,
+        "description": "addSupportedFormats"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 130,
+        "description": "java.lang.StringBuilder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 130,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 130,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 130,
+        "description": "getSimpleName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 130,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 130,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 130,
+        "description": "toString"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/api/src/main/java/org/apache/tamaya/spi/ConversionContext.java",
+        "line_number": 130,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 58,
+        "description": "invoke"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 60,
+        "description": "java.lang.StringBuilder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 60,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 60,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 60,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 60,
+        "description": "getName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 60,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 60,
+        "description": "toString"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 60,
+        "description": "log"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+        "line_number": 63,
+        "description": "toUpperCase"
+    }
+]

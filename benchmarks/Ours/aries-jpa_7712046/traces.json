@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+        "line": 39,
+        "method_name": "parseClass"
+    },
+    {
+        "filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+        "line": 33,
+        "method_name": "getJpaAnnotatedMembers"
+    },
+    {
+        "filepath": "jpa-blueprint/src/test/java/org/apache/aries/jpa/blueprint/impl/AnnotationScannerTest.java",
+        "line": 96,
+        "method_name": "getFactoryTest"
+    }
+]

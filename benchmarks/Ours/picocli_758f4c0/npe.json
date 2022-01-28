@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/picocli/CommandLine.java",
+    "line": 1024,
+    "sink_field": "index",
+    "npe_class": "CommandLine$Range",
+    "npe_method": "parameterIndex",
+    "jvmti_identify_succeed": true,
+    "deref_field": "getAnnotation",
+    "nullpointer": "field.getAnnotation(Parameters.class)"
+}

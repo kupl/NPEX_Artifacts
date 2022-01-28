@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "log4j-core/src/test/java/org/apache/logging/log4j/core/config/CompositeConfigurationTest.java",
+        "line": 186,
+        "method_name": "runTest"
+    },
+    {
+        "filepath": "log4j-core/src/test/java/org/apache/logging/log4j/core/config/CompositeConfigurationTest.java",
+        "line": 130,
+        "method_name": "testAttributeCheckWhenMergingConfigurations"
+    },
+    {
+        "filepath": "log4j-core/src/test/java/org/apache/logging/log4j/core/config/CompositeConfigurationTest.java",
+        "line": 184,
+        "method_name": "runTest"
+    },
+    {
+        "filepath": "log4j-core/src/test/java/org/apache/logging/log4j/core/config/CompositeConfigurationTest.java",
+        "line": 130,
+        "method_name": "testAttributeCheckWhenMergingConfigurations"
+    }
+]

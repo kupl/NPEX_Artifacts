@@ -1,0 +1,20 @@
+{
+    "repo": "xmlgraphics-fop",
+    "commit_id": "991b446",
+    "commit_url": "https://github.com/apache/xmlgraphics-fop/commit/991b446034726979e931c3033ace13344b153a30",
+    "parent_url": "https://github.com/apache/xmlgraphics-fop/commit/10e0d1c238b40735c51c1bf841fe7bf4f6418dda",
+    "date": "2017-09-26",
+    "changed_files": [
+        "fop-core/src/main/java/org/apache/fop/fonts/type1/Type1FontLoader.java",
+        "fop-core/src/test/java/org/apache/fop/fonts/type1/Type1FontLoaderTestCase.java"
+    ],
+    "patch_files": [
+        "fop-core/src/main/java/org/apache/fop/fonts/type1/Type1FontLoader.java"
+    ],
+    "test_files": [
+        "fop-core/src/test/java/org/apache/fop/fonts/type1/Type1FontLoaderTestCase.java"
+    ],
+    "size": 210395,
+    "is_maven": true,
+    "is_java": true
+}

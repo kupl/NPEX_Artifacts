@@ -1,0 +1,20 @@
+{
+    "repo": "johnzon",
+    "commit_id": "8b5c87d",
+    "commit_url": "https://github.com/apache/johnzon/commit/8b5c87d5caa942c0facfa1b62b8376fca869cf45",
+    "parent_url": "https://github.com/apache/johnzon/commit/847a4268fb95cb239e54fd955175ece800126945",
+    "date": "2018-08-30",
+    "changed_files": [
+        "johnzon-jsonb/src/test/java/org/apache/johnzon/jsonb/SerializerTest.java",
+        "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java"
+    ],
+    "patch_files": [
+        "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java"
+    ],
+    "test_files": [
+        "johnzon-jsonb/src/test/java/org/apache/johnzon/jsonb/SerializerTest.java"
+    ],
+    "size": 29365,
+    "is_maven": true,
+    "is_java": true
+}

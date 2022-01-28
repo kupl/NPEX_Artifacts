@@ -1,0 +1,10 @@
+{
+    "filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+    "line": 64,
+    "sink_field": "getBytes",
+    "npe_class": "PDActionURI",
+    "npe_method": "getURI",
+    "jvmti_identify_succeed": true,
+    "deref_field": "getDictionaryObject",
+    "nullpointer": "action.getDictionaryObject(COSName.URI))"
+}

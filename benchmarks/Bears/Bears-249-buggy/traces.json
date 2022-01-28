@@ -1,0 +1,47 @@
+[
+    {
+        "filepath": "src/main/java/org/imdea/vcd/queue/clock/Clock.java",
+        "line": 24,
+        "method_name": "<init>"
+    },
+    {
+        "filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+        "line": 38,
+        "method_name": "<init>"
+    },
+    {
+        "filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+        "line": 119,
+        "method_name": "clone"
+    },
+    {
+        "filepath": "src/main/java/org/imdea/vcd/queue/QueueAddArgs.java",
+        "line": 22,
+        "method_name": "<init>"
+    },
+    {
+        "filepath": "src/main/java/org/imdea/vcd/queue/QueueAddArgs.java",
+        "line": 62,
+        "method_name": "clone"
+    },
+    {
+        "filepath": "src/test/java/org/imdea/vcd/queue/ConfQueueTest.java",
+        "line": 355,
+        "method_name": "checkTermination"
+    },
+    {
+        "filepath": "src/test/java/org/imdea/vcd/queue/ConfQueueTest.java",
+        "line": 349,
+        "method_name": "checkTermination"
+    },
+    {
+        "filepath": "src/test/java/org/imdea/vcd/queue/ConfQueueTest.java",
+        "line": 333,
+        "method_name": "checkTerminationRandomShuffles"
+    },
+    {
+        "filepath": "src/test/java/org/imdea/vcd/queue/ConfQueueTest.java",
+        "line": 240,
+        "method_name": "testAdd4"
+    }
+]

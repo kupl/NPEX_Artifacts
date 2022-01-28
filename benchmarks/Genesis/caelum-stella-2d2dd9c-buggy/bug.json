@@ -1,0 +1,342 @@
+{
+    "bug_id": "caelum-stella-2d2dd9c-buggy",
+    "repository_info": null,
+    "build_info": {
+        "compiled": true,
+        "build_command": "mvn clean test-compile -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true",
+        "java_version": 8,
+        "error_message": null,
+        "time": 7.009757230058312
+    },
+    "test_info": {
+        "test_command": "mvn clean test -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Dtest=br.com.caelum.stella.faces.validation.StellaCNPJValidatorTest#shouldNotThrowNullPointerExceptionWhenCNPJIsNull",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "br.com.caelum.stella.faces.validation.StellaCNPJValidatorTest",
+                "method": "shouldNotThrowNullPointerExceptionWhenCNPJIsNull",
+                "exn_type": "java.lang.AssertionError",
+                "stack_trace": "java.lang.AssertionError: shouldn't throw exception for null cnpj\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat br.com.caelum.stella.faces.validation.StellaCNPJValidatorTest.shouldNotThrowNullPointerExceptionWhenCNPJIsNull(StellaCNPJValidatorTest.java:92)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)\n\tat org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)\n\tat org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)\n\tat org.apache.maven.surefire.Surefire.run(Surefire.java:177)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:338)\n\tat org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:997)\n"
+            }
+        ]
+    },
+    "npe_info": [
+        {
+            "filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "line": 57,
+            "deref_field": "value",
+            "npe_class": "StellaCNPJValidator",
+            "npe_method": "validate",
+            "sink_field": null,
+            "jvmti_identify_succeed": null,
+            "is_original": true
+        }
+    ],
+    "patch_results": [
+        {
+            "patch_id": "ReplacePointerVar_57-57_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_1",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerObject_57-57_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerObject_57-57_1",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_57-57_5",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerVar_57-57_5",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_12",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_12",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_57-57_6",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerVar_57-57_6",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_5",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_5",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_9",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_9",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_13",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_13",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_3",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_3",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_57-57_7",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerVar_57-57_7",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_18",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_18",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_10",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_10",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_57-57_10",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerVar_57-57_10",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_57-57_2",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerVar_57-57_2",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_22",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_22",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_21",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_21",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "SkipReturn_57-51_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/SkipReturn_57-51_1",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_57-57_4",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerVar_57-57_4",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_8",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_8",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerObject_57-57_2",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerObject_57-57_2",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_57-57_3",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerVar_57-57_3",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_4",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_4",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "SkipSinkStatement_57-57_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/SkipSinkStatement_57-57_1",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_19",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_19",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_6",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_6",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_16",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_16",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_11",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_11",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_2",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_2",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_57-57_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerVar_57-57_1",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_7",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_7",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_20",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_20",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerObject_57-57_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerObject_57-57_1",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_14",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_14",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_57-57_9",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerVar_57-57_9",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_15",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_15",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_57-57_17",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/ReplacePointerVar_57-57_17",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "InitPointerVar_57-57_8",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/InitPointerVar_57-57_8",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "SkipBlock_56-56_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/caelum-stella-2d2dd9c-buggy/patches/SkipBlock_56-56_1",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        }
+    ]
+}

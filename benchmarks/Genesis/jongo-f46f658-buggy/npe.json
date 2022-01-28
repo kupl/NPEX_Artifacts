@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+    "line": 87,
+    "deref_field": "getField",
+    "sink_field": "getRawType",
+    "npe_class": "JacksonObjectIdUpdater",
+    "npe_method": "isObjectId",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "property.getField()"
+}

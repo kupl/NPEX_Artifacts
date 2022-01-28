@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+        "line": 62,
+        "method_name": "getAnnotation"
+    },
+    {
+        "filepath": "core/src/test/java/org/apache/shiro/aop/AnnotationResolverTest.java",
+        "line": 71,
+        "method_name": "testNullMethodInvocation"
+    }
+]

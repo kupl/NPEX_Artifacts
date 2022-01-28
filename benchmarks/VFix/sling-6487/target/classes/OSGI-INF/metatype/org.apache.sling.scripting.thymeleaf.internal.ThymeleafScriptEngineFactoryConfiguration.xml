@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/org.apache.sling.scripting.thymeleaf.internal.ThymeleafScriptEngineFactoryConfiguration">
+  <OCD id="org.apache.sling.scripting.thymeleaf.internal.ThymeleafScriptEngineFactoryConfiguration" name="Apache Sling Scripting Thymeleaf “ScriptEngineFactory”" description="Script engine factory for Thymeleaf's template engine.">
+    <AD id="service.ranking" type="Integer" name="service ranking" description="Service property for identifying the service's ranking number." default="0"/>
+    <AD id="extensions" type="String" cardinality="2147483647" name="extensions" description="The extensions this script engine is registered for." default="html"/>
+    <AD id="mimeTypes" type="String" cardinality="2147483647" name="mime types" description="The MIME (content) types this script engine is registered for." default="text/html"/>
+    <AD id="names" type="String" cardinality="2147483647" name="names" description="The names under which this script engine is registered." default="Thymeleaf,thymeleaf"/>
+    <AD id="useStandardMessageResolver" type="Boolean" name="use standard message resolver" description="Enables Thymeleaf's standard message resolver and uses it also." default="true"/>
+    <AD id="useStandardLinkBuilder" type="Boolean" name="use standard link builder" description="Enables Thymeleaf's standard link builder and uses it also." default="true"/>
+    <AD id="useStandardDialect" type="Boolean" name="use standard dialect" description="Enables Thymeleaf's standard dialect and uses it also." default="true"/>
+    <AD id="useStandardDecoupledTemplateLogicResolver" type="Boolean" name="use standard decoupled template logic resolver" description="Enables Thymeleaf's standard decoupled template logic resolver and uses it exclusively." default="true"/>
+    <AD id="useStandardCacheManager" type="Boolean" name="use standard cache manager" description="Enables Thymeleaf's standard cache manager and uses it exclusively." default="true"/>
+    <AD id="useStandardEngineContextFactory" type="Boolean" name="use standard engine context factory" description="Enables Thymeleaf's standard engine context factory and uses it exclusively." default="true"/>
+  </OCD>
+  <Designate pid="org.apache.sling.scripting.thymeleaf.internal.ThymeleafScriptEngineFactory">
+    <Object ocdref="org.apache.sling.scripting.thymeleaf.internal.ThymeleafScriptEngineFactoryConfiguration"/>
+  </Designate>
+</metatype:MetaData>

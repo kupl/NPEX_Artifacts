@@ -1,0 +1,8 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.jfree.chart.axis.Axis.drawLabel(Axis.java:1192)
+	at org.jfree.chart.axis.NumberAxis.draw(NumberAxis.java:680)
+	at org.jfree.chart.plot.CategoryPlot.drawAxes(CategoryPlot.java:2711)
+	at org.jfree.chart.plot.CategoryPlot.draw(CategoryPlot.java:2571)
+	at org.jfree.chart.JFreeChart.draw(JFreeChart.java:1213)
+	at Main.testDrawWithNullInfo(Main.java:24)
+	at Main.main(Main.java:15)

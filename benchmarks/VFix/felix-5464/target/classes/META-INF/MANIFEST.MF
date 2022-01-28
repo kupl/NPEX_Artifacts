@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: Descriptor Generator Implementation
+Implementation-Version: 1.18.1-SNAPSHOT
+Built-By: xuezheng
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Descriptor Generator Implementation
+Implementation-Vendor-Id: org.apache.felix
+Build-Jdk: 1.8.0_191
+Specification-Version: 1.18.1-SNAPSHOT
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: The Apache Software Foundation
+

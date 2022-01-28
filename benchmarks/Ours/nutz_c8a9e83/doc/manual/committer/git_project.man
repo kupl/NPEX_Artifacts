@@ -1,0 +1,69 @@
+#title:从 Git 编译源码
+#author: zozoh(zozohtnt@gmail.com)
+#index:0,1
+-------------------------------------------------------------------------------------------------------
+我们转移到了 Github
+
+    现在 (Nutz-1.b.38) 之后的版本，源码的即时更新都会在 [https://github.com/nutzam/nutz Github] 上进行。当然，我们
+    也会在其他平台上比如 [https://git.oschina.net/nutz/nutz Git@OSC] 也有托管，但是，我们还是得说，
+    {#008800;* Nutz 最鲜活的更新}，只有从 [https://github.com/nutzam/nutz Github] 上才能看的到哦。
+
+    如何使用 Git，什么是 Git ?
+
+    如果你问出上面的问题，建议你 Google 一下，基本上各种介绍满天飞，如果你想尝试装个玩玩，我觉得
+    [http://www.scmlife.com/thread-23938-1-1.html 这篇文章] 还不错。
+
+    如果你已经是 Github 的用户（是的，为什么不是呢？）请把眼睛凑近屏幕一些，再近一些，再近一些，我必须
+    告诉你：
+
+    {#008800;* 喜欢 Nutz ，就 Fork 它 ^_^}
+
+    然后把你认为得意的修改给我们发个 pull request，我们很乐意看到你的杰作
+
+    当然，我个人认为 Github 的界面貌似华丽，但是很多细节设计的很脑残，但是只要你是它的用户，只要你稍微有点耐心，
+    其实它比 Google Code 要好玩的多
+
+-------------------------------------------------------------------------------------------------------
+从 Github 获取Nutz
+
+    简单的要命，执行下面的命令（前提是你装了 Git）
+    {{{
+    cd xx/xxx/xx/xx    <- 意思是，到你打算放 Nutz 的那个目录
+    git clone https://github.com/nutzam/nutz.git --depth=1 --branch=master
+    }}}
+    稍微等个1分钟不到，因为 github 线路问题，有点慢，原因你懂的 ...
+
+    屏幕上开始显示...
+    {{{
+    Cloning into nutz...
+    remote: Counting objects: 26249, done.
+    remote: Compressing objects: 100% (6919/6919), done.
+    Receiving objects:  38% (10050/26249), 8.46 MiB | 306 KiB/s
+    }}}
+    耐心等待，直到 ...
+    {{{
+    Cloning into nutz...
+    remote: Counting objects: 26249, done.
+    remote: Compressing objects: 100% (6919/6919), done.
+    remote: Total 26249 (delta 16407), reused 26160 (delta 16319)
+    Receiving objects: 100% (26249/26249), 28.10 MiB | 275 KiB/s, done.
+    Resolving deltas: 100% (16407/16407), done.
+    }}}
+    恭喜你，你拿到了 Nutz 最新的代码。
+
+    PS：强烈建议第一次通过Git取得代码之后，运行`git gc`命令以减小磁盘占用空间
+    {{{
+    cd nutz
+    git gc
+    }}}
+
+    而且，Git 一个好处就是，每个目录下都没有万恶的 `.svn` 目录，只是在项目的根目录
+    下有个 `.git` 目录。这让我觉得整个世界清爽了许多 ^_^
+
+
+-------------------------------------------------------------------------------------------------------
+编译 Nutz
+
+    [compile_with_maven.man 运行 JUnit 测试 - Maven]
+
+    [compile.man  运行 JUnit 测试 - Eclipse]

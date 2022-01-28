@@ -1,0 +1,24 @@
+{
+    "repo": "commons-bcel",
+    "commit_id": "1faf7d9",
+    "commit_url": "https://github.com/apache/commons-bcel/commit/1faf7d9f684f8d12cd87ffa641c472cc5ade610a",
+    "parent_url": "https://github.com/apache/commons-bcel/commit/a46d927b12b150ade07b85ade3d42dfd907c9d97",
+    "date": "2020-04-14",
+    "changed_files": [
+        "pom.xml",
+        "src/changes/changes.xml",
+        "src/main/java/org/apache/bcel/generic/MethodGen.java",
+        "src/test/java/org/apache/bcel/generic/EmptyStaticInit.java",
+        "src/test/java/org/apache/bcel/generic/MethodGenTestCase.java"
+    ],
+    "patch_files": [
+        "src/main/java/org/apache/bcel/generic/MethodGen.java"
+    ],
+    "test_files": [
+        "src/test/java/org/apache/bcel/generic/EmptyStaticInit.java",
+        "src/test/java/org/apache/bcel/generic/MethodGenTestCase.java"
+    ],
+    "size": 41239,
+    "is_maven": true,
+    "is_java": true
+}

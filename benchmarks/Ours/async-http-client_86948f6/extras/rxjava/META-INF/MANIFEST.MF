@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1618210044531
+Build-Jdk: 1.8.0_275
+Built-By: anon
+Bundle-Description: The Async Http Client RxJava Extras.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Asynchronous Http Client RxJava Extras
+Bundle-SymbolicName: org.asynchttpclient.async-http-client-extras-rxjava
+Bundle-Vendor: Sonatype
+Bundle-Version: 2.0.0.RC1120210412-0647
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.asynchttpclient.extras.rxjava;uses:="org.asynchttpcl
+ ient,rx,rx.functions";version="2.0.0.RC1120210412-0647"
+Import-Package: org.asynchttpclient,rx;version="[1.0,2)",rx.functions;ve
+ rsion="[1.0,2)",rx.subjects;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-2.4.1.201501161923

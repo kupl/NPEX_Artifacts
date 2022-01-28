@@ -1,0 +1,10 @@
+{
+    "filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+    "line": 107,
+    "sink_field": "schedule",
+    "npe_class": "ConfigurationScheduler",
+    "npe_method": "schedule",
+    "jvmti_identify_succeed": true,
+    "deref_field": "executorService",
+    "nullpointer": "executorService"
+}

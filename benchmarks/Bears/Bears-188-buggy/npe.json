@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+    "line": 103,
+    "deref_field": "g",
+    "sink_field": "setColor",
+    "npe_class": "Dashboard",
+    "npe_method": "paintComponent",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "g"
+}

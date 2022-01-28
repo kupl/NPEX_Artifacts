@@ -1,0 +1,10 @@
+{
+    "filepath": "jest-common/src/main/java/io/searchbox/client/config/discovery/NodeChecker.java",
+    "line": 114,
+    "sink_field": "remove",
+    "npe_class": "NodeChecker",
+    "npe_method": "removeNodeAndUpdateServers",
+    "jvmti_identify_succeed": true,
+    "deref_field": "discoveredServerList",
+    "nullpointer": "discoveredServerList"
+}

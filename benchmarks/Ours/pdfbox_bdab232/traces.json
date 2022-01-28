@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+        "line": 64,
+        "method_name": "getURI"
+    },
+    {
+        "filepath": "pdfbox/src/test/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURITest.java",
+        "line": 35,
+        "method_name": "testUTF8URI"
+    }
+]

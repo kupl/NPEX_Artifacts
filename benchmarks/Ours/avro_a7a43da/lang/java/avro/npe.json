@@ -1,0 +1,8 @@
+{
+	"filepath": "src/main/java/org/apache/avro/Schema.java",
+	"line": 1228,
+	"sink_field": "isTextual",
+	"npe_class": "Schema",
+	"npe_method": "parse",
+	"jvmti_identify_succeed": true
+}

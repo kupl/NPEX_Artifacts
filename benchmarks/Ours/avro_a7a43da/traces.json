@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "lang/java/ipc/src/test/java/org/apache/avro/TestSchema.java",
+        "line": 88,
+        "method_name": "testParseEmptySchema"
+    }
+]

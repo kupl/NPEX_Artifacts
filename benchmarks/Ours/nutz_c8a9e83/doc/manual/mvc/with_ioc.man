@@ -1,0 +1,35 @@
+#title: 同 Ioc 容器一起工作
+#index:0,1
+#author: zozoh(zozohtnt@gmail.com)
+#author: wendal(wendal1985@gmail.com)
+-----------------------------------------------------------------------------------------------------------------------
+内置的 Ioc 容器
+	
+	一个 Mvc 框架可以通过 Ioc 接口同一个 Ioc 容器挂接，挂接的方法很简单： 在主模块上声明 @IocBy
+	{{{<JAVA>
+	@IocBy(args={"*js", "ioc/",
+				 "*anno", "net.wendal.nutzbook",
+				 "*async",
+				 "*tx"
+				 })
+	public class MainModule {
+		...
+	}}}
+	
+	推荐使用ComboIocProvider,组合使用各种IocLoader. 详细用法请参考[../ioc/loader_combo.man Ioc复合加载器]
+	
+	IocBy的默认type就是ComboIocProvider,可以不写.
+
+-----------------------------------------------------------------------------------------------------------------------
+由 Ioc 容器管理子模块
+	
+	通过 @IocBy 为整个应用声明了 Ioc 容器，那么如何使用呢。 实际上，你的每一个模块都可以来自容器，只要
+	你在模块上声明 @Inject。 当然，在主模块声明这个注解是没有意义的。
+
+	{{{<JAVA>
+	@IocBean("petM")
+	public class PetModule {
+	   ...
+	}}}
+
+	 * 如果你声明了这个注解， Nutz.Mvc 构造你的这个模块的时候，会通过 Ioc 容器获取，而不直接调用默认构造函数了

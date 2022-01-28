@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1618210043782
+Build-Jdk: 1.8.0_275
+Built-By: anon
+Bundle-Description: The Async Http Client jDeffered Extras.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Asynchronous Http Client JDeferred Extras
+Bundle-SymbolicName: org.asynchttpclient.async-http-client-extras-jdefer
+ red
+Bundle-Vendor: Sonatype
+Bundle-Version: 2.0.0.RC1120210412-0647
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.asynchttpclient.extras.jdeferred;uses:="org.asynchtt
+ pclient,org.jdeferred,org.jdeferred.impl";version="2.0.0.RC1120210412-0
+ 647"
+Import-Package: org.asynchttpclient,org.jdeferred;version="[1.2,2)",org.
+ jdeferred.impl;version="[1.2,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-2.4.1.201501161923

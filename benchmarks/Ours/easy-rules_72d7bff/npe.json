@@ -1,0 +1,10 @@
+{
+	"filepath": "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java",
+	"line": 59,
+	"sink_field": "intValue",
+	"npe_class": "MVELRuleDefinitionReader",
+	"npe_method": "createRuleDefinitionFrom",
+	"jvmti_identify_succeed": true,
+  "deref_field": "get",
+  "nullpointer": "map.get(\"priority\")"
+}

@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.commons.lang3.LocaleUtils.isAvailableLocale(LocaleUtils.java:250)
+	at Main.setUp(Main.java:14)
+	at Main.main(Main.java:9)

@@ -1,0 +1,22 @@
+{
+    "repo": "shardingsphere",
+    "commit_id": "e46f68d",
+    "commit_url": "https://github.com/apache/shardingsphere/commit/e46f68d9d0af842de3db99839a1bc9b474f9a51f",
+    "parent_url": "https://github.com/apache/shardingsphere/commit/9833fb9ab61439966bdfc00493d8da444e418ad3",
+    "date": "2020-11-26",
+    "changed_files": [
+        "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+        "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/test/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapperTest.java",
+        "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/test/resources/yaml/schema-without-table.yaml"
+    ],
+    "patch_files": [
+        "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java"
+    ],
+    "test_files": [
+        "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/test/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapperTest.java",
+        "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/test/resources/yaml/schema-without-table.yaml"
+    ],
+    "size": 130430,
+    "is_maven": true,
+    "is_java": true
+}

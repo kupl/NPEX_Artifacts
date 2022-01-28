@@ -1,0 +1,875 @@
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.apache.hivemall</groupId>
+	<artifactId>hivemall</artifactId>
+	<version>0.6.2-incubating-SNAPSHOT</version>
+
+	<parent>
+		<groupId>org.apache</groupId>
+		<artifactId>apache</artifactId>
+		<version>21</version>
+	</parent>
+
+	<name>Apache Hivemall</name>
+	<description>Scalable Machine Learning Library for Apache Hive, Apache Spark, and Apache Pig</description>
+	<url>http://hivemall.incubator.apache.org/</url>
+	<inceptionYear>2013</inceptionYear>
+	<organization>
+		<name>Apache Hivemall</name>
+		<url>http://hivemall.incubator.apache.org/</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>https://gitbox.apache.org/repos/asf/incubator-hivemall.git</url>
+		<connection>scm:git:https://gitbox.apache.org/repos/asf/incubator-hivemall.git</connection>
+		<developerConnection>scm:git:https://gitbox.apache.org/repos/asf/incubator-hivemall.git</developerConnection>
+		<tag>v0.5.2</tag>
+	</scm>
+
+	<mailingLists>
+		<mailingList>
+			<name>user</name>
+			<post>user@hivemall.incubator.apache.org</post>
+			<subscribe>user-subscribe@hivemall.incubator.apache.org</subscribe>
+			<unsubscribe>user-unsubscribe@hivemall.incubator.apache.org</unsubscribe>
+			<archive>https://lists.apache.org/list.html?user@hivemall.apache.org</archive>
+			<otherArchives>
+				<otherArchive>http://markmail.org/search/?q=list%3Aorg.apache.hivemall.user</otherArchive>
+			</otherArchives>
+		</mailingList>
+		<mailingList>
+			<name>dev</name>
+			<post>dev@hivemall.incubator.apache.org</post>
+			<subscribe>dev-subscribe@hivemall.incubator.apache.org</subscribe>
+			<unsubscribe>dev-unsubscribe@hivemall.incubator.apache.org</unsubscribe>
+			<archive>https://lists.apache.org/list.html?dev@hivemall.apache.org</archive>
+			<otherArchives>
+				<otherArchive>http://markmail.org/search/?q=list%3Aorg.apache.hivemall.dev</otherArchive>
+			</otherArchives>
+		</mailingList>
+		<mailingList>
+			<name>commits</name>
+			<post>commits@hivemall.incubator.apache.org</post>
+			<subscribe>commits-subscribe@hivemall.incubator.apache.org</subscribe>
+			<unsubscribe>commits-unsubscribe@hivemall.incubator.apache.org</unsubscribe>
+			<archive>https://lists.apache.org/list.html?commits@hivemall.apache.org</archive>
+			<otherArchives>
+				<otherArchive>http://markmail.org/search/?q=list%3Aorg.apache.hivemall.commits</otherArchive>
+			</otherArchives>
+		</mailingList>
+		<mailingList>
+			<name>issues</name>
+			<post>issues@hivemall.incubator.apache.org</post>
+			<subscribe>issues-subscribe@hivemall.incubator.apache.org</subscribe>
+			<unsubscribe>issues-unsubscribe@hivemall.incubator.apache.org</unsubscribe>
+			<archive>https://lists.apache.org/list.html?issues@hivemall.apache.org</archive>
+			<otherArchives>
+				<otherArchive>http://markmail.org/search/?q=list%3Aorg.apache.hivemall.issues</otherArchive>
+			</otherArchives>
+		</mailingList>
+	</mailingLists>
+
+	<developers>
+		<!-- Initial Committers -->
+		<developer>
+			<id>myui</id>
+			<name>Makoto Yui</name>
+			<email>myui[at]apache.org</email>
+			<url>http://myui.github.io/</url>
+			<organization>Treasure Data, Inc.</organization>
+			<organizationUrl>https://www.treasuredata.com/</organizationUrl>
+			<roles>
+				<role>PPMC Member</role>
+			</roles>
+			<timezone>+9</timezone>
+		</developer>
+		<developer>
+			<id>maropu</id>
+			<name>Takashi Yamamuro</name>
+			<email>yamamuro[at]apache.org</email>
+			<url>https://github.com/maropu/</url>
+			<organization>Nippon Telegraph and Telephone Corporation (NTT)</organization>
+			<organizationUrl>http://www.ntt.co.jp/</organizationUrl>
+			<roles>
+				<role>PPMC Member</role>
+			</roles>
+			<timezone>+9</timezone>
+		</developer>
+		<developer>
+			<id>daijy</id>
+			<name>Daniel Dai</name>
+			<email>daijy[at]apache.org</email>
+			<url>http://people.apache.org/~daijy/</url>
+			<organization>Hortonworks Inc.</organization>
+			<organizationUrl>http://hortonworks.com/</organizationUrl>
+			<roles>
+				<role>PPMC Member</role>
+				<role>Mentor</role>
+			</roles>
+			<timezone>-8</timezone>
+		</developer>
+		<developer>
+			<id>lewuathe</id>
+			<name>Kai Sasaki</name>
+			<email>lewuathe[at]apache.org</email>
+			<url>http://www.lewuathe.com/</url>
+			<organization>Treasure Data, Inc.</organization>
+			<organizationUrl>https://www.treasuredata.com/</organizationUrl>
+			<roles>
+				<role>PPMC Member</role>
+			</roles>
+			<timezone>+9</timezone>
+		</developer>
+		<developer>
+			<id>ozawa</id>
+			<name>Tsuyoshi Ozawa</name>
+			<email>ozawa[at]apache.org</email>
+			<url>https://people.apache.org/~ozawa/</url>
+			<organization />
+			<organizationUrl />
+			<roles>
+				<role>PPMC Member</role>
+			</roles>
+			<timezone>+9</timezone>
+		</developer>
+		<developer>
+			<id>takuti</id>
+			<name>Takuya Kitazawa</name>
+			<email>takuti[at]apache.org</email>
+			<url>https://github.com/takuti</url>
+			<organization>Treasure Data, Inc.</organization>
+			<organizationUrl>https://www.treasuredata.com/</organizationUrl>
+			<roles>
+				<role>PPMC Member</role>
+			</roles>
+			<timezone>+9</timezone>
+		</developer>
+		<developer>
+			<id>ri</id>
+			<name>Ryu-ichi Ito</name>
+			<email>ri[at]apache.org</email>
+			<url>https://github.com/amaya382</url>
+			<organization>Osaka University</organization>
+			<organizationUrl>http://www.osaka-u.ac.jp/</organizationUrl>
+			<roles>
+				<role>Committer</role>
+			</roles>
+			<timezone>+9</timezone>
+		</developer>
+		<developer>
+			<id>nzw</id>
+			<name>Kento Nozawa</name>
+			<email>nzw[at]apache.org</email>
+			<url>http://nzw0301.github.io/</url>
+			<organization>The University of Tokyo</organization>
+			<organizationUrl>https://www.u-tokyo.ac.jp/</organizationUrl>
+			<roles>
+				<role>Committer</role>
+			</roles>
+			<timezone>+9</timezone>
+		</developer>
+		<developer>
+			<id>jbanks</id>
+			<name>Jerome Banks</name>
+			<email>jbanks[at]apache.org</email>
+			<url>https://github.com/jeromebanks/</url>
+			<organization>Jumpshot Inc.</organization>
+			<organizationUrl>https://www.jumpshot.com/</organizationUrl>
+			<roles>
+				<role>Committer</role>
+			</roles>
+			<timezone>-8</timezone>
+		</developer>
+		<!-- Project mentors -->
+		<developer>
+			<id>rvs</id>
+			<name>Roman Shaposhnik</name>
+			<email>rvs[at]apache.org</email>
+			<url>http://github.com/rvs</url>
+			<organization>ZEDEDA Inc.</organization>
+			<organizationUrl>https://www.zededa.com/</organizationUrl>
+			<roles>
+				<role>Champion</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>meng</id>
+			<name>Xiangrui Meng</name>
+			<email>meng[at]databricks.com</email>
+			<url>https://github.com/mengxr</url>
+			<organization>Databricks Inc.</organization>
+			<organizationUrl>https://databricks.com/</organizationUrl>
+			<roles>
+				<role>Mentor</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>koji</id>
+			<name>Koji Sekiguchi</name>
+			<email>koji[at]apache.org</email>
+			<url>https://www.linkedin.com/in/koji-sekiguchi-75010350/</url>
+			<organization>RONDHUIT Co, Ltd.</organization>
+			<organizationUrl>https://www.rondhuit.com/</organizationUrl>
+			<roles>
+				<role>Mentor</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>core</module>
+		<module>nlp</module>
+		<module>xgboost</module>
+		<module>mixserv</module>
+		<module>dist</module>
+		<module>tools</module>
+	</modules>
+
+	<properties>
+		<main.basedir>${project.basedir}</main.basedir>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.build.timestamp.format>yyyy</maven.build.timestamp.format>
+		<build.year>${maven.build.timestamp}</build.year>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<protobuf.version>2.5.0</protobuf.version>
+		<protoc.path>${env.PROTOC_PATH}</protoc.path>
+		<hadoop.version>2.4.0</hadoop.version>
+		<hive.version>0.13.0</hive.version>
+		<guava.version>11.0.2</guava.version>
+		<junit.version>4.12</junit.version>
+		<dependency.locations.enabled>false</dependency.locations.enabled>
+		<maven-enforcer.requireMavenVersion>[3.3.1,)</maven-enforcer.requireMavenVersion>
+		<surefire.version>2.19.1</surefire.version>
+		<netty.version>4.1.42.Final</netty.version>
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>apache.releases.https</id>
+			<name>Apache Release Distribution Repository</name>
+			<url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+		</repository>
+		<snapshotRepository>
+			<id>apache.snapshots.https</id>
+			<name>Apache Development Snapshot Repository</name>
+			<url>https://repository.apache.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<!--
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		-->
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>apache.snapshots</id>
+			<name>Apache Snapshot Repository</name>
+			<url>https://repository.apache.org/snapshots</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+		<repository>
+			<id>jcenter</id>
+			<url>https://jcenter.bintray.com/</url>
+		</repository>
+	</repositories>
+
+	<issueManagement>
+		<url>https://issues.apache.org/jira/browse/HIVEMALL/</url>
+		<system>JIRA</system>
+	</issueManagement>
+	<ciManagement>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/apache/incubator-hivemall</url>
+	</ciManagement>
+
+	<profiles>
+		<profile>
+			<id>doclint-java8-disable</id>
+			<activation>
+				<jdk>[1.8,)</jdk>
+			</activation>
+			<properties>
+				<javadoc.opts>-Xdoclint:none</javadoc.opts>
+			</properties>
+		</profile>
+	</profiles>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- provided scope -->
+			<dependency>
+				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-common</artifactId>
+				<version>${hadoop.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-mapreduce-client-core</artifactId>
+				<version>${hadoop.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.hive</groupId>
+				<artifactId>hive-exec</artifactId>
+				<version>${hive.version}</version>
+				<scope>provided</scope>
+				<exclusions>
+					<exclusion>
+						<artifactId>jetty</artifactId>
+						<groupId>org.mortbay.jetty</groupId>
+					</exclusion>
+					<exclusion>
+						<groupId>javax.jdo</groupId>
+						<artifactId>jdo2-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>asm-parent</groupId>
+						<artifactId>asm-parent</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>asm</groupId>
+						<artifactId>asm</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.hive.hcatalog</groupId>
+				<artifactId>hive-hcatalog-core</artifactId>
+				<version>${hive.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>commons-cli</groupId>
+				<artifactId>commons-cli</artifactId>
+				<version>1.2</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>1.0.4</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.17</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.jdo</groupId>
+				<artifactId>jdo2-api</artifactId>
+				<version>2.3-eb</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- test scope -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-all</artifactId>
+				<version>1.10.19</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>1.10.19</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-module-junit4</artifactId>
+				<version>1.6.3</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-api-mockito</artifactId>
+				<version>1.6.3</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>ci-management</report>
+							<!-- <report>dependencies</report> -->
+							<report>dependency-convergence</report>
+							<report>dependency-info</report>
+							<!-- <report>dependency-management</report> -->
+							<report>distribution-management</report>
+							<report>index</report>
+							<report>issue-management</report>
+							<report>licenses</report>
+							<report>mailing-lists</report>
+							<report>modules</report>
+							<!-- <report>plugin-management</report> -->
+							<report>plugins</report>
+							<report>scm</report>
+							<report>summary</report>
+							<report>team</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<build>
+		<directory>target</directory>
+		<outputDirectory>target/classes</outputDirectory>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+		<testOutputDirectory>target/test-classes</testOutputDirectory>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.0.2</version>
+					<configuration>
+						<finalName>${project.artifactId}-${project.version}</finalName>
+						<outputDirectory>${main.basedir}/target</outputDirectory>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-shade-plugin</artifactId>
+					<version>3.1.0</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>3.0.0-M1</version>
+				</plugin>
+				<!-- mvn spotless:apply -->
+				<plugin>
+					<groupId>com.diffplug.spotless</groupId>
+					<artifactId>spotless-maven-plugin</artifactId>
+					<version>1.0.0.BETA4</version>
+					<configuration>
+						<java>
+							<eclipse>
+								<file>${main.basedir}/resources/eclipse-style.xml</file>
+								<version>4.7.2</version>
+							</eclipse>
+							<encoding>UTF-8</encoding>
+						</java>
+						<encoding>UTF-8</encoding>
+						<lineEndings>UNIX</lineEndings>
+					</configuration>
+				</plugin>
+				<plugin>
+					<!-- mvn license:check; mvn license:format -->
+					<groupId>com.mycila</groupId>
+					<artifactId>license-maven-plugin</artifactId>
+					<version>3.0</version>
+					<configuration>
+						<header>${main.basedir}/resources/license-header.txt</header>
+						<properties>
+							<currentYear>${build.year}</currentYear>
+							<copyrightOwner>${project.organization.name}</copyrightOwner>
+						</properties>
+						<includes>
+							<include>src/main/**/*.java</include>
+							<include>src/test/**/*.java</include>
+							<include>src/main/**/*.scala</include>
+							<include>src/test/**/*.scala</include>
+							<include>bin/*.sh</include>
+							<include>**/pom.xml</include>
+							<include>docs/gitbook/**/*.md</include>
+							<include>src/site/markdown/**/*.md</include>
+						</includes>
+						<useDefaultExcludes>false</useDefaultExcludes>
+						<excludes>
+							<exclude>docs/gitbook/node_modules/**</exclude>
+							<exclude>target/</exclude>
+							<exclude>src/main/java/hivemall/utils/codec/Base91.java</exclude>
+							<exclude>src/main/java/hivemall/utils/math/FastMath.java</exclude>
+							<exclude>src/main/java/hivemall/smile/classification/DecisionTree.java</exclude>
+							<exclude>src/main/java/hivemall/smile/regression/RegressionTree.java</exclude>
+						</excludes>
+						<encoding>UTF-8</encoding>
+						<headerDefinitions>
+							<headerDefinition>${main.basedir}/resources/header-definition.xml</headerDefinition>
+						</headerDefinitions>
+						<mapping>
+							<md>XML_STYLE</md>
+						</mapping>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>check</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<!-- mvn apache-rat:check -->
+				<plugin>
+					<groupId>org.apache.rat</groupId>
+					<artifactId>apache-rat-plugin</artifactId>
+					<version>0.12</version>
+				</plugin>
+				<!-- javadoc.jar -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<configuration>
+						<locale>en_US</locale>
+						<docencoding>UTF-8</docencoding>
+						<show>protected</show>
+						<linksource>true</linksource>
+						<source>7</source>
+					</configuration>
+					<executions>
+						<execution>
+							<id>attach-javadocs</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+							<configuration>
+								<!-- workaround for Java 8 -->
+								<!-- see http://stackoverflow.com/questions/15886209/maven-is-not-working-in-java-8-when-javadoc-tags-are-incomplete -->
+								<additionalparam>${javadoc.opts}</additionalparam>
+								<!-- see https://stackoverflow.com/a/16743137 -->
+								<doclint>none</doclint>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				<!-- Disable git push during mvn release:prepare -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<configuration>
+						<goals>deploy</goals>
+						<pushChanges>false</pushChanges>
+						<localCheckout>true</localCheckout>
+					</configuration>
+				</plugin>
+				<!-- Copy LICENSE/NOTICE/DISCLAIMER to jar -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-remote-resources-plugin</artifactId>
+					<configuration>
+						<skip>true</skip>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<executions>
+						<execution>
+							<id>copy-resources</id>
+							<phase>validate</phase>
+							<goals>
+								<goal>copy-resources</goal>
+							</goals>
+							<configuration>
+								<outputDirectory>${project.basedir}/target/classes/META-INF</outputDirectory>
+								<resources>
+									<resource>
+										<directory>${main.basedir}/</directory>
+										<includes>
+											<include>LICENSE</include>
+											<include>NOTICE</include>
+											<include>DISCLAIMER</include>
+										</includes>
+									</resource>
+								</resources>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>enforce-JAVA_HOME-is-set</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireEnvironmentVariable>
+									<variableName>JAVA_HOME</variableName>
+								</requireEnvironmentVariable>
+								<bannedDependencies>
+									<excludes>
+										<!-- see STORM-3114 -->
+										<exclude>jdk.tools:jdk.tools:*</exclude>
+									</excludes>
+								</bannedDependencies>
+							</rules>
+							<fail>true</fail>
+						</configuration>
+					</execution>
+					<execution>
+						<id>enforce-java-8</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireJavaVersion>
+									<version>[1.8,)</version>
+									<message>
+										Hivemall requires JDK version 1.8 or higher.
+									</message>
+								</requireJavaVersion>
+							</rules>
+						</configuration>
+					</execution>
+					<execution>
+						<id>required-maven-version</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>${maven-enforcer.requireMavenVersion}</version>
+								</requireMavenVersion>
+							</rules>
+						</configuration>
+					</execution>
+					<!-- Check Java class file compatibility to Java 7/8 -->
+					<execution>
+						<id>enforce-bytecode-version</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<enforceBytecodeVersion>
+									<maxJdkVersion>${maven.compiler.target}</maxJdkVersion>
+									<excludes>
+										<exclude>jdk.tools:jdk.tools</exclude>
+										<exclude>org.mindrot:jbcrypt</exclude>
+									</excludes>
+								</enforceBytecodeVersion>
+							</rules>
+							<fail>true</fail>
+						</configuration>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>extra-enforcer-rules</artifactId>
+						<version>1.0-beta-9</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<!-- check Java API compatibility to Java 7 -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>animal-sniffer-maven-plugin</artifactId>
+				<version>1.14</version>
+				<configuration>
+					<signature>
+						<groupId>org.codehaus.mojo.signature</groupId>
+						<artifactId>java17</artifactId>
+						<version>1.0</version>
+					</signature>
+					<ignores>
+						<ignore>sun.misc.Unsafe</ignore>
+					</ignores>
+				</configuration>
+				<executions>
+					<execution>
+						<id>ensure-java-1.7-class-library</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- mvn spotless:apply -->
+			<plugin>
+				<groupId>com.diffplug.spotless</groupId>
+				<artifactId>spotless-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<!-- mvn license:check; mvn license:format -->
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<configuration>
+					<skipTests>${skipTests}</skipTests>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+					<debug>true</debug>
+					<debuglevel>lines,vars,source</debuglevel>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<enableAssertions>true</enableAssertions>
+					<forkCount>1</forkCount>
+					<reuseForks>false</reuseForks>
+					<forkedProcessTimeoutInSeconds>600</forkedProcessTimeoutInSeconds>
+					<argLine>-Xmx1536m -XX:+HeapDumpOnOutOfMemoryError</argLine>
+					<failIfNoTests>false</failIfNoTests>
+					<environmentVariables>
+						<JAVA_HOME>${java.home}</JAVA_HOME>
+						<MALLOC_ARENA_MAX>4</MALLOC_ARENA_MAX>
+					</environmentVariables>
+					<systemPropertyVariables>
+						<java.net.preferIPv4Stack>true</java.net.preferIPv4Stack>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+			<!-- start coveralls -->
+			<plugin>
+				<groupId>org.eluder.coveralls</groupId>
+				<artifactId>coveralls-maven-plugin</artifactId>
+				<version>4.3.0</version>
+				<configuration>
+					<repoToken>UhHBKJx1qjSDccp9RmlRXhXUoRrdAr150</repoToken>
+				</configuration>
+			</plugin>
+			<!-- 
+			  Cobertura does not support Java 8 yet
+			  https://github.com/cobertura/cobertura/issues/166
+			-->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<format>xml</format>
+					<maxmem>256m</maxmem>
+					<aggregate>true</aggregate>
+				</configuration>
+			</plugin>
+			<!--
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.7.6.201602180812</version>
+				<executions>
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			-->
+			<!-- end overalls -->
+			<!-- start mvn site -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.doxia</groupId>
+						<artifactId>doxia-module-markdown</artifactId>
+						<version>1.7</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<!-- end mvn site -->
+			<!-- mvn apache-rat:check -->
+			<plugin>
+				<groupId>org.apache.rat</groupId>
+				<artifactId>apache-rat-plugin</artifactId>
+				<configuration>
+					<excludesFile>.rat-excludes</excludesFile>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<tagNameFormat>v@{project.version}</tagNameFormat>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

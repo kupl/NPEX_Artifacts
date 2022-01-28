@@ -1,0 +1,140 @@
+{
+    "bug_id": "qpid-proton-j_87ec94b",
+    "repository_info": {
+        "repo": "qpid-proton-j",
+        "commit_id": "87ec94b",
+        "commit_url": "https://github.com/apache/qpid-proton-j/commit/87ec94be64cb4f2850fad2de6ed97832308a66c2",
+        "parent_url": "https://github.com/apache/qpid-proton-j/commit/02998b382967b997ac86a6b1ea2d507bfd9a862f",
+        "date": "2020-04-02",
+        "changed_files": [
+            "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "proton-j/src/test/java/org/apache/qpid/proton/codec/ListTypeCodecTest.java",
+            "proton-j/src/test/java/org/apache/qpid/proton/codec/MapTypeCodecTest.java",
+            "proton-j/src/test/java/org/apache/qpid/proton/codec/MyUnknownTestType.java"
+        ],
+        "patch_files": [
+            "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java"
+        ],
+        "test_files": [
+            "proton-j/src/test/java/org/apache/qpid/proton/codec/ListTypeCodecTest.java",
+            "proton-j/src/test/java/org/apache/qpid/proton/codec/MapTypeCodecTest.java",
+            "proton-j/src/test/java/org/apache/qpid/proton/codec/MyUnknownTestType.java"
+        ],
+        "size": 53280,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 8,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -Dtest=ListTypeCodecTest,MapTypeCodecTest,MyUnknownTestType -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeMapWithUnknownEntryValueType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryKeyTypeTestImpl(MapTypeCodecTest.java:179)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeSubMapWithUnknownEntryKeyType(MapTypeCodecTest.java:174)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeMapWithUnknownEntryKeyType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryKeyTypeTestImpl(MapTypeCodecTest.java:179)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeMapWithUnknownEntryKeyType(MapTypeCodecTest.java:163)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeMapWithUnknownEntryValueType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryValueTypeTestImpl(MapTypeCodecTest.java:151)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeSubMapWithUnknownEntryValueType(MapTypeCodecTest.java:146)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeMapWithUnknownEntryKeyType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryValueTypeTestImpl(MapTypeCodecTest.java:151)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeMapWithUnknownEntryValueType(MapTypeCodecTest.java:135)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeMapWithUnknownEntryKeyType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryKeyTypeTestImpl(MapTypeCodecTest.java:179)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeSubMapWithUnknownEntryKeyType(MapTypeCodecTest.java:174)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeMapWithUnknownEntryKeyType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryValueTypeTestImpl(MapTypeCodecTest.java:151)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeSubMapWithUnknownEntryValueType(MapTypeCodecTest.java:146)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeSubMapWithUnknownEntryKeyType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryKeyTypeTestImpl(MapTypeCodecTest.java:179)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeMapWithUnknownEntryKeyType(MapTypeCodecTest.java:163)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeSubMapWithUnknownEntryKeyType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryValueTypeTestImpl(MapTypeCodecTest.java:151)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeMapWithUnknownEntryValueType(MapTypeCodecTest.java:135)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeSubMapWithUnknownEntryValueType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryKeyTypeTestImpl(MapTypeCodecTest.java:179)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeMapWithUnknownEntryKeyType(MapTypeCodecTest.java:163)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeSubMapWithUnknownEntryKeyType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryKeyTypeTestImpl(MapTypeCodecTest.java:179)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeSubMapWithUnknownEntryKeyType(MapTypeCodecTest.java:174)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeMapWithUnknownEntryValueType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryKeyTypeTestImpl(MapTypeCodecTest.java:179)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeMapWithUnknownEntryKeyType(MapTypeCodecTest.java:163)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeSubMapWithUnknownEntryValueType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryValueTypeTestImpl(MapTypeCodecTest.java:151)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeMapWithUnknownEntryValueType(MapTypeCodecTest.java:135)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeSubMapWithUnknownEntryKeyType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryValueTypeTestImpl(MapTypeCodecTest.java:151)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeSubMapWithUnknownEntryValueType(MapTypeCodecTest.java:146)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeSubMapWithUnknownEntryValueType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryKeyTypeTestImpl(MapTypeCodecTest.java:179)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeSubMapWithUnknownEntryKeyType(MapTypeCodecTest.java:174)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeMapWithUnknownEntryValueType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryValueTypeTestImpl(MapTypeCodecTest.java:151)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeMapWithUnknownEntryValueType(MapTypeCodecTest.java:135)\n"
+            },
+            {
+                "classname": "org.apache.qpid.proton.codec.MapTypeCodecTest",
+                "method": "testEncodeSubMapWithUnknownEntryValueType",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.doTestEncodeMapWithUnknownEntryValueTypeTestImpl(MapTypeCodecTest.java:151)\n\tat org.apache.qpid.proton.codec.MapTypeCodecTest.testEncodeSubMapWithUnknownEntryValueType(MapTypeCodecTest.java:146)\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

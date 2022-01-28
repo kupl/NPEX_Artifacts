@@ -1,0 +1,22 @@
+{
+    "repo": "jsoup",
+    "commit_id": "8808e3f",
+    "repo_url": "https://github.com/jhy/jsoup",
+    "commit_url": "https://github.com/jhy/jsoup/commit/8808e3fbc5a8f25970c151d076636ad05798ff9d",
+    "parent_url": "https://github.com/jhy/jsoup/commit/b8411990753314ed3b746d3402dec5a65ff6d603",
+    "date": "2017-11-14",
+    "changed_files": [
+        "CHANGES",
+        "src/main/java/org/jsoup/internal/Normalizer.java",
+        "src/test/java/org/jsoup/safety/CleanerTest.java"
+    ],
+    "patch_files": [
+        "src/main/java/org/jsoup/internal/Normalizer.java"
+    ],
+    "test_files": [
+        "src/test/java/org/jsoup/safety/CleanerTest.java"
+    ],
+    "size": 19075,
+    "is_maven": true,
+    "is_java": true
+}

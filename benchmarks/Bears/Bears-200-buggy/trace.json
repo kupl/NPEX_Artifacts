@@ -1,0 +1,752 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/test/java/org/axonframework/axonserver/connector/event/axon/ErrorCodeTest.java",
+        "line_number": 35,
+        "description": "ErrorCodeTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/test/java/org/axonframework/axonserver/connector/event/axon/ErrorCodeTest.java",
+        "line_number": 35,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/test/java/org/axonframework/axonserver/connector/event/axon/ErrorCodeTest.java",
+        "line_number": 55,
+        "description": "testConvertWithoutSource"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/test/java/org/axonframework/axonserver/connector/event/axon/ErrorCodeTest.java",
+        "line_number": 55,
+        "description": "java.lang.RuntimeException"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/test/java/org/axonframework/axonserver/connector/event/axon/ErrorCodeTest.java",
+        "line_number": 56,
+        "description": "getFromCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 44,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 44,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 45,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 48,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 49,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 50,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 53,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 54,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 57,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 58,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 59,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 62,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 63,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 66,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 69,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 70,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 71,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 72,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 73,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 74,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 75,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 78,
+        "description": "org.axonframework.axonserver.connector.ErrorCode"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "ErrorCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 89,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "getFromCode"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "values"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 42,
+        "description": "values"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 42,
+        "description": "clone"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "stream"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "filter"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "findFirst"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "lambda$getFromCode$14"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "equals"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "lambda$getFromCode$14"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "equals"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "lambda$getFromCode$14"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "equals"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "lambda$getFromCode$14"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "equals"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "lambda$getFromCode$14"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "equals"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "lambda$getFromCode$14"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "equals"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "lambda$getFromCode$14"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "equals"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "lambda$getFromCode$14"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "equals"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "lambda$getFromCode$14"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "equals"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 95,
+        "description": "orElse"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/test/java/org/axonframework/axonserver/connector/event/axon/ErrorCodeTest.java",
+        "line_number": 56,
+        "description": "convert"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 119,
+        "description": "convert"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 119,
+        "description": "convert"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 130,
+        "description": "convert"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+        "line_number": 130,
+        "description": "serialize"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/util/ExceptionSerializer.java",
+        "line_number": 10,
+        "description": "serialize"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/util/ExceptionSerializer.java",
+        "line_number": 10,
+        "description": "getCause"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/util/ExceptionSerializer.java",
+        "line_number": 12,
+        "description": "newBuilder"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 765,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 765,
+        "description": "io.axoniq.axonserver.grpc.ErrorMessage"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 17,
+        "description": "ErrorMessage"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 17,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 773,
+        "description": "io.axoniq.axonserver.grpc.ErrorMessage$1"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 773,
+        "description": "ErrorMessage$1"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 773,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 341,
+        "description": "newBuilder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 341,
+        "description": "toBuilder"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 347,
+        "description": "toBuilder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 347,
+        "description": "io.axoniq.axonserver.grpc.ErrorMessage$Builder"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 360,
+        "description": "ErrorMessage$Builder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 360,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 377,
+        "description": "ErrorMessage$Builder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 377,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 378,
+        "description": "maybeForceBuilderInitialization"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 388,
+        "description": "maybeForceBuilderInitialization"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 388,
+        "description": "access$200"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 9,
+        "description": "access$200"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/util/ExceptionSerializer.java",
+        "line_number": 12,
+        "description": "setLocation"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 623,
+        "description": "setLocation"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "axon-server-connector/target/generated-sources/protobuf/java/io/axoniq/axonserver/grpc/ErrorMessage.java",
+        "line_number": 624,
+        "description": "java.lang.NullPointerException"
+    }
+]

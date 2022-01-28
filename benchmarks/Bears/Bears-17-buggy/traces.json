@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+        "line": 1336,
+        "method_name": "_findAnnotation"
+    },
+    {
+        "filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+        "line": 556,
+        "method_name": "findSubtypes"
+    },
+    {
+        "filepath": "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver.java",
+        "line": 144,
+        "method_name": "collectAndResolveSubtypesByTypeId"
+    },
+    {
+        "filepath": "src/test/java/com/fasterxml/jackson/databind/jsontype/TestTypeNames.java",
+        "line": 47,
+        "method_name": "testBaseTypeId1616"
+    }
+]

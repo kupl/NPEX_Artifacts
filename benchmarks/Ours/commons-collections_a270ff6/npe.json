@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+    "line": 2404,
+    "sink_field": "bitIndex",
+    "npe_class": "AbstractPatriciaTrie$PrefixRangeEntrySet$EntryIterator",
+    "npe_method": "remove",
+    "jvmti_identify_succeed": true,
+    "deref_field": "subtree",
+    "nullpointer": "subtree"
+}

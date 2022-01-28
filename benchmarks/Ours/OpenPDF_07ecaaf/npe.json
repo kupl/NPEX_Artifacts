@@ -1,0 +1,10 @@
+{
+    "filepath": "openpdf/src/main/java/com/lowagie/text/pdf/StandardDecryption.java",
+    "line": 111,
+    "sink_field": "doFinal",
+    "npe_class": "StandardDecryption",
+    "npe_method": "finish",
+    "jvmti_identify_succeed": true,
+    "deref_field": "cipher",
+    "nullpointer": "cipher"
+}

@@ -1,0 +1,46 @@
+{
+    "bug_id": "karaf_5965290",
+    "repository_info": {
+        "repo": "karaf",
+        "commit_id": "5965290",
+        "commit_url": "https://github.com/apache/karaf/commit/5965290b9e7d6ae83045051f9325dace891390a1",
+        "parent_url": "https://github.com/apache/karaf/commit/b92dd7e4d6fab3b98e534e661ae5a4ec3c1b9084",
+        "date": "2020-03-21",
+        "changed_files": [
+            "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "shell/core/src/test/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParserTest.java"
+        ],
+        "patch_files": [
+            "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java"
+        ],
+        "test_files": [
+            "shell/core/src/test/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParserTest.java"
+        ],
+        "size": 123161,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 8,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -Dtest=WikiParserTest -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true",
+        "fail_buggy": true,
+        "pass_fixed": false,
+        "testcases": [
+            {
+                "classname": "org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParserTest",
+                "method": "parseTestDoc",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParserTest.parseTestDoc(WikiParserTest.java:84)\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

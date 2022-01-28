@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.sling.security.impl.ContentDispositionFilter$RewriterResponse.isJcrData(ContentDispositionFilter.java:288)
+	at junitx.util.PrivateAccessor.invoke(PrivateAccessor.java:253)
+	at Main.main(Main.java:38)

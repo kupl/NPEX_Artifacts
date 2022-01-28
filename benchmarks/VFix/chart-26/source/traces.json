@@ -1,0 +1,37 @@
+[
+    {
+        "filepath": "org/jfree/chart/axis/Axis.java",
+        "line": 1192,
+        "method_name": "drawLabel"
+    },
+    {
+        "filepath": "org/jfree/chart/axis/NumberAxis.java",
+        "line": 680,
+        "method_name": "draw"
+    },
+    {
+        "filepath": "org/jfree/chart/plot/CategoryPlot.java",
+        "line": 2711,
+        "method_name": "drawAxes"
+    },
+    {
+        "filepath": "org/jfree/chart/plot/CategoryPlot.java",
+        "line": 2571,
+        "method_name": "draw"
+    },
+    {
+        "filepath": "org/jfree/chart/JFreeChart.java",
+        "line": 1213,
+        "method_name": "draw"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 24,
+        "method_name": "testDrawWithNullInfo"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 15,
+        "method_name": "main"
+    }
+]

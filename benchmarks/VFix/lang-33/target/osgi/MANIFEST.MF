@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bundle-Description: Commons Lang, a package of Java utility classes fo
+ r the        classes that are in java.lang's hierarchy, or are consid
+ ered to be so        standard as to justify existence in java.lang.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.commons.lang
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1534332783936
+Bundle-DocURL: http://commons.apache.org/lang/
+Bundle-Vendor: The Apache Software Foundation
+Import-Package: .,org.apache.commons.lang3;version="3.0.0.SNAPSHOT",or
+ g.apache.commons.lang3.builder;version="3.0.0.SNAPSHOT",org.apache.co
+ mmons.lang3.concurrent;version="3.0.0.SNAPSHOT",org.apache.commons.la
+ ng3.exception;version="3.0.0.SNAPSHOT",org.apache.commons.lang3.math;
+ version="3.0.0.SNAPSHOT",org.apache.commons.lang3.mutable;version="3.
+ 0.0.SNAPSHOT",org.apache.commons.lang3.reflect;version="3.0.0.SNAPSHO
+ T",org.apache.commons.lang3.text;version="3.0.0.SNAPSHOT",org.apache.
+ commons.lang3.text.translate;version="3.0.0.SNAPSHOT",org.apache.comm
+ ons.lang3.time;version="3.0.0.SNAPSHOT"
+Tool: Bnd-0.0.238
+Export-Package: org.apache.commons.lang3.builder;version="3.0.0.SNAPSH
+ OT",org.apache.commons.lang3;version="3.0.0.SNAPSHOT",org.apache.comm
+ ons.lang3.exception;version="3.0.0.SNAPSHOT",org.apache.commons.lang3
+ .text;version="3.0.0.SNAPSHOT",org.apache.commons.lang3.text.translat
+ e;version="3.0.0.SNAPSHOT",org.apache.commons.lang3.time;version="3.0
+ .0.SNAPSHOT",org.apache.commons.lang3.reflect;version="3.0.0.SNAPSHOT
+ ",org.apache.commons.lang3.concurrent;version="3.0.0.SNAPSHOT",org.ap
+ ache.commons.lang3.mutable;version="3.0.0.SNAPSHOT",org.apache.common
+ s.lang3.math;version="3.0.0.SNAPSHOT"
+Bundle-Version: 3.0.0.SNAPSHOT
+Bundle-Name: Commons Lang
+Created-By: 1.8.0_181 (Oracle Corporation)
+

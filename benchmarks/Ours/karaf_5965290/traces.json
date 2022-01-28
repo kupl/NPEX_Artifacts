@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "shell/core/src/test/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParserTest.java",
+        "line": 84,
+        "method_name": "parseTestDoc"
+    }
+]

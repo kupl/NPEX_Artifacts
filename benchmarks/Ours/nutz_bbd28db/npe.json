@@ -1,0 +1,10 @@
+{
+    "filepath": "src/org/nutz/http/Sender.java",
+    "line": 68,
+    "sink_field": "values",
+    "npe_class": "Sender",
+    "npe_method": "create",
+    "jvmti_identify_succeed": true,
+    "deref_field": "getParams",
+    "nullpointer": "request.getParams()"
+}

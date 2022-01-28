@@ -1,0 +1,5 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.pdfbox.pdmodel.common.PDStream.createInputStream(PDStream.java:254)
+	at Main.testCreateInputStreamNullFilters(Main.java:40)
+	at Main.testPDFBOX2948(Main.java:18)
+	at Main.main(Main.java:14)

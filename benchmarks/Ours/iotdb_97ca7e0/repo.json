@@ -1,0 +1,20 @@
+{
+    "repo": "iotdb",
+    "commit_id": "97ca7e0",
+    "commit_url": "https://github.com/apache/iotdb/commit/97ca7e0ef6263173a5e554711b9548fbecd982ce",
+    "parent_url": "https://github.com/apache/iotdb/commit/9bced7b65726cd3ffcefef7529bfd85f9c1c42f8",
+    "date": "2020-11-23",
+    "changed_files": [
+        "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+        "server/src/test/java/org/apache/iotdb/db/metadata/MManagerBasicTest.java"
+    ],
+    "patch_files": [
+        "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java"
+    ],
+    "test_files": [
+        "server/src/test/java/org/apache/iotdb/db/metadata/MManagerBasicTest.java"
+    ],
+    "size": 131097,
+    "is_maven": true,
+    "is_java": true
+}

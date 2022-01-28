@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "ninja-core/src/main/java/ninja/Route.java",
+        "line": 128,
+        "method_name": "getPathParametersEncoded"
+    },
+    {
+        "filepath": "ninja-core/src/test/java/ninja/RouterImplTest.java",
+        "line": 113,
+        "method_name": "getPathParametersEncodedWithNoPathParams"
+    }
+]

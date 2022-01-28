@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+        "line": 230,
+        "method_name": "instantiateObject"
+    },
+    {
+        "filepath": "src/test/java/org/apache/sling/pipes/PipeBindingsTest.java",
+        "line": 86,
+        "method_name": "testEvaluateNull"
+    }
+]

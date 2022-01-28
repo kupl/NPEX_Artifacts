@@ -1,0 +1,10 @@
+{
+	"filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+	"line": 321,
+  "deref_field": "targetAST",
+	"sink_field": "getLineNo",
+	"npe_class": "SuppressWarningsHolder",
+	"npe_method": "visitToken",
+	"jvmti_identify_succeed": true,
+  "nullpointer": "targetAST"
+}

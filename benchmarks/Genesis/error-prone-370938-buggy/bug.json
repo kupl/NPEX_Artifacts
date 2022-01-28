@@ -1,0 +1,78 @@
+{
+    "bug_id": "error-prone-370938-buggy",
+    "repository_info": null,
+    "build_info": {
+        "compiled": true,
+        "build_command": "mvn clean test-compile -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true",
+        "java_version": 7,
+        "error_message": null,
+        "time": 5.916737403022125
+    },
+    "test_info": {
+        "test_command": "mvn clean test -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Dtest=com.google.errorprone.bugpatterns.threadsafety.GuardedByValidatorTest#testNonExistantMethod",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "com.google.errorprone.bugpatterns.threadsafety.GuardedByValidatorTest",
+                "method": "testNonExistantMethod",
+                "exn_type": "junit.framework.AssertionFailedError",
+                "stack_trace": "junit.framework.AssertionFailedError: Did not see an error on line 6 containing . All errors:\n[error: An unhandled exception was thrown by the Error Prone static analysis plugin.\n  Please report this at https://github.com/google/error-prone/issues/new and include the following:\n  \n  error-prone version: unknown version\n  Stack Trace:\n  java.lang.NullPointerException\n  \tat com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder$2.normalizeBase(GuardedByBinder.java:282)\n  \tat com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder$2.computeBase(GuardedByBinder.java:272)\n  \tat com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder$2.visitMethodInvocation(GuardedByBinder.java:185)\n  \tat com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder$2.visitMethodInvocation(GuardedByBinder.java:172)\n  \tat com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)\n  \tat com.sun.source.util.SimpleTreeVisitor.visit(SimpleTreeVisitor.java:53)\n  \tat com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder.bind(GuardedByBinder.java:104)\n  \tat com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder.bindString(GuardedByBinder.java:72)\n  \tat com.google.errorprone.bugpatterns.threadsafety.GuardedByUtils.isGuardedByValid(GuardedByUtils.java:92)\n  \tat com.google.errorprone.bugpatterns.threadsafety.GuardedByValidator.validate(GuardedByValidator.java:72)\n  \tat com.google.errorprone.bugpatterns.threadsafety.GuardedByValidator.matchVariable(GuardedByValidator.java:68)\n  \tat com.google.errorprone.scanner.ErrorProneScanner.visitVariable(ErrorProneScanner.java:1005)\n  \tat com.google.errorprone.scanner.ErrorProneScanner.visitVariable(ErrorProneScanner.java:142)\n  \tat com.sun.tools.javac.tree.JCTree$JCVariableDecl.accept(JCTree.java:864)\n  \tat com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)\n  \tat com.google.errorprone.scanner.Scanner.scan(Scanner.java:119)\n  \tat com.google.errorprone.scanner.Scanner.scan(Scanner.java:45)\n  \tat com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)\n  \tat com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)\n  \tat com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)\n  \tat com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:133)\n  \tat com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:586)\n  \tat com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:142)\n  \tat com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:720)\n  \tat com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:50)\n  \tat com.google.errorprone.scanner.Scanner.scan(Scanner.java:80)\n  \tat com.google.errorprone.ErrorProneAnalyzer.reportReadyForAnalysis(ErrorProneAnalyzer.java:153)\n  \tat com.google.errorprone.ErrorProneAnalyzer.finished(ErrorProneAnalyzer.java:124)\n  \tat com.google.errorprone.ErrorProneJavacJavaCompiler.postFlow(ErrorProneJavacJavaCompiler.java:121)\n  \tat com.google.errorprone.ErrorProneJavacJavaCompiler.flow(ErrorProneJavacJavaCompiler.java:93)\n  \tat com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)\n  \tat com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)\n  \tat com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)\n  \tat com.sun.tools.javac.main.Main.compile(Main.java:523)\n  \tat com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:129)\n  \tat com.google.errorprone.ErrorProneCompiler.run(ErrorProneCompiler.java:258)\n  \tat com.google.errorprone.CompilationTestHelper.compile(CompilationTestHelper.java:221)\n  \tat com.google.errorprone.CompilationTestHelper.assertCompileFailsWithMessages(CompilationTestHelper.java:202)\n  \tat com.google.errorprone.CompilationTestHelper.assertCompileFailsWithMessages(CompilationTestHelper.java:189)\n  \tat com.google.errorprone.CompilationTestHelper.assertCompileFailsWithMessages(CompilationTestHelper.java:215)\n  \tat com.google.errorprone.bugpatterns.threadsafety.GuardedByValidatorTest.testNonExistantMethod(GuardedByValidatorTest.java:238)\n  \tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n  \tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n  \tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n  \tat java.lang.reflect.Method.invoke(Method.java:606)\n  \tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)\n  \tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)\n  \tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)\n  \tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)\n  \tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)\n  \tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)\n  \tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)\n  \tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)\n  \tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)\n  \tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)\n  \tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)\n  \tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)\n  \tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)\n  \tat org.junit.runners.ParentRunner.run(ParentRunner.java:300)\n  \tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n  \tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n  \tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n  \tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n  \tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n  \tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n  \tat java.lang.reflect.Method.invoke(Method.java:606)\n  \tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n  \tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n  \tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n  \tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n  \tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)]\n\tat junit.framework.Assert.fail(Assert.java:50)\n\tat junit.framework.Assert.assertTrue(Assert.java:20)\n\tat com.google.errorprone.DiagnosticTestHelper.assertHasDiagnosticOnAllMatchingLines(DiagnosticTestHelper.java:218)\n\tat com.google.errorprone.CompilationTestHelper.assertCompileFailsWithMessages(CompilationTestHelper.java:205)\n\tat com.google.errorprone.CompilationTestHelper.assertCompileFailsWithMessages(CompilationTestHelper.java:189)\n\tat com.google.errorprone.CompilationTestHelper.assertCompileFailsWithMessages(CompilationTestHelper.java:215)\n\tat com.google.errorprone.bugpatterns.threadsafety.GuardedByValidatorTest.testNonExistantMethod(GuardedByValidatorTest.java:238)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:606)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:300)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:606)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n"
+            }
+        ]
+    },
+    "npe_info": [
+        {
+            "filepath": "core/src/main/java/com/google/errorprone/matchers/IsSubtypeOf.java",
+            "line": 53,
+            "deref_field": "tree",
+            "npe_class": "IsSubtypeOf",
+            "npe_method": "matches",
+            "sink_field": "type",
+            "jvmti_identify_succeed": true,
+            "is_original": true
+        }
+    ],
+    "patch_results": [
+        {
+            "patch_id": "SkipReturn_52-49_2",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/error-prone-370938-buggy/patches/SkipReturn_52-49_2",
+            "original_filepath": "core/src/main/java/com/google/errorprone/matchers/IsSubtypeOf.java",
+            "compiled": true,
+            "pass_testcase": false,
+            "is_correct": null
+        },
+        {
+            "patch_id": "SkipSinkStatement_52-52_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/error-prone-370938-buggy/patches/SkipSinkStatement_52-52_1",
+            "original_filepath": "core/src/main/java/com/google/errorprone/matchers/IsSubtypeOf.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplaceEntireExpressionLiteral_53-53_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/error-prone-370938-buggy/patches/ReplaceEntireExpressionLiteral_53-53_1",
+            "original_filepath": "core/src/main/java/com/google/errorprone/matchers/IsSubtypeOf.java",
+            "compiled": true,
+            "pass_testcase": false,
+            "is_correct": null
+        },
+        {
+            "patch_id": "SkipReturn_52-49_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/error-prone-370938-buggy/patches/SkipReturn_52-49_1",
+            "original_filepath": "core/src/main/java/com/google/errorprone/matchers/IsSubtypeOf.java",
+            "compiled": true,
+            "pass_testcase": false,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplaceEntireExpressionLiteral_53-53_2",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/error-prone-370938-buggy/patches/ReplaceEntireExpressionLiteral_53-53_2",
+            "original_filepath": "core/src/main/java/com/google/errorprone/matchers/IsSubtypeOf.java",
+            "compiled": true,
+            "pass_testcase": false,
+            "is_correct": null
+        }
+    ]
+}

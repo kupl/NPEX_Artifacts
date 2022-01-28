@@ -1,0 +1,62 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/org/springframework/hateoas/ResourceSupportUnitTest.java",
+        "line_number": 30,
+        "description": "ResourceSupportUnitTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/hateoas/ResourceSupportUnitTest.java",
+        "line_number": 30,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/org/springframework/hateoas/ResourceSupportUnitTest.java",
+        "line_number": 143,
+        "description": "doesNotEqualNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/hateoas/ResourceSupportUnitTest.java",
+        "line_number": 143,
+        "description": "org.springframework.hateoas.ResourceSupport"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+        "line_number": 37,
+        "description": "ResourceSupport"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+        "line_number": 37,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+        "line_number": 38,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/hateoas/ResourceSupportUnitTest.java",
+        "line_number": 144,
+        "description": "equals"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+        "line_number": 141,
+        "description": "equals"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+        "line_number": 145,
+        "description": "getClass"
+    }
+]

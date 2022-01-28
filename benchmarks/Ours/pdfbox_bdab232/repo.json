@@ -1,0 +1,20 @@
+{
+    "repo": "pdfbox",
+    "commit_id": "bdab232",
+    "commit_url": "https://github.com/apache/pdfbox/commit/bdab232e265a828d758979678920fcdaf2c5b7b9",
+    "parent_url": "https://github.com/apache/pdfbox/commit/55586aadb4fd2008e8b7bd9017bef208b63c3454",
+    "date": "2017-10-02",
+    "changed_files": [
+        "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+        "pdfbox/src/test/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURITest.java"
+    ],
+    "patch_files": [
+        "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java"
+    ],
+    "test_files": [
+        "pdfbox/src/test/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURITest.java"
+    ],
+    "size": 137159,
+    "is_maven": true,
+    "is_java": true
+}

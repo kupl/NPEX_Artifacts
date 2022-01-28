@@ -1,0 +1,48 @@
+#
+#
+#    Licensed to the Apache Software Foundation (ASF) under one or more
+#    contributor license agreements.  See the NOTICE file distributed with
+#    this work for additional information regarding copyright ownership.
+#    The ASF licenses this file to You under the Apache License, Version 2.0
+#    (the "License"); you may not use this file except in compliance with
+#    the License.  You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+#
+#
+h1. Synopsis
+
+${project.name}
+
+${project.description}
+
+Maven URL:
+[mvn:${project.groupId}/${project.artifactId}/${project.version}]
+
+h1. Description
+
+The Karaf client allows for connecting remotely to a running Karaf instance.
+
+It acts as a SSH client and sends commands to the running Karaf instance. If no commands are provided, the Karaf
+client display the Karaf instance shell on which you can interact.
+
+To start the Karaf client, you can use the following arguments:
+-a [port]     specify the port to connect to -
+-h [host]     specify the host to connect to -
+-u [user]     specify the user name -
+-p [password] specify the password -
+--help        show help -
+-v            raise verbosity -
+-r [attempts] retry connection establishment (up to attempts time) -
+-d [delay]    intra-retry delay (default is 2 secondes) -
+[commands]    commands to run -
+
+h1. See also
+
+Using remote instances - section of the Karaf User Guide.

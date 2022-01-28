@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/PDDocument.java",
+        "line": 1218,
+        "method_name": "protect"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 32,
+        "method_name": "testPDFBOX3572"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 17,
+        "method_name": "main"
+    }
+]

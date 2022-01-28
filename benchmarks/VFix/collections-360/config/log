@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.commons.collections.iterators.FilterListIterator.setNextObject(FilterListIterator.java:232)
+	at org.apache.commons.collections.iterators.FilterListIterator.hasNext(FilterListIterator.java:123)
+	at Main.main(Main.java:16)

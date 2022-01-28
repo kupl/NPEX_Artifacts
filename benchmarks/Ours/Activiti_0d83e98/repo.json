@@ -1,0 +1,25 @@
+{
+    "repo": "Activiti",
+    "commit_id": "0d83e98",
+    "repo_url": "https://github.com/Activiti/Activiti",
+    "commit_url": "https://github.com/Activiti/Activiti/commit/0d83e98dadccfb9874cf19c3b2883987231c3f4e",
+    "parent_url": "https://github.com/Activiti/Activiti/commit/c45d6c3cb2b441baa50d77fc1d816b5e6b6abc86",
+    "date": "2016-01-27",
+    "changed_files": [
+        "modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessInstanceHistoryLogQueryImpl.java",
+        "modules/activiti-engine/src/test/java/org/activiti/standalone/jpa/HistoricJPAVariableTest.java",
+        "modules/activiti-engine/src/test/resources/org/activiti/standalone/jpa/HistoricJPAVariableTest.testGetJPAEntityAsHistoricLog.bpmn20.xml",
+        "modules/activiti-engine/src/test/resources/org/activiti/standalone/jpa/HistoricJPAVariableTest.testGetJPAEntityAsHistoricVariable.bpmn20.xml"
+    ],
+    "patch_files": [
+        "modules/activiti-engine/src/main/java/org/activiti/engine/impl/ProcessInstanceHistoryLogQueryImpl.java"
+    ],
+    "test_files": [
+        "modules/activiti-engine/src/test/java/org/activiti/standalone/jpa/HistoricJPAVariableTest.java",
+        "modules/activiti-engine/src/test/resources/org/activiti/standalone/jpa/HistoricJPAVariableTest.testGetJPAEntityAsHistoricLog.bpmn20.xml",
+        "modules/activiti-engine/src/test/resources/org/activiti/standalone/jpa/HistoricJPAVariableTest.testGetJPAEntityAsHistoricVariable.bpmn20.xml"
+    ],
+    "size": 195147,
+    "is_maven": true,
+    "is_java": true
+}

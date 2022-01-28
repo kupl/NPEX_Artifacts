@@ -1,0 +1,209 @@
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+Apache Karaf Container 4.x - Documentation
+=========================================
+Apache Software Foundation
+:doctype: article
+:toc: left
+:toclevels: 3
+:toc-position: left
+:toc-title: Apache Karaf Container 4.x - Documentation
+:numbered:
+
+include::overview.adoc[]
+
+include::quick-start.adoc[]
+
+include::update-notes.adoc[]
+
+== User Guide
+
+include::user-guide/installation.adoc[]
+
+include::user-guide/directory-structure.adoc[]
+
+include::user-guide/start-stop.adoc[]
+
+include::user-guide/os-integration.adoc[]
+
+include::user-guide/console.adoc[]
+
+include::user-guide/remote.adoc[]
+
+include::user-guide/log.adoc[]
+
+include::user-guide/configuration.adoc[]
+
+include::user-guide/urls.adoc[]
+
+include::user-guide/provisioning.adoc[]
+
+include::user-guide/deployers.adoc[]
+
+include::user-guide/kar.adoc[]
+
+include::user-guide/instances.adoc[]
+
+include::user-guide/security.adoc[]
+
+include::user-guide/docker.adoc[]
+
+include::user-guide/obr.adoc[]
+
+=== Enterprise
+
+include::user-guide/http.adoc[]
+
+include::user-guide/webcontainer.adoc[]
+
+include::user-guide/jndi.adoc[]
+
+include::user-guide/jta.adoc[]
+
+include::user-guide/jdbc.adoc[]
+
+include::user-guide/jms.adoc[]
+
+include::user-guide/jpa.adoc[]
+
+include::user-guide/ejb.adoc[]
+
+include::user-guide/cdi.adoc[]
+
+include::user-guide/failover.adoc[]
+
+include::user-guide/monitoring.adoc[]
+
+include::user-guide/webconsole.adoc[]
+
+include::user-guide/scheduler.adoc[]
+
+include::user-guide/tuning.adoc[]
+
+== Developer Guide
+
+include::developer-guide/developer-commands.adoc[]
+
+include::developer-guide/scripting.adoc[]
+
+include::developer-guide/connect.adoc[]
+
+include::developer-guide/branding.adoc[]
+
+include::developer-guide/extending.adoc[]
+
+include::developer-guide/karaf-maven-plugin.adoc[]
+
+include::developer-guide/custom-distribution.adoc[]
+
+include::developer-guide/creating-bundles.adoc[]
+
+=== Blueprint
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-blueprint-example/README.md
+
+=== SCR
+
+See https://github.com/apache/karaf/tree/master/examples/karaf-scr-example
+
+include::developer-guide/archetypes.adoc[]
+
+include::developer-guide/security-framework.adoc[]
+
+include::developer-guide/debugging.adoc[]
+
+=== Configuration
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-config-example/README.md
+
+=== Deployer
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-deployer-example/README.md
+
+=== Dump extender
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-dump-example/README.md
+
+=== JDBC & JPA
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-jdbc-example/README.md
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-jpa-example/README.md
+
+=== JMS
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-jms-example/README.md
+
+=== Custom log appender
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-log-appender-example/README.md
+
+=== Custom JMX MBean
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-mbean-example/README.md
+
+=== Working with profiles
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-profile-example/README.md
+
+=== Security & JAAS
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-jaas-example/README.md
+
+=== Servlet
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-servlet-example/README.md
+
+=== WAR
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-war-example/README.md
+
+=== HTTP Resources
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-http-resource-example/README.md
+
+=== REST service
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-rest-example/README.md
+
+=== SOAP service
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-soap-example/README.md
+
+=== Websocket
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-websocket-example/README.md
+
+=== Scheduler
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-scheduler-example/README.md
+
+=== Quick example with Apache Camel
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-camel-example/README.md
+
+=== Custom URL handler
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-url-namespace-handler-example/README.md
+
+=== Integration Tests
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-itest-example/README.md
+
+=== Distributions & Docker
+
+See https://github.com/apache/karaf/blob/master/examples/karaf-docker-example/README.md
+
+include::developer-guide/github-contributions.adoc[]

@@ -1,0 +1,10 @@
+{
+    "filepath": "core/src/main/java/feign/Response.java",
+    "line": 342,
+    "sink_field": "entrySet",
+    "npe_class": "Response",
+    "npe_method": "caseInsensitiveCopyOf",
+    "jvmti_identify_succeed": true,
+    "deref_field": "headers",
+    "nullpointer": "headers"
+}

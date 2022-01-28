@@ -1,0 +1,46 @@
+{
+    "bug_id": "xmlgraphics-fop_62ff114",
+    "repository_info": {
+        "repo": "xmlgraphics-fop",
+        "commit_id": "62ff114",
+        "commit_url": "https://github.com/apache/xmlgraphics-fop/commit/62ff114b7f1e67d782285955c682bddfb6ec18ed",
+        "parent_url": "https://github.com/apache/xmlgraphics-fop/commit/2eb9e215bc94a28a5d8f1a1b06b5bf1fd37609f8",
+        "date": "2020-07-22",
+        "changed_files": [
+            "fop-core/src/main/java/org/apache/fop/render/java2d/Java2DRenderer.java",
+            "fop-core/src/test/java/org/apache/fop/render/java2d/Java2DRendererTestCase.java"
+        ],
+        "patch_files": [
+            "fop-core/src/main/java/org/apache/fop/render/java2d/Java2DRenderer.java"
+        ],
+        "test_files": [
+            "fop-core/src/test/java/org/apache/fop/render/java2d/Java2DRendererTestCase.java"
+        ],
+        "size": 215534,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 15,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -Dtest=Java2DRendererTestCase -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "org.apache.fop.render.java2d.Java2DRendererTestCase",
+                "method": "testPrint",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException: Cannot invoke \"org.apache.fop.area.PageViewport.getPageIndex()\" because \"this.currentPageViewport\" is null\n\tat org.apache.fop.render.AbstractRenderer.renderMainReference(AbstractRenderer.java:527)\n\tat org.apache.fop.render.AbstractRenderer.renderBodyRegion(AbstractRenderer.java:433)\n\tat org.apache.fop.render.AbstractRenderer.renderRegionViewport(AbstractRenderer.java:380)\n\tat org.apache.fop.render.AbstractRenderer.renderPageAreas(AbstractRenderer.java:345)\n\tat org.apache.fop.render.java2d.Java2DRenderer.print(Java2DRenderer.java:1008)\n\tat org.apache.fop.render.java2d.Java2DRendererTestCase.testPrint(Java2DRendererTestCase.java:58)\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

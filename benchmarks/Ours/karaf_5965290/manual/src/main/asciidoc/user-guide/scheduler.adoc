@@ -1,0 +1,300 @@
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+=== Scheduler
+
+Apache Karaf provides an optional Scheduler which provides a Service Listener which listens for Runnable Services and schedules their execution, based  on the service properties.
+
+This Scheduler implementation uses the Quartz Scheduler library to understand cron-like expressions.
+
+==== Installation
+
+To enable the Apache Karaf Scheduler, you just have to install the `scheduler` feature:
+
+----
+karaf@root()> feature:install scheduler
+----
+
+The `scheduler` feature automatically installs the `scheduler` command group, too:
+
+----
+scheduler:list
+scheduler:schedule-script
+scheduler:schedule-command
+scheduler:unschedule
+scheduler:reschedule
+----
+
+==== Configuration
+
+All jobs allow configuration using service properties:
+
+.Scheduler properties
+[width="100%",cols="3,2,10",options="header"]
+|=========================================================
+|Property |Default |Description
+
+|Scheduler.PROPERTY_SCHEDULER_PERIOD | - |
+Defines the period for a job. The period is expressed in seconds. This property needs to be of type Long.
+
+|Scheduler.PROPERTY_SCHEDULER_TIMES | -1 |
+Defines the number of times the job is executed. -1 means infinite.
+
+|Scheduler.PROPERTY_SCHEDULER_IMMEDIATE |false |
+Define if a periodically job should be scheduled immediate.
+Default is to not startup immediate, the job is started the first time after the period has expired.
+This property needs to be of type Boolean.
+
+|Scheduler.PROPERTY_SCHEDULER_EXPRESSION | - |
+Define the cron expression for a job. Must be a Quartz compatible expression.
+
+|Scheduler.PROPERTY_SCHEDULER_CONCURRENT | - |
+Define if the job can be run concurrently.
+
+|Scheduler.PROPERTY_SCHEDULER_NAME |-  |
+Define the job name.
+
+|=========================================================
+
+
+==== Schedule a new Job using the Whitebox-Service paradigm (recommended)
+This example uses Declarative Services to register a Service of Type "org.apache.karaf.scheduler.Job" so that it is recognized by the Scheduler Service.
+
+Alternatively, jobs can be registered as type "Runnable" in a more API neutral way. In this case you won't get the "JobContext" information though.
+----
+@Component(immediate = true, property = {
+        Scheduler.PROPERTY_SCHEDULER_EXPRESSION + "=0 0/10 * * * ?",
+} )
+public class SchedulerPing implements Job {
+
+    @Override
+    public void execute(JobContext context) {
+        // ..
+    }
+}
+----
+
+This will register a Job with the WhiteboxHandler. You can verify that the job is registered:
+
+----
+karaf@root()> scheduler:list
+Name                   │ Schedule
+───────────────────────┼─────────────────────
+Registered Service.185 │ cron(0 0/10 * * * ?)
+----
+
+The Karaf scheduler can also schedule `Runnable` service.
+
+For instance, if you have the following bean:
+
+```
+@Component(immediate = true, property = {
+    "scheduler.period:Long=60",
+    "scheduler.concurrent:Boolean=false",
+    "scheduler.name=PingJob"
+  }
+)
+public class PingThread implements Runnable {
+
+  @Override
+  public void run() {
+    // ..
+  }
+
+}
+```
+
+This will register a job for the thread (runnable):
+
+----
+karaf@root()> scheduler:list
+Name                       │ Schedule
+───────────────────────────┼──────────────────────────────────────────
+PingJob.126                │ at(2017-11-22T15:37:17.103+01:00, -1, 10)
+----
+
+It's also possible to pass the number of execution of the scheduler job using the `scheduler.times` service property:
+
+```
+@Component(immediate = true, property = {
+    "scheduler.period:Long=60",
+    "scheduler.times:Integer=5",
+    "scheduler.concurrent:Boolean=false",
+    "scheduler.name=PingJob"
+  }
+)
+public class PingThread implements Runnable {
+
+  @Override
+  public void run() {
+    // ..
+  }
+
+}
+```
+
+==== Schedule a new Job using the Gogo Shell
+
+----
+karaf@root()> scheduler:schedule-script --help
+DESCRIPTION
+        scheduler:schedule
+
+	Schedule a script execution
+
+SYNTAX
+        scheduler:schedule [options] script
+
+ARGUMENTS
+        script
+                The script to schedule
+
+OPTIONS
+        --at
+                Absolute date in ISO format (ex: 2014-05-13T13:56:45)
+        --concurrent
+                Should jobs run concurrently or not (defaults to false)
+        --period
+                Time during executions (in seconds)
+        --times
+                Number of times this job should be executed
+                (defaults to -1)
+        --cron
+                The cron expression
+        --help
+                Display this help message
+        --name
+                Name of this job
+
+----
+
+==== Schedule a command
+
+----
+karaf@root()> scheduler:schedule-command --help
+DESCRIPTION
+        scheduler:schedule-command
+
+        Schedule a command execution
+
+SYNTAX
+        scheduler:schedule-command [options] command
+
+ARGUMENTS
+        command
+                The command to schedule
+                (required)
+
+OPTIONS
+        --period
+                Time during executions (in seconds)
+        --at
+                Absolute date in ISO format (ex: 2014-05-13T13:56:45)
+        --help
+                Display this help message
+        --times
+                Number of times this job should be executed
+                (defaults to -1)
+        --concurrent
+                Should jobs run concurrently or not (defaults to false)
+        --cron
+                The cron expression
+
+----
+
+==== Schedule a new Job using the Scheduler Service
+
+Recommendation: Before using this low level api for registering jobs, consider using the whitebox approach instead.
+
+----
+..
+import org.apache.karaf.scheduler.Scheduler;
+
+@Component
+public class Demo {
+
+  @Reference Scheduler scheduler;
+
+  public void useScheduler()
+  {
+    schedule(new MyJob(), scheduler.EXPR("0 0/10 * * * ?"));
+  }
+
+  class MyJob implements Job {
+    ..
+  }
+
+}
+
+----
+
+==== Update scheduling of an existing job
+
+You can change the scheduling of an existing job using `scheduler:reschedule` command.
+
+This command works as the schedule command (using the same `at`, `period`, `cron`, ... options) but taking the job name
+as argument (as given by the `scheduler:list` command).
+
+==== Using shared jobs store
+
+By the default, the Apache Karaf scheduler uses a memory storage for jobs. It's local to a single Karaf instance.
+
+You can setup several Karaf instances scheduler to use a shared job storage. It's especially interesting when you have
+a farm or cluster of Karaf instances.
+
+For instance, you can use a database as storage.
+
+You can create the datasource to this database, using the regular Karaf `jdbc` commands. For instance, to setup a `DataSource`
+for a remote Derby database, you can do:
+
+----
+karaf@root()> feature:install jdbc
+karaf@root()> feature:install pax-jdbc-derbyclient
+karaf@root()> jdbc:ds-create -dn derbyclient -url jdbc:derby://host:1527/karaf_scheduler scheduler
+karaf@root()> feature:install jndi
+----
+
+You have to init the DataBase tables with the SQL scripts provided in Quartz distribution (in the `docs/dbTables` directory).
+
+Then you can configure the Karaf Scheduler to use this job storage, updating the `etc/org.apache.karaf.scheduler.cfg` file like this:
+
+----
+#============================================================================
+# Configure Karaf Scheduler Properties
+#============================================================================
+org.quartz.scheduler.instanceName=Karaf
+org.quartz.scheduler.instanceId=AUTO
+
+#============================================================================
+# Configure ThreadPool
+#============================================================================
+org.quartz.threadPool.class=org.quartz.simpl.SimpleThreadPool
+org.quartz.threadPool.threadCount=30
+org.quartz.threadPool.threadPriority=5
+
+
+#============================================================================
+# Configure JDBC DataSource
+#============================================================================
+org.quartz.dataSource.scheduler.jndiURL=osgi:service/javax.sql.DataSource/(osgi.jndi.service.name=scheduler)
+
+#============================================================================
+# Configure JDBC JobStore
+#============================================================================
+org.quartz.jobStore.class=org.quartz.impl.jdbcjobstore.JobStoreTX
+org.quartz.jobStore.dataSource=scheduler
+org.quartz.jobStore.driverDelegateClass=org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+----
+
+Then several Karaf instances scheduler will share the same JDBC job store and can work in a "clustered" way.

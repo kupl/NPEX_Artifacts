@@ -1,0 +1,10 @@
+{
+    "filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+    "line": 268,
+    "deref_field": "value",
+    "sink_field": "toLowerCase",
+    "npe_class": "DefaultMergeStrategy",
+    "npe_method": "isSameReference",
+    "jvmti_identify_succeed": false,
+    "nullpointer": "node2.getAttributes().get(REF)"
+}

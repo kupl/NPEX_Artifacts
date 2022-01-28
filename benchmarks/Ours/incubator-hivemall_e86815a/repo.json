@@ -1,0 +1,20 @@
+{
+    "repo": "incubator-hivemall",
+    "commit_id": "e86815a",
+    "commit_url": "https://github.com/apache/incubator-hivemall/commit/e86815a5e88a161803a62c70ebbd00d5d688be2c",
+    "parent_url": "https://github.com/apache/incubator-hivemall/commit/04fa7545b4e4b540a6a8c610c36450a8e2320ba7",
+    "date": "2020-07-27",
+    "changed_files": [
+        "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+        "core/src/test/java/hivemall/classifier/GeneralClassifierUDTFTest.java"
+    ],
+    "patch_files": [
+        "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java"
+    ],
+    "test_files": [
+        "core/src/test/java/hivemall/classifier/GeneralClassifierUDTFTest.java"
+    ],
+    "size": 79036,
+    "is_maven": true,
+    "is_java": true
+}

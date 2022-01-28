@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+
+  <body>
+    <menu name="Overview">
+      <item name="Introduction" href="index.html"/>
+      <item name="Goals" href="plugin-info.html"/>
+      <item name="Usage" href="usage.html"/>
+      <item name="Feature Matrix" href="featurematrix.html"/>
+      <item name="API" href="api.html"/>
+      <item name="FAQ" href="faq.html"/>
+      <item name="Developing" href="developing.html"/>
+      <item name="Release Notes" href="jira-report.html"/>
+      <!-- According to https://issues.apache.org/jira/browse/MNGSITE-152 -->
+      <item name="License" href="http://www.apache.org/licenses/"/>
+      <item name="Download" href="../download.html"/>
+    </menu>
+    <menu name="Examples">
+      <item name="Java Modularity (JPMS) in Tests" href="examples/jpms.html"/>
+      <item name="TCP/IP Communication between Forks" href="examples/process-communication.html"/>
+      <item name="Using TestNG" href="examples/testng.html"/>
+      <item name="Using JUnit" href="examples/junit.html"/>
+      <item name="Using JUnit 5 Platform" href="examples/junit-platform.html"/>
+      <item name="Using POJO Tests" href="examples/pojo-test.html"/>
+      <item name="Using Spock" href="examples/spock.html"/>
+      <item name="Using Cucumber" href="examples/cucumber.html"/>
+      <item name="Special characters in directories" href="examples/cwd.html"/>
+      <item name="Skipping Tests" href="examples/skipping-tests.html"/>
+      <item name="Skip After Failure" href="examples/skip-after-failure.html"/>
+      <item name="Inclusions and Exclusions of Tests" href="examples/inclusion-exclusion.html"/>
+      <item name="Running a Single Test" href="examples/single-test.html"/>
+      <item name="Re-run Failing Tests" href="examples/rerun-failing-tests.html"/>
+      <item name="Class Loading and Forking" href="examples/class-loading.html"/>
+      <item name="Debugging Tests" href="examples/debugging.html"/>
+      <item name="Using System Properties" href="examples/system-properties.html"/>
+      <item name="Configuring the Classpath" href="examples/configuring-classpath.html"/>
+      <item name="Selecting Providers" href="examples/providers.html"/>
+      <item name="New Error Summary" href="newerrorsummary.html"/>
+      <item name="Multi-lined Exception Messages" href="multilineexceptions.html"/>
+      <item name="Fork Options and Parallel Test Execution" href="examples/fork-options-and-parallel-execution.html"/>
+      <item name="Using Console Logs" href="examples/logging.html"/>
+      <item name="Shutdown of Forked JVM" href="examples/shutdown.html"/>
+      <item name="Run tests with Java 9" href="java9.html"/>
+      <item name="Run tests in Docker" href="docker.html"/>
+      <item name="Run tests in a different JVM using toolchains" href="examples/toolchains.html"/>
+    </menu>
+  </body>
+</project>

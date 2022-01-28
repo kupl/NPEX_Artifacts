@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+        "line": 327,
+        "method_name": "resolveSuggestedVersion"
+    },
+    {
+        "filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+        "line": 269,
+        "method_name": "resolveNextVersion"
+    },
+    {
+        "filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+        "line": 173,
+        "method_name": "execute"
+    },
+    {
+        "filepath": "maven-release-manager/src/test/java/org/apache/maven/shared/release/phase/MapVersionsPhaseTest.java",
+        "line": 2142,
+        "method_name": "testNonExistentVersionPolicy"
+    }
+]

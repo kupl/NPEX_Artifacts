@@ -1,0 +1,49 @@
+#title: 更底层定制NutDao
+#author:zozoh(zozohtnt@gmail.com)
+#index:0,1
+--------------------------------------------------------------------------------------------------
+Dao 接口的默认实现 NutDao
+    
+    Nutz 的 Dao 接口是它最大的一个接口，这个接口封装了一组更便利的数据库操作，同时 Nutz 也提供了一个
+    默认的实现 : {#00A;*org.nutz.dao.impl.NutDao}，基本上这个实现足够你使用。但是有些时候你希望对它
+    进行更加深刻的，触及灵魂的定制，比如你打算让 Dao 的使用 Spring 的事务管理器等等，那么你可以读读
+    这篇文档，它告诉你几个 NutDao 类的几个扩展点，可以让你更加底层定制 NutDao
+
+--------------------------------------------------------------------------------------------------
+完全控制SQL语句的执行
+    
+    NutDao 中无论任何操作，最终都要生成一个 SQL 语句，并传入给 JDBC 来执行。
+     * PojoMaker 接口负责语句的生成
+     * DaoExecutor 接口负责语句的执行
+    我们很鼓励你自己实现自己的 DaoExecutor 接口替换掉默认的实现，但是 PojoMaker 接口则暂时不建议你
+    这么做，因为里面的逻辑稍微有点复杂，你非常容易弄错。
+
+    DaoExecutor 接口的源码如下：
+    {{{<JAVA>
+    public interface DaoExecutor {
+        void exec(Connection conn, DaoStatement st);
+    }
+    }}}
+    它的实现类面对的是一个 DaoStatement，无论你是用自定义SQL，还是直接操作 POJO，最后NutDao都要生成
+    DaoStatement 接口的一个实例，然后交付给 DaoExecutor 来运行. 
+    
+    Nutz 默认提供的 NutDaoExecutor 也不太复杂，算上空行和注释，240多行，你如果有兴趣看看它的源码，
+    它倒是能成为你自定义 DaoExecutor 的一个很好的参考。
+
+    总之，通过 DaoExecutor 接口，你可以完全控制单条SQL语句的执行，当然，到现在，似乎还没有人明确
+    的希望控制这个接口，大家都在用 Nutz 的默认实现。
+
+--------------------------------------------------------------------------------------------------
+同 Spring 事务整合的例子
+
+    {{{<XML>
+    <bean id="nutDao" class="org.nutz.dao.impl.NutDao">
+        <property name="dataSource" ref="dataSource"/>
+        <!-- 如果要使用Trans,移除springDaoRunner -->
+        <property name="runner" ref="springDaoRunner"/>
+    </bean>
+    <bean id="springDaoRunner" class="org.nutz.integration.spring.SpringDaoRunner">
+    </bean>
+    }}}
+    
+    SpringDaoRunner类可以在[https://github.com/nutzam/nutzmore/tree/master/nutz-integration-spring nutz-integration-spring] （[https://git.oschina.net/nutz/nutzmore/tree/master/nutz-integration-spring Git@OSC镜像]）中找到

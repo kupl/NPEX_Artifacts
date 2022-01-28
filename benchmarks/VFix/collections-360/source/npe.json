@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/commons/collections/iterators/FilterListIterator.java",
+	"line": 232,
+	"deref_field": "iterator",
+	"sink_field": "hasNext",
+	"npe_class": "FilterListIterator",
+	"npe_method": "setNextObject",
+	"jvmti_identify_succeed": true
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/rolling/CronTriggeringPolicyTest.java",
+        "line": 62,
+        "method_name": "testBuilder"
+    },
+    {
+        "filepath": "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/rolling/CronTriggeringPolicyTest.java",
+        "line": 82,
+        "method_name": "testLoggerContextAndBuilder"
+    }
+]

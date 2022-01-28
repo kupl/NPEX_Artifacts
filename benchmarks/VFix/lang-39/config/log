@@ -1,0 +1,5 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.commons.lang3.StringUtils.replaceEach(StringUtils.java:3676)
+	at org.apache.commons.lang3.StringUtils.replaceEach(StringUtils.java:3502)
+	at Main.testReplace_StringStringArrayStringArray(Main.java:111)
+	at Main.main(Main.java:7)

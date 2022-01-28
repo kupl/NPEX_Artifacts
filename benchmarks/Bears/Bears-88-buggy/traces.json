@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "src/test/java/org/springframework/data/repository/config/RepositoryBeanNameGeneratorUnitTests.java",
+        "line": 79,
+        "method_name": "usesClassNameOfScannedBeanDefinition"
+    }
+]

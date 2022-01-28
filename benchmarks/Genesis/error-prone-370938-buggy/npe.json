@@ -1,0 +1,11 @@
+{
+    "filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+    "line": 282,
+    "deref_field": "symbol",
+    "npe_class": "GuardedByBinder",
+    "npe_method": "normalizeBase",
+    "sink_field": "isStatic",
+    "jvmti_identify_succeed": false,
+    "is_original": true,
+    "nullpointer": "symbol"
+}

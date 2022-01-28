@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.getDefaultAppearance(PDAcroForm.java:445)
+	at Main.testPDFBOX2995(Main.java:21)
+	at Main.main(Main.java:12)

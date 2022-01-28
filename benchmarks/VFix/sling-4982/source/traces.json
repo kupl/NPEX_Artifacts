@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "org/apache/sling/security/impl/ContentDispositionFilter.java",
+        "line": 288,
+        "method_name": "isJcrData"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 38,
+        "method_name": "main"
+    }
+]

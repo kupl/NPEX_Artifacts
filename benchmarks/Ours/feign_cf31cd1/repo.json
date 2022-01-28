@@ -1,0 +1,21 @@
+{
+    "repo": "feign",
+    "commit_id": "cf31cd1",
+    "repo_url": "https://github.com/OpenFeign/feign",
+    "commit_url": "https://github.com/OpenFeign/feign/commit/cf31cd1abd7787a923f3052db2ec76a2d1a441ad",
+    "parent_url": "https://github.com/OpenFeign/feign/commit/9c5a52d627d91f9d6190dc7ac567620341358acc",
+    "date": "2018-12-10",
+    "changed_files": [
+        "core/src/main/java/feign/Response.java",
+        "core/src/test/java/feign/ResponseTest.java"
+    ],
+    "patch_files": [
+        "core/src/main/java/feign/Response.java"
+    ],
+    "test_files": [
+        "core/src/test/java/feign/ResponseTest.java"
+    ],
+    "size": 17678,
+    "is_maven": true,
+    "is_java": true
+}

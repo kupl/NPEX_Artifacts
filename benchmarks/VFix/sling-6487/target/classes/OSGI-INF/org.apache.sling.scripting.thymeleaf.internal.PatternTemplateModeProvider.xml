@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.apache.sling.scripting.thymeleaf.internal.PatternTemplateModeProvider" immediate="true" activate="activate" deactivate="deactivate" modified="modified">
+  <implementation class="org.apache.sling.scripting.thymeleaf.internal.PatternTemplateModeProvider"/>
+  <service>
+    <provide interface="org.apache.sling.scripting.thymeleaf.TemplateModeProvider"/>
+  </service>
+  <property name="cssPattern" type="String" value="^.+\.css$"/>
+  <property name="service.vendor" type="String" value="The Apache Software Foundation"/>
+  <property name="javascriptPattern" type="String" value="^.+\.js$"/>
+  <property name="htmlPattern" type="String" value="^.+\.html$"/>
+  <property name="xmlPattern" type="String" value="^.+\.xml$"/>
+  <property name="textPattern" type="String" value="^.+\.txt$"/>
+  <property name="service.description" type="String" value="Pattern TemplateModeProvider for Sling Scripting Thymeleaf"/>
+</scr:component>

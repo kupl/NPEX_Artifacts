@@ -1,0 +1,42 @@
+#title: WebSocket的支持
+#author: wendal(wendal1985@gmail.com)
+#index:0,1
+------------------------------------------------------------------------------------------
+WebSocket是什么?
+
+	WebSocket 规范定义了一种 API，可在网络浏览器和服务器之间建立"套接字"连接。
+	简单地说：客户端和服务器之间存在持久的连接，而且双方都可以随时开始发送数据。
+
+------------------------------------------------------------------------------------------
+Nutz为WebSocket准备了什么?
+
+	请下载最新的nutz-plugins-websocket及websocket api, 然后只需要一个类, 即可完成websocket的基础集成.
+	
+	{{{<JAVA>
+	@ServerEndpoint(value = "/websocket", configurator=NutWsConfigurator.class)
+	@IocBean
+	public class MyWebsocket extends AbstractWsEndpoint {
+	}
+	}}}
+	
+	其他类注入MyWebsocket实例(一般就是@Inject嘛), 通过sendXXX方法发送数据到浏览器
+	
+	若需要扩展,请查阅AbstractWsEndpoint的javadoc及[https://github.com/nutzam/nutzmore/tree/master/nutz-plugins-websocket nutz-plugins-websocket的README.md]
+	
+-----------------------------------------------------------------------------------------
+maven依赖
+
+	{{{<XML>
+	
+		<dependency>
+			<groupId>javax.websocket</groupId>
+			<artifactId>javax.websocket-api</artifactId>
+			<version>1.1</version>
+			<scope>provided</scope><!-- 非常重要哦 -->
+		</dependency>
+		<dependency>
+			<groupId>org.nutz</groupId>
+			<artifactId>nutz-plugins-websocket</artifactId>
+			<version>1.r.62</version>
+		</dependency>
+	}}}

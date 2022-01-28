@@ -1,0 +1,20 @@
+{
+    "repo": "qpid-proton-j",
+    "commit_id": "6422e24",
+    "commit_url": "https://github.com/apache/qpid-proton-j/commit/6422e2497b62b46db9e993059bc514a53a8ed643",
+    "parent_url": "https://github.com/apache/qpid-proton-j/commit/0c27d5ffbbb272902f24262f13d5c6b2985902b4",
+    "date": "2016-01-26",
+    "changed_files": [
+        "proton-j/src/main/java/org/apache/qpid/proton/engine/impl/TransportImpl.java",
+        "proton-j/src/test/java/org/apache/qpid/proton/engine/impl/TransportImplTest.java"
+    ],
+    "patch_files": [
+        "proton-j/src/main/java/org/apache/qpid/proton/engine/impl/TransportImpl.java"
+    ],
+    "test_files": [
+        "proton-j/src/test/java/org/apache/qpid/proton/engine/impl/TransportImplTest.java"
+    ],
+    "size": 41984,
+    "is_maven": true,
+    "is_java": true
+}

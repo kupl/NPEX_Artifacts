@@ -1,0 +1,38 @@
+#title: WebSocket的支持
+#author: wendal(wendal1985@gmail.com)
+#index:0,1
+------------------------------------------------------------------------------------------
+WebSocket是什么?
+
+	WebSocket 规范定义了一种 API，可在网络浏览器和服务器之间建立"套接字"连接。
+	简单地说：客户端和服务器之间存在持久的连接，而且双方都可以随时开始发送数据。
+
+------------------------------------------------------------------------------------------
+Nutz为WebSocket准备了什么?
+
+	只需要自行添加下面的类
+	
+	{{{<JAVA>
+	import javax.websocket.server.ServerEndpointConfig;
+    import org.nutz.mvc.Mvcs;
+
+    public class NutIocWebSocketConfigurator extends ServerEndpointConfig.Configurator {
+
+        public <T> T getEndpointInstance(Class<T> endpointClass) {
+        	Ioc ioc = Mvcs.getIoc();
+        	if (ioc == null)
+        	    ioc = Mvcs.ctx().getDefaultIoc();
+            return ioc.get(endpointClass);
+        }
+    }
+	}}}
+	
+	然后在自己的websocket服务类上添加注解,即可享用ioc注入带来的福利
+	
+	{{{<JAVA>
+	@ServerEndpoint(value = "/websocket", configurator=NutIocWebSocketConfigurator.class)
+	@IocBean
+	public class MyWebsocket extends Endpoint {
+	
+	}
+	}}}

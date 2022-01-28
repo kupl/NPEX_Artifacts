@@ -1,0 +1,806 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 60,
+        "description": "GoogleStorageTests"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 60,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 44,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 45,
+        "description": "getLog"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 53,
+        "description": "GoogleStorageProtocolResolver"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 53,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 49,
+        "description": "org.springframework.cloud.gcp.storage.GoogleStorageProtocolResolverSettings"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolverSettings.java",
+        "line_number": 25,
+        "description": "GoogleStorageProtocolResolverSettings"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolverSettings.java",
+        "line_number": 25,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 64,
+        "description": "setResourceLoader"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 64,
+        "description": "getClass"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 64,
+        "description": "isAssignableFrom"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 65,
+        "description": "addProtocolResolver"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 59,
+        "description": "postProcessBeanFactory"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 306,
+        "description": "GoogleStorageTests$StorageApplication"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 306,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 310,
+        "description": "mockStorage"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 310,
+        "description": "mock"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 311,
+        "description": "of"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 312,
+        "description": "of"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 313,
+        "description": "mock"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 314,
+        "description": "mock"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 315,
+        "description": "mock"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 316,
+        "description": "exists"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 316,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 316,
+        "description": "when"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 316,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 316,
+        "description": "thenReturn"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 317,
+        "description": "exists"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 317,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 317,
+        "description": "when"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 317,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 317,
+        "description": "thenReturn"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 318,
+        "description": "getSize"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 318,
+        "description": "when"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 318,
+        "description": "valueOf"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 318,
+        "description": "thenReturn"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 319,
+        "description": "eq"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 319,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 319,
+        "description": "when"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 319,
+        "description": "thenReturn"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 320,
+        "description": "eq"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 320,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 320,
+        "description": "when"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 320,
+        "description": "thenReturn"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 321,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 321,
+        "description": "when"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 321,
+        "description": "thenReturn"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 322,
+        "description": "getName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 322,
+        "description": "when"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 322,
+        "description": "thenReturn"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 323,
+        "description": "writer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 323,
+        "description": "when"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 323,
+        "description": "thenReturn"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "resolve"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "startsWith"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "length"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "substring"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 81,
+        "description": "split"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 83,
+        "description": "isEmpty"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 90,
+        "description": "getBean"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 93,
+        "description": "getBean"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 96,
+        "description": "info"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 109,
+        "description": "isAutoCreateFiles"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolverSettings.java",
+        "line_number": 29,
+        "description": "isAutoCreateFiles"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 109,
+        "description": "org.springframework.cloud.gcp.storage.GoogleStorageResourceObject"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 56,
+        "description": "GoogleStorageResourceObject"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 56,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 57,
+        "description": "notNull"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "resolve"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "startsWith"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "length"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "substring"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 81,
+        "description": "split"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 83,
+        "description": "isEmpty"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 109,
+        "description": "isAutoCreateFiles"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolverSettings.java",
+        "line_number": 29,
+        "description": "isAutoCreateFiles"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 109,
+        "description": "org.springframework.cloud.gcp.storage.GoogleStorageResourceObject"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 56,
+        "description": "GoogleStorageResourceObject"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 56,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 57,
+        "description": "notNull"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "resolve"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "startsWith"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "length"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "substring"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 81,
+        "description": "split"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 83,
+        "description": "isEmpty"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 105,
+        "description": "isAutoCreateFiles"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolverSettings.java",
+        "line_number": 29,
+        "description": "isAutoCreateFiles"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 105,
+        "description": "org.springframework.cloud.gcp.storage.GoogleStorageResourceBucket"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceBucket.java",
+        "line_number": 49,
+        "description": "GoogleStorageResourceBucket"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceBucket.java",
+        "line_number": 49,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceBucket.java",
+        "line_number": 50,
+        "description": "notNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceBucket.java",
+        "line_number": 51,
+        "description": "notNull"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "resolve"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "startsWith"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "length"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "substring"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 81,
+        "description": "split"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 83,
+        "description": "isEmpty"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 105,
+        "description": "isAutoCreateFiles"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolverSettings.java",
+        "line_number": 29,
+        "description": "isAutoCreateFiles"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 105,
+        "description": "org.springframework.cloud.gcp.storage.GoogleStorageResourceBucket"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceBucket.java",
+        "line_number": 49,
+        "description": "GoogleStorageResourceBucket"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceBucket.java",
+        "line_number": 49,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceBucket.java",
+        "line_number": 50,
+        "description": "notNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceBucket.java",
+        "line_number": 51,
+        "description": "notNull"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "resolve"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "startsWith"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "length"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "substring"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 81,
+        "description": "split"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 83,
+        "description": "isEmpty"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "resolve"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 75,
+        "description": "startsWith"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "length"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 79,
+        "description": "substring"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageProtocolResolver.java",
+        "line_number": 81,
+        "description": "split"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 99,
+        "description": "testValidObjectWithUnderscore"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line_number": 99,
+        "description": "exists"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 74,
+        "description": "exists"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 74,
+        "description": "getGoogleStorageObject"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 120,
+        "description": "getGoogleStorageObject"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 120,
+        "description": "getBlobId"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 109,
+        "description": "getBlobId"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 109,
+        "description": "getURI"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 98,
+        "description": "getURI"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 100,
+        "description": "java.net.URI"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 110,
+        "description": "getHost"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 111,
+        "description": "getPath"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 111,
+        "description": "getPath"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 111,
+        "description": "length"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 111,
+        "description": "substring"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line_number": 110,
+        "description": "of"
+    }
+]

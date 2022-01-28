@@ -1,0 +1,21 @@
+{
+    "repo": "Jest",
+    "commit_id": "93f3c48",
+    "repo_url": "https://github.com/searchbox-io/Jest",
+    "commit_url": "https://github.com/searchbox-io/Jest/commit/93f3c481af2e8fa9d7a421d8b4e5e7dbe8cb4066",
+    "parent_url": "https://github.com/searchbox-io/Jest/commit/f34fa45e34c9230d58069f8f3e9b86cabfabf603",
+    "date": "2016-06-24",
+    "changed_files": [
+        "jest-common/src/main/java/io/searchbox/client/config/discovery/NodeChecker.java",
+        "jest-common/src/test/java/io/searchbox/client/config/discovery/NodeCheckerTest.java"
+    ],
+    "patch_files": [
+        "jest-common/src/main/java/io/searchbox/client/config/discovery/NodeChecker.java"
+    ],
+    "test_files": [
+        "jest-common/src/test/java/io/searchbox/client/config/discovery/NodeCheckerTest.java"
+    ],
+    "size": 18947,
+    "is_maven": true,
+    "is_java": true
+}

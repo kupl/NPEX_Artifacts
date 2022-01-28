@@ -1,0 +1,9 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.pdfbox.pdmodel.font.encoding.Encoding.contains(Encoding.java:106)
+	at org.apache.pdfbox.pdmodel.font.PDType1Font.encode(PDType1Font.java:343)
+	at org.apache.pdfbox.pdmodel.font.PDFont.encode(PDFont.java:286)
+	at org.apache.pdfbox.pdmodel.PDPageContentStream.showText(PDPageContentStream.java:411)
+	at Test.createMainPDF(Test.java:139)
+	at Test.testLayerImport(Test.java:45)
+	at Test.testPDFBOX2951(Test.java:29)
+	at Test.main(Test.java:25)

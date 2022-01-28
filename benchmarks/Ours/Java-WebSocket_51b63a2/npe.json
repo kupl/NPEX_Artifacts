@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+    "line": 257,
+    "sink_field": "wakeup",
+    "npe_class": "WebSocketServer",
+    "npe_method": "stop",
+    "jvmti_identify_succeed": true,
+    "deref_field": "selector",
+    "nullpointer": "selector"
+}

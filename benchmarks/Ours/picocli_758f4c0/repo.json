@@ -1,0 +1,21 @@
+{
+    "repo": "picocli",
+    "commit_id": "758f4c0",
+    "repo_url": "https://github.com/remkop/picocli",
+    "commit_url": "https://github.com/remkop/picocli/commit/758f4c0c581b12b9953f5dec2de93b698735d21b",
+    "parent_url": "https://github.com/remkop/picocli/commit/06283710c11674f4e5f610cb53c91b3c07f5cc6a",
+    "date": "2017-06-08",
+    "changed_files": [
+        "src/main/java/picocli/CommandLine.java",
+        "src/test/java/picocli/CommandLineTest.java"
+    ],
+    "patch_files": [
+        "src/main/java/picocli/CommandLine.java"
+    ],
+    "test_files": [
+        "src/test/java/picocli/CommandLineTest.java"
+    ],
+    "size": 6694,
+    "is_maven": true,
+    "is_java": true
+}

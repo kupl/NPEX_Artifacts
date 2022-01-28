@@ -1,0 +1,2931 @@
+Release 5.1 BETA2
+------------------
+
+This is the second BETA release in the 5.1 release series that includes a number of
+new features as well as bug fixes from the stable 5.0.x branch.
+
+Notable changes and features included in the 5.1 series:
+
+* Application protocol upgrade support for non-blocking HTTP/1.1 connections.
+
+Change Log
+-------------------
+
+* PR #232: Master try w res and more.
+  - Use try-with-resources.
+  - Use diamonds.
+  - Add missing @Override.
+  - Make better use of Map APIs.
+  - Remove redundant modifiers.
+  - Use Collections.addAll() API instead of loops.
+  - Remote extra semicolons (;).
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* Bug fix: Fixed ignoring maxResultLength in toString method of EntityUtils.
+  Contributed by Klaw <Klawrar at gmail.com>
+
+* Bug fix: corrected handling of pushed stream refusal by the HTTP/2 protocol handler.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Improved connection re-use (keep-alive) tracking by the benchmark; disabled H2 push
+  when running the benchmark with HTTP/2.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Improved detection of disconnected endpoints by HttpAsyncRequester.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-626: in case of an unsuccessful `expect-continue` handshake do not make any
+  attempts to keep the client connection in a consistent state if the server intends
+  to close it on its end.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Move decision if the i/o session is to be terminated immediately to the protocol
+  handler by default attempt to terminate the i/o session gracefully.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Optimized request termination by the non-blocking HTTP/1.1 protocol handler in case of
+  a premature response or `expect-continue` handshake failure.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* `AbstractAsyncResponseConsumer` to handle gracefully an inconsistent state caused by
+  the caller signalling a response with no entity but subsequently calling methods
+  to consume data.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Revised HTTP protocol negotiation for non-blocking I/O sessions
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Revised TLS session initialization in I/O reactor code
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-653: CancelledKeyException triggers I/O reactor shutdown.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Make `ReactiveDataConsumer#failed` a no-op if it has already been marked as complete
+  (#227).
+  Contributed by Colin Weld <c_weld at backblaze.com>
+
+* HTTPCORE-644: non-blocking TLSv1.3 connections can end up in an infinite event spin
+  when closed concurrently by the local and the remote endpoints.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Calculate pendingOutputRequests before calling produceOutput to avoid race condition.
+  Contributed by Colin Weld <c_weld at backblaze.com>
+
+
+Release 5.1 BETA1
+------------------
+
+This is the first BETA release in the 5.1 release series that includes a number of
+new features as well performance optimizations in the classic HTTP transport.
+
+Notable changes and features included in the 5.1 series:
+
+* Conditional conformance with RFC 3986 (Uniform Resource Identifier (URI): Generic Syntax).
+
+* Improved support for out of sequence response message handing by the the classic (blocking)
+  HTTP transport.
+
+
+Change Log
+-------------------
+
+* HTTPCORE-649: Implement ByteArrayBuffer.append(ByteBuffer)
+  Contributed by Carter Kozak <ckozak at apache.org>
+
+* Use decimal numbers for endpoint/execution IDs
+  Contributed by Michael Osipov <michaelo at apache.org>
+
+* HTTPCORE-645: Increase blocking default chunk size from 2 KiB to 8 KiB.
+  Contributed by Carter Kozak <ckozak at apache.org>
+
+* HTTPCORE-645: Chunked request streams reuse buffers between requests.
+  Contributed by Carter Kozak <ckozak at apache.org>
+
+* HTTPCORE-639: Add a configurable ResponseOutOfOrder strategy for DefaultBHttpClientConnection.
+  Contributed by Carter Kozak <ckozak at apache.org>
+
+* RFC 3986 conformance: Support percent-encoded reserved characters in the host component.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* RFC 3986 conformance: Revised URI parsing and formatting.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Better parse and format methods for URIAuthority.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-628: Do not encode blanks as + in URI query component.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Async connection listeners to support passing attachments to endpoints.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+
+Release 5.0.2
+------------------
+
+This release reverts changes to early response handling logic introduced in 5.0.1
+and fixes a number of minor defects. Improvement of the early response handling
+by the classic client protocol handler has been moved to 5.1.
+
+Please also note that as of this release HttpCore will use a 3 minute socket timeout
+by default.
+
+Change Log
+-------------------
+
+* HTTP/1.1 protocol handlers fail to consistently set actual protocol version in
+  the execution context.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-648: Buffer array access respects the arrayOffset (#220).
+  Contributed by Carter Kozak <ckozak at ckozak.net>
+
+* HTTPCORE-646: ChunkedInputStream avoids creating unnecessary buffers.
+  Contributed by Carter Kozak <ckozak at ckozak.net>
+
+* Revert "Improved handling of early response messages by the classic client protocol handler".
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-638: SharedOutputBuffer must trigger DataStreamChannel#endStream() once (#204).
+  Contributed by malaysf <malayshah at gmail.com>
+
+* Fixed integer overflow in IOWorkers selector (#203).
+  Contributed by Pavel kaplin <pavel.kaplin@gmail.com>
+
+* HTTPCLIENT-2098: EntityUtils#toByteArray method fails to take into account
+  `maxResultLength` parameter (#202).
+  Contributed by Andriy <a.mahats at gmail.com>
+
+* Add Automatic-Module-Name to the manifest.
+  Contributed by Niels Basjes <niels at basjes.nl>
+
+* HTTPCORE-636: Logging statements use slf4j interpolation over concatenation (#199).
+  Contributed by Carter Kozak <ckozak at ckozak.net>
+
+* HTTPCLIENT-2091: Use finite (3 minutes) socket timeout by default.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+
+Release 5.0.1
+------------------
+
+This release improves handling of early response messages by the classic client protocol handler
+and fixes a number of minor defects.
+
+Change Log
+-------------------
+
+* Add handling of early response messages by the classic client protocol handler.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-631: Revised i/o reactor shutdown sequence and resource de-allocation.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Fix CharArrayBuffer.subSequence(beganIndex,endIndex) to return right result.
+  Contributed by Lee Ray <liruigo at gmail.com>
+
+* Added exception callback to async server implementations enabling logging of unexpected and
+  fatal exceptions in the server side protocol handlers.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 5.0
+------------------
+
+This is the first stable (GA) release of HttpCore 5.0.
+
+Notable changes and features included in the 5.0 series:
+
+* Support for HTTP/2 protocol and conformance to requirements and recommendations
+  of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
+
+  Supported features:
+
+    ** HPACK header compression
+    ** stream multiplexing (client and server)
+    ** flow control
+    ** response push (client and server)
+    ** message trailers
+    ** expect-continue handshake
+    ** connection validation (ping)
+    ** application-layer protocol negotiation (ALPN) on Java 9+
+    ** TLS 1.2 security features
+
+   Features out of scope for 5.0 release:
+
+    ** padding of outgoing frames
+    ** stream priority
+    ** plain connection HTTP/1.1 upgrade
+    ** CONNECT method
+
+* Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+  specification (RFC 7230, RFC 7231)
+
+* New asynchronous HTTP transport APIs consistent for both HTTP/1.1 and HTTP/2 transport.
+
+* Redesigned I/O reactor APIs and improved NIO based reactor implementation for a greater
+  performance and scalability.
+
+* Support for server-side request filters for classic and asynchronous server implementations.
+  Request filters could be used to implement cross-cutting protocol aspects such
+  as the 'expect-continue' handshaking and user authentication / authorization.
+
+* Support for Reactive Streams API [http://www.reactive-streams.org/]
+
+* Redesigned connection pool implementation with strict connection limit guarantees.
+  The connection pool is expected to have a better performance under higher concurrency
+  due to reduced global pool lock contention.
+
+* New connection pool implementation with lax connection limit guarantees and better
+  performance under higher concurrency due to absence of a global pool lock.
+
+* Package name space changed to 'org.apache.hc.core5'
+
+* Maven group id changed to 'org.apache.httpcomponents.core5'
+
+HttpCore 5.0 releases can be co-located with earlier versions.
+
+
+Change Log
+-------------------
+
+* GitHub #183: IO reactor status equality clean ups.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* HTTPCORE-623 GitHub #185: Change org.apache.hc.core5.http.io.BHttpConnection.isDataAvailable() int input to Timeout.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* GitHub #188: Add PathEntity, a Path based implementation of HttpEntity. (#188)
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+  
+* GitHub #191: Add org.apache.hc.core5.http.Method.normalizedValueOf(String).
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* GitHub #193: Reuse constants instead of magic strings.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+
+Release 5.0-BETA11
+------------------
+
+This BETA improves handling of illegal or invalid requests on the server-side and fixes a number
+of defects in HTTP/2 protocol code found since the last release.
+
+IMPORTANT: This release is expected to be the last BETA version. If no major
+design flaws are found, the actual 5.0 API will be frozen and the next version will be
+promoted to GA.
+
+
+Change Log
+-------------------
+
+* HTTPCORE-618: org.apache.hc.core5.http.HttpStatus should be a class, not an interface.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* HTTPCORE-619: org.apache.hc.core5.reactor.EventMask should be a class, not an interface.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* Normalize TimeUnit in TimeValue's #equals() and #hashCode().
+  Contributed by Michael Osipov <michaelo at apache.org>
+
+* Support for status code 431 (Request Header Fields Too Large) by H2 server-side protocol handler
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Enforce H2 SETTINGS_MAX_HEADER_LIST_SIZE limit for HTTP/2 messages.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Improved H2 connection window management logic.
+  Contributed by Ryan Schmitt <rschmitt at apache.org>
+
+* Use UTF-8 encoding for XML-based content types.
+  Contributed by Michael Osipov <michaelo at apache.org>
+
+* Bug-fix: H2 protocol handler to reset all streams unconditionally in case of an unexpected
+  exception and attempt to close the i/o session gracefully if possible.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Support for status code 431 (Request Header Fields Too Large).
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Corrected handling of illegal or invalid request heads by async server-side protocol handler
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug-fix: Fixed race condition in ReactiveDataConsumer.
+  Contributed by Ryan Schmitt <rschmitt at apache.org>
+
+* Bug-fix: Fixed H2 SETTINGS_HEADER_TABLE_SIZE negotiation.
+  Contributed by Ryan Schmitt <rschmitt at apache.org>
+
+* Bug-fix: Fixed empty response handling in ReactiveResponseConsumer.
+  Contributed by Ryan Schmitt <rschmitt at apache.org>
+
+* Allow for timeout while acquiring lock in StrictConnPool.
+  Contributed by Chris Wildman <chriswildman at chriswildman.com>
+
+* Added H2 config option to disable Huffman compression
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-613: Now allowing 0 for validaterAfterInactivity.
+  Contributed by Peter Frank <IMATOOL13 at gmail.com>
+
+* HTTPCLIENT-2029: URIBuilder to support parsing of non-UTF8 URIs.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCLIENT-2026: Fixed URIBuilder#isOpaque() logic.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-611: Minor glitches with TimeValue.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+
+
+Release 5.0-BETA10
+-------------------
+
+This BETA fixes a number of defects found since the last release.
+
+IMPORTANT: This release is expected to be the last BETA version. If no major
+design flaws are found, the actual 5.0 API will be frozen and the next version will be
+promoted to GA.
+
+
+Change Log
+-------------------
+
+* HTTPCORE-608: Fixes regression that can lead to performance degradation of
+  asynchronous HTTP/1.1 protocol handlers.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-606: HTTP/2 protocol handler incorrectly uses larger frame size prior
+  to SETTING handshake completion; revision of SETTINGS handshake implementation.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: HTTP/2 Protocol handler does not update global connection output window
+  in some cases.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Upgraded Conscrypt dependency to version 2.2.1
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+
+Release 5.0-BETA9
+-------------------
+
+This BETA fixes a number of defects found since the last release, improves behavior
+of the lax (concurrent) connection pools (special thanks to Linton Miller), simplifies
+and improves input event handling of SSL/TLS sessions and the HTTP/1.1 protocol event
+handler.
+
+Please note that the following interfaces have marked as internal as of this release:
+IOSession, IOEventHandler, IOEventHandlerFactory.
+
+IMPORTANT: This release is expected to be the last BETA version. If no major
+design flaws are found, the actual 5.0 API will be frozen and the next version will be
+promoted to GA.
+
+
+Change Log
+-------------------
+
+* HTTPCORE-604: async HTTP/1.1 protocol handler must close the i/o session if it cannot 
+  be kept alive before passing control to the message exchange hanlder.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Simplification of HTTP/1.1 read event handling logic.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Redesign of SSL/TLS async I/O event handling.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCLIENT-2016 (regression): Tab chars are replaced by question marks in header values.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: Fixed capacity calculation in SessionInputBufferImpl#put.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Marked IOSession, IOEventHandler and IOEventHandlerFactory interfaces as internal.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Propagate BasicResponse{Consumer,Producer}#failed() to data{Consumer,Producer}.
+  Contributed by Roy Hashimoto <roy at shoestringresearch.com>
+
+* Regression: Fixed regression in SingleCoreIOReactor leading to unhandled CancelledKeyException
+  and causing abnormal I/O reactor termination.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-601: Work-around for SSL session spin on outbound session closure with Conscrypt 2.2.1.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-600: SSLIOSession incorrectly disables input interest when there is still decrypted data
+  available in the session input buffer.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Added statusClass property to StatusLine.
+  Contributed by Behrang <18451+behrangsa at users.noreply.github.com>
+
+* HTTPCORE-596: Connection pools to use an optional callback to close out disposed connections.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Connection pools to close connections gracefully in case of an ordinary connection disposal.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-599: I/O sessions to stop reading from the underlying network channel of READ interest
+  is disabled.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* TimeValue to implement Comparable.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-597: AsyncEntityProducers#createText always throws IllegalArgumentException.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-595: Tolerate NPE thrown by com.android.org.conscrypt.NativeCrypto#SSL_get_shutdown
+  in Android Conscrypt.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Set accessibility flag on reflected methods in ReflectionUtils.
+  Contributed by Richard Hernandez <riher at amazon.com>
+
+* Restore original socket timeout after finishing SSL/TLS handshake.
+  Contributed by Richard Hernandez <riher at amazon.com>
+
+* Add SOAP XML content type.
+  Contributed by Raihaan Shouhell <raihaanhimself at gmail.com>
+
+* HTTPCORE-593, HTTPCORE-592, HTTPCORE-590, HTTPCORE-589: LaxConnPool improvements.
+  Contributed by Linton Miller <linton.miller at coxautoinc.com>
+
+* HTTPCORE-588: Race condition in ComplexCancellable that can lead to operational dependency
+  not being correctly cancelled.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Execute Socket[Channel]#connect under doPrivileged.
+  Contributed by Simon Willnauer <simonw at apache.org>
+
+* Fail request execution immediately after submission if the I/O session has already been closed.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: Fixed regression in the HTTP protocol negotiators.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: MessageSupport#formatTokens no longer modifies the array of tokens passed to it
+  as a parameter.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-586: Improve LaxConnPool max pool size management.
+  Contributed by Linton Miller <linton.miller at coxautoinc.com>
+
+* HTTPCORE-585: Fix LaxConnPool#servicePendingRequest to avoid losing pending lease requests
+  it can't fulfill.
+  Contributed by Linton Miller <linton.miller at coxautoinc.com>
+
+* Possible fix for iteration thread-safety issue.
+  Contributed by Linton Miller <linton.miller at coxautoinc.com>
+
+* SSL session verifier for classic HTTP requester.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: non-blocking I/O event handler may be null in case of an unexpected exception.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: Corrected immediate termination of non-blocking I/O sessions.
+Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: Ensure consistency of internal buffers in case of I/O or SSL exception.
+Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+
+Release 5.0-BETA8
+-------------------
+
+This BETA fixes a number of defects found since the last release and adds several
+convenience factory and builder classes, mainly for TLS configuration and HTTP
+message construction.
+
+As of this version all server and requester implementations exclude weak TLS protocol
+versions and ciphers.
+
+Please note that the following interfaces have changed: ResponseChannel,
+AsyncRequestConsumer, AsyncResponseConsumer, HttpContentProducer, SSLServerSetupHandler.
+
+IMPORTANT: This release is expected to be the last BETA version. If no major
+design flaws are found the actual 5.0 API will be frozen and the next version will be
+promoted to GA.
+
+
+Change Log
+-------------------
+
+* HTTPCORE-582: Fixed NPE in SingleCoreIOReactor#processEvents
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Redesign of fatal exception handling by the I/O reactors
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-581: Wrong deadline calculation for non-blocking I/O operations
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Better HttpVersion and ProtocolVersion. (#131)
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* Classic and async message builders.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Improved classic and async entity factory methods.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-578: Incorrect serialization of HeaderGroup.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* HTTPCORE-577: server-side HTTP protocol negotiator to propagate exceptions
+  to the I/O event handler associated with the I/O session.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCLIENT-1986: URIBuilder#isPathEmpty method to verify if encodedPath
+  is an empty string.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* SSLIOSession: Improve connectTimeout implementation.
+  Contributed by Ryan Schmitt <rschmitt at apache.org>
+
+* HTTPCLIENT-1981: Disallow TRACE requests with an enclosed entity.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCLIENT-1978: Filter characters before byte conversion.
+  Contributed by Ryan Schmitt <rschmitt at apache.org>
+
+* HTTPCORE-573: FileContentDecoder don't always enforce the maximum number of
+  bytes to transfer.
+  Contributed by Julien Coloos <julien.coloos at gmail.com>
+
+* All server and requester implementation to exclude weak TLS protocol versions
+  and ciphers.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Improved SSL setup handling for classic requester and server.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Common TLS support methods migrated from HttpClient.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: non-blocking SSL I/O sessions fail to fire session disconnected event.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: basic entity consumers to clear buffered content when releasing resources.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* conscrypt-openjdk-uber 1.4.1 -> 1.4.2.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* Provide more information when a BindException occurs.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* Refactor ClassicHttpRequest and ClassicHttpResponse interfaces to extend
+  a new interface HttpEntityContainer.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+  
+* Update RxJava from 2.2.7 to 2.2.8.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+
+Release 5.0-BETA7
+-------------------
+
+This BETA release adds support for SOCKS version 5, improves support for TLS
+handshake timeout configuration, improves URI builder, and fixes various defects.
+
+Please note that the following interfaces have changed: TlsStrategy, IOSession,
+TransportSecurityLayer.
+
+
+Change Log
+-------------------
+
+* Add a thread-safe capacity channel to AbstractHttp1StreamDuplexer
+  Contributed by Richard Hernandez <riher at amazon.com>
+
+* HTTPCORE-568: Signal capacity in ReactiveDataConsumer whenever possible (fixes a race condition)
+  Contributed by Richard Hernandez <riher at amazon.com>
+
+* Made standard HttpEntity implementations immutable / conditionally immutable
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCLIENT-1968: URIBuilder to split path component into path segments when digesting a URI
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCLIENT-1968: added utility methods to parse and format URI path segments
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Added SOCKS proxy support to classic (blocking) HTTP requester
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Made AbstractBinAsyncEntityProducer and AbstractCharAsyncEntityProducer conditionally threading-safe
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Added convenience method to test if ContentType instances are of the same MIME type
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Merge connect and handshake timeouts in AbstractIOSessionPool
+  Contributed by Ryan Schmitt <rschmitt at apache.org>
+
+* HTTPCLIENT-1960: URIBuilder incorrect handling of multiple leading slashes in path component
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCLIENT-1959: corrected argument validation in HttpHost constructors; removed deprecated methods
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* org.apache.hc.core5.reactor.IOSession: Deprecate lock() in favor of getLock(). Add missing @Override.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+* HTTPCORE-563: client support for SOCKS version 5
+  Contributed by David Maplesden <david at maplesden.co.nz>
+
+* Delay I/O operations on non-blocking SSL sessions until fully initialized
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Add `handshakeTimeout` support throughout
+  Contributed by Ryan Schmitt <rschmitt at apache.org>
+
+* Updated the set of project report generated by Maven
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* SSLIOSession: Add `connectTimeout` constructor param
+  Contributed by Ryan Schmitt <rschmitt at apache.org>
+
+* Update RxJava from 2.1.9 to 2.2.7.
+  Contributed by Gary Gregory <garydgregory at gmail.com>
+
+
+Release 5.0-BETA6
+-------------------
+
+This BETA release adds support for advanced TLS functions (such as ALPN protocol negotiation)
+on Java 1.7 and Java 1.8 through Conscrypt TLS library, and fixes a number of defects found
+since the previous release.
+
+Please note AsyncDataConsumer interface has been changed in order to make it simpler to implement.
+However existing AsyncDataConsumer might require minor modifications.
+
+
+Change Log
+-------------------
+
+* Removed OSGi module.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Added support for advanced TLS functions (such as ALPN extension) on Java 1.7 and Java 1.8
+  through Conscrypt TLS library.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTP/1.1 and HTTP/2 async protocol handlers to use I/O session lock for output synchronization.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: non-blocking HTTP/1.1 server-side streams incorrectly report their keep-alive status.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: fixed a race condition in non-blocking HTTP/1.1 protocol handlers causing premature
+  clearing of output interest.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Simplified AsyncDataConsumer interface contract
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-560: Fix LaxConnPool leasing incorrect PoolEntry when processing pending requests
+  Contributed by Desmond Yeung <dyeung at datto.com>
+
+* Deprecate and rename org.apache.hc.core5.util.Timeout.ofMillis(long) to ofMilliseconds(long).
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Deprecate and rename org.apache.hc.core5.util.TimeValue.ofMillis(long) to ofMilliseconds(long).
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Fix org.apache.hc.core5.util.TimeValue.convert(TimeUnit).
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Add org.apache.hc.core5.util.TimeValue.divide(*).
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* org.apache.hc.core5.http.URIScheme.getId()
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* HTTPCORE-562: The reason phrase returned by org.apache.hc.core5.http.HttpResponse.getReasonPhrase()
+  may be empty.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* TimeValue can parse more leniently: Allow spaces and singular words for time units,
+  for example " 1 SECOND ".
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* Add HttpStreamResetException.serialVersionUID 
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* Add org.apache.hc.core5.http.HttpRequest.setUri(URI)
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* org.apache.hc.core5.net.URIBuilder.setHttpHost(HttpHost)
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Deprecate constructors in org.apache.hc.core5.http.HttpHost that do not have the scheme argument
+  first in favor of new constructors that do.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Add org.apache.hc.core5.http.HttpHost.create(URI)
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Keep the entries in org.apache.hc.core5.http.protocol.UriPatternMatcher#map in insertion order.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+
+Release 5.0-BETA5
+-------------------
+
+This BETA release fixed a severe regression introduced in 5.0-BETA4.
+
+
+Release 5.0-BETA4
+-------------------
+
+This BETA release adds support for Reactive Streams API [http://www.reactive-streams.org/] and
+fixes compatibility issues with Java 11 new TLS engine as well as a number of defects found
+since the previous release.
+
+This release also includes a redesigned HTTP stress test tool loosely based on
+Apache Benchmark (AB) command interface with support for HTTP/2.
+
+
+Change Log
+-------------------
+
+* Resolved compatibility issues with TLS 1.3 engine shipped with Java 11
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: corrected handling of FORCE_HTTP2 version policy by the server-side protocol negotiator
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Redesign of the internal HTTP benchmark loosely based on AB, added support for HTTP/2
+  stress testing.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Regression: fixed the response connection control interceptor incorrectly using
+  'Connection: keep-alive' directive with HTTP/1.0 requests that do not have
+  an explicit 'Connection' request header.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-552, HTTPCORE-553, HTTPCORE-554, HTTPCORE-555, HTTPCORE-556, HTTPCORE-557, HTTPCORE-558:
+  added status codes 103, 208, 226, 308, 451, 506, 508, 510
+  Contributed by sparsick <sparsic at @web.de> and Georg Berky <georg.berky at posteo.de>
+
+* HTTPCLIENT-1942: Add support for Reactive Streams
+  Contributed by Ryan Schmitt <ryansch at amazon.com>
+
+* Respect CloseMode when closing async TCP sockets
+  Contributed by Ryan Schmitt <ryansch at amazon.com>
+
+* Fix typo in message generated by org.apache.hc.core5.io.SocketTimeoutExceptionFactory.toMessage(int).
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Update the org.apache.hc.core5.http.protocol.HttpContext.setAttribute(String, Object) API to return the previous value.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Deprecate and rename org.apache.hc.core5.http.EndpointDetails.getSocketTimeout() to getSocketTimeoutMillis().
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* Deprecate and rename org.apache.hc.core5.http.MessageHeaders.getAllHeaders() to getHeaders(). 
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Deprecate and rename org.apache.hc.core5.http.MessageHeaders.getSingleHeaders(String) to getHeader(String). 
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+
+Release 5.0-BETA3
+-------------------
+
+This BETA release fixes a number of defects found since the previous release, adds several
+incremental improvements and improves Javadoc documentation.
+
+Change Log
+-------------------
+
+* Improved information responses (1xx) processing.
+  Contributed by Kirill Usov <kirill.usov at gmail.com>
+
+* Bug fix: fixed AbstractAsyncResponseConsumer to handle null callback parameter
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: HTTP stream handlers no longer call #failed event of the associated exchange handler when
+  the message exchange has already been completed.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: fixed NPE caused by null timeout attribute of IOSessionRequest
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: fixed incorrect propagation of exception cause in case of an HTTP protocol violation during
+  HTTP protocol version negotiation
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Workaround for misbehaved servers that return HTTP 204 responses with a content
+  Contributed by Alessandro Gherardi <alessandro.gherardi at schneider-electric.com>
+
+* HTTPCORE-510: Avoid an ArithmeticException in AbstractMultiworkerIOReactor by failing earlier by checking
+  ioThreadCount in IOReactorConfig constructor.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-511: Do not cache result of Runtime.getRuntime().availableProcessors() in IOReactorConfig.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-509: AVAIL_PROCS is auto-configured based on core count.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-514: Exceptions defined by HttpCore should clean message strings when built to replace non-printable
+  characters with hex values.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-517: Allow SecurityManager to stop socket connections.
+  Contributed by Gary Gregory <ggregory at apache.org> and Paul Thompson <pathompson at atlassian dot com>
+  
+* HTTPCORE-537: org.apache.hc.core5.http.message.BasicHttpResponse.toString() prints its code twice and
+  no protocol version.
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* HTTPCORE-539: Constructing a new FileEntityProducer for a file whose length is greater than 2GB throws
+  an IllegalArgumentException.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-540: EndpointDetails implements HttpConnectionMetrics.
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* HTTPCORE-541: Add HttpVersion.ALL for all HTTP versions known to HttpCore.  
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-542: Add missing org.apache.hc.core5.http.message.BasicClassicHttpRequest.serialVersionUID
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* HTTPCORE-544: Add org.apache.hc.core5.http.EndpointDetails.getSocketTimeout()
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* HTTPCORE-545: Add org.apache.hc.core5.http.message.HeaderGroup.removeHeaders(Header)
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* HTTPCORE-546: Update org.apache.hc.core5.http.message.HeaderGroup.removeHeader(Header) to return a boolean  
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-547: Update org.apache.hc.core5.http.message.HeaderGroup.removeHeaders(String) to return a boolean
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* HTTPCORE-548: Add missing HttpContext parameter to APIs.
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+* Refactor duplicate messages into a new 0-arg constructor for StreamClosedException.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Refactor timeout APIs to include the actual timeout value.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Refactor timeout APIs to include the scale in the method name; for example 'int getSocketTimeout()'
+  vs. int 'getSocketTimeoutMillis()'.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-550: When a ParseException is caught and rethrown as an IOException in ChunkDecoder#processFooters(),
+  the IOException does not chain the original ParseException.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Request specific push consumers
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCLIENT-1927: URLEncodedUtils#parse breaks at double quotes when parsing unquoted values
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-528: SSL I/O session spins upon abnormal connection closure by the opposite endpoint.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 5.0-BETA2
+-------------------
+
+This BETA release fixes a number of defects found since the previous release and
+adds several incremental improvements.
+
+Notable changes and features included in the 5.0 series:
+
+* Support for HTTP/2 protocol and conformance to requirements and recommendations
+  of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
+
+  Supported features:
+
+    ** HPACK header compression
+    ** stream multiplexing (client and server)
+    ** flow control
+    ** response push (client and server)
+    ** message trailers
+    ** expect-continue handshake
+    ** connection validation (ping)
+    ** application-layer protocol negotiation (ALPN) on Java 9+
+    ** TLS 1.2 security features
+
+   Features out of scope for 5.0 release:
+
+    ** padding of outgoing frames
+    ** stream priority
+    ** plain connection HTTP/1.1 upgrade
+    ** CONNECT method
+
+* Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+  specification (RFC 7230, RFC 7231)
+
+* New asynchronous HTTP transport APIs consistent for both HTTP/1.1 and HTTP/2 transport.
+
+* Redesigned I/O reactor APIs and improved NIO based reactor implementation for a greater
+  performance and scalability.
+
+* Support for server-side request filters for classic and asynchronous server implementations.
+  Request filters could be used to implement cross-cutting protocol aspects such
+  as the 'expect-continue' handshaking and user authentication / authorization.
+
+* Redesigned connection pool implementation with strict connection limit guarantees.
+  The connection pool is expected to have a better performance under higher concurrency
+  due to reduced global pool lock contention.
+
+* New connection pool implementation with lax connection limit guarantees and better
+  performance under higher concurrency due to absence of a global pool lock.
+
+* Package name space changed to 'org.apache.hc.core5'
+
+* Maven group id changed to 'org.apache.httpcomponents.core5'
+
+HttpCore 5.0 releases can be co-located with earlier versions.
+
+The 5.0 APIs are considered feature complete and are not expected to undergo any major changes
+anymore. The focus of development is now shifting to API polish, code stabilisation
+and documentation improvements.
+
+
+Change Log
+-------------------
+
+* HTTP/2 multiplexed requester to support cancellation of individual message exchanges without termination
+  of the underlying I/O session.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: corrected handling of GOAWAY frames by HTTP/2 stream multiplexer
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: prevent a tight loop in non-blocking SSL I/O sessions due to a HTTP/2 frame fragment in the SSL
+  input buffer.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Bug fix: incorrect handing of premature I/O session termination by the server-side application protocol
+  negotiator.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Strict / lax ALPN handshake mode for HTTP/2 multiplexing requester.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-496: Add API org.apache.http.protocol.UriPatternMatcher.entrySet().
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-499 Make interface Header extend NameValuePair
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-501 org.apache.http.client.utils.URLEncodedUtils.parse() 
+  should return a new ArrayList when there are no query parameters.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+
+Release 5.0-BETA1
+-------------------
+
+This is a major release that renders HttpCore API incompatible with the stable 4.x branch
+and upgrades HTTP/1.1 and HTTP/2 protocol conformance to the requirements and recommendations
+of the latest protocol specification.
+
+Notable new features in this release:
+
+* New HTTP/2 requester optimized for multiplexed execution of requests.
+
+Notable changes and features included in the 5.0 series:
+
+* Support for HTTP/2 protocol and conformance to requirements and recommendations
+  of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
+
+  Supported features:
+
+    ** HPACK header compression
+    ** stream multiplexing (client and server)
+    ** flow control
+    ** response push (client and server)
+    ** message trailers
+    ** expect-continue handshake
+    ** connection validation (ping)
+    ** application-layer protocol negotiation (ALPN) on Java 9+
+    ** TLS 1.2 security features
+
+   Features out of scope for 5.0 release:
+
+    ** padding of outgoing frames
+    ** stream priority
+    ** plain connection HTTP/1.1 upgrade
+    ** CONNECT method
+
+* Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+  specification (RFC 7230, RFC 7231)
+
+* New asynchronous HTTP transport APIs consistent for both HTTP/1.1 and HTTP/2 transport.
+
+* Redesigned I/O reactor APIs and improved NIO based reactor implementation for a greater
+  performance and scalability.
+
+* Support for server-side request filters for classic and asynchronous server implementations.
+  Request filters could be used to implement cross-cutting protocol aspects such
+  as the 'expect-continue' handshaking and user authentication / authorization.
+
+* Redesigned connection pool implementation with strict connection limit guarantees.
+  The connection pool is expected to have a better performance under higher concurrency
+  due to reduced global pool lock contention.
+
+* New connection pool implementation with lax connection limit guarantees and better
+  performance under higher concurrency due to absence of a global pool lock.
+
+* Package name space changed to 'org.apache.hc.core5'
+
+* Maven group id changed to 'org.apache.httpcomponents.core5'
+
+HttpCore 5.0 releases can be co-located with earlier versions.
+
+The 5.0 APIs are considered feature complete and are not expected to undergo any major changes
+anymore. The focus of development is now shifting to API polish, code stabilisation
+and documentation improvements.
+
+
+Change Log
+-------------------
+
+* HTTP/2 multiplexing requester.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Compatibility with Java 9 (tested with Oracle JDK 9.0.1).
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Fixed handling of relative request paths in BasicHttpRequest.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-494: Add image constants to ContentType.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-486: set a time limit on processing of pending I/O events by I/O reactors.
+  Contributed by xiaohu-zhang <silver9886@126.com>
+
+
+
+Release 5.0-ALPHA4
+-------------------
+
+This is a major release that renders HttpCore API incompatible with the stable 4.x branch
+and upgrades HTTP/1.1 and HTTP/2 protocol conformance to the requirements and recommendations
+of the latest protocol specification.
+
+Notable changes and features included in the 5.0 series are:
+
+* Support for HTTP/2 protocol and conformance to requirements and recommendations
+  of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
+
+  Supported features:
+
+    ** HPACK header compression
+    ** stream multiplexing (client and server)
+    ** flow control
+    ** response push (client and server)
+    ** message trailers
+    ** expect-continue handshake
+    ** connection validation (ping)
+    ** application-layer protocol negotiation (ALPN) on Java 1.9+
+    ** TLS 1.2 security features
+
+   Features out of scope for 5.0 release:
+
+    ** padding of outgoing frames
+    ** stream priority
+    ** plain connection HTTP/1.1 upgrade
+    ** CONNECT method
+
+* Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+  specification (RFC 7230, RFC 7231)
+
+* New asynchronous HTTP transport APIs consistent for both HTTP/1.1 and HTTP/2 transport.
+
+* Redesigned I/O reactor APIs and improved NIO based reactor implementation for a greater
+  performance and scalability.
+
+* Support for server-side request filters for classic and asynchronous server implementations.
+  Request filters could be used to implement cross-cutting protocol aspects such
+  as the 'expect-continue' handshaking and user authentication / authorization.
+
+* Redesigned connection pool implementation with strict connection limit guarantees.
+  The connection pool is expected to have a better performance under higher concurrency
+  due to reduced global pool lock contention.
+
+* New connection pool implementation with lax connection limit guarantees and better
+  performance under higher concurrency due to absence of a global pool lock.
+
+* Package name space changed to 'org.apache.hc.core5'
+
+* Maven group id changed to 'org.apache.httpcomponents.core5'
+
+HttpCore 5.0 releases can be co-located with earlier versions.
+
+Please note that at this point 5.0 APIs are considered API experimental and unstable and are
+expected to change in the coming releases without providing a migration path.
+
+
+Change Log
+-------------------
+
+* HTTPCORE-485: Reduced memory footprint of non-blocking SSL sessions by 25%.
+  Contributed by Todor Bonchev <31352118+todorbonchev at users.noreply.github.com>
+
+* Fixed propagation of entity details of incoming HTTP/1.1 messages by non-blocking HTTP/1.1
+  stream duplexer
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Configurable connection pool concurrency policy
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-390: Connection pool implementation with higher concurrency characteristics
+  and lax total and per route max guarantees.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Request filters for classic and asynchronous server-side protocol handlers
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Improved handling of 1xx status messages by the classic transport; server expectation
+  (expect-continue) handshake can now be implemented as a cross-cutting aspect by both
+  the classic and asynchronous transports
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Fixed bug in the classic (blocking) HTTP requester causing incorrect release of connections
+  in case a response message has no entity (such as 204)
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-454: use Timeout class to represent timeout values
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Made HTTP/2 data window update precede sending of the DATA frame to the opposite endpoint.
+  In some extreme circumstances the opposite endpoint can send back a WINDOW_UPDATE frame
+  in-between of these two operation causing the data window value to exceed its maximum
+  valid value
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* I/O interest flag in IOSessionImpl requires synchronization instead of atomic operation
+  in order to avoid race condition
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-472: Fixed problem with blocking message parsers incorrectly throwing
+  "Maximum line length limit exceeded" exception in some corner cases
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Improved I/O reactor APIs with a smaller public API footprint
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Rewrite of I/O reactor internal channel management; more efficient handling of outgoing
+  connection requests
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Fixed delineation of 200 status message in response to CONNECT method
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-468: Allow HttpAsyncService subclasses to customize the HTTP status code.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-471: Add APIs URIBuilder.localhost() and setHost(InetAddress)
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-466: Round out the SslContextBuilder by adding missing APIs.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+
+
+Release 5.0-ALPHA3
+-------------------
+
+This is a major release that renders HttpCore API incompatible with the stable 4.x branch
+and upgrades HTTP/1.1 and HTTP/2 protocol conformance to the requirements and recommendations
+of the latest protocol specification.
+
+Notable changes and features included in the 5.0 series are:
+
+* Partial support for HTTP/2 protocol and conformance to requirements and
+  recommendations of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
+
+  Supported features:
+
+    ** HPACK header compression
+    ** stream multiplexing (client and server)
+    ** flow control
+    ** response push (client and server)
+    ** message trailers
+    ** expect-continue handshake
+    ** connection validation (ping)
+    ** application-layer protocol negotiation (ALPN) on Java 1.9+
+    ** TLS 1.2 security features
+
+   Unsupported features:
+
+    ** padding of outgoing frames
+    ** stream priority
+    ** plain connection HTTP/1.1 upgrade
+    ** CONNECT method
+
+* Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+  specification (RFC 7230, RFC 7231)
+
+* New asynchronous HTTP transport APIs consistent for both HTTP/1.1 and HTTP/2 transport.
+
+* Improved HTTP/1.1 and HTTP/2 requester and server implementations.
+
+* Redesigned connection pool implementation with reduced pool lock contention.
+
+* Plug-in mechanism for HTTP/1.1 protocol switch / upgrade.
+
+* Package name space changed to 'org.apache.hc.core5'
+
+* Maven group id changed to 'org.apache.httpcomponents.core5'
+
+HttpCore 5.0 releases can be co-located with earlier versions.
+
+Please note that as of 5.0 HttpCore requires Java 1.7 or newer.
+
+Please note that at this point 5.0 APIs are considered API experimental and unstable and are
+expected to change in the coming releases without providing a migration path.
+
+
+Change Log
+-------------------
+
+* Support for HTTP protocol version negotiation.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Support TLS ALPN and disable TLS renegotiation via reflection on Java 1.9+.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-452: Add a UriRegexMatcher.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-453: ServerBootstrap should traverse handler map in insertion order.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-451: Add a TimeValue class to wrap a long and a TimeUnit.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* Fixed HTTP/2 server-side response message delineation when replying to HEAD requests.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Rewrite of non-blocking HTTP/1.1 connection persistence and re-use code.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* API for graceful shutdown of processes or endpoints
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-450: Add a Provider parameter in SSLContextBuilder.
+  Contributed by lujianbo <387852424 at qq dot com>, Gary Gregory <ggregory at apache.org>
+
+* Improved handling of premature HTTP/1.1 stream termination by non-blocking
+  protocol handlers.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Non-blocking connection initializer to support multi-homed remote endpoints.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-458: Validate port values
+  Contributed by Gary Gregory <ggregory at apache.org>
+  
+
+Release 5.0-ALPHA2
+-------------------
+
+This is a major release that renders HttpCore API incompatible with the stable 4.x branch
+and upgrades HTTP/1.1 and HTTP/2 protocol conformance to the requirements and recommendations
+of the latest protocol specification.
+
+Notable changes and features included in the 5.0 series are:
+
+* Partial support for HTTP/2 protocol and partial conformance to requirements and
+  recommendations of the latest HTTP/2 protocol specification (RFC 7540, RFC 7541)
+
+  Supported features:
+
+    ** HPACK header compression
+    ** stream multiplexing (client and server)
+    ** flow control
+    ** response push (client and server)
+    ** message trailers
+    ** expect-continue handshake
+    ** connection validation (ping)
+    ** TLS 1.2 features
+
+   Unsupported features:
+
+    ** application-layer protocol negotiation (ALPN)
+    ** padding of outgoing frames
+    ** stream priority
+    ** plain connection HTTP/1.1 upgrade
+    ** CONNECT method
+    ** TLS renegotiation and compression cannot be disabled with Java 1.7 JSSE APIs
+
+* Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol
+  specification (RFC 7230, RFC 7231)
+
+* New asynchronous HTTP transport APIs consistent for both HTTP/1.1 and HTTP/2 transport.
+
+* Improved HTTP/1.1 and HTTP/2 requester and server implementations.
+
+* Redesigned connection pool implementation with reduced pool lock contention.
+
+* Support for HTTP/1.1 protocol switch / upgrade.
+
+* Package name space changed to 'org.apache.hc.core5'
+
+* Maven group id changed to 'org.apache.httpcomponents.core5'
+
+HttpCore 5.0 releases can be co-located with earlier versions.
+
+Please note that as of 5.0 HttpCore requires Java 1.7 or newer.
+
+Please note that at this point 5.0 APIs are considered API experimental and unstable and are
+expected to change in the coming releases without providing a migration path.
+
+
+Change Log
+-------------------
+
+* HTTPCORE-424: added ConnPool policy parameter to control connection re-use policy.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-413: Minimal chunk side can now be specified as H1Config#chunkSizeHint.
+  The value is treated as a hint. Both classic and NIO attempt to apply it when sending / receiving
+  messages without providing a strict guarantee.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-429: NIO connection pool incorrectly reports the number of pending connections
+  per individual route.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-432: HTTP/2 support.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-418: Add a HttpHost constructor for hostname and scheme.
+  Based on contribution by Joshua Hendrickson <joshua dot hendrickson at live dot com>
+  
+* HTTPCORE-436: Port tests from Apache Commons Logging to Apache Log4j 2.
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+* HTTPCORE-434: Corrected handling of HEAD responses without payload headers.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-427: SSL I/O sessions to use a finite timeout for SSL shutdown handshake when closing.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-422: HttpAsyncResponseConsumer#onEntityEnclosed is triggered for HEAD responses.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-420: Blocking HttpServer does not close out persistent connection when shut down.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-417: SSLIOSession#writePlain incorrectly handles closed channel condition leading
+  to an infinite loop.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-416: DefaultConnectingIOReactor to treat failure to open a channel for a new outgoing
+  connection as a recoverable request failure.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 5.0-ALPHA1
+-------------------
+
+This is a major release that renders HttpCore API incompatible with the stable 4.x branch
+and upgrades HTTP/1.1 protocol conformance to the requirements and recommendations of the latest
+protocol specification. This release lays the foundation for transition to HTTP/2 as the primary
+transport protocol in the future releases.
+
+Notable changes and features included in the 5.0 series are:
+
+* Improved conformance to requirements and recommendations of the latest HTTP/1.1 protocol 
+  specification (RFC 7230, RFC 7231)
+
+* Blocking I/O and NIO HTTP transport implementation has been folded into one module
+
+* Package name space changed to 'org.apache.hc.core5' 
+
+* Maven group id changed to 'org.apache.httpcomponents.core5' 
+
+HttpCore 5.0 releases can be co-located with earlier versions.
+
+Please note that as of 5.0 HttpCore requires Java 1.7 or newer.
+
+Please note that at this point 5.0 APIs are considered API experimental and unstable and are
+expected to change in the coming releases without providing a migration path.
+
+
+Change Log
+-------------------
+
+* PATCH method support
+  Contributed by Ömer Özkan <omer at ozkan.info>
+
+* HTTPCORE-412: Support for trailing headers in outgoing HTTP messages
+  Based on contribution by Daneel Yaitskov <rtfm.rtfm.rtfm at gmail.com>
+
+* HTTPCORE-411, RFC 7320, RFC 7321: Made Expect-Continue handshake compliant with the spec
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Fixed handling of pipelined HEAD requests
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-409: NIO HttpServer does not shutdown listener ExecutorService
+  Contributed by Hiranya Jayathilaka <hiranya at apache.org>
+
+* HTTPCORE-406: PAX-EXAM tests with an embedded HTTP server
+  Contributed by Benson Margulies <benson at basistech.com>
+
+* RFC 7230: increased the default max number of concurrent connection for the same route from 2 to 5
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* RFC 7230: improved compliance of the default connection re-use strategy
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* RFC 7230: reject HTTP/1.1 requests with absent Host header or multiple Host headers
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* RFC 7230: permit some empty lines before message head
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* RFC 7230: disallow multiple Content-Length headers / header elements
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* RFC 7230: reject headers containing whitespaces between the header field name and colon in strict mode
+  (when parsing request messages on the server-side)
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* RFC 7230: reject messages with incompatible major protocol version
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTP/2: added immutable MessageHead interface common for both HTTP/1.1 and HTTP/2 messages
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HTTPCORE-396: PrivateKeyStrategy does not work with NIO SSL
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* RFC 7230: it is legal for any request method to enclose an entity; revised message delineation logic;
+  removed HttpEntityEnclosingRequest interface; fixes HTTPCORE-318, HTTPCORE-380
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Use CharSequence instead of CharArrayBuffer for header element parsing
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* TokenParser to use CharSequence instead of CharArrayBuffer
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+
+
+Release 4.4.4
+-------------------
+
+This is a maintenance release that fixes a number of issues discovered since 4.4.3.
+
+Please note that as of 4.4 HttpCore requires Java 1.6 or newer.
+
+
+Change Log
+-------------------
+
+* [HTTPCORE-410] PoolStats made Serializable
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* BufferedHttpEntity to use HttpEntity#writeTo when buffering non-repeatable entities
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Fixed race condition in request initialization code in async client protocol handlers
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Fixed handling of pipelined HEAD requests
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-409] NIO HttpServer does not shutdown listener ExecutorService 
+  Contributed by Hiranya Jayathilaka <hiranya at apache.org>
+
+
+Release 4.4.3
+-------------------
+
+This is a maintenance release that fixes a regression introduced by release 4.4.2.
+
+Please note that as of 4.4 HttpCore requires Java 1.6 or newer.
+
+
+Change Log
+-------------------
+
+* Fixed regression introduced by HTTPCORE-399. 
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.4.2
+-------------------
+
+This maintenance release fixes a bug in HTTP request pipelining code discovered 
+after 4.4.1 release.
+
+Please note that as of 4.4 HttpCore requires Java 1.6 or newer.
+
+
+Change Log
+-------------------
+
+* Throw ConnectionClosedException instead of IllegalStateException if an attempt is made to 
+  use a closed (not bound to a socket) blocking connection.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-399] Non-blocking client connections incorrectly suspend output causing 
+  sequential execution of requests. 
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.4.1
+-------------------
+
+This maintenance release fixes a number of minor bugs found since 4.4.
+
+Please note that as of 4.4 HttpCore requires Java 1.6 or newer.
+
+
+Change Log
+-------------------
+
+* [HTTPCORE-396]: PrivateKeyStrategy does not work with NIO SSL.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-395]: VersionInfo#getUserAgent reports incorrect Java version.
+  Contributed by Michael Osipov <michaelo at apache.org>
+
+* Non-blocking connection should not trigger end-of-stream callback as long as there is still
+  data in the session input buffer. This can cause a series of short pipelined requests to
+  fail prematurely in case of an unexpected connection termination by the opposite endpoint. 
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.4
+-----------------
+
+This is the first stable (GA) release of HttpCore 4.4. Notable features included in 
+the 4.4 series are:
+
+* Support for pipelined request processing on the server-side
+
+* Support for pipelined request execution on the client side
+
+* Simplified bootstrapping of blocking and non-blocking (NIO) HTTP server implementations   
+
+* Inclusion of SSL context initialization utilities from HttpClient
+
+Please note that as of 4.4 HttpCore requires Java 1.6 or newer.
+
+
+Change Log
+-------------------
+
+* Performance optimizations
+  Contributed by Dmitry Potapov <dpotapov at yandex-team.ru>
+
+* Update Apache Commons Logging version from 1.1.3 to 1.2. 
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+
+Release 4.4-BETA1
+-------------------
+
+This is the first BETA release from 4.4 release series. Notable features included in 
+the 4.4 series are:
+
+* Support for pipelined request processing on the server-side
+
+* Support for pipelined request execution on the client side
+
+* Simplified bootstrapping of blocking and non-blocking (NIO) HTTP server implementations   
+
+* Inclusion of SSL context initialization utilities from HttpClient
+
+* New HTTP element tokenizer implementation 
+
+
+Please note that as of 4.4 HttpCore requires Java 1.6 or newer.
+
+
+
+
+Release 4.4-ALPHA1
+-------------------
+
+This is the first release from the 4.4.x development branch. The most notable features included in 
+this release are:
+
+* Support for pipelined request processing on the server-side
+
+* Support for pipelined request execution on the client side
+
+* Simplified bootstrapping of blocking and non-blocking (NIO) HTTP server implementations   
+
+This release also includes all fixes from the stable 4.2.x release branch.
+
+
+Change Log
+-------------------
+
+* [HTTPASYNC-77] system resources are not correctly deallocated if I/O reactor is shut down
+  while still inactive (not started)
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-377] Allow zero SO_LINGER (immediate abortive close).
+  Contributed by Dmitry Potapov <potapov.d at gmail.com>
+
+* [HTTPCORE-376] AbstractNIOConnPool#requestCancelled() should not process pending requests
+  wnen being shut down.
+  Contributed by Dmitry Potapov <potapov.d at gmail.com>
+
+* [HTTPASYNC-69]: async request handler is closed by HttpAsyncRequestExecutor#closed 
+  if the underlying connection is found to be in an inconsistent state.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-372] Blocking and non-blocking chunk decoders to throw an I/O exception if data stream
+  is terminated without a closing chunk.
+  Contributed by Dmitry Potapov <potapov.d at gmail.com>
+
+* [HTTPCORE-368] Customizable buffer management strategies for SSLIOSession.
+  Contributed by offbynull <offbynull at gmail.com>
+
+* [HTTPCORE-358] Added I/O reactor listener backlog parameter.
+  Contributed by Dmitry Potapov <potapov.d at gmail.com>
+
+* [HTTPCORE-357] Avoid DNS lookups in SSLIOSession.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Update JUnit to version 4.11 from 4.9  
+  Contributed by Gary Gregory <ggregory at apache.org>
+
+
+
+Release 4.3.2
+-------------------
+
+This maintenance release fixes a number of bugs and regressions found since 4.3.1, mostly in the 
+NIO transport components. All users of HttpCore 4.3 are advised to upgrade.
+
+Change Log
+-------------------
+
+* [HTTPCORE-371] Support for SSL re-negotiation with NIO.
+  Contributed by Asankha Perera <asankha at apache.org>
+
+* [HTTPCORE-373] Out of sequence HTTP response causes NPE in HttpAsyncRequestExecutor.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-370] Race condition if connection request succeeds and times out at the same time.  
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* (Regression) Fixed synchronization issue in blocking and non-blocking connection pool 
+  implementations caused by HTTPCORE-362
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.3.1
+-------------------
+
+This maintenance release fixes a number of bugs and regressions found since 4.3, mostly in the 
+NIO transport components. All users of HttpCore 4.3 are advised to upgrade.
+
+Change Log
+-------------------
+
+* [HTTPCORE-367] (Regression) Non-blocking connections can enter a tight loop while waiting 
+  for a chunk header split across multiple TCP frames.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-366] Non-blocking SSLIOSession can enter an infinite loop if the underlying
+  channel receives incoming data simultaneously with inactivity timeout.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-364] IOSessionImpl.getLocalAddress() (etc.) creates unnecessary copy of channel
+
+* DefaultConnectingIOReactor / DefaultListeningIOReactor do not correctly apply some initial 
+  socket settings.
+  Contributed by Andreas Veithen <veithen at apache.org>
+
+* [HTTPCORE-357] Avoid DNS lookups in SSLIOSessions in server mode.
+  Contributed by Isaac Cruz Ballesteros <icruzbal at gmail.com>
+
+* [HTTPCORE-362] Purge pool per route map after closing out expired or idle connections with 
+  #closeExpired and #closeIdle methods. 
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-361] Reduced intermediate garbage in HeaderGroup#getFirstHeader()
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-355] HttpAsyncRequestExecutor fails when its handler is not ready to generate
+  a request.
+  Contributed by jd <j1234d2003 at yahoo.com>
+
+* [HTTPCORE-354] BasicConnFactory don't use SocketConfig#isSoKeepAlive.
+  Contributed by David Ignjic <ignjic at gmail.com>
+
+* [HTTPCORE-347] (Regression) HttpResponse#setStatusCode() does not update reason phrase.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+
+Release 4.3
+-------------------
+
+This is the first stable (GA) release of HttpCore 4.3. The most notable features in the 4.3
+branch are:
+
+* Deprecation of preference and configuration API based on HttpParams interface in favor of
+  constructor injection and plain configuration objects.
+
+* Reliance on object immutability instead of access synchronization for thread safety.
+  Several old classes whose instances can be shared by multiple request exchanges have
+  been replaced by immutable equivalents.
+
+The 4.3 branch also contains performance optimizations such as reduced TCP packet fragmentation
+and more efficient lease / release operations for pools of persistent connections on the client
+side.
+
+This release also includes all fixes from the 4.2.x release branch.
+
+Users of HttpCore 4.2 are encouraged to upgrade.
+
+
+Change Log
+-------------------
+
+* [HTTPCORE-343] AbstractNIOConnPool to fire request callbacks outside the pool lock.
+  This makes it possible to re-enter pool methods from a callback event.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-340] AbstractNIOConnPool to support lease timeout distinct from connect timeout.
+  Contributed by Ignat Alexeyenko <ignatalexeyenko at gmail.com>
+
+* Blocking connections do not clean session input buffer when closed (input data from a read
+  operation may still remain in the buffer if the connection is re-opened).
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+
+Release 4.2.5
+-------------------
+
+This maintenance release fixes a number of bugs found in NIO components since 4.2.4. We advise
+users of HttpCore NIO of all versions to upgrade.
+
+This is likely to be the last release in the 4.2.x branch.
+
+
+Change Log
+-------------------
+
+* [HTTPCORE-345] EntityAsyncContentProducer fails to release resources allocated by the underlying
+  entity when #produceContent is never invoked.
+  Contributed by Tad Whitenight <tadwhitenight at gmail.com>
+
+* Non-blocking connection pool to avoid scanning the entire queue of pending connection requests
+  on each connection lease / release operation (under heavy load the request queue can contain
+  a significant number of pending requests, a full linear scan of which can cause massive
+  performance degradation).
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Use bulk ByteBuffer#put method instead of single byte ByteBuffer#put
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-336]  Unhandled CancelledKeyException leads to a shutdown of the underlying IOReactor.
+  Contributed by Thomas Dudek <mail.dudek at gmail.com>
+
+
+
+Release 4.3-BETA2
+-------------------
+
+This is the second BETA release from the 4.3.x release branch. This release addresses performance
+issues in the non-blocking connection pool implementation and also includes a number of performance
+improvements in the low level NIO based transport components.
+
+Change Log
+-------------------
+
+* [HTTPCORE-300] ContentType to provide support for custom parameters.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Non-blocking connection pool to avoid scanning the entire queue of pending connection requests
+  on each connection lease / release operation (under heavy load the request queue can contain
+  a significant number of pending requests, a full linear scan of which can cause massive
+  performance degradation).
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Basic connection pool implementations to perform default port resolution for HTTP and HTTPS
+  schemes.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Use bulk ByteBuffer#put method instead of single byte ByteBuffer#put
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-336]  Unhandled CancelledKeyException leads to a shutdown of the underlying IOReactor.
+  Contributed by Thomas Dudek <mail.dudek at gmail.com>
+
+
+Release 4.3-BETA1
+-------------------
+
+This is the first BETA release from the 4.3.x release branch. The main theme of the 4.3 release
+series is streamlining of component configuration and deprecation of the old configuration
+API based on HttpParams in favor of constructor-based dependency injection and plain objects
+for configuration parameters.
+
+This release also includes performance optimizations intended to reduce TCP packet fragmentation
+when writing out HTTP messages both in blocking and non-blocking I/O modes, which should result
+in up to 20% higher throughput for short entity enclosing messages.
+
+This release also includes all fixes from the stable 4.2.x release branch.
+
+
+Change Log
+-------------------
+
+* Reduced TCP packet fragmentation when writing out message content with blocking and
+  non-blocking connections.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-330] Clarify InputStreamEntity length constructor argument.
+  Contributed by John McCarthy <jmsignup at gmail.com>
+
+* [HTTPCORE-323] Undocumented UnsupportedCharsetException in ContentType#getOrDefault.
+  Contributed by Gary D. Gregory <ggregory at apache.org>
+
+
+
+Release 4.2.4
+-------------------
+
+This maintenance release fixes a number of bugs found in NIO components since 4.2.3. We advise
+users of HttpCore NIO of all versions to upgrade.
+
+Change Log
+-------------------
+
+* [HTTPCORE-334] https request to a non-responsive but alive port over a non-blocking connection
+  results in a busy loop in one of I/O dispatch threads.
+  Contributed by Scott Stanton <snstanton at gmail.com>
+
+* [HTTPCORE-331] BasicFuture no longer executes notification callbacks inside a synchronized block.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-319] Non-blocking SSLIOSession can fail to shut down correctly when the underlying
+  connection gets terminated abnormally by the opposite endpoint in case there is a truncated or
+  corrupted encrypted content in the input buffer and there is still data in the output buffer
+  that needs to be flushed out (most likely to occur with POST or PUT requests).
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+
+Release 4.3-ALPHA1
+-------------------
+
+This is the first release from the 4.3.x release branch. The main focus of the 4.3 release
+series is streamlining of component configuration and deprecation of the old configuration
+API based on HttpParams in favor of constructor based dependency injection and plain objects
+for configuration parameters.
+
+We are kindly asking all upstream projects to review API changes and help us improve
+the APIs by providing feedback and sharing ideas on dev@hc.apache.org.
+
+This release also includes all fixes from the stable 4.2.x release branch.
+
+
+
+Release 4.2.3
+-------------------
+
+This maintenance release fixes a number of bugs and found since 4.2.2 including
+a major bug in the NIO module that can cause an infinite loop in SSL sessions under special
+circumstances when the remote peer terminates the session in the middle of SSL handshake.
+Please note this issue does not affect blocking I/O components used by HttpClient.
+
+We advise users of HttpCore NIO of all versions to upgrade.
+
+Change Log
+-------------------
+
+* [HTTPCORE-319, HTTPCORE-322] Non-blocking SSLIOSession can enter an infinite loop under
+  special circumstances when the remote peer terminates the session in the middle of SSL handshake.
+  Contributed by Paul Donohue <apache-jira at PaulSD.com> and
+  Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-316] HeaderGroup#clone removes headers from the original object.
+  Contributed by Markus Thies <markus at dr-thies.com>
+
+* [HTTPCORE-315] AbstractNIOConnPool fails to correctly deallocate connection if it is immediately
+  released from the session request callback causing a resource leak.
+  Contributed by Scott Stanton <snstanton at gmail.com>
+
+* [HTTPCORE-313] ContentType#parse now ignores empty and blank charset attributes.
+  HttpEntityUtils#toString now throws checked I/O exception if it  encounters an unsupported
+  charset.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.2.2
+-------------------
+
+This is a maintenance release that fixes a number of bugs and regressions found since 4.2.1
+including a major bug in the NIO module causing incorrect handling of outgoing Content-Length
+delimited messages larger than 2GB.
+
+Users of HttpCore 4.2 are advised to upgrade.
+
+Change Log
+-------------------
+
+* [HTTPCORE-312] NIO length delimited content encoder incorrectly handles messages larger than 2GB.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-310] Fixed regression in DefaultConnectionReuseStrategy causing it to incorrectly
+  flag connections as non-reusable after a 204, 205 or 304 response.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-309] Fixed regression in HttpAsyncRequestExecutor causing it to handle 204, 205
+  and 304 responses incorrectly by returning a message with an enclosed content body.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-306] I/O reactor TCP_NODELAY parameter now defaults to true.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPASYNC-21] request execution handler does not get closed in case of a premature HTTP
+  exchange termination.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-303] ContentType made Serializable.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+
+Release 4.2.1
+-------------------
+
+This is a maintenance release that fixes a non-critical number of bugs found since 4.2.
+Users of HttpCore 4.2 are encouraged to upgrade.
+
+Change Log
+-------------------
+
+* [HTTPCORE-299] ContentType should rely on Charset#name() instead of Charset#toString()
+  for building header value.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-263] Under rare circumstances incorrectly delineated or garbled HTTP message
+  can cause an IndexOutOfBoundsException in AbstractSessionInputBuffer#readLine()
+  Contributed by Michael Pujos <bubbleguuum at free.fr>
+
+* Made connection pools use FIFO algorithm instead of LIFO when leasing / releasing persistent
+  connections.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-298] Fixed non-blocking SSLIOSession state can getting out of sync with the underlying
+  IOSession in case the I/O session is terminated by the I/O reactor rather than by the protocol
+  handler.
+  Contributed by Sandeep Tamhankar <sandman at electric-cloud.com>
+
+* Fixed NPE in StringEntity constructor thrown if ContentType#getCharset is null.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.2
+-------------------
+
+This is the first stable (GA) release of HttpCore 4.2. The most notable features included in this
+release are connection pool components for blocking and non-blocking HTTP connections and new
+asynchronous client and server-side protocol handlers.
+
+New protocol handling API used in conjunction with connection pooling components is expected to
+make development of asynchronous HTTP client agents and HTTP proxies easier and less error prone.
+
+Connection pool components are based on mature code migrated from HttpClient and HttpAsyncClient
+modules but have a slightly different API that makes a better use of Java standard concurrent
+primitives.
+
+Change Log
+-------------------
+
+* Fixed HttpAsyncRequestExecutor incorrect execution of message exchanges that span across multiple
+  hosts (for instance, in case of a request redirect).
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* AbstractHttpClientConnection#isResponseAvailable method now catches SocketTimeoutException
+  and returns false.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-296] server-side connections (both blocking and non-blocking) can now handle entity
+  enclosing requests without Content-Length and Transfer-Encoding headers.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-295] [HTTPCORE-288] Provided direct access to the underlying socket of non-blocking
+  HTTP connection to allow modification of socket level settings such as TCP_NODELAY, SO_KEEPALIVE,
+  TrafficClass, etc.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-289] HttpAsyncService fails to invoke Cancellable#cancel() when the ongoing HTTP
+  exchange is aborted by the client.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+Incompatible changes
+--------------------
+[Compared to release version 4.1.4]
+
+The following methods have been deprecated for some time now and have been deleted:
+
+org.apache.http.impl.SocketHttpServerConnection#createHttpDataReceiver(Socket, int, HttpParams)
+org.apache.http.impl.SocketHttpServerConnection#createHttpDataTransmitter(Socket, int, HttpParams)
+org.apache.http.protocol.HttpRequestHandlerRegistry#matchUriRequestPattern(String, String)
+
+The following classes have been deprecated for some while now and have been deleted:
+
+org.apache.http.nio.entity.ByteArrayNIOEntity
+org.apache.http.nio.entity.FileNIOEntity
+org.apache.http.nio.entity.HttpNIOEntity
+org.apache.http.nio.entity.StringNIOEntity
+org.apache.http.nio.protocol.NHttpClientHandlerBase
+org.apache.http.nio.protocol.NHttpServiceHandlerBase
+
+Release 4.2-BETA1
+-------------------
+
+This is the first BETA release of HttpCore 4.2. This release comes with completely redesigned
+and rewritten asynchronous protocol handlers. New protocol handling API used in conjunction with
+connection pooling components is expected to make development of asynchronous HTTP client agents
+and HTTP proxies easier and less error prone.
+
+Sample application shipped with the release include an example of an HTTP file server capable of
+direct channel (zero copy) data transfer and an example of a non-blocking, fully streaming reverse
+proxy.
+
+This release also incorporates bug fixes from the stable 4.1.x branch and includes an updated
+HttpCore tutorial.
+
+
+
+Release 4.1.4
+-------------------
+
+This is a maintenance release that fixes a number of bugs found since 4.1.3. It is also likely
+to be the last release in the 4.1.x branch.
+
+Change Log
+-------------------
+
+* [HTTPCORE-286] Canceled I/O session can cause an IllegalStateException in BaseIOReactor#validate
+  leading to an abnormal termination of the I/O reactor.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-257] Fixed incorrect results produced by DefaultConnectionReuseStrategy when handling
+  response messages whose content entity has been decoded or modified by a protocol interceptor.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-283] Workaround for a bug causing termination of the I/O reactor in case of exception
+  thrown by NHttpServiceHandler#requestReceived or NHttpClientHandler#responseReceived
+  methods. A more comprehensive fix for the bug applied to the 4.2 branch.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-281] ResponseConnControl protocol interceptor does not correctly populate connection
+  persistence control headers when sending a HTTP/1.1 response message in response to a HTTP/1.0
+  request message.
+  Contributed by William R. Speirs <bill.speirs at gmail.com>
+
+* [HTTPCORE-282] The default value of the internal event mask of newly created non-blocking I/O
+  is not correctly initialized, which causes the READ interest bit to get cleared in the interest
+  op queuing mode unless the event mask is explicitly reset.
+  Contributed by Sadeep Jayasumana <sadeep at wso2.com> and Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-268] Handle runtime exceptions thrown by SSLEngine.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+
+Release 4.2-ALPHA2
+-------------------
+
+This is the second ALPHA release of HttpCore 4.2. This release comes with completely redesigned
+and rewritten asynchronous protocol handlers. New protocol handling API used in conjunction with
+connection pooling components introduced in the previous ALPHA release is expected to make
+development of asynchronous HTTP client agents and HTTP proxies easier and less error prone.
+
+Sample application shipped with the release include an example of an HTTP file server capable of
+direct channel (zero copy) data transfer and an example of a non-blocking, fully streaming reverse
+proxy.
+
+We are kindly asking existing and prospective users of HttpCore to review and try out the
+new protocol handlers and give us feedback while the 4.2 API is still not final. If no major flaws
+are discovered the 4.2 API is expected to be frozen with the next BETA release.
+
+Please note that new features included in this release are still considered experimental and
+their API may change in the future ALPHA releases. This release also marks the end of support for
+Java 1.3. As of this release HttpCore requires Java 1.5 for all its components. Several classes and
+methods deprecated between versions 4.0-beta1 and 4.0 GA (more than two years ago) have been
+removed in this release.
+
+Change Log
+-------------------
+
+* [HTTPCORE-270] Fixed IllegalStateException in AbstractSessionOutputBuffer and
+  AbstractSessionInputBuffer.
+  Contributed by William R. Speirs <bill.speirs at gmail.com>
+
+* [HTTPCORE-269] Connection pools incorrectly handle lease requests when the max limit for the given
+  route has been exceeded and all connections in the route pool are stateful.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.2-ALPHA1
+-------------------
+
+This is the first ALPHA release of 4.2. The most notable feature included in this release is
+support for connection pools of blocking and non-blocking HTTP connections. Connection pool
+components are based on mature code migrated from HttpClient and HttpAsyncClient modules but have
+a slightly different API that makes a better use of Java standard concurrent primitives.
+
+Support for connection pools in HttpCore is expected to make development of client and proxy HTTP
+services easier and less error prone.
+
+Please note that new features included in this release are still considered experimental and
+their API may change in the future ALPHA releases. This release also marks the end of support for
+Java 1.3. As of this release HttpCore requires Java 1.5 for all its components. Several classes and
+methods deprecated between versions 4.0-beta1 and 4.0 GA (more than two years ago) have been
+removed in this release.
+
+Change Log
+-------------------
+
+* [HTTPCORE-268] Handle runtime exceptions thrown by SSLEngine.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+Release 4.1.3
+-------------------
+
+This is an emergency release that fixes a severe regression in the non-blocking SSL I/O code
+introduced in release 4.1.2.
+
+* [HTTPCORE-266] SSLIOSession does not correctly terminate if the opposite end shuts down connection
+  without sending a 'close notify' message causing an infinite loop in the I/O dispatch thread.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+Release 4.1.2
+-------------------
+
+This is a patch release that fixes a number of bugs found in the previous version.
+
+Please note that several classes and methods deprecated between versions 4.0-beta1 and 4.0 GA
+(more than two years ago) will also be removed in the 4.2 branch.
+
+Users of 4.0.x versions are advised to upgrade and replace deprecated API calls following
+recommendations in Javadocs.
+
+* [HTTPCORE-261] IOSession#setSocketTimeout() method does not reset the timeout count.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-260] Non-blocking SSL I/O session can terminate prematurely causing message body
+  truncation when message content is chunk coded and the connection is closed on the opposite end.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-257] Fixed incorrect results produced by DefaultConnectionReuseStrategy when handling
+  response messages whose content entity has been decoded or modified by a protocol interceptor.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+Release 4.1.1
+-------------------
+
+This is a patch release that fixes a number of non-critical issues found since release 4.1.
+
+This release marks the end of support for Java 1.3. As of release 4.2 HttpCore will require
+Java 1.5 for all its components.
+
+Please note that several classes and methods deprecated between versions 4.0-beta1 and 4.0 GA
+(more than two years ago) will also be removed in the 4.2 branch.
+
+Users of 4.0.x versions are advised to upgrade and replace deprecated API calls following
+recommendations in Javadocs.
+
+* In case of an unexpected end of stream condition (the peer closed connection prematurely)
+  truncated Content-Length delimited message bodies will cause an I/O exception. Application
+  can still choose to catch and ignore ConnectionClosedException in order to accept partial
+  message content.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-255]: Fixed resource management in InputStreamEntity#writeTo()
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-254]: Erratic results from metrics (sebb)
+
+* [HTTPCORE-242]: Fixed NPE in AsyncNHttpClientHandler caused by an early response to an
+  entity enclosing request.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.1
+-------------------
+
+This is the first stable (GA) release of HttpCore 4.1. This release provides a compatibility mode
+with JREs that have a naive (broken) implementation of SelectionKey API and also improves
+compatibility with the Google Android platform. There has also been a number of performance
+related improvements and bug fixes in both blocking and non-blocking components.
+
+Change Log
+-------------------
+
+* [HTTPCORE-240]: DefaultConnectingIOReactor leaks a socket descriptor if the session request fails.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-239]: The ChunkEncoder could request for a negative buffer limit causing an
+  IllegalArgumentException.
+  Contributed by Asankha Perera <asankha at apache.org>
+
+* [HTTPCORE-236]: SSLIOSession#isAppInputReady() does not check the status of the session input
+  buffer.
+  Contributed by Dmitry Lukyanov <dlukyanov at ukr.net>
+
+* [HTTPCORE-233]: EntityUtils#toString() and EntityUtils#toByteArray() to return null if
+  HttpEntity#getContent() is null
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-231] Fixed incorrect handling of HTTP entities by non-blocking LengthDelimitedDecoder
+  when the Content-Length value is larger than Integer.MAX_VALUE.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+Release 4.1-BETA2
+-------------------
+
+This is the second BETA release of HttpCore 4.1. This is mainly a bug fix release that addresses
+a number of non-critical bugs.
+
+The most significant change in this release is deprecation of the HttpEntity#consumeContent()
+method and streamlining of connection management and resource deallocation by HTTP entities.
+Please refer to the Javadocs for details.
+
+* [HTTPCORE-229] AbstractSessionInputBuffer#readLine(CharArrayBuffer) returns incorrect
+  number of characters read by the method when using non-standard HTTP element charset.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Non-blocking connections can trigger #responseReady / #requestReady events by mistake
+  when the underlying session is already closed.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-228] Fixed NPE in AsyncNHttpServiceHandler caused by entity enclosing requests
+  if no matching request handler can be found.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-227] Fixed incorrect request / response count by non-blocking connections.
+  Contributed by Harold Lee <harold at hotelling.net>
+
+* [HTTPCORE-226] Improved compatibility of NIO components with Google Android.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* ByteArrayBuffer, CharArrayBuffer, BasicHeader, BufferedHeader, HeaderGroup, BasicRequestLine,
+  BasicStatusLine made Serializable.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+Release 4.1-BETA1
+-------------------
+
+This is the first BETA release of HttpCore 4.1. This release finalizes the API introduced in the
+4.1 development branch. It also fixes a number of bugs discovered since the previous release and
+delivers a number of performance optimizations in the blocking HTTP transport components.
+The blocking HTTP transport is expected to be 5% to 10% faster compared to previous releases.
+
+* [HTTPCORE-222] Fixed Import-Package in the OSGi META-INF
+  Contributed by Willem Jiang <willem.jiang at gmail.com>
+
+* [HTTPCORE-177] Reduce intermediate data buffering by reading large chunks of data directly from
+  the underlying socket stream. This results in improved performance of blocking read operations.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-220] IdentityDecoder fails to detect end of stream when using file channels.
+  Contributed by Asankha C. Perera <asankha at apache.org>
+
+* [HTTPCORE-218] ChunkEncoder#write method no longer returns incorrect value if
+  the data to write is greater than the size of the internal buffer used by the encoder.
+  Contributed by Richie Jefts <rjefts at gmail.com>
+
+* [HTTPCORE-209] Added parameter to set SO_REUSEADDR on sockets bound to a local address.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-207] SocketHttp*Connection classes can leak sockets if the connection is half-closed
+  Contributed by David Koski <david_koski at mac.com>
+
+Release 4.1-ALPHA1
+-------------------
+
+This is the first public release from the 4.1 branch of HttpCore. This release adds a number of
+new features, most notable being introduction of compatibility mode with IBM JREs and other JREs
+with naive (broken) implementation of SelectionKey API.
+
+Please note new classes and methods added in the 4.1 branch are still considered API unstable.
+
+* Ensure that an attempt is made to close out all active sessions gracefully in case of an abnormal
+  shutdown of the I/O reactor.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-201] OSGi Export-Package to specify release version
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-183] Added Thread-safe implementations of HttpParams and HttpProcessor -
+  SyncBasicHttpParams and ImmutableHttpProcessor classes
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-199] ContentInputStream implements InputStream#available().
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-195] Truncated chunk-coded streams can now be tolerated by catching and discarding
+  TruncatedChunkException.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-155] Compatibility mode with IBM JRE and other JREs with naive (broken) implementation
+  of SelectionKey.
+  Contributed by Marc Beyerle <marc.beyerle at de.ibm.com> and Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-191] Blocking HTTP connections are now capable of correctly preserving their internal
+  state on SocketTimeoutExceptions, which makes it possible to continue reading from the connection
+  after a socket timeout.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-190] ChunkedInputStream is now capable of correctly preserving its internal state on
+  SocketTimeoutExceptions, which makes it possible to continue reading from the stream after a
+  socket timeout.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+Release 4.0.1
+-------------------
+
+This is a patch release addressing a number of issues discovered since the 4.0 release. Users
+of NIO module are advised to upgrade.
+
+* [HTTPCORE-198] CONNECT request includes Host header for HTTP 1.1 connections.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-196] SSLIOSession now unwraps encrypted data more aggressively eliminating long
+  pauses when receiving data over non-blocking connections.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-197] Fixed bug causing the non-blocking ChunkDecoder to report some data stream as
+  truncated under special conditions.
+  Contributed by Denis Rogov <denrogov at gmail.com> and Oleg Kalnichevski <olegk at apache.org>
+
+* SSLIOSession#isAppOutputReady and SSLIOSession#isAppInputReady no longer ignore the application
+  event mask causing I/O event notifications for unrequested type of events.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-193] Fixed problem with SSLIOSession incorrectly handling of end-of-stream condition.
+  Contributed by Asankha C. Perera <asankha at apache.org> and Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.0
+-------------------
+
+This is the first stable (GA) release of HttpCore 4.0. This release mainly improves the
+documentation and fixes a few minor bugs reported since the previous release. HttpCore
+now comes with a complete tutorial presenting an in-depth coverage of the API.
+
+HttpCore is a set of low level HTTP transport components that can be used to build custom
+client and server-side HTTP services with a minimal footprint. HttpCore supports two I/O
+models: blocking I/O model based on the classic Java I/O and non-blocking, event driven I/O
+model based on Java NIO.  The blocking I/O model may be more appropriate for data intensive,
+low latency scenarios, whereas the non-blocking model may be more appropriate for high latency
+scenarios where raw data throughput is less important than the ability to handle thousands of
+simultaneous HTTP connections in a resource efficient manner.
+
+* [HTTPCORE-180] Fixed NPE in standard I/O event dispatchers when
+  IOEventDispatch#disconnected fires before the session was fully initialized
+  (IOEventDispatch#connected was not called).
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-175] Chunk decoders no longer accept truncated chunks as valid input.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.0 Beta 3
+-------------------
+
+The third BETA version of HttpComponents Core has been released. This is a
+maintenance release, which addresses a number of issues discovered since the
+previous release.
+
+The only significant new feature is an addition of an OSGi compliant bundle
+combining HttpCore and HttpCore NIO jars.
+
+* [HTTPCORE-173] Tolerate missing closing chunk if the chunk coded content
+  is terminated by the end of stream (EOF) condition.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-174] Position is incremented twice in ContentLengthInputStream#skip(long)
+  Contributed by Ildar Safarov <ildar.safarov at gmail.com>
+
+* [HTTPCORE-125] OSGi bundle containing HttpCore & HttpCore NIO jars.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* CancelledKeyException thrown in BaseIOReactor#validate() no longer causes
+  a premature I/O reactor shutdown.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-172] Added #close() method to SharedInputBuffer and
+  SharedOutputBuffer. The purpose of the new method is to close the buffer
+  in case of normal / orderly termination of the underlying HTTP connection.
+  Use #shutdown() method to force-close the buffer in case of abnormal /
+  exceptional termination of the underlying connection.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-170] Fixed race condition in SharedOutputBuffer.
+  Contributed by Jason Walton <Jason.Walton at alcatel-lucent.com>
+
+* [HTTPCORE-169] Fixed bug causing connecting I/O reactors to shut down due to
+  ClosedChannelException if a pending session request is cancelled before the new
+  channel has been registered with the selector.
+  Contributed by Anders Wallgren <anders_wallgren at alum.mit.edu>
+
+* [HTTPCORE-167] Fixed handling the end of stream (EOF) condition in the #isStale()
+  check of blocking HTTP connections.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-166] NIO reactors now maintain an audit log of fatal exceptions,
+  which can be used to examine the cause and problems experienced during
+  the shutdown process.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-165] Improved handling of CancelledKeyException in I/O reactors
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+
+Release 4.0 Beta 2
+-------------------
+
+The second BETA version of HttpComponents Core has been released. This release
+adds a number of improvements to the NIO components, most notable being improved
+asynchronous client side and server-side protocol handlers.
+
+There has been a number of important bug fixes in HttpCore NIO module, whereas
+HttpCore base module has had very few changes.
+
+All upstream projects dependent on HttpCore NIO are strongly advised to upgrade.
+
+* [HTTPCORE-163] Fixed AbstractMultiworkerIOReactor#execute() to correctly
+  propagate the original I/O exception in case of an abnormal termination.
+  Contributed by Patrick Moore <patmoore at ieee.org>
+
+* Changed behavior of IdentityDecoder & LengthDelimitedDecoder to throw
+  an IOException if data is attempted to be written beyond the length
+  of a FileChannel.  Previously would write nothing.
+  Contributed by Sam Berlin <sberlin at apache.org>
+
+* Fixed bug in LengthDelimitedDecoder & IdentityDecoder that caused transfers
+  to a FileChannel to overwrite arbitrary parts of the file, if data was
+  buffered in SessionInputBuffer.
+  Contributed by Sam Berlin <sberlin at apache.org>
+
+* Fixed concurrency bug in the ThrottlingHttpServerHandler protocol handler.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Fixed bug in SharedInputBuffer that caused input events to be
+  incorrectly suspended.
+  Contributed by Asankha C. Perera <asankha at wso2.com>
+
+* [HTTPCORE-150] Entity implementation that serializes a Java object
+  Contributed by Andrea Selva <selva.andrea at gmail.com>
+
+* [HTTPCORE-157] ChunkedOutputStream#flush() now behaves consistently with the
+  specification of OutputStream#flush().
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-147] Fixed handling of requests with partially consumed content
+  in ThrottlingHttpServiceHandler.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-92] ChunkEncoder splits input data larger than available space
+  in the session output buffer into smaller chunks instead of expanding
+  the buffer.
+  Contributed by Andrea Selva <selva.andrea at gmail.com> and
+  Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-149] I/O reactors now count period of inactivity since the
+  time of the last read or write operation. Previously only read
+  operations resulted in timeout counter reset.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-148] Improved asynchronous server and client HTTP protocol
+  handler implementations.
+  Contributed by Sam Berlin <sberlin at gmail.com>
+
+* [HTTPCORE-143] Ensure the underlying channel is closed if the session
+  request is canceled or times out.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-140] Fixed timeout handling in ThrottlingHttpServiceHandler.
+  Contributed by Lorenzo Moretti <moznerol at hotmail.com> and
+  Oleg Kalnichevski <olegk at apache.org>
+
+
+
+Release 4.0 Beta 1
+-------------------
+
+The first BETA version of HttpComponents Core has been released. This release
+can be considered a major milestone, as it marks the end of API instability
+in HttpCore. As of this release the API compatibility between minor releases
+in 4.x codeline will be maintained.
+
+This release includes several major improvements such as enhanced HTTP message
+parsing API and optimized parser implementations, Java 5.0 compatibility
+for HttpCore NIO extensions. Upstream projects are strongly encouraged to
+upgrade to the latest release.
+
+The focus of the development efforts will be gradually shifting towards
+providing better test coverage, documentation and performance optimizations.
+
+Change Log:
+----------
+
+* [HTTPCORE-141] Session request timeout in DefaultConnectingIOReactor
+  invalidates the request.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-137] DefaultHttpRequestFactory extended to support all methods
+  specified in RFC 2616 (except CONNECT).
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Replaced HTTP parameter linking with a simple child/parent stack.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-134] all serialVersionUID attributes are private
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-133] Clone support for basic HTTP message elements and
+  non-streaming entities.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-127] Improved API for lifecycle management of listening I/O
+  reactors. One can now suspend and resume listener endpoints.
+  Contributed by Asankha C. Perera <asankha at wso2.com>
+
+* [HTTPCORE-112] DefaultConnectionReuseStrategy interprets token sequences
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-122] new interface TokenIterator and basic implementation
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* HttpCore NIOSSL classes moved to HttpCore NIO.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* HttpCore NIO ported to Java 1.5.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-130] Fixed over-synchronization bug leading to a thread deadlock
+  condition in SSL IOEventDispatch implementations.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-37] HttpParams beans
+  Contributed by Stojce Dimski <sdmiski at yahoo.it>
+
+* [HTTPCORE-128] Simplified injection of custom NIO connection implementations.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-126] Improved HTTP message parsing API and optimized parser
+  implementations.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* Do not include "Connection: close" to 500 responses per default.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-121] new interface HeaderElementIterator
+  Contributed by Andrea Selva <selva.andrea at gmail.com>
+
+* [HTTPCORE-123] Fixed problem with SSLSession losing buffered data, if the
+  connection has been closed by the peer.
+  Contributed by Risto Reinpõld <risto.reinpold at gmail.com>
+
+
+
+Release 4.0 Alpha 6
+-------------------
+
+The sixth ALPHA version of HttpComponents Core has been released. This release
+sports an improved message parsing and formatting API in the base module and
+lots of incremental improvements and bug fixes in the NIO and NIOSSL modules.
+Based on the improved API, it is now possible to send and receive SIP messages
+with HttpComponents Core.
+
+HttpCore is now feature complete and we are planning to freeze the public APIs
+as of next release (BETA1).
+
+* [HTTPCORE-120] new interface HeaderIterator, available from HttpMessage
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-118] Purge closed sessions prior to opening new ones. This should
+  reduce chances of running out of memory when opening and closing lots of
+  NIO connections in a tight loop.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-117] Fixed bug preventing protocol handlers from closing timed out
+  NIO connection when pending output (output session buffer is not empty).
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-86] Allow for optional handling of runtime exceptions
+  thrown by protocol handlers to ensure the I/O dispatch thread
+  remains running.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-116] moved parameter names to interfaces
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-109] Improved shutdown process of the I/O reactors in NIO modules.
+  I/O reactors now attempt to terminate connections gracefully before shutting
+  down the underlying socket channels.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-107] allow sending and receiving of SIP messages
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-114]: Fixed incorrect handling of the end-of-stream condition
+  in SSLIOSession.
+  Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-110] refactored message parsing and formatting logic
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-113] Removed unnecessary target hostname resolution from
+  non-blocking client protocol handlers.
+  Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-108] Close all channels registered with the I/O reactor during
+  shutdown. Fixed the problem with DefaultListeningIOReactor not releasing
+  socket ports until JVM is restarted.
+  Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-106] Pluggable HTTP message parsers and message writers
+  Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-105] Consistent class names in base and NIO modules
+  Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-100] revised HttpContext hierarchy
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-103] NIO connections now attempt to consume all available session
+  data while parsing HTTP messages. This can  potentially improve performance
+  of non-blocking SSL connections.
+  Contributed by Steffen Pingel <spingel at limewire.com>
+
+* [HTTPCORE-102] Exceeding of maximum line length limit detected late
+  Contributed by Steffen Pingel <spingel at limewire.com>
+
+* [HTTPCORE-21] Transport and connection metrics
+  Contributed by Andrea Selva <selva.andre at gmail.com> and
+  Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-91] new interceptor RequestDate, renamed constants in protocol.HTTP
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-90] Version detection based on build-time properties
+  Contributed by Oleg Kalnichevski <olegk at apache.org> and
+  Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-88] Added convenience methods to HttpRequestInterceptorList,
+  HttpResponseInterceptorList interfaces
+  Contributed by Andrea Selva <selva.andre at gmail.com>
+
+* [HTTPCORE-89]: Fixed bug in DefaultConnectingIOReactor causing incorrect
+  handling of local (immediate) connections on some platforms (affects Sun
+  Solaris 2.9 / Sparc and likely other Solaris 2.x platforms)
+  Contributed by Sam Berlin <sberlin at gmail.com>
+
+Release 4.0 Alpha 5
+-------------------
+
+The fifth ALPHA version of HttpComponents Core has been released. This release
+delivers a number of incremental improvements across the board in all modules
+and adds several performance oriented features such as ability to transfer
+data directly between a file and a socket channels.
+
+HttpCore is almost fully feature complete now and we are likely to freeze
+the public APIs as of next release (BETA1).
+
+* [HTTPCORE-87] RuntimeExcpetions thrown in I/O worker threads are now correctly
+  propagated to the I/O reactor.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-84]: Removed DateUtils/DateParseException from core.
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-63]: Made I/O select interval configurable for all default I/O
+  reactor implementations.
+  Contributed by Oleg Kalnichevski <olegk at apache.org> and
+  Anders Wallgren <anders_wallgren at alum.mit.edu>
+
+* [HTTPCORE-82]: Revised linking of HttpParams to reduce potential for misuse.
+  Method #setDefaults() removed from the HttpParams interface.
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-81]: Maximum line length and maximum header counts parameters are now
+  correctly enforced in both base and NIO modules. Fixed maximum line length check
+  when parsing folded header lines.
+  Contributed by Steffen Pingel <spingel at limewire.com>
+
+* Added HTTP client handler implementation that allocates fixed size content
+  buffers upon initialization and is capable of throttling the rate of I/O events
+  in order to make sure those content buffers do not get overflown.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-76]: Added IOSession#shutdown() method intended to force-close
+  I/O sessions (primarily needed to terminate hung SSL connections).
+  Contributed by Sandeep Tamhankar <sandman at electric-cloud.com>
+
+* [HTTPCORE-78]: Added ByteBufferAllocator interface that can be used to apply
+  different ByteArray allocation strategies to session and content buffers.
+  Use heap bound implementation for short-lived or variable in length (requiring
+  frequent content re-allocation) buffers.
+  Contributed by Steffen Pingel <spingel at limewire.com>
+
+* [HTTPCORE-77]: The result of CharsetDecoder#decode() and CharsetEncoder#encode()
+  was not checked for errors resulting in an infinite loop in
+  SessionInputBuffer#readLine() and SessionOutputBuffer#writeLine()
+  when malformed characters were processed.
+  Contributed by Steffen Pingel <spingel at limewire.com>
+
+* [HTTPCORE-71]: HttpParams can be copied.
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-75]: DefaultNHttpServerConnection and DefaultNHttpClientConnection
+  now correctly terminate the underlying I/O session when closed.
+  BufferingHttpServiceHandler now correctly applies connection keep-alive
+  strategy when sending a response with no content body.
+  Contributed by Steffen Pingel <spingel at limewire.com>
+
+* [HTTPCORE-73]: Fixed bug preventing NHttpServiceHandler#responseReady and
+  NHttpClientHandler#requestReady events from being fired if the HTTP message
+  has no content body.
+  Contributed by Steffen Pingel <spingel at limewire.com>
+
+* [HTTPCORE-67]: Improved event listener interface
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-43]: Support for FileChannel#transferFrom() and
+  FileChannel#transferTo() methods. Direct coping from and to FileChannel is
+  expected to improve performance of file bound operations
+  Contributed by Andrea Selva <selva.andre at gmail.com>
+
+* [HTTPCORE-66]: Fixed handling of HTTP HEAD methods
+  Contributed by Steffen Pingel <spingel at limewire.com> and
+  Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-58]: NIO HTTP connections changed to throw checked
+  ConnectionClosedException instead of unchecked IllegalStateException when
+  an attempt is made to perform an I/O operation on a closed conection
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-56]: DefaultConnectingIOReactor no longer terminates due to a
+  CancelledKeyException, if a session request gets canceled before selection
+  key is fully initialized.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+Release 4.0 Alpha 4
+-------------------
+
+The forth ALPHA version of HttpComponents Core has been released.
+The ALPHA4 release fixes a number of bugs and adds a number of
+improvements to HttpCore base and HttpCore NIO extensions.
+HttpCore NIO can be used to build HTTP services intended to handle
+thousands of simultaneous connections with a small number of I/O
+threads. This release also introduces NIOSSL extensions that can be
+used to extend HttpCore non-blocking transport components with
+ability to transparently encrypt data in transit using SSL/TLS protocol.
+
+* [HTTPCORE-49]: DefaultConnectingIOReactor can now correctly handle
+  unresolved socket addresses. It no longer terminates with the
+  UnresolvedAddressException runtime exception.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-42]: Added server-side API for the expectation verification.
+  Improved support for the 'expect: continue' handshake in HttpCore and
+  HttpCore NIO.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-26]: Added SSL support for HttpCore NIO.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-40]: API classes no longer reference impl classes in module-main.
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-39]: Refactored HttpStatus, spun off [English]ReasonPhraseFactory.
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-32]: HttpRequestInterceptorList, HttpResponseInterceptorList
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-38]: Packages nio.impl.* are now impl.nio.*, same for examples.
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-27]: I/O reactors can now accept a thread factory as an optional
+  parameter.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-36]: Fixed #setHandlers() method and matching of request URIs
+  with a query part in HttpRequestHandlerRegistry
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-28]: DefaultConnectingIOReactor now maintains a queue of connect
+  requests and registers new sessions with the selector on the I/O thread.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-29] DefaultConnectingIOReactor changed to ensure IOExceptions
+  are correctly propagated to the caller, if an exception is thrown while
+  initializing a newly connected socket.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-24] Fixed bug in non-blocking connection implementations, which
+  prevented the session buffer from being correctly flushed when the content
+  coding process has been completed.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-23] Fixed threading bug in DefaultConnectingIOReactor.
+  Contributed by Asankha C. Perera <asankha at wso2.com>
+
+Release 4.0 Alpha 3
+-------------------
+
+The third ALPHA version of HttpCore has been released. The ALPHA3 release
+includes a number of API optimizations and improvements and introduces a set
+of NIO extensions to the HttpCore API. NIO extensions can be used to build
+HTTP services intended to handle thousands of simultaneous connections with
+a small number of I/O threads.
+
+* [HTTPCORE-15] Provided a interafce to access IP address of the local and
+  remote end points.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [ HTTPCORE-14] Scheme, SocketFactory and SecureSocketFactory moved to
+  HttpClient. Decoupled HttpHost and Scheme.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-13] Refactored HttpProcessor interface and related impl classes
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-11] Client connection interface no longer defines a specific
+  method to open a connection. HTTP connections can now represent any
+  abstract I/O transport such as those based on NIO API.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-10] Non-blocking (async) client side I/O transport based on NIO.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-9] Non-blocking (async) server-side I/O transport based on NIO.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-7] ConnectionReuseStrategy interface changed to allow access
+  to the HTTP execution context.
+  Contributed by Roland Weber <rolandw at apache.org>
+
+* [HTTPCORE-6] Header implementation allowing for performance short-cuts
+  when serializing and deserializing HTTP headers.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+* [HTTPCORE-5] Header, HeaderElement, NameValuePair, RequestLine, StatusLine,
+  HttpVersion changed to interfaces. API no longer contains any parsing and
+  formatting code and does not imply any specific physical representation of
+  HTTP messages and their elements.
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+Release 4.0 Alpha 2
+-------------------
+This is a maintenance release that mostly fixes minor problems found since the
+previous release. The upstream projects are strongly encouraged use this
+release as a dependency while HttpCore undergoes another round of reviews
+and optimization in the SVN trunk
+
+Change Log:
+---------
+* [HTTPCORE-4] optional header and line length limits to contain OOME risks
+  Contributed by Oleg Kalnichevski <olegk at apache.org>
+
+Release 4.0 Alpha 1
+-------------------
+This release represents a complete redesign of the Jakarta Commons HttpClient
+3.x API and a significant rewrite of the core HTTP components derived from
+HttpClient 3.0 code base.
+
+These components will form the foundation of the future releases of Jakarta
+HttpClient and can also be used separately to build custom client- and
+server-side HTTP services.

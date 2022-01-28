@@ -1,0 +1,47 @@
+{
+    "bug_id": "commons-pool_41f4e41",
+    "repository_info": {
+        "repo": "commons-pool",
+        "commit_id": "41f4e41",
+        "commit_url": "https://github.com/apache/commons-pool/commit/41f4e410b3e7dc34b294ac9941721073bf5e5271",
+        "parent_url": "https://github.com/apache/commons-pool/commit/11521c1fdbfbb079cc1859034a425191112f5358",
+        "date": "2019-08-26",
+        "changed_files": [
+            "src/changes/changes.xml",
+            "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "src/test/java/org/apache/commons/pool2/impl/TestGenericKeyedObjectPool.java"
+        ],
+        "patch_files": [
+            "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java"
+        ],
+        "test_files": [
+            "src/test/java/org/apache/commons/pool2/impl/TestGenericKeyedObjectPool.java"
+        ],
+        "size": 14405,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 8,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -Dtest=TestGenericKeyedObjectPool -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "org.apache.commons.pool2.impl.TestGenericKeyedObjectPool",
+                "method": "testReturnObjectThrowsIllegalStateException",
+                "exn_type": "java.lang.Exception",
+                "stack_trace": "java.lang.Exception: Unexpected exception, expected<java.lang.IllegalStateException> but was<java.lang.NullPointerException>\n\tat org.apache.commons.pool2.impl.TestGenericKeyedObjectPool.testReturnObjectThrowsIllegalStateException(TestGenericKeyedObjectPool.java:201)\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

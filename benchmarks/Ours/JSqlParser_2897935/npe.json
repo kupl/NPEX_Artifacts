@@ -1,0 +1,10 @@
+{
+	"filepath": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+	"line": 216,
+	"sink_field": "iterator",
+	"npe_class": "ExpressionVisitorAdapter",
+	"npe_method": "visit",
+	"jvmti_identify_succeed": true,
+  "deref_field": "getWithItemsList",
+  "nullpointer": "subSelect.getWithItemsList()"
+}

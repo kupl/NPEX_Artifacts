@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1618210044970
+Build-Jdk: 1.8.0_275
+Built-By: anon
+Bundle-Description: The Async Http Simple Client.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Asynchronous Http Simple Client
+Bundle-SymbolicName: org.asynchttpclient.async-http-client-extras-simple
+Bundle-Vendor: Sonatype
+Bundle-Version: 2.0.0.RC1120210412-0647
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.asynchttpclient.extras.simple;uses:="io.netty.handle
+ r.codec.http,io.netty.handler.ssl,org.asynchttpclient,org.asynchttpclie
+ nt.cookie,org.asynchttpclient.request.body.generator,org.asynchttpclien
+ t.request.body.multipart,org.asynchttpclient.uri";version="2.0.0.RC1120
+ 210412-0647"
+Import-Package: io.netty.handler.codec.http;version="[4.0,5)",io.netty.h
+ andler.ssl;version="[4.0,5)",org.asynchttpclient,org.asynchttpclient.co
+ okie;version="[2.0,3)",org.asynchttpclient.filter;version="[2.0,3)",org
+ .asynchttpclient.handler;version="[2.0,3)",org.asynchttpclient.handler.
+ resumable;version="[2.0,3)",org.asynchttpclient.proxy;version="[2.0,3)"
+ ,org.asynchttpclient.request.body.generator;version="[2.0,3)",org.async
+ httpclient.request.body.multipart;version="[2.0,3)",org.asynchttpclient
+ .uri;version="[2.0,3)",org.asynchttpclient.util;version="[2.0,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-2.4.1.201501161923

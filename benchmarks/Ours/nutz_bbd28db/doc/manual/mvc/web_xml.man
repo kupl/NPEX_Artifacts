@@ -1,0 +1,67 @@
+#title:如何配置 web.xml
+#author:zozoh(zozohtnt@gmail.com)
+#index:0,1
+------------------------------------------------------------------------
+在 web.xml 中，一个比较典型的例子(推荐使用)：
+
+    {{{<xml>
+    <filter>
+        <filter-name>nutz</filter-name>
+        <filter-class>org.nutz.mvc.NutFilter</filter-class>
+        <init-param>
+            <param-name>modules</param-name>
+            <param-value>net.wendal.nutzbook.MainModule</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>nutz</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+    }}}
+
+    * 如果你没有声明 '{*modules}' 参数，它会抛异常!!
+    * 默认的，只要被正则表达式 {* `"^(.+[.])(jsp|png|gif|jpg|js|css|jspx|jpeg|swf|ico|map)$"`} \
+      匹配上的 URL 都不会被 Nutz 过滤器处理
+    * 你可以为 NutFilter 设置参数 "ignore"，来重新设置这个正则表达式
+    * 如果你的值是 "null" （不区分大小写），所有的请求都会转发到 Nutz.mvc 进行处理
+    * 如果 Nutz.mvc 没有找到合适入口函数处理,将会继续 chain.doFilter
+
+    比如如果你想忽略所有的 .html 请求，你可以
+    {{{<xml>
+        <filter>
+            <filter-name>nutz</filter-name>
+            <filter-class>org.nutz.mvc.NutFilter</filter-class>
+            <init-param>
+                <param-name>modules</param-name>
+                <param-value>com.mine.app.MainModule</param-value>
+            </init-param>
+            <init-param>
+                <param-name>ignore</param-name>
+                <param-value>^(.+[.])(jsp|png|gif|jpg|js|css|jspx|jpeg|swf|ico|map|html)$</param-value>
+            </init-param>
+        </filter>
+    }}}
+  
+    更灵活的忽略模式
+    {{{<xml>
+        <filter>
+            <filter-name>nutz</filter-name>
+            <filter-class>org.nutz.mvc.NutFilter</filter-class>
+            <init-param>
+                <param-name>modules</param-name>
+                <param-value>com.mine.app.MainModule</param-value>
+            </init-param>
+            <init-param>
+                <param-name>exclusions</param-name>
+                <!-- *.XXX 忽略后缀 -->
+                <!-- /XX/* 忽略前缀 -->
+                <!-- /cc   忽略固定路径 -->
+                <!-- 下面的例子忽略了html和ftl后缀, 忽略了/rs/和/druid/前缀,和忽略了固定路径/abc/notaction -->
+                <param-value>*.html,*.ftl,/rs/*,/druid/*,/abc/notaction</param-value>
+            </init-param>
+        </filter>
+    }}}
+    

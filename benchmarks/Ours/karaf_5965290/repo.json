@@ -1,0 +1,20 @@
+{
+    "repo": "karaf",
+    "commit_id": "5965290",
+    "commit_url": "https://github.com/apache/karaf/commit/5965290b9e7d6ae83045051f9325dace891390a1",
+    "parent_url": "https://github.com/apache/karaf/commit/b92dd7e4d6fab3b98e534e661ae5a4ec3c1b9084",
+    "date": "2020-03-21",
+    "changed_files": [
+        "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+        "shell/core/src/test/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParserTest.java"
+    ],
+    "patch_files": [
+        "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java"
+    ],
+    "test_files": [
+        "shell/core/src/test/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParserTest.java"
+    ],
+    "size": 123161,
+    "is_maven": true,
+    "is_java": true
+}

@@ -1,0 +1,13 @@
+Main.java
+org/apache/sling/scripting/thymeleaf/TemplateModeProvider.java
+org/apache/sling/scripting/thymeleaf/package-info.java
+org/apache/sling/scripting/thymeleaf/AbsentMessageRepresentationProvider.java
+org/apache/sling/scripting/thymeleaf/internal/ResourceBundleMessageResolverConfiguration.java
+org/apache/sling/scripting/thymeleaf/internal/SlingTemplateResource.java
+org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolverConfiguration.java
+org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java
+org/apache/sling/scripting/thymeleaf/internal/PatternTemplateModeProviderConfiguration.java
+org/apache/sling/scripting/thymeleaf/internal/ThymeleafScriptEngineFactory.java
+org/apache/sling/scripting/thymeleaf/internal/ThymeleafScriptEngineFactoryConfiguration.java
+org/apache/sling/scripting/thymeleaf/internal/ThymeleafScriptEngine.java
+org/apache/sling/scripting/thymeleaf/internal/dialect/SlingDialect.java

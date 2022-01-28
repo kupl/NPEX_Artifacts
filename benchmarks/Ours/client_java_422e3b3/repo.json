@@ -1,0 +1,21 @@
+{
+    "repo": "client_java",
+    "commit_id": "422e3b3",
+    "repo_url": "https://github.com/prometheus/client_java",
+    "commit_url": "https://github.com/prometheus/client_java/commit/422e3b3bfd068f764428dba65e54099d9ecbdf1e",
+    "parent_url": "https://github.com/prometheus/client_java/commit/3d9a3302ecb06c721db392202745f4c089df7ed3",
+    "date": "2017-06-12",
+    "changed_files": [
+        "simpleclient_spring_boot/src/main/java/io/prometheus/client/spring/boot/PrometheusMvcEndpoint.java",
+        "simpleclient_spring_boot/src/test/java/io/prometheus/client/spring/boot/PrometheusMvcEndpointTest.java"
+    ],
+    "patch_files": [
+        "simpleclient_spring_boot/src/main/java/io/prometheus/client/spring/boot/PrometheusMvcEndpoint.java"
+    ],
+    "test_files": [
+        "simpleclient_spring_boot/src/test/java/io/prometheus/client/spring/boot/PrometheusMvcEndpointTest.java"
+    ],
+    "size": 7056,
+    "is_maven": true,
+    "is_java": true
+}

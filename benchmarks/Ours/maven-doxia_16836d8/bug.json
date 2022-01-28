@@ -1,0 +1,48 @@
+{
+    "bug_id": "maven-doxia_16836d8",
+    "repository_info": {
+        "repo": "maven-doxia",
+        "commit_id": "16836d8",
+        "commit_url": "https://github.com/apache/maven-doxia/commit/16836d8a2dfea74be3bf4c1b0f5e50f2949fbc65",
+        "parent_url": "https://github.com/apache/maven-doxia/commit/fbe3e7c307f664396ae57159c7d9d935695cc90a",
+        "date": "2016-01-23",
+        "changed_files": [
+            "doxia-modules/doxia-module-confluence/src/main/java/org/apache/maven/doxia/module/confluence/parser/table/TableBlockParser.java",
+            "doxia-modules/doxia-module-confluence/src/test/java/org/apache/maven/doxia/module/confluence/ConfluenceParserTest.java",
+            "doxia-modules/doxia-module-confluence/src/test/resources/table.confluence"
+        ],
+        "patch_files": [
+            "doxia-modules/doxia-module-confluence/src/main/java/org/apache/maven/doxia/module/confluence/parser/table/TableBlockParser.java"
+        ],
+        "test_files": [
+            "doxia-modules/doxia-module-confluence/src/test/java/org/apache/maven/doxia/module/confluence/ConfluenceParserTest.java",
+            "doxia-modules/doxia-module-confluence/src/test/resources/table.confluence"
+        ],
+        "size": 42167,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 8,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -Dtest=ConfluenceParserTest,table -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "org.apache.maven.doxia.module.confluence.ConfluenceParserTest",
+                "method": "testTable",
+                "exn_type": "org.apache.maven.doxia.parser.ParseException:",
+                "stack_trace": "org.apache.maven.doxia.parser.ParseException: null\n\tat org.apache.maven.doxia.module.confluence.parser.AbstractFatherBlock.traverse(AbstractFatherBlock.java:72)\n\tat org.apache.maven.doxia.module.confluence.parser.AbstractFatherBlock.traverse(AbstractFatherBlock.java:72)\n\tat org.apache.maven.doxia.module.confluence.parser.AbstractFatherBlock.traverse(AbstractFatherBlock.java:72)\n\tat org.apache.maven.doxia.module.confluence.ConfluenceParser.parse(ConfluenceParser.java:125)\n\tat org.apache.maven.doxia.module.confluence.ConfluenceParserTest.locateAndParseTestSourceFile(ConfluenceParserTest.java:696)\n\tat org.apache.maven.doxia.module.confluence.ConfluenceParserTest.testTable(ConfluenceParserTest.java:306)\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolverConfiguration">
+  <OCD id="org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolverConfiguration" name="Apache Sling Scripting Thymeleaf “Sling Resource TemplateResolver”" description="Resolves template resources by using Sling's resource resolver from script bindings.">
+    <AD id="order" type="Integer" name="order" description="Property for ordering template resolvers inside the Thymeleaf template engine." default="0"/>
+    <AD id="useDecoupledLogic" type="Boolean" name="use decoupled logic" description="Setting for 'use decoupled logic' in template resolution." default="true"/>
+  </OCD>
+  <Designate pid="org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolver">
+    <Object ocdref="org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolverConfiguration"/>
+  </Designate>
+</metatype:MetaData>

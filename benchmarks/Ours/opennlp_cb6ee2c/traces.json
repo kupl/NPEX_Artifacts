@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "opennlp-tools/src/test/java/opennlp/tools/lemmatizer/DictionaryLemmatizerTest.java",
+        "line": 41,
+        "method_name": "testForNullPointerException"
+    }
+]

@@ -1,0 +1,24 @@
+{
+    "repo": "qpid-proton-j",
+    "commit_id": "87ec94b",
+    "commit_url": "https://github.com/apache/qpid-proton-j/commit/87ec94be64cb4f2850fad2de6ed97832308a66c2",
+    "parent_url": "https://github.com/apache/qpid-proton-j/commit/02998b382967b997ac86a6b1ea2d507bfd9a862f",
+    "date": "2020-04-02",
+    "changed_files": [
+        "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+        "proton-j/src/test/java/org/apache/qpid/proton/codec/ListTypeCodecTest.java",
+        "proton-j/src/test/java/org/apache/qpid/proton/codec/MapTypeCodecTest.java",
+        "proton-j/src/test/java/org/apache/qpid/proton/codec/MyUnknownTestType.java"
+    ],
+    "patch_files": [
+        "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java"
+    ],
+    "test_files": [
+        "proton-j/src/test/java/org/apache/qpid/proton/codec/ListTypeCodecTest.java",
+        "proton-j/src/test/java/org/apache/qpid/proton/codec/MapTypeCodecTest.java",
+        "proton-j/src/test/java/org/apache/qpid/proton/codec/MyUnknownTestType.java"
+    ],
+    "size": 53280,
+    "is_maven": true,
+    "is_java": true
+}

@@ -1,0 +1,20 @@
+{
+    "repo": "directory-ldap-api",
+    "commit_id": "3c6a765",
+    "commit_url": "https://github.com/apache/directory-ldap-api/commit/3c6a7652e171772dbc0c55042ad10260002002b9",
+    "parent_url": "https://github.com/apache/directory-ldap-api/commit/1aea113c1b34a39c4dad2a71d4bb38074766bb66",
+    "date": "2018-04-09",
+    "changed_files": [
+        "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+        "ldap/model/src/test/java/org/apache/directory/api/ldap/model/entry/AttributeTest.java"
+    ],
+    "patch_files": [
+        "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java"
+    ],
+    "test_files": [
+        "ldap/model/src/test/java/org/apache/directory/api/ldap/model/entry/AttributeTest.java"
+    ],
+    "size": 203153,
+    "is_maven": true,
+    "is_java": true
+}

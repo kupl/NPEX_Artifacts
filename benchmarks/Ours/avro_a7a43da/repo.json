@@ -1,0 +1,21 @@
+{
+    "repo": "avro",
+    "commit_id": "a7a43da",
+    "commit_url": "https://github.com/apache/avro/commit/a7a43da6de9bd44e57e057319127c64b2fca56a0",
+    "parent_url": "https://github.com/apache/avro/commit/a3e05bee1c81b54eed8cb37b278652cf80666121",
+    "date": "2017-12-23",
+    "changed_files": [
+        "CHANGES.txt",
+        "lang/java/avro/src/main/java/org/apache/avro/Schema.java",
+        "lang/java/avro/src/test/java/org/apache/avro/TestSchema.java"
+    ],
+    "patch_files": [
+        "lang/java/avro/src/main/java/org/apache/avro/Schema.java"
+    ],
+    "test_files": [
+        "lang/java/avro/src/test/java/org/apache/avro/TestSchema.java"
+    ],
+    "size": 69075,
+    "is_maven": true,
+    "is_java": true
+}

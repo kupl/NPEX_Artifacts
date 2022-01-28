@@ -1,0 +1,22 @@
+{
+    "repo": "jsoup",
+    "commit_id": "1d663ee",
+    "repo_url": "https://github.com/jhy/jsoup",
+    "commit_url": "https://github.com/jhy/jsoup/commit/1d663eeb1c0d1c08bcfe5d30f05170768bb0438e",
+    "parent_url": "https://github.com/jhy/jsoup/commit/8b837a43cbe2c12624ab2088dc4ff9a725af5f4d",
+    "date": "2018-12-23",
+    "changed_files": [
+        "CHANGES",
+        "src/main/java/org/jsoup/nodes/Attribute.java",
+        "src/test/java/org/jsoup/nodes/AttributeTest.java"
+    ],
+    "patch_files": [
+        "src/main/java/org/jsoup/nodes/Attribute.java"
+    ],
+    "test_files": [
+        "src/test/java/org/jsoup/nodes/AttributeTest.java"
+    ],
+    "size": 20029,
+    "is_maven": true,
+    "is_java": true
+}

@@ -1,0 +1,257 @@
+  ------
+  Introduction
+  ------
+  Stephen Connolly
+  Allan Ramirez
+  ------
+  2011-06-27
+  ------
+  
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+
+~~ NOTE: For help with the syntax of this file, see:
+~~ http://maven.apache.org/doxia/references/apt-format.html
+  
+
+Maven ${thisPlugin} Plugin
+
+
+  Requirements: Maven 3.x and JDK 1.7 or higher. Due to wrong formatting of console text messages
+  in Maven Version prior to 3.1.0 it is highly recommended to use Maven 3.1.0 or higher.
+
+
+ This is the road map of the development, see the {{{https://github.com/apache/maven-surefire/pull/251}GH}}.
+
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+||Versions                                    ||Release Targets                                                                                                                                                                     |
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                             | Maven API 3.0 and Java 1.7                                                                                                                                                        \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1493}Maven Plugin API 3.0}}                                                                                                     \ |
+| 3.0.0-M1                                    | {{{https://issues.apache.org/jira/browse/SUREFIRE-1474}Java 1.7 as minimum}}                                                                                                      \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1212}@Component is deprecated. @Parameter should be used instead}}                                                              \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1588}Surefire manifest jar classloading broken on latest Debian/Ubuntu Java8}}                                                  \ |
+|                                             | {{{https://issues.apache.org/jira/projects/SUREFIRE/versions/12342871}See the Release Notes for the version 3.0.0-M1}}                                                            \ |
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                             | Fixed: JDK9 and Windows Class-Path issues, 3.0 and Legacy Report XSD, 3.0.0-M2 shadefire                                                                                          \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1568}Fixed JDK9+ (Jigsaw) modular paths (module-info.java) having white spaces on file system}}                                 \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1593}Windows slashes appear in relative paths of Class-Path in MANIFEST.MF (Boot Manifest-JAR)}}                                \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1602}Surefire fails loading class ForkedBooter when using a sub-directory pom file}}                                            \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1605}Plugin fails if used Toolchains together with JDK9+ and (Jigsaw) modular paths (module-info.java)}}                        \ |
+| 3.0.0-M2                                    | {{{https://issues.apache.org/jira/browse/SUREFIRE-1590}3.0 and Legacy Report XSD}}                                                                                                \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1600}3.0.0-M2 shadefire}}                                                                                                       \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | Feature: Option to switch-off Java 9 modules                                                                                                                                      \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1531}Option to switch-off Java 9 modules}}                                                                                      \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/projects/SUREFIRE/versions/12344396}See the Release Notes for the version 3.0.0-M2}}                                                            \ |
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                             | Fixed: maven-surefire-report-plugin supports JDK11, JUnit5 issues, deprecated skipTests in Failsafe plugin, used ShadeFire 3.0.0-M2                                               \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1613}maven-surefire-report-plugin fails on JDK 11}}                                                                             \ |
+| 3.0.0-M3                                    | {{{https://issues.apache.org/jira/browse/SUREFIRE-1614}JUnit Runner that writes to System.out corrupts Surefire's STDOUT when using JUnit's Vintage Engine}}                      \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1616}Smart stacktrace in test summary should not print JUnit5 assertion exception type}}                                        \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1611}Deprecate skipTests in Failsafe Plugin}}                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/projects/SUREFIRE/versions/12342872}See the Release Notes for the version 3.0.0-M3}}                                                            \ |
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                             | Provided 3 extensions of reporters which can be used to customize XML report, console and file reporters. It is very useful for JUnit5 users.                                     \ |
+|                                             | We reworked the internal implementation so that new commands and events can be easily added. The impl is located in a center point and it is a prerequisite in next versions.     \ |
+| 3.0.0-M4                                    | Provided bug fixes for Docker Alpine/BusyBox Linux, JUnit5 and 43 more.                                                                                                           \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1222}ForkClient attempts to consume unrelated lines}}                                                                           \ |
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                             | Test Report tasks (prerequisite: SUREFIRE-1222 in 3.0.0-M4)                                                                                                                       \ |
+|                                             | New interprocess communication with TCP/IP which fixed current blocker and critical bugs.                                                                                         \ |
+| 3.0.0-M5                                    | Provided extensions which can be used to customize this interprocess communication in plugin configuration. It is internally used to switch over the pipes and TCP connector.     \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1658}TCP/IP Channel for forked Surefire JVM. Extensions API and SPI. Polymorphism for remote and local process communication.}} \ |
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                             | (1) We will identify the test by UniqueId in SimpleReportEntry and not by the traditional combination of class/method name. (ready for parameterized tests and a coherent re-run) \ |
+|                                             | (2) TestSetRunListener should not cache test event and make any guess about the impl in StatelessXmlReporter. TestSetRunListener should only forward events to multiple reporters.\ |
+|                                             | (3) Fire and consume more events (normal run start/end, re-run start/end)                                                                                                         \ |
+| 3.0.0-M6                                    | (4) StatelessXmlReporter repeatedly generates XML report. It is stateful report and won't work if re-run or parallel executions send test events out of order.  Prerequisite: 1-3 \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1643}JUnit 5 in parallel execution mode confuses Surefire reports}}                                                             \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1661}ConsoleOutputFileReporter should support parallel execution of test-sets}}                                                 \ |
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                             | Providers implementation and API                                                                                                                                                  \ |
+|                                             | More test events used to negotiate tests to run on particular fork JVM. It is useful in situations when the tests are filtered by group/category or classpath scan with file      \ |
+| 3.0.0-M7                                    | filter (fork JVM is preferable over Maven JVM) and used in Test List Processor (3.0.0-M8). We will keep IsolatedClassLoader for extension 'Test List Processor' so that the user  \ |
+|                                             | can decide the JVM where the tests will be searched. Possibly JUnit5 provider will be able to scan classes by annotations, see launcher.discover(), and negotiate over the forks. \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-1535}Surefire unable to run testng suites in parallel}}                                                                         \ |
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                             | Extensions API to customize test-set with test list processor (prerequisite: 3.0.0-M7)                                                                                            \ |
+| 3.0.0-M8                                    | (possibly the scan of classpath based on annotations, currently the scan is done based on pattern of file name e.g. -Dtest=MyTest)                                                \ |
+|                                             |                                                                                                                                                                                   \ |
+|                                             | {{{https://issues.apache.org/jira/browse/SUREFIRE-726}Test list preprocessor support for tests to be run}}                                                                        \ |
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 3.0.0-M9                                    | Breaking backwards compatibility with system properties in configuration parameters, removing deprecated configuration parameters and removing deprecated code, etc.              \ |
+*---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+#{if}(${project.artifactId}=="maven-surefire-plugin")
+  The Surefire Plugin is used during the <<<test>>> phase of the build
+  lifecycle to execute the unit tests of an application. It generates reports
+  in two different file formats:
+#{else}
+  The Failsafe Plugin is designed to run integration tests while the Surefire Plugin is designed to run unit tests.
+  The name (failsafe) was chosen both because it is a synonym of surefire and because it implies that when it fails, it
+  does so in a safe way.
+
+  The Maven lifecycle has four phases for running integration tests:
+
+  * <<<pre-integration-test>>> for setting up the integration test environment.
+
+  * <<<integration-test>>> for running the integration tests.
+
+  * <<<post-integration-test>>> for tearing down the integration test environment.
+
+  * <<<verify>>> for checking the results of the integration tests.
+
+  []
+
+  If you use the Surefire Plugin for running tests, then when you have a test failure, the build will stop at the
+  <<<integration-test>>> phase and your integration test environment will not have been torn down correctly.
+
+  The Failsafe Plugin is used during the <<<integration-test>>> and <<<verify>>> phases of the build
+  lifecycle to execute the integration tests of an application. The Failsafe Plugin will not fail the build during
+  the <<<integration-test>>> phase, thus enabling the <<<post-integration-test>>> phase to execute.
+
+  NOTE: when running integration tests, you should invoke Maven with the (shorter to type too)
+
++---+
+mvn verify
++---+
+
+  rather than trying to invoke the <<<integration-test>>> phase directly, as otherwise the <<<post-integration-test>>>
+  phase will not be executed.
+
+  The Failsafe Plugin generates reports in two different file formats:
+
+#{end}
+
+  * Plain text files (<<<*.txt>>>)
+
+  * XML files (<<<*.xml>>>)
+
+  []
+
+  By default, these files are generated in <<<$\{basedir\}/target/${thisPlugin.toLowerCase()}-reports/TEST-*.xml>>>.
+
+  The schema for the ${thisPlugin} XML reports is available at
+  {{{./xsd/${thisPlugin.toLowerCase()}-test-report-3.0.xsd}${thisPlugin} XML Report Schema}}.
+
+  The XML reports generated by legacy plugins (versions up to 2.22.0) should be validated by
+  {{{./xsd/${thisPlugin.toLowerCase()}-test-report.xsd}Legacy ${thisPlugin} XML Report Schema}}.
+
+  Two plugin versions (2.22.1 and 3.0.0-M1) however generate 3.0 XML reports they still refer to legacy
+  schema (see <<<noNamespaceSchemaLocation>>> in XML Report). The projects which expect XML Reports
+  validated by XSD Schema, tools e.g xUnit, should not use versions 2.22.1 and 3.0.0-M1 of the ${thisPlugin} plugin.
+
+  For an HTML format of the report, please see the
+  {{{http://maven.apache.org/plugins/maven-surefire-report-plugin/}Maven Surefire Report Plugin}}.
+
+#{if}(${project.artifactId}=="maven-failsafe-plugin")
+  By default this plugin generates summary XML file at <<<$\{basedir\}/target/failsafe-reports/failsafe-summary.xml>>>
+  and the schema is available at {{{./xsd/failsafe-summary.xsd}Failsafe XML Summary Schema}}.
+#{end}
+
+* Goals Overview
+
+#{if}(${project.artifactId}=="maven-surefire-plugin")
+  The Surefire Plugin has only one goal:
+
+  * {{{./test-mojo.html}surefire:test}} runs the unit tests of an application.
+
+  []
+
+#{else}
+  The Failsafe Plugin has only two goals:
+
+  * {{{./integration-test-mojo.html}failsafe:integration-test}} runs the integration tests of an application.
+
+  * {{{./verify-mojo.html}failsafe:verify}} verifies that the integration tests of an application passed.
+
+  []
+
+#{end}
+
+* Usage
+
+  General instructions on how to use the ${thisPlugin} Plugin can be found on the {{{./usage.html}usage page}}. Some more
+  specific use cases are described in the examples listed below. Additionally, users can contribute to the
+  {{{https://github.com/apache/maven-surefire}GitHub project}}.
+
+  In case you still have questions regarding the plugin's usage, please have a look at the {{{./faq.html}FAQ}} and feel
+  free to contact the {{{./mailing-lists.html}user mailing list}}. The posts to the mailing list are archived and could
+  already contain the answer to your question as part of an older thread. Hence, it is also worth browsing/searching
+  the {{{./mailing-lists.html}mail archive}}.
+
+  If you feel like the plugin is missing a feature or has a defect, you can file a feature request or bug report in our
+  {{{./issue-management.html}issue tracker}}. When creating a new issue, please provide a comprehensive description of your
+  concern. Especially for fixing bugs it is crucial that the developers can reproduce your problem. For this reason,
+  entire debug logs, POMs or most preferably little demo projects attached to the issue are very much appreciated.
+  Of course, patches are welcome, too. Contributors can check out the project from our
+  {{{./scm.html}source repository}} and will find supplementary information in the
+  {{{http://maven.apache.org/guides/development/guide-helping.html}guide to helping with Maven}}.
+
+* Examples
+
+  The following examples show how to use the ${thisPlugin} Plugin in more advanced use cases:
+
+  * {{{./examples/testng.html}Using TestNG}}
+
+  * {{{./examples/junit-platform.html}Using JUnit 5 Platform}}
+
+  * {{{./examples/junit.html}Using JUnit}}
+
+  * {{{./examples/pojo-test.html}Using POJO Tests}}
+
+  * {{{./examples/skipping-tests.html}Skipping Tests}}
+
+  * {{{./examples/skip-after-failure.html}Skip After Failure}}
+
+  * {{{./examples/inclusion-exclusion.html}Inclusions and Exclusions of Tests}}
+
+  * {{{./examples/single-test.html}Running a Single Test}}
+
+  * {{{./examples/rerun-failing-tests.html}Re-run Failing Tests}}
+
+  * {{{./examples/class-loading.html}Class Loading and Forking}}
+
+  * {{{./examples/debugging.html}Debugging Tests}}
+
+  * {{{./examples/system-properties.html}Using System Properties}}
+
+  * {{{./examples/configuring-classpath.html}Configuring the Classpath}}
+
+  * {{{./examples/providers.html}Selecting Providers}}
+
+  * {{{./examples/fork-options-and-parallel-execution.html}Fork Options and Parallel Test Execution}}
+
+  * {{{./examples/logging.html}Using Console Logs}}
+
+  * {{{./examples/shutdown.html}Shutdown of Forked JVM}}
+
+  * {{{./java9.html}Run tests with Java 9}}
+
+  * {{{./docker.html}Run tests in Docker}}
+
+  []

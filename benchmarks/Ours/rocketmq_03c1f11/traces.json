@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "client/src/test/java/org/apache/rocketmq/client/impl/factory/MQClientInstanceTest.java",
+        "line": 157,
+        "method_name": "testConsumerRunningInfoWhenConsumersIsEmptyOrNot"
+    }
+]

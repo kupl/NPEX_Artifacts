@@ -1,0 +1,13 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.xmpbox.xml.DomXmpParser.manageStructuredType(DomXmpParser.java:393)
+	at org.apache.xmpbox.xml.DomXmpParser.createProperty(DomXmpParser.java:346)
+	at org.apache.xmpbox.xml.DomXmpParser.parseChildrenAsProperties(DomXmpParser.java:305)
+	at org.apache.xmpbox.xml.DomXmpParser.parseDescriptionRoot(DomXmpParser.java:234)
+	at org.apache.xmpbox.xml.DomXmpParser.parse(DomXmpParser.java:198)
+	at org.apache.pdfbox.preflight.process.MetadataValidationProcess.validate(MetadataValidationProcess.java:69)
+	at org.apache.pdfbox.preflight.utils.ContextHelper.callValidation(ContextHelper.java:84)
+	at org.apache.pdfbox.preflight.utils.ContextHelper.validateElement(ContextHelper.java:122)
+	at org.apache.pdfbox.preflight.PreflightDocument.validate(PreflightDocument.java:163)
+	at org.apache.pdfbox.preflight.Validator_A1b.runSimple(Validator_A1b.java:174)
+	at org.apache.pdfbox.preflight.Validator_A1b.main(Validator_A1b.java:135)
+	at Main.main(Main.java:9)

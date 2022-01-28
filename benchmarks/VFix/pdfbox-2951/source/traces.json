@@ -1,0 +1,42 @@
+[
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+        "line": 106,
+        "method_name": "contains"
+    },
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/font/PDType1Font.java",
+        "line": 343,
+        "method_name": "encode"
+    },
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/font/PDFont.java",
+        "line": 286,
+        "method_name": "encode"
+    },
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/PDPageContentStream.java",
+        "line": 411,
+        "method_name": "showText"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 149,
+        "method_name": "createMainPDF"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 47,
+        "method_name": "testLayerImport"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 31,
+        "method_name": "testPDFBOX2951"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 27,
+        "method_name": "main"
+    }
+]

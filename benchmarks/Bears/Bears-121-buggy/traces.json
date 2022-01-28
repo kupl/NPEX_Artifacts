@@ -1,0 +1,27 @@
+[
+    {
+        "filepath": "src/org/traccar/BaseProtocolDecoder.java",
+        "line": 109,
+        "method_name": "getDeviceSession"
+    },
+    {
+        "filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+        "line": 64,
+        "method_name": "decode9"
+    },
+    {
+        "filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+        "line": 175,
+        "method_name": "decode"
+    },
+    {
+        "filepath": "test/org/traccar/ProtocolTest.java",
+        "line": 98,
+        "method_name": "verifyPosition"
+    },
+    {
+        "filepath": "test/org/traccar/protocol/SuntechProtocolDecoderTest.java",
+        "line": 13,
+        "method_name": "testDecode"
+    }
+]

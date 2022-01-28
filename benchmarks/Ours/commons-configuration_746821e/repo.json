@@ -1,0 +1,21 @@
+{
+    "repo": "commons-configuration",
+    "commit_id": "746821e",
+    "commit_url": "https://github.com/apache/commons-configuration/commit/746821e2568246d8d7b09403f68930ab000a9592",
+    "parent_url": "https://github.com/apache/commons-configuration/commit/a76a3a65c4d2e3530c69c1fecc6e4fe6f2f221ed",
+    "date": "2019-11-03",
+    "changed_files": [
+        "src/changes/changes.xml",
+        "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+        "src/test/java/org/apache/commons/configuration2/TestXMLConfiguration.java"
+    ],
+    "patch_files": [
+        "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java"
+    ],
+    "test_files": [
+        "src/test/java/org/apache/commons/configuration2/TestXMLConfiguration.java"
+    ],
+    "size": 67547,
+    "is_maven": true,
+    "is_java": true
+}

@@ -1,0 +1,890 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 41,
+        "description": "TypesTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 41,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 42,
+        "description": "com.google.testing.compile.CompilationRule"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 179,
+        "description": "wildcardMirrorSuperType"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 179,
+        "description": "getTypes"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 180,
+        "description": "getElements"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 181,
+        "description": "getName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 181,
+        "description": "getTypeElement"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 181,
+        "description": "asType"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 182,
+        "description": "getWildcardType"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line_number": 183,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 63,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 63,
+        "description": "com.squareup.javapoet.TypeName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 64,
+        "description": "com.squareup.javapoet.TypeName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 65,
+        "description": "com.squareup.javapoet.TypeName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 66,
+        "description": "com.squareup.javapoet.TypeName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 67,
+        "description": "com.squareup.javapoet.TypeName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 68,
+        "description": "com.squareup.javapoet.TypeName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 69,
+        "description": "com.squareup.javapoet.TypeName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 70,
+        "description": "com.squareup.javapoet.TypeName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 71,
+        "description": "com.squareup.javapoet.TypeName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 72,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 36,
+        "description": "<clinit>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 36,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 99,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 99,
+        "description": "checkNotNull"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 53,
+        "description": "checkNotNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 100,
+        "description": "isPrimitive"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 100,
+        "description": "checkArgument"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 49,
+        "description": "checkArgument"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 101,
+        "description": "equals"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 101,
+        "description": "checkArgument"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 49,
+        "description": "checkArgument"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 102,
+        "description": "isArray"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 102,
+        "description": "checkArgument"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 49,
+        "description": "checkArgument"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 103,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 105,
+        "description": "getSimpleName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 105,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 104,
+        "description": "getEnclosingClass"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 107,
+        "description": "getPackage"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 107,
+        "description": "getName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 107,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 108,
+        "description": "reverse"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 109,
+        "description": "com.squareup.javapoet.ClassName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 42,
+        "description": "ClassName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 42,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 83,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 83,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 43,
+        "description": "size"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 44,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 44,
+        "description": "isName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 44,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 44,
+        "description": "checkArgument"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 49,
+        "description": "checkArgument"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 43,
+        "description": "size"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 46,
+        "description": "immutableList"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 62,
+        "description": "immutableList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 62,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 62,
+        "description": "unmodifiableList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 47,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 47,
+        "description": "isEmpty"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 49,
+        "description": "join"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 70,
+        "description": "join"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 70,
+        "description": "isEmpty"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 71,
+        "description": "java.lang.StringBuilder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 72,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 72,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 73,
+        "description": "size"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 74,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 74,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 74,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 73,
+        "description": "size"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 76,
+        "description": "toString"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 147,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 147,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 148,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 149,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 150,
+        "description": "addAll"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 151,
+        "description": "com.squareup.javapoet.ClassName"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 42,
+        "description": "ClassName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 42,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 83,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 83,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "TypeName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 77,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 43,
+        "description": "size"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 44,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 44,
+        "description": "isName"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 44,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 44,
+        "description": "checkArgument"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 49,
+        "description": "checkArgument"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 43,
+        "description": "size"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 46,
+        "description": "immutableList"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 62,
+        "description": "immutableList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 62,
+        "description": "java.util.ArrayList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 62,
+        "description": "unmodifiableList"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 47,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 47,
+        "description": "isEmpty"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/ClassName.java",
+        "line_number": 49,
+        "description": "join"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 70,
+        "description": "join"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 70,
+        "description": "isEmpty"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 71,
+        "description": "java.lang.StringBuilder"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 72,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 72,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 73,
+        "description": "size"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 74,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 74,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 74,
+        "description": "append"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 73,
+        "description": "size"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/Util.java",
+        "line_number": 76,
+        "description": "toString"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "com.squareup.javapoet.TypeName$1"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "TypeName$1"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "accept"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "visitWildcard"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "visitWildcard"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 151,
+        "description": "visitWildcard"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 151,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/WildcardTypeName.java",
+        "line_number": 92,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/WildcardTypeName.java",
+        "line_number": 92,
+        "description": "getExtendsBound"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/WildcardTypeName.java",
+        "line_number": 92,
+        "description": "get"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "get"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "com.squareup.javapoet.TypeName$1"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "TypeName$1"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line_number": 107,
+        "description": "accept"
+    }
+]

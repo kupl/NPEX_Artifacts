@@ -1,0 +1,10 @@
+{
+    "filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+    "line": 101,
+    "sink_field": "getEncoding",
+    "npe_class": "MapType",
+    "npe_method": "calculateSize",
+    "jvmti_identify_succeed": true,
+    "deref_field": "getType",
+    "nullpointer": "_encoder.getType(element.getValue())"
+}

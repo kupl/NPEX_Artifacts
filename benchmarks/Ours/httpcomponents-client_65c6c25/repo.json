@@ -1,0 +1,20 @@
+{
+    "repo": "httpcomponents-client",
+    "commit_id": "65c6c25",
+    "commit_url": "https://github.com/apache/httpcomponents-client/commit/65c6c250708b409bc4eca8a16a9e5e8bd9870ffc",
+    "parent_url": "https://github.com/apache/httpcomponents-client/commit/1026a1e55880f59a2dafb654347cc120f234ceaf",
+    "date": "2020-10-25",
+    "changed_files": [
+        "httpclient5-testing/src/test/java/org/apache/hc/client5/testing/sync/TestMinimalClientRequestExecution.java",
+        "httpclient5/src/main/java/org/apache/hc/client5/http/impl/classic/MinimalHttpClient.java"
+    ],
+    "patch_files": [
+        "httpclient5/src/main/java/org/apache/hc/client5/http/impl/classic/MinimalHttpClient.java"
+    ],
+    "test_files": [
+        "httpclient5-testing/src/test/java/org/apache/hc/client5/testing/sync/TestMinimalClientRequestExecution.java"
+    ],
+    "size": 70933,
+    "is_maven": true,
+    "is_java": true
+}

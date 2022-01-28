@@ -1,0 +1,158 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 37,
+        "description": "JpaMetamodelUnitTests"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 37,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 37,
+        "description": "<init>"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 46,
+        "description": "skipsEntityTypesWithoutJavaTypeForIdentifierLookup"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 46,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 46,
+        "description": "singleton"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 46,
+        "description": "doReturn"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 46,
+        "description": "when"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 46,
+        "description": "getEntities"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 48,
+        "description": "org.springframework.data.jpa.util.JpaMetamodel"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 48,
+        "description": "JpaMetamodel"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 48,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 48,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 41,
+        "description": "empty"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 50,
+        "description": "notNull"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line_number": 48,
+        "description": "isSingleIdAttribute"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 78,
+        "description": "isSingleIdAttribute"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 78,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 78,
+        "description": "getEntities"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 78,
+        "description": "stream"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 79,
+        "description": "filter"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 80,
+        "description": "findFirst"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 79,
+        "description": "lambda$isSingleIdAttribute$0"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 79,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 79,
+        "description": "getJavaType"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line_number": 79,
+        "description": "equals"
+    }
+]

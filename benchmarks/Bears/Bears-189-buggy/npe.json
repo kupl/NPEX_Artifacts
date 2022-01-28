@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/hu/oe/nik/szfmv/detector/classes/Detector.java",
+    "line": 52,
+    "deref_field": "worldObjects",
+    "sink_field": "size",
+    "npe_class": "Detector",
+    "npe_method": "getTheObjectsWhichAreInTheTriangle",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "worldObjects"
+}

@@ -1,0 +1,23 @@
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+
+site-content
+/.checkstyle
+/.classpath
+/.pmd
+/.project
+/.settings
+/ObjectStore/
+/bin/
+
+# no IDE stuff in our SCM
+.classpath
+.settings
+.idea
+*.iml
+.nbproject

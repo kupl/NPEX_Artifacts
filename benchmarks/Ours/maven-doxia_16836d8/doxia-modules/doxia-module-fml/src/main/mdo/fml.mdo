@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<model xmlns="http://modello.codehaus.org/MODELLO/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://modello.codehaus.org/MODELLO/1.0.0 http://modello.codehaus.org/xsd/modello-1.0.0.xsd">
+  <id>fml</id>
+  <name>Fml</name>
+  <description><![CDATA[
+    Model object of the FML (FAQ Markup Language) descriptor used in Maven Doxia.
+  ]]></description>
+  <defaults>
+    <default>
+      <key>package</key>
+      <value>org.apache.maven.doxia.module.fml.model</value>
+    </default>
+  </defaults>
+  <classes>
+    <class rootElement="true" xml.tagName="faqs" xsd.compositor="sequence">
+      <name>Faqs</name>
+      <description><![CDATA[
+         The <code>&lt;faqs&gt;</code> element is the root of the FML descriptor.
+         The following table lists all of the possible child elements.
+      ]]></description>
+      <version>1.0.0</version>
+      <fields>
+        <field xml.attribute="true">
+          <name>title</name>
+          <description><![CDATA[
+            The title name of this FAQ.
+          ]]></description>
+          <version>1.0.0</version>
+          <type>String</type>
+          <defaultValue>FAQ</defaultValue>
+          <identifier>true</identifier>
+        </field>
+        <field xml.attribute="true">
+          <name>toplink</name>
+          <description><![CDATA[
+            Boolean to generate optionally [top] links.
+          ]]></description>
+          <version>1.0.0</version>
+          <type>boolean</type>
+          <defaultValue>true</defaultValue>
+          <identifier>true</identifier>
+        </field>
+        <field>
+          <name>parts</name>
+          <description><![CDATA[
+            List of FAQ part.
+          ]]></description>
+          <version>1.0.0</version>
+          <association xml.itemsStyle="flat">
+            <type>Part</type>
+            <multiplicity>*</multiplicity>
+          </association>
+          <identifier>true</identifier>
+        </field>
+      </fields>
+    </class>
+    <class xsd.compositor="sequence">
+      <name>Part</name>
+      <description><![CDATA[
+        FAQ part.
+      ]]></description>
+      <version>1.0.0</version>
+      <fields>
+        <field xml.attribute="true">
+          <name>id</name>
+          <version>1.0.0</version>
+          <description><![CDATA[
+            The identifier of the part.
+          ]]></description>
+          <type>String</type>
+          <identifier>true</identifier>
+        </field>
+        <field>
+          <name>title</name>
+          <version>1.0.0</version>
+          <description><![CDATA[
+            The title of the FAQ part.
+          ]]></description>
+          <type>String</type>
+          <identifier>true</identifier>
+        </field>
+        <field>
+          <name>faqs</name>
+          <description><![CDATA[
+            A list of FAQ.
+          ]]></description>
+          <version>1.0.0</version>
+          <association xml.itemsStyle="flat">
+            <type>Faq</type>
+            <multiplicity>*</multiplicity>
+          </association>
+          <identifier>true</identifier>
+        </field>
+      </fields>
+    </class>
+    <class xsd.compositor="sequence">
+      <name>Faq</name>
+      <description><![CDATA[
+        A Faq.
+      ]]></description>
+      <version>1.0.0</version>
+      <fields>
+        <field xml.attribute="true">
+          <name>id</name>
+          <description><![CDATA[
+            The FAQ identifier.
+          ]]></description>
+          <version>1.0.0</version>
+          <type>String</type>
+          <identifier>true</identifier>
+        </field>
+        <field>
+          <name>question</name>
+          <description><![CDATA[
+            The question.
+          ]]></description>
+          <version>1.0.0</version>
+          <type>String</type>
+          <identifier>true</identifier>
+        </field>
+        <field>
+          <name>answer</name>
+          <description><![CDATA[
+            The answer.
+          ]]></description>
+          <version>1.0.0</version>
+          <type>String</type>
+          <identifier>true</identifier>
+        </field>
+      </fields>
+    </class>
+  </classes>
+</model>

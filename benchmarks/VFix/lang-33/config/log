@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.commons.lang3.ClassUtils.toClass(ClassUtils.java:910)
+	at Main.testToClass_object(Main.java:38)
+	at Main.main(Main.java:12)

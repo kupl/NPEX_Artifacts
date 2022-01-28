@@ -1,0 +1,422 @@
+[
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 11,
+        "description": "DashboardTest"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 11,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 11,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 13,
+        "description": "hu.oe.nik.szfmv.visualization.Dashboard"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 46,
+        "description": "Dashboard"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 46,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 46,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 24,
+        "description": "javax.swing.JPanel"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 26,
+        "description": "javax.swing.JLabel"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 27,
+        "description": "javax.swing.JProgressBar"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 29,
+        "description": "javax.swing.JLabel"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 30,
+        "description": "javax.swing.JProgressBar"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 47,
+        "description": "initializeDashboard"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 67,
+        "description": "initializeDashboard"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 67,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 67,
+        "description": "setLayout"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 68,
+        "description": "java.awt.Color"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 68,
+        "description": "setBackground"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 69,
+        "description": "setBounds"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 71,
+        "description": "initializeProgressBars"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 78,
+        "description": "initializeProgressBars"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 78,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 78,
+        "description": "java.awt.Color"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 78,
+        "description": "setBackground"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 79,
+        "description": "setBounds"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 85,
+        "description": "setText"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 86,
+        "description": "setText"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 87,
+        "description": "setStringPainted"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 88,
+        "description": "setStringPainted"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 90,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 91,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 92,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 93,
+        "description": "add"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 94,
+        "description": "add"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 22,
+        "description": "setUp"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 22,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 31,
+        "description": "allRequiredValuesReceivedOnUpdate"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 31,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 31,
+        "description": "hu.oe.nik.szfmv.visualization.DashboardTest$InputPacketStub"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 38,
+        "description": "DashboardTest$InputPacketStub"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 38,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 38,
+        "description": "<init>"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 32,
+        "description": "updateDisplayedValues"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 55,
+        "description": "updateDisplayedValues"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 55,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 55,
+        "description": "getGasPedalPosition"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 41,
+        "description": "getGasPedalPosition"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 41,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 41,
+        "description": "access$002"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 11,
+        "description": "access$002"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 11,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 55,
+        "description": "setValue"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 56,
+        "description": "getBreakPedalPosition"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 47,
+        "description": "getBreakPedalPosition"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 47,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 47,
+        "description": "access$102"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 11,
+        "description": "access$102"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line_number": 11,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 56,
+        "description": "setValue"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 57,
+        "description": "calculateSpeedometer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 138,
+        "description": "calculateSpeedometer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 138,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 58,
+        "description": "calculateTachometer"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 121,
+        "description": "calculateTachometer"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 121,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 59,
+        "description": "getGraphics"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 59,
+        "description": "paintComponent"
+    },
+    {
+        "tag": "ENTRY",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 103,
+        "description": "paintComponent"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 103,
+        "description": "$jacocoInit"
+    },
+    {
+        "tag": "CALLSITE",
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line_number": 103,
+        "description": "paintComponent"
+    }
+]

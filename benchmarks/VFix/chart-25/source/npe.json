@@ -1,0 +1,9 @@
+{
+	"filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+	"line": 404,
+	"deref_field": "meanValue",
+	"sink_field": "doubleValue",
+	"npe_class": "StatisticalBarRenderer",
+	"npe_method": "drawVerticalItem",
+	"jvmti_identify_succeed": true
+}

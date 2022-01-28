@@ -1,0 +1,20 @@
+{
+    "repo": "activemq-artemis",
+    "commit_id": "6fbafc4",
+    "commit_url": "https://github.com/apache/activemq-artemis/commit/6fbafc4441791bd3883e695f395ef35a4d36e62e",
+    "parent_url": "https://github.com/apache/activemq-artemis/commit/586abba94ee6b9cd576508ea042d74dcd4667b6c",
+    "date": "2016-10-13",
+    "changed_files": [
+        "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+        "artemis-selector/src/test/java/org/apache/activemq/artemis/selector/filter/UnaryExpressionTest.java"
+    ],
+    "patch_files": [
+        "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java"
+    ],
+    "test_files": [
+        "artemis-selector/src/test/java/org/apache/activemq/artemis/selector/filter/UnaryExpressionTest.java"
+    ],
+    "size": 432238,
+    "is_maven": true,
+    "is_java": true
+}

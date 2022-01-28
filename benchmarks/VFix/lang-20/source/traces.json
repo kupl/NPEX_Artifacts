@@ -1,0 +1,27 @@
+[
+    {
+        "filepath": "org/apache/commons/lang3/StringUtils.java",
+        "line": 3383,
+        "method_name": "join"
+    },
+    {
+        "filepath": "org/apache/commons/lang3/StringUtils.java",
+        "line": 3338,
+        "method_name": "join"
+    },
+    {
+        "filepath": "org/apache/commons/lang3/StringUtils.java",
+        "line": 3230,
+        "method_name": "join"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 179,
+        "method_name": "testJoin_Objectarray"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 8,
+        "method_name": "main"
+    }
+]

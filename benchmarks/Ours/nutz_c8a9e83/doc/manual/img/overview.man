@@ -1,0 +1,104 @@
+#title: 图像基本处理
+#author:wendal(wendal1985@gmail.com), pangwu86(pangwu86@gmail.com)
+#index:0,1
+------------------------------------------------------------------------
+为什么有这个package
+
+	这个package一直有,老久了,只是一直都是我们内部自己用,没有直接写出来. 
+	
+	直接原文拷贝啦,从http,哈哈.
+	
+------------------------------------------------------------------------
+图像读取
+
+	你会发现,Images类只有一个read方法,参数类型是Object
+	
+	{{{<JAVA>
+	// 可以是URL对象
+	Images.read(new Url("https://www.baidu.com/img/bdlogo.png"));
+	// 可以是路径
+	Images.read("/dev/shm/shiro_login.png");
+	// 可以是File对象
+	Images.read(new File("/dev/shm/shiro_login.png"));
+	// 可以是InputStream
+	Images.read(in);
+	}}}
+
+------------------------------------------------------------------------
+图像旋转
+
+	旋转90度
+	
+	{{{<JAVA>
+	img = Images.rotate(img, 90);
+	}}}
+    
+------------------------------------------------------------------------
+图像翻转
+
+    水平翻转
+	
+    {{{<JAVA>
+    img = Images.flipHorizontal(img);
+    }}}
+    
+    垂直翻转
+    
+    {{{<JAVA>
+    img = Images.flipVertical(img);
+    }}}
+
+------------------------------------------------------------------------
+图像缩放
+
+	缩放到指定长宽,等比缩放
+	
+	{{{<JAVA>
+	img = Images.zoomScale(img, 160, 180, Color.WHITE);
+	}}}
+	
+	裁剪缩放
+	
+	{{{<JAVA>
+	Images.clipScale("/dev/shm/abc.jpg", "/dev/shm/abc_out.jpg",  1920, 1080);
+	}}}
+
+------------------------------------------------------------------------
+图像扭曲
+
+	可以手动设定扭曲级别，数值越大扭曲程度越高，同时还需设定背景色，用来填充扭曲后漏出来的部分。
+	
+	{{{<JAVA>
+	img = Images.twist(img, 1, "#FFF");
+	}}}
+
+	原图:
+
+	<twist.jpg>
+
+	扭曲值为1：
+
+	<twist1.jpg>
+
+	扭曲值为3：
+
+	<twist3.jpg>
+
+	扭曲值为5：
+
+	<twist5.jpg>
+	
+------------------------------------------------------------------------
+输出文件
+
+	根据文件后缀输出图片
+	
+	{{{<JAVA>
+	Images.write(image, new File("/dev/shm/abc.png"));
+	}}}
+	
+	输出jpeg并指定质量
+	
+	{{{<JAVA>
+	Images.writeJpeg(image, new File("/dev/shm/abc.jpg"), 0.9f);
+	}}}

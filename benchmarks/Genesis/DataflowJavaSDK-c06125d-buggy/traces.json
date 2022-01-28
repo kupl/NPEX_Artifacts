@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "sdk/src/main/java/com/google/cloud/dataflow/sdk/transforms/join/CoGbkResult.java",
+        "line": 320,
+        "method_name": "innerGetOnly"
+    },
+    {
+        "filepath": "sdk/src/main/java/com/google/cloud/dataflow/sdk/transforms/join/CoGbkResult.java",
+        "line": 142,
+        "method_name": "getOnly"
+    },
+    {
+        "filepath": "sdk/src/test/java/com/google/cloud/dataflow/sdk/transforms/join/CoGroupByKeyTest.java",
+        "line": 161,
+        "method_name": "checkGetOnlyForKey"
+    },
+    {
+        "filepath": "sdk/src/test/java/com/google/cloud/dataflow/sdk/transforms/join/CoGroupByKeyTest.java",
+        "line": 142,
+        "method_name": "testCoGroupByKeyGetOnly"
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "repo": "maven-release",
+    "commit_id": "6b1f658",
+    "commit_url": "https://github.com/apache/maven-release/commit/6b1f658451a78e014f849b65a0c0b59ed70ca288",
+    "parent_url": "https://github.com/apache/maven-release/commit/c0b2304e73e4044e993e628eb407c72d7f80c33d",
+    "date": "2017-01-08",
+    "changed_files": [
+        "maven-release-manager/pom.xml",
+        "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+        "maven-release-manager/src/test/java/org/apache/maven/shared/release/phase/MapVersionsPhaseTest.java"
+    ],
+    "patch_files": [
+        "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java"
+    ],
+    "test_files": [
+        "maven-release-manager/src/test/java/org/apache/maven/shared/release/phase/MapVersionsPhaseTest.java"
+    ],
+    "size": 23538,
+    "is_maven": true,
+    "is_java": true
+}

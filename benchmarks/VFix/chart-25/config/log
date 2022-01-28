@@ -1,0 +1,10 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem(StatisticalBarRenderer.java:404)
+	at org.jfree.chart.renderer.category.StatisticalBarRenderer.drawItem(StatisticalBarRenderer.java:212)
+	at org.jfree.chart.plot.CategoryPlot.render(CategoryPlot.java:2868)
+	at org.jfree.chart.plot.CategoryPlot.draw(CategoryPlot.java:2673)
+	at org.jfree.chart.JFreeChart.draw(JFreeChart.java:1219)
+	at org.jfree.chart.JFreeChart.createBufferedImage(JFreeChart.java:1393)
+	at org.jfree.chart.JFreeChart.createBufferedImage(JFreeChart.java:1373)
+	at Main.testDrawWithNullMeanVertical(Main.java:29)
+	at Main.main(Main.java:13)

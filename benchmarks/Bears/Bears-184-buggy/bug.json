@@ -1,0 +1,126 @@
+{
+    "bug_id": "Bears-184-buggy",
+    "repository_info": null,
+    "build_info": {
+        "compiled": true,
+        "build_command": "mvn clean test-compile -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true",
+        "java_version": 8,
+        "error_message": null,
+        "time": 8.476811378961429
+    },
+    "test_info": {
+        "test_command": "mvn clean test -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Dtest=org.springframework.data.jpa.util.JpaMetamodelUnitTests#skipsEntityTypesWithoutJavaTypeForIdentifierLookup",
+        "fail_buggy": true,
+        "pass_fixed": false,
+        "testcases": [
+            {
+                "classname": "org.springframework.data.jpa.util.JpaMetamodelUnitTests",
+                "method": "skipsEntityTypesWithoutJavaTypeForIdentifierLookup",
+                "exn_type": "java.lang.NullPointerException",
+                "stack_trace": "java.lang.NullPointerException\n\tat org.springframework.data.jpa.util.JpaMetamodel.lambda$isSingleIdAttribute$0(JpaMetamodel.java:79)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)\n\tat java.util.Collections$2.tryAdvance(Collections.java:4719)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.springframework.data.jpa.util.JpaMetamodel.isSingleIdAttribute(JpaMetamodel.java:80)\n\tat org.springframework.data.jpa.util.JpaMetamodelUnitTests.skipsEntityTypesWithoutJavaTypeForIdentifierLookup(JpaMetamodelUnitTests.java:48)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:78)\n\tat org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:84)\n\tat org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39)\n\tat org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:161)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)\n"
+            }
+        ]
+    },
+    "npe_info": [
+        {
+            "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "line": 79,
+            "deref_field": "getJavaType",
+            "npe_class": "JpaMetamodel",
+            "npe_method": "lambda$isSingleIdAttribute$0",
+            "sink_field": "equals",
+            "jvmti_identify_succeed": true,
+            "is_original": true
+        }
+    ],
+    "patch_results": [
+        {
+            "patch_id": "ReplacePointerObject_79-79_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplacePointerObject_79-79_1",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_79-79_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplacePointerVar_79-79_1",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_79-79_6",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplacePointerVar_79-79_6",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_79-79_5",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplacePointerVar_79-79_5",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_79-79_2",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplacePointerVar_79-79_2",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_79-79_7",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplacePointerVar_79-79_7",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerObject_79-79_2",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplacePointerObject_79-79_2",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_79-79_8",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplacePointerVar_79-79_8",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_79-79_4",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplacePointerVar_79-79_4",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplaceEntireExpressionObject_78-78_1",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplaceEntireExpressionObject_78-78_1",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": false,
+            "pass_testcase": null,
+            "is_correct": null
+        },
+        {
+            "patch_id": "ReplacePointerVar_79-79_3",
+            "patch_dir": "/media/4tb/npex/NPEX_DATA/Bears-184-buggy/patches/ReplacePointerVar_79-79_3",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "compiled": true,
+            "pass_testcase": true,
+            "is_correct": null
+        }
+    ]
+}

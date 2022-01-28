@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "Main.java",
+        "line": 22,
+        "method_name": "testBug2849731_2"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 12,
+        "method_name": "main"
+    }
+]

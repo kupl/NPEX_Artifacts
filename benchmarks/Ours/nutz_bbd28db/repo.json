@@ -1,0 +1,21 @@
+{
+    "repo": "nutz",
+    "commit_id": "bbd28db",
+    "repo_url": "https://github.com/nutzam/nutz",
+    "commit_url": "https://github.com/nutzam/nutz/commit/bbd28dbf3504c5f86bff67692955d428c44db3dd",
+    "parent_url": "https://github.com/nutzam/nutz/commit/15d6b30eaca5a612fa3ef1085b9be8ab853b43a3",
+    "date": "2017-01-09",
+    "changed_files": [
+        "src/org/nutz/http/Sender.java",
+        "test/org/nutz/http/HttpTest.java"
+    ],
+    "patch_files": [
+        "src/org/nutz/http/Sender.java"
+    ],
+    "test_files": [
+        "test/org/nutz/http/HttpTest.java"
+    ],
+    "size": 79819,
+    "is_maven": true,
+    "is_java": true
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "filepath": "src/main/java/picocli/CommandLine.java",
+        "line": 1024,
+        "method_name": "parameterIndex"
+    },
+    {
+        "filepath": "src/main/java/picocli/CommandLine.java",
+        "line": 1767,
+        "method_name": "compare"
+    },
+    {
+        "filepath": "src/main/java/picocli/CommandLine.java",
+        "line": 1765,
+        "method_name": "compare"
+    },
+    {
+        "filepath": "src/main/java/picocli/CommandLine.java",
+        "line": 1248,
+        "method_name": "parse"
+    },
+    {
+        "filepath": "src/main/java/picocli/CommandLine.java",
+        "line": 1238,
+        "method_name": "parse"
+    },
+    {
+        "filepath": "src/main/java/picocli/CommandLine.java",
+        "line": 293,
+        "method_name": "parse"
+    },
+    {
+        "filepath": "src/test/java/picocli/CommandLineTest.java",
+        "line": 2724,
+        "method_name": "testIssue141Npe"
+    }
+]

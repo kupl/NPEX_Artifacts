@@ -1,0 +1,10 @@
+{
+	"filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/JPAEntityMappings.java",
+	"line": 125,
+	"sink_field": "getSession",
+	"npe_class": "JPAEntityMappings",
+	"npe_method": "findEntity",
+	"jvmti_identify_succeed": true, 
+  "deref_field": "getCommandContext",
+  "nullpointer": "Context.getCommandContext()" 
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "src/main/java/hu/oe/nik/szfmv/detector/classes/Detector.java",
+        "line": 52,
+        "method_name": "getTheObjectsWhichAreInTheTriangle"
+    },
+    {
+        "filepath": "src/main/java/hu/oe/nik/szfmv/detector/classes/Detector.java",
+        "line": 82,
+        "method_name": "getWorldObjects"
+    },
+    {
+        "filepath": "src/test/java/hu/oe/nik/szfmv/detector/DetectorTest.java",
+        "line": 21,
+        "method_name": "itHasAllWorldObjects"
+    }
+]

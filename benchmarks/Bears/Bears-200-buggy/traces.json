@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "axon-server-connector/src/test/java/org/axonframework/axonserver/connector/event/axon/ErrorCodeTest.java",
+        "line": 56,
+        "method_name": "testConvertWithoutSource"
+    }
+]

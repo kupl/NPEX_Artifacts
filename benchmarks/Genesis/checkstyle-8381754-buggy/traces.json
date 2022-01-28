@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheckTest.java",
+        "line": 115,
+        "method_name": "testSkipMethodsWithOverrideAnnotationTrue"
+    },
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheckTest.java",
+        "line": 115,
+        "method_name": "testSkipMethodsWithOverrideAnnotationTrue"
+    }
+]

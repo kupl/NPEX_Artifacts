@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<!-- Licensed to the Apache Software Foundation (ASF) under one or more 
+		contributor license agreements. See the NOTICE file distributed with this 
+		work for additional information regarding copyright ownership. The ASF licenses 
+		this file to You under the Apache License, Version 2.0 (the "License"); you 
+		may not use this file except in compliance with the License. You may obtain 
+		a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless 
+		required by applicable law or agreed to in writing, software distributed 
+		under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+		OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+		the specific language governing permissions and limitations under the License. -->
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.apache.karaf</groupId>
+		<artifactId>karaf</artifactId>
+		<version>4.3.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<artifactId>manual</artifactId>
+	<name>Apache Karaf :: Manual</name>
+	<packaging>bundle</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.karaf.tooling</groupId>
+				<artifactId>karaf-maven-plugin</artifactId>
+				<version>${project.version}</version>
+				<executions>
+					<execution>
+						<id>generate-commands-help</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>commands-generate-help</goal>
+						</goals>
+						<configuration>
+							<format>asciidoc</format>
+							<targetFolder>${project.build.directory}/generated-docs/commands/</targetFolder>
+							<classLoader>plugin</classLoader>
+						</configuration>
+					</execution>
+				</executions>
+				<dependencies>
+					<!-- Commands for help generation -->
+					<dependency>
+						<groupId>org.apache.karaf.shell</groupId>
+						<artifactId>org.apache.karaf.shell.commands</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.shell</groupId>
+						<artifactId>org.apache.karaf.shell.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.log</groupId>
+						<artifactId>org.apache.karaf.log.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.obr</groupId>
+						<artifactId>org.apache.karaf.obr.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.bundle</groupId>
+						<artifactId>org.apache.karaf.bundle.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.bundle</groupId>
+						<artifactId>org.apache.karaf.bundle.springstate</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.service</groupId>
+						<artifactId>org.apache.karaf.service.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.system</groupId>
+						<artifactId>org.apache.karaf.system.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.shell</groupId>
+						<artifactId>org.apache.karaf.shell.ssh</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.web</groupId>
+						<artifactId>org.apache.karaf.web.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.wrapper</groupId>
+						<artifactId>org.apache.karaf.wrapper.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.instance</groupId>
+						<artifactId>org.apache.karaf.instance.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.diagnostic</groupId>
+						<artifactId>org.apache.karaf.diagnostic.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.features</groupId>
+						<artifactId>org.apache.karaf.features.command</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.jaas</groupId>
+						<artifactId>org.apache.karaf.jaas.command</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.jdbc</groupId>
+						<artifactId>org.apache.karaf.jdbc.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.jms</groupId>
+						<artifactId>org.apache.karaf.jms.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.jndi</groupId>
+						<artifactId>org.apache.karaf.jndi.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.config</groupId>
+						<artifactId>org.apache.karaf.config.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.http</groupId>
+						<artifactId>org.apache.karaf.http.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.kar</groupId>
+						<artifactId>org.apache.karaf.kar.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.package</groupId>
+						<artifactId>org.apache.karaf.package.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.profile</groupId>
+						<artifactId>org.apache.karaf.profile.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.scheduler</groupId>
+						<artifactId>org.apache.karaf.scheduler.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.subsystem</groupId>
+						<artifactId>org.apache.karaf.subsystem.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.karaf.maven</groupId>
+						<artifactId>org.apache.karaf.maven.core</artifactId>
+						<version>${project.version}</version>
+					</dependency>
+					<!-- Additional Required Dependencies -->
+					<dependency>
+						<groupId>org.apache.felix</groupId>
+						<artifactId>org.apache.felix.gogo.runtime</artifactId>
+						<version>${felix.gogo.runtime.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.osgi</groupId>
+						<artifactId>osgi.core</artifactId>
+						<version>${osgi.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.osgi</groupId>
+						<artifactId>osgi.cmpn</artifactId>
+						<version>${osgi.compendium.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.felix</groupId>
+						<artifactId>org.apache.felix.bundlerepository</artifactId>
+						<version>${felix.bundlerepository.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
+				<groupId>org.asciidoctor</groupId>
+				<artifactId>asciidoctor-maven-plugin</artifactId>
+				<version>1.5.6</version>
+				<executions>
+					<execution>
+						<id>output-html</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>process-asciidoc</goal>
+						</goals>
+						<configuration>
+							<sourceHighlighter>coderay</sourceHighlighter>
+							<backend>html5</backend>
+							<doctype>article</doctype>
+							<attributes>
+								<toc />
+								<linkcss>false</linkcss>
+							</attributes>
+						</configuration>
+					</execution>
+				</executions>
+				<configuration>
+					<sourceDirectory>src/main/asciidoc</sourceDirectory>
+					<headerFooter>true</headerFooter>
+					<imagesDir>src/main/asciidoc/images</imagesDir>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-publish-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<checkinComment>[scm-publish] Updating main site with Karaf documentation</checkinComment>
+					<pubScmUrl>scm:svn:https://svn.apache.org/repos/asf/karaf/site/production/manual/latest</pubScmUrl>
+					<content>${project.build.directory}/generated-docs</content>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<instructions>
+						<Web-ContextPath>/documentation</Web-ContextPath>
+						<Include-Resource>target/generated-docs</Include-Resource>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>pdf</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>attach-manual</id>
+								<phase>install</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<mkdir dir="target" />
+                                        <copy file="${project.build.directory}/generated-docs/index.html" tofile="target/documentation.html" />
+                                        <echo message="Generating PDF using Prince XML (http://www.princexml.com/)" />
+										<exec executable="prince">
+											<arg value="target/documentation.html" />
+											<arg value="target/documentation.pdf" />
+											<arg value="--log" />
+											<arg value="${project.build.directory}/prince.log" />
+										</exec>
+										<attachartifact file="target/documentation.html" type="html" />
+										<attachartifact file="target/documentation.pdf" type="pdf" />
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+</project>
+

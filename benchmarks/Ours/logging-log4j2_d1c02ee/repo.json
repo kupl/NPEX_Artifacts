@@ -1,0 +1,23 @@
+{
+    "repo": "logging-log4j2",
+    "commit_id": "d1c02ee",
+    "commit_url": "https://github.com/apache/logging-log4j2/commit/d1c02ee5e3a863528dfad66a9bbd17c45d475a25",
+    "parent_url": "https://github.com/apache/logging-log4j2/commit/5b7b75d5f902d5f1427858c34330cf2550d308b7",
+    "date": "2016-08-05",
+    "changed_files": [
+        "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+        "log4j-core/src/test/java/org/apache/logging/log4j/core/config/CompositeConfigurationTest.java",
+        "log4j-core/src/test/resources/log4j-comp-root-loggers.xml",
+        "src/changes/changes.xml"
+    ],
+    "patch_files": [
+        "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java"
+    ],
+    "test_files": [
+        "log4j-core/src/test/java/org/apache/logging/log4j/core/config/CompositeConfigurationTest.java",
+        "log4j-core/src/test/resources/log4j-comp-root-loggers.xml"
+    ],
+    "size": 105186,
+    "is_maven": true,
+    "is_java": true
+}

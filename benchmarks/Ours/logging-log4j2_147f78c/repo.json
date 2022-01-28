@@ -1,0 +1,21 @@
+{
+    "repo": "logging-log4j2",
+    "commit_id": "147f78c",
+    "commit_url": "https://github.com/apache/logging-log4j2/commit/147f78c45e181d78778a710d24510c9b03d97bc7",
+    "parent_url": "https://github.com/apache/logging-log4j2/commit/6a23301660830fcd4728b1b952b607a9e1e26f65",
+    "date": "2016-08-20",
+    "changed_files": [
+        "log4j-core/src/main/java/org/apache/logging/log4j/core/async/RingBufferLogEvent.java",
+        "log4j-core/src/test/java/org/apache/logging/log4j/core/async/RingBufferLogEventTest.java",
+        "src/changes/changes.xml"
+    ],
+    "patch_files": [
+        "log4j-core/src/main/java/org/apache/logging/log4j/core/async/RingBufferLogEvent.java"
+    ],
+    "test_files": [
+        "log4j-core/src/test/java/org/apache/logging/log4j/core/async/RingBufferLogEventTest.java"
+    ],
+    "size": 106580,
+    "is_maven": true,
+    "is_java": true
+}

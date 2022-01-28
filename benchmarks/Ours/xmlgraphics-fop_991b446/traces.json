@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+        "line": 138,
+        "method_name": "getBoundingBox"
+    },
+    {
+        "filepath": "fop-core/src/test/java/org/apache/fop/fonts/type1/Type1FontLoaderTestCase.java",
+        "line": 55,
+        "method_name": "testBoundingBox"
+    }
+]

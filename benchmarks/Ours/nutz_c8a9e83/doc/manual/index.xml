@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<doc title="Nutz核心包" author="zozoh(zozohtnt@gmail.com)">
+	<doc path="nutz_preface.man"/>
+	<doc path="nutz_release_notes.man"/>
+	<doc path="changelog.man"></doc>
+	<doc path="basic" title="通用知识">
+		<doc path="maven.man"></doc>
+		<doc path="encoding.man"></doc>
+		<doc path="support.man"></doc>
+		<doc path="logging.man"></doc>
+		<doc path="version_upgrade.man"></doc>
+	</doc>
+	<doc path="mvc"	title="Mvc 手册">
+		<doc path="overview.man"/>
+		<doc path="hello.man"/>
+		<doc path="hello-idea.man"/>
+		<doc path="web_xml.man"/>
+		<doc path="modules.man"/>
+		<doc path="url_mapping.man"/>
+		<doc path="action_chain.man"/>
+		<doc path="http_adaptor.man"/>
+		<doc path="view.man"/>
+		<doc path="with_ioc.man"/>
+		<doc path="localization.man"/>
+		<doc path="action_filter.man"/>
+		<doc path="file_upload.man"/>
+		<doc path="module_of_request.man"/>
+		<doc path="rest.man"/>
+		<doc path="annotations.man"/>
+		<doc path="session.man"></doc>
+		<doc path="setupby.man"></doc>
+		<doc path="cross_origin.man"></doc>
+		<doc path="websocket.man"></doc>
+		<doc path="whale_filter.man"></doc>
+		<doc path="questions.man"></doc>
+	</doc>
+	<doc path="dao" title="Dao 手册">
+		<doc path="hello.man"/>
+		<doc path="basic_operations.man"/>
+		<doc path="primary_key.man"/>
+		<doc path="condition.man"/>
+		<doc path="pager.man"/>
+		<doc path="next_prev.man"/>
+		<doc path="view.man"/>
+		<doc path="field_filter.man"/>
+		<doc path="dynamic_table_name.man"/>
+		<doc path="links_one.man"/>
+		<doc path="links_many.man"/>
+		<doc path="links_many_many.man"/>
+		<doc path="customized_sql.man"/>
+		<doc path="transaction.man"/>
+		<doc path="transaction_complex.man"/>
+		<doc path="runner.man"/>
+		<doc path="entity.man"/>
+		<doc path="services.man"/>
+		<doc path="pojo.man"/>
+		<doc path="record.man"/>
+		<doc path="annotations.man"/>
+		<doc path="interceptors.man"/>
+		<doc path="procedure.man"/>
+		<doc path="slave.man"/>
+		<doc path="multiple_datasource.man"></doc>
+		<doc path="daoup.man"></doc>
+		<doc path="trans_session.man"></doc>
+		<doc path="dao_create.man"></doc>
+		<doc path="questions.man"></doc>
+		<doc path="update_with_version.man"></doc>
+	</doc>
+	<doc path="ioc"	title="Ioc 手册">
+		<doc path="hello.man"/>
+		<doc path="injecting.man"/>
+		<doc path="events.man"/>
+		<doc path="ioc_loader.man"/>
+		<doc path="loader_annotation.man"/>
+		<doc path="loader_combo.man"/>
+		<doc path="ioc_annos.man"/>
+		<doc path="ioc_factory.man"></doc>
+		<doc path="ioc_by_hand.man"/>
+		<doc path="inner_object.man"/>
+		<doc path="ioc_properties.man"></doc>
+		<doc path="alias.man"></doc>
+		<doc path="scope.man"/>
+		<doc path="ioc_and_java.man"></doc>
+		<doc path="xml_ioc_loader.man"/>
+		<doc path="questions.man"></doc>
+	</doc>
+	<doc path="aop" title="Aop 手册">
+		<doc path="aop_mvc.man"/>
+		<doc path="aop_trans.man"/>
+		<doc path="aop_async.man"/>
+		<doc path="aop_solution.man"/>
+		<doc path="aop.man"/>
+		<doc path="aop_json.man"/>
+	</doc>
+	<doc path="json" title="Json 手册">
+		<doc path="base.man"/>
+		<doc path="from.man"/>
+		<doc path="to.man"/>
+		<doc path="mvc.man"/>
+		<doc path="annotations.man"/>
+	</doc>
+    	<doc path="el" title="表达式引擎">
+		<doc path="overview.man"></doc>
+	</doc>
+	<doc path="maplist" title="maplist结构">
+	    <doc path="overview.man"></doc>
+	</doc>
+	<doc path="lang" title="甜 Java">
+		<doc path="lang.man"/>
+		<doc path="castors.man"/>
+		<doc path="mirror.man"/>
+		<doc path="segment.man"/>
+		<doc path="filepool.man"/>
+		<doc path="log.man"/>
+	</doc>
+	<doc path="weixin" title="微信">
+		<doc path="helloworld.man"></doc>
+		<doc path="weixin_handler.man"></doc>
+		<doc path="weixin_api.man"></doc>
+		<doc path="weixin_login.man"></doc>
+	</doc>
+	<doc path="http" title="Http轻客户端">
+		<doc path="overview.man"></doc>
+		<doc path="httpdns.man"></doc>
+	</doc>
+	<doc path="img" title="图像处理小军刀">
+		<doc path="overview.man"></doc>
+		<doc path="advanced.man"></doc>
+	</doc>
+	<doc path="nosql" title="NoSQL相关">
+		<doc path="jedis.man"></doc>
+		<doc path="mongodb.man"></doc>
+	</doc>
+	<doc path="integration" title="插件与集成">
+		<doc path="nutzmore.man"></doc>
+		<doc path="freemarker.man"></doc>
+		<doc path="velocity.man"></doc>
+		<doc path="beetl.man"></doc>
+		<doc path="shiro.man"></doc>
+		<doc path="quartz.man"></doc>
+		<doc path="ehcache.man"></doc>
+		<doc path="daocache.man"></doc>
+		<doc path="jedis.man"></doc>
+	</doc>
+	<doc path="boot" title="NutzBoot">
+		<doc path="overview.man"></doc>
+		<doc path="helloworld.man"></doc>
+		<doc path="write_starter.man"></doc>
+	</doc>
+	<doc path="testing" title="单元测试">
+		<doc path="junit_testing.man"></doc>
+	</doc>
+	<doc path="committer"  title="关于源码">
+		<doc path="git_project.man"/>
+		<doc path="compile_with_maven.man"/>
+		<doc path="ant.man"/>
+		<doc path="packages.man"/>
+		<doc path="version_naming.man"/>
+		<doc path="coding.man"/>
+		<doc path="be_committer.man"/>
+	</doc>
+	<doc path="history" title="版本历史">
+	    <doc path="1_r_65.man"/>
+		<doc path="1_r_63.man"/>
+		<doc path="1_r_62.man"/>
+		<doc path="1_r_61.man"/>
+		<doc path="1_r_60.man"/>
+		<doc path="1_r_59.man"/>
+		<doc path="1_r_58.man"/>
+		<doc path="1_r_57.man"/>
+		<doc path="1_r_56.man"/>
+		<doc path="1_r_55.man"/>
+		<doc path="1_r_54.man"/>
+		<doc path="1_b_53.man"/>
+		<doc path="1_b_52.man"/>
+		<doc path="1_b_51.man"/>
+		<doc path="1_b_50.man"/>
+		<doc path="1_b_49.man"/>
+		<doc path="1_b_48.man"/>
+		<doc path="1_b_47.man"/>
+		<doc path="1_b_46.man"/>
+		<doc path="1_b_45.man"/>
+		<doc path="1_b_44.man"/>
+		<doc path="1_b_43.man"/>
+		<doc path="1_b_42.man"/>
+		<doc path="1_b_41.man"/>
+		<doc path="1_b_40.man"/>
+		<doc path="1_b_39.man"/>
+		<doc path="1_b_38.man"/>
+		<doc path="1_b_37.man"/>
+		<doc path="1_b_36.man"/>
+		<doc path="1_b_35.man"/>
+		<doc path="1_b_34.man"/>
+		<doc path="1_a_33.man"/>
+		<doc path="1_a_32.man"/>
+		<doc path="1_a_31.man"/>
+		<doc path="1_a_30.man"/>
+		<doc path="1_a_29.man"/>
+		<doc path="1_a_28.man"/>
+		<doc path="1_a_27.man"/>
+		<doc path="1_a_26.man"/>
+		<doc path="1_a_25.man"/>
+	</doc>
+	<doc path="faq" title="FAQ">
+		<doc path="how_to_pronounce_nutz.man"/>
+		<doc path="jar_encoding.man"/>
+	</doc>
+	<doc path="appendix" title="附录">
+		<doc path="create_datasource.man"/>
+		<doc path="resources.man"/>
+	</doc>
+</doc>

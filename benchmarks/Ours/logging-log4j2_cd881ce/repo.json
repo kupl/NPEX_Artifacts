@@ -1,0 +1,20 @@
+{
+    "repo": "logging-log4j2",
+    "commit_id": "cd881ce",
+    "commit_url": "https://github.com/apache/logging-log4j2/commit/cd881cef0f658857a8d5004390cdb1a8bdac4a31",
+    "parent_url": "https://github.com/apache/logging-log4j2/commit/85661de7d6526b1aa234f45ab56eb092e4cbda39",
+    "date": "2016-02-11",
+    "changed_files": [
+        "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+        "log4j-api/src/test/java/org/apache/logging/log4j/LoggerTest.java"
+    ],
+    "patch_files": [
+        "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java"
+    ],
+    "test_files": [
+        "log4j-api/src/test/java/org/apache/logging/log4j/LoggerTest.java"
+    ],
+    "size": 90748,
+    "is_maven": true,
+    "is_java": true
+}

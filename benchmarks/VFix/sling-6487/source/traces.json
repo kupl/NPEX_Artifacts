@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+        "line": 126,
+        "method_name": "resolveTemplate"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 7,
+        "method_name": "main"
+    }
+]

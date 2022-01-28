@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "src/test/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapterTest.java",
+        "line": 185,
+        "method_name": "testSubSelectExpressionProblem"
+    }
+]

@@ -1,0 +1,51 @@
+{
+    "bug_id": "fastjson_7c05c6f",
+    "repository_info": {
+        "repo": "fastjson",
+        "commit_id": "7c05c6f",
+        "repo_url": "https://github.com/alibaba/fastjson",
+        "commit_url": "https://github.com/alibaba/fastjson/commit/7c05c6ffcb29213b6cb1d02f4907684726cc501b",
+        "parent_url": "https://github.com/alibaba/fastjson/commit/650a300f53f17dd5fd72c48b176fae886b191f5d",
+        "date": "2019-09-08",
+        "changed_files": [
+            "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "src/test/java/com/alibaba/fastjson/deserializer/issue2711/PageRequest.java",
+            "src/test/java/com/alibaba/fastjson/deserializer/issue2711/TestIssue.java",
+            "src/test/java/com/alibaba/fastjson/deserializer/issue2711/User.java"
+        ],
+        "patch_files": [
+            "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java"
+        ],
+        "test_files": [
+            "src/test/java/com/alibaba/fastjson/deserializer/issue2711/PageRequest.java",
+            "src/test/java/com/alibaba/fastjson/deserializer/issue2711/TestIssue.java",
+            "src/test/java/com/alibaba/fastjson/deserializer/issue2711/User.java"
+        ],
+        "size": 166405,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 11,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -DskipIT -Dtest=PageRequest,TestIssue,User -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "com.alibaba.fastjson.deserializer.issue2711.TestIssue",
+                "method": "testDeserializeGenericsUnwrapped",
+                "exn_type": "com.alibaba.fastjson.JSONException",
+                "stack_trace": "com.alibaba.fastjson.JSONException: parse unwrapped field error.\n\tat com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.parseField(JavaBeanDeserializer.java:1159)\n\tat com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:850)\n\tat com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:288)\n\tat com.alibaba.fastjson.parser.DefaultJSONParser.parseObject(DefaultJSONParser.java:690)\n\tat com.alibaba.fastjson.JSON.parseObject(JSON.java:383)\n\tat com.alibaba.fastjson.JSON.parseObject(JSON.java:351)\n\tat com.alibaba.fastjson.JSON.parseObject(JSON.java:265)\n\tat com.alibaba.fastjson.deserializer.issue2711.TestIssue.testDeserializeGenericsUnwrapped(TestIssue.java:18)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\nCaused by: java.lang.NullPointerException: Called method 'put' on null object at bci 404\n\tat com.alibaba.fastjson.parser.deserializer.DefaultFieldDeserializer.parseField(DefaultFieldDeserializer.java:121)\n\tat com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.parseField(JavaBeanDeserializer.java:1156)\n\t... 36 more\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

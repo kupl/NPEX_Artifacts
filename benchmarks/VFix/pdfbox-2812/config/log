@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.pdfbox.pdmodel.graphics.color.PDColorSpaceFactory.createColorSpace(PDColorSpaceFactory.java:253)
+	at Main.testPDFBOX2812(Main.java:27)
+	at Main.main(Main.java:13)

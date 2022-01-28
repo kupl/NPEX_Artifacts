@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "rt/rs/security/jose-parent/jose/src/test/java/org/apache/cxf/rs/security/jose/jws/JwsUtilsTest.java",
+        "line": 90,
+        "method_name": "testLoadSignatureVerifierFromProperties"
+    }
+]

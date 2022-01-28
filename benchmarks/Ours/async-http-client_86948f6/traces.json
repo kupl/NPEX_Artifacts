@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+        "line": 347,
+        "method_name": "setQueryParams"
+    },
+    {
+        "filepath": "client/src/test/java/org/asynchttpclient/RequestBuilderTest.java",
+        "line": 155,
+        "method_name": "testSettingQueryParamsBeforeUrlShouldNotProduceNPE"
+    }
+]

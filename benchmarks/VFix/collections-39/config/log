@@ -1,0 +1,5 @@
+Exception in thread "main" java.lang.NullPointerException
+	at org.apache.commons.collections.ExtendedProperties.load(ExtendedProperties.java:569)
+	at org.apache.commons.collections.ExtendedProperties.load(ExtendedProperties.java:532)
+	at Main.testSaveAndLoad(Main.java:26)
+	at Main.main(Main.java:10)

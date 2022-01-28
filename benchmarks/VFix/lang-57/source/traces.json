@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "org/apache/commons/lang3/LocaleUtils.java",
+        "line": 250,
+        "method_name": "isAvailableLocale"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 14,
+        "method_name": "setUp"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 9,
+        "method_name": "main"
+    }
+]

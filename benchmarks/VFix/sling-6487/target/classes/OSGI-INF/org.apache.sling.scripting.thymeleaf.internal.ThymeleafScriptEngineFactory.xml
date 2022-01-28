@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.apache.sling.scripting.thymeleaf.internal.ThymeleafScriptEngineFactory" immediate="true" activate="activate" deactivate="deactivate" modified="modified">
+  <implementation class="org.apache.sling.scripting.thymeleaf.internal.ThymeleafScriptEngineFactory"/>
+  <service>
+    <provide interface="javax.script.ScriptEngineFactory"/>
+  </service>
+  <reference name="cacheManager" cardinality="0..1" policy="dynamic" interface="org.thymeleaf.cache.ICacheManager" bind="setCacheManager" unbind="unsetCacheManager" policy-option="greedy" field="cacheManager"/>
+  <reference name="decoupledTemplateLogicResolver" cardinality="0..1" policy="dynamic" interface="org.thymeleaf.templateparser.markup.decoupled.IDecoupledTemplateLogicResolver" bind="setDecoupledTemplateLogicResolver" unbind="unsetDecoupledTemplateLogicResolver" policy-option="greedy" field="decoupledTemplateLogicResolver"/>
+  <reference name="dialects" cardinality="1..n" policy="dynamic" interface="org.thymeleaf.dialect.IDialect" bind="addDialect" unbind="removeDialect" field="dialects" field-option="update" field-collection-type="service"/>
+  <reference name="engineContextFactory" cardinality="0..1" policy="dynamic" interface="org.thymeleaf.context.IEngineContextFactory" bind="setEngineContextFactory" unbind="unsetEngineContextFactory" policy-option="greedy" field="engineContextFactory"/>
+  <reference name="linkBuilders" cardinality="0..n" policy="dynamic" interface="org.thymeleaf.linkbuilder.ILinkBuilder" bind="addLinkBuilder" unbind="removeLinkBuilder" field="linkBuilders" field-option="update" field-collection-type="service"/>
+  <reference name="messageResolvers" cardinality="1..n" policy="dynamic" interface="org.thymeleaf.messageresolver.IMessageResolver" bind="addMessageResolver" unbind="removeMessageResolver" field="messageResolvers" field-option="update" field-collection-type="service"/>
+  <reference name="scriptingResourceResolverProvider" policy="dynamic" interface="org.apache.sling.scripting.api.resource.ScriptingResourceResolverProvider" policy-option="greedy" field="scriptingResourceResolverProvider"/>
+  <reference name="servletContext" policy="dynamic" interface="javax.servlet.ServletContext" target="(name=org.apache.sling)" policy-option="greedy" field="servletContext"/>
+  <reference name="templateResolvers" cardinality="1..n" policy="dynamic" interface="org.thymeleaf.templateresolver.ITemplateResolver" bind="addTemplateResolver" unbind="removeTemplateResolver" field="templateResolvers" field-option="update" field-collection-type="service"/>
+  <property name="extensions" type="String">html</property>
+  <property name="mimeTypes" type="String">text/html</property>
+  <property name="service.vendor" type="String" value="The Apache Software Foundation"/>
+  <property name="names" type="String">Thymeleaf
+thymeleaf</property>
+  <property name="useStandardCacheManager" type="Boolean" value="true"/>
+  <property name="useStandardEngineContextFactory" type="Boolean" value="true"/>
+  <property name="useStandardDecoupledTemplateLogicResolver" type="Boolean" value="true"/>
+  <property name="useStandardDialect" type="Boolean" value="true"/>
+  <property name="useStandardMessageResolver" type="Boolean" value="true"/>
+  <property name="service.description" type="String" value="ScriptEngineFactory for Sling Scripting Thymeleaf"/>
+  <property name="service.ranking" type="Integer" value="0"/>
+  <property name="useStandardLinkBuilder" type="Boolean" value="true"/>
+</scr:component>

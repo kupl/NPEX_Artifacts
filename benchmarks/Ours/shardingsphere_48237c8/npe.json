@@ -1,0 +1,10 @@
+{
+    "filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+    "line": 106,
+    "sink_field": "getUsername",
+    "npe_class": "PostgreSQLAuthenticationEngine",
+    "npe_method": "auth",
+    "jvmti_identify_succeed": true,
+    "deref_field": "currentAuthResult",
+    "nullpointer": "currentAuthResult"
+}

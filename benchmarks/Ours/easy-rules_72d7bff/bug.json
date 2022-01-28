@@ -1,0 +1,101 @@
+{
+    "bug_id": "easy-rules_72d7bff",
+    "repository_info": {
+        "repo": "easy-rules",
+        "commit_id": "72d7bff",
+        "repo_url": "https://github.com/j-easy/easy-rules",
+        "commit_url": "https://github.com/j-easy/easy-rules/commit/72d7bff9402cabf43b19900fbfd463cc693799e8",
+        "parent_url": "https://github.com/j-easy/easy-rules/commit/d5385af524dc062d7764591c46ddd6dd1bbf945f",
+        "date": "2018-03-28",
+        "changed_files": [
+            "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java",
+            "easy-rules-mvel/src/test/java/org/jeasy/rules/mvel/MVELRuleDefinitionReaderTest.java",
+            "easy-rules-mvel/src/test/resources/adult-rule-with-default-values.yml",
+            "easy-rules-mvel/src/test/resources/adult-rule-without-actions.yml",
+            "easy-rules-mvel/src/test/resources/adult-rule-without-condition.yml"
+        ],
+        "patch_files": [
+            "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java"
+        ],
+        "test_files": [
+            "easy-rules-mvel/src/test/java/org/jeasy/rules/mvel/MVELRuleDefinitionReaderTest.java",
+            "easy-rules-mvel/src/test/resources/adult-rule-with-default-values.yml",
+            "easy-rules-mvel/src/test/resources/adult-rule-without-actions.yml",
+            "easy-rules-mvel/src/test/resources/adult-rule-without-condition.yml"
+        ],
+        "size": 3647,
+        "is_maven": true,
+        "is_java": true
+    },
+    "build_info": {
+        "compiled": true,
+        "build_command": null,
+        "java_version": 15,
+        "error_message": null,
+        "time": null
+    },
+    "test_info": {
+        "test_command": "mvn test -DskipIT -Dtest=MVELRuleDefinitionReaderTest -DfailIfNoTests=false -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100",
+        "fail_buggy": true,
+        "pass_fixed": true,
+        "testcases": [
+            {
+                "classname": "org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest",
+                "method": "testInvalidRuleDefinitionReading_whenNoCondition",
+                "exn_type": "java.io.FileNotFoundException",
+                "stack_trace": "java.io.FileNotFoundException: src/test/resources/adult-rule-with-default-values.yml (No such file or directory)\n\tat org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest.testRuleDefinitionReading_withDefaultValues(MVELRuleDefinitionReaderTest.java:80)\n"
+            },
+            {
+                "classname": "org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest",
+                "method": "testInvalidRuleDefinitionReading_whenNoActions",
+                "exn_type": "java.io.FileNotFoundException",
+                "stack_trace": "java.io.FileNotFoundException: src/test/resources/adult-rule-with-default-values.yml (No such file or directory)\n\tat org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest.testRuleDefinitionReading_withDefaultValues(MVELRuleDefinitionReaderTest.java:80)\n"
+            },
+            {
+                "classname": "org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest",
+                "method": "testInvalidRuleDefinitionReading_whenNoActions",
+                "exn_type": "java.lang.Exception",
+                "stack_trace": "java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NullPointerException>\n\tat org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest.testInvalidRuleDefinitionReading_whenNoCondition(MVELRuleDefinitionReaderTest.java:97)\n"
+            },
+            {
+                "classname": "org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest",
+                "method": "testRuleDefinitionReading_withDefaultValues",
+                "exn_type": "java.io.FileNotFoundException",
+                "stack_trace": "java.io.FileNotFoundException: src/test/resources/adult-rule-with-default-values.yml (No such file or directory)\n\tat org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest.testRuleDefinitionReading_withDefaultValues(MVELRuleDefinitionReaderTest.java:80)\n"
+            },
+            {
+                "classname": "org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest",
+                "method": "testInvalidRuleDefinitionReading_whenNoCondition",
+                "exn_type": "java.lang.Exception",
+                "stack_trace": "java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NullPointerException>\n\tat org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest.testInvalidRuleDefinitionReading_whenNoCondition(MVELRuleDefinitionReaderTest.java:97)\n"
+            },
+            {
+                "classname": "org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest",
+                "method": "testRuleDefinitionReading_withDefaultValues",
+                "exn_type": "java.lang.Exception",
+                "stack_trace": "java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NullPointerException>\n\tat org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest.testInvalidRuleDefinitionReading_whenNoCondition(MVELRuleDefinitionReaderTest.java:97)\n"
+            },
+            {
+                "classname": "org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest",
+                "method": "testInvalidRuleDefinitionReading_whenNoCondition",
+                "exn_type": "java.lang.Exception",
+                "stack_trace": "java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.io.FileNotFoundException>\n\tat org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest.testInvalidRuleDefinitionReading_whenNoActions(MVELRuleDefinitionReaderTest.java:109)\n"
+            },
+            {
+                "classname": "org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest",
+                "method": "testInvalidRuleDefinitionReading_whenNoActions",
+                "exn_type": "java.lang.Exception",
+                "stack_trace": "java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.io.FileNotFoundException>\n\tat org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest.testInvalidRuleDefinitionReading_whenNoActions(MVELRuleDefinitionReaderTest.java:109)\n"
+            },
+            {
+                "classname": "org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest",
+                "method": "testRuleDefinitionReading_withDefaultValues",
+                "exn_type": "java.lang.Exception",
+                "stack_trace": "java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.io.FileNotFoundException>\n\tat org.jeasy.rules.mvel.MVELRuleDefinitionReaderTest.testInvalidRuleDefinitionReading_whenNoActions(MVELRuleDefinitionReaderTest.java:109)\n"
+            }
+        ]
+    },
+    "npe_info": [],
+    "patch_results": [],
+    "is_buggy_compiled": true
+}

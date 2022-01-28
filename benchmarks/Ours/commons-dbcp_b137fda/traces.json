@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "src/test/java/org/apache/commons/dbcp2/cpdsadapter/TestDriverAdapterCPDS.java",
+        "line": 380,
+        "method_name": "testToStringWithoutConnectionProperties"
+    }
+]

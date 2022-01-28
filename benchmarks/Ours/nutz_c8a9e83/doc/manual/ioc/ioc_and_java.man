@@ -1,0 +1,247 @@
+#title: ioc配置与Java代码的互相转换
+#index:0,1
+#author:wendal(wendal1985@gmail.com)
+
+---------------------------------------------------
+背景
+
+	无论是集成第三方jar,还是一些遗留系统,都可能涉及到如何把对象声明到ioc容器的问题.
+	
+	由于是第三方类,无法直接标注@IocBean等注解,所以需要ioc js之类的配置.
+	
+	然而, 如何把一段java代码,变成ioc配置,的确难住了很多人.
+	
+	变换的核心,就是如何灵活使用factory,配合type,args,fields,肯定能适配绝大部分的java代码.
+
+---------------------------------------------------
+简单例子
+
+	首先看一段Java代码
+	{{{<JAVA>
+	NutDao dao = new NutDao(dataSource);
+	}}}
+	
+	变换为dao.js里面的写法
+	
+	{{{<js>
+	dao : { // 相当于声明一个变量
+	    type : "org.nutz.dao.impl.NutDao", // 需要new的类,同时代表这个bean的类型
+	    args : [{refer:"dataSource"}] // 构造方法参数,引用(refer)另外一个bean(dataSource)
+	}
+	}}}
+	
+	那么,通过setter赋值呢? 先看代码
+	
+	{{{<JAVA>
+	NutDao dao = new NutDao();
+	dao.setDataSource(dataSource);
+	}}}
+	
+	变换为dao.js里面的等价写法
+	
+	{{{<js>
+	dao : { // 相当于声明一个变量
+	    type : "org.nutz.dao.impl.NutDao", // 需要new的类, new NutDao()
+	    fields : {
+	    	// 属性名称, 优先调用其setter. dataSource属性的setter名称就是setDataSource
+	    	dataSource : {refer :"dataSource"} // setter的参数, 引用(refer)另外一个叫dataSource的bean
+	    }
+	}
+	}}}
+	
+	refer, 引用另外一个对象
+	
+---------------------------------------------------
+通过工厂方法的例子
+
+	java是这样写的, 通MySuperDS的create方法创建DataSource实例,然后作为构造方法参数,传给NutDao
+	{{{<JAVA>
+	DataSource dataSource = MySuperDS.create("abc", "123456");
+	NutDao dao = new NutDao(dataSource);
+	}}}
+	
+	变换为dao.js里面的写法
+	
+	{{{<JS>
+	dataSource : { // 声明变量(就是ioc内的唯一识别名)
+		type : "javax.sql.DataSource", // 类型,1.r.58以上可以不写.
+		factory : "net.wendal.nutzbook.MySuperDS#create",// 选用MySuperDS.create方法
+		args : ["abc", "123456"] // 为工厂方法提供参数 ("abc", "123456")
+	},
+	dao : { // 相当于声明一个变量
+	    type : "org.nutz.dao.impl.NutDao", // 需要new的类, new NutDao()
+	    args : [{refer :"dataSource"}] // 引用dataSource作为参数
+	}
+	}}}
+	
+---------------------------------------------------
+用对象生成对象
+
+	这里,以nutz-integration-activiti的实现原理为例子.
+	
+	{{{<JAVA>
+	// 第一步,使用ProcessEngineConfiguration的静态工厂方法createStandaloneProcessEngineConfiguration创建实例
+	ProcessEngineConfiguration cfg = ProcessEngineConfiguration.createStandaloneProcessEngineConfiguration();
+	// 为cfg设置dataSource属性
+    cfg.setDataSource(dataSource)
+    // 设置数据库表结构自动更新
+    cfg.setDatabaseSchemaUpdate("true");
+    // 调用cfg的buildProcessEngine方法,生成ProcessEngine的实例
+    ProcessEngine processEngine = cfg.buildProcessEngine();
+    // 使用ProcessEngine的实例的getRepositoryService方法生成RepositoryService实例
+    RepositoryService repositoryService = processEngine.getRepositoryService();
+	}}}
+	
+	首先,有3个对象, cfg, processEngine, repositoryService. 及一个已存在的对象dataSource
+	
+	{{{<JSON>
+	cfg : {
+		// TODO
+	},
+	processEngine : {
+		// TODO
+	},
+	repositoryService : {
+		// TODO
+	}
+	}}}
+	
+	然后,cfg是通过ProcessEngineConfiguration的工厂方法createStandaloneProcessEngineConfiguration产生的
+	
+	{{{<JSON>
+	cfg : {
+		factory : "org.activiti.engine.ProcessEngineConfiguration#createStandaloneProcessEngineConfiguration",
+		args : [] // 0个参数,可以不写.
+	}	
+	}}}
+	
+	再然后, cfg需要设置两个属性,分别是dataSource和databaseSchemaUpdate
+	
+	{{{<JSON>
+	cfg : {
+		factory : "org.activiti.engine.ProcessEngineConfiguration#createStandaloneProcessEngineConfiguration",
+		args : [], // 无参数,可以不写.
+		fields : {
+			dataSource : {refer:"dataSource"}, // 对应cfg.setDataSource(dataSource);
+			databaseSchemaUpdate : "true" // java代码里面也是字符串"true",所以这里不写布尔值true
+		}
+	}
+	}}}
+	
+	接下来,processEngine是通过cfg的buildProcessEngine生成的,所以就用到了对象生成对象的技巧
+	
+	{{{<JSON>
+	processEngine : {
+		factory : "$cfg#buildProcessEngine" // $cfg, $符号代表这是一个bean, bean的名字叫cfg, #号是分割符,代表后面的方法名称.这里的方法名称是buildProcessEngine
+		// 没有参数,所以args就不写了
+	},
+	}}}
+	
+	同理, repositoryService是processEngine的getRepositoryService得到的
+	
+	{{{<JSON>
+	repositoryService : {
+		factory : "$processEngine#getRepositoryService"
+		// 没有参数,所以这个args也不写了
+	}
+	}}}
+	
+	上面几步,就配全了. 最后,全部放在一起是这样的
+	
+	{{{<JSON>
+	cfg : {
+		factory : "org.activiti.engine.ProcessEngineConfiguration#createStandaloneProcessEngineConfiguration",
+		fields : {
+			dataSource : {refer:"dataSource"},
+			databaseSchemaUpdate : "true"
+		}
+	},
+	processEngine : {
+		factory : "$cfg#buildProcessEngine"
+	},
+	repositoryService : {
+		factory : "$processEngine#getRepositoryService"
+	}
+	}}}
+	
+	详细实现,请查阅[https://github.com/nutzam/nutzmore/blob/master/nutz-integration-activiti/ nutz-integration-activiti] [https://git.oschina.net/nutz/nutzmore/tree/master/nutz-integration-activiti Git@OSC镜像]的源码.
+
+---------------------------------------------------
+与properties配置文件一起工作
+
+	通常来说,我们会定义一个叫conf的配置主管,它将加载paths属性指定的路径下所有properties文件.
+	
+	{{{<JSON>		
+	conf : {
+			type : "org.nutz.ioc.impl.PropertiesProxy",
+			fields : {
+				paths : ["custom/"]
+			}
+		},
+	}}}
+	
+	之前的例子中的放在配置文件中,就可以这样引用
+	
+	{{{<JSON>
+	cfg : {
+		factory : "org.activiti.engine.ProcessEngineConfiguration#createStandaloneProcessEngineConfiguration",
+		fields : {
+			dataSource : {refer:"dataSource"},
+			// 从conf中取出key为activiti.databaseSchemaUpdate的值,如果不存在,则使用"true"
+			databaseSchemaUpdate : {java : "$conf.get('activiti.databaseSchemaUpdate', 'true')"}
+		}
+	}
+	}}}
+	
+------------------------------------------------------------------------------
+根据配置文件中的特定前置生成对象
+	
+	PropertiesProxy类有个很好用的make方法
+	
+	{{{<JSON>
+	    dataSource : {
+	        factory : "$conf#make", // 对象生成对象哦, 调用的是 conf.make方法
+	        args : ["com.alibaba.druid.pool.DruidDataSource", "db."],
+	        events : {
+	        	create : "init",
+	            depose : 'close'
+	        }
+	    },
+	    // 假设有db.url, db.username, db.password 属性,就等价于
+	    /*
+	    fields : {
+	    	url : {java:"$conf.get('db.url')"},
+	    	username : {java:"$conf.get('db.username')"},
+	    	password : {java:"$conf.get('db.password')"},
+	    }
+	    */
+	}}}
+	
+	最终的等价Java代码
+	
+	{{{<JAVA>
+	DruidDataSource ds = new DruidDataSource();
+	ds.setUrl(conf.get("db.url"));
+	ds.setUsername(conf.get("db.username"));
+	ds.setPassword(conf.get("db.password"));
+	// 其他属性...
+	}}}
+	
+	这样,只需要增加properties里面的配置,就能添加更多属性.
+	
+	顺带说一句, fields依然可以加.
+	{{{<JSON>
+	    dataSource : {
+	        factory : "$conf#make", // 对象生成对象哦, 调用的是 conf.make方法
+	        args : ["com.alibaba.druid.pool.DruidDataSource", "db."],
+	        events : {
+	        	create : "init",
+	            depose : 'close'
+	        },
+	        fields : {
+	        	// 其他不需要/不想通过properties配置的属性
+	    		filters : "stat",
+	    	}
+	    }
+	}}}
+	

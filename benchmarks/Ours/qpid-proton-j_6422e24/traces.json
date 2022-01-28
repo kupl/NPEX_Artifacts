@@ -1,0 +1,37 @@
+[
+    {
+        "filepath": "proton-j/src/main/java/org/apache/qpid/proton/engine/impl/TransportImpl.java",
+        "line": 526,
+        "method_name": "processTransportWorkSender"
+    },
+    {
+        "filepath": "proton-j/src/main/java/org/apache/qpid/proton/engine/impl/TransportImpl.java",
+        "line": 499,
+        "method_name": "processTransportWork"
+    },
+    {
+        "filepath": "proton-j/src/main/java/org/apache/qpid/proton/engine/impl/TransportImpl.java",
+        "line": 327,
+        "method_name": "writeInto"
+    },
+    {
+        "filepath": "proton-j/src/main/java/org/apache/qpid/proton/engine/impl/TransportOutputAdaptor.java",
+        "line": 57,
+        "method_name": "pending"
+    },
+    {
+        "filepath": "proton-j/src/main/java/org/apache/qpid/proton/engine/impl/TransportImpl.java",
+        "line": 1461,
+        "method_name": "pending"
+    },
+    {
+        "filepath": "proton-j/src/test/java/org/apache/qpid/proton/engine/impl/TransportImplTest.java",
+        "line": 572,
+        "method_name": "pumpMockTransport"
+    },
+    {
+        "filepath": "proton-j/src/test/java/org/apache/qpid/proton/engine/impl/TransportImplTest.java",
+        "line": 520,
+        "method_name": "testSenderSendBeforeOpenConnection"
+    }
+]

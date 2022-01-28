@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Built-By: xuezheng
+Build-Jdk: 1.8.0_191
+Created-By: 1.8.0_191 (Oracle Corporation)
+Implementation-Title: Commons Collections
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 4.0-SNAPSHOT
+Specification-Title: Commons Collections
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 4.0-SNAPSHOT
+X-Compile-Source-JDK: 1.5
+X-Compile-Target-JDK: 1.5
+Bundle-Description: Types that extend and augment the Java Collections
+  Framework.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.commons.collections
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1542192132604
+Bundle-DocURL: http://commons.apache.org/collections/
+Bundle-Vendor: The Apache Software Foundation
+Tool: Bnd-0.0.255
+Export-Package: org.apache.commons.collections.comparators;version="4.
+ 0.0.SNAPSHOT",org.apache.commons.collections.list;version="4.0.0.SNAP
+ SHOT",org.apache.commons.collections.bag;version="4.0.0.SNAPSHOT",org
+ .apache.commons.collections.buffer;version="4.0.0.SNAPSHOT",org.apach
+ e.commons.collections;version="4.0.0.SNAPSHOT",org.apache.commons.col
+ lections.functors;version="4.0.0.SNAPSHOT",org.apache.commons.collect
+ ions.bidimap;version="4.0.0.SNAPSHOT",org.apache.commons.collections.
+ keyvalue;version="4.0.0.SNAPSHOT",org.apache.commons.collections.set;
+ version="4.0.0.SNAPSHOT",org.apache.commons.collections.splitmap;vers
+ ion="4.0.0.SNAPSHOT",org.apache.commons.collections.collection;versio
+ n="4.0.0.SNAPSHOT",org.apache.commons.collections.map;version="4.0.0.
+ SNAPSHOT",org.apache.commons.collections.iterators;version="4.0.0.SNA
+ PSHOT"
+Bundle-Version: 4.0.0.SNAPSHOT
+Bundle-Name: Commons Collections
+Private-Package: entry;version="4.0-SNAPSHOT"
+
