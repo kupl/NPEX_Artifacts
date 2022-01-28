@@ -1,5 +1,0 @@
-우리는 VirtualBox Image안에 Artifact Evaluation에 필요한 모든 dependency, environment를 구비해놓음.
-XX GB 이상의 디스크 용량
-메모리
-CPU
-VirtualBox 이미지를 구동할 수 있는 소프트웨어 (e.g., VirtualBox, VMWare)
