@@ -1,0 +1,262 @@
+[
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "this.dep = (dep2 != null) ? new org.imdea.vcd.queue.clock.Clock<>(dep2) : null",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+            "patched_line": 41,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_40_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "for (java.util.Map.Entry<java.lang.Integer, T> entry : clock != null ? clock.map.entrySet() : new java.util.HashSet<>()) {\n    this.map.put(entry.getKey(), ((T) (entry.getValue().clone())));\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/clock/Clock.java",
+            "patched_line": 25,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_24_6--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "new org.imdea.vcd.queue.clock.Clock<>(dep2 != null ? dep2 : null)",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+            "patched_line": 41,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_40_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (dep2 != null) {\n    this.dep = new org.imdea.vcd.queue.clock.Clock<>(dep2);\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+            "patched_line": 41,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_40-40_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "for (java.util.Map.Entry<java.lang.Integer, T> entry : clock != null ? clock.map.entrySet() : null) {\n    this.map.put(entry.getKey(), ((T) (entry.getValue().clone())));\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/clock/Clock.java",
+            "patched_line": 25,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_24_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "new org.imdea.vcd.queue.clock.Clock<>(queueAddArgs.getConf() != null ? queueAddArgs.getConf() : null)",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/QueueAddArgs.java",
+            "patched_line": 22,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_21_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "(clock != null ? clock : null).map.entrySet()",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/clock/Clock.java",
+            "patched_line": 25,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_24_0--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (queueAddArgs.getConf() != null) {\n    this.conf = new org.imdea.vcd.queue.clock.Clock<>(queueAddArgs.getConf());\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/QueueAddArgs.java",
+            "patched_line": 22,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_21-21_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "this.conf = (queueAddArgs.getConf() != null) ? new org.imdea.vcd.queue.clock.Clock<>(queueAddArgs.getConf()) : null",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/QueueAddArgs.java",
+            "patched_line": 22,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_21_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "(clock != null ? clock.map : new java.util.HashMap<>()).entrySet()",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/clock/Clock.java",
+            "patched_line": 25,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_24_5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (box.getDots() != null) {\n    sorted.put(box.getDots(), box.sortMessages());\n}",
+            "original_filepath": "src/test/java/org/imdea/vcd/queue/ConfQueueTest.java",
+            "patched_line": 371,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_373-373_0--5--5--5--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (dep2 == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+            "patched_line": 41,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_40-40_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (clock != null) {\n    for (java.util.Map.Entry<java.lang.Integer, T> entry : clock.map.entrySet()) {\n        this.map.put(entry.getKey(), ((T) (entry.getValue().clone())));\n    }\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/clock/Clock.java",
+            "patched_line": 25,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_24-24_0--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (queueAddArgs.getConf() == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/QueueAddArgs.java",
+            "patched_line": 22,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_21-21_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (dep2 == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+            "patched_line": 41,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_40-40_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (commitDepBox.dep == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+            "patched_line": 39,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_39-39_0--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (commitDepBox.dep == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+            "patched_line": 39,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_39-39_2--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (commitDepBox.dep != null) {\n    // NPEX_MODIFICATION\n    org.imdea.vcd.queue.clock.Clock<org.imdea.vcd.queue.clock.ExceptionSet> dep2 = commitDepBox.dep;\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+            "patched_line": 39,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_39-39_1--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "// NPEX_MODIFICATION\norg.imdea.vcd.queue.clock.Clock<org.imdea.vcd.queue.clock.ExceptionSet> dep2 = (commitDepBox.dep != null) ? commitDepBox.dep : null",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+            "patched_line": 39,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_39_0--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-249-buggy",
+        "patch": {
+            "contents": "if (dep2 == null) {\n    dep2 = null;\n}",
+            "original_filepath": "src/main/java/org/imdea/vcd/queue/box/CommittedQueueBox.java",
+            "patched_line": 41,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_40-40_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

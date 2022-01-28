@@ -1,0 +1,14 @@
++ ---------------------------------------------------------------------------------------------------------------------------- +
+| bug_id          | label                    | detail                     | description | patch_id                             |
++ ---------------------------------------------------------------------------------------------------------------------------- +
+| Bears-249-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplaceEntireExpressionStrategy_40_2 |
+| Bears-249-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_40_0          |
+| Bears-249-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipSinkStatementStrategy_40-40_0    |
+| Bears-249-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_21_0          |
+| Bears-249-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipSinkStatementStrategy_21-21_0    |
+| Bears-249-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_21_2 |
+| Bears-249-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_40-40_2            |
+| Bears-249-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_21-21_1           |
+| Bears-249-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipReturnStrategy_40-40_3           |
+| Bears-249-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | InitPointerStrategy_40-40_1          |
++ ---------------------------------------------------------------------------------------------------------------------------- +

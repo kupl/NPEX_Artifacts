@@ -1,0 +1,14 @@
++ ------------------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id      | label                    | detail                     | description | patch_id                                                      |
++ ------------------------------------------------------------------------------------------------------------------------------------------------- +
+| cxf_aebfb0d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnParam_368-418_3                                     |
+| cxf_aebfb0d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_419_3                         |
+| cxf_aebfb0d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipBlockStrategy_417-418_0                                   |
+| cxf_aebfb0d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_419_1                                  |
+| cxf_aebfb0d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_419_4                         |
+| cxf_aebfb0d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | npex.synthesizer.strategy.InitPointerStrategyObject_418-418_2 |
+| cxf_aebfb0d | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplaceEntireExpressionStrategy_419_6                         |
+| cxf_aebfb0d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_419_0                         |
+| cxf_aebfb0d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipSinkStatementStrategy_418-418_1                           |
+| cxf_aebfb0d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_419_5                         |
++ ------------------------------------------------------------------------------------------------------------------------------------------------- +

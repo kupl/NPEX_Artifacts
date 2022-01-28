@@ -1,0 +1,18 @@
++ ---------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id          | label                    | detail                       | description   | patch_id                               |
++ ---------------------------------------------------------------------------------------------------------------------------------- +
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |               | ReplaceEntireExpressionStrategy_130_9  |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |               | ReplaceEntireExpressionStrategy_130_10 |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |               | SkipSinkStatementStrategy_130-130_0    |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |               | SkipReturnParam_130-130_1              |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |               | ReplaceEntireExpressionStrategy_130_8  |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |               | InitPointerStrategy_130-130_3          |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |               | ReplacePointerStrategy_130_1           |
+| Bears-200-buggy | LabelOverall.WC          | LabelDetail.MANUAL_CORRECT   | Other callers | InitPointerStrategy_130-130_2          |
+| Bears-200-buggy | LabelOverall.WC          | LabelDetail.MANUAL_CORRECT   | Other callers | ReplacePointerStrategy_130_0           |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |               | InitPointerStrategy_130-130_4          |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |               | ReplacePointerStrategy_130_2           |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |               | InitPointerStrategy_130-130_5          |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |               | ReplacePointerStrategy_130_3           |
+| Bears-200-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |               | ReplacePointerStrategy_119_0           |
++ ---------------------------------------------------------------------------------------------------------------------------------- +

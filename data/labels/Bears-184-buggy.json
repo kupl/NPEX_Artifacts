@@ -1,0 +1,210 @@
+[
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "// \nmetamodel.getEntities().stream().filter(( it) -> it.getJavaType() != null ? it.getJavaType().equals(entity) : new java.util.Optional<? extends javax.persistence.metamodel.SingularAttribute<?, ?>>())",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 94,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_79_4--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "// \nmetamodel.getEntities().stream().filter(( it) -> it.getJavaType() != null ? it.getJavaType().equals(entity) : null)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 94,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_79_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "// \nmetamodel.getEntities().stream().filter(( it) -> it.getJavaType() != null ? it.getJavaType().equals(entity) : new java.lang.Boolean())",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 94,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_79_10--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "(it.getJavaType() != null ? it.getJavaType() : new java.lang.Class<?>()).equals(entity)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 95,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_79_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "// \nmetamodel.getEntities().stream().filter(( it) -> it.getJavaType() != null ? it.getJavaType().equals(entity) : new java.util.Optional<javax.persistence.metamodel.EntityType<?>>())",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 94,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_79_2--5--5--5--5--5--5--5--5--5--5--5--5--5--5--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "// \nmetamodel.getEntities().stream().filter(( it) -> it.getJavaType() != null ? it.getJavaType().equals(entity) : new java.util.Optional<java.lang.Boolean>())",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 94,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_79_8--6--6--6--6--6--6--6--6--6--6--6--6--6--6--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "// \nmetamodel.getEntities().stream().filter(( it) -> it.getJavaType() != null ? it.getJavaType().equals(entity) : false)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 94,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_79_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "// \nmetamodel.getEntities().stream().filter(( it) -> it.getJavaType() != null ? it.getJavaType().equals(entity) : true)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 94,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_79_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "(it.getJavaType() != null ? it.getJavaType() : attributeType).equals(entity)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 95,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_79_1--10--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "(it.getJavaType() != null ? it.getJavaType() : name).equals(entity)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 95,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_79_3--11--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "(it.getJavaType() != null ? it.getJavaType() : it).equals(entity)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 95,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_79_5--12--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "(it.getJavaType() != null ? it.getJavaType() : entity).equals(entity)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 95,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_79_0--13--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "(it.getJavaType() != null ? it.getJavaType() : this.managedTypes).equals(entity)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 95,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_79_7--14--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "// \nmetamodel.getEntities().stream().filter(( it) -> it.getJavaType() != null ? it.getJavaType().equals(entity) : entity == null)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 94,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_79_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "(it.getJavaType() != null ? it.getJavaType() : java.lang.Object.class).equals(entity)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_79_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-184-buggy",
+        "patch": {
+            "contents": "(it.getJavaType() != null ? it.getJavaType() : null).equals(entity)",
+            "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_79_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

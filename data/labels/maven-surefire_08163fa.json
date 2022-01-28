@@ -1,0 +1,275 @@
+[
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    throw new java.lang.ClassNotFoundException();\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 194,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_194-194_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "final java.util.List<java.lang.StackTraceElement> stackTraceElements = (stackTrace != null) ? org.apache.maven.surefire.report.SmartStackTraceParser.focusOnClass(stackTrace, testClass) : null",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_88_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "for (java.lang.StackTraceElement element : stackTrace != null ? stackTrace : null) {\n    if ((element != null) && org.apache.maven.surefire.report.SmartStackTraceParser.isInSupers(clazz, element.getClassName())) {\n        result.add(element);\n    }\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 194,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_194_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace != null) {\n    final java.util.List<java.lang.StackTraceElement> stackTraceElements = org.apache.maven.surefire.report.SmartStackTraceParser.focusOnClass(stackTrace, testClass);\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_88-88_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace != null) {\n    for (java.lang.StackTraceElement element : stackTrace) {\n        if ((element != null) && org.apache.maven.surefire.report.SmartStackTraceParser.isInSupers(clazz, element.getClassName())) {\n            result.add(element);\n        }\n    }\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 194,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_194-194_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    return \"null\";\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_88-88_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    return null;\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 193,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_193-194_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    return \"\";\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_88-88_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "final java.util.List<java.lang.StackTraceElement> stackTraceElements = (stackTrace != null) ? org.apache.maven.surefire.report.SmartStackTraceParser.focusOnClass(stackTrace, testClass) : new java.util.ArrayList<>()",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_88_4--2--2--2--2--2--2--2--2--2--2--2--4--4--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    throw new java.lang.ClassNotFoundException();\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_88-88_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "for (java.lang.StackTraceElement element : stackTrace != null ? stackTrace : new java.lang.StackTraceElement[]{  }) {\n    if ((element != null) && org.apache.maven.surefire.report.SmartStackTraceParser.isInSupers(clazz, element.getClassName())) {\n        result.add(element);\n    }\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 194,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_194_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    stackTrace = new java.lang.StackTraceElement[]{  };\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 194,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "InitPointerStrategy_194-194_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "org.apache.maven.surefire.report.SmartStackTraceParser.focusOnClass(stackTrace != null ? stackTrace : new java.lang.StackTraceElement[]{  }, testClass)",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_88_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "final java.util.List<java.lang.StackTraceElement> stackTraceElements = (stackTrace != null) ? org.apache.maven.surefire.report.SmartStackTraceParser.focusOnClass(stackTrace, testClass) : new java.util.ArrayList()",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_88_4--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    return new java.util.ArrayList();\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 193,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_193-194_3--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    return null;\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_88-88_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_88-88_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    return java.util.Collections.emptyList();\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 193,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_193-194_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "if (stackTrace == null) {\n    stackTrace = null;\n}",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 194,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_194-194_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "org.apache.maven.surefire.report.SmartStackTraceParser.focusOnClass(stackTrace != null ? stackTrace : null, testClass)",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_88_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-surefire_08163fa",
+        "patch": {
+            "contents": "final java.util.List<java.lang.StackTraceElement> stackTraceElements = (stackTrace != null) ? org.apache.maven.surefire.report.SmartStackTraceParser.focusOnClass(stackTrace, testClass) : java.util.Collections.emptyList()",
+            "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_88_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    }
+]

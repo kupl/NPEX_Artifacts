@@ -1,0 +1,1965 @@
+[
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : new java.lang.Object()",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_2163_56--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : true",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2166_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "(markers != null ? markers : new java.util.ArrayList()).remove(marker)",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_2166_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_2163-2163_3--4--4--4--4--4--4--4--4--4--4--4--3--3--3--4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) == null) {\n    return true;\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_2163-2163_5--5--5--5--5--5--5--5--5--5--5--5--4--4--4--5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (markers == null) {\n    markers = new java.util.ArrayList();\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_2166-2166_3--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (markers == null) {\n    return true;\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_2166-2166_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) == null) {\n    return false;\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_2163-2163_4--7--7--7--7--7--7--7--7--7--7--7--5--5--5--7--5--5--5--5--5--5--5--5--5--5--5--5--5--5--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) {\n    markers = ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index))));\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2174,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_2163-2163_0--8--8--8--8--8--8--8--8--8--8--8--6--6--6--8--6--6--6--6--6--6--6--6--6--6--6--6--6--6--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : false",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_2166_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : new java.lang.Object()",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_2159_0--9--9--9--9--9--9--9--9--9--9--7--7--7--9--7--7--7--7--7--7--7--7--7--7--7--7--7--7--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_2159-2159_2--8--8--8--10--8--8--8--8--8--8--8--8--8--8--8--8--8--8--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) {\n    markers = ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index))));\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_2159-2159_0--9--9--9--11--9--9--9--9--9--9--9--9--9--9--9--9--9--9--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (markers == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_2166-2166_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) == null) {\n    return false;\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_2159-2159_4--10--10--10--12--10--10--10--10--10--10--10--10--10--10--10--10--10--10--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (markers == null) {\n    return false;\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_2166-2166_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) == null) {\n    return true;\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_2159-2159_5--11--11--11--13--11--11--11--11--11--11--11--11--11--11--11--11--11--11--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (markers == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_2166-2166_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (markers != null) {\n    boolean removed = markers.remove(marker);\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_2166-2166_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_2159-2159_1--12--12--12--14--12--12--12--12--12--12--12--12--12--12--12--12--12--12--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_2163-2163_2--9--10--10--10--10--10--10--10--10--10--10--13--13--13--15--13--13--13--13--13--13--13--13--13--13--13--13--13--13--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : org.jfree.chart.plot.CategoryPlot.DEFAULT_RANGE_GRIDLINES_VISIBLE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_8--10--11--11--11--11--11--11--11--11--11--11--14--14--14--16--14--14--14--14--14--14--14--14--14--14--14--14--14--14--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.noDataMessageFont",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_47--11--12--12--12--12--12--12--12--12--12--12--15--15--15--17--15--15--15--15--15--15--15--15--15--15--15--15--15--15--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : this.rangeCrosshairVisible",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_13--12--13--13--13--13--13--13--13--13--13--13--16--16--16--18--16--16--16--16--16--16--16--16--16--16--16--16--16--16--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.columnRenderingOrder",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_20--13--14--14--14--14--14--14--14--14--14--14--17--17--17--19--17--17--17--17--17--17--17--17--17--17--17--17--17--17--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.fixedDomainAxisSpace",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_34--14--15--15--15--15--15--15--15--15--15--15--18--18--18--20--18--18--18--18--18--18--18--18--18--18--18--18--18--18--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.backgroundPaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_52--15--16--16--16--16--16--16--16--16--16--16--19--19--19--21--19--19--19--19--19--19--19--19--19--19--19--19--19--19--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.noDataMessagePaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_48--16--17--17--17--17--17--17--17--17--17--17--20--20--20--22--20--20--20--20--20--20--20--20--20--20--20--20--20--20--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.domainGridlinePosition",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_22--17--18--18--18--18--18--18--18--18--18--18--21--21--21--23--21--21--21--21--21--21--21--21--21--21--21--21--21--21--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeCrosshairPaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_28--18--19--19--19--19--19--19--19--19--19--19--22--22--22--24--22--22--22--22--22--22--22--22--22--22--22--22--22--22--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.parent",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_44--19--20--20--20--20--20--20--20--20--20--20--23--23--23--25--23--23--23--23--23--23--23--23--23--23--23--23--23--23--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_OUTLINE_STROKE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_39--20--21--21--21--21--21--21--21--21--21--21--24--24--24--26--24--24--24--24--24--24--24--24--24--24--24--24--24--24--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.renderers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_18--21--22--22--22--22--22--22--22--22--22--22--25--25--25--27--25--25--25--25--25--25--25--25--25--25--25--25--25--25--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.noDataMessage",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_46--22--23--23--23--23--23--23--23--23--23--23--26--26--26--28--26--26--26--26--26--26--26--26--26--26--26--26--26--26--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeAxisLocations",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_14--23--24--24--24--24--24--24--24--24--24--24--27--27--27--29--27--27--27--27--27--27--27--27--27--27--27--27--27--27--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : marker",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_0--24--25--25--25--25--25--25--25--25--25--25--28--28--28--30--28--28--28--28--28--28--28--28--28--28--28--28--28--28--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_OUTLINE_PAINT",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_40--25--26--26--26--26--26--26--26--26--26--26--29--29--29--31--29--29--29--29--29--29--29--29--29--29--29--29--29--29--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.drawingSupplier",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_54--26--27--27--27--27--27--27--27--27--27--27--30--30--30--32--30--30--30--30--30--30--30--30--30--30--30--30--30--30--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_INSETS",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_38--27--28--28--28--28--28--28--28--28--28--28--31--31--31--33--31--31--31--31--31--31--31--31--31--31--31--31--31--31--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.backgroundImage",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_53--28--29--29--29--29--29--29--29--29--29--29--32--32--32--34--32--32--32--32--32--32--32--32--32--32--32--32--32--32--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.datasetToDomainAxisMap",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_16--29--30--30--30--30--30--30--30--30--30--30--33--33--33--35--33--33--33--33--33--33--33--33--33--33--33--33--33--33--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : this.rangeCrosshairLockedOnData",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_14--30--31--31--31--31--31--31--31--31--31--31--34--34--34--36--34--34--34--34--34--34--34--34--34--34--34--34--34--34--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : org.jfree.chart.plot.CategoryPlot.DEFAULT_CROSSHAIR_VISIBLE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_9--31--32--32--32--32--32--32--32--32--32--32--35--35--35--37--35--35--35--35--35--35--35--35--35--35--35--35--35--35--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.domainAxisLocations",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_12--32--33--33--33--33--33--33--33--33--33--33--36--36--36--38--36--36--36--36--36--36--36--36--36--36--36--36--36--36--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_BACKGROUND_PAINT",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_41--33--34--34--34--34--34--34--34--34--34--34--37--37--37--39--37--37--37--37--37--37--37--37--37--37--37--37--37--37--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.axisOffset",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_10--34--35--35--35--35--35--35--35--35--35--35--38--38--38--40--38--38--38--38--38--38--38--38--38--38--38--38--38--38--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.orientation",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_9--35--36--36--36--36--36--36--36--36--36--36--39--39--39--41--39--39--39--39--39--39--39--39--39--39--39--39--39--39--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.insets",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_49--36--37--37--37--37--37--37--37--37--37--37--40--40--40--42--40--40--40--40--40--40--40--40--40--40--40--40--40--40--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.foregroundDomainMarkers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_29--37--38--38--38--38--38--38--38--38--38--38--41--41--41--43--41--41--41--41--41--41--41--41--41--41--41--41--41--41--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rowRenderingOrder",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_21--38--39--39--39--39--39--39--39--39--39--39--42--42--42--44--42--42--42--42--42--42--42--42--42--42--42--42--42--42--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.insets",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_49--39--40--40--40--40--40--40--40--40--40--40--43--43--43--45--43--43--43--43--43--43--43--43--43--43--43--43--43--43--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.backgroundDomainMarkers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_30--40--41--41--41--41--41--41--41--41--41--41--44--44--44--46--44--44--44--44--44--44--44--44--44--44--44--44--44--44--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_LEGEND_ITEM_BOX",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_42--41--42--42--42--42--42--42--42--42--42--42--45--45--45--47--45--45--45--45--45--45--45--45--45--45--45--45--45--45--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.DEFAULT_CROSSHAIR_STROKE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_6--42--43--43--43--43--43--43--43--43--43--43--46--46--46--48--46--46--46--46--46--46--46--46--46--46--46--46--46--46--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.annotations",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_33--43--44--44--44--44--44--44--44--44--44--44--47--47--47--49--47--47--47--47--47--47--47--47--47--47--47--47--47--47--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeAxes",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_13--44--45--45--45--45--45--45--45--45--45--45--48--48--48--50--48--48--48--48--48--48--48--48--48--48--48--48--48--48--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.outlinePaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_51--45--46--46--46--46--46--46--46--46--46--46--49--49--49--51--49--49--49--49--49--49--49--49--49--49--49--49--49--49--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.outlineStroke",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_50--46--47--47--47--47--47--47--47--47--47--47--50--50--50--52--50--50--50--50--50--50--50--50--50--50--50--50--50--50--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.fixedLegendItems",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_36--47--48--48--48--48--48--48--48--48--48--48--51--51--51--53--51--51--51--51--51--51--51--51--51--51--51--51--51--51--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeGridlinePaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_26--48--49--49--49--49--49--49--49--49--49--49--52--52--52--54--52--52--52--52--52--52--52--52--52--52--52--52--52--52--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.DEFAULT_CROSSHAIR_STROKE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_6--49--50--50--50--50--50--50--50--50--50--50--53--53--53--55--53--53--53--53--53--53--53--53--53--53--53--53--53--53--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.datasetToRangeAxisMap",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_17--50--51--51--51--51--51--51--51--51--51--51--54--54--54--56--54--54--54--54--54--54--54--54--54--54--54--54--54--54--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.noDataMessageFont",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_47--51--52--52--52--52--52--52--52--52--52--52--55--55--55--57--55--55--55--55--55--55--55--55--55--55--55--55--55--55--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.domainAxes",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_11--52--53--53--53--53--53--53--53--53--53--53--56--56--56--58--56--56--56--56--56--56--56--56--56--56--56--56--56--56--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.listenerList",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_55--53--54--54--54--54--54--54--54--54--54--54--57--57--57--59--57--57--57--57--57--57--57--57--57--57--57--57--57--57--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.fixedRangeAxisSpace",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_35--54--55--55--55--55--55--55--55--55--55--55--58--58--58--60--58--58--58--58--58--58--58--58--58--58--58--58--58--58--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.datasetGroup",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_45--55--56--56--56--56--56--56--56--56--56--56--59--59--59--61--59--59--59--59--59--59--59--59--59--59--59--59--59--59--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.axisOffset",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_10--56--57--57--57--57--57--57--57--57--57--57--60--60--60--62--60--60--60--60--60--60--60--60--60--60--60--60--60--60--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.DEFAULT_CROSSHAIR_PAINT",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_7--57--58--58--58--58--58--58--58--58--58--58--61--61--61--63--61--61--61--61--61--61--61--61--61--61--61--61--61--61--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.datasets",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_15--58--59--59--59--59--59--59--59--59--59--59--62--62--62--64--62--62--62--62--62--62--62--62--62--62--62--62--62--62--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.DEFAULT_CROSSHAIR_PAINT",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_7--59--60--60--60--60--60--60--60--60--60--60--63--63--63--65--63--63--63--63--63--63--63--63--63--63--63--63--63--63--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.foregroundRangeMarkers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_31--60--61--61--61--61--61--61--61--61--61--61--64--64--64--66--64--64--64--64--64--64--64--64--64--64--64--64--64--64--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.renderers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_18--61--62--62--62--62--62--62--62--62--62--62--65--65--65--67--65--65--65--65--65--65--65--65--65--65--65--65--65--65--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.annotations",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_33--62--63--63--63--63--63--63--63--63--63--63--66--66--66--68--66--66--66--66--66--66--66--66--66--66--66--66--66--66--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeCrosshairStroke",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_27--63--64--64--64--64--64--64--64--64--64--64--67--67--67--69--67--67--67--67--67--67--67--67--67--67--67--67--67--67--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.localizationResources",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_8--64--65--65--65--65--65--65--65--65--65--65--68--68--68--70--68--68--68--68--68--68--68--68--68--68--68--68--68--68--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.backgroundPaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_52--65--66--66--66--66--66--66--66--66--66--66--69--69--69--71--69--69--69--69--69--69--69--69--69--69--69--69--69--69--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.orientation",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_9--66--67--67--67--67--67--67--67--67--67--67--70--70--70--72--70--70--70--70--70--70--70--70--70--70--70--70--70--70--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeGridlineStroke",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_25--67--68--68--68--68--68--68--68--68--68--68--71--71--71--73--71--71--71--71--71--71--71--71--71--71--71--71--71--71--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.fixedDomainAxisSpace",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_34--68--69--69--69--69--69--69--69--69--69--69--72--72--72--74--72--72--72--72--72--72--72--72--72--72--72--72--72--72--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_BACKGROUND_PAINT",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_41--69--70--70--70--70--70--70--70--70--70--70--73--73--73--75--73--73--73--73--73--73--73--73--73--73--73--73--73--73--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.localizationResources",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_8--70--71--71--71--71--71--71--71--71--71--71--74--74--74--76--74--74--74--74--74--74--74--74--74--74--74--74--74--74--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeCrosshairPaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_28--71--72--72--72--72--72--72--72--72--72--72--75--75--75--77--75--75--75--75--75--75--75--75--75--75--75--75--75--75--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.fixedLegendItems",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_36--72--73--73--73--73--73--73--73--73--73--73--76--76--76--78--76--76--76--76--76--76--76--76--76--76--76--76--76--76--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.outlinePaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_51--73--74--74--74--74--74--74--74--74--74--74--77--77--77--79--77--77--77--77--77--77--77--77--77--77--77--77--77--77--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : org.jfree.chart.plot.CategoryPlot.DEFAULT_DOMAIN_GRIDLINES_VISIBLE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_7--74--75--75--75--75--75--75--75--75--75--75--78--78--78--80--78--78--78--78--78--78--78--78--78--78--78--78--78--78--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.DEFAULT_GRIDLINE_PAINT",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_4--75--76--76--76--76--76--76--76--76--76--76--79--79--79--81--79--79--79--79--79--79--79--79--79--79--79--79--79--79--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.listenerList",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_55--76--77--77--77--77--77--77--77--77--77--77--80--80--80--82--80--80--80--80--80--80--80--80--80--80--80--80--80--80--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.DEFAULT_VALUE_LABEL_FONT",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_5--77--78--78--78--78--78--78--78--78--78--78--81--81--81--83--81--81--81--81--81--81--81--81--81--81--81--81--81--81--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeGridlinePaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_26--78--79--79--79--79--79--79--79--79--79--79--82--82--82--84--82--82--82--82--82--82--82--82--82--82--82--82--82--82--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeGridlineStroke",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_25--79--80--80--80--80--80--80--80--80--80--80--83--83--83--85--83--83--83--83--83--83--83--83--83--83--83--83--83--83--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : notify",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_5--80--81--81--81--81--81--81--81--81--81--81--84--84--84--86--84--84--84--84--84--84--84--84--84--84--84--84--84--84--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_LEGEND_ITEM_BOX",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_42--81--82--82--82--82--82--82--82--82--82--82--85--85--85--87--85--85--85--85--85--85--85--85--85--85--85--85--85--85--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.outlineStroke",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_50--82--83--83--83--83--83--83--83--83--83--83--86--86--86--88--86--86--86--86--86--86--86--86--86--86--86--86--86--86--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.domainGridlinePosition",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_22--83--84--84--84--84--84--84--84--84--84--84--87--87--87--89--87--87--87--87--87--87--87--87--87--87--87--87--87--87--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : layer",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_1--84--85--85--85--85--85--85--85--85--85--85--88--88--88--90--88--88--88--88--88--88--88--88--88--88--88--88--88--88--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : marker",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_0--85--86--86--86--86--86--86--86--86--86--86--89--89--89--91--89--89--89--89--89--89--89--89--89--89--89--89--89--89--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.noDataMessagePaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_48--86--87--87--87--87--87--87--87--87--87--87--90--90--90--92--90--90--90--90--90--90--90--90--90--90--90--90--90--90--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : this.drawSharedDomainAxis",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_10--87--88--88--88--88--88--88--88--88--88--88--91--91--91--93--91--91--91--91--91--91--91--91--91--91--91--91--91--91--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.datasetToRangeAxisMap",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_17--88--89--89--89--89--89--89--89--89--89--89--92--92--92--94--92--92--92--92--92--92--92--92--92--92--92--92--92--92--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.DEFAULT_VALUE_LABEL_FONT",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_5--89--90--90--90--90--90--90--90--90--90--90--93--93--93--95--93--93--93--93--93--93--93--93--93--93--93--93--93--93--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : markers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_2--90--91--91--91--91--91--91--91--91--91--91--94--94--94--96--94--94--94--94--94--94--94--94--94--94--94--94--94--94--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : this.outlineVisible",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_15--91--92--92--92--92--92--92--92--92--92--92--95--95--95--97--95--95--95--95--95--95--95--95--95--95--95--95--95--95--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : this.rangeGridlinesVisible",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_12--92--93--93--93--93--93--93--93--93--93--93--96--96--96--98--96--96--96--96--96--96--96--96--96--96--96--96--96--96--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeAxisLocations",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_14--93--94--94--94--94--94--94--94--94--94--94--97--97--97--99--97--97--97--97--97--97--97--97--97--97--97--97--97--97--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.ZERO",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_37--94--95--95--95--95--95--95--95--95--95--95--98--98--98--100--98--98--98--98--98--98--98--98--98--98--98--98--98--98--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.foregroundDomainMarkers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_29--95--96--96--96--96--96--96--96--96--96--96--99--99--99--101--99--99--99--99--99--99--99--99--99--99--99--99--99--99--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.fixedRangeAxisSpace",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_35--96--97--97--97--97--97--97--97--97--97--97--100--100--100--102--100--100--100--100--100--100--100--100--100--100--100--100--100--100--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.domainGridlinePaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_24--97--98--98--98--98--98--98--98--98--98--98--101--101--101--103--101--101--101--101--101--101--101--101--101--101--101--101--101--101--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.foregroundRangeMarkers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_31--98--99--99--99--99--99--99--99--99--99--99--102--102--102--104--102--102--102--102--102--102--102--102--102--102--102--102--102--102--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.backgroundImage",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_53--99--100--100--100--100--100--100--100--100--100--100--103--103--103--105--103--103--103--103--103--103--103--103--103--103--103--103--103--103--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : layer",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_1--100--101--101--101--101--101--101--101--101--101--101--104--104--104--106--104--104--104--104--104--104--104--104--104--104--104--104--104--104--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : removed",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_6--101--102--102--102--102--102--102--102--102--102--102--105--105--105--107--105--105--105--105--105--105--105--105--105--105--105--105--105--105--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.renderingOrder",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_19--102--103--103--103--103--103--103--103--103--103--103--106--106--106--108--106--106--106--106--106--106--106--106--106--106--106--106--106--106--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.datasetToDomainAxisMap",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_16--103--104--104--104--104--104--104--104--104--104--104--107--107--107--109--107--107--107--107--107--107--107--107--107--107--107--107--107--107--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rowRenderingOrder",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_21--104--105--105--105--105--105--105--105--105--105--105--108--108--108--110--108--108--108--108--108--108--108--108--108--108--108--108--108--108--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.domainAxes",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_11--105--106--106--106--106--106--106--106--106--106--106--109--109--109--111--109--109--109--109--109--109--109--109--109--109--109--109--109--109--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.domainGridlineStroke",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_23--106--107--107--107--107--107--107--107--107--107--107--110--110--110--112--110--110--110--110--110--110--110--110--110--110--110--110--110--110--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.DEFAULT_GRIDLINE_STROKE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_3--107--108--108--108--108--108--108--108--108--108--108--111--111--111--113--111--111--111--111--111--111--111--111--111--111--111--111--111--111--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.DEFAULT_GRIDLINE_STROKE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_3--108--109--109--109--109--109--109--109--109--109--109--112--112--112--114--112--112--112--112--112--112--112--112--112--112--112--112--112--112--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.renderingOrder",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_19--109--110--110--110--110--110--110--110--110--110--110--113--113--113--115--113--113--113--113--113--113--113--113--113--113--113--113--113--113--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : markers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_2--110--111--111--111--111--111--111--111--111--111--111--114--114--114--116--114--114--114--114--114--114--114--114--114--114--114--114--114--114--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.backgroundRangeMarkers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_32--111--112--112--112--112--112--112--112--112--112--112--115--115--115--117--115--115--115--115--115--115--115--115--115--115--115--115--115--115--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_INSETS",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_38--112--113--113--113--113--113--113--113--113--113--113--116--116--116--118--116--116--116--116--116--116--116--116--116--116--116--116--116--116--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.parent",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_44--113--114--114--114--114--114--114--114--114--114--114--117--117--117--119--117--117--117--117--117--117--117--117--117--117--117--117--117--117--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeCrosshairStroke",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_27--114--115--115--115--115--115--115--115--115--115--115--118--118--118--120--118--118--118--118--118--118--118--118--118--118--118--118--118--118--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.domainAxisLocations",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_12--115--116--116--116--116--116--116--116--116--116--116--119--119--119--121--119--119--119--119--119--119--119--119--119--119--119--119--119--119--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : this.domainGridlinesVisible",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2166_11--116--117--117--117--117--117--117--117--117--117--117--120--120--120--122--120--120--120--120--120--120--120--120--120--120--120--120--120--120--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.noDataMessage",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_46--117--118--118--118--118--118--118--118--118--118--118--121--121--121--123--121--121--121--121--121--121--121--121--121--121--121--121--121--121--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.rangeAxes",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_13--118--119--119--119--119--119--119--119--119--119--119--122--122--122--124--122--122--122--122--122--122--122--122--122--122--122--122--122--122--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "(markers != null ? markers : this.annotations).remove(marker)",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2166_0--119--120--120--120--120--120--120--120--120--120--120--123--123--123--125--123--123--123--123--123--123--123--123--123--123--123--123--123--123--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.columnRenderingOrder",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_20--120--121--121--121--121--121--121--121--121--121--121--124--124--124--126--124--124--124--124--124--124--124--124--124--124--124--124--124--124--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.domainGridlinePaint",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_24--121--122--122--122--122--122--122--122--122--122--122--125--125--125--127--125--125--125--125--125--125--125--125--125--125--125--125--125--125--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_LEGEND_ITEM_CIRCLE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_43--122--123--123--123--123--123--123--123--123--123--123--126--126--126--128--126--126--126--126--126--126--126--126--126--126--126--126--126--126--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.drawingSupplier",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_54--123--124--124--124--124--124--124--124--124--124--124--127--127--127--129--127--127--127--127--127--127--127--127--127--127--127--127--127--127--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.CategoryPlot.DEFAULT_GRIDLINE_PAINT",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_4--124--125--125--125--125--125--125--125--125--125--125--128--128--128--130--128--128--128--128--128--128--128--128--128--128--128--128--128--128--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.datasetGroup",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_45--125--126--126--126--126--126--126--126--126--126--126--129--129--129--131--129--129--129--129--129--129--129--129--129--129--129--129--129--129--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.ZERO",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_37--126--127--127--127--127--127--127--127--127--127--127--130--130--130--132--130--130--130--130--130--130--130--130--130--130--130--130--130--130--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_LEGEND_ITEM_CIRCLE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_43--127--128--128--128--128--128--128--128--128--128--128--131--131--131--133--131--131--131--131--131--131--131--131--131--131--131--131--131--131--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.backgroundDomainMarkers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_30--128--129--129--129--129--129--129--129--129--129--129--132--132--132--134--132--132--132--132--132--132--132--132--132--132--132--132--132--132--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : this.backgroundRangeMarkers",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2159_32--129--130--130--130--130--130--130--130--130--130--130--133--133--133--135--133--133--133--133--133--133--133--133--133--133--133--133--133--133--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.datasets",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_15--130--131--131--131--131--131--131--131--131--131--131--134--134--134--136--134--134--134--134--134--134--134--134--134--134--134--134--134--134--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_OUTLINE_STROKE",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_39--131--132--132--132--132--132--132--132--132--132--132--135--135--135--137--135--135--135--135--135--135--135--135--135--135--135--135--135--135--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : this.domainGridlineStroke",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_23--132--133--133--133--133--133--133--133--133--133--133--136--136--136--138--136--136--136--136--136--136--136--136--136--136--136--136--136--136--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.backgroundDomainMarkers.get(new java.lang.Integer(index)))) : org.jfree.chart.plot.Plot.DEFAULT_OUTLINE_PAINT",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2175,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2163_40--133--134--134--134--134--134--134--134--134--134--134--137--137--137--139--137--137--137--137--137--137--137--137--137--137--137--137--137--137--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "(markers != null ? markers : new java.util.ArrayList<>()).remove(marker)",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_2166_1--138--138--138--138--138--138--138--138--138--138--138--138--138--138--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (markers == null) {\n    markers = new java.util.ArrayList<>();\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_2166-2166_3--139--139--139--139--139--139--139--139--139--139--139--139--139--139--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "boolean removed = (markers != null) ? markers.remove(marker) : marker == null",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2166_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "markers = (((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) != null) ? ((java.util.ArrayList) (this.foregroundDomainMarkers.get(new java.lang.Integer(index)))) : null",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2173,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2159_0--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "(markers != null ? markers : null).remove(marker)",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_2166_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-14",
+        "patch": {
+            "contents": "if (markers == null) {\n    markers = null;\n}",
+            "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+            "patched_line": 2177,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_2166-2166_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

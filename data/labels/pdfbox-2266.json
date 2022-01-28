@@ -1,0 +1,158 @@
+[
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "if (shadingPattern.getShading() == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 128,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_128-128_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "if (shadingPattern.getShading() == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 128,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_128-128_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "if (shading != null) {\n    return shading.toPaint(shadingPattern.getMatrix());\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 129,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_130-130_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "if (shadingPattern.getShading() != null) {\n    org.apache.pdfbox.pdmodel.graphics.shading.PDShading shading = shadingPattern.getShading();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 128,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_128-128_0--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "if (shading == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 129,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_130-130_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "if (shading == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 129,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_130-130_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "return shading != null ? shading.toPaint(shadingPattern.getMatrix()) : null",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 129,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_130_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "org.apache.pdfbox.pdmodel.graphics.shading.PDShading shading = (shadingPattern.getShading() != null) ? shadingPattern.getShading() : shading",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 128,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_128_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "(shading != null ? shading : new org.apache.pdfbox.pdmodel.graphics.shading.PDShading()).toPaint(shadingPattern.getMatrix())",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 129,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_130_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "if (shading == null) {\n    shading = null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 129,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_130-130_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "(shading != null ? shading : null).toPaint(shadingPattern.getMatrix())",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 129,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_130_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2266",
+        "patch": {
+            "contents": "if (shading == null) {\n    shading = new org.apache.pdfbox.pdmodel.graphics.shading.PDShading();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+            "patched_line": 129,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_130-130_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    }
+]

@@ -3,7 +3,6 @@ from __future__ import annotations
 import os
 from config import *
 
-ROOT_DIR = os.getcwd()
 NPEX_DIR = os.getenv("NPEX_DIR")
 INFER_DIR = f"{NPEX_DIR}/npex-analyzer"
 CLASSIFIER_DIR = f"{os.path.dirname(os.path.abspath(__file__))}/../data/models_learned"
@@ -16,8 +15,9 @@ INFER = f"{INFER_DIR}/infer/bin/infer"
 NPEX_synthesizer_script = f"{NPEX_DIR}/scripts/main.py"
 NPEX_analyzer_script = f"{INFER_DIR}/scripts/verify.py"
 NPEX_CMD = f"{JAVA_15} --enable-preview -cp {NPEX_JAR} npex.driver.Main"
-DEFAULT_TARGETS = f"{ROOT_DIR}/targets.json"
-DEFAULT_LABELING = f"{ROOT_DIR}/labelings.csv"
+
+LABEL_DIR = f"/root/Workspace/data/labels"
+BENCH_DIR = f"/root/Workspace/benchmarks"
 
 N_CPUS = 10
 

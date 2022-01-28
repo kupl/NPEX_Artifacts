@@ -1,0 +1,132 @@
+[
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "if (inHeaders == null) {\n    return null;\n}",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 367,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_368-418_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders != null ? inHeaders.getAlgorithm() : \"null\")",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_419_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "if (inHeaders != null) {\n    org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm signatureAlgo = org.apache.cxf.rs.security.jose.jws.JwsUtils.getSignatureAlgorithm(m, props, null, null);\n    if ((signatureAlgo == org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE) && org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders.getAlgorithm())) {\n        theVerifier = new org.apache.cxf.rs.security.jose.jws.NoneJwsSignatureVerifier();\n    } else {\n        java.security.cert.X509Certificate[] certs = org.apache.cxf.rs.security.jose.common.KeyManagementUtils.loadX509CertificateOrChain(m, props);\n        if ((certs != null) && (certs.length > 0)) {\n            theVerifier = org.apache.cxf.rs.security.jose.jws.JwsUtils.getPublicKeySignatureVerifier(certs[0], signatureAlgo);\n        }\n    }\n}",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 400,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_417-418_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "(inHeaders != null ? inHeaders : new org.apache.cxf.rs.security.jose.jws.JwsHeaders()).getAlgorithm()",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_419_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders != null ? inHeaders.getAlgorithm() : \"\")",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_419_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "if (inHeaders == null) {\n    inHeaders = new org.apache.cxf.rs.security.jose.jws.JwsHeaders();\n}",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_418-418_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "if ((signatureAlgo == org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE) && (inHeaders != null ? org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders.getAlgorithm()) : true)) {\n    theVerifier = new org.apache.cxf.rs.security.jose.jws.NoneJwsSignatureVerifier();\n} else {\n    java.security.cert.X509Certificate[] certs = org.apache.cxf.rs.security.jose.common.KeyManagementUtils.loadX509CertificateOrChain(m, props);\n    if ((certs != null) && (certs.length > 0)) {\n        theVerifier = org.apache.cxf.rs.security.jose.jws.JwsUtils.getPublicKeySignatureVerifier(certs[0], signatureAlgo);\n    }\n}",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_419_6"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "if ((signatureAlgo == org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE) && (inHeaders != null ? org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders.getAlgorithm()) : inHeaders.getAlgorithm() == null)) {\n    theVerifier = new org.apache.cxf.rs.security.jose.jws.NoneJwsSignatureVerifier();\n} else {\n    java.security.cert.X509Certificate[] certs = org.apache.cxf.rs.security.jose.common.KeyManagementUtils.loadX509CertificateOrChain(m, props);\n    if ((certs != null) && (certs.length > 0)) {\n        theVerifier = org.apache.cxf.rs.security.jose.jws.JwsUtils.getPublicKeySignatureVerifier(certs[0], signatureAlgo);\n    }\n}",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_419_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "if (inHeaders != null) {\n    if ((signatureAlgo == org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE) && org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders.getAlgorithm())) {\n        theVerifier = new org.apache.cxf.rs.security.jose.jws.NoneJwsSignatureVerifier();\n    } else {\n        java.security.cert.X509Certificate[] certs = org.apache.cxf.rs.security.jose.common.KeyManagementUtils.loadX509CertificateOrChain(m, props);\n        if ((certs != null) && (certs.length > 0)) {\n            theVerifier = org.apache.cxf.rs.security.jose.jws.JwsUtils.getPublicKeySignatureVerifier(certs[0], signatureAlgo);\n        }\n    }\n}",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_418-418_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "if ((signatureAlgo == org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE) && (inHeaders != null ? org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders.getAlgorithm()) : false)) {\n    theVerifier = new org.apache.cxf.rs.security.jose.jws.NoneJwsSignatureVerifier();\n} else {\n    java.security.cert.X509Certificate[] certs = org.apache.cxf.rs.security.jose.common.KeyManagementUtils.loadX509CertificateOrChain(m, props);\n    if ((certs != null) && (certs.length > 0)) {\n        theVerifier = org.apache.cxf.rs.security.jose.jws.JwsUtils.getPublicKeySignatureVerifier(certs[0], signatureAlgo);\n    }\n}",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_419_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

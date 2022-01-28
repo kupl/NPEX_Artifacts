@@ -1,0 +1,171 @@
+[
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "return ((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) != null ? new java.lang.String(((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))).getBytes(), org.apache.pdfbox.util.Charsets.UTF_8) : \"null\"",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_64_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) == null) {\n    return \"null\";\n}",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_64-64_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "return ((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) != null ? new java.lang.String(((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))).getBytes(), org.apache.pdfbox.util.Charsets.UTF_8) : \"\"",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_64_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) == null) {\n    return \"\";\n}",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_64-64_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "new java.lang.String(((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) != null ? ((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))).getBytes() : null, org.apache.pdfbox.util.Charsets.UTF_8)",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_64_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) != null) {\n    return new java.lang.String(((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))).getBytes(), org.apache.pdfbox.util.Charsets.UTF_8);\n}",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_64-64_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "return ((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) != null ? new java.lang.String(((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))).getBytes(), org.apache.pdfbox.util.Charsets.UTF_8) : null",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_64_9"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "new java.lang.String(((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) != null ? ((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))).getBytes() : new byte[]{  }, org.apache.pdfbox.util.Charsets.UTF_8)",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_64_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "(((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) != null ? ((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) : new org.apache.pdfbox.cos.COSBase()).getBytes()",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_64_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_64-64_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "(((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) != null ? ((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) : null).getBytes()",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_64_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "return ((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) != null ? new java.lang.String(((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))).getBytes(), org.apache.pdfbox.util.Charsets.UTF_8) : \"NULL\"",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_64_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox_bdab232",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) == null) {\n    return null;\n}",
+            "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+            "patched_line": 70,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_64-64_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

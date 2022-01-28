@@ -1,0 +1,15 @@
++ ----------------------------------------------------------------------------------------------------------------------- +
+| bug_id  | label                    | detail                       | description | patch_id                              |
++ ----------------------------------------------------------------------------------------------------------------------- +
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_250-250_5          |
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_250-250_4          |
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_250-250_3           |
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipSinkStatementStrategy_250-250_0   |
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_250_6 |
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_250_5 |
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_250_4 |
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_250-250_2         |
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_250_0          |
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_250-250_1         |
+| lang-57 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_250_1          |
++ ----------------------------------------------------------------------------------------------------------------------- +

@@ -1,0 +1,340 @@
+[
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (this.dictMap.get(keys) == null) {\n    return null;\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 125,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_116-116_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (keyValues == null) {\n    return \"\";\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_117-117_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (keyValues == null) {\n    return null;\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_117-117_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "!(keyValues != null ? keyValues.isEmpty() : true)",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_117_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "!(keyValues != null ? keyValues.isEmpty() : false)",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_117_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (this.dictMap.get(keys) == null) {\n    return \"\";\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 125,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_116-116_2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (keyValues != null) {\n    if (!keyValues.isEmpty()) {\n        lemma = keyValues.get(0);\n    } else {\n        lemma = \"O\";\n    }\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_117-117_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (this.dictMap.get(keys) != null) {\n    // lookup lemma as value of the map\n    final java.util.List<java.lang.String> keyValues = this.dictMap.get(keys);\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 125,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_116-116_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (keyValues != null ? !keyValues.isEmpty() : true) {\n    lemma = keyValues.get(0);\n} else {\n    lemma = \"O\";\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_117_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (keyValues != null ? !keyValues.isEmpty() : false) {\n    lemma = keyValues.get(0);\n} else {\n    lemma = \"O\";\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_117_6"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "// lookup lemma as value of the map\nfinal java.util.List<java.lang.String> keyValues = (this.dictMap.get(keys) != null) ? this.dictMap.get(keys) : keys",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 125,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_116_0--10--10--10--10--10--4--4--4--4--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "(keyValues != null ? keyValues : postag).isEmpty()",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_117_2--11--11--11--11--11--5--5--5--5--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "// lookup lemma as value of the map\nfinal java.util.List<java.lang.String> keyValues = (this.dictMap.get(keys) != null) ? this.dictMap.get(keys) : keyValues",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 125,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_116_1--12--12--12--12--12--6--6--6--6--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "(keyValues != null ? keyValues : this.dictMap).isEmpty()",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_117_5--13--13--13--13--13--7--7--7--7--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "(keyValues != null ? keyValues : lemma).isEmpty()",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_117_3--14--14--14--14--14--8--8--8--8--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "(keyValues != null ? keyValues : word).isEmpty()",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_117_1--15--15--15--15--15--9--9--9--9--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "(keyValues != null ? keyValues : keys).isEmpty()",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_117_0--16--16--16--16--16--10--10--10--10--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "// lookup lemma as value of the map\nfinal java.util.List<java.lang.String> keyValues = (this.dictMap.get(keys) != null) ? this.dictMap.get(keys) : new java.util.ArrayList<>()",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 125,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_116_1--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (this.dictMap.get(keys) == null) {\n    return \"null\";\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 125,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_116-116_1--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "// lookup lemma as value of the map\nfinal java.util.List<java.lang.String> keyValues = (this.dictMap.get(keys) != null) ? this.dictMap.get(keys) : null",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 125,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_116_0--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (keyValues == null) {\n    return \"null\";\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_117-117_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "(keyValues != null ? keyValues : new java.util.ArrayList<>()).isEmpty()",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_117_0--16--16--16--16--16--16--16--16--16--16--16--16--16--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "(keyValues != null ? keyValues : new java.util.ArrayList()).isEmpty()",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_117_0--17--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "if (keyValues == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_117-117_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "(keyValues != null ? keyValues : java.util.Collections.emptyList()).isEmpty()",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_117_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "opennlp_cb6ee2c",
+        "patch": {
+            "contents": "(keyValues != null ? keyValues : null).isEmpty()",
+            "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+            "patched_line": 127,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_117_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

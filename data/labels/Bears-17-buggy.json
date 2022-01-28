@@ -1,0 +1,340 @@
+[
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (annotated == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+            "patched_line": 1355,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_1336-1336_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (property != null) {\n    // then with definitions from property\n    java.util.Collection<com.fasterxml.jackson.databind.jsontype.NamedType> st = ai.findSubtypes(property);\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver.java",
+            "patched_line": 145,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_147-147_0--2--2--2--2--2--2--2--2--2--2--2--2--3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (annotated != null) {\n    return annotated.getAnnotation(annoClass);\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+            "patched_line": 1355,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_1336-1336_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (property == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver.java",
+            "patched_line": 145,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_147-147_1--3--5--5--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--3--3--3--3--3--3--3--3--3--3--3--3--4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "// then with definitions from property\njava.util.Collection<com.fasterxml.jackson.databind.jsontype.NamedType> st = (property != null) ? ai.findSubtypes(property) : null",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver.java",
+            "patched_line": 145,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_147_0--4--4--4--4--4--4--4--4--4--4--4--4--5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "return annotated != null ? annotated.getAnnotation(annoClass) : null",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+            "patched_line": 1355,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1336_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "// then with definitions from property\njava.util.Collection<com.fasterxml.jackson.databind.jsontype.NamedType> st = (property != null) ? ai.findSubtypes(property) : new java.util.ArrayList<>()",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver.java",
+            "patched_line": 145,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_147_2--5--5--5--5--5--5--5--5--5--5--5--5--6--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (property == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver.java",
+            "patched_line": 136,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_133-147_1--6--6--6--6--6--6--6--6--6--6--6--6--7--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a == null) {\n    throw new java.lang.NoSuchFieldException();\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_556-556_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a == null) {\n    throw new com.fasterxml.jackson.databind.JsonMappingException(\"\");\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_556-556_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a != null) {\n    com.fasterxml.jackson.annotation.JsonSubTypes t = _findAnnotation(a, com.fasterxml.jackson.annotation.JsonSubTypes.class);\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_556-556_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_556-556_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a == null) {\n    throw new java.lang.SecurityException();\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_556-556_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a == null) {\n    throw new java.lang.Throwable();\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_556-556_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_556-556_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "com.fasterxml.jackson.annotation.JsonSubTypes t = (a != null) ? _findAnnotation(a, com.fasterxml.jackson.annotation.JsonSubTypes.class) : null",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_556_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a == null) {\n    a = null;\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_556-556_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (annotated == null) {\n    annotated = null;\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+            "patched_line": 1355,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_1336-1336_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "(annotated != null ? annotated : new com.fasterxml.jackson.databind.introspect.Annotated()).getAnnotation(annoClass)",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+            "patched_line": 1355,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_1336_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "_findAnnotation(a != null ? a : new com.fasterxml.jackson.databind.introspect.Annotated(), com.fasterxml.jackson.annotation.JsonSubTypes.class)",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_556_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "(annotated != null ? annotated : null).getAnnotation(annoClass)",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+            "patched_line": 1355,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_1336_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a == null) {\n    a = new com.fasterxml.jackson.databind.introspect.Annotated();\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_556-556_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (annotated == null) {\n    annotated = new com.fasterxml.jackson.databind.introspect.Annotated();\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+            "patched_line": 1355,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_1336-1336_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "_findAnnotation(a != null ? a : null, com.fasterxml.jackson.annotation.JsonSubTypes.class)",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_556_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a == null) {\n    return new java.util.ArrayList();\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_556-556_10--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-17-buggy",
+        "patch": {
+            "contents": "if (a == null) {\n    return java.util.Collections.emptyList();\n}",
+            "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+            "patched_line": 556,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_556-556_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

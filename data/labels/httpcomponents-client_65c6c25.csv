@@ -1,0 +1,5 @@
+bug_id,label,detail,description,patch_id
+httpcomponents-client_65c6c25,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipSinkStatementStrategy_145-145_1
+httpcomponents-client_65c6c25,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipBlockStrategy_138-166_0
+httpcomponents-client_65c6c25,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnParam_115-145_2
+httpcomponents-client_65c6c25,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_145_0

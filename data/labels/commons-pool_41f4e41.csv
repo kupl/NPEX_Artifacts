@@ -1,0 +1,9 @@
+bug_id,label,detail,description,patch_id
+commons-pool_41f4e41,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipSinkStatementStrategy_450-450_0
+commons-pool_41f4e41,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_450_3
+commons-pool_41f4e41,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipThrowStrategy_450-450_1
+commons-pool_41f4e41,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_450-450_3
+commons-pool_41f4e41,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_450_4
+commons-pool_41f4e41,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipThrowStrategy_450-450_2
+commons-pool_41f4e41,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplacePointerStrategy_450_0
+commons-pool_41f4e41,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,ReplaceEntireExpressionStrategy_450_2

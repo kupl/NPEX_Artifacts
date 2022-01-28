@@ -1,0 +1,171 @@
+[
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "if (openStatements == null) {\n    throw new java.sql.SQLException();\n}",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_198-198_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "if (openStatements == null) {\n    openStatements = new com.zaxxer.hikari.util.FastList<java.sql.Statement>();\n}",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_198-198_1--2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "if (openStatements != null) {\n    final int size = openStatements.size();\n}",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_198-198_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "(openStatements != null ? openStatements : new com.zaxxer.hikari.util.FastList<java.sql.Statement>()).size()",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_198_0--3--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "if (openStatements == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_198-198_3"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": "correct w.r.t. testcase, but not class"
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "final int size = (openStatements != null) ? openStatements.size() : 1",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_198_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "final int size = (openStatements != null) ? openStatements.size() : 0",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_198_2"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": "correct but not method"
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "openStatements = (null != null) ? null : this.openStatements// HELP GC\n",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 257,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_256_0--4--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--4--4"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "if (openStatements == null) {\n    openStatements = new java.util.ArrayList<>();\n}",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_198-198_2--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--5--5"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "(openStatements != null ? openStatements : new java.util.ArrayList<>()).size()",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_198_0--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--6--6"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "final int size = (openStatements != null) ? openStatements.size() : -1",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_198_3"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "(openStatements != null ? openStatements : null).size()",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_198_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "HikariCP-ce4ff92-buggy",
+        "patch": {
+            "contents": "if (openStatements == null) {\n    openStatements = null;\n}",
+            "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+            "patched_line": 198,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_198-198_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

@@ -1,0 +1,11 @@
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id          | label                    | detail                       | description | patch_id                              |
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| OpenPDF_07ecaaf | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipBlockStrategy_111-111_0           |
+| OpenPDF_07ecaaf | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipReturnStrategy_111-111_3          |
+| OpenPDF_07ecaaf | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_111_2 |
+| OpenPDF_07ecaaf | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_111_3 |
+| OpenPDF_07ecaaf | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_111-111_2         |
+| OpenPDF_07ecaaf | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_111_0          |
+| OpenPDF_07ecaaf | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipReturnStrategy_111-111_4          |
++ ------------------------------------------------------------------------------------------------------------------------------- +

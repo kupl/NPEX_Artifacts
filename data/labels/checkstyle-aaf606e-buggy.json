@@ -1,0 +1,171 @@
+[
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "result = literalFor.getLineNo() == (block != null ? block.getLineNo() : 0)",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_286_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "result = literalFor.getLineNo() == (block != null ? block.getLineNo() : this.tabWidth)",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_286_7--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "(block != null ? block : literalFor).getLineNo()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_286_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "if (block == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_286-286_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "result = literalFor.getLineNo() == (block != null ? block.getLineNo() : 1)",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_286_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "if (block == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_286-286_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "if (block != null) {\n    result = literalFor.getLineNo() == block.getLineNo();\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_286-286_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "result = literalFor.getLineNo() == (block != null ? block.getLineNo() : com.puppycrawl.tools.checkstyle.api.Check.DEFAULT_TAB_WIDTH)",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_286_6--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--6--6--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "if (block != null) {\n    final com.puppycrawl.tools.checkstyle.api.DetailAST block = com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck.findExpressionBlockInForLoop(literalFor);\n    result = literalFor.getLineNo() == block.getLineNo();\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 294,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_285-286_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "(block != null ? block : new com.puppycrawl.tools.checkstyle.api.DetailAST()).getLineNo()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_286_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "if (block == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_286-286_2--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "result = literalFor.getLineNo() == (block != null ? block.getLineNo() : -1)",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_286_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aaf606e-buggy",
+        "patch": {
+            "contents": "(block != null ? block : null).getLineNo()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+            "patched_line": 295,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_286_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

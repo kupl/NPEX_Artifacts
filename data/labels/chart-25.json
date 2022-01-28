@@ -1,0 +1,561 @@
+[
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "(meanValue != null ? meanValue : new java.lang.Number()).doubleValue()",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_404_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "if (dataset.getMeanValue(row, column) != null) {\n    // BAR Y\n    java.lang.Number meanValue = dataset.getMeanValue(row, column);\n}",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 408,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_402-402_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "if (dataset.getMeanValue(row, column) == null) {\n    return;\n}",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 408,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_402-402_2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "if (meanValue != null) {\n    double value = meanValue.doubleValue();\n}",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_404-404_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "// BAR Y\njava.lang.Number meanValue = (dataset.getMeanValue(row, column) != null) ? dataset.getMeanValue(row, column) : new java.lang.Number()",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 408,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_402_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "if (meanValue == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_404-404_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "if (dataset.getMeanValue(row, column) == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 408,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_402-402_0--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "if (meanValue == null) {\n    return;\n}",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_404-404_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "if (meanValue == null) {\n    meanValue = new java.lang.Number();\n}",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_404-404_2--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : 1.0",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_404_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : 0.0",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_404_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : this.lowerClip",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_26--2--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : this.itemMargin",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_22--3--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : this.base",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_27--4--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : base",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_9--5--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : transY2",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "double value = (meanValue != null) ? meanValue.doubleValue() : transY2--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "if (meanValue == null) {\n    meanValue = org.jfree.chart.renderer.AbstractRenderer.ZERO;\n}",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_404-404_1--7--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : highVal",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_18--8--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : rectHeight",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_16--9--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : this.itemLabelAnchorOffset",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_28--10--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "// BAR Y\njava.lang.Number meanValue = (dataset.getMeanValue(row, column) != null) ? dataset.getMeanValue(row, column) : meanValue",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 408,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_402_0--11--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "(meanValue != null ? meanValue : org.jfree.chart.renderer.AbstractRenderer.ZERO).doubleValue()",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_404_0--12--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : lclip",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_10--13--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : valueDelta",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_17--14--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : this.minimumBarLength",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_24--15--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : this.upperClip",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_25--16--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : value",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_8--17--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : rectY",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_14--18--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "// BAR Y\njava.lang.Number meanValue = (dataset.getMeanValue(row, column) != null) ? dataset.getMeanValue(row, column) : org.jfree.chart.renderer.AbstractRenderer.ZERO",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 408,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_402_1--19--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : transY1",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "double value = (meanValue != null) ? meanValue.doubleValue() : transY1--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : rectWidth",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_15--21--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : org.jfree.chart.renderer.AbstractRenderer.OPP",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_30--22--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : seriesGap",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_7--23--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : org.jfree.chart.renderer.AbstractRenderer.ADJ",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_29--24--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : org.jfree.chart.renderer.category.BarRenderer.DEFAULT_ITEM_MARGIN",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_20--25--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : org.jfree.chart.renderer.category.BarRenderer.BAR_OUTLINE_WIDTH_THRESHOLD",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_21--26--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : lowVal",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_19--27--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : uclip",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_11--28--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : this.maximumBarWidth",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_23--29--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : rectX",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_404_6--30--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : java.lang.Double.NaN",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_404_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "(meanValue != null ? meanValue : null).doubleValue()",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_404_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-25",
+        "patch": {
+            "contents": "if (meanValue == null) {\n    meanValue = null;\n}",
+            "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+            "patched_line": 410,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_404-404_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

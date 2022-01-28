@@ -1,0 +1,106 @@
+[
+    {
+        "bug_id": "tablesaw_65596d8",
+        "patch": {
+            "contents": "if (original.get(rowNumber) != null) {\n    return original.get(rowNumber).equals(temp.get(temp.size() - 1));\n}",
+            "original_filepath": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+            "patched_line": 72,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_71-71_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "tablesaw_65596d8",
+        "patch": {
+            "contents": "return original.get(rowNumber) != null ? original.get(rowNumber).equals(temp.get(temp.size() - 1)) : true",
+            "original_filepath": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_71_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "tablesaw_65596d8",
+        "patch": {
+            "contents": "return original.get(rowNumber) != null ? original.get(rowNumber).equals(temp.get(temp.size() - 1)) : temp.get(temp.size() - 1) == null",
+            "original_filepath": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_71_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "tablesaw_65596d8",
+        "patch": {
+            "contents": "return original.get(rowNumber) != null ? original.get(rowNumber).equals(temp.get(temp.size() - 1)) : false",
+            "original_filepath": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_71_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "tablesaw_65596d8",
+        "patch": {
+            "contents": "if (original.get(rowNumber) == null) {\n    return false;\n}",
+            "original_filepath": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+            "patched_line": 72,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_71-71_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "tablesaw_65596d8",
+        "patch": {
+            "contents": "if (original.get(rowNumber) == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+            "patched_line": 72,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_71-71_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "tablesaw_65596d8",
+        "patch": {
+            "contents": "if (original.get(rowNumber) == null) {\n    return true;\n}",
+            "original_filepath": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+            "patched_line": 72,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_71-71_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "tablesaw_65596d8",
+        "patch": {
+            "contents": "(original.get(rowNumber) != null ? original.get(rowNumber) : null).equals(temp.get(temp.size() - 1))",
+            "original_filepath": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_71_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

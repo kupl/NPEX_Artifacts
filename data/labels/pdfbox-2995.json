@@ -1,0 +1,275 @@
+[
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA))) == null) {\n    return \"\";\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 449,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_444-444_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "return defaultAppearance != null ? defaultAppearance.getString() : new java.lang.String()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_445_5--2--2--2--2--2--2--2--2--2--2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (defaultAppearance != null) {\n    return defaultAppearance.getString();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_445-445_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "return defaultAppearance != null ? defaultAppearance.getString() : null",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_445_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA))) == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 449,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_444-444_1--4--3--3--3--3--3--3--3--3--3--3--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (defaultAppearance == null) {\n    defaultAppearance = new org.apache.pdfbox.cos.COSString();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_445-445_1--4--4--4--4--4--4--4--4--4--4--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA))) != null) {\n    org.apache.pdfbox.cos.COSString defaultAppearance = ((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA)));\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 449,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_444-444_0--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "(defaultAppearance != null ? defaultAppearance : new org.apache.pdfbox.cos.COSString()).getString()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_445_0--5--5--5--5--5--5--5--5--5--5--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (defaultAppearance == null) {\n    return \"\";\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_445-445_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (defaultAppearance == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_445-445_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "org.apache.pdfbox.cos.COSString defaultAppearance = (((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA))) != null) ? ((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA))) : defaultAppearance",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 449,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_444_0--7--7--7--7--7--7--7--7--7--7--7--9--9--9--9--9--9--9--9--9--9--9--9--9--9--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "org.apache.pdfbox.cos.COSString defaultAppearance = (((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA))) != null) ? ((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA))) : this.dictionary",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 449,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_444_1--8--8--8--8--8--8--8--8--8--8--8--10--10--10--10--10--10--10--10--10--10--10--10--10--10--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "return defaultAppearance != null ? defaultAppearance.getString() : \"null\"",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_445_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "return defaultAppearance != null ? defaultAppearance.getString() : \"\"",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_445_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (defaultAppearance == null) {\n    return \"null\";\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_445-445_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "org.apache.pdfbox.cos.COSString defaultAppearance = (((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA))) != null) ? ((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA))) : null",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 449,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_444_0--11--11--11--11--11--11--11--11--11--11--11--11--11--11--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSString) (dictionary.getItem(org.apache.pdfbox.cos.COSName.DA))) == null) {\n    return \"null\";\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 449,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_444-444_1--12--12--12--12--12--12--12--12--12--12--12--12--12--12--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (defaultAppearance == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_445-445_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "if (defaultAppearance == null) {\n    defaultAppearance = null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_445-445_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "return defaultAppearance != null ? defaultAppearance.getString() : \"NULL\"",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_445_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2995",
+        "patch": {
+            "contents": "(defaultAppearance != null ? defaultAppearance : null).getString()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 450,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_445_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

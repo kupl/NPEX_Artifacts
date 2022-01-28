@@ -1,0 +1,14 @@
++ ------------------------------------------------------------------------------------------------------------------------- +
+| bug_id   | label                    | detail                       | description | patch_id                               |
++ ------------------------------------------------------------------------------------------------------------------------- +
+| chart-14 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_2166_4 |
+| chart-14 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_2166-2166_5         |
+| chart-14 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_2166_3 |
+| chart-14 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_2166-2166_2          |
+| chart-14 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipReturnStrategy_2166-2166_4         |
+| chart-14 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_2166-2166_3          |
+| chart-14 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_2166-2166_0  |
+| chart-14 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_2166_2 |
+| chart-14 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_2166_0          |
+| chart-14 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_2166-2166_1        |
++ ------------------------------------------------------------------------------------------------------------------------- +

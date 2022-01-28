@@ -1,0 +1,431 @@
+[
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)) : new org.nutz.http.Response()).setTimeout(timeout)",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_7--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (params == null) {\n    return null;\n}",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_175-175_2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (params != null) {\n    return org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)).setTimeout(timeout).send().getContent();\n}",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_175-175_3--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (params == null) {\n    return \"\";\n}",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_175-175_6--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "org.nutz.http.Sender.create(params != null ? org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null) : null)",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_0--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "org.nutz.http.Sender.create(params != null ? org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null) : new org.nutz.http.Response())",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_2--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--6--5--5--5--5--5--5--5--5--5--5--5--5--5--5--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)).setTimeout(timeout) : new org.nutz.http.Response()).send()",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_11--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--7--6--6--6--6--6--6--6--6--6--6--6--6--6--6--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (params == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_175-175_2--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)).setTimeout(timeout).send() : null).getContent()",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_16--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--8--7--7--7--7--7--7--7--7--7--7--7--7--7--7--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)) : new java.lang.String()).setTimeout(timeout)",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_9--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--9--8--8--8--8--8--8--8--8--8--8--8--8--8--8--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (request.getParams() != null) {\n    for (java.lang.Object val : request.getParams().values()) {\n        if ((val instanceof java.io.File) || (val instanceof java.io.File[])) {\n            return new org.nutz.http.sender.FilePostSender(request);\n        }\n    }\n}",
+            "original_filepath": "src/org/nutz/http/Sender.java",
+            "patched_line": 70,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_68-68_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (request.getParams() == null) {\n    return null;\n}",
+            "original_filepath": "src/org/nutz/http/Sender.java",
+            "patched_line": 70,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_68-68_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)).setTimeout(timeout) : null).send()",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--10--9--9--9--9--9--9--9--9--9--9--9--9--9--9--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--13--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)).setTimeout(timeout) : new java.lang.String()).send()",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--11--10--10--10--10--10--10--10--10--10--10--10--10--10--10--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--14--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (request.getParams() == null) {\n    throw new java.lang.IllegalStateException();\n}",
+            "original_filepath": "src/org/nutz/http/Sender.java",
+            "patched_line": 70,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_68-68_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)) : null).setTimeout(timeout)",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_6--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--12--11--11--11--11--11--11--11--11--11--11--11--11--11--11--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--15--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)).setTimeout(timeout).send() : new java.lang.String()).getContent()",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--13--12--12--12--12--12--12--12--12--12--12--12--12--12--12--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--16--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "org.nutz.http.Sender.create(params != null ? org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null) : new java.lang.String())",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_175_4--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--14--13--13--13--13--13--13--13--13--13--13--13--13--13--13--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--17--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (request.getParams() == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "src/org/nutz/http/Sender.java",
+            "patched_line": 70,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_68-68_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "for (java.lang.Object val : request.getParams() != null ? request.getParams().values() : null) {\n    if ((val instanceof java.io.File) || (val instanceof java.io.File[])) {\n        return new org.nutz.http.sender.FilePostSender(request);\n    }\n}",
+            "original_filepath": "src/org/nutz/http/Sender.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_68_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "return params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)).setTimeout(timeout).send().getContent() : null",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_175_0--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--18--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (params == null) {\n    throw new java.io.UnsupportedEncodingException();\n}",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_175-175_1--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--19--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(request.getParams() != null ? request.getParams() : new java.util.HashMap<>()).values()",
+            "original_filepath": "src/org/nutz/http/Sender.java",
+            "patched_line": 70,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_68_1--19--19--19--19--19--19--19--19--19--19--19--19--19--19--20--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params != null ? params : new java.util.HashMap<>(), null)",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_175_1--19--19--19--19--20--20--20--20--20--20--20--20--20--20--20--20--20--20--21--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "return params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)).setTimeout(timeout).send().getContent() : \"null\"",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_175_2--20--20--20--20--21--21--21--21--21--21--21--21--21--21--21--21--21--21--22--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (params == null) {\n    params = new java.util.HashMap<>();\n}",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_175-175_4--21--21--21--21--22--22--22--22--22--22--22--22--22--22--22--22--22--22--23--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (request.getParams() == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/nutz/http/Sender.java",
+            "patched_line": 70,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_68-68_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (params == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_175-175_0--22--22--22--22--23--23--23--23--23--23--23--23--23--23--23--23--23--23--24--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "if (params == null) {\n    return \"null\";\n}",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_175-175_5--23--23--23--23--24--24--24--24--24--24--24--24--24--24--24--24--24--24--25--24--24--24--24--24--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "return params != null ? org.nutz.http.Sender.create(org.nutz.http.Request.create(url, org.nutz.http.Request.METHOD.POST, params, null)).setTimeout(timeout).send().getContent() : \"\"",
+            "original_filepath": "src/org/nutz/http/Http.java",
+            "patched_line": 187,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_175_3--24--24--24--24--25--25--25--25--25--25--25--25--25--25--25--25--25--25--26--25--25--25--25--25--25--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(request.getParams() != null ? request.getParams() : new java.util.HashMap()).values()",
+            "original_filepath": "src/org/nutz/http/Sender.java",
+            "patched_line": 70,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_68_1--27--26--26--26--26--26--26--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(request.getParams() != null ? request.getParams() : null).values()",
+            "original_filepath": "src/org/nutz/http/Sender.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_68_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_bbd28db",
+        "patch": {
+            "contents": "(request.getParams() != null ? request.getParams() : java.util.Collections.emptyMap()).values()",
+            "original_filepath": "src/org/nutz/http/Sender.java",
+            "patched_line": 70,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_68_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

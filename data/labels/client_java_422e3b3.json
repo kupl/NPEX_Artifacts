@@ -1,0 +1,236 @@
+[
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (includedNames == null) {\n    throw new java.util.NoSuchElementException();\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_148-148_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (this.includedNames == null) {\n    throw new java.util.NoSuchElementException();\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 143,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_142-142_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (this.includedNames != null) {\n    this.includedNames = includedNames;\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 143,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_142-142_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (includedNames == null) {\n    return null;\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_148-148_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (includedNames != null) {\n    if (includedNames.isEmpty()) {\n        return collectors().iterator();\n    } else {\n        java.util.HashSet<io.prometheus.client.Collector> collectors = new java.util.HashSet<io.prometheus.client.Collector>();\n        synchronized(namesToCollectors) {\n            for (java.util.Map.Entry<java.lang.String, io.prometheus.client.Collector> entry : namesToCollectors.entrySet()) {\n                if (includedNames.contains(entry.getKey())) {\n                    collectors.add(entry.getValue());\n                }\n            }\n        }\n        return collectors.iterator();\n    }\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_148-148_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (includedNames != null ? includedNames.isEmpty() : true) {\n    return collectors().iterator();\n} else {\n    java.util.HashSet<io.prometheus.client.Collector> collectors = new java.util.HashSet<io.prometheus.client.Collector>();\n    synchronized(namesToCollectors) {\n        for (java.util.Map.Entry<java.lang.String, io.prometheus.client.Collector> entry : namesToCollectors.entrySet()) {\n            if (includedNames.contains(entry.getKey())) {\n                collectors.add(entry.getValue());\n            }\n        }\n    }\n    return collectors.iterator();\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_148_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (includedNames != null ? includedNames.isEmpty() : false) {\n    return collectors().iterator();\n} else {\n    java.util.HashSet<io.prometheus.client.Collector> collectors = new java.util.HashSet<io.prometheus.client.Collector>();\n    synchronized(namesToCollectors) {\n        for (java.util.Map.Entry<java.lang.String, io.prometheus.client.Collector> entry : namesToCollectors.entrySet()) {\n            if (includedNames.contains(entry.getKey())) {\n                collectors.add(entry.getValue());\n            }\n        }\n    }\n    return collectors.iterator();\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_148_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "(includedNames != null ? includedNames : collectors).isEmpty()",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_148_0--2--2--2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (this.includedNames == null) {\n    this.includedNames = new java.util.HashSet<java.lang.String>();\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 143,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_142-142_2--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "(this.includedNames != null) ? this.includedNames : new java.util.HashSet<java.lang.String>() = includedNames",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 143,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_142_0--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "(includedNames != null ? includedNames : new java.util.HashSet<java.lang.String>()).isEmpty()",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_148_0--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (includedNames == null) {\n    includedNames = new java.util.HashSet<java.lang.String>();\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_148-148_2--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "(includedNames != null ? includedNames : new java.util.HashSet()).isEmpty()",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_148_0--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (includedNames == null) {\n    includedNames = new java.util.HashSet();\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_148-148_2--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (includedNames == null) {\n    includedNames = null;\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_148-148_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "(includedNames != null ? includedNames : java.util.Collections.emptySet()).isEmpty()",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_148_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "if (includedNames == null) {\n    includedNames = java.util.Collections.emptySet();\n}",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_148-148_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "client_java_422e3b3",
+        "patch": {
+            "contents": "(includedNames != null ? includedNames : null).isEmpty()",
+            "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+            "patched_line": 149,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_148_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

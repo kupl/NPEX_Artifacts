@@ -1,0 +1,106 @@
+[
+    {
+        "bug_id": "caelum-stella-e73113f-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    return;\n}",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+            "patched_line": 61,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_60-65_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "caelum-stella-e73113f-buggy",
+        "patch": {
+            "contents": "validator.assertValid(value != null ? value.toString() : \"\")",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+            "patched_line": 65,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_65_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "caelum-stella-e73113f-buggy",
+        "patch": {
+            "contents": "validator.assertValid(value != null ? value.toString() : \"null\")",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+            "patched_line": 65,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_65_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "caelum-stella-e73113f-buggy",
+        "patch": {
+            "contents": "if (value != null) {\n    validator.assertValid(value.toString());\n}",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+            "patched_line": 65,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_65-65_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "caelum-stella-e73113f-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = null;\n}",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+            "patched_line": 65,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_65-65_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "caelum-stella-e73113f-buggy",
+        "patch": {
+            "contents": "(value != null ? value : null).toString()",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+            "patched_line": 65,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_65_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "caelum-stella-e73113f-buggy",
+        "patch": {
+            "contents": "validator.assertValid(value != null ? value.toString() : null)",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+            "patched_line": 65,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_65_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "caelum-stella-e73113f-buggy",
+        "patch": {
+            "contents": "validator.assertValid(value != null ? value.toString() : \"NULL\")",
+            "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+            "patched_line": 65,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_65_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

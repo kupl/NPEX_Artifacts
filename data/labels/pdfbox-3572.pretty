@@ -1,0 +1,11 @@
++ -------------------------------------------------------------------------------------------------------------------- +
+| bug_id      | label                    | detail                       | description | patch_id                       |
++ -------------------------------------------------------------------------------------------------------------------- +
+| pdfbox-3572 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipThrowStrategy_271-271_4    |
+| pdfbox-3572 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_271-271_5   |
+| pdfbox-3572 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipContinueStrategy_271-271_3 |
+| pdfbox-3572 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipBlockStrategy_271-271_0    |
+| pdfbox-3572 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipBreakStrategy_271-269_1    |
+| pdfbox-3572 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_271_1   |
+| pdfbox-3572 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_271_0   |
++ -------------------------------------------------------------------------------------------------------------------- +

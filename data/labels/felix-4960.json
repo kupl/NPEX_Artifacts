@@ -1,0 +1,626 @@
+[
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (contentPath != null) {\n    // Remove leading slash, if present.\n    if (name.startsWith(\"/\")) {\n        name = name.substring(1);\n    }\n    // Check the module class path.\n    for (int i = 0; i < contentPath.size(); i++) {\n        if (contentPath.get(i).hasEntry(name)) {\n            // Use the class path index + 1 for creating the path so\n            // that we can differentiate between module content URLs\n            // (where the path will start with 0) and module class\n            // path URLs.\n            l.add(createURL(i + 1, name));\n        }\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 511,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_519-526_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "for (int i = 0; i < (contentPath != null ? contentPath.size() : false); i++) {\n    l.add(createURL(i + 1, name));\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 508,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_526_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--3--3--3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (contentPath != null) {\n    // Check the module class path.\n    for (int i = 0; i < contentPath.size(); i++) {\n        if (contentPath.get(i).hasEntry(name)) {\n            // Use the class path index + 1 for creating the path so\n            // that we can differentiate between module content URLs\n            // (where the path will start with 0) and module class\n            // path URLs.\n            l.add(createURL(i + 1, name));\n        }\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_526-526_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (contentPath == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_526-526_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "for (int i = 0; i < (contentPath != null ? contentPath.size() : true); i++) {\n    l.add(createURL(i + 1, name));\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 508,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_526_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--4--4--4--4--4--4--4--4--6--6--6--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--3--3--4--4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (getContentPath() == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_507-507_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (getContentPath() != null) {\n    // Special case \"/\" so that it returns a root URLs for\n    // each bundle class path entry...this isn't very\n    // clean or meaningful, but the Spring guys want it.\n    final java.util.List<org.apache.felix.framework.cache.Content> contentPath = getContentPath();\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_507-507_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "for (int i = 0; i < (contentPath != null ? contentPath.size() : 0); i++) {\n    l.add(createURL(i + 1, name));\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 508,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_511_2--6--6--6--6--6--6--6--6--6--6--6--6--6--6--4--4--5--6--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "for (int i = 0; i < (contentPath != null ? contentPath.size() : 1); i++) {\n    l.add(createURL(i + 1, name));\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 508,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_511_3--7--7--7--7--7--7--7--7--7--7--7--7--7--7--5--5--6--7--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Check the module class path.\nfor (int i = 0; i < (contentPath != null ? contentPath.size() : 0); i++) {\n    if (contentPath.get(i).hasEntry(name)) {\n        // Use the class path index + 1 for creating the path so\n        // that we can differentiate between module content URLs\n        // (where the path will start with 0) and module class\n        // path URLs.\n        l.add(createURL(i + 1, name));\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_526_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Special case \"/\" so that it returns a root URLs for\n// each bundle class path entry...this isn't very\n// clean or meaningful, but the Spring guys want it.\nfinal java.util.List<org.apache.felix.framework.cache.Content> contentPath = (getContentPath() != null) ? getContentPath() : this.m_contentPath",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_507_2--6--7--7--7--7--7--7--7--7--9--9--9--6--6--6--6--8--8--8--8--8--8--8--8--8--8--8--8--8--8--6--6--7--8--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : this.m_declaredNativeLibs).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_526_6--7--8--8--8--8--8--8--8--8--10--10--10--7--7--7--7--9--9--9--9--9--9--9--9--9--9--9--9--9--9--7--7--8--9--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : this.m_activationExcludes).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_526_8--8--9--9--9--9--9--9--9--9--11--11--11--8--8--8--8--10--10--10--10--10--10--10--10--10--10--10--10--10--10--8--8--9--10--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Check the module class path.\nfor (int i = 0; i < (contentPath != null ? contentPath.size() : org.osgi.framework.wiring.BundleRevision.TYPE_FRAGMENT); i++) {\n    if (contentPath.get(i).hasEntry(name)) {\n        // Use the class path index + 1 for creating the path so\n        // that we can differentiate between module content URLs\n        // (where the path will start with 0) and module class\n        // path URLs.\n        l.add(createURL(i + 1, name));\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_526_17--9--10--10--10--10--10--10--10--10--12--12--12--9--9--9--9--11--11--11--11--11--11--11--11--11--11--11--11--11--11--9--9--10--11--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Special case \"/\" so that it returns a root URLs for\n// each bundle class path entry...this isn't very\n// clean or meaningful, but the Spring guys want it.\nfinal java.util.List<org.apache.felix.framework.cache.Content> contentPath = (getContentPath() != null) ? getContentPath() : contentPath",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_507_1--10--11--11--11--11--11--11--11--11--13--13--13--10--10--10--10--12--12--12--12--12--12--12--12--12--12--12--12--12--12--10--10--11--12--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Special case \"/\" so that it returns a root URLs for\n// each bundle class path entry...this isn't very\n// clean or meaningful, but the Spring guys want it.\nfinal java.util.List<org.apache.felix.framework.cache.Content> contentPath = (getContentPath() != null) ? getContentPath() : l",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_507_0--11--12--12--12--12--12--12--12--12--14--14--14--11--11--11--11--13--13--13--13--13--13--13--13--13--13--13--13--13--13--11--11--12--13--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : this.m_declaredReqs).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_526_5--12--13--13--13--13--13--13--13--13--15--15--15--12--12--12--12--14--14--14--14--14--14--14--14--14--14--14--14--14--14--12--12--13--14--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : this.m_contentPath).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_526_1--13--14--14--14--14--14--14--14--14--16--16--16--13--13--13--13--15--15--15--15--15--15--15--15--15--15--15--15--15--15--13--13--14--15--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Check the module class path.\nfor (int i = 0; i < (contentPath != null ? contentPath.size() : 1); i++) {\n    if (contentPath.get(i).hasEntry(name)) {\n        // Use the class path index + 1 for creating the path so\n        // that we can differentiate between module content URLs\n        // (where the path will start with 0) and module class\n        // path URLs.\n        l.add(createURL(i + 1, name));\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_526_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Check the module class path.\nfor (int i = 0; i < (contentPath != null ? contentPath.size() : i); i++) {\n    if (contentPath.get(i).hasEntry(name)) {\n        // Use the class path index + 1 for creating the path so\n        // that we can differentiate between module content URLs\n        // (where the path will start with 0) and module class\n        // path URLs.\n        l.add(createURL(i + 1, name));\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_526_12--14--15--15--15--15--15--15--15--15--18--18--18--14--14--14--14--16--16--16--16--16--16--16--16--16--16--16--16--16--16--14--14--15--16--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Check the module class path.\nfor (int i = 0; i < (contentPath != null ? contentPath.size() : this.m_declaredActivationPolicy); i++) {\n    if (contentPath.get(i).hasEntry(name)) {\n        // Use the class path index + 1 for creating the path so\n        // that we can differentiate between module content URLs\n        // (where the path will start with 0) and module class\n        // path URLs.\n        l.add(createURL(i + 1, name));\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_526_16--15--16--16--16--16--16--16--16--16--19--19--19--15--15--15--15--17--17--17--17--17--17--17--17--17--17--17--17--17--17--15--15--16--17--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Check the module class path.\nfor (int i = 0; i < (contentPath != null ? contentPath.size() : org.apache.felix.framework.BundleRevisionImpl.EAGER_ACTIVATION); i++) {\n    if (contentPath.get(i).hasEntry(name)) {\n        // Use the class path index + 1 for creating the path so\n        // that we can differentiate between module content URLs\n        // (where the path will start with 0) and module class\n        // path URLs.\n        l.add(createURL(i + 1, name));\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_526_14--16--17--17--17--17--17--17--17--17--20--20--20--16--16--16--16--18--18--18--18--18--18--18--18--18--18--18--18--18--18--16--16--17--18--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Check the module class path.\nfor (int i = 0; i < (contentPath != null ? contentPath.size() : org.apache.felix.framework.BundleRevisionImpl.LAZY_ACTIVATION); i++) {\n    if (contentPath.get(i).hasEntry(name)) {\n        // Use the class path index + 1 for creating the path so\n        // that we can differentiate between module content URLs\n        // (where the path will start with 0) and module class\n        // path URLs.\n        l.add(createURL(i + 1, name));\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_526_15--17--18--18--18--18--18--18--18--18--21--21--21--17--17--17--17--19--19--19--19--19--19--19--19--19--19--19--19--19--19--17--17--18--19--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : this.m_headerMap).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_526_3--18--19--19--19--19--19--19--19--19--22--22--22--18--18--18--18--20--20--20--20--20--20--20--20--20--20--20--20--20--20--18--18--19--20--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : this.m_declaredCaps).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_526_4--19--20--20--20--20--20--20--20--20--23--23--23--19--19--19--19--21--21--21--21--21--21--21--21--21--21--21--21--21--21--19--19--20--21--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : l).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_526_0--20--21--21--21--21--21--21--21--21--24--24--24--20--20--20--20--22--22--22--22--22--22--22--22--22--22--22--22--22--22--20--20--21--22--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : this.m_activationIncludes).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_526_7--21--22--22--22--22--22--22--22--22--25--25--25--21--21--21--21--23--23--23--23--23--23--23--23--23--23--23--23--23--23--21--21--22--23--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : new java.util.ArrayList<>()).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_526_0--24--24--24--24--24--24--24--24--24--24--24--24--24--24--22--22--23--24--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (contentPath == null) {\n    return java.util.Collections.emptyEnumeration();\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_526-526_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (contentPath == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_526-526_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : new java.util.ArrayList<>()).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 508,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_511_0--25--25--25--25--25--25--25--25--25--25--25--25--25--25--24--24--24--25--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (contentPath == null) {\n    throw new java.net.MalformedURLException();\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_526-526_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (contentPath == null) {\n    return java.util.Collections.emptyEnumeration();\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 508,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_511-511_4--26--26--26--26--26--26--26--26--26--26--26--26--26--26--25--25--25--26--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (contentPath == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 508,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_511-511_1--27--27--27--27--27--27--27--27--27--27--27--27--27--27--26--26--26--27--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (contentPath == null) {\n    throw new java.net.MalformedURLException();\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 508,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_511-511_2--28--28--28--28--28--28--28--28--28--28--28--28--28--28--27--27--27--28--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (contentPath != null) {\n    for (int i = 0; i < contentPath.size(); i++) {\n        l.add(createURL(i + 1, name));\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 508,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_511-511_0--29--29--29--29--29--29--29--29--29--29--29--29--29--29--28--28--28--29--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Special case \"/\" so that it returns a root URLs for\n// each bundle class path entry...this isn't very\n// clean or meaningful, but the Spring guys want it.\nfinal java.util.List<org.apache.felix.framework.cache.Content> contentPath = (getContentPath() != null) ? getContentPath() : null",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_507_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (getContentPath() == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_507-507_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (getContentPath() == null) {\n    throw new java.net.MalformedURLException();\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_507-507_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Special case \"/\" so that it returns a root URLs for\n// each bundle class path entry...this isn't very\n// clean or meaningful, but the Spring guys want it.\nfinal java.util.List<org.apache.felix.framework.cache.Content> contentPath = (getContentPath() != null) ? getContentPath() : new java.util.ArrayList<>()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_507_1--30--30--30--30--30--30--30--30--30--30--30--30--30--30--29--29--29--30--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "if (getContentPath() == null) {\n    return java.util.Collections.emptyEnumeration();\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_507-507_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : new java.util.ArrayList()).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 508,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_511_0--22--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : new java.util.ArrayList()).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_526_0--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Special case \"/\" so that it returns a root URLs for\n// each bundle class path entry...this isn't very\n// clean or meaningful, but the Spring guys want it.\nfinal java.util.List<org.apache.felix.framework.cache.Content> contentPath = (getContentPath() != null) ? getContentPath() : new java.util.ArrayList()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_507_1--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : null).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_526_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "(contentPath != null ? contentPath : java.util.Collections.emptyList()).size()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 517,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_526_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Special case \"/\" so that it returns a root URLs for\n// each bundle class path entry...this isn't very\n// clean or meaningful, but the Spring guys want it.\nfinal java.util.List<org.apache.felix.framework.cache.Content> contentPath = (getContentPath() != null) ? getContentPath() : java.util.Collections.emptyList()",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 503,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_507_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-4960",
+        "patch": {
+            "contents": "// Check the module class path.\nfor (int i = 0; i < (contentPath != null ? contentPath.size() : -1); i++) {\n    if (contentPath.get(i).hasEntry(name)) {\n        // Use the class path index + 1 for creating the path so\n        // that we can differentiate between module content URLs\n        // (where the path will start with 0) and module class\n        // path URLs.\n        l.add(createURL(i + 1, name));\n    }\n}",
+            "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+            "patched_line": 516,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_526_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

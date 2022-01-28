@@ -1,0 +1,9 @@
+bug_id,label,detail,description,patch_id
+caelum-stella-e73113f-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipReturnParam_60-65_2
+caelum-stella-e73113f-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_65_2
+caelum-stella-e73113f-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_65_3
+caelum-stella-e73113f-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipBlockStrategy_65-65_0
+caelum-stella-e73113f-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_65-65_3
+caelum-stella-e73113f-buggy,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplacePointerStrategy_65_0
+caelum-stella-e73113f-buggy,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplaceEntireExpressionStrategy_65_5
+caelum-stella-e73113f-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_65_4

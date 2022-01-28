@@ -1,0 +1,7 @@
+bug_id,label,detail,description,patch_id
+Java-WebSocket_51b63a2,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipBlockStrategy_257-258_0
+Java-WebSocket_51b63a2,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipSinkStatementStrategy_257-257_1
+Java-WebSocket_51b63a2,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipReturnStrategy_257-257_4
+Java-WebSocket_51b63a2,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_257-257_3
+Java-WebSocket_51b63a2,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_257-257_2
+Java-WebSocket_51b63a2,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_257_0

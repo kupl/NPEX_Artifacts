@@ -1,0 +1,14 @@
++ ---------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id              | label                    | detail                       | description | patch_id                             |
++ ---------------------------------------------------------------------------------------------------------------------------------- +
+| jongo-f46f658-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_85-85_0    |
+| jongo-f46f658-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_85-85_2           |
+| jongo-f46f658-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_87_5 |
+| jongo-f46f658-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_85-85_3           |
+| jongo-f46f658-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_85-85_1            |
+| jongo-f46f658-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_87_6 |
+| jongo-f46f658-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_87_3 |
+| jongo-f46f658-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_87_4 |
+| jongo-f46f658-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_87_0          |
+| jongo-f46f658-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_87_2 |
++ ---------------------------------------------------------------------------------------------------------------------------------- +

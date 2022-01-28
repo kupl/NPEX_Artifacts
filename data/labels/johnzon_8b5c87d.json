@@ -1,0 +1,158 @@
+[
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "if (instance == null) {\n    return null;\n}",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnParam_43-43_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "if (instance == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_43-43_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "if (instance != null) {\n    return instance.name();\n}",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_43-43_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "if (instance == null) {\n    return \"\";\n}",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_43-43_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "return instance != null ? instance.name() : null",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_43_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "return instance != null ? instance.name() : new java.lang.String()",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_43_0--5--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "return instance != null ? instance.name() : \"\"",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_43_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "return instance != null ? instance.name() : \"null\"",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_43_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "if (instance == null) {\n    return \"null\";\n}",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_43-43_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "(instance != null ? instance : null).name()",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_43_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "return instance != null ? instance.name() : \"NULL\"",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_43_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "johnzon_8b5c87d",
+        "patch": {
+            "contents": "if (instance == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+            "patched_line": 45,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_43-43_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

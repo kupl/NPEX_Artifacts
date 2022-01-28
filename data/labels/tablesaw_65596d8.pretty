@@ -1,0 +1,12 @@
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id           | label                    | detail                       | description | patch_id                             |
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| tablesaw_65596d8 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_71-71_0    |
+| tablesaw_65596d8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_71_4 |
+| tablesaw_65596d8 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_71_2 |
+| tablesaw_65596d8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_71_3 |
+| tablesaw_65596d8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_71-71_2           |
+| tablesaw_65596d8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipThrowStrategy_71-71_1            |
+| tablesaw_65596d8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_71-71_3           |
+| tablesaw_65596d8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_71_0          |
++ ------------------------------------------------------------------------------------------------------------------------------- +

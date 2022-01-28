@@ -1,0 +1,13 @@
+bug_id,label,detail,description,patch_id
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplaceEntireExpressionStrategy_526_2
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_524-524_2
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_524-524_3
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_524-524_8
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_524-524_5
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_526_3
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_524-524_6
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipSinkStatementStrategy_524-524_0
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipReturnStrategy_524-524_7
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_524-524_4
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_526_0
+qpid-proton-j_6422e24,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_524-524_1

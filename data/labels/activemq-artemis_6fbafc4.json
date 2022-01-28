@@ -1,0 +1,93 @@
+[
+    {
+        "bug_id": "activemq-artemis_6fbafc4",
+        "patch": {
+            "contents": "if (inList != null) {\n    java.lang.StringBuffer answer = new java.lang.StringBuffer();\n    answer.append(right);\n    answer.append(\" \");\n    answer.append(getExpressionSymbol());\n    answer.append(\" ( \");\n    int count = 0;\n    for (java.lang.Object o : inList) {\n        if (count != 0) {\n            answer.append(\", \");\n        }\n        answer.append(o);\n        count++;\n    }\n    answer.append(\" )\");\n    return answer.toString();\n}",
+            "original_filepath": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+            "patched_line": 92,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_91-107_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "activemq-artemis_6fbafc4",
+        "patch": {
+            "contents": "if (inList != null) {\n    for (java.lang.Object o : inList) {\n        if (count != 0) {\n            answer.append(\", \");\n        }\n        answer.append(o);\n        count++;\n    }\n}",
+            "original_filepath": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+            "patched_line": 98,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_98-98_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "activemq-artemis_6fbafc4",
+        "patch": {
+            "contents": "for (java.lang.Object o : inList != null ? inList : null) {\n    if (count != 0) {\n        answer.append(\", \");\n    }\n    answer.append(o);\n    count++;\n}",
+            "original_filepath": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+            "patched_line": 98,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_98_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "activemq-artemis_6fbafc4",
+        "patch": {
+            "contents": "if (inList == null) {\n    return \"\";\n}",
+            "original_filepath": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+            "patched_line": 98,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_98-98_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "activemq-artemis_6fbafc4",
+        "patch": {
+            "contents": "if (inList == null) {\n    return null;\n}",
+            "original_filepath": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+            "patched_line": 98,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_98-98_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "activemq-artemis_6fbafc4",
+        "patch": {
+            "contents": "if (inList == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+            "patched_line": 98,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_98-98_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "activemq-artemis_6fbafc4",
+        "patch": {
+            "contents": "if (inList == null) {\n    return \"null\";\n}",
+            "original_filepath": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+            "patched_line": 98,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_98-98_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

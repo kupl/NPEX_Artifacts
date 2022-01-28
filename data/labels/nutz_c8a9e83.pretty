@@ -1,0 +1,34 @@
++ ---------------------------------------------------------------------------------------------------------------------------- +
+| bug_id       | label                    | detail                       | description | patch_id                              |
++ ---------------------------------------------------------------------------------------------------------------------------- +
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_606_4 |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_603-603_0   |
+| nutz_c8a9e83 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipReturnStrategy_606-606_13         |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_606-606_11          |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_603-603_8           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_603-603_6           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_603-603_10         |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_606-606_12          |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipBreakStrategy_606-605_1           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipBlockStrategy_606-607_0           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_603-603_9           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_606-606_2   |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_606-606_9           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipContinueStrategy_606-607_5        |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_606-606_7           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_603-603_7           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_603-603_3           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_603-603_4           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_603-603_5           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_606-606_8           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_606-606_6           |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_606-606_10          |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_603_1          |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_603-603_2         |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_606_1          |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | InitPointerStrategy_603-603_1         |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_606_0          |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_606-606_4         |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_606-606_3         |
+| nutz_c8a9e83 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_603_0          |
++ ---------------------------------------------------------------------------------------------------------------------------- +

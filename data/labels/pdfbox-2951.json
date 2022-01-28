@@ -1,0 +1,197 @@
+[
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "if (names != null) {\n    // we have to wait until all add() calls are done before building the name cache\n    // otherwise /Differences won't be accounted for\n    return names.contains(name);\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_106-106_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "if (names == null) {\n    return true;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_106-106_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "if (names == null) {\n    return false;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_106-106_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "// we have to wait until all add() calls are done before building the name cache\n// otherwise /Differences won't be accounted for\nreturn names != null ? names.contains(name) : true",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_106_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "// we have to wait until all add() calls are done before building the name cache\n// otherwise /Differences won't be accounted for\nreturn names != null ? names.contains(name) : false",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_106_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "(names != null ? names : new java.util.HashSet<>()).contains(name)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 112,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_106_0--2--2--2--2--2--2--2--2--2--2--4--4--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "if (names == null) {\n    names = new java.util.HashSet<>();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_106-106_1--3--3--3--3--3--3--3--3--3--3--5--5--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "// we have to wait until all add() calls are done before building the name cache\n// otherwise /Differences won't be accounted for\nreturn names != null ? names.contains(name) : name == null",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_106_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "(names != null ? names : new java.util.HashSet()).contains(name)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 112,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_106_1--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "if (names == null) {\n    names = new java.util.HashSet();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_106-106_1--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "if (names == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_106-106_2--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "if (names == null) {\n    names = null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_106-106_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "(names != null ? names : null).contains(name)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 112,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_106_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "(names != null ? names : java.util.Collections.emptySet()).contains(name)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 112,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_106_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2951",
+        "patch": {
+            "contents": "if (names == null) {\n    names = java.util.Collections.emptySet();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+            "patched_line": 110,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_106-106_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

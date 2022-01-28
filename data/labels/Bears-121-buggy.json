@@ -1,0 +1,2771 @@
+[
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 645,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_644-644_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    switch (type) {\n        case \"ALT\" :\n            return decodeAlt(channel, remoteAddress, sentence);\n        case \"SRT\" :\n            return decodeSrt(channel, remoteAddress, sentence);\n        case \"PER\" :\n            return decodePer(channel, remoteAddress, sentence);\n        default :\n            return null;\n    }\n}",
+            "original_filepath": "src/org/traccar/protocol/TrakMateProtocolDecoder.java",
+            "patched_line": 213,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_214-214_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/TrakMateProtocolDecoder.java",
+            "patched_line": 213,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_214-214_2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, org.jboss.netty.handler.codec.http.HttpResponseStatus.BAD_REQUEST);\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/OsmAndProtocolDecoder.java",
+            "patched_line": 73,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_152-153_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    switch (type) {\n        case \"NBR\" :\n            return decodeLbs(sentence, channel, remoteAddress);\n        case \"LINK\" :\n            return decodeLink(sentence, channel, remoteAddress);\n        default :\n            return decodeText(sentence, channel, remoteAddress);\n    }\n}",
+            "original_filepath": "src/org/traccar/protocol/H02ProtocolDecoder.java",
+            "patched_line": 381,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_383-383_1--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/MeitrackProtocolDecoder.java",
+            "patched_line": 312,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_315-315_1--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return binaryProtocolDecoder.decode(channel, remoteAddress, msg);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200ProtocolDecoder.java",
+            "patched_line": 40,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_42-42_0--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.model.Position position = initPosition(parser, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 663,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_662-662_0--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    send(channel, \"$FRERR,AuthError,Parse error\");\n}",
+            "original_filepath": "src/org/traccar/protocol/GpsGateProtocolDecoder.java",
+            "patched_line": 94,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_98-98_0--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, org.jboss.netty.handler.codec.http.HttpResponseStatus.OK);\n}",
+            "original_filepath": "src/org/traccar/protocol/OwnTracksProtocolDecoder.java",
+            "patched_line": 59,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_62-62_1--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200ProtocolDecoder.java",
+            "patched_line": 40,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_42-42_2--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, org.jboss.netty.handler.codec.http.HttpResponseStatus.OK);\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/OwnTracksProtocolDecoder.java",
+            "patched_line": 59,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_62-63_0--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    break;\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 109,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_115-101_1--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/AtrackProtocolDecoder.java",
+            "patched_line": 270,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_271-271_2--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, type, index);\n}",
+            "original_filepath": "src/org/traccar/protocol/EelinkProtocolDecoder.java",
+            "patched_line": 217,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_218-218_0--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    java.lang.String type = sentence.substring(typeStart, typeEnd);\n    switch (type) {\n        case \"NBR\" :\n            return decodeLbs(sentence, channel, remoteAddress);\n        case \"LINK\" :\n            return decodeLink(sentence, channel, remoteAddress);\n        default :\n            return decodeText(sentence, channel, remoteAddress);\n    }\n}",
+            "original_filepath": "src/org/traccar/protocol/H02ProtocolDecoder.java",
+            "patched_line": 380,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_382-383_0--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/GpsGateProtocolDecoder.java",
+            "patched_line": 101,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_107-107_3--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeVer(channel, remoteAddress, sentence) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 852,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_855_1--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeGsm(channel, remoteAddress, sentence) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 849,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_852_1--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "(channel != null ? channel.getPipeline() : null).get(org.jboss.netty.handler.codec.http.HttpRequestDecoder.class)",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_109_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeText(channel, remoteAddress, buf.toString(java.nio.charset.StandardCharsets.US_ASCII));\n}",
+            "original_filepath": "src/org/traccar/protocol/UlbotechProtocolDecoder.java",
+            "patched_line": 358,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_366-366_1--21--21--21--21--21--21--21--21--21--21--22--21--21--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/TaipProtocolDecoder.java",
+            "patched_line": 162,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_177-177_1--22--22--22--22--22--22--22--22--22--22--23--22--22--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/GlobalSatProtocolDecoder.java",
+            "patched_line": 238,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_240-240_3--23--23--23--23--23--23--23--23--23--23--24--23--23--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 67,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_72-72_3--24--24--24--24--24--24--24--24--24--24--25--24--24--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, \"INFORM: OK\");\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 69,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_76-76_0--25--25--25--25--25--25--25--25--25--25--26--25--25--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.model.Position position = initPosition(parser, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 745,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_744-744_0--26--26--26--26--26--26--26--26--26--26--27--26--26--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeFri(channel, remoteAddress, sentence) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 833,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_836_1--27--27--27--27--27--27--27--27--27--27--28--27--27--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeEri(channel, remoteAddress, sentence) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 836,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_839_0--28--28--28--28--28--28--28--28--28--28--29--28--28--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    if (channel != null) {\n        channel.write(org.jboss.netty.buffer.ChannelBuffers.copiedBuffer(java.lang.String.format(\"*TS01,ACK:%04X#\", org.traccar.helper.Checksum.crc16(org.traccar.helper.Checksum.CRC16_XMODEM, buf.toByteBuffer(1, buf.writerIndex() - 2))), java.nio.charset.StandardCharsets.US_ASCII));\n    }\n    return decodeText(channel, remoteAddress, buf.toString(java.nio.charset.StandardCharsets.US_ASCII));\n}",
+            "original_filepath": "src/org/traccar/protocol/UlbotechProtocolDecoder.java",
+            "patched_line": 354,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_360-366_0--29--29--29--29--29--29--29--29--29--29--30--29--29--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Jt600ProtocolDecoder.java",
+            "patched_line": 291,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_293-293_3--30--30--30--30--30--30--30--30--30--30--31--30--30--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/MegastekProtocolDecoder.java",
+            "patched_line": 377,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_379-379_2--31--31--31--31--31--31--31--31--31--31--32--31--31--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/GpsGateProtocolDecoder.java",
+            "patched_line": 95,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_101-101_3--32--32--32--32--32--32--32--32--32--32--33--32--32--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, buf.getByte(buf.writerIndex() - 2));\n}",
+            "original_filepath": "src/org/traccar/protocol/GatorProtocolDecoder.java",
+            "patched_line": 84,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_88-88_0--33--33--33--33--33--33--33--33--33--33--34--33--33--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 823,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_826-826_2--34--34--34--34--34--34--34--34--34--34--35--34--34--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Jt600ProtocolDecoder.java",
+            "patched_line": 291,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_293-293_2--35--35--35--35--35--35--35--35--35--35--36--35--35--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeAck(channel, remoteAddress, sentence, type) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 823,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_826_0--36--36--36--36--36--36--36--36--36--36--37--36--36--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeIgn(channel, remoteAddress, sentence) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 840,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_843_0--37--37--37--37--37--37--37--37--37--37--38--37--37--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeNew(channel, remoteAddress, sentence);\n}",
+            "original_filepath": "src/org/traccar/protocol/MegastekProtocolDecoder.java",
+            "patched_line": 377,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_379-379_0--38--38--38--38--38--38--38--38--38--38--39--38--38--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeInf(channel, remoteAddress, sentence) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 827,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_830_1--39--39--39--39--39--39--39--39--39--39--40--39--39--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 172,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_175-175_3--40--40--40--40--40--40--40--40--40--40--41--40--40--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 859,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_863-863_3--41--41--41--41--41--41--41--41--41--41--42--41--41--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/H02ProtocolDecoder.java",
+            "patched_line": 381,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_383-383_2--42--42--42--42--42--42--42--42--42--42--43--42--42--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/WialonProtocolDecoder.java",
+            "patched_line": 143,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_149-149_3--43--43--43--43--43--43--43--43--43--43--44--43--43--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeOther(channel, remoteAddress, sentence, type) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 855,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_858_0--44--44--44--44--44--44--44--44--44--44--45--44--44--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/FlextrackProtocolDecoder.java",
+            "patched_line": 83,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_87-87_2--45--45--45--45--45--45--45--45--45--45--46--45--45--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeObd(channel, remoteAddress, sentence) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 830,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_833_1--46--46--46--46--46--46--46--46--46--46--47--46--46--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/OwnTracksProtocolDecoder.java",
+            "patched_line": 59,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_62-62_3--47--47--47--47--47--47--47--47--47--47--48--47--47--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/UlbotechProtocolDecoder.java",
+            "patched_line": 358,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_366-366_2--48--48--48--48--48--48--48--48--48--48--49--48--48--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_109-109_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Tk102ProtocolDecoder.java",
+            "patched_line": 99,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_106-106_3--49--49--49--49--49--49--49--49--49--49--50--49--49--51--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, org.jboss.netty.handler.codec.http.HttpResponseStatus.OK);\n}",
+            "original_filepath": "src/org/traccar/protocol/OsmAndProtocolDecoder.java",
+            "patched_line": 143,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_149-149_1--50--50--50--50--50--50--50--50--50--50--51--50--50--52--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/ApelProtocolDecoder.java",
+            "patched_line": 117,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_121-121_2--51--51--51--51--51--51--51--51--51--51--52--51--51--53--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decode23(channel, remoteAddress, protocol, values);\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 173,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_177-177_0--53--53--53--53--53--53--53--53--53--53--53--53--53--53--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/AtrackProtocolDecoder.java",
+            "patched_line": 270,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_271-271_3--53--53--53--53--53--53--53--53--53--53--54--53--53--55--54--54--54--54--54--54--54--54--54--54--54--53--53--53--53--54--54--54--54--54--54--54--54--54--54--54--54--54--54--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/H02ProtocolDecoder.java",
+            "patched_line": 381,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_383-383_3--54--54--54--54--54--54--54--54--54--54--55--54--54--56--55--55--55--55--55--55--55--55--55--55--55--54--54--54--54--55--55--55--55--55--55--55--55--55--55--55--55--55--55--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    newIndex = index;\n    requestArchive(channel);\n}",
+            "original_filepath": "src/org/traccar/protocol/ApelProtocolDecoder.java",
+            "patched_line": 116,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_120-121_0--55--55--55--55--55--55--55--55--55--55--56--55--55--57--56--56--56--56--56--56--56--56--56--56--56--55--55--55--55--56--56--56--56--56--56--56--56--56--56--56--56--56--56--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 174,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_177-177_3--56--56--56--56--56--56--56--56--56--56--57--56--56--58--57--57--57--57--57--57--57--57--57--57--57--56--56--56--56--57--57--57--57--57--57--57--57--57--57--57--57--57--57--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/GpsGateProtocolDecoder.java",
+            "patched_line": 101,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_107-107_2--57--57--57--57--57--57--57--57--57--57--58--57--57--59--58--58--58--58--58--58--58--58--58--58--58--57--57--57--57--58--58--58--58--58--58--58--58--58--58--58--58--58--58--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    send(channel, \"$FRERR,AuthError,Parse error\");\n}",
+            "original_filepath": "src/org/traccar/protocol/GpsGateProtocolDecoder.java",
+            "patched_line": 94,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_101-101_0--58--58--58--58--58--58--58--58--58--58--59--58--58--60--59--59--59--59--59--59--59--59--59--59--59--58--58--58--58--59--59--59--59--59--59--59--59--59--59--59--59--59--59--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/GlobalSatProtocolDecoder.java",
+            "patched_line": 238,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_240-240_2--59--59--59--59--59--59--59--59--59--59--60--59--59--61--60--60--60--60--60--60--60--60--60--60--60--59--59--59--59--60--60--60--60--60--60--60--60--60--60--60--60--60--60--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 69,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_76-76_2--60--60--60--60--60--60--60--60--60--60--61--60--60--62--61--61--61--61--61--61--61--61--61--61--61--60--60--60--60--61--61--61--61--61--61--61--61--61--61--61--61--61--61--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "(channel != null ? channel.getPipeline() : new org.jboss.netty.handler.codec.http.HttpRequestDecoder()).get(org.jboss.netty.handler.codec.http.HttpRequestDecoder.class)",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_109_0--61--61--61--61--61--61--61--61--61--61--62--61--61--63--62--62--62--62--62--62--62--62--62--62--62--61--61--61--61--62--62--62--62--62--62--62--62--62--62--62--62--62--62--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/OsmAndProtocolDecoder.java",
+            "patched_line": 73,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_152-152_3--62--62--62--62--62--62--62--62--62--62--63--62--62--64--63--63--63--63--63--63--63--63--63--63--63--62--62--62--62--63--63--63--63--63--63--63--63--63--63--63--63--63--63--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62--62"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return textProtocolDecoder.decode(channel, remoteAddress, msg);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200ProtocolDecoder.java",
+            "patched_line": 41,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_44-44_0--63--63--63--63--63--63--63--63--63--63--64--63--63--65--64--64--64--64--64--64--64--64--64--64--64--63--63--63--63--64--64--64--64--64--64--64--64--64--64--64--64--64--64--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    result = decodeAck(channel, remoteAddress, sentence, type);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 823,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_826-826_0--64--64--64--64--64--64--64--64--64--64--65--64--64--66--65--65--65--65--65--65--65--65--65--65--65--64--64--64--64--65--65--65--65--65--65--65--65--65--65--65--65--65--65--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    position = decodePayload(channel, remoteAddress, bits);\n    buffers.remove(id);\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 118,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_124-125_0--65--65--65--65--65--65--65--65--65--65--66--65--65--67--66--66--66--66--66--66--66--66--66--66--66--65--65--65--65--66--66--66--66--66--66--66--66--66--66--66--66--66--66--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    // Version check\n    send(channel, \"$FRVER,1,0,GpsGate Server 1.0\");\n}",
+            "original_filepath": "src/org/traccar/protocol/GpsGateProtocolDecoder.java",
+            "patched_line": 101,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_107-107_0--66--66--66--66--66--66--66--66--66--66--67--66--66--68--67--67--67--67--67--67--67--67--67--67--67--66--66--66--66--67--67--67--67--67--67--67--67--67--67--67--67--67--67--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeU01(sentence, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Jt600ProtocolDecoder.java",
+            "patched_line": 292,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_295-295_0--67--67--67--67--67--67--67--67--67--67--68--67--67--69--68--68--68--68--68--68--68--68--68--68--68--67--67--67--67--68--68--68--68--68--68--68--68--68--68--68--68--68--68--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/OsmAndProtocolDecoder.java",
+            "patched_line": 73,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_152-152_2--68--68--68--68--68--68--68--68--68--68--69--68--68--70--69--69--69--69--69--69--69--69--69--69--69--68--68--68--68--69--69--69--69--69--69--69--69--69--69--69--69--69--69--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/GpsGateProtocolDecoder.java",
+            "patched_line": 95,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_98-98_2--69--69--69--69--69--69--69--69--69--69--70--69--69--71--70--70--70--70--70--70--70--70--70--70--70--69--69--69--69--70--70--70--70--70--70--70--70--70--70--70--70--70--70--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.model.Position position = initPosition(parser, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 393,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_392-392_0--70--70--70--70--70--70--70--70--70--70--71--70--70--72--71--71--71--71--71--71--71--71--71--71--71--70--70--70--70--71--71--71--71--71--71--71--71--71--71--71--71--71--71--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 472,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_471-471_1--71--71--71--71--71--71--71--71--71--71--72--71--71--73--72--72--72--72--72--72--72--72--72--72--72--71--71--71--71--72--72--72--72--72--72--72--72--72--72--72--72--72--72--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/MegastekProtocolDecoder.java",
+            "patched_line": 379,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_381-381_2--72--72--72--72--72--72--72--72--72--72--73--72--72--74--73--73--73--73--73--73--73--73--73--73--73--72--72--72--72--73--73--73--73--73--73--73--73--73--73--73--73--73--73--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    break;\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 118,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_124-101_1--73--73--73--73--73--73--73--73--73--73--74--73--73--75--74--74--74--74--74--74--74--74--74--74--74--73--73--73--73--74--74--74--74--74--74--74--74--74--74--74--74--74--74--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200ProtocolDecoder.java",
+            "patched_line": 42,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_44-44_3--74--74--74--74--74--74--74--74--74--74--75--74--74--76--75--75--75--75--75--75--75--75--75--75--75--74--74--74--74--75--75--75--75--75--75--75--75--75--75--75--75--75--75--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendReply(channel, buf.readUnsignedShort());\n}",
+            "original_filepath": "src/org/traccar/protocol/GalileoProtocolDecoder.java",
+            "patched_line": 284,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_295-295_0--75--75--75--75--75--75--75--75--75--75--76--75--75--77--76--76--76--76--76--76--76--76--76--76--76--75--75--75--75--76--76--76--76--76--76--76--76--76--76--76--76--76--76--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (((channel != null ? channel.getPipeline().get(org.jboss.netty.handler.codec.http.HttpRequestDecoder.class) : false) != null) || org.traccar.Context.getConfig().getBoolean(\"decoder.ignoreSessionCache\")) {\n    long deviceId = findDeviceId(remoteAddress, uniqueIds);\n    if (deviceId != 0) {\n        if (org.traccar.Context.getConnectionManager() != null) {\n            org.traccar.Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);\n        }\n        return new org.traccar.DeviceSession(deviceId);\n    } else {\n        return null;\n    }\n}",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_109_3--76--76--76--76--76--76--76--76--76--76--77--76--76--78--77--77--77--77--77--77--77--77--77--77--77--76--76--76--76--77--77--77--77--77--77--77--77--77--77--77--77--77--77--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 71,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_80-80_3--77--77--77--77--77--77--77--77--77--77--78--77--77--79--78--78--78--78--78--78--78--78--78--78--78--77--77--77--77--78--78--78--78--78--78--78--78--78--78--78--78--78--78--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeOriginal(channel, remoteAddress, sentence);\n}",
+            "original_filepath": "src/org/traccar/protocol/GlobalSatProtocolDecoder.java",
+            "patched_line": 238,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_240-240_0--78--78--78--78--78--78--78--78--78--78--79--78--78--80--79--79--79--79--79--79--79--79--79--79--79--78--78--78--78--79--79--79--79--79--79--79--79--79--79--79--79--79--79--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 118,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_124-124_5--79--79--79--79--79--79--79--79--79--79--80--79--79--81--80--80--80--80--80--80--80--80--80--80--80--79--79--79--79--80--80--80--80--80--80--80--80--80--80--80--80--80--80--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79--79"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.model.Position position = initPosition(parser, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 715,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_714-714_0--80--80--80--80--80--80--80--80--80--80--81--80--80--82--81--81--81--81--81--81--81--81--81--81--81--80--80--80--80--81--81--81--81--81--81--81--81--81--81--81--81--81--81--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/WialonProtocolDecoder.java",
+            "patched_line": 143,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_149-149_2--81--81--81--81--81--81--81--81--81--81--82--81--81--83--82--82--82--82--82--82--82--82--82--82--82--81--81--81--81--82--82--82--82--82--82--82--82--82--82--82--82--82--82--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, \"BINGPS: OK\");\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 71,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_80-80_1--82--82--82--82--82--82--82--82--82--82--83--82--82--84--83--83--83--83--83--83--83--83--83--83--83--82--82--82--82--83--83--83--83--83--83--83--83--83--83--83--83--83--83--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/GatorProtocolDecoder.java",
+            "patched_line": 84,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_88-88_2--83--83--83--83--83--83--83--83--83--83--84--83--83--85--84--84--84--84--84--84--84--84--84--84--84--83--83--83--83--84--84--84--84--84--84--84--84--84--84--84--84--84--84--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/MegastekProtocolDecoder.java",
+            "patched_line": 379,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_381-381_3--84--84--84--84--84--84--84--84--84--84--85--84--84--86--85--85--85--85--85--85--85--85--85--85--85--84--84--84--84--85--85--85--85--85--85--85--85--85--85--85--85--85--85--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 393,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_392-392_1--85--85--85--85--85--85--85--85--85--85--86--85--85--87--86--86--86--86--86--86--86--86--86--86--86--85--85--85--85--86--86--86--86--86--86--86--86--86--86--86--86--86--86--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeAlternative(channel, remoteAddress, sentence);\n}",
+            "original_filepath": "src/org/traccar/protocol/GlobalSatProtocolDecoder.java",
+            "patched_line": 240,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_242-242_0--86--86--86--86--86--86--86--86--86--86--87--86--86--88--87--87--87--87--87--87--87--87--87--87--87--86--86--86--86--87--87--87--87--87--87--87--87--87--87--87--87--87--87--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 172,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_175-175_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.model.Position position = initPosition(parser, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 628,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_627-627_0--88--88--88--88--88--88--88--88--88--88--89--88--88--90--89--89--89--89--89--89--89--89--89--89--89--87--87--87--87--88--88--88--88--88--88--88--88--88--88--88--88--88--88--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 859,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_863-863_2--89--89--89--89--89--89--89--89--89--89--90--89--89--91--90--90--90--90--90--90--90--90--90--90--90--88--88--88--88--89--89--89--89--89--89--89--89--89--89--89--89--89--89--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendAcknowledgement(channel, parser.next());\n}",
+            "original_filepath": "src/org/traccar/protocol/FlextrackProtocolDecoder.java",
+            "patched_line": 83,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_87-87_1--90--90--90--90--90--90--90--90--90--90--91--90--90--92--91--91--91--91--91--91--91--91--91--91--91--89--89--89--89--90--90--90--90--90--90--90--90--90--90--90--90--90--90--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 67,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_72-72_2--91--91--91--91--91--91--91--91--91--91--92--91--91--93--92--92--92--92--92--92--92--92--92--92--92--90--90--90--90--91--91--91--91--91--91--91--91--91--91--91--91--91--91--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, \"#AP#\", null);// heartbeat\n\n}",
+            "original_filepath": "src/org/traccar/protocol/WialonProtocolDecoder.java",
+            "patched_line": 143,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_149-149_0--92--92--92--92--92--92--92--92--92--92--93--92--92--94--93--93--93--93--93--93--93--93--93--93--93--91--91--91--91--92--92--92--92--92--92--92--92--92--92--92--92--92--92--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/EelinkProtocolDecoder.java",
+            "patched_line": 217,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_218-218_2--93--93--93--93--93--93--93--93--93--93--94--93--93--95--94--94--94--94--94--94--94--94--94--94--94--92--92--92--92--93--93--93--93--93--93--93--93--93--93--93--93--93--93--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/OrionProtocolDecoder.java",
+            "patched_line": 65,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_69-69_3--94--94--94--94--94--94--94--94--94--94--95--94--94--96--95--95--95--95--95--95--95--95--95--95--95--93--93--93--93--94--94--94--94--94--94--94--94--94--94--94--94--94--94--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/GlobalSatProtocolDecoder.java",
+            "patched_line": 240,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_242-242_3--95--95--95--95--95--95--95--95--95--95--96--95--95--97--96--96--96--96--96--96--96--96--96--96--96--94--94--94--94--95--95--95--95--95--95--95--95--95--95--95--95--95--95--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeIda(channel, remoteAddress, sentence) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 843,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_846_0--96--96--96--96--96--96--96--96--96--96--97--96--96--98--97--97--97--97--97--97--97--97--97--97--97--95--95--95--95--96--96--96--96--96--96--96--96--96--96--96--96--96--96--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/TrakMateProtocolDecoder.java",
+            "patched_line": 213,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_214-214_1--97--97--97--97--97--97--97--97--97--97--98--97--97--99--98--98--98--98--98--98--98--98--98--98--98--96--96--96--96--97--97--97--97--97--97--97--97--97--97--97--97--97--97--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeBasic(channel, remoteAddress, sentence, type) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 859,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_863_0--98--98--98--98--98--98--98--98--98--98--99--98--98--100--99--99--99--99--99--99--99--99--99--99--99--97--97--97--97--98--98--98--98--98--98--98--98--98--98--98--98--98--98--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.protocol.OrionProtocolDecoder.sendResponse(channel, buf);\n}",
+            "original_filepath": "src/org/traccar/protocol/OrionProtocolDecoder.java",
+            "patched_line": 65,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_69-69_0--99--99--99--99--99--99--99--99--99--99--100--99--99--101--100--100--100--100--100--100--100--100--100--100--100--98--98--98--98--99--99--99--99--99--99--99--99--99--99--99--99--99--99--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.model.Position position = initPosition(parser, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 689,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_688-688_0--100--100--100--100--100--100--100--100--100--100--101--100--100--102--101--101--101--101--101--101--101--101--101--101--101--99--99--99--99--100--100--100--100--100--100--100--100--100--100--100--100--100--100--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/GpsGateProtocolDecoder.java",
+            "patched_line": 95,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_98-98_3--101--101--101--101--101--101--101--101--101--101--102--101--101--103--102--102--102--102--102--102--102--102--102--102--102--100--100--100--100--101--101--101--101--101--101--101--101--101--101--101--101--101--101--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Avl301ProtocolDecoder.java",
+            "patched_line": 75,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_82-82_2--102--102--102--102--102--102--102--102--102--102--103--102--102--104--103--103--103--103--103--103--103--103--103--103--103--101--101--101--101--102--102--102--102--102--102--102--102--102--102--102--102--102--102--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeEri(channel, remoteAddress, sentence) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 836,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_839_1--103--103--103--103--103--103--103--103--103--103--104--103--103--105--104--104--104--104--104--104--104--104--104--104--104--102--102--102--102--103--103--103--103--103--103--103--103--103--103--103--103--103--103--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    result = decodeBasic(channel, remoteAddress, sentence, type);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 859,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_863-863_0--104--104--104--104--104--104--104--104--104--104--105--104--104--106--105--105--105--105--105--105--105--105--105--105--105--103--103--103--103--104--104--104--104--104--104--104--104--104--104--104--104--104--104--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/MegastekProtocolDecoder.java",
+            "patched_line": 377,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_379-379_3--105--105--105--105--105--105--105--105--105--105--106--105--105--107--106--106--106--106--106--106--106--106--106--106--106--104--104--104--104--105--105--105--105--105--105--105--105--105--105--105--105--105--105--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    if ((channel.getPipeline().get(org.jboss.netty.handler.codec.http.HttpRequestDecoder.class) != null) || org.traccar.Context.getConfig().getBoolean(\"decoder.ignoreSessionCache\")) {\n        long deviceId = findDeviceId(remoteAddress, uniqueIds);\n        if (deviceId != 0) {\n            if (org.traccar.Context.getConnectionManager() != null) {\n                org.traccar.Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);\n            }\n            return new org.traccar.DeviceSession(deviceId);\n        } else {\n            return null;\n        }\n    }\n}",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_109-109_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Tk103ProtocolDecoder.java",
+            "patched_line": 208,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_212-212_3--106--106--106--106--106--106--106--106--106--106--107--106--106--108--107--107--107--107--107--107--107--107--107--107--107--105--105--105--105--106--106--106--106--106--106--106--106--106--106--106--106--106--106--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Tk102ProtocolDecoder.java",
+            "patched_line": 99,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_106-106_2--107--107--107--107--107--107--107--107--107--107--108--107--107--109--108--108--108--108--108--108--108--108--108--108--108--106--106--106--106--107--107--107--107--107--107--107--107--107--107--107--107--107--107--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, type);\n}",
+            "original_filepath": "src/org/traccar/protocol/Avl301ProtocolDecoder.java",
+            "patched_line": 75,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_82-82_0--108--108--108--108--108--108--108--108--108--108--109--108--108--110--109--109--109--109--109--109--109--109--109--109--109--107--107--107--107--108--108--108--108--108--108--108--108--108--108--108--108--108--108--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, \"ADDLOG: OK\");\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 67,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_72-72_0--109--109--109--109--109--109--109--109--109--109--110--109--109--111--110--110--110--110--110--110--110--110--110--110--110--108--108--108--108--109--109--109--109--109--109--109--109--109--109--109--109--109--109--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 109,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_115-115_4--110--110--110--110--110--110--110--110--110--110--111--110--110--112--111--111--111--111--111--111--111--111--111--111--111--109--109--109--109--110--110--110--110--110--110--110--110--110--110--110--110--110--110--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 745,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_744-744_1--111--111--111--111--111--111--111--111--111--111--112--111--111--113--112--112--112--112--112--112--112--112--112--112--112--110--110--110--110--111--111--111--111--111--111--111--111--111--111--111--111--111--111--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeNetwork(channel, remoteAddress, sentence);\n}",
+            "original_filepath": "src/org/traccar/protocol/Tk103ProtocolDecoder.java",
+            "patched_line": 210,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_214-214_0--112--112--112--112--112--112--112--112--112--112--113--112--112--114--113--113--113--113--113--113--113--113--113--113--113--111--111--111--111--112--112--112--112--112--112--112--112--112--112--112--112--112--112--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 825,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_828-828_3--113--113--113--113--113--113--113--113--113--113--114--113--113--115--114--114--114--114--114--114--114--114--114--114--114--112--112--112--112--113--113--113--113--113--113--113--113--113--113--113--113--113--113--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.helper.Parser parser = new org.traccar.helper.Parser(org.traccar.protocol.FlextrackProtocolDecoder.PATTERN_LOGON, sentence);\n    if (!parser.matches()) {\n        return null;\n    }\n    sendAcknowledgement(channel, parser.next());\n    java.lang.String id = parser.next();\n    java.lang.String iccid = parser.next();\n    getDeviceSession(channel, remoteAddress, iccid, id);\n}",
+            "original_filepath": "src/org/traccar/protocol/FlextrackProtocolDecoder.java",
+            "patched_line": 79,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_82-92_0--114--114--114--114--114--114--114--114--114--114--115--114--114--116--115--115--115--115--115--115--115--115--115--115--115--113--113--113--113--114--114--114--114--114--114--114--114--114--114--114--114--114--114--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113--113"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/ApelProtocolDecoder.java",
+            "patched_line": 117,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_121-121_3--115--115--115--115--115--115--115--115--115--115--116--115--115--117--116--116--116--116--116--116--116--116--116--116--116--114--114--114--114--115--115--115--115--115--115--115--115--115--115--115--115--115--115--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114--114"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    switch (type) {\n        case \"INF\" :\n            result = decodeInf(channel, remoteAddress, sentence);\n            break;\n        case \"OBD\" :\n            result = decodeObd(channel, remoteAddress, sentence);\n            break;\n        case \"FRI\" :\n            result = decodeFri(channel, remoteAddress, sentence);\n            break;\n        case \"ERI\" :\n            result = decodeEri(channel, remoteAddress, sentence);\n            break;\n        case \"IGN\" :\n        case \"IGF\" :\n            result = decodeIgn(channel, remoteAddress, sentence);\n            break;\n        case \"IDA\" :\n            result = decodeIda(channel, remoteAddress, sentence);\n            break;\n        case \"WIF\" :\n            result = decodeWif(channel, remoteAddress, sentence);\n            break;\n        case \"GSM\" :\n            result = decodeGsm(channel, remoteAddress, sentence);\n            break;\n        case \"VER\" :\n            result = decodeVer(channel, remoteAddress, sentence);\n            break;\n        default :\n            result = decodeOther(channel, remoteAddress, sentence, type);\n            break;\n    }\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 825,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_828-828_1--116--116--116--116--116--116--116--116--116--116--117--116--116--118--117--117--117--117--117--117--117--117--117--117--117--115--115--115--115--116--116--116--116--116--116--116--116--116--116--116--116--116--116--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115--115"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.helper.BitBuffer bits = new org.traccar.helper.BitBuffer();\n    bits.writeEncoded(parser.next().getBytes(java.nio.charset.StandardCharsets.US_ASCII));\n    position = decodePayload(channel, remoteAddress, bits);\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 107,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_113-115_0--117--117--117--117--117--117--117--117--117--117--118--117--117--119--118--118--118--118--118--118--118--118--118--118--118--116--116--116--116--117--117--117--117--117--117--117--117--117--117--117--117--117--117--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116--116"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Avl301ProtocolDecoder.java",
+            "patched_line": 75,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_82-82_3--118--118--118--118--118--118--118--118--118--118--119--118--118--120--119--119--119--119--119--119--119--119--119--119--119--117--117--117--117--118--118--118--118--118--118--118--118--118--118--118--118--118--118--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117--117"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, \"CONFIG: OK\");\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 65,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_68-68_0--119--119--119--119--119--119--119--119--119--119--120--119--119--121--120--120--120--120--120--120--120--120--120--120--120--118--118--118--118--119--119--119--119--119--119--119--119--119--119--119--119--119--119--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118--118"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Jt600ProtocolDecoder.java",
+            "patched_line": 293,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_295-295_3--120--120--120--120--120--120--120--120--120--120--121--120--120--122--121--121--121--121--121--121--121--121--121--121--121--119--119--119--119--120--120--120--120--120--120--120--120--120--120--120--120--120--120--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119--119"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Jt600ProtocolDecoder.java",
+            "patched_line": 293,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_295-295_2--121--121--121--121--121--121--121--121--121--121--122--121--121--123--122--122--122--122--122--122--122--122--122--122--122--120--120--120--120--121--121--121--121--121--121--121--121--121--121--121--121--121--121--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120--120"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, \"#AB#\", messages.length);\n}",
+            "original_filepath": "src/org/traccar/protocol/WialonProtocolDecoder.java",
+            "patched_line": 161,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_174-174_1--122--122--122--122--122--122--122--122--122--122--123--122--122--124--123--123--123--123--123--123--123--123--123--123--123--121--121--121--121--122--122--122--122--122--122--122--122--122--122--122--122--122--122--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121--121"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 71,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_80-80_2--123--123--123--123--123--123--123--123--123--123--124--123--123--125--124--124--124--124--124--124--124--124--124--124--124--122--122--122--122--123--123--123--123--123--123--123--123--123--123--123--123--123--123--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122--122"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeObd(channel, remoteAddress, sentence) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 830,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_833_0--124--124--124--124--124--124--124--124--124--124--125--124--124--126--125--125--125--125--125--125--125--125--125--125--125--123--123--123--123--124--124--124--124--124--124--124--124--124--124--124--124--124--124--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123--123"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Tk103ProtocolDecoder.java",
+            "patched_line": 210,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_214-214_2--125--125--125--125--125--125--125--125--125--125--126--125--125--127--126--126--126--126--126--126--126--126--126--126--126--124--124--124--124--125--125--125--125--125--125--125--125--125--125--125--125--125--125--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124--124"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeString(channel, remoteAddress, buf.toString(java.nio.charset.StandardCharsets.US_ASCII).trim());\n}",
+            "original_filepath": "src/org/traccar/protocol/AtrackProtocolDecoder.java",
+            "patched_line": 270,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_271-271_0--126--126--126--126--126--126--126--126--126--126--127--126--126--128--127--127--127--127--127--127--127--127--127--127--127--125--125--125--125--126--126--126--126--126--126--126--126--126--126--126--126--126--126--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125--125"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decode9(channel, remoteAddress, values);\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 172,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_175-175_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeW01(sentence, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Jt600ProtocolDecoder.java",
+            "patched_line": 291,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_293-293_0--128--128--128--128--128--128--128--128--128--128--129--128--128--130--129--129--129--129--129--129--129--129--129--129--129--126--126--126--126--127--127--127--127--127--127--127--127--127--127--127--127--127--127--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126--126"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/WialonProtocolDecoder.java",
+            "patched_line": 161,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_174-174_3--129--129--129--129--129--129--129--129--129--129--130--129--129--131--130--130--130--130--130--130--130--130--130--130--130--127--127--127--127--128--128--128--128--128--128--128--128--128--128--128--128--128--128--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127--127"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/FlextrackProtocolDecoder.java",
+            "patched_line": 83,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_87-87_3--130--130--130--130--130--130--130--130--130--130--131--130--130--132--131--131--131--131--131--131--131--131--131--131--131--128--128--128--128--129--129--129--129--129--129--129--129--129--129--129--129--129--129--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128--128"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    switch (type) {\n        case \"INF\" :\n            result = decodeInf(channel, remoteAddress, sentence);\n            break;\n        case \"OBD\" :\n            result = decodeObd(channel, remoteAddress, sentence);\n            break;\n        case \"FRI\" :\n            result = decodeFri(channel, remoteAddress, sentence);\n            break;\n        case \"ERI\" :\n            result = decodeEri(channel, remoteAddress, sentence);\n            break;\n        case \"IGN\" :\n        case \"IGF\" :\n            result = decodeIgn(channel, remoteAddress, sentence);\n            break;\n        case \"IDA\" :\n            result = decodeIda(channel, remoteAddress, sentence);\n            break;\n        case \"WIF\" :\n            result = decodeWif(channel, remoteAddress, sentence);\n            break;\n        case \"GSM\" :\n            result = decodeGsm(channel, remoteAddress, sentence);\n            break;\n        case \"VER\" :\n            result = decodeVer(channel, remoteAddress, sentence);\n            break;\n        default :\n            result = decodeOther(channel, remoteAddress, sentence, type);\n            break;\n    }\n    if (result == null) {\n        result = decodeBasic(channel, remoteAddress, sentence, type);\n    }\n    if (result != null) {\n        if (result instanceof org.traccar.model.Position) {\n            ((org.traccar.model.Position) (result)).set(org.traccar.model.Position.KEY_TYPE, type);\n        } else {\n            for (org.traccar.model.Position p : ((java.util.List<org.traccar.model.Position>) (result))) {\n                p.set(org.traccar.model.Position.KEY_TYPE, type);\n            }\n        }\n    }\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 824,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_828-866_0--131--131--131--131--131--131--131--131--131--131--132--131--131--133--132--132--132--132--132--132--132--132--132--132--132--129--129--129--129--130--130--130--130--130--130--130--130--130--130--130--130--130--130--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129--129"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/GlobalSatProtocolDecoder.java",
+            "patched_line": 240,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_242-242_2--132--132--132--132--132--132--132--132--132--132--133--132--132--134--133--133--133--133--133--133--133--133--133--133--133--130--130--130--130--131--131--131--131--131--131--131--131--131--131--131--131--131--131--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130--130"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeBattery(channel, remoteAddress, sentence);\n}",
+            "original_filepath": "src/org/traccar/protocol/Tk103ProtocolDecoder.java",
+            "patched_line": 208,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_212-212_0--133--133--133--133--133--133--133--133--133--133--134--133--133--135--134--134--134--134--134--134--134--134--134--134--134--131--131--131--131--132--132--132--132--132--132--132--132--132--132--132--132--132--132--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131--131"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 825,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_828-828_2--134--134--134--134--134--134--134--134--134--134--135--134--134--136--135--135--135--135--135--135--135--135--135--135--135--132--132--132--132--133--133--133--133--133--133--133--133--133--133--133--133--133--133--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132--132"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/GalileoProtocolDecoder.java",
+            "patched_line": 284,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_295-295_1--135--135--135--135--135--135--135--135--135--135--136--135--135--137--136--136--136--136--136--136--136--136--136--136--136--133--133--133--133--134--134--134--134--134--134--134--134--134--134--134--134--134--134--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133--133"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Tk103ProtocolDecoder.java",
+            "patched_line": 208,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_212-212_2--136--136--136--136--136--136--136--136--136--136--137--136--136--138--137--137--137--137--137--137--137--137--137--137--137--134--134--134--134--135--135--135--135--135--135--135--135--135--135--135--135--135--135--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134--134"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "position = (channel != null) ? decodePayload(channel, remoteAddress, bits) : null",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 109,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_124_1--137--137--137--137--137--137--137--137--137--137--138--137--137--139--138--138--138--138--138--138--138--138--138--138--138--135--135--135--135--136--136--136--136--136--136--136--136--136--136--136--136--136--136--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135--135"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeWif(channel, remoteAddress, sentence) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 846,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_849_1--138--138--138--138--138--138--138--138--138--138--139--138--138--140--139--139--139--139--139--139--139--139--139--139--139--136--136--136--136--137--137--137--137--137--137--137--137--137--137--137--137--137--137--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136--136"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeOld(channel, remoteAddress, sentence);\n}",
+            "original_filepath": "src/org/traccar/protocol/MegastekProtocolDecoder.java",
+            "patched_line": 378,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_381-381_0--139--139--139--139--139--139--139--139--139--139--140--139--139--141--140--140--140--140--140--140--140--140--140--140--140--137--137--137--137--138--138--138--138--138--138--138--138--138--138--138--138--138--138--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137--137"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/OrionProtocolDecoder.java",
+            "patched_line": 65,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_69-69_2--140--140--140--140--140--140--140--140--140--140--141--140--140--142--141--141--141--141--141--141--141--141--141--141--141--138--138--138--138--139--139--139--139--139--139--139--139--139--139--139--139--139--139--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138--138"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 823,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_826-826_3--141--141--141--141--141--141--141--141--141--141--142--141--141--143--142--142--142--142--142--142--142--142--142--142--142--139--139--139--139--140--140--140--140--140--140--140--140--140--140--140--140--140--140--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139--139"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 424,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_423-423_1--142--142--142--142--142--142--142--142--142--142--143--142--142--144--143--143--143--143--143--143--143--143--143--143--143--140--140--140--140--141--141--141--141--141--141--141--141--141--141--141--141--141--141--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140--140"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "position = (channel != null) ? decodePayload(channel, remoteAddress, bits) : new org.traccar.model.Position()",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 109,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_115_0--143--143--143--143--143--143--143--143--143--143--144--143--143--145--144--144--144--144--144--144--144--144--144--144--144--141--141--141--141--142--142--142--142--142--142--142--142--142--142--142--142--142--142--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141--141"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, \"BINGPS: OK\");\n    org.jboss.netty.handler.codec.http.QueryStringDecoder decoder = new org.jboss.netty.handler.codec.http.QueryStringDecoder(request.getUri());\n    org.traccar.DeviceSession deviceSession = getDeviceSession(channel, remoteAddress, decoder.getParameters().get(\"imei\").get(0));\n    if (deviceSession == null) {\n        return null;\n    }\n    java.util.List<org.traccar.model.Position> positions = new java.util.LinkedList<>();\n    org.jboss.netty.buffer.ChannelBuffer buf = request.getContent();\n    while (buf.readableBytes() > 2) {\n        buf.readUnsignedByte();// header\n\n        int type = buf.readUnsignedByte();\n        buf.readUnsignedByte();// length\n\n        if ((type == org.traccar.protocol.PiligrimProtocolDecoder.MSG_GPS) || (type == org.traccar.protocol.PiligrimProtocolDecoder.MSG_GPS_SENSORS)) {\n            org.traccar.model.Position position = new org.traccar.model.Position();\n            position.setProtocol(getProtocolName());\n            position.setDeviceId(deviceSession.getDeviceId());\n            org.traccar.helper.DateBuilder dateBuilder = new org.traccar.helper.DateBuilder().setDay(buf.readUnsignedByte()).setMonth(buf.getByte(buf.readerIndex()) & 0xf).setYear(2010 + (buf.readUnsignedByte() >> 4)).setTime(buf.readUnsignedByte(), buf.readUnsignedByte(), buf.readUnsignedByte());\n            position.setTime(dateBuilder.getDate());\n            double latitude = buf.readUnsignedByte();\n            latitude += buf.readUnsignedByte() / 60.0;\n            latitude += buf.readUnsignedByte() / 6000.0;\n            latitude += buf.readUnsignedByte() / 600000.0;\n            double longitude = buf.readUnsignedByte();\n            longitude += buf.readUnsignedByte() / 60.0;\n            longitude += buf.readUnsignedByte() / 6000.0;\n            longitude += buf.readUnsignedByte() / 600000.0;\n            int flags = buf.readUnsignedByte();\n            if (org.traccar.helper.BitUtil.check(flags, 0)) {\n                latitude = -latitude;\n            }\n            if (org.traccar.helper.BitUtil.check(flags, 1)) {\n                longitude = -longitude;\n            }\n            position.setLatitude(latitude);\n            position.setLongitude(longitude);\n            int satellites = buf.readUnsignedByte();\n            position.set(org.traccar.model.Position.KEY_SATELLITES, satellites);\n            position.setValid(satellites >= 3);\n            position.setSpeed(buf.readUnsignedByte());\n            double course = buf.readUnsignedByte() << 1;\n            course += (flags >> 2) & 1;\n            course += buf.readUnsignedByte() / 100.0;\n            position.setCourse(course);\n            if (type == org.traccar.protocol.PiligrimProtocolDecoder.MSG_GPS_SENSORS) {\n                double power = buf.readUnsignedByte();\n                power += buf.readUnsignedByte() << 8;\n                position.set(org.traccar.model.Position.KEY_POWER, power * 0.01);\n                double battery = buf.readUnsignedByte();\n                battery += buf.readUnsignedByte() << 8;\n                position.set(org.traccar.model.Position.KEY_BATTERY, battery * 0.01);\n                buf.skipBytes(6);\n            }\n            positions.add(position);\n        } else if (type == org.traccar.protocol.PiligrimProtocolDecoder.MSG_EVENTS) {\n            buf.skipBytes(13);\n        }\n    } \n    return positions;\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 71,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_80-162_0--144--144--144--144--144--144--144--144--144--144--145--144--144--146--145--145--145--145--145--145--145--145--145--145--145--142--142--142--142--143--143--143--143--143--143--143--143--143--143--143--143--143--143--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142--142"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 65,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_68-68_2--145--145--145--145--145--145--145--145--145--145--146--145--145--147--146--146--146--146--146--146--146--146--146--146--146--143--143--143--143--144--144--144--144--144--144--144--144--144--144--144--144--144--144--143--143--143--143--143--143--143--143--143--143--143--143--143--143--143--143"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeGsm(channel, remoteAddress, sentence) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 849,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_852_0--146--146--146--146--146--146--146--146--146--146--147--146--146--148--147--147--147--147--147--147--147--147--147--147--147--144--144--144--144--145--145--145--145--145--145--145--145--145--145--145--145--145--145--144--144--144--144--144--144--144--144--144--144--144--144--144--144--144--144"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    java.lang.String[] messages = sentence.substring(sentence.indexOf('#', 1) + 1).split(\"\\\\|\");\n    java.util.List<org.traccar.model.Position> positions = new java.util.LinkedList<>();\n    for (java.lang.String message : messages) {\n        org.traccar.model.Position position = decodePosition(channel, remoteAddress, message);\n        if (position != null) {\n            position.set(org.traccar.model.Position.KEY_ARCHIVE, true);\n            positions.add(position);\n        }\n    }\n    sendResponse(channel, \"#AB#\", messages.length);\n    if (!positions.isEmpty()) {\n        return positions;\n    }\n}",
+            "original_filepath": "src/org/traccar/protocol/WialonProtocolDecoder.java",
+            "patched_line": 152,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_163-175_0--147--147--147--147--147--147--147--147--147--147--148--147--147--149--148--148--148--148--148--148--148--148--148--148--148--145--145--145--145--146--146--146--146--146--146--146--146--146--146--146--146--146--146--145--145--145--145--145--145--145--145--145--145--145--145--145--145--145--145"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 689,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_688-688_1--148--148--148--148--148--148--148--148--148--148--149--148--148--150--149--149--149--149--149--149--149--149--149--149--149--146--146--146--146--147--147--147--147--147--147--147--147--147--147--147--147--147--147--146--146--146--146--146--146--146--146--146--146--146--146--146--146--146--146"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.model.Position position = initPosition(parser, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 424,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_423-423_0--149--149--149--149--149--149--149--149--149--149--150--149--149--151--150--150--150--150--150--150--150--150--150--150--150--147--147--147--147--148--148--148--148--148--148--148--148--148--148--148--148--148--148--147--147--147--147--147--147--147--147--147--147--147--147--147--147--147--147"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, org.jboss.netty.handler.codec.http.HttpResponseStatus.OK);\n    return position;\n}",
+            "original_filepath": "src/org/traccar/protocol/OsmAndProtocolDecoder.java",
+            "patched_line": 143,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_149-150_0--150--150--150--150--150--150--150--150--150--150--151--150--150--152--151--151--151--151--151--151--151--151--151--151--151--148--148--148--148--149--149--149--149--149--149--149--149--149--149--149--149--149--149--148--148--148--148--148--148--148--148--148--148--148--148--148--148--148--148"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    position = decodePayload(channel, remoteAddress, bits);\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 118,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_124-124_2--151--151--151--151--151--151--151--151--151--151--152--151--151--153--152--152--152--152--152--152--152--152--152--152--152--149--149--149--149--150--150--150--150--150--150--150--150--150--150--150--150--150--150--149--149--149--149--149--149--149--149--149--149--149--149--149--149--149--149"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    continue;\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 109,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_115-102_3--152--152--152--152--152--152--152--152--152--152--153--152--152--154--153--153--153--153--153--153--153--153--153--153--153--150--150--150--150--151--151--151--151--151--151--151--151--151--151--151--151--151--151--150--150--150--150--150--150--150--150--150--150--150--150--150--150--150--150"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200ProtocolDecoder.java",
+            "patched_line": 42,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_44-44_2--153--153--153--153--153--153--153--153--153--153--154--153--153--155--154--154--154--154--154--154--154--154--154--154--154--151--151--151--151--152--152--152--152--152--152--152--152--152--152--152--152--152--152--151--151--151--151--151--151--151--151--151--151--151--151--151--151--151--151"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.model.Position position = initPosition(parser, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 645,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_644-644_0--154--154--154--154--154--154--154--154--154--154--155--154--154--156--155--155--155--155--155--155--155--155--155--155--155--152--152--152--152--153--153--153--153--153--153--153--153--153--153--153--153--153--153--152--152--152--152--152--152--152--152--152--152--152--152--152--152--152--152"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, org.jboss.netty.handler.codec.http.HttpResponseStatus.BAD_REQUEST);\n}",
+            "original_filepath": "src/org/traccar/protocol/OsmAndProtocolDecoder.java",
+            "patched_line": 73,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_152-152_1--155--155--155--155--155--155--155--155--155--155--156--155--155--157--156--156--156--156--156--156--156--156--156--156--156--153--153--153--153--154--154--154--154--154--154--154--154--154--154--154--154--154--154--153--153--153--153--153--153--153--153--153--153--153--153--153--153--153--153"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeBasic(channel, remoteAddress, sentence, type) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 859,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_863_1--156--156--156--156--156--156--156--156--156--156--157--156--156--158--157--157--157--157--157--157--157--157--157--157--157--154--154--154--154--155--155--155--155--155--155--155--155--155--155--155--155--155--155--154--154--154--154--154--154--154--154--154--154--154--154--154--154--154--154"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeIgn(channel, remoteAddress, sentence) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 840,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_843_1--157--157--157--157--157--157--157--157--157--157--158--157--157--159--158--158--158--158--158--158--158--158--158--158--158--155--155--155--155--156--156--156--156--156--156--156--156--156--156--156--156--156--156--155--155--155--155--155--155--155--155--155--155--155--155--155--155--155--155"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/WialonProtocolDecoder.java",
+            "patched_line": 161,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_174-174_2--158--158--158--158--158--158--158--158--158--158--159--158--158--160--159--159--159--159--159--159--159--159--159--159--159--156--156--156--156--157--157--157--157--157--157--157--157--157--157--157--157--157--157--156--156--156--156--156--156--156--156--156--156--156--156--156--156--156--156"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 65,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_68-68_3--159--159--159--159--159--159--159--159--159--159--160--159--159--161--160--160--160--160--160--160--160--160--160--160--160--157--157--157--157--158--158--158--158--158--158--158--158--158--158--158--158--158--158--157--157--157--157--157--157--157--157--157--157--157--157--157--157--157--157"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/UlbotechProtocolDecoder.java",
+            "patched_line": 358,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_366-366_3--160--160--160--160--160--160--160--160--160--160--161--160--160--162--161--161--161--161--161--161--161--161--161--161--161--158--158--158--158--159--159--159--159--159--159--159--159--159--159--159--159--159--159--158--158--158--158--158--158--158--158--158--158--158--158--158--158--158--158"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "position = (channel != null) ? decodePayload(channel, remoteAddress, bits) : new org.traccar.model.Position()",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 109,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_124_0--161--161--161--161--161--161--161--161--161--161--162--161--161--163--162--162--162--162--162--162--162--162--162--162--162--159--159--159--159--160--160--160--160--160--160--160--160--160--160--160--160--160--160--159--159--159--159--159--159--159--159--159--159--159--159--159--159--159--159"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 174,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_177-177_1--161--161--161--161--161--161--161--161--161--161--161--161--161--161--160--160--160--160--160--160--160--160--160--160--160--160--160--160--160--160"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (((channel != null ? channel.getPipeline().get(org.jboss.netty.handler.codec.http.HttpRequestDecoder.class) : true) != null) || org.traccar.Context.getConfig().getBoolean(\"decoder.ignoreSessionCache\")) {\n    long deviceId = findDeviceId(remoteAddress, uniqueIds);\n    if (deviceId != 0) {\n        if (org.traccar.Context.getConnectionManager() != null) {\n            org.traccar.Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);\n        }\n        return new org.traccar.DeviceSession(deviceId);\n    } else {\n        return null;\n    }\n}",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_109_4--163--163--163--163--163--163--163--163--163--163--164--163--163--165--164--164--164--164--164--164--164--164--164--164--164--160--160--160--160--162--162--162--162--162--162--162--162--162--162--162--162--162--162--161--161--161--161--161--161--161--161--161--161--161--161--161--161--161--161"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/GatorProtocolDecoder.java",
+            "patched_line": 84,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_88-88_1--164--164--164--164--164--164--164--164--164--164--165--164--164--166--165--165--165--165--165--165--165--165--165--165--165--161--161--161--161--163--163--163--163--163--163--163--163--163--163--163--163--163--163--162--162--162--162--162--162--162--162--162--162--162--162--162--162--162--162"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/TaipProtocolDecoder.java",
+            "patched_line": 162,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_177-177_2--165--165--165--165--165--165--165--165--165--165--166--165--165--167--166--166--166--166--166--166--166--166--166--166--166--162--162--162--162--164--164--164--164--164--164--164--164--164--164--164--164--164--164--163--163--163--163--163--163--163--163--163--163--163--163--163--163--163--163"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/GpsGateProtocolDecoder.java",
+            "patched_line": 95,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_101-101_2--166--166--166--166--166--166--166--166--166--166--167--166--166--168--167--167--167--167--167--167--167--167--167--167--167--163--163--163--163--165--165--165--165--165--165--165--165--165--165--165--165--165--165--164--164--164--164--164--164--164--164--164--164--164--164--164--164--164--164"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/EelinkProtocolDecoder.java",
+            "patched_line": 217,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_218-218_3--167--167--167--167--167--167--167--167--167--167--168--167--167--169--168--168--168--168--168--168--168--168--168--168--168--164--164--164--164--166--166--166--166--166--166--166--166--166--166--166--166--166--166--165--165--165--165--165--165--165--165--165--165--165--165--165--165--165--165"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "position = (channel != null) ? decodePayload(channel, remoteAddress, bits) : null",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 109,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_115_1--168--168--168--168--168--168--168--168--168--168--169--168--168--170--169--169--169--169--169--169--169--169--169--169--169--165--165--165--165--167--167--167--167--167--167--167--167--167--167--167--167--167--167--166--166--166--166--166--166--166--166--166--166--166--166--166--166--166--166"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeInf(channel, remoteAddress, sentence) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 827,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_830_0--169--169--169--169--169--169--169--169--169--169--170--169--169--171--170--170--170--170--170--170--170--170--170--170--170--166--166--166--166--168--168--168--168--168--168--168--168--168--168--168--168--168--168--167--167--167--167--167--167--167--167--167--167--167--167--167--167--167--167"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    switch (type) {\n        case \"D03\" :\n            if (channel != null) {\n                org.traccar.DeviceSession deviceSession = getDeviceSession(channel, remoteAddress);\n                java.lang.String imei = org.traccar.Context.getIdentityManager().getDeviceById(deviceSession.getDeviceId()).getUniqueId();\n                channel.write((\"@@O46,\" + imei) + \",D00,camera_picture.jpg,0*00\\r\\n\");\n            }\n            return null;\n        case \"CCC\" :\n            return decodeBinaryMessage(channel, remoteAddress, buf);\n        default :\n            return decodeRegularMessage(channel, remoteAddress, buf);\n    }\n}",
+            "original_filepath": "src/org/traccar/protocol/MeitrackProtocolDecoder.java",
+            "patched_line": 312,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_315-315_0--170--170--170--170--170--170--170--170--170--170--171--170--170--172--171--171--171--171--171--171--171--171--171--171--171--167--167--167--167--169--169--169--169--169--169--169--169--169--169--169--169--169--169--168--168--168--168--168--168--168--168--168--168--168--168--168--168--168--168"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    return decodeAttributes(channel, remoteAddress, position, attributes);\n}",
+            "original_filepath": "src/org/traccar/protocol/TaipProtocolDecoder.java",
+            "patched_line": 162,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_177-177_0--171--171--171--171--171--171--171--171--171--171--172--171--171--173--172--172--172--172--172--172--172--172--172--172--172--168--168--168--168--170--170--170--170--170--170--170--170--170--170--170--170--170--170--169--169--169--169--169--169--169--169--169--169--169--169--169--169--169--169"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/PiligrimProtocolDecoder.java",
+            "patched_line": 69,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_76-76_3--172--172--172--172--172--172--172--172--172--172--173--172--172--174--173--173--173--173--173--173--173--173--173--173--173--169--169--169--169--171--171--171--171--171--171--171--171--171--171--171--171--171--171--170--170--170--170--170--170--170--170--170--170--170--170--170--170--170--170"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    position = decodePayload(channel, remoteAddress, bits);\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 109,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_115-115_2--173--173--173--173--173--173--173--173--173--173--174--173--173--175--174--174--174--174--174--174--174--174--174--174--174--170--170--170--170--172--172--172--172--172--172--172--172--172--172--172--172--172--172--171--171--171--171--171--171--171--171--171--171--171--171--171--171--171--171"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    requestArchive(channel);\n}",
+            "original_filepath": "src/org/traccar/protocol/ApelProtocolDecoder.java",
+            "patched_line": 117,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_121-121_1--174--174--174--174--174--174--174--174--174--174--175--174--174--176--175--175--175--175--175--175--175--175--175--175--175--171--171--171--171--173--173--173--173--173--173--173--173--173--173--173--173--173--173--172--172--172--172--172--172--172--172--172--172--172--172--172--172--172--172"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Tk103ProtocolDecoder.java",
+            "patched_line": 210,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_214-214_3--175--175--175--175--175--175--175--175--175--175--176--175--175--177--176--176--176--176--176--176--176--176--176--176--176--172--172--172--172--174--174--174--174--174--174--174--174--174--174--174--174--174--174--173--173--173--173--173--173--173--173--173--173--173--173--173--173--173--173"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeFri(channel, remoteAddress, sentence) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 833,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_836_0--176--176--176--176--176--176--176--176--176--176--177--176--176--178--177--177--177--177--177--177--177--177--177--177--177--173--173--173--173--175--175--175--175--175--175--175--175--175--175--175--175--175--175--174--174--174--174--174--174--174--174--174--174--174--174--174--174--174--174"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 109,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_115-115_5--177--177--177--177--177--177--177--177--177--177--178--177--177--179--178--178--178--178--178--178--178--178--178--178--178--174--174--174--174--176--176--176--176--176--176--176--176--176--176--176--176--176--176--175--175--175--175--175--175--175--175--175--175--175--175--175--175--175--175"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    sendResponse(channel, org.traccar.protocol.Tk102ProtocolDecoder.MSG_HEARTBEAT_RESPONSE, dataSequence, buf.readBytes(length));\n}",
+            "original_filepath": "src/org/traccar/protocol/Tk102ProtocolDecoder.java",
+            "patched_line": 99,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_106-106_0--178--178--178--178--178--178--178--178--178--178--179--178--178--180--179--179--179--179--179--179--179--179--179--179--179--175--175--175--175--177--177--177--177--177--177--177--177--177--177--177--177--177--177--176--176--176--176--176--176--176--176--176--176--176--176--176--176--176--176"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeIda(channel, remoteAddress, sentence) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 843,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_846_1--179--179--179--179--179--179--179--179--179--179--180--179--179--181--180--180--180--180--180--180--180--180--180--180--180--176--176--176--176--178--178--178--178--178--178--178--178--178--178--178--178--178--178--177--177--177--177--177--177--177--177--177--177--177--177--177--177--177--177"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200ProtocolDecoder.java",
+            "patched_line": 40,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_42-42_3--180--180--180--180--180--180--180--180--180--180--181--180--180--182--181--181--181--181--181--181--181--181--181--181--181--177--177--177--177--179--179--179--179--179--179--179--179--179--179--179--179--179--179--178--178--178--178--178--178--178--178--178--178--178--178--178--178--178--178"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeAck(channel, remoteAddress, sentence, type) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 823,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_826_1--181--181--181--181--181--181--181--181--181--181--182--181--181--183--182--182--182--182--182--182--182--182--182--182--182--178--178--178--178--180--180--180--180--180--180--180--180--180--180--180--180--180--180--179--179--179--179--179--179--179--179--179--179--179--179--179--179--179--179"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 715,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_714-714_1--182--182--182--182--182--182--182--182--182--182--183--182--182--184--183--183--183--183--183--183--183--183--183--183--183--179--179--179--179--181--181--181--181--181--181--181--181--181--181--181--181--181--181--180--180--180--180--180--180--180--180--180--180--180--180--180--180--180--180"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 118,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_124-124_4--183--183--183--183--183--183--183--183--183--183--184--183--183--185--184--184--184--184--184--184--184--184--184--184--184--180--180--180--180--182--182--182--182--182--182--182--182--182--182--182--182--182--182--181--181--181--181--181--181--181--181--181--181--181--181--181--181--181--181"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/MeitrackProtocolDecoder.java",
+            "patched_line": 312,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_315-315_2--184--184--184--184--184--184--184--184--184--184--185--184--184--186--185--185--185--185--185--185--185--185--185--185--185--181--181--181--181--183--183--183--183--183--183--183--183--183--183--183--183--183--183--182--182--182--182--182--182--182--182--182--182--182--182--182--182--182--182"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeVer(channel, remoteAddress, sentence) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 852,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_855_0--185--185--185--185--185--185--185--185--185--185--186--185--185--187--186--186--186--186--186--186--186--186--186--186--186--182--182--182--182--184--184--184--184--184--184--184--184--184--184--184--184--184--184--183--183--183--183--183--183--183--183--183--183--183--183--183--183--183--183"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeWif(channel, remoteAddress, sentence) : new java.lang.Object()",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 846,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_849_0--186--186--186--186--186--186--186--186--186--186--187--186--186--188--187--187--187--187--187--187--187--187--187--187--187--183--183--183--183--185--185--185--185--185--185--185--185--185--185--185--185--185--185--184--184--184--184--184--184--184--184--184--184--184--184--184--184--184--184"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "result = (channel != null) ? decodeOther(channel, remoteAddress, sentence, type) : null",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 855,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_858_1--187--187--187--187--187--187--187--187--187--187--188--187--187--189--188--188--188--188--188--188--188--188--188--188--188--184--184--184--184--186--186--186--186--186--186--186--186--186--186--186--186--186--186--185--185--185--185--185--185--185--185--185--185--185--185--185--185--185--185"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 663,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_662-662_1--188--188--188--188--188--188--188--188--188--188--189--188--188--190--189--189--189--189--189--189--189--189--189--189--189--185--185--185--185--187--187--187--187--187--187--187--187--187--187--187--187--187--187--186--186--186--186--186--186--186--186--186--186--186--186--186--186--186--186"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/protocol/OwnTracksProtocolDecoder.java",
+            "patched_line": 59,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_62-62_2--189--189--189--189--189--189--189--189--189--189--190--189--189--191--190--190--190--190--190--190--190--190--190--190--190--186--186--186--186--188--188--188--188--188--188--188--188--188--188--188--188--188--188--187--187--187--187--187--187--187--187--187--187--187--187--187--187--187--187"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 628,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_627-627_1--190--190--190--190--190--190--190--190--190--190--191--190--190--192--191--191--191--191--191--191--191--191--191--191--191--187--187--187--187--189--189--189--189--189--189--189--189--189--189--189--189--189--189--188--188--188--188--188--188--188--188--188--188--188--188--188--188--188--188"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.model.Position position = initPosition(parser, channel, remoteAddress);\n}",
+            "original_filepath": "src/org/traccar/protocol/Gl200TextProtocolDecoder.java",
+            "patched_line": 472,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_471-471_0--191--191--191--191--191--191--191--191--191--191--192--191--191--193--192--192--192--192--192--192--192--192--192--192--192--188--188--188--188--190--190--190--190--190--190--190--190--190--190--190--190--190--190--189--189--189--189--189--189--189--189--189--189--189--189--189--189--189--189"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    continue;\n}",
+            "original_filepath": "src/org/traccar/protocol/AisProtocolDecoder.java",
+            "patched_line": 118,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_124-102_3--192--192--192--192--192--192--192--192--192--192--193--192--192--194--193--193--193--193--193--193--193--193--193--193--193--189--189--189--189--191--191--191--191--191--191--191--191--191--191--191--191--191--191--190--190--190--190--190--190--190--190--190--190--190--190--190--190--190--190"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (((channel != null ? channel.getPipeline().get(org.jboss.netty.handler.codec.http.HttpRequestDecoder.class) : new org.jboss.netty.handler.codec.http.HttpRequestDecoder()) != null) || org.traccar.Context.getConfig().getBoolean(\"decoder.ignoreSessionCache\")) {\n    long deviceId = findDeviceId(remoteAddress, uniqueIds);\n    if (deviceId != 0) {\n        if (org.traccar.Context.getConnectionManager() != null) {\n            org.traccar.Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);\n        }\n        return new org.traccar.DeviceSession(deviceId);\n    } else {\n        return null;\n    }\n}",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_109_1--194--193--193--195--194--194--194--194--194--194--194--194--194--194--194--190--190--190--190--192--192--192--192--192--192--192--192--192--192--192--192--192--192--191--191--191--191--191--191--191--191--191--191--191--191--191--191--191--191"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (((channel != null ? channel.getPipeline().get(org.jboss.netty.handler.codec.http.HttpRequestDecoder.class) : null) != null) || org.traccar.Context.getConfig().getBoolean(\"decoder.ignoreSessionCache\")) {\n    long deviceId = findDeviceId(remoteAddress, uniqueIds);\n    if (deviceId != 0) {\n        if (org.traccar.Context.getConnectionManager() != null) {\n            org.traccar.Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);\n        }\n        return new org.traccar.DeviceSession(deviceId);\n    } else {\n        return null;\n    }\n}",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_109_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.sql.SQLException();\n}",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_109-109_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_109-109_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "return channel != null ? decode9(channel, remoteAddress, values) : null",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 172,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_175_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "org.traccar.DeviceSession deviceSession = (channel != null) ? getDeviceSession(channel, remoteAddress, values[index++]) : null",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_64_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "return channel != null ? decode9(channel, remoteAddress, values) : new org.traccar.model.Position()",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 172,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_175_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "return channel != null ? decode23(channel, remoteAddress, protocol, values) : null",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 174,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_177_0--194--194--194--194--194--194--194--194--194--194--194--194--194--193--192--192--192--192--192--192--192--192--192--192--192--192--192--192--192--192"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "return channel != null ? decode23(channel, remoteAddress, protocol, values) : new org.traccar.model.Position()",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 174,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_177_2--195--195--195--195--195--195--195--195--195--195--195--195--195--194--193--193--193--193--193--193--193--193--193--193--193--193--193--193--193--193"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 169,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_170-175_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel != null) {\n    org.traccar.DeviceSession deviceSession = getDeviceSession(channel, remoteAddress, values[index++]);\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 59,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_64-64_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return null;\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 49,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_49-64_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "decode9(channel != null ? channel : null, remoteAddress, values)",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 172,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_175_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    channel = null;\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 59,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_64-64_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    channel = null;\n}",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_109-109_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "getDeviceSession(channel != null ? channel : null, remoteAddress, values[index++])",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_64_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    return new org.traccar.model.Position();\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 49,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_49-64_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "(channel != null ? channel : null).getPipeline()",
+            "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+            "patched_line": 110,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_109_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-121-buggy",
+        "patch": {
+            "contents": "if (channel == null) {\n    channel = null;\n}",
+            "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+            "patched_line": 172,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_175-175_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

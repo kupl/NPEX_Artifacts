@@ -1,0 +1,9 @@
++ ------------------------------------------------------------------------------------------------------------------------------ +
+| bug_id          | label                    | detail                       | description | patch_id                             |
++ ------------------------------------------------------------------------------------------------------------------------------ +
+| Bears-184-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_79_5 |
+| Bears-184-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_79_6 |
+| Bears-184-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_79_4 |
+| Bears-184-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_79_0          |
+| Bears-184-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_79_1          |
++ ------------------------------------------------------------------------------------------------------------------------------ +

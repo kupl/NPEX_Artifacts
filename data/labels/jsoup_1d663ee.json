@@ -1,0 +1,288 @@
+[
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent != null) {\n    java.lang.String oldVal = parent.get(this.key);\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_88-88_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "(parent != null ? parent : new org.jsoup.nodes.Attributes()).get(this.key)",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_88_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_88-88_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent == null) {\n    return \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_88-88_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent == null) {\n    throw new org.jsoup.SerializationException();\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_88-88_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_88-88_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "java.lang.String oldVal = (parent != null) ? parent.get(this.key) : new java.lang.String()",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_88_5--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent == null) {\n    parent = new org.jsoup.nodes.Attributes();\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "InitPointerStrategy_88-88_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "java.lang.String oldVal = (parent != null) ? parent.get(this.key) : null",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_88_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "java.lang.String oldVal = (parent != null) ? parent.get(this.key) : oldVal",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_88_4--3--3--3--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "java.lang.String oldVal = (parent != null) ? parent.get(this.key) : val",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_88_3--4--4--4--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "java.lang.String oldVal = (parent != null) ? parent.get(this.key) : this.val",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_88_6--5--5--5--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--5--5--5"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "java.lang.String oldVal = (parent != null) ? parent.get(this.key) : this.key",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_88_5--6--6--6--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent == null) {\n    return \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_88-88_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "java.lang.String oldVal = (parent != null) ? parent.get(this.key) : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_88_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_88-88_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "java.lang.String oldVal = (parent != null) ? parent.get(this.key) : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_88_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent == null) {\n    throw new java.lang.CloneNotSupportedException();\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_88-88_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent == null) {\n    parent = null;\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_88-88_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "if (parent == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_88-88_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "java.lang.String oldVal = (parent != null) ? parent.get(this.key) : \"NULL\"",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_88_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_1d663ee",
+        "patch": {
+            "contents": "(parent != null ? parent : null).get(this.key)",
+            "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+            "patched_line": 95,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_88_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

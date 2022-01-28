@@ -1,0 +1,236 @@
+[
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "if (value != null) {\n    return value.toLowerCase().equals(node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase());\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_268-268_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "return value != null ? value.toLowerCase().equals(node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase()) : node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase() == null",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_268_12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "(value != null ? value : \"\").toLowerCase()",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_268_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "if (value == null) {\n    return false;\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_268-268_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "(value != null ? value : \"null\").toLowerCase()",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_268_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "(value != null ? value.toLowerCase() : \"\").equals(node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase())",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_268_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "return value != null ? value.toLowerCase().equals(node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase()) : true",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_268_14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_268-268_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "return value != null ? value.toLowerCase().equals(node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase()) : false",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_268_13"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_268-268_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "(value != null ? value.toLowerCase() : \"null\").equals(node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase())",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_268_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "if (value == null) {\n    return true;\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_268-268_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "(value != null ? value.toLowerCase() : \"NULL\").equals(node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase())",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_268_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "if (value == null) {\n    value = null;\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_268-268_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"NULL\";\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_268-268_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "(value != null ? value : null).toLowerCase()",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_268_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "(value != null ? value : \"NULL\").toLowerCase()",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_268_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_d1c02ee",
+        "patch": {
+            "contents": "(value != null ? value.toLowerCase() : null).equals(node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase())",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+            "patched_line": 269,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_268_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

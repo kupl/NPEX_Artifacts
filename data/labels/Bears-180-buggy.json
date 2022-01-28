@@ -1,0 +1,145 @@
+[
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "if (uri.getHost() == null) {\n    return null;\n}",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_110-110_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "com.google.cloud.storage.BlobId.of(uri.getHost() != null ? uri.getHost() : new java.lang.String(), uri.getPath().substring(1, uri.getPath().length()))",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_110_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "if (uri.getHost() == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_110-110_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "if (uri.getHost() != null) {\n    return com.google.cloud.storage.BlobId.of(uri.getHost(), uri.getPath().substring(1, uri.getPath().length()));\n}",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_110-110_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "return uri.getHost() != null ? com.google.cloud.storage.BlobId.of(uri.getHost(), uri.getPath().substring(1, uri.getPath().length())) : null",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_110_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "return uri.getHost() != null ? com.google.cloud.storage.BlobId.of(uri.getHost(), uri.getPath().substring(1, uri.getPath().length())) : new com.google.cloud.storage.BlobId()",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_110_4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "com.google.cloud.storage.BlobId.of(uri.getHost() != null ? uri.getHost() : this.location, uri.getPath().substring(1, uri.getPath().length()))",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_110_0--2--2--2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "com.google.cloud.storage.BlobId.of(uri.getHost() != null ? uri.getHost() : \"null\", uri.getPath().substring(1, uri.getPath().length()))",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "ReplacePointerStrategyLiteral",
+            "patch_id": "ReplacePointerStrategy_110_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "com.google.cloud.storage.BlobId.of(uri.getHost() != null ? uri.getHost() : \"\", uri.getPath().substring(1, uri.getPath().length()))",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "ReplacePointerStrategyLiteral",
+            "patch_id": "ReplacePointerStrategy_110_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "com.google.cloud.storage.BlobId.of(uri.getHost() != null ? uri.getHost() : null, uri.getPath().substring(1, uri.getPath().length()))",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_110_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-180-buggy",
+        "patch": {
+            "contents": "com.google.cloud.storage.BlobId.of(uri.getHost() != null ? uri.getHost() : \"NULL\", uri.getPath().substring(1, uri.getPath().length()))",
+            "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+            "patched_line": 111,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_110_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

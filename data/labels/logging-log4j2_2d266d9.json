@@ -1,0 +1,80 @@
+[
+    {
+        "bug_id": "logging-log4j2_2d266d9",
+        "patch": {
+            "contents": "if (executorService != null) {\n    return executorService.schedule(command, delay, unit);\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+            "patched_line": 120,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_107-107_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_2d266d9",
+        "patch": {
+            "contents": "if (executorService == null) {\n    throw new java.lang.Throwable();\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+            "patched_line": 120,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_107-107_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_2d266d9",
+        "patch": {
+            "contents": "if (executorService == null) {\n    return null;\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+            "patched_line": 120,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_107-107_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_2d266d9",
+        "patch": {
+            "contents": "return executorService != null ? executorService.schedule(command, delay, unit) : null",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+            "patched_line": 120,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_107_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_2d266d9",
+        "patch": {
+            "contents": "(executorService != null ? executorService : null).schedule(command, delay, unit)",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+            "patched_line": 120,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_107_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_2d266d9",
+        "patch": {
+            "contents": "if (executorService == null) {\n    executorService = null;\n}",
+            "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+            "patched_line": 120,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_107-107_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

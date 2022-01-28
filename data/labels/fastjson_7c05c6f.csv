@@ -1,0 +1,9 @@
+bug_id,label,detail,description,patch_id
+fastjson_7c05c6f,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipBlockStrategy_121-121_0
+fastjson_7c05c6f,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_121-121_5
+fastjson_7c05c6f,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipThrowStrategy_121-121_6
+fastjson_7c05c6f,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipReturnParam_54-121_2
+fastjson_7c05c6f,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,ReplacePointerStrategy_121_0
+fastjson_7c05c6f,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_121-121_4
+fastjson_7c05c6f,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_121-121_3
+fastjson_7c05c6f,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_121_1

@@ -1,0 +1,10 @@
+bug_id,label,detail,description,patch_id
+DataflowJavaSDK-c06125d-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_320-320_4
+DataflowJavaSDK-c06125d-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_320-320_3
+DataflowJavaSDK-c06125d-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipSinkStatementStrategy_320-320_0
+DataflowJavaSDK-c06125d-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_320_4
+DataflowJavaSDK-c06125d-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_320_5
+DataflowJavaSDK-c06125d-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_320-320_2
+DataflowJavaSDK-c06125d-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_320_1
+DataflowJavaSDK-c06125d-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplacePointerStrategy_320_0
+DataflowJavaSDK-c06125d-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,InitPointerStrategy_320-320_1

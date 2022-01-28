@@ -1,0 +1,11 @@
++ ------------------------------------------------------------------------------------------------------------------------- +
+| bug_id         | label                    | detail                   | description | patch_id                             |
++ ------------------------------------------------------------------------------------------------------------------------- +
+| Bears-88-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipSinkStatementStrategy_68-68_0    |
+| Bears-88-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipReturnStrategy_68-68_4           |
+| Bears-88-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipThrowStrategy_68-68_2            |
+| Bears-88-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_68_2 |
+| Bears-88-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipThrowStrategy_68-68_1            |
+| Bears-88-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_68_0          |
+| Bears-88-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipReturnStrategy_68-68_3           |
++ ------------------------------------------------------------------------------------------------------------------------- +

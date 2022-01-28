@@ -1,0 +1,18 @@
++ ------------------------------------------------------------------------------------------------------------------------- +
+| bug_id      | label                    | detail                     | description | patch_id                              |
++ ------------------------------------------------------------------------------------------------------------------------- +
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_136_7 |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_136_1          |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | InitPointerStrategy_136-136_4         |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipSinkStatementStrategy_136-136_2   |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipBlockStrategy_129-145_0           |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipContinueStrategy_136-109_5        |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_136-136_7          |
+| pdfbox-3479 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipThrowStrategy_136-136_6           |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipBreakStrategy_136-103_1           |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_136_5 |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_136_0          |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_136_4 |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | InitPointerStrategy_136-136_3         |
+| pdfbox-3479 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_136_6 |
++ ------------------------------------------------------------------------------------------------------------------------- +

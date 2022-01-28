@@ -1,0 +1,12 @@
++ ------------------------------------------------------------------------------------------------------------------------------------------ +
+| bug_id                      | label                    | detail                       | description | patch_id                             |
++ ------------------------------------------------------------------------------------------------------------------------------------------ +
+| caelum-stella-2d2dd9c-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipReturnParam_52-57_2              |
+| caelum-stella-2d2dd9c-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_57_2 |
+| caelum-stella-2d2dd9c-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipBlockStrategy_57-57_0            |
+| caelum-stella-2d2dd9c-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_57_3 |
+| caelum-stella-2d2dd9c-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_57-57_3          |
+| caelum-stella-2d2dd9c-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_57_5 |
+| caelum-stella-2d2dd9c-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_57_0          |
+| caelum-stella-2d2dd9c-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_57_4 |
++ ------------------------------------------------------------------------------------------------------------------------------------------ +

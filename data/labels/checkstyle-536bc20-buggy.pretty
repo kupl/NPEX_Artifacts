@@ -1,0 +1,13 @@
++ -------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                   | label                    | detail                     | description | patch_id                              |
++ -------------------------------------------------------------------------------------------------------------------------------------- +
+| checkstyle-536bc20-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipSinkStatementStrategy_279-279_1   |
+| checkstyle-536bc20-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplacePointerStrategy_279_1          |
+| checkstyle-536bc20-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplaceEntireExpressionStrategy_279_4 |
+| checkstyle-536bc20-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipBlockStrategy_277-279_0           |
+| checkstyle-536bc20-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipReturnStrategy_279-279_3          |
+| checkstyle-536bc20-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_279-279_2           |
+| checkstyle-536bc20-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplaceEntireExpressionStrategy_279_6 |
+| checkstyle-536bc20-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_279_0          |
+| checkstyle-536bc20-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplaceEntireExpressionStrategy_279_5 |
++ -------------------------------------------------------------------------------------------------------------------------------------- +

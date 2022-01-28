@@ -1,0 +1,12 @@
++ --------------------------------------------------------------------------------------------------------------------------- +
+| bug_id      | label                    | detail                       | description | patch_id                              |
++ --------------------------------------------------------------------------------------------------------------------------- +
+| pdfbox-2266 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipSinkStatementStrategy_130-130_0   |
+| pdfbox-2266 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_130-130_4          |
+| pdfbox-2266 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_130-130_3           |
+| pdfbox-2266 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_130_4 |
+| pdfbox-2266 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | ReplacePointerStrategy_130_1          |
+| pdfbox-2266 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_130-130_1         |
+| pdfbox-2266 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_130_0          |
+| pdfbox-2266 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | InitPointerStrategy_130-130_2         |
++ --------------------------------------------------------------------------------------------------------------------------- +

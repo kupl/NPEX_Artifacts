@@ -1,0 +1,93 @@
+[
+    {
+        "bug_id": "JSqlParser_2897935",
+        "patch": {
+            "contents": "if (subSelect.getWithItemsList() == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+            "patched_line": 217,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_216-216_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "JSqlParser_2897935",
+        "patch": {
+            "contents": "if (subSelect.getWithItemsList() != null) {\n    for (net.sf.jsqlparser.statement.select.WithItem item : subSelect.getWithItemsList()) {\n        item.accept(selectVisitor);\n    }\n    subSelect.getSelectBody().accept(selectVisitor);\n}",
+            "original_filepath": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+            "patched_line": 217,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_216-219_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "JSqlParser_2897935",
+        "patch": {
+            "contents": "if (subSelect.getWithItemsList() != null) {\n    for (net.sf.jsqlparser.statement.select.WithItem item : subSelect.getWithItemsList()) {\n        item.accept(selectVisitor);\n    }\n}",
+            "original_filepath": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+            "patched_line": 217,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_216-216_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "JSqlParser_2897935",
+        "patch": {
+            "contents": "for (net.sf.jsqlparser.statement.select.WithItem item : subSelect.getWithItemsList() != null ? subSelect.getWithItemsList() : new java.util.ArrayList<>()) {\n    item.accept(selectVisitor);\n}",
+            "original_filepath": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+            "patched_line": 217,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_216_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "JSqlParser_2897935",
+        "patch": {
+            "contents": "for (net.sf.jsqlparser.statement.select.WithItem item : subSelect.getWithItemsList() != null ? subSelect.getWithItemsList() : null) {\n    item.accept(selectVisitor);\n}",
+            "original_filepath": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+            "patched_line": 217,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_216_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "JSqlParser_2897935",
+        "patch": {
+            "contents": "for (net.sf.jsqlparser.statement.select.WithItem item : subSelect.getWithItemsList() != null ? subSelect.getWithItemsList() : new java.util.ArrayList()) {\n    item.accept(selectVisitor);\n}",
+            "original_filepath": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+            "patched_line": 217,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_216_1--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "JSqlParser_2897935",
+        "patch": {
+            "contents": "for (net.sf.jsqlparser.statement.select.WithItem item : subSelect.getWithItemsList() != null ? subSelect.getWithItemsList() : java.util.Collections.emptyList()) {\n    item.accept(selectVisitor);\n}",
+            "original_filepath": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+            "patched_line": 217,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_216_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    }
+]

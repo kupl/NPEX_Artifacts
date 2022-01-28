@@ -1,0 +1,13 @@
++ ----------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id              | label                    | detail                       | description | patch_id                              |
++ ----------------------------------------------------------------------------------------------------------------------------------- +
+| client_java_422e3b3 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_148-148_4           |
+| client_java_422e3b3 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_148-148_1             |
+| client_java_422e3b3 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_148-148_0   |
+| client_java_422e3b3 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_148_5 |
+| client_java_422e3b3 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_148_4 |
+| client_java_422e3b3 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_148-148_3         |
+| client_java_422e3b3 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_148_0          |
+| client_java_422e3b3 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_148-148_2         |
+| client_java_422e3b3 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_148_1          |
++ ----------------------------------------------------------------------------------------------------------------------------------- +

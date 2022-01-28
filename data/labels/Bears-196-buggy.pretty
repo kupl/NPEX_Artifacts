@@ -1,0 +1,30 @@
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id          | label                    | detail                       | description | patch_id                              |
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| Bears-196-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipBlockStrategy_63-63_0             |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_60-60_7             |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_60_1           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_60_3           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_60_0           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipBlockStrategy_60-60_0             |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_63-63_7             |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnParam_56-63_2               |
+| Bears-196-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_63_12 |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_60-60_4           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_60-60_3           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_63-63_3           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_63_1           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_63_0           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_63-63_4           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_63_8  |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_63_9  |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_63-63_5           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_63_10 |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_63_2           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_60_2           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_63_3           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_63-63_6           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_60-60_6           |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_63_11 |
+| Bears-196-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_60-60_5           |
++ ------------------------------------------------------------------------------------------------------------------------------- +

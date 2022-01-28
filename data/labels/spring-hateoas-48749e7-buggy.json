@@ -1,0 +1,405 @@
+[
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj : new java.lang.Object()).getClass()",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_145_3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj.getClass() : false).equals(this.getClass())",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_145_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj == null) {\n    obj = new java.lang.Object();\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_145-145_3--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "!(obj != null ? obj.getClass().equals(this.getClass()) : false)",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_1--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj.getClass() : true).equals(this.getClass())",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_145_3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--6--6--6--6--6--5--5--5--5--5--5--5--5--5--5--5--5--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj != null) {\n    if (!obj.getClass().equals(this.getClass())) {\n        return false;\n    }\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_145-145_0--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_145-145_3--8--8--8--8--8--6--6--6--6--6--6--6--6--6--6--6--6--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_145-145_4--9--9--9--9--9--7--7--7--7--7--7--7--7--7--7--7--7--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "!(obj != null ? obj.getClass().equals(this.getClass()) : true)",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_2--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj.getClass() : null).equals(this.getClass())",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_145_1--11--11--11--11--11--8--8--8--8--8--8--8--8--8--8--8--8--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj != null ? !obj.getClass().equals(this.getClass()) : true) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_4--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj.getClass() : new java.lang.Class<? extends java.lang.Object>()).equals(this.getClass())",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_145_11--13--13--13--13--13--9--9--9--9--9--9--9--9--9--9--9--9--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj != null ? !obj.getClass().equals(this.getClass()) : false) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_3--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj : this.links).getClass()",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_145_1--15--15--15--15--15--10--10--10--10--10--10--10--10--10--10--10--10--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj : that).getClass()",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_145_0--16--16--16--16--16--11--11--11--11--11--11--11--11--11--11--11--11--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj == null) {\n    obj = that;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_145-145_0--17--17--17--17--17--12--12--12--12--12--12--12--12--12--12--12--12--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj == null) {\n    obj = this.links;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_145-145_1--18--18--18--18--18--13--13--13--13--13--13--13--13--13--13--13--13--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj.getClass() : null).equals(this.getClass())",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_145_5--4--4--19--19--19--19--19--14--14--14--14--14--14--14--14--14--14--14--14--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 144,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_141-145_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "!(obj != null ? obj.getClass().equals(this.getClass()) : this.getClass() == null)",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 147,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_0--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 144,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_141-145_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "!(obj != null ? obj.getClass().equals(thisClass) : false)",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 148,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj != null) {\n    if (!obj.getClass().equals(thisClass)) {\n        return false;\n    }\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 148,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_145-145_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj != null ? !obj.getClass().equals(thisClass) : false) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 148,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "!(obj != null ? obj.getClass().equals(thisClass) : thisClass == null)",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 148,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj != null ? !obj.getClass().equals(thisClass) : true) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 148,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_8"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "!(obj != null ? obj.getClass().equals(thisClass) : true)",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 148,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "if (obj == null) {\n    obj = null;\n}",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 148,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_145-145_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj.getClass() : java.lang.Object.class).equals(thisClass)",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 148,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj : null).getClass()",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 148,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_145_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "spring-hateoas-48749e7-buggy",
+        "patch": {
+            "contents": "(obj != null ? obj.getClass() : null).equals(thisClass)",
+            "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+            "patched_line": 148,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_145_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

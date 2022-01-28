@@ -1,0 +1,14 @@
+bug_id,label,detail,description,patch_id
+chart-16,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_574_1
+chart-16,LabelOverall.WC,LabelDetail.MANUAL_WC,,SkipSinkStatementStrategy_574-574_0
+chart-16,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_574-574_2
+chart-16,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_574_0
+chart-16,LabelOverall.WC,LabelDetail.MANUAL_WC,,ReplaceEntireExpressionStrategy_574_4
+chart-16,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_574-574_5
+chart-16,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_574-574_7
+chart-16,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_574-574_4
+chart-16,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_574-574_3
+chart-16,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_574_6
+chart-16,LabelOverall.WC,LabelDetail.MANUAL_WC,,ReplaceEntireExpressionStrategy_574_5
+chart-16,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_574-574_1
+chart-16,LabelOverall.WC,LabelDetail.MANUAL_WC,,SkipReturnStrategy_574-574_6

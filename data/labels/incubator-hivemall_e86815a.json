@@ -1,0 +1,93 @@
+[
+    {
+        "bug_id": "incubator-hivemall_e86815a",
+        "patch": {
+            "contents": "if (model == null) {\n    throw new org.apache.hadoop.hive.ql.metadata.HiveException();\n}",
+            "original_filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+            "patched_line": 765,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_763-763_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "incubator-hivemall_e86815a",
+        "patch": {
+            "contents": "final hivemall.utils.collections.IMapIterator<java.lang.Object, hivemall.model.IWeightValue> itor = (model != null) ? model.entries() : null",
+            "original_filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+            "patched_line": 765,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_763_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "incubator-hivemall_e86815a",
+        "patch": {
+            "contents": "if (model != null) {\n    final hivemall.model.WeightValue probe = new hivemall.model.WeightValue();\n    final java.lang.Object[] forwardMapObj = new java.lang.Object[2];\n    final org.apache.hadoop.io.FloatWritable fv = new org.apache.hadoop.io.FloatWritable();\n    final hivemall.utils.collections.IMapIterator<java.lang.Object, hivemall.model.IWeightValue> itor = model.entries();\n    while (itor.next() != (-1)) {\n        itor.getValue(probe);\n        if (!probe.isTouched()) {\n            continue;// skip outputting untouched weights\n\n        }\n        final float v = probe.get();\n        if (v == 0.0F) {\n            continue;\n        }\n        fv.set(v);\n        java.lang.Object k = itor.getKey();\n        forwardMapObj[0] = k;\n        forwardMapObj[1] = fv;\n        forward(forwardMapObj);\n        numForwarded++;\n    } \n}",
+            "original_filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+            "patched_line": 761,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_760-764_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "incubator-hivemall_e86815a",
+        "patch": {
+            "contents": "if (model != null) {\n    final hivemall.utils.collections.IMapIterator<java.lang.Object, hivemall.model.IWeightValue> itor = model.entries();\n}",
+            "original_filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+            "patched_line": 765,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_763-763_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "incubator-hivemall_e86815a",
+        "patch": {
+            "contents": "if (model == null) {\n    return;\n}",
+            "original_filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+            "patched_line": 765,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_763-763_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "incubator-hivemall_e86815a",
+        "patch": {
+            "contents": "if (model == null) {\n    model = null;\n}",
+            "original_filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+            "patched_line": 765,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_763-763_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "incubator-hivemall_e86815a",
+        "patch": {
+            "contents": "(model != null ? model : null).entries()",
+            "original_filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+            "patched_line": 765,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_763_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

@@ -1,0 +1,12 @@
++ ----------------------------------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                 | label                    | detail                       | description                            | patch_id                              |
++ ----------------------------------------------------------------------------------------------------------------------------------------------------------------- +
+| HikariCP-ce4ff92-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |                                        | SkipThrowStrategy_198-198_2           |
+| HikariCP-ce4ff92-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |                                        | SkipSinkStatementStrategy_198-198_0   |
+| HikariCP-ce4ff92-buggy | LabelOverall.WC          | LabelDetail.MANUAL_WC        | correct w.r.t. testcase, but not class | SkipReturnStrategy_198-198_3          |
+| HikariCP-ce4ff92-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |                                        | ReplaceEntireExpressionStrategy_198_4 |
+| HikariCP-ce4ff92-buggy | LabelOverall.WC          | LabelDetail.MANUAL_WC        | correct but not method                 | ReplaceEntireExpressionStrategy_198_2 |
+| HikariCP-ce4ff92-buggy | LabelOverall.WC          | LabelDetail.MANUAL_WC        |                                        | ReplaceEntireExpressionStrategy_198_3 |
+| HikariCP-ce4ff92-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |                                        | ReplacePointerStrategy_198_0          |
+| HikariCP-ce4ff92-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |                                        | InitPointerStrategy_198-198_1         |
++ ----------------------------------------------------------------------------------------------------------------------------------------------------------------- +

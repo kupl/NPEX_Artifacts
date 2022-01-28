@@ -1,0 +1,366 @@
+[
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree.bitIndex : true)) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_2404_3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_2404-2404_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree != null) {\n    // If the subtree's bitIndex is less than the\n    // length of our prefix, it's the last item\n    // in the prefix tree.\n    if (lengthInBits >= subtree.bitIndex) {\n        lastOne = true;\n    }\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_2404-2404_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "final int bitIdx = (subtree != null ? subtree : new org.apache.commons.collections4.trie.AbstractPatriciaTrie.TrieEntry<K, V>()).bitIndex",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2389,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_2404_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree == null) {\n    subtree = new org.apache.commons.collections4.trie.AbstractPatriciaTrie.TrieEntry<K, V>();\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2397,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_2398-2398_4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree == null) {\n    subtree = new org.apache.commons.collections4.trie.AbstractPatriciaTrie.TrieEntry<K, V>();\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_2404-2404_1--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "(subtree != null) ? subtree : new org.apache.commons.collections4.trie.AbstractPatriciaTrie.TrieEntry<K, V>() = subtree(prefix, offset, lengthInBits)",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2397,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_2398_0--5--5--5--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2397,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_2398-2398_5--6--6--6--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree.bitIndex : false)) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_2404_2--3--3--3--3--3--3--3--3--3--3--3--4--4--4--7--7--7--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree != null) {\n    subtree = subtree(prefix, offset, lengthInBits);\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2397,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_2398-2398_0--8--8--8--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree.bitIndex : 1)) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2404_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree.bitIndex : 0)) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2404_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree.bitIndex : this.expectedModCount)) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2404_11--9--9--9--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree == null) {\n    subtree = this.next;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_2404-2404_0--10--10--10--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree == null) {\n    subtree = this.current;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2397,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_2398-2398_2--11--11--11--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "(subtree != null) ? subtree : this.next = subtree(prefix, offset, lengthInBits)",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2397,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2398_0--12--12--12--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "(subtree != null) ? subtree : this.current = subtree(prefix, offset, lengthInBits)",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2397,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2398_1--13--13--13--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree : this.current).bitIndex) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2404_1--14--14--14--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree.bitIndex : this.lengthInBits)) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2404_10--15--15--15--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree : new org.apache.commons.collections4.trie.AbstractPatriciaTrie.TrieEntry<K, V>()).bitIndex) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_2404_0--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree == null) {\n    subtree = this.current;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_2404-2404_1--16--16--16--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree : this.next).bitIndex) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_2404_0--17--17--17--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree == null) {\n    subtree = this.next;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2397,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_2398-2398_1--18--18--18--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree.bitIndex : this.offset)) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2404_9--19--19--19--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree.bitIndex : bitIdx)) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_2404_8--20--20--20--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree : null).bitIndex) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_2404_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree.bitIndex : -1)) {\n    lastOne = true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2404_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-collections_a270ff6",
+        "patch": {
+            "contents": "if (subtree == null) {\n    subtree = null;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+            "patched_line": 2399,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_2404-2404_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

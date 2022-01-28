@@ -1,0 +1,28 @@
++ -------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                 | label                    | detail                       | description | patch_id                              |
++ -------------------------------------------------------------------------------------------------------------------------------------- +
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_107-107_0   |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnParam_107-107_1             |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_107-107_5           |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_107_3 |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_107-107_4           |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_107_2 |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_92_2  |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_183_3 |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_182-182_0   |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_92_3  |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_183_2 |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_182_0          |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_92-92_1            |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_92-92_0     |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_182-182_1          |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_183-183_2          |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_183-183_0   |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_107-107_2             |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_92-92_2            |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_107-107_3         |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_92_0           |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_183-183_1         |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_107_0          |
+| javapoet-70b38e5-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_183_0          |
++ -------------------------------------------------------------------------------------------------------------------------------------- +

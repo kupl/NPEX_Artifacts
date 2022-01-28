@@ -1,0 +1,93 @@
+[
+    {
+        "bug_id": "directory-ldap-api_3c6a765",
+        "patch": {
+            "contents": "// Check the value\nif ((attributeType.getSyntax() != null ? attributeType.getSyntax().getSyntaxChecker() : null) != null) {\n    if (!attributeType.getSyntax().getSyntaxChecker().isValidSyntax(upValue)) {\n        throw new org.apache.directory.api.ldap.model.exception.LdapInvalidAttributeValueException(org.apache.directory.api.ldap.model.message.ResultCodeEnum.INVALID_ATTRIBUTE_SYNTAX, org.apache.directory.api.i18n.I18n.err(org.apache.directory.api.i18n.I18n.ERR_13246_INVALID_VALUE_PER_SYNTAX));\n    }\n} else {\n    // We should always have a SyntaxChecker\n    throw new java.lang.IllegalArgumentException(org.apache.directory.api.i18n.I18n.err(org.apache.directory.api.i18n.I18n.ERR_13219_NULL_SYNTAX_CHECKER, normValue));\n}",
+            "original_filepath": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+            "patched_line": 272,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_272_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "directory-ldap-api_3c6a765",
+        "patch": {
+            "contents": "(attributeType.getSyntax() != null ? attributeType.getSyntax() : new org.apache.directory.api.ldap.model.schema.LdapSyntax()).getSyntaxChecker()",
+            "original_filepath": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+            "patched_line": 273,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_272_1--3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "directory-ldap-api_3c6a765",
+        "patch": {
+            "contents": "if (attributeType.getSyntax() == null) {\n    throw new org.apache.directory.api.ldap.model.exception.LdapInvalidAttributeValueException();\n}",
+            "original_filepath": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+            "patched_line": 272,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_272-272_2--4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "directory-ldap-api_3c6a765",
+        "patch": {
+            "contents": "if (attributeType.getSyntax() != null) {\n    // Check the value\n    if (attributeType.getSyntax().getSyntaxChecker() != null) {\n        if (!attributeType.getSyntax().getSyntaxChecker().isValidSyntax(upValue)) {\n            throw new org.apache.directory.api.ldap.model.exception.LdapInvalidAttributeValueException(org.apache.directory.api.ldap.model.message.ResultCodeEnum.INVALID_ATTRIBUTE_SYNTAX, org.apache.directory.api.i18n.I18n.err(org.apache.directory.api.i18n.I18n.ERR_13246_INVALID_VALUE_PER_SYNTAX));\n        }\n    } else {\n        // We should always have a SyntaxChecker\n        throw new java.lang.IllegalArgumentException(org.apache.directory.api.i18n.I18n.err(org.apache.directory.api.i18n.I18n.ERR_13219_NULL_SYNTAX_CHECKER, normValue));\n    }\n}",
+            "original_filepath": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+            "patched_line": 272,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_272-272_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "directory-ldap-api_3c6a765",
+        "patch": {
+            "contents": "if (attributeType.getSyntax() == null) {\n    return;\n}",
+            "original_filepath": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+            "patched_line": 272,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_272-272_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "directory-ldap-api_3c6a765",
+        "patch": {
+            "contents": "(attributeType.getSyntax() != null ? attributeType.getSyntax() : null).getSyntaxChecker()",
+            "original_filepath": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+            "patched_line": 273,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_272_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "directory-ldap-api_3c6a765",
+        "patch": {
+            "contents": "// Check the value\nif ((attributeType.getSyntax() != null ? attributeType.getSyntax().getSyntaxChecker() : new org.apache.directory.api.ldap.model.schema.SyntaxChecker()) != null) {\n    if (!attributeType.getSyntax().getSyntaxChecker().isValidSyntax(upValue)) {\n        throw new org.apache.directory.api.ldap.model.exception.LdapInvalidAttributeValueException(org.apache.directory.api.ldap.model.message.ResultCodeEnum.INVALID_ATTRIBUTE_SYNTAX, org.apache.directory.api.i18n.I18n.err(org.apache.directory.api.i18n.I18n.ERR_13246_INVALID_VALUE_PER_SYNTAX));\n    }\n} else {\n    // We should always have a SyntaxChecker\n    throw new java.lang.IllegalArgumentException(org.apache.directory.api.i18n.I18n.err(org.apache.directory.api.i18n.I18n.ERR_13219_NULL_SYNTAX_CHECKER, normValue));\n}",
+            "original_filepath": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+            "patched_line": 272,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_272_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    }
+]

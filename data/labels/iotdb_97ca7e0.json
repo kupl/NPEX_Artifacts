@@ -1,0 +1,730 @@
+[
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.StorageGroupNotSetException();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.PathAlreadyExistException();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_5--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.PathNotExistException();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_8--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.AliasAlreadyExistException();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_6--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if ((node != null ? node.getChildren().size() : 0) > 0) {\n    for (org.apache.iotdb.db.metadata.mnode.MNode child : node.getChildren().values()) {\n        if (!java.util.regex.Pattern.matches(nodeReg.replace(\"*\", \".*\"), child.getName())) {\n            continue;\n        }\n        if (idx == length) {\n            res.add(parent + node.getName());\n        } else {\n            findChildNodePathInNextLevel(child, nodes, idx + 1, (parent + node.getName()) + org.apache.iotdb.db.conf.IoTDBConstant.PATH_SEPARATOR, res, length);\n        }\n    }\n} else if (idx == length) {\n    java.lang.String nodeName = node.getName();\n    res.add(parent + nodeName);\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1136_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "(node != null ? node : new org.apache.iotdb.db.metadata.mnode.MNode()).getChildren()",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_1136_1--7--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.StorageGroupAlreadySetException();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_7--8--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node != null) {\n    if (node.getChildren().size() > 0) {\n        for (org.apache.iotdb.db.metadata.mnode.MNode child : node.getChildren().values()) {\n            if (!java.util.regex.Pattern.matches(nodeReg.replace(\"*\", \".*\"), child.getName())) {\n                continue;\n            }\n            if (idx == length) {\n                res.add(parent + node.getName());\n            } else {\n                findChildNodePathInNextLevel(child, nodes, idx + 1, (parent + node.getName()) + org.apache.iotdb.db.conf.IoTDBConstant.PATH_SEPARATOR, res, length);\n            }\n        }\n    } else if (idx == length) {\n        java.lang.String nodeName = node.getName();\n        res.add(parent + nodeName);\n    }\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_1136-1136_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if ((node != null ? node.getChildren().size() : 1) > 0) {\n    for (org.apache.iotdb.db.metadata.mnode.MNode child : node.getChildren().values()) {\n        if (!java.util.regex.Pattern.matches(nodeReg.replace(\"*\", \".*\"), child.getName())) {\n            continue;\n        }\n        if (idx == length) {\n            res.add(parent + node.getName());\n        } else {\n            findChildNodePathInNextLevel(child, nodes, idx + 1, (parent + node.getName()) + org.apache.iotdb.db.conf.IoTDBConstant.PATH_SEPARATOR, res, length);\n        }\n    }\n} else if (idx == length) {\n    java.lang.String nodeName = node.getName();\n    res.add(parent + nodeName);\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1136_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    return;\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1136-1136_10--10--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.MetadataException();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_9--11--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "(node != null ? node.getChildren() : null).size()",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_1136_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.IllegalPathException();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_4--13--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    node = new org.apache.iotdb.db.metadata.mnode.MNode();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_1136-1136_2--14--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if ((node != null ? node.getChildren().size() : idx) > 0) {\n    for (org.apache.iotdb.db.metadata.mnode.MNode child : node.getChildren().values()) {\n        if (!java.util.regex.Pattern.matches(nodeReg.replace(\"*\", \".*\"), child.getName())) {\n            continue;\n        }\n        if (idx == length) {\n            res.add(parent + node.getName());\n        } else {\n            findChildNodePathInNextLevel(child, nodes, idx + 1, (parent + node.getName()) + org.apache.iotdb.db.conf.IoTDBConstant.PATH_SEPARATOR, res, length);\n        }\n    }\n} else if (idx == length) {\n    java.lang.String nodeName = node.getName();\n    res.add(parent + nodeName);\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_1136_10--16--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if ((node != null ? node.getChildren().size() : length) > 0) {\n    for (org.apache.iotdb.db.metadata.mnode.MNode child : node.getChildren().values()) {\n        if (!java.util.regex.Pattern.matches(nodeReg.replace(\"*\", \".*\"), child.getName())) {\n            continue;\n        }\n        if (idx == length) {\n            res.add(parent + node.getName());\n        } else {\n            findChildNodePathInNextLevel(child, nodes, idx + 1, (parent + node.getName()) + org.apache.iotdb.db.conf.IoTDBConstant.PATH_SEPARATOR, res, length);\n        }\n    }\n} else if (idx == length) {\n    java.lang.String nodeName = node.getName();\n    res.add(parent + nodeName);\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_1136_11--17--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    node = child;\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_1136-1136_8--18--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    node = this.root;\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_1136-1136_9--19--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "(node != null ? node : child).getChildren()",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_1136_0--20--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "(node != null ? node : this.root).getChildren()",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_1136_1--21--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    return;\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1144,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_1127-1136_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.IllegalPathException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.StorageGroupNotSetException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.MetadataException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.StorageGroupAlreadySetException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.PathNotExistException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.PathAlreadyExistException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1136-1136_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "(node != null ? node.getChildren() : new java.util.HashMap<>()).size()",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1136_2--20--20--20--20--20--20--20--20--20--20--20--20--20--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.PathAlreadyExistException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1132-1132_4--21--21--21--21--21--21--21--21--21--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "res.add(parent + (node != null ? node.getName() : \"null\"))",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1130_1--22--22--22--22--22--22--22--22--22--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.StorageGroupNotSetException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1130-1130_1--23--23--23--23--23--23--23--23--23--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1132-1132_5--24--24--24--24--24--24--24--24--24--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node != null) {\n    res.add(parent + node.getName());\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_1130-1130_0--25--25--25--25--25--25--25--25--25--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "res.add(parent + (node != null ? node.getName() : \"\"))",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1130_2--26--26--26--26--26--26--26--26--26--24--24--24--24--24--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.IllegalPathException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1130-1130_3--27--27--27--27--27--27--27--27--27--25--25--25--25--25--25--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1130-1130_5--28--28--28--28--28--28--28--28--28--26--26--26--26--26--26--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.PathNotExistException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1132-1132_7--29--29--29--29--29--29--29--29--29--27--27--27--27--27--27--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1130-1130_2--30--30--30--30--30--30--30--30--30--28--28--28--28--28--28--28"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.PathNotExistException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1130-1130_7--31--31--31--31--31--31--31--31--31--29--29--29--29--29--29--29"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.StorageGroupNotSetException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1132-1132_1--32--32--32--32--32--32--32--32--32--30--30--30--30--30--30--30"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.MetadataException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1132-1132_8--33--33--33--33--33--33--33--33--33--31--31--31--31--31--31--31"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.PathAlreadyExistException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1130-1130_4--34--34--34--34--34--34--34--34--34--32--32--32--32--32--32--32"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.IllegalPathException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1132-1132_3--35--35--35--35--35--35--35--35--35--33--33--33--33--33--33--33"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.StorageGroupAlreadySetException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1130-1130_6--36--36--36--36--36--36--36--36--36--34--34--34--34--34--34--34"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.StorageGroupAlreadySetException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1132-1132_6--37--37--37--37--37--37--37--37--37--35--35--35--35--35--35--35"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1132-1132_2--38--38--38--38--38--38--38--38--38--36--36--36--36--36--36--36"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node != null) {\n    findChildNodePathInNextLevel(node.getChild(nodeReg), nodes, idx + 1, (parent + node.getName()) + org.apache.iotdb.db.conf.IoTDBConstant.PATH_SEPARATOR, res, length);\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1148,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_1132-1132_0--39--39--39--39--39--39--39--39--39--37--37--37--37--37--37--37"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    throw new org.apache.iotdb.db.exception.metadata.MetadataException(\"\");\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1130-1130_8--40--40--40--40--40--40--40--40--40--38--38--38--38--38--38--38"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "res.add(parent + (node != null ? node.getName() : null))",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1147,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1130_0--41--41--41--41--41--41--41--41--41--39--39--39--39--39--39--39"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "(node != null ? node.getChildren() : new java.util.HashMap()).size()",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1136_2--40--40--40--40--40--40--40"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if (node == null) {\n    node = null;\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1152,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_1136-1136_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "if ((node != null ? node.getChildren().size() : -1) > 0) {\n    for (org.apache.iotdb.db.metadata.mnode.MNode child : node.getChildren().values()) {\n        if (!java.util.regex.Pattern.matches(nodeReg.replace(\"*\", \".*\"), child.getName())) {\n            continue;\n        }\n        if (idx == length) {\n            res.add(parent + node.getName());\n        } else {\n            findChildNodePathInNextLevel(child, nodes, idx + 1, (parent + node.getName()) + org.apache.iotdb.db.conf.IoTDBConstant.PATH_SEPARATOR, res, length);\n        }\n    }\n} else if (idx == length) {\n    java.lang.String nodeName = node.getName();\n    res.add(parent + nodeName);\n}",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1136_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "(node != null ? node : null).getChildren()",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_1136_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "iotdb_97ca7e0",
+        "patch": {
+            "contents": "(node != null ? node.getChildren() : java.util.Collections.emptyMap()).size()",
+            "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+            "patched_line": 1151,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1136_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

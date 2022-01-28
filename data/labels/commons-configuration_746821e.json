@@ -1,0 +1,301 @@
+[
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if (locator == null) {\n    locator = new org.apache.commons.configuration2.io.FileLocator();\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_884-884_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if (locator != null) {\n    if (locator.getEncoding() != null) {\n        transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n    }\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_884-884_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if (locator == null) {\n    throw new org.apache.commons.configuration2.ex.ConfigurationException();\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_884-884_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "(locator != null ? locator : new org.apache.commons.configuration2.io.FileLocator()).getEncoding()",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_884_2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if (locator == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_884-884_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : false) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_884_2--2--2--2--2--2--2--2--2--2--2--2--2--2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--5--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : true) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_884_3--3--3--3--3--3--3--3--3--3--3--3--3--3--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--6--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : null) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_884_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : new java.lang.String()) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_884_0--7--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--7--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : this.systemID) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_884_11--8--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--8--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : org.apache.commons.configuration2.XMLConfiguration.VALUE_PRESERVE) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_884_6--9--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--9--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : org.apache.commons.configuration2.XMLConfiguration.ATTR_SPACE_INTERNAL) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_884_5--10--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--10--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : org.apache.commons.configuration2.XMLConfiguration.ATTR_SPACE) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_884_4--11--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--11--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : org.apache.commons.configuration2.XMLConfiguration.DEFAULT_ROOT_NAME) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_884_3--12--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--12--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : org.apache.commons.configuration2.XMLConfiguration.W3C_XML_SCHEMA) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_884_8--13--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--13--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : this.publicID) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_884_10--14--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--14--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : this.rootElementName) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_884_9--16--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--15--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : org.apache.commons.configuration2.XMLConfiguration.JAXP_SCHEMA_LANGUAGE) != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_884_7--17--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--16--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : \"null\") != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_884_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : \"\") != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_884_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if (locator == null) {\n    locator = null;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_884-884_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "if ((locator != null ? locator.getEncoding() : \"NULL\") != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_884_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-configuration_746821e",
+        "patch": {
+            "contents": "(locator != null ? locator : null).getEncoding()",
+            "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+            "patched_line": 894,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_884_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

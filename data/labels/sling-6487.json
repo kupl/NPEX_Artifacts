@@ -1,0 +1,119 @@
+[
+    {
+        "bug_id": "sling-6487",
+        "patch": {
+            "contents": "if (resource != null) {\n    final org.thymeleaf.templateresource.ITemplateResource templateResource = new org.apache.sling.scripting.thymeleaf.internal.SlingTemplateResource(resource);\n}",
+            "original_filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+            "patched_line": 122,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_121-121_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-6487",
+        "patch": {
+            "contents": "if (fakeProvideTemplateMode() != null) {\n    final org.thymeleaf.templatemode.TemplateMode templateMode = fakeProvideTemplateMode();// templateModeProvider.provideTemplateMode(resource);\n\n}",
+            "original_filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+            "patched_line": 124,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_123-123_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-6487",
+        "patch": {
+            "contents": "if (resource == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+            "patched_line": 122,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_121-121_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--4--4--4--4--4--4--4--4--4--4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-6487",
+        "patch": {
+            "contents": "if (fakeProvideTemplateMode() == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+            "patched_line": 124,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_123-123_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-6487",
+        "patch": {
+            "contents": "final org.thymeleaf.templatemode.TemplateMode templateMode = (fakeProvideTemplateMode() != null) ? fakeProvideTemplateMode() : templateMode// templateModeProvider.provideTemplateMode(resource);\n",
+            "original_filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+            "patched_line": 124,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_123_0--4--6--6--6--6--6--6--6--6--6--6--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-6487",
+        "patch": {
+            "contents": "if (templateMode == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+            "patched_line": 126,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_126-126_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "sling-6487",
+        "patch": {
+            "contents": "if (templateMode != null) {\n    // logger.debug(\"using template mode {} for template '{}'\", templateMode, template);\n    final boolean useDecoupledLogic = templateMode.isMarkup() && configuration.useDecoupledLogic();\n}",
+            "original_filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+            "patched_line": 126,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_126-126_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-6487",
+        "patch": {
+            "contents": "final org.thymeleaf.templatemode.TemplateMode templateMode = (fakeProvideTemplateMode() != null) ? fakeProvideTemplateMode() : null// templateModeProvider.provideTemplateMode(resource);\n",
+            "original_filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+            "patched_line": 124,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_123_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-6487",
+        "patch": {
+            "contents": "(templateMode != null ? templateMode : null).isMarkup()",
+            "original_filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+            "patched_line": 127,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_126_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

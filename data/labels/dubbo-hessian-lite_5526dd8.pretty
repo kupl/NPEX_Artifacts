@@ -1,0 +1,27 @@
++ ------------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                     | label                    | detail                       | description | patch_id                               |
++ ------------------------------------------------------------------------------------------------------------------------------------------- +
+| dubbo-hessian-lite_5526dd8 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipContinueStrategy_974-969_7         |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_974-974_8            |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_974-974_10           |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_974_0           |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_974_1           |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_974-974_11           |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_974_11 |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipBlockStrategy_974-974_0            |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_974-974_12           |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipBreakStrategy_974-967_1            |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_974_8  |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_974_10 |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_974_12 |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_974_9  |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_974-974_9            |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_974-974_3          |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_974-974_13          |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_974-974_4          |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_974-974_6          |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_974-974_5          |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_974-974_14          |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_974_3           |
+| dubbo-hessian-lite_5526dd8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_974_2           |
++ ------------------------------------------------------------------------------------------------------------------------------------------- +

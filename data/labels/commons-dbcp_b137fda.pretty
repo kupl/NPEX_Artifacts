@@ -1,0 +1,27 @@
++ ------------------------------------------------------------------------------------------------------------------------------------ +
+| bug_id               | label                    | detail                       | description | patch_id                              |
++ ------------------------------------------------------------------------------------------------------------------------------------ +
+| commons-dbcp_b137fda | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipSinkStatementStrategy_768-768_0   |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_768-768_5          |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_768-768_8          |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_768-768_4           |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_766-766_0   |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_766-766_2           |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_766-766_8          |
+| commons-dbcp_b137fda | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_768_3 |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_768_4 |
+| commons-dbcp_b137fda | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_768_2 |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_766_0          |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_768-768_6          |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_768-768_3           |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_766-766_5          |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_766-766_6          |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_766-766_3           |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_768-768_2           |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_766-766_4           |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_768_0          |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_766-766_1         |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_766-766_7          |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_768-768_7          |
+| commons-dbcp_b137fda | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_768-768_1         |
++ ------------------------------------------------------------------------------------------------------------------------------------ +

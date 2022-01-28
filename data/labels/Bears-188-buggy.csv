@@ -1,0 +1,5 @@
+bug_id,label,detail,description,patch_id
+Bears-188-buggy,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipReturnParam_103-103_1
+Bears-188-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipSinkStatementStrategy_103-103_0
+Bears-188-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_103_0
+Bears-188-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_103-103_2

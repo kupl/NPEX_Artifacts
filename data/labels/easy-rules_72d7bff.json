@@ -1,0 +1,41 @@
+[
+    {
+        "bug_id": "easy-rules_72d7bff",
+        "patch": {
+            "contents": "if (((java.lang.Integer) (map.get(\"priority\"))) != null) {\n    ruleDefinition.setPriority(((java.lang.Integer) (map.get(\"priority\"))));\n}",
+            "original_filepath": "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java",
+            "patched_line": 60,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_59-59_0--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "easy-rules_72d7bff",
+        "patch": {
+            "contents": "if (((java.lang.Integer) (map.get(\"priority\"))) == null) {\n    return null;\n}",
+            "original_filepath": "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java",
+            "patched_line": 60,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_59-59_2--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "easy-rules_72d7bff",
+        "patch": {
+            "contents": "if (((java.lang.Integer) (map.get(\"priority\"))) == null) {\n    return new org.jeasy.rules.mvel.MVELRuleDefinition();\n}",
+            "original_filepath": "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java",
+            "patched_line": 60,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_59-59_1--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

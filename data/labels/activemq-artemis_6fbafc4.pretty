@@ -1,0 +1,11 @@
++ ------------------------------------------------------------------------------------------------------------------------------------ +
+| bug_id                   | label                    | detail                       | description | patch_id                          |
++ ------------------------------------------------------------------------------------------------------------------------------------ +
+| activemq-artemis_6fbafc4 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipBlockStrategy_91-107_0        |
+| activemq-artemis_6fbafc4 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipSinkStatementStrategy_98-98_1 |
+| activemq-artemis_6fbafc4 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_98_0       |
+| activemq-artemis_6fbafc4 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_98-98_2        |
+| activemq-artemis_6fbafc4 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_98-98_5        |
+| activemq-artemis_6fbafc4 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_98-98_4        |
+| activemq-artemis_6fbafc4 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_98-98_3        |
++ ------------------------------------------------------------------------------------------------------------------------------------ +

@@ -1,0 +1,9 @@
+bug_id,label,detail,description,patch_id
+ninja_3e73cb8,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipSinkStatementStrategy_128-128_1
+ninja_3e73cb8,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipBlockStrategy_128-129_0
+ninja_3e73cb8,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_128-128_3
+ninja_3e73cb8,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplaceEntireExpressionStrategy_128_4
+ninja_3e73cb8,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_128_3
+ninja_3e73cb8,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,ReplaceEntireExpressionStrategy_128_2
+ninja_3e73cb8,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_128_0
+ninja_3e73cb8,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipReturnStrategy_128-128_2

@@ -1,0 +1,9 @@
+bug_id,label,detail,description,patch_id
+nutz_bbd28db,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipBlockStrategy_68-68_0
+nutz_bbd28db,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_68-68_5
+nutz_bbd28db,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_68-68_2
+nutz_bbd28db,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipThrowStrategy_68-68_4
+nutz_bbd28db,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_68_4
+nutz_bbd28db,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipThrowStrategy_68-68_3
+nutz_bbd28db,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_68_1
+nutz_bbd28db,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplacePointerStrategy_68_0

@@ -1,0 +1,223 @@
+[
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "if (this.parameters != null) {\n    java.util.Iterator<java.lang.String> it = this.parameters.keySet().iterator();\n}",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_128-128_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "if (this.parameters != null) {\n    java.util.Iterator<java.lang.String> it = this.parameters.keySet().iterator();\n    for (int i = 1; i < (m.groupCount() + 1); i++) {\n        java.lang.String parameterName = it.next();\n        map.put(parameterName, m.group(i));\n    }\n}",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_128-129_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "if (this.parameters == null) {\n    return null;\n}",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_128-128_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "java.util.Iterator<java.lang.String> it = (this.parameters != null) ? this.parameters.keySet().iterator() : null",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_128_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "(this.parameters != null ? this.parameters : new java.util.LinkedHashMap<java.lang.String, ninja.RouteParameter>()).keySet()",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_128_1--3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--3--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "(this.parameters != null ? this.parameters.keySet() : null).iterator()",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_128_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "(this.parameters != null ? this.parameters : this.parameters).keySet()",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_128_0--5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "java.util.Iterator<java.lang.String> it = (this.parameters != null) ? this.parameters.keySet().iterator() : it",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_128_5--8--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--5--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "(this.parameters != null ? this.parameters.keySet() : new java.util.HashSet<>()).iterator()",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_128_4--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--6--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "(this.parameters != null ? this.parameters : new java.util.HashMap<>()).keySet()",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_128_1--7--7--7--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--7--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "(this.parameters != null ? this.parameters : new java.util.LinkedHashMap<>()).keySet()",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_128_1--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--8--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "(this.parameters != null ? this.parameters.keySet() : new java.util.HashSet()).iterator()",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_128_4--9--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "(this.parameters != null ? this.parameters : new java.util.LinkedHashMap()).keySet()",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_128_1--10--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "(this.parameters != null ? this.parameters.keySet() : java.util.Collections.emptySet()).iterator()",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_128_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "if (this.parameters == null) {\n    return new java.util.HashMap();\n}",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_128-128_2--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "(this.parameters != null ? this.parameters : null).keySet()",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_128_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "ninja_3e73cb8",
+        "patch": {
+            "contents": "if (this.parameters == null) {\n    return java.util.Collections.emptyMap();\n}",
+            "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+            "patched_line": 139,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_128-128_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

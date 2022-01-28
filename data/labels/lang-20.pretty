@@ -1,0 +1,29 @@
++ ----------------------------------------------------------------------------------------------------------------------- +
+| bug_id  | label                    | detail                     | description | patch_id                                |
++ ----------------------------------------------------------------------------------------------------------------------- +
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_3383-3383_1           |
+| lang-20 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplaceEntireExpressionStrategy_3383_10 |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_3383_11 |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_3383-3383_4           |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_3383-3383_8           |
+| lang-20 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplaceEntireExpressionStrategy_3383_8  |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipSinkStatementStrategy_3383-3383_0   |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_3383-3383_14         |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_3383-3383_3           |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_3383_13 |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_3383-3383_11         |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_3383_3           |
+| lang-20 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplacePointerStrategy_3383_0           |
+| lang-20 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplacePointerStrategy_3383_1           |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_3383-3383_12         |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_3383-3383_2           |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipThrowStrategy_3383-3383_6           |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipThrowStrategy_3383-3383_7           |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipThrowStrategy_3383-3383_5           |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipThrowStrategy_3383-3383_9           |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipThrowStrategy_3383-3383_10          |
+| lang-20 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplacePointerStrategy_3383_2           |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_3383_9  |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_3383_12 |
+| lang-20 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_3383-3383_13         |
++ ----------------------------------------------------------------------------------------------------------------------- +

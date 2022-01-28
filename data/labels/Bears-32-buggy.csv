@@ -1,0 +1,9 @@
+bug_id,label,detail,description,patch_id
+Bears-32-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_282-282_1
+Bears-32-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_282_5
+Bears-32-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_282-282_3
+Bears-32-buggy,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipSinkStatementStrategy_282-282_0
+Bears-32-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_282_4
+Bears-32-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipReturnStrategy_282-282_2
+Bears-32-buggy,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,ReplacePointerStrategy_282_1
+Bears-32-buggy,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplacePointerStrategy_282_0

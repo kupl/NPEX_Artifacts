@@ -1,0 +1,23 @@
++ ------------------------------------------------------------------------------------------------------------------------------------ +
+| bug_id                | label                    | detail                     | description | patch_id                               |
++ ------------------------------------------------------------------------------------------------------------------------------------ +
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipSinkStatementStrategy_326-326_0    |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_326-326_4           |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_326-326_7           |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_327_7  |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_327_2  |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_327_3  |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_327_11 |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_326-326_3            |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_327_5  |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_327_9  |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_326-326_5           |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_327_8  |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_327_4  |
+| maven-release_6b1f658 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipThrowStrategy_326-326_2            |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_326-326_6           |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_327_10 |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_327_6  |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_327_0           |
+| maven-release_6b1f658 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | InitPointerStrategy_326-326_1          |
++ ------------------------------------------------------------------------------------------------------------------------------------ +

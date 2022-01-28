@@ -1,0 +1,327 @@
+[
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "if (fields == null) {\n    fields = new org.apache.pdfbox.cos.COSArray();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "InitPointerStrategy_429-429_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 431,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_427-427_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "(fields != null ? fields : new org.apache.pdfbox.cos.COSArray()).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_429_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "for (int i = 0; (i < (fields != null ? fields.size() : false)) && (retval == null); i++) {\n    org.apache.pdfbox.cos.COSDictionary element = ((org.apache.pdfbox.cos.COSDictionary) (fields.getObject(i)));\n    if (element != null) {\n        org.apache.pdfbox.cos.COSString fieldName = ((org.apache.pdfbox.cos.COSString) (element.getDictionaryObject(org.apache.pdfbox.cos.COSName.T)));\n        if (fieldName.getString().equals(fullyQualifiedName) || fieldName.getString().equals(nameSubSection[0])) {\n            org.apache.pdfbox.pdmodel.interactive.form.PDField root = org.apache.pdfbox.pdmodel.interactive.form.PDField.fromDictionary(this, element, null);\n            if (root != null) {\n                if (nameSubSection.length > 1) {\n                    org.apache.pdfbox.pdmodel.interactive.form.PDField kid = root.findKid(nameSubSection, 1);\n                    if (kid != null) {\n                        retval = kid;\n                    } else {\n                        retval = root;\n                    }\n                } else {\n                    retval = root;\n                }\n            }\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_429_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--3--4--4--4--2--2--2--2--2--2--2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "if (fields != null) {\n    for (int i = 0; (i < fields.size()) && (retval == null); i++) {\n        org.apache.pdfbox.cos.COSDictionary element = ((org.apache.pdfbox.cos.COSDictionary) (fields.getObject(i)));\n        if (element != null) {\n            org.apache.pdfbox.cos.COSString fieldName = ((org.apache.pdfbox.cos.COSString) (element.getDictionaryObject(org.apache.pdfbox.cos.COSName.T)));\n            if (fieldName.getString().equals(fullyQualifiedName) || fieldName.getString().equals(nameSubSection[0])) {\n                org.apache.pdfbox.pdmodel.interactive.form.PDField root = org.apache.pdfbox.pdmodel.interactive.form.PDField.fromDictionary(this, element, null);\n                if (root != null) {\n                    if (nameSubSection.length > 1) {\n                        org.apache.pdfbox.pdmodel.interactive.form.PDField kid = root.findKid(nameSubSection, 1);\n                        if (kid != null) {\n                            retval = kid;\n                        } else {\n                            retval = root;\n                        }\n                    } else {\n                        retval = root;\n                    }\n                }\n            }\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_429-429_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "if (((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) != null) {\n    org.apache.pdfbox.cos.COSArray fields = ((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS)));\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 431,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_427-427_1--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "if (fields != null) {\n    java.lang.String[] nameSubSection = fullyQualifiedName.split(\"\\\\.\");\n    org.apache.pdfbox.cos.COSArray fields = ((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS)));\n    for (int i = 0; (i < fields.size()) && (retval == null); i++) {\n        org.apache.pdfbox.cos.COSDictionary element = ((org.apache.pdfbox.cos.COSDictionary) (fields.getObject(i)));\n        if (element != null) {\n            org.apache.pdfbox.cos.COSString fieldName = ((org.apache.pdfbox.cos.COSString) (element.getDictionaryObject(org.apache.pdfbox.cos.COSName.T)));\n            if (fieldName.getString().equals(fullyQualifiedName) || fieldName.getString().equals(nameSubSection[0])) {\n                org.apache.pdfbox.pdmodel.interactive.form.PDField root = org.apache.pdfbox.pdmodel.interactive.form.PDField.fromDictionary(this, element, null);\n                if (root != null) {\n                    if (nameSubSection.length > 1) {\n                        org.apache.pdfbox.pdmodel.interactive.form.PDField kid = root.findKid(nameSubSection, 1);\n                        if (kid != null) {\n                            retval = kid;\n                        } else {\n                            retval = root;\n                        }\n                    } else {\n                        retval = root;\n                    }\n                }\n            }\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 429,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_426-429_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "for (int i = 0; (i < (fields != null ? fields.size() : true)) && (retval == null); i++) {\n    org.apache.pdfbox.cos.COSDictionary element = ((org.apache.pdfbox.cos.COSDictionary) (fields.getObject(i)));\n    if (element != null) {\n        org.apache.pdfbox.cos.COSString fieldName = ((org.apache.pdfbox.cos.COSString) (element.getDictionaryObject(org.apache.pdfbox.cos.COSName.T)));\n        if (fieldName.getString().equals(fullyQualifiedName) || fieldName.getString().equals(nameSubSection[0])) {\n            org.apache.pdfbox.pdmodel.interactive.form.PDField root = org.apache.pdfbox.pdmodel.interactive.form.PDField.fromDictionary(this, element, null);\n            if (root != null) {\n                if (nameSubSection.length > 1) {\n                    org.apache.pdfbox.pdmodel.interactive.form.PDField kid = root.findKid(nameSubSection, 1);\n                    if (kid != null) {\n                        retval = kid;\n                    } else {\n                        retval = root;\n                    }\n                } else {\n                    retval = root;\n                }\n            }\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_429_3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--5--5--5--5--3--3--3--3--3--3--3--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "if (fields == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_429-429_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "for (int i = 0; (i < (fields != null ? fields.size() : 0)) && (retval == null); i++) {\n    org.apache.pdfbox.cos.COSDictionary element = ((org.apache.pdfbox.cos.COSDictionary) (fields.getObject(i)));\n    if (element != null) {\n        org.apache.pdfbox.cos.COSString fieldName = ((org.apache.pdfbox.cos.COSString) (element.getDictionaryObject(org.apache.pdfbox.cos.COSName.T)));\n        if (fieldName.getString().equals(fullyQualifiedName) || fieldName.getString().equals(nameSubSection[0])) {\n            org.apache.pdfbox.pdmodel.interactive.form.PDField root = org.apache.pdfbox.pdmodel.interactive.form.PDField.fromDictionary(this, element, null);\n            if (root != null) {\n                if (nameSubSection.length > 1) {\n                    org.apache.pdfbox.pdmodel.interactive.form.PDField kid = root.findKid(nameSubSection, 1);\n                    if (kid != null) {\n                        retval = kid;\n                    } else {\n                        retval = root;\n                    }\n                } else {\n                    retval = root;\n                }\n            }\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_429_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "for (int i = 0; (i < (fields != null ? fields.size() : 1)) && (retval == null); i++) {\n    org.apache.pdfbox.cos.COSDictionary element = ((org.apache.pdfbox.cos.COSDictionary) (fields.getObject(i)));\n    if (element != null) {\n        org.apache.pdfbox.cos.COSString fieldName = ((org.apache.pdfbox.cos.COSString) (element.getDictionaryObject(org.apache.pdfbox.cos.COSName.T)));\n        if (fieldName.getString().equals(fullyQualifiedName) || fieldName.getString().equals(nameSubSection[0])) {\n            org.apache.pdfbox.pdmodel.interactive.form.PDField root = org.apache.pdfbox.pdmodel.interactive.form.PDField.fromDictionary(this, element, null);\n            if (root != null) {\n                if (nameSubSection.length > 1) {\n                    org.apache.pdfbox.pdmodel.interactive.form.PDField kid = root.findKid(nameSubSection, 1);\n                    if (kid != null) {\n                        retval = kid;\n                    } else {\n                        retval = root;\n                    }\n                } else {\n                    retval = root;\n                }\n            }\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_429_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "org.apache.pdfbox.cos.COSArray fields = (((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) != null) ? ((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) : this.dictionary",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 431,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_427_3--6--6--6--6--4--4--4--4--4--4--4--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "for (int i = 0; (i < (fields != null ? fields.size() : i)) && (retval == null); i++) {\n    org.apache.pdfbox.cos.COSDictionary element = ((org.apache.pdfbox.cos.COSDictionary) (fields.getObject(i)));\n    if (element != null) {\n        org.apache.pdfbox.cos.COSString fieldName = ((org.apache.pdfbox.cos.COSString) (element.getDictionaryObject(org.apache.pdfbox.cos.COSName.T)));\n        if (fieldName.getString().equals(fullyQualifiedName) || fieldName.getString().equals(nameSubSection[0])) {\n            org.apache.pdfbox.pdmodel.interactive.form.PDField root = org.apache.pdfbox.pdmodel.interactive.form.PDField.fromDictionary(this, element, null);\n            if (root != null) {\n                if (nameSubSection.length > 1) {\n                    org.apache.pdfbox.pdmodel.interactive.form.PDField kid = root.findKid(nameSubSection, 1);\n                    if (kid != null) {\n                        retval = kid;\n                    } else {\n                        retval = root;\n                    }\n                } else {\n                    retval = root;\n                }\n            }\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_429_7--7--7--7--7--5--5--5--5--5--5--5--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "org.apache.pdfbox.cos.COSArray fields = (((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) != null) ? ((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) : fields",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 431,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_427_0--8--8--8--8--6--6--6--6--6--6--6--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "for (int i = 0; (i < (fields != null ? fields.size() : org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.FLAG_SIGNATURES_EXIST)) && (retval == null); i++) {\n    org.apache.pdfbox.cos.COSDictionary element = ((org.apache.pdfbox.cos.COSDictionary) (fields.getObject(i)));\n    if (element != null) {\n        org.apache.pdfbox.cos.COSString fieldName = ((org.apache.pdfbox.cos.COSString) (element.getDictionaryObject(org.apache.pdfbox.cos.COSName.T)));\n        if (fieldName.getString().equals(fullyQualifiedName) || fieldName.getString().equals(nameSubSection[0])) {\n            org.apache.pdfbox.pdmodel.interactive.form.PDField root = org.apache.pdfbox.pdmodel.interactive.form.PDField.fromDictionary(this, element, null);\n            if (root != null) {\n                if (nameSubSection.length > 1) {\n                    org.apache.pdfbox.pdmodel.interactive.form.PDField kid = root.findKid(nameSubSection, 1);\n                    if (kid != null) {\n                        retval = kid;\n                    } else {\n                        retval = root;\n                    }\n                } else {\n                    retval = root;\n                }\n            }\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_429_8--9--9--9--9--7--7--7--7--7--7--7--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "(fields != null ? fields : element).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_429_0--10--10--10--10--8--8--8--8--8--8--8--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "for (int i = 0; (i < (fields != null ? fields.size() : org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.FLAG_APPEND_ONLY)) && (retval == null); i++) {\n    org.apache.pdfbox.cos.COSDictionary element = ((org.apache.pdfbox.cos.COSDictionary) (fields.getObject(i)));\n    if (element != null) {\n        org.apache.pdfbox.cos.COSString fieldName = ((org.apache.pdfbox.cos.COSString) (element.getDictionaryObject(org.apache.pdfbox.cos.COSName.T)));\n        if (fieldName.getString().equals(fullyQualifiedName) || fieldName.getString().equals(nameSubSection[0])) {\n            org.apache.pdfbox.pdmodel.interactive.form.PDField root = org.apache.pdfbox.pdmodel.interactive.form.PDField.fromDictionary(this, element, null);\n            if (root != null) {\n                if (nameSubSection.length > 1) {\n                    org.apache.pdfbox.pdmodel.interactive.form.PDField kid = root.findKid(nameSubSection, 1);\n                    if (kid != null) {\n                        retval = kid;\n                    } else {\n                        retval = root;\n                    }\n                } else {\n                    retval = root;\n                }\n            }\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_429_9--11--11--11--11--9--9--9--9--9--9--9--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "(fields != null ? fields : this.dictionary).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_429_1--12--12--12--12--10--10--10--10--10--10--10--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "(fields != null ? fields : this.fieldCache).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_429_2--13--13--13--13--11--11--11--11--11--11--11--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "org.apache.pdfbox.cos.COSArray fields = (((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) != null) ? ((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) : fieldName",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 431,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_427_2--14--14--14--14--12--12--12--12--12--12--12--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "org.apache.pdfbox.cos.COSArray fields = (((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) != null) ? ((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) : element",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 431,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_427_1--15--15--15--15--13--13--13--13--13--13--13--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "org.apache.pdfbox.cos.COSArray fields = (((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) != null) ? ((org.apache.pdfbox.cos.COSArray) (dictionary.getDictionaryObject(org.apache.pdfbox.cos.COSName.FIELDS))) : null",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 431,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_427_0--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "for (int i = 0; (i < (fields != null ? fields.size() : -1)) && (retval == null); i++) {\n    org.apache.pdfbox.cos.COSDictionary element = ((org.apache.pdfbox.cos.COSDictionary) (fields.getObject(i)));\n    if (element != null) {\n        org.apache.pdfbox.cos.COSString fieldName = ((org.apache.pdfbox.cos.COSString) (element.getDictionaryObject(org.apache.pdfbox.cos.COSName.T)));\n        if (fieldName.getString().equals(fullyQualifiedName) || fieldName.getString().equals(nameSubSection[0])) {\n            org.apache.pdfbox.pdmodel.interactive.form.PDField root = org.apache.pdfbox.pdmodel.interactive.form.PDField.fromDictionary(this, element, null);\n            if (root != null) {\n                if (nameSubSection.length > 1) {\n                    org.apache.pdfbox.pdmodel.interactive.form.PDField kid = root.findKid(nameSubSection, 1);\n                    if (kid != null) {\n                        retval = kid;\n                    } else {\n                        retval = root;\n                    }\n                } else {\n                    retval = root;\n                }\n            }\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_429_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "(fields != null ? fields : null).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_429_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2965",
+        "patch": {
+            "contents": "if (fields == null) {\n    fields = null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+            "patched_line": 432,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_429-429_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

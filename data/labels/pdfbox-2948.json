@@ -1,0 +1,301 @@
+[
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "if (getFilters() == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 263,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_252-252_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "if (filters == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_254-254_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "for (int i = 0; i < (filters != null ? filters.size() : false); i++) {\n    org.apache.pdfbox.cos.COSName nextFilter = filters.get(i);\n    if (stopFilters.contains(nextFilter.getName())) {\n        break;\n    } else {\n        org.apache.pdfbox.filter.Filter filter = org.apache.pdfbox.filter.FilterFactory.INSTANCE.getFilter(nextFilter);\n        filter.decode(is, os, stream, i);\n        org.apache.pdfbox.io.IOUtils.closeQuietly(is);\n        is = new java.io.ByteArrayInputStream(os.toByteArray());\n        os.reset();\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_254_0--2--2--2--2--2--2--2--2--2--2--2--2--2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "for (int i = 0; i < (filters != null ? filters.size() : true); i++) {\n    org.apache.pdfbox.cos.COSName nextFilter = filters.get(i);\n    if (stopFilters.contains(nextFilter.getName())) {\n        break;\n    } else {\n        org.apache.pdfbox.filter.Filter filter = org.apache.pdfbox.filter.FilterFactory.INSTANCE.getFilter(nextFilter);\n        filter.decode(is, os, stream, i);\n        org.apache.pdfbox.io.IOUtils.closeQuietly(is);\n        is = new java.io.ByteArrayInputStream(os.toByteArray());\n        os.reset();\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_254_1--3--3--3--3--3--3--3--3--3--3--3--3--3--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "if (filters != null) {\n    for (int i = 0; i < filters.size(); i++) {\n        org.apache.pdfbox.cos.COSName nextFilter = filters.get(i);\n        if (stopFilters.contains(nextFilter.getName())) {\n            break;\n        } else {\n            org.apache.pdfbox.filter.Filter filter = org.apache.pdfbox.filter.FilterFactory.INSTANCE.getFilter(nextFilter);\n            filter.decode(is, os, stream, i);\n            org.apache.pdfbox.io.IOUtils.closeQuietly(is);\n            is = new java.io.ByteArrayInputStream(os.toByteArray());\n            os.reset();\n        }\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_254-254_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "if (getFilters() != null) {\n    java.util.List<org.apache.pdfbox.cos.COSName> filters = getFilters();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 263,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_252-252_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "for (int i = 0; i < (filters != null ? filters.size() : 0); i++) {\n    org.apache.pdfbox.cos.COSName nextFilter = filters.get(i);\n    if (stopFilters.contains(nextFilter.getName())) {\n        break;\n    } else {\n        org.apache.pdfbox.filter.Filter filter = org.apache.pdfbox.filter.FilterFactory.INSTANCE.getFilter(nextFilter);\n        filter.decode(is, os, stream, i);\n        org.apache.pdfbox.io.IOUtils.closeQuietly(is);\n        is = new java.io.ByteArrayInputStream(os.toByteArray());\n        os.reset();\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_254_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "for (int i = 0; i < (filters != null ? filters.size() : 1); i++) {\n    org.apache.pdfbox.cos.COSName nextFilter = filters.get(i);\n    if (stopFilters.contains(nextFilter.getName())) {\n        break;\n    } else {\n        org.apache.pdfbox.filter.Filter filter = org.apache.pdfbox.filter.FilterFactory.INSTANCE.getFilter(nextFilter);\n        filter.decode(is, os, stream, i);\n        org.apache.pdfbox.io.IOUtils.closeQuietly(is);\n        is = new java.io.ByteArrayInputStream(os.toByteArray());\n        os.reset();\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_254_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "(filters != null ? filters : stopFilters).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_254_0--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "for (int i = 0; i < (filters != null ? filters.size() : i); i++) {\n    org.apache.pdfbox.cos.COSName nextFilter = filters.get(i);\n    if (stopFilters.contains(nextFilter.getName())) {\n        break;\n    } else {\n        org.apache.pdfbox.filter.Filter filter = org.apache.pdfbox.filter.FilterFactory.INSTANCE.getFilter(nextFilter);\n        filter.decode(is, os, stream, i);\n        org.apache.pdfbox.io.IOUtils.closeQuietly(is);\n        is = new java.io.ByteArrayInputStream(os.toByteArray());\n        os.reset();\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_254_5--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "(filters != null ? filters : os).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_254_1--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "java.util.List<org.apache.pdfbox.cos.COSName> filters = (getFilters() != null) ? getFilters() : filters",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 263,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_252_0--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "(filters != null ? filters : this.stream).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_254_2--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "if (filters == null) {\n    filters = new java.util.ArrayList<>();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_254-254_2--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "(filters != null ? filters : new java.util.ArrayList<>()).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_254_0--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "if (filters == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_254-254_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "(filters != null ? filters : new java.util.ArrayList()).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_254_0--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "if (filters == null) {\n    filters = new java.util.ArrayList();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_254-254_2--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "if (filters == null) {\n    filters = null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_254-254_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "for (int i = 0; i < (filters != null ? filters.size() : -1); i++) {\n    org.apache.pdfbox.cos.COSName nextFilter = filters.get(i);\n    if (stopFilters.contains(nextFilter.getName())) {\n        break;\n    } else {\n        org.apache.pdfbox.filter.Filter filter = org.apache.pdfbox.filter.FilterFactory.INSTANCE.getFilter(nextFilter);\n        filter.decode(is, os, stream, i);\n        org.apache.pdfbox.io.IOUtils.closeQuietly(is);\n        is = new java.io.ByteArrayInputStream(os.toByteArray());\n        os.reset();\n    }\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_254_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "(filters != null ? filters : null).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_254_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "if (filters == null) {\n    filters = java.util.Collections.emptyList();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_254-254_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2948",
+        "patch": {
+            "contents": "(filters != null ? filters : java.util.Collections.emptyList()).size()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+            "patched_line": 264,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_254_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

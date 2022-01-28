@@ -1,0 +1,7 @@
+bug_id,label,detail,description,patch_id
+opengrok_6a95adb,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipThrowStrategy_39-39_3
+opengrok_6a95adb,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipSinkStatementStrategy_39-39_0
+opengrok_6a95adb,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipReturnParam_39-39_1
+opengrok_6a95adb,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,InitPointerStrategy_39-39_2
+opengrok_6a95adb,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_39_0
+opengrok_6a95adb,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_39_2

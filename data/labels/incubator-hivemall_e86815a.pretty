@@ -1,0 +1,10 @@
++ ------------------------------------------------------------------------------------------------------------------------------------------ +
+| bug_id                     | label                    | detail                       | description | patch_id                              |
++ ------------------------------------------------------------------------------------------------------------------------------------------ +
+| incubator-hivemall_e86815a | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_763_2 |
+| incubator-hivemall_e86815a | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipBlockStrategy_760-764_0           |
+| incubator-hivemall_e86815a | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_763-763_1   |
+| incubator-hivemall_e86815a | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_763-763_3          |
+| incubator-hivemall_e86815a | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_763-763_2         |
+| incubator-hivemall_e86815a | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_763_0          |
++ ------------------------------------------------------------------------------------------------------------------------------------------ +

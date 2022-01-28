@@ -1,0 +1,197 @@
+[
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "if (end == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_196-196_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "if (end == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_196-196_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "(end != null ? end : new java.lang.String()).length()",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_196_0--3--4--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "if (end == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_196-196_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "if (end != null) {\n    final int endLen = end.length();\n}",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_196-196_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "final int endLen = (end != null) ? end.length() : 1",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_196_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "final int endLen = (end != null) ? end.length() : 0",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_196_8"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "final int endLen = (end != null) ? end.length() : endLen",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_196_8--7--9--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "(end != null ? end : str).length()",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_196_0--8--10--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "(end != null ? end : this.name).length()",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_196_1--9--11--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "(end != null ? end : \"null\").length()",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_196_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "(end != null ? end : \"\").length()",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_196_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "final int endLen = (end != null) ? end.length() : -1",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_196_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "(end != null ? end : \"NULL\").length()",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_196_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-io_1ac7bef",
+        "patch": {
+            "contents": "(end != null ? end : null).length()",
+            "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+            "patched_line": 212,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_196_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

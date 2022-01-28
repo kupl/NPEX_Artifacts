@@ -1,0 +1,639 @@
+[
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    cc = new java.lang.Class<?>();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_606-606_10--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "ann = (cc != null) ? cc.getAnnotation(annType) : null",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_606_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc.getSuperclass() == null) {\n    continue;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 617,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_607-607_1--4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass != null) {\n    java.lang.Class<?> cc = klass;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_603-603_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc.getSuperclass() == null) {\n    throw new org.nutz.lang.born.BorningException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 617,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_607-607_2--5--4--4--4--4--4--4--5--5--5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    return null;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_606-606_13"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    throw new java.lang.NoSuchMethodException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_606-606_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    throw new java.lang.NoSuchMethodException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_603-603_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "java.lang.Class<?> cc = (klass != null) ? klass : new java.lang.Class<T>()",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_603_0--6--5--5--5--5--5--5--7--7--7--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc.getSuperclass() == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 617,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_607-607_5--7--6--6--6--6--6--6--8--8--8--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    klass = new java.lang.Class<T>();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_603-603_5--8--7--7--7--7--7--7--9--9--9--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    throw new org.nutz.lang.born.BorningException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_606-606_2--9--8--8--8--8--8--8--10--10--10--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_603-603_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    throw new org.nutz.lang.born.BorningException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_603-603_2--10--9--9--9--9--9--9--12--12--12--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    return null;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_603-603_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    throw new java.lang.NoSuchFieldException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_606-606_12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc.getSuperclass() != null) {\n    cc = cc.getSuperclass();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 617,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_607-607_2--11--10--10--10--10--10--10--14--14--14--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc.getSuperclass() == null) {\n    return null;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 617,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_607-607_8--12--11--11--11--11--11--11--15--15--15--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    break;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_606-605_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc != null) {\n    ann = cc.getAnnotation(annType);\n    cc = cc.getSuperclass();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_606-607_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc.getSuperclass() == null) {\n    throw new java.lang.NoSuchFieldException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 617,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_607-607_7--13--12--12--12--12--12--12--16--16--16--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    throw new java.lang.NoSuchFieldException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_603-603_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc != null) {\n    ann = cc.getAnnotation(annType);\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_606-606_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_606-606_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc.getSuperclass() == null) {\n    break;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 617,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_607-605_1--14--13--13--13--13--13--13--18--18--18--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc.getSuperclass() == null) {\n    throw new java.lang.NoSuchMethodException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 617,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_607-607_6--15--14--14--14--14--14--14--19--19--19--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    continue;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_606-607_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "(cc != null ? cc : new java.lang.Class<?>()).getAnnotation(annType)",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_606_1--16--15--15--15--15--15--15--20--20--20--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "(cc != null ? cc : this.klass).getAnnotation(annType)",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_606_1--17--16--16--16--16--16--16--21--21--21--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    cc = this.klass;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_606-606_8--18--17--17--17--17--17--17--22--22--22--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "(cc != null ? cc : annType).getAnnotation(annType)",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_606_0--19--18--18--18--18--18--18--23--23--23--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "ann = (cc != null) ? cc.getAnnotation(annType) : ann",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_606_4--20--19--19--19--19--19--19--24--24--24--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    cc = annType;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_606-606_7--21--20--20--20--20--20--20--25--25--25--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    throw new org.nutz.castor.FailToCastObjectException(\"\");\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_606-606_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    throw new java.lang.ClassNotFoundException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_603-603_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_603-603_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    throw new org.nutz.castor.FailToCastObjectException(\"\");\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_603-603_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    throw new java.lang.Throwable();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_603-603_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    throw new java.lang.Throwable();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_606-606_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_606-606_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    throw new java.lang.ClassNotFoundException();\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_606-606_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "java.lang.Class<?> cc = (klass != null) ? klass : null",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_603_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    klass = null;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_603-603_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "(cc != null ? cc : null).getAnnotation(annType)",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_606_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (klass == null) {\n    klass = java.lang.Object.class;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_603-603_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "(cc != null ? cc : java.lang.Object.class).getAnnotation(annType)",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_606_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    cc = null;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_606-606_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "if (cc == null) {\n    cc = java.lang.Object.class;\n}",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 616,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_606-606_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "nutz_c8a9e83",
+        "patch": {
+            "contents": "java.lang.Class<?> cc = (klass != null) ? klass : java.lang.Object.class",
+            "original_filepath": "src/org/nutz/lang/Mirror.java",
+            "patched_line": 613,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_603_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

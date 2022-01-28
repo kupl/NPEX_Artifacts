@@ -1,0 +1,197 @@
+[
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "if (level != null ? !level.matches(\"[123456789]\") : false) {\n    visitor.text(\"h\" + level);\n    return;\n}",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_103_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "if (level == null) {\n    level = \"null\";\n}",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_103-103_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "!(level != null ? level.matches(\"[123456789]\") : true)",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_103_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "if (level != null) {\n    if (!level.matches(\"[123456789]\")) {\n        visitor.text(\"h\" + level);\n        return;\n    }\n}",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_103-103_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "if (level == null) {\n    return;\n}",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_103-103_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "!(level != null ? level.matches(\"[123456789]\") : false)",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_103_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "(level != null ? level : \"null\").matches(\"[123456789]\")",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_103_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "!(level != null ? level.matches(\"[123456789]\") : \"[123456789]\" == null)",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_103_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "if (level == null) {\n    level = \"\";\n}",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_103-103_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "if (level != null ? !level.matches(\"[123456789]\") : true) {\n    visitor.text(\"h\" + level);\n    return;\n}",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_103_12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "(level != null ? level : \"\").matches(\"[123456789]\")",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_103_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "if (level == null) {\n    level = \"NULL\";\n}",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_103-103_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "if (level == null) {\n    level = null;\n}",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_103-103_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "(level != null ? level : null).matches(\"[123456789]\")",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_103_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "karaf_5965290",
+        "patch": {
+            "contents": "(level != null ? level : \"NULL\").matches(\"[123456789]\")",
+            "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+            "patched_line": 104,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_103_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

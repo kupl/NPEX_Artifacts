@@ -1,0 +1,11 @@
++ -------------------------------------------------------------------------------------------------------------------------- +
+| bug_id       | label                    | detail                       | description | patch_id                            |
++ -------------------------------------------------------------------------------------------------------------------------- +
+| Jest_93f3c48 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_114-114_4        |
+| Jest_93f3c48 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipSinkStatementStrategy_114-114_0 |
+| Jest_93f3c48 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_114-114_3         |
+| Jest_93f3c48 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_114-114_1       |
+| Jest_93f3c48 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_114_0        |
+| Jest_93f3c48 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_114-114_2       |
+| Jest_93f3c48 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_114_1        |
++ -------------------------------------------------------------------------------------------------------------------------- +

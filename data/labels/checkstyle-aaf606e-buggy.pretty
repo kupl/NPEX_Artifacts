@@ -1,0 +1,13 @@
++ ------------------------------------------------------------------------------------------------------------------------------------ +
+| bug_id                   | label                    | detail                   | description | patch_id                              |
++ ------------------------------------------------------------------------------------------------------------------------------------ +
+| checkstyle-aaf606e-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_286_4 |
+| checkstyle-aaf606e-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipReturnStrategy_286-286_3          |
+| checkstyle-aaf606e-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_286_6 |
+| checkstyle-aaf606e-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipReturnStrategy_286-286_2          |
+| checkstyle-aaf606e-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipSinkStatementStrategy_286-286_1   |
+| checkstyle-aaf606e-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipBlockStrategy_285-286_0           |
+| checkstyle-aaf606e-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_286_1          |
+| checkstyle-aaf606e-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_286_5 |
+| checkstyle-aaf606e-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_286_0          |
++ ------------------------------------------------------------------------------------------------------------------------------------ +

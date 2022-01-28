@@ -1,0 +1,6 @@
+bug_id,label,detail,description,patch_id
+directory-ldap-api_3c6a765,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_272_2
+directory-ldap-api_3c6a765,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipBlockStrategy_272-272_0
+directory-ldap-api_3c6a765,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_272-272_2
+directory-ldap-api_3c6a765,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_272_0
+directory-ldap-api_3c6a765,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,ReplaceEntireExpressionStrategy_272_3

@@ -1,0 +1,9 @@
+bug_id,label,detail,description,patch_id
+Bears-180-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_110-110_2
+Bears-180-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_110-110_1
+Bears-180-buggy,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipSinkStatementStrategy_110-110_0
+Bears-180-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_110_8
+Bears-180-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_110_1
+Bears-180-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_110_0
+Bears-180-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_110_3
+Bears-180-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_110_2

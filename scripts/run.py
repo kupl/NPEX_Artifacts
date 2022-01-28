@@ -143,7 +143,7 @@ def run_target(target: Target):
         return
     elapsed_time = time.time() - start_time
 
-    labels = Label.labels_from_json(f"{ROOT_DIR}/labels/{target.bug_id}.json", target)
+    labels = Label.labels_from_json(f"{LABEL_DIR}/{target.bug_id}.json", target)
     result = Result.from_target(target, list(labels.values()))
     if elapsed_time > TIMEOUT:
         print(f"{FAIL}: timed out for {target.bug_id}")
@@ -163,11 +163,11 @@ if __name__ == '__main__':
     evaluate_args = subparser.add_parser('evaluate', help='evaluate results')
 
     args = parser.parse_args()
-    targets = Target.targets_from_json_file("targets.json")
+    targets = Target.targets_from_json_file(f"{BENCH_DIR}/targets.json")
 
     for target in targets:
-        target.bug_dir = f"{ROOT_DIR}/{target.bug_dir}"
-        target.root_dir = f"{ROOT_DIR}/{target.root_dir}"
+        target.bug_dir = f"{BENCH_DIR}/{target.bug_dir}"
+        target.root_dir = f"{BENCH_DIR}/{target.root_dir}"
 
     if args.subcommand == 'prepare':
         if args.clean:
@@ -183,12 +183,9 @@ if __name__ == '__main__':
         results = []
         for target in targets:
             labels = Label.labels_from_json(
-                f"{ROOT_DIR}/labels/{target.bug_id}.json", target)
+                f"{LABEL_DIR}/{target.bug_id}.json", target)
             result = Result.from_target(target, list(labels.values())).asdict()
             results.append(result)
-        results.sort(key=lambda x:
-                     (x["source"], x['bug_id'], x['result']))
-        # results.sort(key=lambda x: (x['result'], x['bug_id']))
-        # results.sort(key=lambda x: (x['result'], x['manual_result'], x['bug_id']))
+        results.sort(key=lambda x: (x["source"], x['bug_id'], x['result']))
         utils.pretty_print_dict_to_csv("evaluate.results", results)
 

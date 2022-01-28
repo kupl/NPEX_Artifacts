@@ -1,0 +1,16 @@
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id           | label                    | detail                     | description | patch_id                               |
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_1218-1218_2          |
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_1218_3 |
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipSinkStatementStrategy_1218-1218_0  |
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipThrowStrategy_1218-1218_3          |
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_1218_2 |
+| rocketmq_03c1f11 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipReturnStrategy_1218-1218_7         |
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipThrowStrategy_1218-1218_5          |
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipThrowStrategy_1218-1218_6          |
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipThrowStrategy_1218-1218_4          |
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_1218_0          |
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnStrategy_1218-1218_8         |
+| rocketmq_03c1f11 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | InitPointerStrategy_1218-1218_1        |
++ ------------------------------------------------------------------------------------------------------------------------------- +

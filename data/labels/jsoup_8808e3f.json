@@ -1,0 +1,2485 @@
+[
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (input == null) {\n    return \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_11-11_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return input != null ? input.toLowerCase(java.util.Locale.ENGLISH) : new java.lang.String()",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_11_5--3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--3--3--3--3--2--2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (input == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnParam_11-11_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (input != null) {\n    return input.toLowerCase(java.util.Locale.ENGLISH);\n}",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_11-11_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "(input != null ? input : new java.lang.String()).toLowerCase(java.util.Locale.ENGLISH)",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_11_2--5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--3--3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return input != null ? input.toLowerCase(java.util.Locale.ENGLISH) : null",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_11_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return input != null ? input.toLowerCase(java.util.Locale.ENGLISH) : input",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_11_3--7--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name.trim() == null) {\n    return \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 40,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_39-39_1--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "(input != null ? input : \"\").toLowerCase(java.util.Locale.ENGLISH)",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_11_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    return name;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 44,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_42-42_0--7--7--7--6--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return name != null ? name : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 44,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_42_1--8--8--8--7--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "(input != null ? input : \"null\").toLowerCase(java.util.Locale.ENGLISH)",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_11_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 44,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_42-42_6--9--9--9--8--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return name != null ? name : null",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 44,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_42_0--10--10--10--9--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    return \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 40,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_39-41_3--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    return \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 40,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_39-41_2--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name.trim() == null) {\n    return \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 40,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_39-39_2--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return input != null ? input.toLowerCase(java.util.Locale.ENGLISH) : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_11_8"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return input != null ? input.toLowerCase(java.util.Locale.ENGLISH) : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_11_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 44,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_42-42_5--12--12--12--10--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name.trim() != null) {\n    name = name.trim();\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 40,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_39-39_0--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (input == null) {\n    return \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_11-11_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "name = (name.trim() != null) ? name.trim() : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 40,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_39_1--16--16--16--16--16--16--16--16--16--16--16--16--16--17--17--17--17--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "name = (name.trim() != null) ? name.trim() : null",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 40,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_39_0--17--17--17--17--17--17--17--17--17--17--17--17--17--18--18--18--18--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return name != null ? name : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 44,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_42_2--16--16--16--11--18--18--18--18--18--18--18--18--18--18--18--18--18--19--19--19--19--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "name = (name.trim() != null) ? name.trim() : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 40,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_39_2--19--19--19--19--19--19--19--19--19--19--19--19--19--20--20--20--20--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "org.jsoup.internal.Normalizer.lowerCase(name != null ? name : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 42,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_41_2--20--20--20--20--20--20--20--20--20--20--20--20--20--21--21--21--21--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "name = (name != null) ? org.jsoup.internal.Normalizer.lowerCase(name) : null",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 42,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_41_0--21--21--21--21--21--21--21--21--21--21--21--21--21--22--22--22--22--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 42,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_41-41_6--22--22--22--22--22--22--22--22--22--22--22--22--22--23--23--23--23--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "name = (name != null) ? org.jsoup.internal.Normalizer.lowerCase(name) : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 42,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_41_6--23--23--23--23--23--23--23--23--23--23--23--23--23--24--24--24--24--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "name = (name != null) ? org.jsoup.internal.Normalizer.lowerCase(name) : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 42,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_41_5--24--24--24--24--24--24--24--24--24--24--24--24--24--25--25--25--25--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 42,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_41-41_7--25--25--25--25--25--25--25--25--25--25--25--25--25--26--26--26--26--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    name = org.jsoup.internal.Normalizer.lowerCase(name);\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 42,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_41-41_0--26--26--26--26--26--26--26--26--26--26--26--26--26--27--27--27--27--25--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "org.jsoup.internal.Normalizer.lowerCase(name != null ? name : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/ParseSettings.java",
+            "patched_line": 42,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_41_1--27--27--27--27--27--27--27--27--27--27--27--27--27--28--28--28--28--26--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "tagName = (name != null) ? name : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 144,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_143_1--28--28--28--28--28--28--28--28--28--28--28--28--28--29--29--29--29--27--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return name != null ? process(end.reset().name(name)) : false",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 84,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_82_5--29--29--29--29--29--29--29--29--29--29--29--29--29--30--30--30--30--28--28"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 144,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_143-143_4--30--30--30--30--30--30--30--30--30--30--30--30--30--31--31--31--31--29--29"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 80,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_79-82_1--31--31--31--31--31--31--31--31--31--31--31--31--31--32--32--32--32--30--30"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (el.tagName() == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilder.java",
+            "patched_line": 207,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_205-205_2--32--32--32--32--32--32--32--32--32--32--32--32--32--33--33--33--33--31--31"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 71,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_70-71_3--33--33--33--33--33--33--33--33--33--33--33--33--33--34--34--34--34--32--32"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (el.nodeName() == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 411,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_399-399_4--34--34--34--34--34--34--34--34--34--34--34--34--34--35--35--35--35--33--33"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "org.jsoup.internal.Normalizer.lowerCase(tagName != null ? tagName : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 162,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_160_1--35--35--35--35--35--35--35--35--35--35--35--35--35--36--36--36--36--34--34"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 68,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_66-66_5--36--36--36--36--36--36--36--36--36--36--36--36--36--37--37--37--37--35--35"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "normalName = (tagName != null) ? org.jsoup.internal.Normalizer.lowerCase(tagName) : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 162,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_160_5--37--37--37--37--37--37--37--37--37--37--37--37--37--38--38--38--38--36--36"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "tagName = (name != null) ? name : null",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 144,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_143_0--38--38--38--38--38--38--38--38--38--38--38--38--38--39--39--39--39--37--37"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "new org.jsoup.parser.Token.EndTag().name(name != null ? name : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 82,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_80_2--39--39--39--39--39--39--39--39--39--39--39--39--39--40--40--40--40--38--38"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "new org.jsoup.parser.Token.EndTag().name(name != null ? name : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 82,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_80_1--40--40--40--40--40--40--40--40--40--40--40--40--40--41--41--41--41--39--39"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "normalName = (tagName != null) ? org.jsoup.internal.Normalizer.lowerCase(tagName) : null",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 234,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_233_0--41--41--41--41--41--41--41--41--41--41--41--41--41--42--42--42--42--40--40"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "normalName = (name != null) ? org.jsoup.internal.Normalizer.lowerCase(name) : null",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 145,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_144_0--42--42--42--42--42--42--42--42--42--42--42--42--42--43--43--43--43--41--41"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "org.jsoup.internal.Normalizer.lowerCase(tagName != null ? tagName : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 234,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_233_2--43--43--43--43--43--43--43--43--43--43--43--43--43--44--44--44--44--42--42"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "this.tagName = (name != null) ? name : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 232,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_231_1--44--44--44--44--44--44--44--44--44--44--44--44--44--45--45--45--45--43--43"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "normalName = (tagName != null) ? org.jsoup.internal.Normalizer.lowerCase(tagName) : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 234,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_233_6--45--45--45--45--45--45--45--45--45--45--45--45--45--46--46--46--46--44--44"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "start.nameAttr(name != null ? name : \"null\", attrs)",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 76,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_74_0--46--46--46--46--46--46--46--46--46--46--46--46--46--47--47--47--47--45--45"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (el.nodeName() != null) {\n    tb.processEndTag(el.nodeName());\n    break;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 411,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_399-400_0--47--47--47--47--47--47--47--47--47--47--47--47--47--48--48--48--48--46--46"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 72,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_71-71_6--48--48--48--48--48--48--48--48--48--48--48--48--48--49--49--49--49--47--47"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (el.nodeName() == null) {\n    continue;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 411,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_399-402_1--49--49--49--49--49--49--49--49--49--49--49--49--49--50--50--50--50--48--48"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 84,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_82-82_6--50--50--50--50--50--50--50--50--50--50--50--50--50--51--51--51--51--49--49"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 76,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_74-74_5--51--51--51--51--51--51--51--51--51--51--51--51--51--52--52--52--52--50--50"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 80,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_79-80_3--52--52--52--52--52--52--52--52--52--52--52--52--52--53--53--53--53--51--51"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// don't recycle an in-use token\nreturn name != null ? process(new org.jsoup.parser.Token.StartTag().nameAttr(name, attrs)) : new org.jsoup.parser.Token.StartTag().nameAttr(name, attrs) == null",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_71_0--53--53--53--53--53--53--53--53--53--53--53--53--53--54--54--54--54--52--52"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return name != null ? process(end.reset().name(name)) : true",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 84,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_82_6--54--54--54--54--54--54--54--54--54--54--54--54--54--55--55--55--55--53--53"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "normalName = (tagName != null) ? org.jsoup.internal.Normalizer.lowerCase(tagName) : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 234,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_233_5--55--55--55--55--55--55--55--55--55--55--55--55--55--56--56--56--56--54--54"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "normalName = (name != null) ? org.jsoup.internal.Normalizer.lowerCase(name) : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 145,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_144_6--56--56--56--56--56--56--56--56--56--56--56--56--56--57--57--57--57--55--55"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "start.reset().name(name != null ? name : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 68,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_66_2--57--57--57--57--57--57--57--57--57--57--57--57--57--58--58--58--58--56--56"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    return process(start.reset().name(name));\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 68,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_66-66_0--58--58--58--58--58--58--58--58--58--58--58--58--58--59--59--59--59--57--57"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tagName != null) {\n    normalName = org.jsoup.internal.Normalizer.lowerCase(tagName);\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 162,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_160-160_0--59--59--59--59--59--59--59--59--59--59--59--59--59--60--60--60--60--58--58"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    // don't recycle an in-use token\n    return process(new org.jsoup.parser.Token.StartTag().name(name));\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 65,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_64-64_0--60--60--60--60--60--60--60--60--60--60--60--60--60--61--61--61--61--59--59"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "new org.jsoup.parser.Token.StartTag().name(name != null ? name : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 66,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_64_2--61--61--61--61--61--61--61--61--61--61--61--61--61--62--62--62--62--60--60"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 71,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_70-74_1--62--62--62--62--62--62--62--62--62--62--62--62--62--63--63--63--63--61--61"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tagName == null) {\n    tagName = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 234,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_233-233_2--63--63--63--63--63--63--63--63--63--63--63--63--63--64--64--64--64--62--62"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 144,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_143-144_1--64--64--64--64--64--64--64--64--64--64--64--64--64--65--65--65--65--63--63"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tagName != null) {\n    normalName = org.jsoup.internal.Normalizer.lowerCase(tagName);\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 234,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_233-233_0--65--65--65--65--65--65--65--65--65--65--65--65--65--66--66--66--66--64--64"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 65,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_64-64_7--66--66--66--66--66--66--66--66--66--66--66--66--66--67--67--67--67--65--65"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    this.tagName = name;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 232,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_231-231_0--67--67--67--67--67--67--67--67--67--67--67--67--67--68--68--68--68--66--66"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tb.currentElement().nodeName() != null) {\n    tb.processEndTag(tb.currentElement().nodeName());// tbody, tfoot, thead\n\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 1090,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_1089-1089_0--68--68--68--68--68--68--68--68--68--68--68--68--68--69--69--69--69--67--67"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// don't recycle an in-use token\nreturn name != null ? process(new org.jsoup.parser.Token.StartTag().name(name)) : false",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 65,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_64_5--69--69--69--69--69--69--69--69--69--69--69--69--69--70--70--70--70--68--68"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tagName == null) {\n    tagName = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 234,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_233-233_3--70--70--70--70--70--70--70--70--70--70--70--70--70--71--71--71--71--69--69"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 84,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_82-82_5--71--71--71--71--71--71--71--71--71--71--71--71--71--72--72--72--72--70--70"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (el.nodeName() == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 411,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_399-399_5--72--72--72--72--72--72--72--72--72--72--72--72--72--73--73--73--73--71--71"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "normalName = (tagName != null) ? org.jsoup.internal.Normalizer.lowerCase(tagName) : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 162,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_160_6--73--73--73--73--73--73--73--73--73--73--73--73--73--74--74--74--74--72--72"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (el.tagName() != null) {\n    org.jsoup.nodes.Element el = insertEmpty(startTag);\n    stack.add(el);\n    tokeniser.transition(org.jsoup.parser.TokeniserState.Data);// handles <script />, otherwise needs breakout steps from script data\n\n    tokeniser.emit(emptyEnd.reset().name(el.tagName()));// ensure we get out of whatever state we are in. emitted for yielded processing\n\n    return el;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilder.java",
+            "patched_line": 203,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_202-206_0--74--74--74--74--74--74--74--74--74--74--74--74--74--75--75--75--75--73--73"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    start.nameAttr(name, attrs);\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 76,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_74-74_0--75--75--75--75--75--75--75--75--75--75--75--75--75--76--76--76--76--74--74"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tagName == null) {\n    tagName = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 162,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_160-160_2--76--76--76--76--76--76--76--76--76--76--76--76--76--77--77--77--77--75--75"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 64,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_63-66_1--77--77--77--77--77--77--77--77--77--77--77--77--77--78--78--78--78--76--76"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "tb.processEndTag(tb.currentElement().nodeName() != null ? tb.currentElement().nodeName() : \"null\")// tbody, tfoot, thead\n",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 1090,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1089_0--78--78--78--78--78--78--78--78--78--78--78--78--78--79--79--79--79--77--77"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tagName == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 234,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_233-233_1--79--79--79--79--79--79--79--79--79--79--79--79--79--80--80--80--80--78--78"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 68,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_66-66_6--80--80--80--80--80--80--80--80--80--80--80--80--80--81--81--81--81--79--79"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 65,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_64-64_6--81--81--81--81--81--81--81--81--81--81--81--81--81--82--82--82--82--80--80"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "org.jsoup.internal.Normalizer.lowerCase(tagName != null ? tagName : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 162,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_160_2--82--82--82--82--82--82--82--82--82--82--82--82--82--83--83--83--83--81--81"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "end.reset().name(name != null ? name : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 84,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_82_2--83--83--83--83--83--83--83--83--83--83--83--83--83--84--84--84--84--82--82"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// don't recycle an in-use token\nreturn name != null ? process(new org.jsoup.parser.Token.StartTag().nameAttr(name, attrs)) : false",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_71_5--84--84--84--84--84--84--84--84--84--84--84--84--84--85--85--85--85--83--83"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 144,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_143-143_3--85--85--85--85--85--85--85--85--85--85--85--85--85--86--86--86--86--84--84"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// don't recycle an in-use token\nreturn name != null ? process(new org.jsoup.parser.Token.StartTag().name(name)) : new org.jsoup.parser.Token.StartTag().name(name) == null",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 65,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_64_0--86--86--86--86--86--86--86--86--86--86--86--86--86--87--87--87--87--85--85"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "normalName = (tagName != null) ? org.jsoup.internal.Normalizer.lowerCase(tagName) : null",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 162,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_160_0--87--87--87--87--87--87--87--87--87--87--87--87--87--88--88--88--88--86--86"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "start.reset().name(name != null ? name : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 68,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_66_1--88--88--88--88--88--88--88--88--88--88--88--88--88--89--89--89--89--87--87"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "normalName = (name != null) ? org.jsoup.internal.Normalizer.lowerCase(name) : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 145,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_144_5--89--89--89--89--89--89--89--89--89--89--89--89--89--90--90--90--90--88--88"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    // don't recycle an in-use token\n    return process(new org.jsoup.parser.Token.StartTag().nameAttr(name, attrs));\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 72,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_71-71_0--90--90--90--90--90--90--90--90--90--90--90--90--90--91--91--91--91--89--89"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "this.tagName = (name != null) ? name : null",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 232,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_231_0--91--91--91--91--91--91--91--91--91--91--91--91--91--92--92--92--92--90--90"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "org.jsoup.internal.Normalizer.lowerCase(name != null ? name : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 145,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_144_2--92--92--92--92--92--92--92--92--92--92--92--92--92--93--93--93--93--91--91"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tb.currentElement().nodeName() == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 1090,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1089-1089_2--93--93--93--93--93--93--93--93--93--93--93--93--93--94--94--94--94--92--92"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 64,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_63-66_2--94--94--94--94--94--94--94--94--94--94--94--94--94--95--95--95--95--93--93"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 72,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_71-71_7--95--95--95--95--95--95--95--95--95--95--95--95--95--96--96--96--96--94--94"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    normalName = org.jsoup.internal.Normalizer.lowerCase(name);\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 145,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_144-144_0--96--96--96--96--96--96--96--96--96--96--96--96--96--97--97--97--97--95--95"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tagName == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 162,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_160-160_1--97--97--97--97--97--97--97--97--97--97--97--97--97--98--98--98--98--96--96"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// don't recycle an in-use token\nreturn name != null ? process(new org.jsoup.parser.Token.StartTag().nameAttr(name, attrs)) : true",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_71_6--98--98--98--98--98--98--98--98--98--98--98--98--98--99--99--99--99--97--97"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 145,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_144-144_3--99--99--99--99--99--99--99--99--99--99--99--99--99--100--100--100--100--98--98"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// don't recycle an in-use token\nreturn name != null ? process(new org.jsoup.parser.Token.StartTag().name(name)) : true",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 65,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_64_6--100--100--100--100--100--100--100--100--100--100--100--100--100--101--101--101--101--99--99"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "this.tagName = (name != null) ? name : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 232,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_231_2--101--101--101--101--101--101--101--101--101--101--101--101--101--102--102--102--102--100--100"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "tb.processEndTag(tb.currentElement().nodeName() != null ? tb.currentElement().nodeName() : \"\")// tbody, tfoot, thead\n",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 1090,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1089_1--102--102--102--102--102--102--102--102--102--102--102--102--102--103--103--103--103--101--101"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "org.jsoup.internal.Normalizer.lowerCase(name != null ? name : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 145,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_144_1--103--103--103--103--103--103--103--103--103--103--103--103--103--104--104--104--104--102--102"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return name != null ? process(start.reset().name(name)) : start.reset().name(name) == null",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 68,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_66_0--104--104--104--104--104--104--104--104--104--104--104--104--104--105--105--105--105--103--103"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tb.currentElement().nodeName() == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 1090,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1089-1089_1--105--105--105--105--105--105--105--105--105--105--105--105--105--106--106--106--106--104--104"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "process(name != null ? new org.jsoup.parser.Token.StartTag().nameAttr(name, attrs) : new org.jsoup.parser.Token.StartTag())",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 73,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_71_7--106--106--106--106--106--106--106--106--106--106--106--106--106--107--107--107--107--105--105"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 145,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_144-144_4--107--107--107--107--107--107--107--107--107--107--107--107--107--108--108--108--108--106--106"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 81,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_80-80_7--108--108--108--108--108--108--108--108--108--108--108--108--108--109--109--109--109--107--107"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    // don't recycle an in-use token\n    return process(new org.jsoup.parser.Token.EndTag().name(name));\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 81,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_80-80_0--109--109--109--109--109--109--109--109--109--109--109--109--109--110--110--110--110--108--108"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return name != null ? process(start.reset().name(name)) : false",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 68,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_66_5--110--110--110--110--110--110--110--110--110--110--110--110--110--111--111--111--111--109--109"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 232,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_231-231_3--111--111--111--111--111--111--111--111--111--111--111--111--111--112--112--112--112--110--110"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return name != null ? process(end.reset().name(name)) : end.reset().name(name) == null",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 84,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_82_0--112--112--112--112--112--112--112--112--112--112--112--112--112--113--113--113--113--111--111"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// don't recycle an in-use token\nreturn name != null ? process(new org.jsoup.parser.Token.EndTag().name(name)) : new org.jsoup.parser.Token.EndTag().name(name) == null",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 81,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_80_0--113--113--113--113--113--113--113--113--113--113--113--113--113--114--114--114--114--112--112"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "tb.processEndTag(el.nodeName() != null ? el.nodeName() : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 411,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_399_0--114--114--114--114--114--114--114--114--114--114--114--114--114--115--115--115--115--113--113"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 81,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_80-80_6--115--115--115--115--115--115--115--115--115--115--115--115--115--116--116--116--116--114--114"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "end.reset().name(name != null ? name : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 84,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_82_1--116--116--116--116--116--116--116--116--116--116--116--116--116--117--117--117--117--115--115"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "new org.jsoup.parser.Token.StartTag().nameAttr(name != null ? name : \"null\", attrs)",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 73,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_71_1--117--117--117--117--117--117--117--117--117--117--117--117--117--118--118--118--118--116--116"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "tagName = (name != null) ? name : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 144,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_143_2--118--118--118--118--118--118--118--118--118--118--118--118--118--119--119--119--119--117--117"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "new org.jsoup.parser.Token.StartTag().name(name != null ? name : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 66,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_64_1--119--119--119--119--119--119--119--119--119--119--119--119--119--120--120--120--120--118--118"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    return process(end.reset().name(name));\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 84,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_82-82_0--120--120--120--120--120--120--120--120--120--120--120--120--120--121--121--121--121--119--119"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// don't recycle an in-use token\nreturn name != null ? process(new org.jsoup.parser.Token.EndTag().name(name)) : false",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 81,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_80_5--121--121--121--121--121--121--121--121--121--121--121--121--121--122--122--122--122--120--120"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (el.tagName() != null) {\n    tokeniser.emit(emptyEnd.reset().name(el.tagName()));// ensure we get out of whatever state we are in. emitted for yielded processing\n\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilder.java",
+            "patched_line": 207,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_205-205_1--122--122--122--122--122--122--122--122--122--122--122--122--122--123--123--123--123--121--121"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// don't recycle an in-use token\nreturn name != null ? process(new org.jsoup.parser.Token.EndTag().name(name)) : true",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 81,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_80_6--123--123--123--123--123--123--123--123--123--123--123--123--123--124--124--124--124--122--122"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 232,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_231-231_4--124--124--124--124--124--124--124--124--124--124--124--124--124--125--125--125--125--123--123"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "start.nameAttr(name != null ? name : \"\", attrs)",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 76,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_74_1--125--125--125--125--125--125--125--125--125--125--125--125--125--126--126--126--126--124--124"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name != null) {\n    tagName = name;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 144,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_143-143_0--126--126--126--126--126--126--126--126--126--126--126--126--126--127--127--127--127--125--125"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 232,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_231-231_1--127--127--127--127--127--127--127--127--127--127--127--127--127--128--128--128--128--126--126"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (el.nodeName() != null) {\n    tb.processEndTag(el.nodeName());\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 411,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_399-399_3--128--128--128--128--128--128--128--128--128--128--128--128--128--129--129--129--129--127--127"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "tb.processEndTag(el.nodeName() != null ? el.nodeName() : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 411,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_399_1--129--129--129--129--129--129--129--129--129--129--129--129--129--130--130--130--130--128--128"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "emptyEnd.reset().name(el.tagName() != null ? el.tagName() : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilder.java",
+            "patched_line": 207,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_205_1--130--130--130--130--130--130--130--130--130--130--130--130--130--131--131--131--131--129--129"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (el.nodeName() == null) {\n    break;\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java",
+            "patched_line": 411,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_399-396_2--131--131--131--131--131--131--131--131--131--131--131--131--131--132--132--132--132--130--130"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (name == null) {\n    name = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 76,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_74-74_6--132--132--132--132--132--132--132--132--132--132--132--132--132--133--133--133--133--131--131"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "emptyEnd.reset().name(el.tagName() != null ? el.tagName() : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/HtmlTreeBuilder.java",
+            "patched_line": 207,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_205_0--133--133--133--133--133--133--133--133--133--133--133--133--133--134--134--134--134--132--132"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return name != null ? process(start.reset().name(name)) : true",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 68,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_66_6--134--134--134--134--134--134--134--134--134--134--134--134--134--135--135--135--135--133--133"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "org.jsoup.internal.Normalizer.lowerCase(tagName != null ? tagName : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 234,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_233_1--135--135--135--135--135--135--135--135--135--135--135--135--135--136--136--136--136--134--134"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (tagName == null) {\n    tagName = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/parser/Token.java",
+            "patched_line": 162,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_160-160_3--136--136--136--136--136--136--136--136--136--136--136--136--136--137--137--137--137--135--135"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "new org.jsoup.parser.Token.StartTag().nameAttr(name != null ? name : \"\", attrs)",
+            "original_filepath": "src/main/java/org/jsoup/parser/TreeBuilder.java",
+            "patched_line": 73,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_71_2--137--137--137--137--137--137--137--137--137--137--137--137--137--138--138--138--138--136--136"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (attr.getValue() == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 531,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_530-530_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value != null) {\n    attr.setValue(value);\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_532-532_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (attr.getValue() != null) {\n    value = attr.getValue();\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 531,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_530-530_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_532-532_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "value = (attr.getValue() != null) ? attr.getValue() : null",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 531,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_530_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "value = (attr.getValue() != null) ? attr.getValue() : \"\"",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 531,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_530_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (attr.getValue() == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 531,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_530-530_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "attr.setValue(value != null ? value : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_532_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "value = (attr.getValue() != null) ? attr.getValue() : \"null\"",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 531,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_530_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_532-532_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_532-532_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "attr.setValue(value != null ? value : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_532_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_532-532_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 540,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_538-538_4--137--137"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value != null ? org.jsoup.internal.Normalizer.lowerCase(value).startsWith(prot) : false) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_547_7--138--138"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    continue;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_547-547_1--139--139"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 540,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_538-538_5--140--140"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "org.jsoup.internal.Normalizer.lowerCase(value != null ? value : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_547_1--141--141"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// allows anchor links\nif (value != null ? isValidAnchor(value) : false) {\n    return true;\n} else {\n    continue;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 540,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_538_5--142--142"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_547-547_6--143--143"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    break;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_547-534_2--144--144"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value != null ? org.jsoup.internal.Normalizer.lowerCase(value).startsWith(prot) : true) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_547_8--145--145"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "(value != null ? org.jsoup.internal.Normalizer.lowerCase(value) : \"null\").startsWith(prot)",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_547_5--146--146"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "isValidAnchor(value != null ? value : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 541,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_538_2--147--147"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "(value != null ? org.jsoup.internal.Normalizer.lowerCase(value) : \"\").startsWith(prot)",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_547_6--148--148"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// allows anchor links\nif (value != null ? isValidAnchor(value) : true) {\n    return true;\n} else {\n    continue;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 540,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_538_6--149--149"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value != null) {\n    if (org.jsoup.internal.Normalizer.lowerCase(value).startsWith(prot)) {\n        return true;\n    }\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_547-547_3--150--150"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 540,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_538-538_6--151--151"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    break;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 540,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_538-534_2--152--152"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "// allows anchor links\nif (value != null ? isValidAnchor(value) : value == null) {\n    return true;\n} else {\n    continue;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 540,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_538_0--153--153"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value != null) {\n    // allows anchor links\n    if (isValidAnchor(value)) {\n        return true;\n    } else {\n        continue;\n    }\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 540,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_538-538_0--154--154"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value != null) {\n    java.lang.String prot = protocol.toString();\n    if (prot.equals(\"#\")) {\n        // allows anchor links\n        if (isValidAnchor(value)) {\n            return true;\n        } else {\n            continue;\n        }\n    }\n    prot += \":\";\n    if (org.jsoup.internal.Normalizer.lowerCase(value).startsWith(prot)) {\n        return true;\n    }\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 538,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_535-547_0--155--155"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "org.jsoup.internal.Normalizer.lowerCase(value != null ? value : \"\")",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_547_2--156--156"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_547-547_4--157--157"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_547-547_5--158--158"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "isValidAnchor(value != null ? value : \"null\")",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 541,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_538_1--159--159"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value != null ? org.jsoup.internal.Normalizer.lowerCase(value).startsWith(prot) : prot == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 548,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_547_0--160--160"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    continue;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 540,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_538-547_1--161--161"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "(input != null ? input : \"NULL\").toLowerCase(java.util.Locale.ENGLISH)",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_11_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "attr.setValue(value != null ? value : null)",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_532_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "return input != null ? input.toLowerCase(java.util.Locale.ENGLISH) : \"NULL\"",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_11_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "value = (attr.getValue() != null) ? attr.getValue() : \"NULL\"",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 531,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_530_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "attr.setValue(value != null ? value : \"NULL\")",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_532_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "(input != null ? input : null).toLowerCase(java.util.Locale.ENGLISH)",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_11_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (input == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+            "patched_line": 12,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_11-11_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    value = null;\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_532-532_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jsoup_8808e3f",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"NULL\";\n}",
+            "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+            "patched_line": 535,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_532-532_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

@@ -1,0 +1,288 @@
+[
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "classReader = (input != null) ? new org.objectweb.asm.ClassReader(input) : null",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 213,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_209_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "if (input != null) {\n    input.close();\n}",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 215,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_211-211_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "if (project.getClassLoader().getResourceAsStream(pathToClassFile) == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 210,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_206-206_2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "if (input == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 213,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_209-209_2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "final java.io.InputStream input = (project.getClassLoader().getResourceAsStream(pathToClassFile) != null) ? project == null ? null : project.getClassLoader().getResourceAsStream(pathToClassFile) : new java.io.InputStream()",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 210,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_206_2--2--2--2--2--2--2--2--2--2--2--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "if (project.getClassLoader().getResourceAsStream(pathToClassFile) != null) {\n    // get the class file for ASM\n    final java.lang.String pathToClassFile = annotatedClass.getName().replace('.', '/') + \".class\";\n    final java.io.InputStream input = (project == null) ? null : project.getClassLoader().getResourceAsStream(pathToClassFile);\n    final org.objectweb.asm.ClassReader classReader;\n    try {\n        classReader = new org.objectweb.asm.ClassReader(input);\n    } finally {\n        input.close();\n    }\n    final org.objectweb.asm.tree.ClassNode classNode = new org.objectweb.asm.tree.ClassNode();\n    classReader.accept(classNode, (org.objectweb.asm.ClassReader.SKIP_CODE | org.objectweb.asm.ClassReader.SKIP_DEBUG) | org.objectweb.asm.ClassReader.SKIP_FRAMES);\n    // create descriptions\n    final java.util.List<org.apache.felix.scrplugin.annotations.ScannedAnnotation> annotations = extractAnnotation(classNode, annotatedClass);\n    if (annotations.size() > 0) {\n        // process annotations and create descriptions\n        final org.apache.felix.scrplugin.description.ClassDescription desc = new org.apache.felix.scrplugin.description.ClassDescription(annotatedClass, location);\n        aProcessor.process(new org.apache.felix.scrplugin.annotations.ScannedClass(annotations, annotatedClass), desc);\n        log.debug(((\"Found descriptions \" + desc) + \" in \") + annotatedClass.getName());\n        return desc;\n    }\n}",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 208,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_205-218_0--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "final java.io.InputStream input = (project == null) ? null : project.getClassLoader().getResourceAsStream(pathToClassFile) != null ? project.getClassLoader().getResourceAsStream(pathToClassFile) : new java.io.InputStream()",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 210,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_206_0--3--3--3--3--3--3--3--3--3--3--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "final java.io.InputStream input = (project.getClassLoader().getResourceAsStream(pathToClassFile) != null) ? project == null ? null : project.getClassLoader().getResourceAsStream(pathToClassFile) : null",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 210,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_206_1--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "if (input != null) {\n    classReader = new org.objectweb.asm.ClassReader(input);\n}",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 213,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_209-209_0--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "if (input == null) {\n    throw new org.apache.felix.scrplugin.SCRDescriptorException();\n}",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 213,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_209-209_1--4--4--4--4--4--4--4--4--4--4--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "if (project.getClassLoader().getResourceAsStream(pathToClassFile) != null) {\n    final java.io.InputStream input = (project == null) ? null : project.getClassLoader().getResourceAsStream(pathToClassFile);\n}",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 210,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_206-206_1--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "new org.objectweb.asm.ClassReader(input != null ? input : new java.io.InputStream())",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 213,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_209_0--5--5--5--5--5--5--5--5--5--5--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "if (input == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 215,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_211-211_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "if (project.getClassLoader().getResourceAsStream(pathToClassFile) == null) {\n    throw new org.apache.felix.scrplugin.SCRDescriptorException();\n}",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 210,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_206-206_1--6--6--6--6--6--6--6--6--6--6--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "(input != null ? input : new java.io.InputStream()).close()",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 215,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_211_0--7--7--7--7--7--7--7--7--7--7--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "if (input == null) {\n    throw new org.apache.felix.scrplugin.SCRDescriptorException();\n}",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 215,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_211-211_1--8--8--8--8--8--8--8--8--8--8--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "classReader = (input != null) ? new org.objectweb.asm.ClassReader(input) : classReader",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 213,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_209_2--4--9--9--9--9--9--9--9--9--9--9--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "final java.io.InputStream input = (project.getClassLoader().getResourceAsStream(pathToClassFile) != null) ? project == null ? null : project.getClassLoader().getResourceAsStream(pathToClassFile) : input",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 210,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_206_3--5--10--10--10--10--10--10--10--10--10--10--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "final java.io.InputStream input = (project == null) ? null : project.getClassLoader().getResourceAsStream(pathToClassFile) != null ? project.getClassLoader().getResourceAsStream(pathToClassFile) : input",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 210,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_206_0--6--11--11--11--11--11--11--11--11--11--11--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "new org.objectweb.asm.ClassReader(input != null ? input : null)",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 213,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_209_0--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "final java.io.InputStream input = (project == null) ? null : project.getClassLoader().getResourceAsStream(pathToClassFile) != null ? project.getClassLoader().getResourceAsStream(pathToClassFile) : null",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 210,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_206_0--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "felix-5464",
+        "patch": {
+            "contents": "(input != null ? input : null).close()",
+            "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+            "patched_line": 215,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_211_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

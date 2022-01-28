@@ -1,0 +1,20 @@
++ ------------------------------------------------------------------------------------------------------------------------- +
+| bug_id   | label                    | detail                       | description | patch_id                               |
++ ------------------------------------------------------------------------------------------------------------------------- +
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_1192-1192_1  |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_1192-1192_5         |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipBlockStrategy_1191-1193_0          |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_1191-1191_3         |
+| chart-26 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplacePointerStrategy_1191_1          |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_1191-1191_1  |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_1191-1191_2          |
+| chart-26 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | InitPointerStrategy_1192-1192_3        |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_1192-1192_4          |
+| chart-26 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplacePointerStrategy_1192_1          |
+| chart-26 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_1192_4 |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_1191_0          |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_1191-1191_4         |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_1192_0          |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_1192-1192_2        |
+| chart-26 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_1192-1192_6         |
++ ------------------------------------------------------------------------------------------------------------------------- +

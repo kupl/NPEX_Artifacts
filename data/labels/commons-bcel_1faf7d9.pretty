@@ -1,0 +1,15 @@
++ -------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id               | label                    | detail                   | description | patch_id                              |
++ -------------------------------------------------------------------------------------------------------------------------------- +
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipThrowStrategy_178-178_1           |
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipReturnStrategy_178-178_3          |
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_182_3 |
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_182_5 |
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipSinkStatementStrategy_178-178_0   |
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_182_2 |
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipThrowStrategy_178-178_2           |
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_182_7 |
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_182_4 |
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_182_6 |
+| commons-bcel_1faf7d9 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_182_0          |
++ -------------------------------------------------------------------------------------------------------------------------------- +

@@ -1,0 +1,17 @@
++ ------------------------------------------------------------------------------------------------------------------------------ +
+| bug_id         | label                    | detail                       | description | patch_id                              |
++ ------------------------------------------------------------------------------------------------------------------------------ +
+| Bears-56-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_566-566_2           |
+| Bears-56-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_566_2 |
+| Bears-56-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_566_8 |
+| Bears-56-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_566_6 |
+| Bears-56-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_566_7 |
+| Bears-56-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_566-566_3          |
+| Bears-56-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_566-566_4          |
+| Bears-56-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipSinkStatementStrategy_566-566_0   |
+| Bears-56-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_566_3 |
+| Bears-56-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_566_0          |
+| Bears-56-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_566-566_1         |
+| Bears-56-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_566_5 |
+| Bears-56-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_566_4 |
++ ------------------------------------------------------------------------------------------------------------------------------ +

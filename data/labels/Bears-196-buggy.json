@@ -1,0 +1,522 @@
+[
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "LOG.log(java.util.logging.Level.FINEST, ((\"Invalid enum createValue '\" + (value != null ? value : \"\")) + \"' for \") + enumType.getName(), e)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 66,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_65_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value != null) {\n    return ((T) (factory.invoke(null, value.toUpperCase(java.util.Locale.ENGLISH))));\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_63-63_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.ReflectiveOperationException();\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 66,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_65-65_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "((T) (factory.invoke(null, value != null ? value : \"null\")))",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 59,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_58_1--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.ReflectiveOperationException();\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 61,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_60-60_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "LOG.log(java.util.logging.Level.FINEST, ((\"Invalid enum createValue '\" + (value != null ? value : \"null\")) + \"' for \") + enumType.getName(), e)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 61,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_60_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "LOG.log(java.util.logging.Level.FINEST, ((\"Invalid enum createValue '\" + (value != null ? value : null)) + \"' for \") + enumType.getName(), e)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 61,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_60_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 66,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_65-65_5--8--8--8--4--8--8--8--8--8--8--8--8--8--8--8--8--8--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 66,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_65-65_6--9--9--9--5--9--9--9--9--9--9--9--9--9--9--9--9--9--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "LOG.log(java.util.logging.Level.FINEST, ((\"Invalid enum createValue '\" + (value != null ? value : \"\")) + \"' for \") + enumType.getName(), e)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 61,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_60_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "LOG.log(java.util.logging.Level.FINEST, ((\"Invalid enum createValue '\" + (value != null ? value : null)) + \"' for \") + enumType.getName(), e)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 66,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_65_0--11--11--11--6--11--11--11--11--11--11--11--11--11--11--11--11--11--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value != null) {\n    LOG.log(java.util.logging.Level.FINEST, ((\"Invalid enum createValue '\" + value) + \"' for \") + enumType.getName(), e);\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 61,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_60-60_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "LOG.log(java.util.logging.Level.FINEST, ((\"Invalid enum createValue '\" + (value != null ? value : \"null\")) + \"' for \") + enumType.getName(), e)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 66,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_65_1--13--13--13--7--13--13--13--13--13--13--13--13--13--13--13--13--13--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "((T) (factory.invoke(null, value != null ? value : \"\")))",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 59,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_58_2--14--14--14--14--14--14--14--14--14--14--14--14--14--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.ReflectiveOperationException();\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 59,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_58-58_1--15--15--15--15--15--15--15--15--15--15--15--15--15--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.ReflectiveOperationException();\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_63-63_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value != null) {\n    return ((T) (factory.invoke(null, value)));\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 59,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_58-58_0--16--16--16--16--16--16--16--16--16--16--16--16--16--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value != null) {\n    LOG.log(java.util.logging.Level.FINEST, ((\"Invalid enum createValue '\" + value) + \"' for \") + enumType.getName(), e);\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 66,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_65-65_0--17--17--17--8--17--17--17--17--17--17--17--17--17--17--17--17--17--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    return null;\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 57,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_56-63_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 59,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_58-58_6--18--18--18--18--18--18--18--18--18--18--18--18--18--14--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "return value != null ? ((T) (factory.invoke(null, value))) : null",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_0--19--19--19--19--19--19--19--19--19--19--19--19--19--15--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "return value != null ? ((T) (factory.invoke(null, value.toUpperCase(java.util.Locale.ENGLISH)))) : null",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_63_12"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 61,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_60-60_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 61,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_60-60_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 59,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_58-58_5--22--22--22--22--22--22--22--22--22--22--22--22--22--16--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_63-63_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "(value != null ? value : \"null\").toUpperCase(java.util.Locale.ENGLISH)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_63_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "(value != null ? value : \"\").toUpperCase(java.util.Locale.ENGLISH)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_63_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_63-63_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "((T) (factory.invoke(null, value != null ? value.toUpperCase(java.util.Locale.ENGLISH) : \"\")))",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_63_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "((T) (factory.invoke(null, value != null ? value.toUpperCase(java.util.Locale.ENGLISH) : \"null\")))",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_63_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"NULL\";\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_63-63_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "((T) (factory.invoke(null, value != null ? value.toUpperCase(java.util.Locale.ENGLISH) : \"NULL\")))",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_63_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "(value != null ? value : \"NULL\").toUpperCase(java.util.Locale.ENGLISH)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_63_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "LOG.log(java.util.logging.Level.FINEST, ((\"Invalid enum createValue '\" + (value != null ? value : \"NULL\")) + \"' for \") + enumType.getName(), e)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 61,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_60_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "(value != null ? value : null).toUpperCase(java.util.Locale.ENGLISH)",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_63_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = null;\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_63-63_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = null;\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 61,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_60-60_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "((T) (factory.invoke(null, value != null ? value.toUpperCase(java.util.Locale.ENGLISH) : null)))",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 64,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_63_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-196-buggy",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"NULL\";\n}",
+            "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+            "patched_line": 61,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_60-60_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

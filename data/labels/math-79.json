@@ -1,0 +1,67 @@
+[
+    {
+        "bug_id": "math-79",
+        "patch": {
+            "contents": "if (cluster != null) {\n    cluster.addPoint(p);\n}",
+            "original_filepath": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+            "patched_line": 102,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_91-91_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-79",
+        "patch": {
+            "contents": "if (cluster != null) {\n    org.apache.commons.math.stat.clustering.Cluster<T> cluster = org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer.getNearestCluster(clusters, p);\n    cluster.addPoint(p);\n}",
+            "original_filepath": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+            "patched_line": 101,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_90-91_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-79",
+        "patch": {
+            "contents": "if (cluster == null) {\n    break;\n}",
+            "original_filepath": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+            "patched_line": 102,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_91-89_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-79",
+        "patch": {
+            "contents": "if (cluster == null) {\n    return;\n}",
+            "original_filepath": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+            "patched_line": 102,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_91-91_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-79",
+        "patch": {
+            "contents": "if (cluster == null) {\n    continue;\n}",
+            "original_filepath": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+            "patched_line": 102,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_91-91_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

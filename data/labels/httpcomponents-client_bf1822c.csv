@@ -1,0 +1,8 @@
+bug_id,label,detail,description,patch_id
+httpcomponents-client_bf1822c,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipSinkStatementStrategy_341-341_0
+httpcomponents-client_bf1822c,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_341-341_4
+httpcomponents-client_bf1822c,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipThrowStrategy_341-341_3
+httpcomponents-client_bf1822c,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_341-341_5
+httpcomponents-client_bf1822c,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipThrowStrategy_341-341_2
+httpcomponents-client_bf1822c,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_341-341_1
+httpcomponents-client_bf1822c,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_341_0

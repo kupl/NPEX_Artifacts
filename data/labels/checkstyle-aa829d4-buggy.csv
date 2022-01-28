@@ -1,0 +1,12 @@
+bug_id,label,detail,description,patch_id
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_321_1
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipBlockStrategy_252-336_0
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipSinkStatementStrategy_321-321_1
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_321-321_4
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_321_4
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_321-321_5
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_321-321_3
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_321_6
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_321_5
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_321_0
+checkstyle-aa829d4-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_321-321_2

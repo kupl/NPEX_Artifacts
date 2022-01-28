@@ -1,0 +1,470 @@
+[
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    o = new java.lang.Object();\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_911-911_6--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_911-911_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    throw new java.lang.NoSuchMethodException();\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_911-911_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "classes[i] = (o != null) ? o.getClass() : new java.lang.Class<?>()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_911_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    continue;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_911-911_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    throw new java.lang.NullPointerException();\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_911-911_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    break;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_911-909_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o != null) {\n    classes[i] = o.getClass();\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_911-911_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : new java.lang.Object()).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_911_0--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "classes[i] = (o != null) ? o.getClass() : null",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplaceEntireExpressionStrategyEqual",
+            "patch_id": "ReplaceEntireExpressionStrategy_911_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o != null) {\n    java.lang.Object o = array[i];\n    classes[i] = o.getClass();\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 922,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_910-911_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "classes[i] = (o != null) ? o.getClass() : new java.lang.Class<? extends java.lang.Object>()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_911_3--6--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : org.apache.commons.lang3.ClassUtils.primitiveWrapperMap).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_4--4--7--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : org.apache.commons.lang3.ClassUtils.reverseAbbreviationMap).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_7--5--9--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : org.apache.commons.lang3.ClassUtils.INNER_CLASS_SEPARATOR_CHAR).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_13--6--10--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : org.apache.commons.lang3.ClassUtils.abbreviationMap).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_6--7--11--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    o = org.apache.commons.lang3.ClassUtils.reverseAbbreviationMap;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_911-911_12--8--12--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    o = array;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_911-911_5--9--13--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    o = org.apache.commons.lang3.ClassUtils.primitiveWrapperMap;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_911-911_9--10--14--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : i).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_10--11--15--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    o = classes;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_911-911_6--12--16--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : array).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_0--13--17--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    o = org.apache.commons.lang3.ClassUtils.abbreviationMap;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_911-911_11--14--18--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    o = org.apache.commons.lang3.ClassUtils.wrapperPrimitiveMap;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_911-911_10--15--19--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : classes).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_1--16--20--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    o = org.apache.commons.lang3.ClassUtils.INNER_CLASS_SEPARATOR;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_911-911_8--17--21--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : org.apache.commons.lang3.ClassUtils.wrapperPrimitiveMap).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_5--18--22--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : org.apache.commons.lang3.ClassUtils.PACKAGE_SEPARATOR_CHAR).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_11--19--23--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : org.apache.commons.lang3.ClassUtils.INNER_CLASS_SEPARATOR).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_3--20--24--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    o = org.apache.commons.lang3.ClassUtils.PACKAGE_SEPARATOR;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_911-911_7--21--25--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : org.apache.commons.lang3.ClassUtils.PACKAGE_SEPARATOR).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_911_2--22--26--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_911-911_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    o = null;\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_911-911_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "if (o == null) {\n    return new java.lang.Class<?>[]{  };\n}",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_911-911_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "(o != null ? o : null).getClass()",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_911_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-33",
+        "patch": {
+            "contents": "classes[i] = (o != null) ? o.getClass() : java.lang.Object.class",
+            "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+            "patched_line": 923,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_911_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

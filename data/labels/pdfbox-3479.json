@@ -1,0 +1,210 @@
+[
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "java.awt.geom.Point2D.Float point2D = (rect != null) ? matrix.transformPoint(rect.getWidth(), rect.getHeight()) : null",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_136_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "(rect != null ? rect : new org.apache.pdfbox.pdmodel.common.PDRectangle()).getWidth()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_136_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "if (rect == null) {\n    rect = new org.apache.pdfbox.pdmodel.common.PDRectangle();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_136-136_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "matrix.transformPoint(rect != null ? rect.getWidth() : 1.0, rect.getHeight())",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_136_4--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "if (rect != null) {\n    java.awt.geom.Point2D.Float point2D = matrix.transformPoint(rect.getWidth(), rect.getHeight());\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_136-136_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "if (rect != null) {\n    appearanceStream = new org.apache.pdfbox.pdmodel.interactive.annotation.PDAppearanceStream(field.getAcroForm().getDocument());\n    org.apache.pdfbox.pdmodel.common.PDRectangle rect = widget.getRectangle();\n    // Calculate the entries for the bounding box and the transformation matrix\n    // settings for the appearance stream\n    int rotation = resolveRotation(widget);\n    org.apache.pdfbox.util.Matrix matrix = org.apache.pdfbox.util.Matrix.getRotateInstance(java.lang.Math.toRadians(rotation), 0, 0);\n    java.awt.geom.Point2D.Float point2D = matrix.transformPoint(rect.getWidth(), rect.getHeight());\n    org.apache.pdfbox.pdmodel.common.PDRectangle bbox = new org.apache.pdfbox.pdmodel.common.PDRectangle(java.lang.Math.abs(((float) (point2D.getX()))), java.lang.Math.abs(((float) (point2D.getY()))));\n    appearanceStream.setBBox(bbox);\n    appearanceStream.setMatrix(calculateMatrix(bbox, rotation));\n    appearanceStream.setFormType(1);\n    appearanceDict.setNormalAppearance(appearanceStream);\n    // TODO support appearances other than \"normal\"\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 125,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_129-145_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "matrix.transformPoint(rect != null ? rect.getWidth() : 0.0, rect.getHeight())",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_136_3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "if (rect == null) {\n    continue;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_136-109_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "if (rect == null) {\n    return;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_136-136_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "if (rect == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_136-136_6"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "if (rect == null) {\n    break;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_136-103_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "matrix.transformPoint(rect != null ? rect.getWidth() : 1.0F, rect.getHeight())",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_136_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "(rect != null ? rect : null).getWidth()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_136_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "matrix.transformPoint(rect != null ? rect.getWidth() : 0.0F, rect.getHeight())",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_136_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "if (rect == null) {\n    rect = null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_136-136_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3479",
+        "patch": {
+            "contents": "matrix.transformPoint(rect != null ? rect.getWidth() : java.lang.Float.MAX_VALUE, rect.getHeight())",
+            "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+            "patched_line": 132,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_136_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

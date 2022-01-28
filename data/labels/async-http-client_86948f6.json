@@ -1,0 +1,210 @@
+[
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "if (this.uri == null) {\n    return null;\n}",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_347-347_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "// reset existing query\njava.lang.String query = (this.uri != null) ? this.uri.getQuery() : \"null\"",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_347_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "if (this.uri == null) {\n    throw new java.lang.NumberFormatException();\n}",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_347-347_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "if (this.uri == null) {\n    throw new java.lang.Throwable();\n}",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_347-347_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "// reset existing query\njava.lang.String query = (this.uri != null) ? this.uri.getQuery() : null",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_347_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "// reset existing query\njava.lang.String query = (this.uri != null) ? this.uri.getQuery() : \"\"",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_347_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "if (this.uri != null) {\n    // reset existing query\n    java.lang.String query = this.uri.getQuery();\n}",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_347-347_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "org.asynchttpclient.util.MiscUtils.isNonEmpty(this.uri != null ? this.uri.getQuery() : \"null\", org.asynchttpclient.util.MiscUtils)",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 348,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_347_1--2--2--2--2--2--2--2--2--2--3--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "// reset existing query\nif (this.uri != null ? org.asynchttpclient.util.MiscUtils.isNonEmpty(this.uri.getQuery(), org.asynchttpclient.util.MiscUtils) : true) {\n    this.uri = this.uri.withNewQuery(null);\n}",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_347_4--3--3--3--3--3--3--3--3--3--4--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "// reset existing query\nif (this.uri != null ? org.asynchttpclient.util.MiscUtils.isNonEmpty(this.uri.getQuery(), org.asynchttpclient.util.MiscUtils) : this.uri.getQuery() == null) {\n    this.uri = this.uri.withNewQuery(null);\n}",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_347_0--4--4--4--4--4--4--4--4--4--5--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "org.asynchttpclient.util.MiscUtils.isNonEmpty(this.uri != null ? this.uri.getQuery() : \"\", org.asynchttpclient.util.MiscUtils)",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 348,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_347_2--5--5--5--5--5--5--5--5--5--6--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "// reset existing query\nif (this.uri != null ? org.asynchttpclient.util.MiscUtils.isNonEmpty(this.uri.getQuery(), org.asynchttpclient.util.MiscUtils) : false) {\n    this.uri = this.uri.withNewQuery(null);\n}",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_347_3--6--6--6--6--6--6--6--6--6--7--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "if (this.uri != null) {\n    // reset existing query\n    if (org.asynchttpclient.util.MiscUtils.isNonEmpty(this.uri.getQuery(), org.asynchttpclient.util.MiscUtils)) {\n        this.uri = this.uri.withNewQuery(null);\n    }\n}",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_347-347_2--7--7--7--7--7--7--7--7--7--8--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "if (this.uri == null) {\n    this.uri = null;\n}",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_347-347_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "(this.uri != null ? this.uri : null).getQuery()",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 348,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_347_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "async-http-client_86948f6",
+        "patch": {
+            "contents": "// reset existing query\njava.lang.String query = (this.uri != null) ? this.uri.getQuery() : \"NULL\"",
+            "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+            "patched_line": 347,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_347_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

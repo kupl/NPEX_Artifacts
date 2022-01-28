@@ -1,0 +1,132 @@
+[
+    {
+        "bug_id": "zookeeper_e41cac8",
+        "patch": {
+            "contents": "if (connThrottle != null ? connThrottle.isConnectionWeightEnabled() : true) {\n    if (sessionId == 0) {\n        if (localSessionEnabled) {\n            tokensNeeded = connThrottle.getRequiredTokensForLocal();\n        } else {\n            tokensNeeded = connThrottle.getRequiredTokensForGlobal();\n        }\n    } else {\n        tokensNeeded = connThrottle.getRequiredTokensForRenew();\n    }\n}",
+            "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+            "patched_line": 1299,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1304_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "zookeeper_e41cac8",
+        "patch": {
+            "contents": "if (connThrottle == null) {\n    throw new org.apache.zookeeper.server.ClientCnxnLimitException();\n}",
+            "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+            "patched_line": 1299,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1304-1304_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "zookeeper_e41cac8",
+        "patch": {
+            "contents": "if (connThrottle != null) {\n    if (connThrottle.isConnectionWeightEnabled()) {\n        if (sessionId == 0) {\n            if (localSessionEnabled) {\n                tokensNeeded = connThrottle.getRequiredTokensForLocal();\n            } else {\n                tokensNeeded = connThrottle.getRequiredTokensForGlobal();\n            }\n        } else {\n            tokensNeeded = connThrottle.getRequiredTokensForRenew();\n        }\n    }\n}",
+            "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+            "patched_line": 1299,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_1304-1304_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "zookeeper_e41cac8",
+        "patch": {
+            "contents": "if (connThrottle == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+            "patched_line": 1299,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1304-1304_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "zookeeper_e41cac8",
+        "patch": {
+            "contents": "(connThrottle != null ? connThrottle : new org.apache.zookeeper.server.BlueThrottle()).isConnectionWeightEnabled()",
+            "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+            "patched_line": 1299,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1304_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "zookeeper_e41cac8",
+        "patch": {
+            "contents": "if (connThrottle != null ? connThrottle.isConnectionWeightEnabled() : false) {\n    if (sessionId == 0) {\n        if (localSessionEnabled) {\n            tokensNeeded = connThrottle.getRequiredTokensForLocal();\n        } else {\n            tokensNeeded = connThrottle.getRequiredTokensForGlobal();\n        }\n    } else {\n        tokensNeeded = connThrottle.getRequiredTokensForRenew();\n    }\n}",
+            "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+            "patched_line": 1299,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1304_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "zookeeper_e41cac8",
+        "patch": {
+            "contents": "if (connThrottle == null) {\n    connThrottle = new org.apache.zookeeper.server.BlueThrottle();\n}",
+            "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+            "patched_line": 1299,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "InitPointerStrategy_1304-1304_2"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "zookeeper_e41cac8",
+        "patch": {
+            "contents": "if (connThrottle == null) {\n    return;\n}",
+            "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+            "patched_line": 1299,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1304-1304_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "zookeeper_e41cac8",
+        "patch": {
+            "contents": "(connThrottle != null ? connThrottle : null).isConnectionWeightEnabled()",
+            "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+            "patched_line": 1299,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1304_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "zookeeper_e41cac8",
+        "patch": {
+            "contents": "if (connThrottle == null) {\n    connThrottle = null;\n}",
+            "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+            "patched_line": 1299,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_1304-1304_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

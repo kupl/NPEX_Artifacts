@@ -1,0 +1,9 @@
++ --------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                      | label                    | detail                     | description | patch_id                            |
++ --------------------------------------------------------------------------------------------------------------------------------------- +
+| httpcomponents-core_a63b121 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnParam_571-571_1           |
+| httpcomponents-core_a63b121 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipSinkStatementStrategy_571-571_0 |
+| httpcomponents-core_a63b121 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_571_1        |
+| httpcomponents-core_a63b121 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipReturnParam_571-571_2           |
+| httpcomponents-core_a63b121 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_571_0        |
++ --------------------------------------------------------------------------------------------------------------------------------------- +

@@ -1,0 +1,249 @@
+[
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "if (poolMap.get(key) != null) {\n    final org.apache.commons.pool2.impl.GenericKeyedObjectPool<K, T>.ObjectDeque<T> objectDeque = poolMap.get(key);\n}",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 472,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_448-448_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "if (poolMap.get(key) == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 472,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_448-448_3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "(objectDeque != null ? objectDeque : new ObjectDeque<T>()).getAllObjects()",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_450_2--2--2--2--2--2--2--2--2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "if (poolMap.get(key) == null) {\n    throw new java.lang.IllegalStateException();\n}",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 472,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_448-448_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "if (objectDeque != null) {\n    final org.apache.commons.pool2.PooledObject<T> p = objectDeque.getAllObjects().get(new org.apache.commons.pool2.impl.BaseGenericObjectPool.IdentityWrapper<>(obj));\n}",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_450-450_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "final org.apache.commons.pool2.impl.GenericKeyedObjectPool<K, T>.ObjectDeque<T> objectDeque = (poolMap.get(key) != null) ? poolMap.get(key) : new ObjectDeque<T>()",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 472,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_448_0--3--3--3--3--3--3--3--3--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "(objectDeque != null ? objectDeque.getAllObjects() : null).get(new org.apache.commons.pool2.impl.BaseGenericObjectPool.IdentityWrapper<>(obj))",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_450_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "if (objectDeque == null) {\n    throw new java.lang.IllegalStateException();\n}",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_450-450_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "if (objectDeque == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_450-450_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "final org.apache.commons.pool2.PooledObject<T> p = (objectDeque != null) ? objectDeque.getAllObjects().get(new org.apache.commons.pool2.impl.BaseGenericObjectPool.IdentityWrapper<>(obj)) : null",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_450_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "final org.apache.commons.pool2.PooledObject<T> p = (objectDeque != null) ? objectDeque.getAllObjects().get(new org.apache.commons.pool2.impl.BaseGenericObjectPool.IdentityWrapper<>(obj)) : p",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_450_4--7--5--5--5--5--5--5--5--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "final org.apache.commons.pool2.impl.GenericKeyedObjectPool<K, T>.ObjectDeque<T> objectDeque = (poolMap.get(key) != null) ? poolMap.get(key) : objectDeque",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 472,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_448_0--9--7--7--7--7--7--7--7--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "final org.apache.commons.pool2.impl.GenericKeyedObjectPool<K, T>.ObjectDeque<T> objectDeque = (poolMap.get(key) != null) ? poolMap.get(key) : null",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 472,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_448_0--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "(objectDeque != null ? objectDeque.getAllObjects() : new java.util.HashMap<>()).get(new org.apache.commons.pool2.impl.BaseGenericObjectPool.IdentityWrapper<>(obj))",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_450_2--12--12--12--12--12--12--12--12--12--12--12--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "if (poolMap.get(key) == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 472,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_448-448_1--12--12--12--12--12--12--13--13--13--13--13--13--13--13--13--13--13--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "if (objectDeque == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_450-450_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "(objectDeque != null ? objectDeque.getAllObjects() : new java.util.HashMap()).get(new org.apache.commons.pool2.impl.BaseGenericObjectPool.IdentityWrapper<>(obj))",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_450_2--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "(objectDeque != null ? objectDeque : null).getAllObjects()",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_450_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "commons-pool_41f4e41",
+        "patch": {
+            "contents": "(objectDeque != null ? objectDeque.getAllObjects() : java.util.Collections.emptyMap()).get(new org.apache.commons.pool2.impl.BaseGenericObjectPool.IdentityWrapper<>(obj))",
+            "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+            "patched_line": 473,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_450_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    }
+]

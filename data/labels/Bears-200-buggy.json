@@ -1,0 +1,314 @@
+[
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (source == null) {\n    source = new java.lang.String();\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_130-130_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.AMBIGUOUS",
+        "detail": "LabelDetail.TODO",
+        "description": "sem equal but diff method"
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source != null ? source : new java.lang.String(), throwable)",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_130_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.AMBIGUOUS",
+        "detail": "LabelDetail.TODO",
+        "description": "sem equal but diff method"
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "convert(source != null ? org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source, throwable) : new io.axoniq.axonserver.grpc.ErrorMessage())",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_130_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "return source != null ? convert(org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source, throwable)) : null",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_130_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (source != null) {\n    return convert(org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source, throwable));\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_130-130_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (source == null) {\n    return null;\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_130-130_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "convert(source != null ? org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source, throwable) : null)",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_130_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source != null ? source : this.errorCode, throwable)",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_130_0--10--7--7--7--7--7--7--7--7--7--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--4--4--4"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (source == null) {\n    source = this.errorCode;\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_130-130_0--11--8--8--8--8--8--8--8--8--8--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--5--5--5"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (source == null) {\n    source = \"null\";\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_130-130_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source != null ? source : \"null\", throwable)",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_130_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (source == null) {\n    source = \"\";\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_130-130_2"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": "Other callers"
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source != null ? source : \"\", throwable)",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_130_0"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": "Other callers"
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (configuration.getClientId() == null) {\n    return null;\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/query/AxonServerQueryBus.java",
+            "patched_line": 187,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_204-204_3--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (configuration.getClientId() != null) {\n    logger.warn(\"There was a problem issuing a query {}.\", interceptedQuery, e);\n    completableFuture.completeExceptionally(org.axonframework.axonserver.connector.ErrorCode.QUERY_DISPATCH_ERROR.convert(configuration.getClientId(), e));\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/query/AxonServerQueryBus.java",
+            "patched_line": 186,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_203-204_0--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (configuration.getClientId() == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/query/AxonServerQueryBus.java",
+            "patched_line": 187,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_204-204_1--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (configuration.getClientId() != null) {\n    completableFuture.completeExceptionally(org.axonframework.axonserver.connector.ErrorCode.QUERY_DISPATCH_ERROR.convert(configuration.getClientId(), e));\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/query/AxonServerQueryBus.java",
+            "patched_line": 187,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_204-204_2--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "org.axonframework.axonserver.connector.ErrorCode.QUERY_DISPATCH_ERROR.convert(configuration.getClientId() != null ? configuration.getClientId() : \"\", e)",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/query/AxonServerQueryBus.java",
+            "patched_line": 187,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_205_1--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "org.axonframework.axonserver.connector.ErrorCode.QUERY_DISPATCH_ERROR.convert(configuration.getClientId() != null ? configuration.getClientId() : \"null\", e)",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/query/AxonServerQueryBus.java",
+            "patched_line": 187,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_205_0--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (source == null) {\n    source = \"NULL\";\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_130-130_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source != null ? source : \"NULL\", throwable)",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_130_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "if (source == null) {\n    source = null;\n}",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_130-130_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source != null ? source : null, throwable)",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 140,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_130_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-200-buggy",
+        "patch": {
+            "contents": "convert(null != null ? null : null, throwable)",
+            "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+            "patched_line": 127,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_119_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

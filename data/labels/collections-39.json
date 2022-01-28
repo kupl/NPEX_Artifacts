@@ -1,0 +1,704 @@
+[
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : new java.lang.String()).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_569_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : new java.lang.String()",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_567_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line != null) {\n    java.lang.String line = reader.readProperty();\n    int equalSign = line.indexOf('=');\n    if (equalSign > 0) {\n        java.lang.String key = line.substring(0, equalSign).trim();\n        java.lang.String value = line.substring(equalSign + 1).trim();\n        // Configure produces lines like this ... just ignore them\n        if (\"\".equals(value)) {\n            continue;\n        }\n        if ((getInclude() != null) && key.equalsIgnoreCase(getInclude())) {\n            // Recursively load properties files.\n            java.io.File file = null;\n            if (value.startsWith(fileSeparator)) {\n                // We have an absolute path so we'll use this\n                file = new java.io.File(value);\n            } else {\n                // We have a relative path, and we have two\n                // possible forms here. If we have the \"./\" form\n                // then just strip that off first before continuing.\n                if (value.startsWith(\".\" + fileSeparator)) {\n                    value = value.substring(2);\n                }\n                file = new java.io.File(basePath + value);\n            }\n            if (((file != null) && file.exists()) && file.canRead()) {\n                load(new java.io.FileInputStream(file));\n            }\n        } else {\n            addProperty(key, value);\n        }\n    }\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_567-571_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line != null) {\n    int equalSign = line.indexOf('=');\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_569-569_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = new java.lang.String();\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_569-569_4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    return;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_569-569_8"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    break;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_569-566_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (reader.readProperty() == null) {\n    return;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_567-567_4--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    continue;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_569-571_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (reader.readProperty() == null) {\n    continue;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_567-571_1--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (reader.readProperty() == null) {\n    break;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_567-566_2--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (reader.readProperty() != null) {\n    java.lang.String line = reader.readProperty();\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_567-567_3--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "int equalSign = (line != null) ? line.indexOf('=') : 0",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_569_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "int equalSign = (line != null) ? line.indexOf('=') : 1",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_569_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = org.apache.commons.collections.ExtendedProperties.include;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_569-569_9--2--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = this.fileSeparator;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_569-569_8--3--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : key).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_569_1--4--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : org.apache.commons.collections.ExtendedProperties.include).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_569_6--5--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : this.fileSeparator",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_567_6--6--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : value).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_569_2--7--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = enc;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_569-569_3--8--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : org.apache.commons.collections.ExtendedProperties.START_TOKEN",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_567_8--9--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = org.apache.commons.collections.ExtendedProperties.START_TOKEN;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_569-569_10--10--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = this.basePath;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_569-569_7--11--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = key;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_569-569_4--12--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = value;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_569-569_5--13--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : line",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_567_1--14--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : enc",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_567_0--15--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : this.file).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_569_3--16--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : this.basePath",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_567_5--17--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : this.file",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_567_4--18--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : enc).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_569_0--19--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : org.apache.commons.collections.ExtendedProperties.END_TOKEN",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_567_9--20--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = this.file;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_569-569_6--21--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = org.apache.commons.collections.ExtendedProperties.END_TOKEN;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_569-569_11--22--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : org.apache.commons.collections.ExtendedProperties.END_TOKEN).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_569_8--23--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : org.apache.commons.collections.ExtendedProperties.include",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_567_7--24--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "int equalSign = (line != null) ? line.indexOf('=') : equalSign",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_569_22--25--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : this.basePath).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_569_4--26--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : value",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_567_3--27--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : org.apache.commons.collections.ExtendedProperties.START_TOKEN).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_569_7--28--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : key",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_567_2--29--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : this.fileSeparator).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_569_5--30--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37"
+        },
+        "label": "LabelOverall.TIMEOUT",
+        "detail": "LabelDetail.TIMEOUT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : \"\"",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyLiteral",
+            "patch_id": "ReplacePointerStrategyLiteral_567_2--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : \"null\").indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_569_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = \"null\";\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_569-569_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : \"\").indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_569_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = \"\";\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_569-569_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "java.lang.String line = (reader.readProperty() != null) ? reader.readProperty() : \"null\"",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 575,
+            "strategy": "ReplacePointerStrategyLiteral",
+            "patch_id": "ReplacePointerStrategyLiteral_567_1--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = null;\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_569-569_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "if (line == null) {\n    line = \"NULL\";\n}",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_569-569_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "int equalSign = (line != null) ? line.indexOf('=') : -1",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_569_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : null).indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_569_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "collections-39",
+        "patch": {
+            "contents": "(line != null ? line : \"NULL\").indexOf('=')",
+            "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+            "patched_line": 576,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_569_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

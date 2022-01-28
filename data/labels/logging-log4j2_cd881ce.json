@@ -1,0 +1,145 @@
+[
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "if (params == null) {\n    throw new java.lang.IllegalAccessException();\n}",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 331,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_320-320_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "if (params == null) {\n    throw new java.lang.InstantiationException();\n}",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 331,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_320-320_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "if (params == null) {\n    return;\n}",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 330,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_319-320_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "if (params == null) {\n    throw new java.lang.IllegalStateException();\n}",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 331,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_320-320_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "if (params != null) {\n    logMessage(fqcn, org.apache.logging.log4j.Level.TRACE, org.apache.logging.log4j.spi.AbstractLogger.ENTRY_MARKER, entryMsg(format, params.length, params), null);\n}",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 331,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_320-320_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "entryMsg(format, params != null ? params.length : 1, params)",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 331,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_320_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "logMessage(fqcn, org.apache.logging.log4j.Level.TRACE, org.apache.logging.log4j.spi.AbstractLogger.ENTRY_MARKER, params != null ? entryMsg(format, params.length, params) : null, null)",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 331,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_320_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "entryMsg(format, (params != null ? params : new java.lang.Object[]{  }).length, params)",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 331,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_320_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "entryMsg(format, params != null ? params.length : 0, params)",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 331,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_320_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "entryMsg(format, (params != null ? params : null).length, params)",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 331,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_320_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "logging-log4j2_cd881ce",
+        "patch": {
+            "contents": "entryMsg(format, params != null ? params.length : -1, params)",
+            "original_filepath": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+            "patched_line": 331,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_320_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

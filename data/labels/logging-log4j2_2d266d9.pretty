@@ -1,0 +1,10 @@
++ -------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                 | label                    | detail                       | description | patch_id                              |
++ -------------------------------------------------------------------------------------------------------------------------------------- +
+| logging-log4j2_2d266d9 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_107-107_0   |
+| logging-log4j2_2d266d9 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_107-107_2           |
+| logging-log4j2_2d266d9 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_107-107_3          |
+| logging-log4j2_2d266d9 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_107_2 |
+| logging-log4j2_2d266d9 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_107_0          |
+| logging-log4j2_2d266d9 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_107-107_1         |
++ -------------------------------------------------------------------------------------------------------------------------------------- +

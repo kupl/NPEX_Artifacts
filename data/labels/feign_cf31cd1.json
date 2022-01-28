@@ -1,0 +1,457 @@
+[
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (headers == null) {\n    return null;\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_342-342_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (response.headers() == null) {\n    return;\n}",
+            "original_filepath": "core/src/test/java/feign/ResponseTest.java",
+            "patched_line": 79,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_82-82_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(response.headers() != null ? org.assertj.core.api.Assertions.assertThat(response.headers()) : new org.assertj.core.api.MapAssert<java.lang.String, java.util.Collection<java.lang.String>>()).isNotNull()",
+            "original_filepath": "core/src/test/java/feign/ResponseTest.java",
+            "patched_line": 79,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_82_0--2--2--2--3--3--3--3--3--3--3--3--3--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (headers != null) {\n    for (java.util.Map.Entry<java.lang.String, java.util.Collection<java.lang.String>> entry : headers.entrySet()) {\n        java.lang.String headerName = entry.getKey();\n        if (!result.containsKey(headerName)) {\n            result.put(headerName.toLowerCase(java.util.Locale.ROOT), new java.util.LinkedList<java.lang.String>());\n        }\n        result.get(headerName).addAll(entry.getValue());\n    }\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_342-342_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (this.headers != null) {\n    this.headers = java.util.Collections.unmodifiableMap(feign.Response.caseInsensitiveCopyOf(builder.headers));\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 54,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_52-52_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(response.headers() != null ? org.assertj.core.api.Assertions.assertThat(response.headers()) : null).isNotNull()",
+            "original_filepath": "core/src/test/java/feign/ResponseTest.java",
+            "patched_line": 79,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_82_0--4--4--4--4--4--4--4--4--4--6--6--6--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (response.headers() != null) {\n    org.assertj.core.api.Assertions.assertThat(response.headers()).isNotNull().isEmpty();\n}",
+            "original_filepath": "core/src/test/java/feign/ResponseTest.java",
+            "patched_line": 79,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_82-82_0--7--7--7--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(response.headers() != null ? org.assertj.core.api.Assertions.assertThat(response.headers()).isNotNull() : new org.assertj.core.api.MapAssert<java.lang.String, java.util.Collection<java.lang.String>>()).isEmpty()",
+            "original_filepath": "core/src/test/java/feign/ResponseTest.java",
+            "patched_line": 79,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_82_2--4--3--3--5--5--5--5--5--5--5--5--5--8--8--8--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "for (java.util.Map.Entry<java.lang.String, java.util.Collection<java.lang.String>> entry : headers != null ? headers.entrySet() : null) {\n    java.lang.String headerName = entry.getKey();\n    if (!result.containsKey(headerName)) {\n        result.put(headerName.toLowerCase(java.util.Locale.ROOT), new java.util.LinkedList<java.lang.String>());\n    }\n    result.get(headerName).addAll(entry.getValue());\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_342_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(response.headers() != null ? org.assertj.core.api.Assertions.assertThat(response.headers()).isNotNull() : null).isEmpty()",
+            "original_filepath": "core/src/test/java/feign/ResponseTest.java",
+            "patched_line": 79,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_82_1--7--6--6--6--6--6--6--6--6--9--9--9--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(response.headers() != null ? org.assertj.core.api.Assertions.assertThat(response.headers()) : null).isNotNull()",
+            "original_filepath": "core/src/test/java/feign/ResponseTest.java",
+            "patched_line": 79,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_82_0--9--7--7--7--7--7--7--7--7--10--10--10--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (headers == null) {\n    headers = result;\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_342-342_0--10--8--8--8--8--8--8--8--8--11--11--11--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(headers != null ? headers : result).entrySet()",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_342_0--11--9--9--9--9--9--9--9--9--12--12--12--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(this.headers != null) ? this.headers : this.headers = java.util.Collections.unmodifiableMap(feign.Response.caseInsensitiveCopyOf(builder.headers))",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 54,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_52_0--12--10--10--10--10--10--10--10--10--13--13--13--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(response.headers() != null ? org.assertj.core.api.Assertions.assertThat(response.headers()).isNotNull() : null).isEmpty()",
+            "original_filepath": "core/src/test/java/feign/ResponseTest.java",
+            "patched_line": 79,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_82_1--13--11--11--11--11--11--11--11--11--14--14--14--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "org.assertj.core.api.Assertions.assertThat(response.headers() != null ? response.headers() : new java.util.HashMap<>())",
+            "original_filepath": "core/src/test/java/feign/ResponseTest.java",
+            "patched_line": 79,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_82_0--15--15--15--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (headers == null) {\n    headers = new java.util.HashMap<>();\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_342-342_1--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": "Null source?"
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(headers != null ? headers : new java.util.HashMap<>()).entrySet()",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_342_1--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (headers == null) {\n    return null;\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 340,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_339-342_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(this.headers != null) ? this.headers : new java.util.HashMap<>() = java.util.Collections.unmodifiableMap(feign.Response.caseInsensitiveCopyOf(builder.headers))",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 54,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_52_1--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--18--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "for (java.util.Map.Entry<java.lang.String, java.util.Collection<java.lang.String>> entry : headers != null ? headers.entrySet() : new java.util.HashSet<>()) {\n    java.lang.String headerName = entry.getKey();\n    if (!result.containsKey(headerName)) {\n        result.put(headerName.toLowerCase(java.util.Locale.ROOT), new java.util.LinkedList<java.lang.String>());\n    }\n    result.get(headerName).addAll(entry.getValue());\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_342_4--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--19--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(this.headers != null) ? this.headers : null = java.util.Collections.unmodifiableMap(feign.Response.caseInsensitiveCopyOf(builder.headers))",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 54,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_52_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (this.headers == null) {\n    return;\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 54,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_52-52_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (headers == null) {\n    headers = new java.util.HashMap();\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_342-342_1--20--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(headers != null ? headers : new java.util.HashMap()).entrySet()",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_342_1--21--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(this.headers != null) ? this.headers : new java.util.HashMap() = java.util.Collections.unmodifiableMap(feign.Response.caseInsensitiveCopyOf(builder.headers))",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 54,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_52_1--22--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "for (java.util.Map.Entry<java.lang.String, java.util.Collection<java.lang.String>> entry : headers != null ? headers.entrySet() : new java.util.HashSet()) {\n    java.lang.String headerName = entry.getKey();\n    if (!result.containsKey(headerName)) {\n        result.put(headerName.toLowerCase(java.util.Locale.ROOT), new java.util.LinkedList<java.lang.String>());\n    }\n    result.get(headerName).addAll(entry.getValue());\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_342_4--23--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (headers == null) {\n    headers = null;\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_342-342_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (headers == null) {\n    return new java.util.HashMap();\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 340,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_339-342_5--23--23--23--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "for (java.util.Map.Entry<java.lang.String, java.util.Collection<java.lang.String>> entry : headers != null ? headers.entrySet() : java.util.Collections.emptySet()) {\n    java.lang.String headerName = entry.getKey();\n    if (!result.containsKey(headerName)) {\n        result.put(headerName.toLowerCase(java.util.Locale.ROOT), new java.util.LinkedList<java.lang.String>());\n    }\n    result.get(headerName).addAll(entry.getValue());\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_342_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(headers != null ? headers : null).entrySet()",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_342_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(headers != null ? headers : java.util.Collections.emptyMap()).entrySet()",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_342_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (headers == null) {\n    headers = java.util.Collections.emptyMap();\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 341,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_342-342_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "(this.headers != null) ? this.headers : java.util.Collections.emptyMap() = java.util.Collections.unmodifiableMap(feign.Response.caseInsensitiveCopyOf(builder.headers))",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 54,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_52_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "feign_cf31cd1",
+        "patch": {
+            "contents": "if (headers == null) {\n    return java.util.Collections.emptyMap();\n}",
+            "original_filepath": "core/src/main/java/feign/Response.java",
+            "patched_line": 340,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_339-342_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

@@ -1,0 +1,16 @@
++ --------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                  | label                    | detail                       | description | patch_id                              |
++ --------------------------------------------------------------------------------------------------------------------------------------- +
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_527-527_2   |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_527-527_7          |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipBlockStrategy_527-569_0           |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_527-527_5           |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipContinueStrategy_527-518_4        |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipBreakStrategy_527-511_1           |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_527_2 |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_527_4 |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_527-527_6           |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_527_3 |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_527-527_3         |
+| xmlgraphics-fop_62ff114 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_527_0          |
++ --------------------------------------------------------------------------------------------------------------------------------------- +

@@ -1,0 +1,236 @@
+[
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (owner != null) {\n    org.jfree.chart.entity.EntityCollection entities = owner.getEntityCollection();\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1174,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_1192-1192_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (owner == null) {\n    return null;\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1174,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1192-1192_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (owner != null) {\n    org.jfree.chart.ChartRenderingInfo owner = plotState.getOwner();\n    org.jfree.chart.entity.EntityCollection entities = owner.getEntityCollection();\n    if (entities != null) {\n        entities.add(new org.jfree.chart.entity.AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL));\n    }\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1173,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_1191-1193_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (plotState.getOwner() == null) {\n    return null;\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1173,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1191-1191_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "org.jfree.chart.ChartRenderingInfo owner = (plotState.getOwner() != null) ? plotState.getOwner() : new org.jfree.chart.ChartRenderingInfo()",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1173,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1191_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (plotState.getOwner() != null) {\n    org.jfree.chart.ChartRenderingInfo owner = plotState.getOwner();\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1173,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_1191-1191_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (plotState.getOwner() == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1173,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1191-1191_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (owner == null) {\n    owner = new org.jfree.chart.ChartRenderingInfo();\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1174,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "InitPointerStrategy_1192-1192_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (owner == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1174,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1192-1192_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "(owner != null ? owner : new org.jfree.chart.ChartRenderingInfo()).getEntityCollection()",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1174,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1192_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "org.jfree.chart.entity.EntityCollection entities = (owner != null) ? owner.getEntityCollection() : null",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1174,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1192_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "org.jfree.chart.entity.EntityCollection entities = (owner != null) ? owner.getEntityCollection() : entities",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1174,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_1192_3--3--8--8--8--6--6--6--6--6--6--6--8--6--6--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "org.jfree.chart.ChartRenderingInfo owner = (plotState.getOwner() != null) ? plotState.getOwner() : owner",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1173,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_1191_0--4--9--9--9--7--7--7--7--7--7--7--9--7--7--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "org.jfree.chart.ChartRenderingInfo owner = (plotState.getOwner() != null) ? plotState.getOwner() : null",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1173,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1191_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (plotState.getOwner() == null) {\n    return new org.jfree.chart.axis.AxisState();\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1173,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1191-1191_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "(owner != null ? owner : null).getEntityCollection()",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1174,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1192_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (owner == null) {\n    owner = null;\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1174,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_1192-1192_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-26",
+        "patch": {
+            "contents": "if (owner == null) {\n    return new org.jfree.chart.axis.AxisState();\n}",
+            "original_filepath": "org/jfree/chart/axis/Axis.java",
+            "patched_line": 1174,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1192-1192_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

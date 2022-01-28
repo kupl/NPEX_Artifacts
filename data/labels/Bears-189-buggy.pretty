@@ -1,0 +1,14 @@
++ ----------------------------------------------------------------------------------------------------------------------- +
+| bug_id          | label                    | detail                | description | patch_id                             |
++ ----------------------------------------------------------------------------------------------------------------------- +
+| Bears-189-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | SkipReturnStrategy_52-52_4           |
+| Bears-189-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | SkipSinkStatementStrategy_52-52_0    |
+| Bears-189-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | ReplaceEntireExpressionStrategy_52_6 |
+| Bears-189-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | ReplaceEntireExpressionStrategy_52_4 |
+| Bears-189-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | ReplaceEntireExpressionStrategy_52_5 |
+| Bears-189-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | ReplacePointerStrategy_52_0          |
+| Bears-189-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | SkipReturnStrategy_52-52_3           |
+| Bears-189-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | InitPointerStrategy_52-52_1          |
+| Bears-189-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | InitPointerStrategy_52-52_2          |
+| Bears-189-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | ReplacePointerStrategy_52_1          |
++ ----------------------------------------------------------------------------------------------------------------------- +

@@ -1,0 +1,262 @@
+[
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if (targetType == null) {\n    throw new spoon.reflect.declaration.ParentNotInitializedException(\"\");\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_566-566_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "(targetType != null ? targetType.getSimpleName() : \"\").equals(ref.getSimpleName())",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_566_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if ((targetType != null ? targetType.getSimpleName().equals(ref.getSimpleName()) : true) && (!targetType.equals(ref))) {\n    return true;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_566_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if ((targetType != null ? targetType.getSimpleName().equals(ref.getSimpleName()) : ref.getSimpleName() == null) && (!targetType.equals(ref))) {\n    return true;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_566_6"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if ((targetType != null ? targetType.getSimpleName().equals(ref.getSimpleName()) : false) && (!targetType.equals(ref))) {\n    return true;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_566_7"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if (targetType == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_566-566_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if (targetType == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_566-566_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if (targetType != null) {\n    if (targetType.getSimpleName().equals(ref.getSimpleName()) && (!targetType.equals(ref))) {\n        return true;\n    }\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_566-566_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "(targetType != null ? targetType.getSimpleName() : \"null\").equals(ref.getSimpleName())",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_566_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if (targetType == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/MinimalImportScanner.java",
+            "patched_line": 45,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_38-38_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--4--4--4--4--4--4--4--4--2--2--2"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if (targetType != null) {\n    // we import the targetType by default to simplify and avoid conclict in inner classes\n    if (ref.equals(targetType)) {\n        return true;\n    }\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/MinimalImportScanner.java",
+            "patched_line": 45,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_38-38_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--5--5--5--5--5--5--5--5--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "// we import the targetType by default to simplify and avoid conclict in inner classes\nif (targetType != null ? ref.equals(targetType) : true) {\n    return true;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/MinimalImportScanner.java",
+            "patched_line": 45,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_38_2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--6--6--6--6--6--6--6--6--4--4--4"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "// we import the targetType by default to simplify and avoid conclict in inner classes\nif (targetType != null ? ref.equals(targetType) : targetType == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/MinimalImportScanner.java",
+            "patched_line": 45,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_38_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--7--7--7--7--7--7--7--7--5--5--5"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "// we import the targetType by default to simplify and avoid conclict in inner classes\nif (targetType != null ? ref.equals(targetType) : false) {\n    return true;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/MinimalImportScanner.java",
+            "patched_line": 45,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_38_1--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--8--8--8--8--8--8--8--8--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if (targetType == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/MinimalImportScanner.java",
+            "patched_line": 45,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_38-38_1--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--9--9--9--9--9--9--9--9--7--7--7"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if (targetType == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_566-566_2--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "(targetType != null ? targetType : null).getSimpleName()",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_566_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "if (targetType == null) {\n    targetType = null;\n}",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_566-566_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "(targetType != null ? targetType.getSimpleName() : null).equals(ref.getSimpleName())",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_566_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-56-buggy",
+        "patch": {
+            "contents": "(targetType != null ? targetType.getSimpleName() : \"NULL\").equals(ref.getSimpleName())",
+            "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+            "patched_line": 574,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_566_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

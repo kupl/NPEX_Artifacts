@@ -1,0 +1,184 @@
+[
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "for (int i = 0; i < (this.categoryKeys != null ? this.categoryKeys : new java.lang.Comparable[]{  }).length; i++) {\n    if (category.equals(this.categoryKeys[i])) {\n        result = i;\n        break;\n    }\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_574_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "if (this.categoryKeys != null) {\n    for (int i = 0; i < this.categoryKeys.length; i++) {\n        if (category.equals(this.categoryKeys[i])) {\n            result = i;\n            break;\n        }\n    }\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_574-574_0"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "if (this.categoryKeys == null) {\n    this.categoryKeys = new java.lang.Comparable[]{  };\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_574-574_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "for (int i = 0; i < (this.categoryKeys != null ? this.categoryKeys : null).length; i++) {\n    if (category.equals(this.categoryKeys[i])) {\n        result = i;\n        break;\n    }\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_574_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "for (int i = 0; i < (this.categoryKeys != null ? this.categoryKeys.length : 0); i++) {\n    if (category.equals(this.categoryKeys[i])) {\n        result = i;\n        break;\n    }\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_574_4"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "if (this.categoryKeys == null) {\n    return 0;\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_574-574_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "if (this.categoryKeys == null) {\n    return 1;\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_574-574_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "if (this.categoryKeys == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_574-574_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "if (this.categoryKeys == null) {\n    throw new org.jfree.data.UnknownKeyException(\"\");\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_574-574_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "for (int i = 0; i < (this.categoryKeys != null ? this.categoryKeys.length : 1); i++) {\n    if (category.equals(this.categoryKeys[i])) {\n        result = i;\n        break;\n    }\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_574_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "if (this.categoryKeys == null) {\n    return null;\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_574-574_4--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "for (int i = 0; i < (this.categoryKeys != null ? this.categoryKeys.length : -1); i++) {\n    if (category.equals(this.categoryKeys[i])) {\n        result = i;\n        break;\n    }\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_574_5"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "if (this.categoryKeys == null) {\n    this.categoryKeys = null;\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_574-574_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-16",
+        "patch": {
+            "contents": "if (this.categoryKeys == null) {\n    return -1;\n}",
+            "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+            "patched_line": 583,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_574-574_6"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_WC",
+        "description": null
+    }
+]

@@ -1,0 +1,366 @@
+[
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "!(this.dataset != null ? org.jfree.data.general.DatasetUtilities.isEmptyOrNull(this.dataset) : true)",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_2093_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset == null) {\n    throw new java.lang.IllegalStateException();\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_2093-2093_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_2093-2093_1--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset == null) {\n    return 1.0;\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1379-1379_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset == null) {\n    return;\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_2093-2093_3--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1379-1379_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset == null) {\n    throw new java.lang.IllegalStateException();\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1379-1379_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "!(this.dataset != null ? org.jfree.data.general.DatasetUtilities.isEmptyOrNull(this.dataset) : false)",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_2093_0--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--3--3--3--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset == null) {\n    return 0.0;\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1379-1379_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset != null) {\n    if (!org.jfree.data.general.DatasetUtilities.isEmptyOrNull(this.dataset)) {\n        drawPie(g2, area, info);\n    } else {\n        drawNoDataMessage(g2, area);\n    }\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_2093-2093_0--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--4--4--4--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset != null) {\n    java.util.Iterator iterator = this.dataset.getKeys().iterator();\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_1379-1379_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "(this.dataset != null ? this.dataset.getKeys() : null).iterator()",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1379_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "java.util.Iterator iterator = (this.dataset != null) ? this.dataset.getKeys().iterator() : null",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1379_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "(this.dataset != null ? this.dataset : this.dataset).getKeys()",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_1379_0--10--9--9--9--9--9--9--9--9--9--9--6--6--6--9--9--9--9--9--9--9--9--9--9--9--9--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "java.util.Iterator iterator = (this.dataset != null) ? this.dataset.getKeys().iterator() : iterator",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_1379_5--11--10--10--10--10--10--10--10--10--10--10--7--7--7--10--10--10--10--10--10--10--10--10--10--10--10--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset == null) {\n    this.dataset = this.dataset;\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_1379-1379_2--12--12--12--12--12--12--12--12--12--12--12--9--9--9--12--12--12--12--12--12--12--12--12--12--12--12--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "(this.dataset != null ? this.dataset.getKeys() : new java.util.ArrayList<>()).iterator()",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategy_1379_2--13--13--13--13--13--13--13--13--13--13--13--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "!(this.dataset != null ? org.jfree.data.general.DatasetUtilities.isEmptyOrNull(this.dataset, org.jfree.data.general.DatasetUtilities) : true)",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2093_2--13--14--14--14--14--14--14--14--14--14--14--14--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset != null ? !org.jfree.data.general.DatasetUtilities.isEmptyOrNull(this.dataset, org.jfree.data.general.DatasetUtilities) : true) {\n    drawPie(g2, area, info);\n} else {\n    drawNoDataMessage(g2, area);\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2093_4--14--15--15--15--15--15--15--15--15--15--15--15--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "!(this.dataset != null ? org.jfree.data.general.DatasetUtilities.isEmptyOrNull(this.dataset, org.jfree.data.general.DatasetUtilities) : false)",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2093_1--15--16--16--16--16--16--16--16--16--16--16--16--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset != null) {\n    if (!org.jfree.data.general.DatasetUtilities.isEmptyOrNull(this.dataset, org.jfree.data.general.DatasetUtilities)) {\n        drawPie(g2, area, info);\n    } else {\n        drawNoDataMessage(g2, area);\n    }\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_2093-2093_2--16--17--17--17--17--17--17--17--17--17--17--17--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset != null ? !org.jfree.data.general.DatasetUtilities.isEmptyOrNull(this.dataset, org.jfree.data.general.DatasetUtilities) : false) {\n    drawPie(g2, area, info);\n} else {\n    drawNoDataMessage(g2, area);\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2093_3--17--18--18--18--18--18--18--18--18--18--18--18--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "!(this.dataset != null ? org.jfree.data.general.DatasetUtilities.isEmptyOrNull(this.dataset, org.jfree.data.general.DatasetUtilities) : this.dataset == null)",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 2102,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_2093_0--18--19--19--19--19--19--19--19--19--19--19--19--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "(this.dataset != null ? this.dataset.getKeys() : new java.util.ArrayList()).iterator()",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1379_2--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset == null) {\n    this.dataset = null;\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_1379-1379_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "if (this.dataset == null) {\n    return java.lang.Double.NaN;\n}",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1379-1379_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "(this.dataset != null ? this.dataset : null).getKeys()",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1379_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-15",
+        "patch": {
+            "contents": "(this.dataset != null ? this.dataset.getKeys() : java.util.Collections.emptyList()).iterator()",
+            "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+            "patched_line": 1385,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1379_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

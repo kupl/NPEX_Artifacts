@@ -1,0 +1,11 @@
+bug_id,label,detail,description,patch_id
+pdfbox-2948,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_254-254_4
+pdfbox-2948,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipSinkStatementStrategy_254-254_0
+pdfbox-2948,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_254_4
+pdfbox-2948,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_254_6
+pdfbox-2948,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_254-254_3
+pdfbox-2948,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_254-254_2
+pdfbox-2948,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_254_5
+pdfbox-2948,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_254_1
+pdfbox-2948,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,InitPointerStrategy_254-254_1
+pdfbox-2948,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplacePointerStrategy_254_0

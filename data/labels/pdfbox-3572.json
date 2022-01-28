@@ -1,0 +1,184 @@
+[
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "if (decryptCipher.update(buffer, 0, n) == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_271-271_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "if (decryptCipher.update(buffer, 0, n) == null) {\n    return;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_271-271_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "system.SystemLib.write(decryptCipher.update(buffer, 0, n) != null ? decryptCipher.update(buffer, 0, n) : new byte[]())",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_271_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "if (decryptCipher.update(buffer, 0, n) == null) {\n    continue;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_271-271_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "if (decryptCipher.update(buffer, 0, n) != null) {\n    system.SystemLib.write(decryptCipher.update(buffer, 0, n));\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_271-271_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "if (decryptCipher.update(buffer, 0, n) == null) {\n    break;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_271-269_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "system.SystemLib.write(decryptCipher.update(buffer, 0, n) != null ? decryptCipher.update(buffer, 0, n) : buffer)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_271_2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "system.SystemLib.write(decryptCipher.update(buffer, 0, n) != null ? decryptCipher.update(buffer, 0, n) : output)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_271_5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "system.SystemLib.write(decryptCipher.update(buffer, 0, n) != null ? decryptCipher.update(buffer, 0, n) : this.encryptionKey)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_271_4--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "system.SystemLib.write(decryptCipher.update(buffer, 0, n) != null ? decryptCipher.update(buffer, 0, n) : iv)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_271_1--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "system.SystemLib.write(decryptCipher.update(buffer, 0, n) != null ? decryptCipher.update(buffer, 0, n) : org.apache.pdfbox.pdmodel.encryption.SecurityHandler.AES_SALT)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_271_3--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "system.SystemLib.write(decryptCipher.update(buffer, 0, n) != null ? decryptCipher.update(buffer, 0, n) : finalKey)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_271_0--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "system.SystemLib.write(decryptCipher.update(buffer, 0, n) != null ? decryptCipher.update(buffer, 0, n) : new byte[]{  })",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_271_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-3572",
+        "patch": {
+            "contents": "system.SystemLib.write(decryptCipher.update(buffer, 0, n) != null ? decryptCipher.update(buffer, 0, n) : null)",
+            "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+            "patched_line": 275,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_271_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

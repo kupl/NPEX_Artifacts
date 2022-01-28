@@ -1,0 +1,106 @@
+[
+    {
+        "bug_id": "checkstyle-8381754-buggy",
+        "patch": {
+            "contents": "(annotation != null ? annotation : new com.puppycrawl.tools.checkstyle.api.DetailAST()).getType()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+            "patched_line": 130,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_122_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-8381754-buggy",
+        "patch": {
+            "contents": "if (annotation == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+            "patched_line": 130,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_122-122_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-8381754-buggy",
+        "patch": {
+            "contents": "if (annotation == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+            "patched_line": 130,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_122-122_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-8381754-buggy",
+        "patch": {
+            "contents": "if (annotation != null) {\n    if (annotation.getType() == com.puppycrawl.tools.checkstyle.api.TokenTypes.ANNOTATION) {\n        final com.puppycrawl.tools.checkstyle.api.DetailAST overrideToken = annotation.findFirstToken(com.puppycrawl.tools.checkstyle.api.TokenTypes.IDENT);\n        if (\"Override\".equals(overrideToken.getText())) {\n            overridden = true;\n        }\n    }\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+            "patched_line": 130,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_122-122_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-8381754-buggy",
+        "patch": {
+            "contents": "if ((annotation != null ? annotation.getType() : 0) == com.puppycrawl.tools.checkstyle.api.TokenTypes.ANNOTATION) {\n    final com.puppycrawl.tools.checkstyle.api.DetailAST overrideToken = annotation.findFirstToken(com.puppycrawl.tools.checkstyle.api.TokenTypes.IDENT);\n    if (\"Override\".equals(overrideToken.getText())) {\n        overridden = true;\n    }\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+            "patched_line": 130,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_122_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-8381754-buggy",
+        "patch": {
+            "contents": "if ((annotation != null ? annotation.getType() : 1) == com.puppycrawl.tools.checkstyle.api.TokenTypes.ANNOTATION) {\n    final com.puppycrawl.tools.checkstyle.api.DetailAST overrideToken = annotation.findFirstToken(com.puppycrawl.tools.checkstyle.api.TokenTypes.IDENT);\n    if (\"Override\".equals(overrideToken.getText())) {\n        overridden = true;\n    }\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+            "patched_line": 130,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_122_6"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-8381754-buggy",
+        "patch": {
+            "contents": "(annotation != null ? annotation : null).getType()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+            "patched_line": 130,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_122_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-8381754-buggy",
+        "patch": {
+            "contents": "if ((annotation != null ? annotation.getType() : -1) == com.puppycrawl.tools.checkstyle.api.TokenTypes.ANNOTATION) {\n    final com.puppycrawl.tools.checkstyle.api.DetailAST overrideToken = annotation.findFirstToken(com.puppycrawl.tools.checkstyle.api.TokenTypes.IDENT);\n    if (\"Override\".equals(overrideToken.getText())) {\n        overridden = true;\n    }\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+            "patched_line": 130,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_122_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

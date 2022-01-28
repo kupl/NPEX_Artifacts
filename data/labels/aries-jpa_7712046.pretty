@@ -1,0 +1,31 @@
++ -------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id            | label                    | detail                       | description | patch_id                             |
++ -------------------------------------------------------------------------------------------------------------------------------- +
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_39-39_4            |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipSinkStatementStrategy_39-39_0    |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_39-39_1              |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_39_4 |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_31-32_2              |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_32-32_5            |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipSinkStatementStrategy_32-32_0    |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_32_1          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_39_5 |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipBlockStrategy_33-33_0            |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_33-33_6            |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipContinueStrategy_33-33_5         |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_33-33_8           |
+| aries-jpa_7712046 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipBreakStrategy_33-32_1            |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_32-32_3          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_39-39_3          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_32-32_4          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_33-33_3          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_39-39_2          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_33_1          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_39_1          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_39_0          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_33-33_4          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_33_0          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_32_0          |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_33-33_7           |
+| aries-jpa_7712046 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_31-32_1              |
++ -------------------------------------------------------------------------------------------------------------------------------- +

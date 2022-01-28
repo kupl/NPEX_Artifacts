@@ -1,0 +1,16 @@
++ -------------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                       | label                    | detail                       | description | patch_id                              |
++ -------------------------------------------------------------------------------------------------------------------------------------------- +
+| spring-hateoas-48749e7-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_141-145_2             |
+| spring-hateoas-48749e7-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipReturnParam_141-145_1             |
+| spring-hateoas-48749e7-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_145_5 |
+| spring-hateoas-48749e7-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipSinkStatementStrategy_145-145_0   |
+| spring-hateoas-48749e7-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_145_7 |
+| spring-hateoas-48749e7-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_145_4 |
+| spring-hateoas-48749e7-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_145_8 |
+| spring-hateoas-48749e7-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_145_6 |
+| spring-hateoas-48749e7-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_145-145_3         |
+| spring-hateoas-48749e7-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_145_2 |
+| spring-hateoas-48749e7-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_145_0          |
+| spring-hateoas-48749e7-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_145_3 |
++ -------------------------------------------------------------------------------------------------------------------------------------------- +

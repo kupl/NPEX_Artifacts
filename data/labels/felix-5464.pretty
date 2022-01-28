@@ -1,0 +1,7 @@
++ ----------------------------------------------------------------------------------------------------------------- +
+| bug_id     | label                    | detail                       | description | patch_id                     |
++ ----------------------------------------------------------------------------------------------------------------- +
+| felix-5464 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipBlockStrategy_211-211_0  |
+| felix-5464 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_211-211_2 |
+| felix-5464 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_211_0 |
++ ----------------------------------------------------------------------------------------------------------------- +

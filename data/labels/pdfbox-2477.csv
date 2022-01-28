@@ -1,0 +1,6 @@
+bug_id,label,detail,description,patch_id
+pdfbox-2477,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipSinkStatementStrategy_393-393_1
+pdfbox-2477,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipBlockStrategy_391-394_0
+pdfbox-2477,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipReturnStrategy_393-393_3
+pdfbox-2477,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_393-393_2
+pdfbox-2477,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_393_0

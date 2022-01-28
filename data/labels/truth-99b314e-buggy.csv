@@ -1,0 +1,15 @@
+bug_id,label,detail,description,patch_id
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipBlockStrategy_63-64_0
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipBlockStrategy_66-66_0
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipSinkStatementStrategy_64-64_1
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_65_5
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_65_6
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_65_3
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_65_4
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_66_2
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipReturnParam_63-66_2
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_65_2
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_66-66_3
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_65_0
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_64-64_3
+truth-99b314e-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_66_0

@@ -1,0 +1,379 @@
+[
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    return \"\";\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_78-78_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "(value != null ? value : \"null\").length()",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_78_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    return \"null\";\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_78-78_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "java.lang.String value = (cookie.getValue() != null) ? cookie.getValue() : \"\"",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 88,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_77_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (cookie.getValue() != null) {\n    java.lang.String value = cookie.getValue();\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 88,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_77-77_4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_78-78_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (cookie.getValue() == null) {\n    return \"\";\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 88,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_77-77_6--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value != null) {\n    java.lang.String value = cookie.getValue();\n    if (value.length() == 0) {\n        return null;\n    }\n    if ((value.charAt(0) == '\"') && (value.charAt(value.length() - 1) == '\"')) {\n        value = value.substring(1, value.length() - 1);\n    }\n    return value;\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 88,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_77-84_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (cookie.getValue() == null) {\n    continue;\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 88,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_77-76_1--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_78-78_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value != null) {\n    if (value.length() == 0) {\n        return null;\n    }\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_78-78_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if ((value != null ? value.length() : 1) == 0) {\n    return null;\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_78_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "java.lang.String value = (cookie.getValue() != null) ? cookie.getValue() : null",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 88,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_77_0--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "java.lang.String value = (cookie.getValue() != null) ? cookie.getValue() : \"null\"",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 88,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_77_1--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (cookie.getValue() == null) {\n    break;\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 88,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_77-75_3--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (cookie.getValue() == null) {\n    return \"null\";\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 88,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_77-77_5--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (cookie.getValue() == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 88,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_77-77_2--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if ((value != null ? value.length() : 0) == 0) {\n    return null;\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_78_8"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "(value != null ? value : \"\").length()",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_78_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    break;\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_78-75_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    continue;\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_78-76_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_78-78_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "(value != null ? value : null).length()",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_78_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if ((value != null ? value.length() : -1) == 0) {\n    return null;\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_78_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"NULL\";\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_78-78_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    value = null;\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_78-78_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_78-78_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "(value != null ? value : \"NULL\").length()",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_78_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jspwiki_bdab6f2",
+        "patch": {
+            "contents": "if (value == null) {\n    return null;\n}",
+            "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+            "patched_line": 89,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_78-78_12"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

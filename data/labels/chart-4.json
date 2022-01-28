@@ -1,0 +1,236 @@
+[
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (r == null) {\n    break;\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4487,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_4493-4470_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (getRendererForDataset(d) == null) {\n    continue;\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4475,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_4473-4472_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (getRendererForDataset(d) == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4475,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_4473-4473_2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (getRendererForDataset(d) != null) {\n    org.jfree.chart.renderer.xy.XYItemRenderer r = getRendererForDataset(d);\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4475,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_4473-4473_5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (r == null) {\n    continue;\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4487,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_4493-4472_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (r == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4487,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_4493-4493_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (r != null) {\n    java.util.Collection c = r.getAnnotations();\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4487,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_4493-4493_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (getRendererForDataset(d) == null) {\n    return null;\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4475,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_4473-4473_6--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (r == null) {\n    return null;\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4487,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_4493-4493_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (r == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4487,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_4493-4493_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (r != null) {\n    org.jfree.chart.renderer.xy.XYItemRenderer r = getRendererForDataset(d);\n    if (isDomainAxis) {\n        if (r != null) {\n            result = org.jfree.data.Range.combine(result, r.findDomainBounds(d));\n        } else {\n            result = org.jfree.data.Range.combine(result, org.jfree.data.general.DatasetUtilities.findDomainBounds(d));\n        }\n    } else if (r != null) {\n        result = org.jfree.data.Range.combine(result, r.findRangeBounds(d));\n    } else {\n        result = org.jfree.data.Range.combine(result, org.jfree.data.general.DatasetUtilities.findRangeBounds(d));\n    }\n    java.util.Collection c = r.getAnnotations();\n    java.util.Iterator i = c.iterator();\n    while (i.hasNext()) {\n        org.jfree.chart.annotations.XYAnnotation a = ((org.jfree.chart.annotations.XYAnnotation) (i.next()));\n        if (a instanceof org.jfree.chart.annotations.XYAnnotationBoundsInfo) {\n            includedAnnotations.add(a);\n        }\n    } \n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4475,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_4473-4495_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (getRendererForDataset(d) == null) {\n    break;\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4475,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_4473-4470_4--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (getRendererForDataset(d) == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4475,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_4473-4473_3--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "java.util.Collection c = (r != null) ? r.getAnnotations() : null",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4487,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_4493_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "org.jfree.chart.renderer.xy.XYItemRenderer r = (getRendererForDataset(d) != null) ? getRendererForDataset(d) : r",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4475,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_4473_0--3--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (getRendererForDataset(d) != null) {\n    org.jfree.chart.renderer.xy.XYItemRenderer r = getRendererForDataset(d);\n    if (isDomainAxis) {\n        if (r != null) {\n            result = org.jfree.data.Range.combine(result, r.findDomainBounds(d));\n        } else {\n            result = org.jfree.data.Range.combine(result, org.jfree.data.general.DatasetUtilities.findDomainBounds(d));\n        }\n    } else if (r != null) {\n        result = org.jfree.data.Range.combine(result, r.findRangeBounds(d));\n    } else {\n        result = org.jfree.data.Range.combine(result, org.jfree.data.general.DatasetUtilities.findRangeBounds(d));\n    }\n    java.util.Collection c = r.getAnnotations();\n    java.util.Iterator i = c.iterator();\n    while (i.hasNext()) {\n        org.jfree.chart.annotations.XYAnnotation a = ((org.jfree.chart.annotations.XYAnnotation) (i.next()));\n        if (a instanceof org.jfree.chart.annotations.XYAnnotationBoundsInfo) {\n            includedAnnotations.add(a);\n        }\n    } \n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4475,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_4473-4495_0--2--2--4--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "if (r == null) {\n    r = null;\n}",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4487,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_4493-4493_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-4",
+        "patch": {
+            "contents": "(r != null ? r : null).getAnnotations()",
+            "original_filepath": "org/jfree/chart/plot/XYPlot.java",
+            "patched_line": 4487,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_4493_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

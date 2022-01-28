@@ -1,0 +1,80 @@
+[
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "Main.eql(1.0, r != null ? r.getLowerBound() : 1.0, Main)",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_22_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "if (r != null ? Main.eql(1.0, r.getLowerBound(), Main) : true) {\n    java.lang.System.out.println(\"PASS\");\n} else {\n    Main.pass = false;\n    java.lang.System.out.println(\"FAIL\");\n}",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_22_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "if (r == null) {\n    return;\n}",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_22-22_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "if (r != null) {\n    if (Main.eql(1.0, r.getLowerBound(), Main)) {\n        java.lang.System.out.println(\"PASS\");\n    } else {\n        Main.pass = false;\n        java.lang.System.out.println(\"FAIL\");\n    }\n}",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_22-22_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "if (r != null ? Main.eql(1.0, r.getLowerBound(), Main) : false) {\n    java.lang.System.out.println(\"PASS\");\n} else {\n    Main.pass = false;\n    java.lang.System.out.println(\"FAIL\");\n}",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_22_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "Main.eql(1.0, r != null ? r.getLowerBound() : 0.0, Main)",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_22_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

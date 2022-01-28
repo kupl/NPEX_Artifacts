@@ -1,0 +1,17 @@
+bug_id,label,detail,description,patch_id
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipBlockStrategy_567-571_0
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipSinkStatementStrategy_569-569_2
+collections-39,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipReturnStrategy_569-569_8
+collections-39,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipBreakStrategy_569-566_1
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipContinueStrategy_569-571_7
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplaceEntireExpressionStrategy_569_8
+collections-39,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_569_10
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplacePointerStrategy_569_1
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,InitPointerStrategy_569-569_4
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplacePointerStrategy_569_0
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,InitPointerStrategy_569-569_3
+collections-39,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_569-569_6
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,InitPointerStrategy_569-569_5
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplaceEntireExpressionStrategy_569_9
+collections-39,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_569_3
+collections-39,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplacePointerStrategy_569_2

@@ -1,0 +1,9 @@
++ ------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                  | label                    | detail                       | description | patch_id                            |
++ ------------------------------------------------------------------------------------------------------------------------------------- +
+| javaslang-faf9ac2-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | ReplacePointerStrategy_840_2        |
+| javaslang-faf9ac2-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_840-840_1        |
+| javaslang-faf9ac2-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplacePointerStrategy_840_1        |
+| javaslang-faf9ac2-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_840-840_0 |
+| javaslang-faf9ac2-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_840_0        |
++ ------------------------------------------------------------------------------------------------------------------------------------- +

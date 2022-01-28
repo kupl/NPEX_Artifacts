@@ -1,0 +1,561 @@
+[
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_3677-3677_13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : 0) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_3677_8"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str != null) {\n    java.lang.String replacement_str = replacementList[i];\n    int greater = replacement_str.length() - searchList[i].length();\n    if (greater > 0) {\n        increase += 3 * greater;// assume 3 matches\n\n    }\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3702,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_3676-3678_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    continue;\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_3677-3678_7"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    throw new java.lang.IllegalStateException();\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_3677-3677_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "(replacement_str != null ? replacement_str : new java.lang.String()).length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_3677_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    return \"\";\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_3677-3677_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : 1) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_3677_10"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    replacement_str = new java.lang.String();\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_3677-3677_6--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str != null) {\n    int greater = replacement_str.length() - searchList[i].length();\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_3677-3677_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    break;\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_3677-3675_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_3677-3677_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "(replacement_str != null ? replacement_str : org.apache.commons.lang3.StringUtils.EMPTY).length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_3677_2--3--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : searchLength) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_12--4--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : textIndex) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_14--5--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "(replacement_str != null ? replacement_str : text).length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_3677_0--6--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : i) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_17--7--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    replacement_str = text;\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_3677-3677_5--8--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : replacementLength) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_13--9--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : timeToLive) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_11--10--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    replacement_str = org.apache.commons.lang3.StringUtils.EMPTY;\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_3677-3677_7--11--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : org.apache.commons.lang3.StringUtils.INDEX_NOT_FOUND) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_26--12--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : textLength) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_24--13--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "(replacement_str != null ? replacement_str : result).length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_3677_1--14--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : replaceIndex) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_15--15--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : increase) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_19--16--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : org.apache.commons.lang3.StringUtils.PAD_LIMIT) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_27--17--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "(replacement_str != null ? replacement_str : buf).length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_3677_4--18--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : greater) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_21--19--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : tempIndex) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_16--20--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : start) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_3677_18--21--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    replacement_str = result;\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_3677-3677_6--22--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "(replacement_str != null ? replacement_str : \"null\").length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_3677_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    replacement_str = \"null\";\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_3677-3677_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    replacement_str = \"\";\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_3677-3677_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    return \"null\";\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_3677-3677_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "(replacement_str != null ? replacement_str : \"\").length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplacePointerStrategyLiteral",
+            "patch_id": "ReplacePointerStrategy_3677_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    replacement_str = \"NULL\";\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_3677-3677_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "int greater = (replacement_str != null ? replacement_str.length() : -1) - searchList[i].length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_3677_9"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_3677-3677_12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "if (replacement_str == null) {\n    replacement_str = null;\n}",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_3677-3677_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "(replacement_str != null ? replacement_str : \"NULL\").length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_3677_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-39",
+        "patch": {
+            "contents": "(replacement_str != null ? replacement_str : null).length()",
+            "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+            "patched_line": 3703,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_3677_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

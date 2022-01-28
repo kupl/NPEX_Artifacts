@@ -1,0 +1,587 @@
+[
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "(cl != null ? cl : new java.lang.Class<?>()).getDeclaredFields()",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_39_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl.getSuperclass() != null) {\n    for (java.lang.Class<?> cl = c; cl != java.lang.Object.class; cl = cl.getSuperclass()) {\n        org.apache.aries.jpa.blueprint.impl.AnnotationScanner.parseClass(annotation, jpaAnnotated, cl);\n    }\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_32-32_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_39-39_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl.getSuperclass() == null) {\n    return null;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_32-32_2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl != null) {\n    for (java.lang.reflect.Field field : cl.getDeclaredFields()) {\n        if (field.isAnnotationPresent(annotation)) {\n            field.setAccessible(true);\n            jpaAnnotated.add(field);\n        }\n    }\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_39-39_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl.getSuperclass() == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_32-32_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    cl = new java.lang.Class<?>();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_39-39_1--6--6--6--6--6--6--6--6--6--6--6--6--3--3--3--3--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    return;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_39-39_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "for (java.lang.reflect.Field field : cl != null ? cl.getDeclaredFields() : null) {\n    if (field.isAnnotationPresent(annotation)) {\n        field.setAccessible(true);\n        jpaAnnotated.add(field);\n    }\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_39_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "for (java.lang.reflect.Field field : cl != null ? cl.getDeclaredFields() : new java.lang.reflect.Field[]()) {\n    if (field.isAnnotationPresent(annotation)) {\n        field.setAccessible(true);\n        jpaAnnotated.add(field);\n    }\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_39_0--9--7--7--7--7--7--7--7--7--7--7--7--4--4--4--4--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "(cl != null ? cl : annotation).getDeclaredFields()",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_39_0--10--8--8--8--8--8--8--8--8--8--8--8--5--5--5--5--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    cl = annotation;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_39-39_1--12--9--9--9--9--9--9--9--9--9--9--9--6--6--6--6--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (c == null) {\n    return null;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 32,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_31-32_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (c == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_32-32_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (c != null) {\n    for (java.lang.Class<?> cl = c; cl != java.lang.Object.class; cl = cl.getSuperclass()) {\n        org.apache.aries.jpa.blueprint.impl.AnnotationScanner.parseClass(annotation, jpaAnnotated, cl);\n    }\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_32-32_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "java.lang.Class<?> cl = (c != null) ? c : null",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_32_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "for (java.lang.reflect.Field field : cl != null ? cl.getDeclaredFields() : new java.lang.reflect.Field[]{  }) {\n    if (field.isAnnotationPresent(annotation)) {\n        field.setAccessible(true);\n        jpaAnnotated.add(field);\n    }\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_39_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "for (java.lang.Class<?> cl = c; (cl != null ? cl : new java.lang.Class<?>()) != java.lang.Object.class; cl = cl.getSuperclass()) {\n    org.apache.aries.jpa.blueprint.impl.AnnotationScanner.parseClass(annotation, jpaAnnotated, cl);\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_32_0--11--11--11--11--10--10--10--10--10--10--10--10--10--10--10--11--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "for (java.lang.Class<?> cl = c; cl != null ? cl != java.lang.Object.class : true; cl = cl.getSuperclass()) {\n    org.apache.aries.jpa.blueprint.impl.AnnotationScanner.parseClass(annotation, jpaAnnotated, cl);\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_32_2--12--12--12--12--11--11--11--11--11--11--11--11--11--11--11--12--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    cl = new java.lang.Class<?>();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_32-32_1--13--13--13--13--12--12--12--12--12--12--12--12--12--12--12--13--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    return null;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_32-32_3--14--14--14--14--13--13--13--13--13--13--13--13--13--13--13--14--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl != null) {\n    for (java.lang.Class<?> cl = c; cl != java.lang.Object.class; cl = cl.getSuperclass()) {\n        org.apache.aries.jpa.blueprint.impl.AnnotationScanner.parseClass(annotation, jpaAnnotated, cl);\n    }\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_32-32_0--15--15--15--15--14--14--14--14--14--14--14--14--14--14--14--15--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_32-32_2--16--16--16--16--15--15--15--15--15--15--15--15--15--15--15--16--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "for (java.lang.Class<?> cl = c; cl != null ? cl != java.lang.Object.class : false; cl = cl.getSuperclass()) {\n    org.apache.aries.jpa.blueprint.impl.AnnotationScanner.parseClass(annotation, jpaAnnotated, cl);\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_32_1--17--17--17--17--16--16--16--16--16--16--16--16--16--16--16--17--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl != null) {\n    org.apache.aries.jpa.blueprint.impl.AnnotationScanner.parseClass(annotation, jpaAnnotated, cl);\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_33-33_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_33-33_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    continue;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_33-33_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    return null;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_33-33_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    break;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_33-32_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "cl = (cl.getSuperclass() != null) ? cl.getSuperclass() : null",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_32_0--17--17--17--17--17--17--17--17--17--17--17--19--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (c == null) {\n    return new java.util.ArrayList();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 32,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_31-32_6--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    return new java.util.ArrayList();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_33-33_9--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (c == null) {\n    c = java.lang.Object.class;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_32-32_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    cl = null;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_39-39_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (c == null) {\n    c = null;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_32-32_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    cl = java.lang.Object.class;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_33-33_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    cl = java.lang.Object.class;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_39-39_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "org.apache.aries.jpa.blueprint.impl.AnnotationScanner.parseClass(annotation, jpaAnnotated, cl != null ? cl : null)",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_33_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "(cl != null ? cl : null).getDeclaredFields()",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_39_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "(cl != null ? cl : java.lang.Object.class).getDeclaredFields()",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 40,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_39_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    cl = null;\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_33-33_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "org.apache.aries.jpa.blueprint.impl.AnnotationScanner.parseClass(annotation, jpaAnnotated, cl != null ? cl : java.lang.Object.class)",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_33_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "java.lang.Class<?> cl = (c != null) ? c : java.lang.Object.class",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 33,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_32_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (cl == null) {\n    return java.util.Collections.emptyList();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 34,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_33-33_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "aries-jpa_7712046",
+        "patch": {
+            "contents": "if (c == null) {\n    return java.util.Collections.emptyList();\n}",
+            "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+            "patched_line": 32,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_31-32_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

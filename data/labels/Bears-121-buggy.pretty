@@ -1,0 +1,25 @@
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id          | label                    | detail                       | description | patch_id                              |
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_109_2 |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_109-109_1             |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_175-175_4           |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipSinkStatementStrategy_109-109_0   |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipBlockStrategy_175-175_0           |
+| Bears-121-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_109_3 |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_109-109_4           |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_109-109_3           |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_175_2 |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_64_2  |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_175_3 |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_170-175_2             |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_64-64_0     |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_49-64_1               |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_175_0          |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_64-64_3           |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_109-109_2         |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_64_0           |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_49-64_2               |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_109_0          |
+| Bears-121-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_175-175_3         |
++ ------------------------------------------------------------------------------------------------------------------------------- +

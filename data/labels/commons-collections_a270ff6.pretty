@@ -1,0 +1,11 @@
++ -------------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                      | label                    | detail                       | description | patch_id                               |
++ -------------------------------------------------------------------------------------------------------------------------------------------- +
+| commons-collections_a270ff6 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_2404-2404_2         |
+| commons-collections_a270ff6 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipSinkStatementStrategy_2404-2404_0  |
+| commons-collections_a270ff6 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_2404_4 |
+| commons-collections_a270ff6 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_2404_2 |
+| commons-collections_a270ff6 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_2404_0          |
+| commons-collections_a270ff6 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_2404_3 |
+| commons-collections_a270ff6 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_2404-2404_1        |
++ -------------------------------------------------------------------------------------------------------------------------------------------- +

@@ -1,0 +1,353 @@
+[
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST == null) {\n    targetAST = aAST;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_321-321_3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST == null) {\n    targetAST = nextAST;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_321-321_5--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST == null) {\n    targetAST = parentAST;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_321-321_6--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "(targetAST != null ? targetAST : aAST).getLineNo()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 313,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_321_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "(targetAST != null ? targetAST : new com.puppycrawl.tools.checkstyle.api.DetailAST()).getLineNo()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 313,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_321_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST == null) {\n    targetAST = lparenAST;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_321-321_4--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : firstColumn",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_321_16--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST != null) {\n    // get values of annotation\n    java.util.List<java.lang.String> values = null;\n    final com.puppycrawl.tools.checkstyle.api.DetailAST lparenAST = aAST.findFirstToken(com.puppycrawl.tools.checkstyle.api.TokenTypes.LPAREN);\n    if (lparenAST != null) {\n        final com.puppycrawl.tools.checkstyle.api.DetailAST nextAST = lparenAST.getNextSibling();\n        if (nextAST != null) {\n            final int nextType = nextAST.getType();\n            switch (nextType) {\n                case com.puppycrawl.tools.checkstyle.api.TokenTypes.EXPR :\n                case com.puppycrawl.tools.checkstyle.api.TokenTypes.ANNOTATION_ARRAY_INIT :\n                    values = com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolder.getAnnotationValues(nextAST);\n                    break;\n                case com.puppycrawl.tools.checkstyle.api.TokenTypes.ANNOTATION_MEMBER_VALUE_PAIR :\n                    // expected children: IDENT ASSIGN ( EXPR |\n                    // ANNOTATION_ARRAY_INIT )\n                    values = com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolder.getAnnotationValues(com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolder.getNthChild(nextAST, 2));\n                    break;\n                case com.puppycrawl.tools.checkstyle.api.TokenTypes.RPAREN :\n                    // no value present (not valid Java)\n                    break;\n                default :\n                    // unknown annotation value type (new syntax?)\n            }\n        }\n    }\n    if (values == null) {\n        log(aAST, \"suppress.warnings.missing.value\");\n        return;\n    }\n    // get target of annotation\n    com.puppycrawl.tools.checkstyle.api.DetailAST targetAST = null;\n    com.puppycrawl.tools.checkstyle.api.DetailAST parentAST = aAST.getParent();\n    if (parentAST != null) {\n        switch (parentAST.getType()) {\n            case com.puppycrawl.tools.checkstyle.api.TokenTypes.MODIFIERS :\n            case com.puppycrawl.tools.checkstyle.api.TokenTypes.ANNOTATIONS :\n                parentAST = parentAST.getParent();\n                if (parentAST != null) {\n                    switch (parentAST.getType()) {\n                        case com.puppycrawl.tools.checkstyle.api.TokenTypes.ANNOTATION_DEF :\n                        case com.puppycrawl.tools.checkstyle.api.TokenTypes.PACKAGE_DEF :\n                        case com.puppycrawl.tools.checkstyle.api.TokenTypes.CLASS_DEF :\n                        case com.puppycrawl.tools.checkstyle.api.TokenTypes.INTERFACE_DEF :\n                        case com.puppycrawl.tools.checkstyle.api.TokenTypes.ENUM_DEF :\n                        case com.puppycrawl.tools.checkstyle.api.TokenTypes.CTOR_DEF :\n                        case com.puppycrawl.tools.checkstyle.api.TokenTypes.METHOD_DEF :\n                        case com.puppycrawl.tools.checkstyle.api.TokenTypes.PARAMETER_DEF :\n                        case com.puppycrawl.tools.checkstyle.api.TokenTypes.VARIABLE_DEF :\n                            targetAST = parentAST;\n                            break;\n                        default :\n                            // unexpected target type\n                    }\n                }\n                break;\n            default :\n                // unexpected container type\n        }\n    }\n    if (targetAST == null) {\n        log(aAST, \"suppress.warnings.invalid.target\");\n    }\n    // get text range of target\n    final int firstLine = targetAST.getLineNo();\n    final int firstColumn = targetAST.getColumnNo();\n    final com.puppycrawl.tools.checkstyle.api.DetailAST nextAST = targetAST.getNextSibling();\n    final int lastLine;\n    final int lastColumn;\n    if (nextAST != null) {\n        lastLine = nextAST.getLineNo();\n        lastColumn = nextAST.getColumnNo() - 1;\n    } else {\n        lastLine = java.lang.Integer.MAX_VALUE;\n        lastColumn = java.lang.Integer.MAX_VALUE;\n    }\n    // add suppression entries for listed checks\n    final java.util.List<com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolder.Entry> entries = com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolder.ENTRIES.get();\n    if (entries != null) {\n        for (java.lang.String value : values) {\n            // strip off the checkstyle-only prefix if present\n            if (value.startsWith(com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolder.CHECKSTYLE_PREFIX)) {\n                value = value.substring(com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolder.CHECKSTYLE_PREFIX.length());\n            }\n            entries.add(new com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolder.Entry(value, firstLine, firstColumn, lastLine, lastColumn));\n        }\n    }\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 250,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_252-336_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST != null) {\n    // get text range of target\n    final int firstLine = targetAST.getLineNo();\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_321-321_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "(targetAST != null ? targetAST : nextAST).getLineNo()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 313,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_321_2--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_321-321_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : 0",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_321_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : this.mTabWidth",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_321_20--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_321-321_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : com.puppycrawl.tools.checkstyle.api.Check.DEFAULT_TAB_WIDTH",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_321_19--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "(targetAST != null ? targetAST : parentAST).getLineNo()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 313,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_321_3--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST == null) {\n    targetAST = new com.puppycrawl.tools.checkstyle.api.DetailAST();\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "InitPointerStrategy_321-321_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : nextType",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_321_14--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "(targetAST != null ? targetAST : lparenAST).getLineNo()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 313,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_321_1--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : 1",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_321_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : lastColumn",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_321_18--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : firstLine",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_321_15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST == null) {\n    throw new org.apache.commons.beanutils.ConversionException();\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_321-321_1--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : lastLine",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_321_17--16--16--16--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : -1",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_321_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "(targetAST != null ? targetAST : null).getLineNo()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 313,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_321_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-aa829d4-buggy",
+        "patch": {
+            "contents": "if (targetAST == null) {\n    targetAST = null;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+            "patched_line": 312,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_321-321_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

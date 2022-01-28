@@ -1,0 +1,184 @@
+[
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "if (viAdj == null) {\n    break;\n}",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_172-171_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "if (viAdj == null) {\n    return;\n}",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_172-172_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "if (viAdj != null) {\n    viAdj.add(target.addEdge(vi, ring.get((i + j) % n)));\n}",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_172-172_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "if (viAdj == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_172-172_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "if (viAdj == null) {\n    continue;\n}",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_172-172_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "(viAdj != null ? viAdj : ring).add(target.addEdge(vi, ring.get((i + j) % n)))",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_172_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "if (viAdj == null) {\n    viAdj = new java.util.ArrayList<>();\n}",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_172-172_5--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "(viAdj != null ? viAdj : new java.util.ArrayList<>()).add(target.addEdge(vi, ring.get((i + j) % n)))",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_172_0--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "if (viAdj == null) {\n    viAdj = new java.util.ArrayList();\n}",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_172-172_5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "(viAdj != null ? viAdj : new java.util.ArrayList()).add(target.addEdge(vi, ring.get((i + j) % n)))",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_172_0--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "if (viAdj == null) {\n    viAdj = java.util.Collections.emptyList();\n}",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_172-172_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "if (viAdj == null) {\n    viAdj = null;\n}",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_172-172_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "(viAdj != null ? viAdj : java.util.Collections.emptyList()).add(target.addEdge(vi, ring.get((i + j) % n)))",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_172_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-222-buggy",
+        "patch": {
+            "contents": "(viAdj != null ? viAdj : null).add(target.addEdge(vi, ring.get((i + j) % n)))",
+            "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+            "patched_line": 176,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_172_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

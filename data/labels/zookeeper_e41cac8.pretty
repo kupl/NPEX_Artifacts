@@ -1,0 +1,14 @@
++ ---------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id            | label                    | detail                       | description | patch_id                               |
++ ---------------------------------------------------------------------------------------------------------------------------------- +
+| zookeeper_e41cac8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_1304_5 |
+| zookeeper_e41cac8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_1304-1304_4          |
+| zookeeper_e41cac8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipSinkStatementStrategy_1304-1304_0  |
+| zookeeper_e41cac8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_1304-1304_3          |
+| zookeeper_e41cac8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_1304_1          |
+| zookeeper_e41cac8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_1304_4 |
+| zookeeper_e41cac8 | LabelOverall.WC          | LabelDetail.MANUAL_CORRECT   |             | InitPointerStrategy_1304-1304_2        |
+| zookeeper_e41cac8 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_1304-1304_5         |
+| zookeeper_e41cac8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_1304_0          |
+| zookeeper_e41cac8 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_1304-1304_1        |
++ ---------------------------------------------------------------------------------------------------------------------------------- +

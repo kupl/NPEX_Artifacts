@@ -1,0 +1,11 @@
+bug_id,label,detail,description,patch_id
+async-http-client_86948f6,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_347-347_4
+async-http-client_86948f6,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_347_3
+async-http-client_86948f6,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_347-347_2
+async-http-client_86948f6,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipThrowStrategy_347-347_3
+async-http-client_86948f6,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_347_5
+async-http-client_86948f6,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_347_2
+async-http-client_86948f6,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipSinkStatementStrategy_347-347_0
+async-http-client_86948f6,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_347-347_1
+async-http-client_86948f6,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_347_0
+async-http-client_86948f6,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_347_4

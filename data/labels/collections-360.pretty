@@ -1,0 +1,13 @@
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id          | label                    | detail                       | description | patch_id                              |
++ ------------------------------------------------------------------------------------------------------------------------------- +
+| collections-360 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipSinkStatementStrategy_232-232_0   |
+| collections-360 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_232_2 |
+| collections-360 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_232-232_3           |
+| collections-360 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_232-232_5          |
+| collections-360 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_232_3 |
+| collections-360 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_232-232_2           |
+| collections-360 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipReturnStrategy_232-232_4          |
+| collections-360 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_232_0          |
+| collections-360 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_232-232_1         |
++ ------------------------------------------------------------------------------------------------------------------------------- +

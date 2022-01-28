@@ -1,0 +1,249 @@
+[
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "if (g == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_103-103_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "super.paintComponent(g != null ? g : new java.awt.Graphics())",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_103_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "if (g == null) {\n    g = new java.awt.Graphics();\n}",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_103-103_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "paintComponent(getGraphics() != null ? getGraphics() : new java.awt.Graphics())",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 66,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_59_0--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "if (getGraphics() != null) {\n    paintComponent(getGraphics());\n}",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 66,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_59-59_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "if (g != null) {\n    super.paintComponent(g);\n}",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_103-103_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "if (getGraphics() == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 66,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_59-59_1--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "super.paintComponent(g != null ? g : this.gasProgressBar)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_103_2--2--2--2--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "paintComponent(getGraphics() != null ? getGraphics() : this.breakProgressBar)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 66,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_59_4--3--3--3--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "paintComponent(getGraphics() != null ? getGraphics() : this.gasLabel)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 66,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_59_1--4--4--4--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "super.paintComponent(g != null ? g : this.breakProgressBar)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_103_4--5--5--5--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "super.paintComponent(g != null ? g : this.progressBarsPanel)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_103_0--6--6--6--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "super.paintComponent(g != null ? g : this.breakLabel)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_103_3--7--7--7--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "paintComponent(getGraphics() != null ? getGraphics() : this.gasProgressBar)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 66,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_59_2--8--8--8--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "paintComponent(getGraphics() != null ? getGraphics() : this.breakLabel)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 66,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_59_3--9--9--9--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "super.paintComponent(g != null ? g : this.gasLabel)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_103_1--10--10--10--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "paintComponent(getGraphics() != null ? getGraphics() : this.progressBarsPanel)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 66,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_59_0--11--11--11--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "super.paintComponent(g != null ? g : null)",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_103_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-188-buggy",
+        "patch": {
+            "contents": "if (g == null) {\n    g = null;\n}",
+            "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+            "patched_line": 110,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_103-103_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

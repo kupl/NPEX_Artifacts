@@ -1,0 +1,353 @@
+[
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol == null) {\n    throw new com.google.errorprone.bugpatterns.threadsafety.IllegalGuardedBy(\"\");\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 287,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_282-282_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "return method != null ? bindSelect(computeBase(context, method), method) : null",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 184,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_185_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (method != null) {\n    com.sun.source.tree.IdentifierTree identifier = ((com.sun.source.tree.IdentifierTree) (methodSelect));\n    com.sun.tools.javac.code.Symbol.MethodSymbol method = context.resolver.resolveMethod(node, identifier.getName());\n    return bindSelect(computeBase(context, method), method);\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 182,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_182-185_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol != null ? symbol.isStatic() : true) {\n    return com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder.F.typeLiteral(symbol.owner);\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 287,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_282_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (method != null) {\n    return bindSelect(computeBase(context, method), method);\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 184,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_185-185_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol != null ? symbol.isStatic() : false) {\n    return com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder.F.typeLiteral(symbol.owner);\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 287,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_282_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (method == null) {\n    throw new com.google.errorprone.bugpatterns.threadsafety.IllegalGuardedBy(\"\");\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 184,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_185-185_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol != null) {\n    if (symbol.isStatic()) {\n        return com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder.F.typeLiteral(symbol.owner);\n    }\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 287,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_282-282_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "return symbol != null ? normalizeBase(context, symbol, null) : null",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 277,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_272_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol != null) {\n    return normalizeBase(context, symbol, null);\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 277,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_272-272_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol == null) {\n    return null;\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 287,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_282-282_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (method == null) {\n    return null;\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 184,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_185-185_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol == null) {\n    throw new com.google.errorprone.bugpatterns.threadsafety.IllegalGuardedBy(\"\");\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 277,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_272-272_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol == null) {\n    return null;\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 277,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_272-272_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol == null) {\n    symbol = null;\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 277,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_272-272_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "computeBase(context, method != null ? method : null)",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 184,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_185_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "bindSelect(method != null ? computeBase(context, method) : new com.google.errorprone.bugpatterns.threadsafety.GuardedByExpression(), method)",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 184,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_185_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "bindSelect(method != null ? computeBase(context, method) : null, method)",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 184,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_185_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "return method != null ? bindSelect(computeBase(context, method), method) : new com.google.errorprone.bugpatterns.threadsafety.GuardedByExpression()",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 184,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_185_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "(symbol != null ? symbol : null).isStatic()",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 287,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_282_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol == null) {\n    symbol = null;\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 287,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_282-282_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (method == null) {\n    method = null;\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 184,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_185-185_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "normalizeBase(context, symbol != null ? symbol : null, null)",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 277,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_272_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "return symbol != null ? normalizeBase(context, symbol, null) : new com.google.errorprone.bugpatterns.threadsafety.GuardedByExpression()",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 277,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_272_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol == null) {\n    return new com.google.errorprone.bugpatterns.threadsafety.GuardedByExpression();\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 287,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_282-282_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (symbol == null) {\n    return new com.google.errorprone.bugpatterns.threadsafety.GuardedByExpression();\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 277,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_272-272_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "error-prone-370938-buggy",
+        "patch": {
+            "contents": "if (method == null) {\n    return new com.google.errorprone.bugpatterns.threadsafety.GuardedByExpression();\n}",
+            "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+            "patched_line": 184,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_185-185_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    }
+]

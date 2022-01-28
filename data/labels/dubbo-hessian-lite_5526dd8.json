@@ -1,0 +1,301 @@
+[
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    continue;\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_974-969_7"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.IllegalStateException();\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_974-974_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.io.UnsupportedEncodingException();\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_974-974_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "(value != null ? value : \"\").equals(entry.getValue())",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 979,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_974_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "(value != null ? value : \"null\").equals(entry.getValue())",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 979,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_974_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_974-974_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value != null ? !value.equals(entry.getValue()) : false) {\n    hasAndEqual = false;\n    break;\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 979,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_974_11"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value != null) {\n    if (!value.equals(entry.getValue())) {\n        hasAndEqual = false;\n        break;\n    }\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 979,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_974-974_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_974-974_12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    break;\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_974-967_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "!(value != null ? value.equals(entry.getValue()) : entry.getValue() == null)",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 979,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_974_8"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "!(value != null ? value.equals(entry.getValue()) : true)",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 979,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_974_10"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value != null ? !value.equals(entry.getValue()) : true) {\n    hasAndEqual = false;\n    break;\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 979,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_974_12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "!(value != null ? value.equals(entry.getValue()) : false)",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 979,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_974_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.net.MalformedURLException();\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_974-974_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_974-974_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    return null;\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_974-974_13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_974-974_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    value = null;\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_974-974_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"NULL\";\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_974-974_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "if (value == null) {\n    return new com.alibaba.dubbo.common.URL();\n}",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 981,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_974-974_14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "(value != null ? value : null).equals(entry.getValue())",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 979,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_974_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "dubbo-hessian-lite_5526dd8",
+        "patch": {
+            "contents": "(value != null ? value : \"NULL\").equals(entry.getValue())",
+            "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+            "patched_line": 979,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_974_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

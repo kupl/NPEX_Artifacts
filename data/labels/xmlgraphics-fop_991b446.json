@@ -1,0 +1,483 @@
+[
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if (boundingBoxes != null) {\n    if ((idx >= 0) && (idx < boundingBoxes.length)) {\n        bbox = boundingBoxes[idx];\n    }\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_138-138_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes : new java.awt.Rectangle[]()).length)) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_138_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : false))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_138_1--2--2--2--2--2--2--2--2--2--2--2--2--2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : true))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_138_2--3--3--3--3--3--3--3--3--3--3--3--3--3--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if (boundingBoxes != null) {\n    int idx = glyphIndex - getFirstChar();\n    if ((idx >= 0) && (idx < boundingBoxes.length)) {\n        bbox = boundingBoxes[idx];\n    }\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 138,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_137-138_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if (boundingBoxes == null) {\n    boundingBoxes = new java.awt.Rectangle[]();\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_138-138_2--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if (boundingBoxes == null) {\n    return null;\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_138-138_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : 0))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_138_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : 1))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_138_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : codePoint))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_7--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.usedGlyphsCount))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_8--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.strikeoutThickness))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_24--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.strikeoutPosition))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_23--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.weight))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_15--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.firstChar))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_19--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.xHeight))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_11--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.underlinePosition))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_21--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.underlineThickness))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_22--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.descender))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_13--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.lastChar))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_20--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.stemV))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_16--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : org.apache.fop.fonts.CustomFont.DEFAULT_LINE_THICKNESS))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_9--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : size))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_4--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.flags))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_14--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.capHeight))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_10--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : glyphIndex))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_3--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.italicAngle))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_17--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : idx))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_5--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.missingWidth))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_18--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : encodingIndex))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_6--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : this.ascender))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_138_12--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if (boundingBoxes == null) {\n    boundingBoxes = new java.awt.Rectangle[]{  };\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "InitPointerStrategy_138-138_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes : new java.awt.Rectangle[]{  }).length)) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_138_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if (boundingBoxes == null) {\n    throw new java.lang.UnsupportedOperationException();\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_138-138_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes : null).length)) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_138_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if (boundingBoxes == null) {\n    boundingBoxes = null;\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_138-138_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "xmlgraphics-fop_991b446",
+        "patch": {
+            "contents": "if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : -1))) {\n    bbox = boundingBoxes[idx];\n}",
+            "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+            "patched_line": 139,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_138_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

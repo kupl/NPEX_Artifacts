@@ -1,0 +1,9 @@
++ -------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id             | label                    | detail                       | description | patch_id                            |
++ -------------------------------------------------------------------------------------------------------------------------------- +
+| JSqlParser_2897935 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_216-216_2        |
+| JSqlParser_2897935 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipBlockStrategy_216-219_0         |
+| JSqlParser_2897935 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipSinkStatementStrategy_216-216_1 |
+| JSqlParser_2897935 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_216_1        |
+| JSqlParser_2897935 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | ReplacePointerStrategy_216_0        |
++ -------------------------------------------------------------------------------------------------------------------------------- +

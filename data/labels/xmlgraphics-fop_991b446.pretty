@@ -1,0 +1,15 @@
++ -------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                  | label                    | detail                | description | patch_id                              |
++ -------------------------------------------------------------------------------------------------------------------------------- +
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | SkipSinkStatementStrategy_138-138_1   |
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | SkipBlockStrategy_137-138_0           |
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | SkipReturnStrategy_138-138_5          |
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | ReplaceEntireExpressionStrategy_138_4 |
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | ReplaceEntireExpressionStrategy_138_6 |
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | InitPointerStrategy_138-138_3         |
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | ReplacePointerStrategy_138_1          |
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | SkipThrowStrategy_138-138_4           |
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | ReplacePointerStrategy_138_0          |
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | InitPointerStrategy_138-138_2         |
+| xmlgraphics-fop_991b446 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL |             | ReplaceEntireExpressionStrategy_138_5 |
++ -------------------------------------------------------------------------------------------------------------------------------- +

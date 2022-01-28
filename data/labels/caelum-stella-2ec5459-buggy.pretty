@@ -1,0 +1,19 @@
++ -------------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                      | label                    | detail                       | description | patch_id                               |
++ -------------------------------------------------------------------------------------------------------------------------------------------- +
+| caelum-stella-2ec5459-buggy | LabelOverall.WC          | LabelDetail.MANUAL_WC        |             | ReplaceEntireExpressionStrategy_125_9  |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipBlockStrategy_125-125_0            |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_125_10 |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_125_8  |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnParam_121-125_3              |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_125_1           |
+| caelum-stella-2ec5459-buggy | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipReturnParam_121-125_2              |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_125_0           |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_125-125_5          |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_125-125_8            |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_125-125_4          |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_125_3           |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_125-125_6          |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_125_2           |
+| caelum-stella-2ec5459-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | InitPointerStrategy_125-125_7          |
++ -------------------------------------------------------------------------------------------------------------------------------------------- +

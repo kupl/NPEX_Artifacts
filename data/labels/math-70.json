@@ -1,0 +1,639 @@
+[
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f != null) {\n    return solve(f, min, max);\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_66-66_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    throw new org.apache.commons.math.MaxIterationsExceededException();\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_89-89_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    break;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_89-86_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    return 1.0;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_89-89_6--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    return 0.0;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_89-89_5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : 1.0",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_89_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    continue;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_89-106_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    throw new org.apache.commons.math.MaxIterationsExceededException();\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_66-66_0--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f != null) {\n    fmin = f.value(min);\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_89-89_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : 0.0",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_89_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    return 0.0;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_66-66_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f != null) {\n    m = org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.midpoint(min, max);\n    fmin = f.value(min);\n    fm = f.value(m);\n    if ((fm * fmin) > 0.0) {\n        // max and m bracket the root.\n        min = m;\n    } else {\n        // min and m bracket the root.\n        max = m;\n    }\n    if (java.lang.Math.abs(max - min) <= absoluteAccuracy) {\n        m = org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.midpoint(min, max);\n        setResult(m, i);\n        i = maximalIterationCount;// +\n\n        // return m;\n    }\n    ++i;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 89,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_87-106_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    return 1.0;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_66-66_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : 1.0",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_66_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : 0.0",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_66_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : min",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_66_2--10--10--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--8--8--8--8--8--8--8--8--6--6--6"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : this.relativeAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_12--11--11--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--9--9--9--9--9--9--9--9--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : this.functionValue",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_66_7--12--12--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--10--10--10--10--10--10--10--10--8--8--8"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : max",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_66_3--13--13--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--11--11--11--11--11--11--11--11--9--9--9"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : this.relativeAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_66_9--14--14--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--12--12--12--12--12--12--12--12--10--10--10"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : this.defaultRelativeAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_14--15--15--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--13--13--13--13--13--13--13--13--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : this.defaultAbsoluteAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_66_10--16--16--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--14--14--14--14--14--14--14--14--12--12--12"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : this.defaultFunctionValueAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_8--17--17--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--15--15--15--15--15--15--15--15--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : this.absoluteAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_66_8--18--18--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--16--16--16--16--16--16--16--16--14--14--14"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : this.defaultAbsoluteAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_13--19--19--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--17--17--17--17--17--17--17--17--15--15--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : this.functionValueAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_66_4--20--20--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--18--18--18--18--18--18--18--18--16--16--16"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : m",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_4--21--21--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--19--19--19--19--19--19--19--19--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : this.defaultFunctionValueAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_66_5--22--22--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--20--20--20--20--20--20--20--20--18--18--18"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : fm",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_5--23--23--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--21--21--21--21--21--21--21--21--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : this.absoluteAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_11--24--24--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--22--22--22--22--22--22--22--22--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : max",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_3--25--25--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--23--23--23--23--23--23--23--23--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : this.result",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_9--26--26--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--24--24--24--24--24--24--24--24--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : this.result",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_66_6--27--27--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--25--25--25--25--25--25--25--25--23--23--23"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : this.functionValueAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_7--28--28--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--26--26--26--26--26--26--26--26--24--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : min",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_2--29--29--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--27--27--27--27--27--27--27--27--25--25--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : this.defaultRelativeAccuracy",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_66_11--30--30--26--26--26--26--26--26--26--26--26--26--26--26--26--26--26--28--28--28--28--28--28--28--28--26--26--26"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : this.functionValue",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_10--31--31--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--29--29--29--29--29--29--29--29--27--27--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : fmin",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_89_6--32--32--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--30--30--30--30--30--30--30--30--28--28--28"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    return 1.0;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 81,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_79-89_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    return 0.0;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 81,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_79-89_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_66-66_1--29--29--29"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_89-89_6--30--30--30"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "return f != null ? solve(f, min, max) : java.lang.Double.NaN",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_66_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    return java.lang.Double.NaN;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 81,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_79-89_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "(f != null ? f : null).value(min)",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_89_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    f = null;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_66-66_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "fmin = (f != null) ? f.value(min) : java.lang.Double.NaN",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 90,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_89_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "solve(f != null ? f : null, min, max)",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_66_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "math-70",
+        "patch": {
+            "contents": "if (f == null) {\n    return java.lang.Double.NaN;\n}",
+            "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+            "patched_line": 69,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_66-66_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

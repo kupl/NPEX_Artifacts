@@ -1,0 +1,12 @@
+bug_id,label,detail,description,patch_id
+qpid-proton-j_87ec94b,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipThrowStrategy_101-101_5
+qpid-proton-j_87ec94b,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_101-101_6
+qpid-proton-j_87ec94b,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_101_2
+qpid-proton-j_87ec94b,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipBlockStrategy_88-102_0
+qpid-proton-j_87ec94b,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipBreakStrategy_101-86_1
+qpid-proton-j_87ec94b,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipSinkStatementStrategy_101-101_2
+qpid-proton-j_87ec94b,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_101-101_8
+qpid-proton-j_87ec94b,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_101-101_4
+qpid-proton-j_87ec94b,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipContinueStrategy_101-102_3
+qpid-proton-j_87ec94b,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_101_0
+qpid-proton-j_87ec94b,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_101-101_7

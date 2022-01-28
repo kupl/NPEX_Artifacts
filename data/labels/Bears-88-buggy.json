@@ -1,0 +1,184 @@
+[
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "if (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null) {\n    java.lang.Object value = beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class).getValue();\n}",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_68-68_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "if (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_68-68_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "(beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null ? beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) : new org.springframework.beans.factory.config.ConstructorArgumentValues.ValueHolder()).getValue()",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_68_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "java.lang.Object value = (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null) ? beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class).getValue() : new java.lang.Object()",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_68_3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "if (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_68-68_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "java.lang.Object value = (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null) ? beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class).getValue() : null",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_68_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "java.lang.Object value = (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null) ? beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class).getValue() : o_O",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_68_3--2--2--2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "java.lang.Object value = (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null) ? beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class).getValue() : org.springframework.data.repository.config.RepositoryBeanNameGenerator.DELEGATE",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_68_4--3--3--3--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "java.lang.Object value = (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null) ? beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class).getValue() : this.beanClassLoader",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_68_5--4--4--4--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "java.lang.Object value = (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null) ? beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class).getValue() : value",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_68_2--5--5--5--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "java.lang.Object value = (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null) ? beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class).getValue() : beanDefinition",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_68_1--6--6--6--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "if (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_68-68_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "(beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null ? beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) : null).getValue()",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_68_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-88-buggy",
+        "patch": {
+            "contents": "if (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) == null) {\n    return java.lang.Object.class;\n}",
+            "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+            "patched_line": 77,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_68-68_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

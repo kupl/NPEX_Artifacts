@@ -1,0 +1,13 @@
+bug_id,label,detail,description,patch_id
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipSinkStatementStrategy_389-389_0
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_389-389_5
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_389-389_3
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_389-389_4
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_389_5
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_389-389_7
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,ReplacePointerStrategy_389_0
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_389-389_1
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_389-389_2
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_389_1
+Bears-46-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipReturnStrategy_389-389_6
+Bears-46-buggy,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,ReplaceEntireExpressionStrategy_389_4

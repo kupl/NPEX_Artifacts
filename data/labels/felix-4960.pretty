@@ -1,0 +1,22 @@
++ -------------------------------------------------------------------------------------------------------------------------- +
+| bug_id     | label                    | detail                       | description | patch_id                              |
++ -------------------------------------------------------------------------------------------------------------------------- +
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipBlockStrategy_519-526_0           |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipSinkStatementStrategy_526-526_1   |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_526-526_5          |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_507-507_4          |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_507-507_0   |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_526_4 |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_526_6 |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_526-526_4          |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_526-526_2           |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipThrowStrategy_526-526_3           |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_507_1          |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipThrowStrategy_507-507_1           |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipThrowStrategy_507-507_2           |
+| felix-4960 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipReturnStrategy_507-507_3          |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_526_1          |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_526_0          |
+| felix-4960 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplacePointerStrategy_507_0          |
+| felix-4960 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_526_5 |
++ -------------------------------------------------------------------------------------------------------------------------- +

@@ -1,0 +1,9 @@
++ ------------------------------------------------------------------------------------------------------------------- +
+| bug_id  | label                    | detail                       | description | patch_id                          |
++ ------------------------------------------------------------------------------------------------------------------- +
+| math-79 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipSinkStatementStrategy_91-91_3 |
+| math-79 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipBlockStrategy_90-91_0         |
+| math-79 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipBreakStrategy_91-89_2         |
+| math-79 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipReturnStrategy_91-91_4        |
+| math-79 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipContinueStrategy_91-91_1      |
++ ------------------------------------------------------------------------------------------------------------------- +

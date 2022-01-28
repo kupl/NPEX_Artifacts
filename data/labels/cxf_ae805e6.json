@@ -1,0 +1,288 @@
+[
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1328-1328_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new org.apache.cxf.interceptor.Fault();\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1328-1328_5--3--3--3--3--3--3--3--3--3--3--3--3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "for (java.lang.String s : value != null ? value.split(\",\") : null) {\n    org.apache.cxf.jaxrs.utils.JAXRSUtils.addStructuredPartToMap(queries, sep, name, s, decode, decodePlus);\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategy_1328_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    value = new java.lang.String();\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_1328-1328_2--5--5--5--5--5--5--5--5--5--5--5--5--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "for (java.lang.String s : value != null ? value.split(\",\") : new java.lang.String[]()) {\n    org.apache.cxf.jaxrs.utils.JAXRSUtils.addStructuredPartToMap(queries, sep, name, s, decode, decodePlus);\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_1328_0--6--6--6--6--6--6--6--6--6--6--6--6--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new javax.ws.rs.WebApplicationException();\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1328-1328_3--7--7--7--7--7--7--7--7--7--7--7--7--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    return;\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1328-1328_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "(value != null ? value : new java.lang.String()).split(\",\")",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_1328_2--9--9--9--9--9--9--9--9--9--9--9--9--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value != null) {\n    for (java.lang.String s : value.split(\",\")) {\n        org.apache.cxf.jaxrs.utils.JAXRSUtils.addStructuredPartToMap(queries, sep, name, s, decode, decodePlus);\n    }\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_1328-1328_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.Throwable();\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1328-1328_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.NumberFormatException();\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1328-1328_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"\";\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_1328-1328_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1328-1328_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1328-1328_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "(value != null ? value : \"null\").split(\",\")",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1328_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "(value != null ? value : \"\").split(\",\")",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1328_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"null\";\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "InitPointerStrategy_1328-1328_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "for (java.lang.String s : value != null ? value.split(\",\") : new java.lang.String[]{  }) {\n    org.apache.cxf.jaxrs.utils.JAXRSUtils.addStructuredPartToMap(queries, sep, name, s, decode, decodePlus);\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1328_9"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    value = null;\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_1328-1328_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "(value != null ? value : \"NULL\").split(\",\")",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_1328_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "(value != null ? value : null).split(\",\")",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_1328_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_ae805e6",
+        "patch": {
+            "contents": "if (value == null) {\n    value = \"NULL\";\n}",
+            "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+            "patched_line": 1325,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_1328-1328_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

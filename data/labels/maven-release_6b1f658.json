@@ -1,0 +1,470 @@
+[
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "(policy != null ? policy.getReleaseVersion(request) : new java.lang.String()).getVersion()",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_327_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (policy != null) {\n    return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy.getReleaseVersion(request).getVersion();\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_326-326_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (policy == null) {\n    return \"\";\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_326-326_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (versionPolicies.get(policyId) == null) {\n    return null;\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 322,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_323-323_1--5--5--5--5--5--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--4--4--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy != null ? policy.getReleaseVersion(request).getVersion() : new java.lang.String()",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_327_14--6--6--6--6--6--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--5--5--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (policy == null) {\n    return null;\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_326-326_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (versionPolicies.get(policyId) == null) {\n    return \"\";\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 322,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_323-323_4--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (versionPolicies.get(policyId) != null) {\n    org.apache.maven.shared.release.policy.version.VersionPolicy policy = versionPolicies.get(policyId);\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 322,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_323-323_2--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy != null ? policy.getReleaseVersion(request).getVersion() : null",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_327_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "(policy != null ? policy.getReleaseVersion(request) : null).getVersion()",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_327_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "(policy != null ? policy.getReleaseVersion(request) : new org.apache.maven.shared.release.policy.version.VersionPolicyResult()).getVersion()",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategy_327_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return policy != null ? convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy.getReleaseVersion(request).getVersion() : new java.lang.String()",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_327_4--13--13--13--13--13--8--8--8--8--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return policy != null ? convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy.getReleaseVersion(request).getVersion() : null",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_327_11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return policy != null ? convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy.getReleaseVersion(request).getVersion() : org.apache.maven.shared.release.phase.ReleasePhase.ROLE",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_327_10--15--15--15--15--15--9--9--9--9--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "org.apache.maven.shared.release.policy.version.VersionPolicy policy = (versionPolicies.get(policyId) != null) ? versionPolicies.get(policyId) : policy",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 322,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_323_0--18--18--18--18--18--11--11--11--11--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return policy != null ? convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy.getReleaseVersion(request).getVersion() : baseVersion",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_327_8--19--19--19--19--19--12--12--12--12--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy != null ? policy.getReleaseVersion(request).getVersion() : org.apache.maven.shared.release.phase.ReleasePhase.ROLE",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_327_6--20--20--20--20--20--13--13--13--13--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy != null ? policy.getReleaseVersion(request).getVersion() : baseVersion",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_327_4--21--21--21--21--21--14--14--14--14--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return policy != null ? convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy.getReleaseVersion(request).getVersion() : policyId",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_327_9--23--23--23--23--23--15--15--15--15--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy != null ? policy.getReleaseVersion(request).getVersion() : policyId",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_327_5--24--24--24--24--24--16--16--16--16--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (policy == null) {\n    throw new org.apache.maven.shared.release.versions.VersionParseException(\"\");\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_326-326_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy != null ? policy.getReleaseVersion(request).getVersion() : \"null\"",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_327_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "org.apache.maven.shared.release.policy.version.VersionPolicy policy = (versionPolicies.get(policyId) != null) ? versionPolicies.get(policyId) : null",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 322,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_323_0--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (versionPolicies.get(policyId) == null) {\n    throw new org.apache.maven.shared.release.versions.VersionParseException(\"\");\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 322,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_323-323_1--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return policy != null ? convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy.getReleaseVersion(request).getVersion() : \"null\"",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_327_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (policy == null) {\n    return \"null\";\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_326-326_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (versionPolicies.get(policyId) == null) {\n    return \"null\";\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 322,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_323-323_3--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--21--21--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return policy != null ? convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy.getReleaseVersion(request).getVersion() : \"\"",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_327_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy != null ? policy.getReleaseVersion(request).getVersion() : \"\"",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_327_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (versionPolicies.get(policyId) == null) {\n    throw new org.apache.maven.shared.release.policy.PolicyException(\"\");\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 322,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_323-323_0--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--22--22--18"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (policy == null) {\n    throw new org.apache.maven.shared.release.policy.PolicyException(\"\");\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_326-326_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (policy == null) {\n    return \"NULL\";\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_326-326_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return policy != null ? convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy.getReleaseVersion(request).getVersion() : \"NULL\"",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_327_10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy != null ? policy.getReleaseVersion(request).getVersion() : \"NULL\"",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_327_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "(policy != null ? policy : null).getReleaseVersion(request)",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_327_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "maven-release_6b1f658",
+        "patch": {
+            "contents": "if (policy == null) {\n    policy = null;\n}",
+            "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+            "patched_line": 324,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_326-326_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

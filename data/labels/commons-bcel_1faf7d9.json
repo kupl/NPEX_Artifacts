@@ -1,0 +1,145 @@
+[
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "if (m.getCode() == null) {\n    throw new org.apache.bcel.generic.ClassGenException();\n}",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 189,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_178-178_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "if (m.getCode() == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 189,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_178-178_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "new org.apache.bcel.generic.InstructionList(m.getCode() != null ? m.getCode().getCode() : new byte[]{  })",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 190,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_182_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "/* may be overridden anyway */\nthis(m.getAccessFlags(), org.apache.bcel.generic.Type.getReturnType(m.getSignature()), org.apache.bcel.generic.Type.getArgumentTypes(m.getSignature()), null, m.getName(), class_name, (m.getAccessFlags() & (org.apache.bcel.Const.ACC_ABSTRACT | org.apache.bcel.Const.ACC_NATIVE)) == 0 ? m.getCode() != null ? new org.apache.bcel.generic.InstructionList(m.getCode().getCode()) : new org.apache.bcel.generic.InstructionList() : null, cp)",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 189,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_182_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "if (m.getCode() != null) {\n    /* may be overridden anyway */\n    this(m.getAccessFlags(), org.apache.bcel.generic.Type.getReturnType(m.getSignature()), org.apache.bcel.generic.Type.getArgumentTypes(m.getSignature()), null, m.getName(), class_name, (m.getAccessFlags() & (org.apache.bcel.Const.ACC_ABSTRACT | org.apache.bcel.Const.ACC_NATIVE)) == 0 ? new org.apache.bcel.generic.InstructionList(m.getCode().getCode()) : null, cp);\n}",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 189,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_178-178_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "new org.apache.bcel.generic.InstructionList(m.getCode() != null ? m.getCode().getCode() : null)",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 190,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_182_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "if (m.getCode() == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 189,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_178-178_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "/* may be overridden anyway */\nthis(m.getAccessFlags(), org.apache.bcel.generic.Type.getReturnType(m.getSignature()), org.apache.bcel.generic.Type.getArgumentTypes(m.getSignature()), null, m.getName(), class_name, m.getCode() != null ? (m.getAccessFlags() & (org.apache.bcel.Const.ACC_ABSTRACT | org.apache.bcel.Const.ACC_NATIVE)) == 0 ? new org.apache.bcel.generic.InstructionList(m.getCode().getCode()) : null : new org.apache.bcel.generic.InstructionList(), cp)",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 189,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_182_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "/* may be overridden anyway */\nthis(m.getAccessFlags(), org.apache.bcel.generic.Type.getReturnType(m.getSignature()), org.apache.bcel.generic.Type.getArgumentTypes(m.getSignature()), null, m.getName(), class_name, (m.getAccessFlags() & (org.apache.bcel.Const.ACC_ABSTRACT | org.apache.bcel.Const.ACC_NATIVE)) == 0 ? m.getCode() != null ? new org.apache.bcel.generic.InstructionList(m.getCode().getCode()) : null : null, cp)",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 189,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_182_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "/* may be overridden anyway */\nthis(m.getAccessFlags(), org.apache.bcel.generic.Type.getReturnType(m.getSignature()), org.apache.bcel.generic.Type.getArgumentTypes(m.getSignature()), null, m.getName(), class_name, m.getCode() != null ? (m.getAccessFlags() & (org.apache.bcel.Const.ACC_ABSTRACT | org.apache.bcel.Const.ACC_NATIVE)) == 0 ? new org.apache.bcel.generic.InstructionList(m.getCode().getCode()) : null : null, cp)",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 189,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_182_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "commons-bcel_1faf7d9",
+        "patch": {
+            "contents": "(m.getCode() != null ? m.getCode() : null).getCode()",
+            "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+            "patched_line": 190,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_182_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

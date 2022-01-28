@@ -1,0 +1,119 @@
+[
+    {
+        "bug_id": "checkstyle-536bc20-buggy",
+        "patch": {
+            "contents": "if (identAST != null) {\n    if ((identAST.getType() == com.puppycrawl.tools.checkstyle.api.TokenTypes.IDENT) && getCurrentVariables().contains(identAST.getText())) {\n        log(ast.getLineNo(), ast.getColumnNo(), com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck.MSG_KEY, identAST.getText());\n    }\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "patched_line": 285,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_279-279_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-536bc20-buggy",
+        "patch": {
+            "contents": "(identAST != null ? identAST : new com.puppycrawl.tools.checkstyle.api.DetailAST()).getType()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "patched_line": 285,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_279_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-536bc20-buggy",
+        "patch": {
+            "contents": "if (((identAST != null ? identAST.getType() : 0) == com.puppycrawl.tools.checkstyle.api.TokenTypes.IDENT) && getCurrentVariables().contains(identAST.getText())) {\n    log(ast.getLineNo(), ast.getColumnNo(), com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck.MSG_KEY, identAST.getText());\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "patched_line": 285,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_279_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-536bc20-buggy",
+        "patch": {
+            "contents": "if (identAST != null) {\n    final com.puppycrawl.tools.checkstyle.api.DetailAST identAST = ast.getFirstChild();\n    if ((identAST.getType() == com.puppycrawl.tools.checkstyle.api.TokenTypes.IDENT) && getCurrentVariables().contains(identAST.getText())) {\n        log(ast.getLineNo(), ast.getColumnNo(), com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck.MSG_KEY, identAST.getText());\n    }\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "patched_line": 284,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_277-279_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-536bc20-buggy",
+        "patch": {
+            "contents": "if (identAST == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "patched_line": 285,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_279-279_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-536bc20-buggy",
+        "patch": {
+            "contents": "if (identAST == null) {\n    throw new java.lang.IllegalStateException();\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "patched_line": 285,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_279-279_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-536bc20-buggy",
+        "patch": {
+            "contents": "if (((identAST != null ? identAST.getType() : 1) == com.puppycrawl.tools.checkstyle.api.TokenTypes.IDENT) && getCurrentVariables().contains(identAST.getText())) {\n    log(ast.getLineNo(), ast.getColumnNo(), com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck.MSG_KEY, identAST.getText());\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "patched_line": 285,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_279_6"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-536bc20-buggy",
+        "patch": {
+            "contents": "(identAST != null ? identAST : null).getType()",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "patched_line": 285,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_279_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "checkstyle-536bc20-buggy",
+        "patch": {
+            "contents": "if (((identAST != null ? identAST.getType() : -1) == com.puppycrawl.tools.checkstyle.api.TokenTypes.IDENT) && getCurrentVariables().contains(identAST.getText())) {\n    log(ast.getLineNo(), ast.getColumnNo(), com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck.MSG_KEY, identAST.getText());\n}",
+            "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "patched_line": 285,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_279_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

@@ -1,0 +1,9 @@
+bug_id,label,detail,description,patch_id
+shiro_3ca513f,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipThrowStrategy_62-62_1
+shiro_3ca513f,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipSinkStatementStrategy_62-62_0
+shiro_3ca513f,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_62_3
+shiro_3ca513f,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipReturnStrategy_62-62_2
+shiro_3ca513f,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_62_4
+shiro_3ca513f,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplaceEntireExpressionStrategy_62_5
+shiro_3ca513f,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplaceEntireExpressionStrategy_62_2
+shiro_3ca513f,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_62_0

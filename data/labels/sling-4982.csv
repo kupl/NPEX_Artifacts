@@ -1,0 +1,10 @@
+bug_id,label,detail,description,patch_id
+sling-4982,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplaceEntireExpressionStrategy_288_4
+sling-4982,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipSinkStatementStrategy_288-288_1
+sling-4982,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipReturnStrategy_288-288_3
+sling-4982,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_288_2
+sling-4982,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipReturnStrategy_288-288_4
+sling-4982,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_288_3
+sling-4982,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,SkipBlockStrategy_287-288_0
+sling-4982,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_288_0
+sling-4982,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,InitPointerStrategy_288-288_2

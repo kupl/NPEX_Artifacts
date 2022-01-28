@@ -1,0 +1,158 @@
+[
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "(currentAuthResult != null ? currentAuthResult : new org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult()).getUsername()",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_106_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationHandler.loginWithMd5Password(currentAuthResult != null ? currentAuthResult.getUsername() : new org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult(), currentAuthResult.getDatabase(), md5Salt, passwordMessagePacket)",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_106_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "if (currentAuthResult == null) {\n    return null;\n}",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_106-106_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "if (currentAuthResult == null) {\n    currentAuthResult = new org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult();\n}",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "InitPointerStrategy_106-106_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationHandler.loginWithMd5Password(currentAuthResult != null ? currentAuthResult.getUsername() : null, currentAuthResult.getDatabase(), md5Salt, passwordMessagePacket)",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_106_1--6--6--6--6--6--6--6--6--6--6--6--6--6--6--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "if (currentAuthResult != null) {\n    char messageType = ((char) (((org.apache.shardingsphere.db.protocol.postgresql.payload.PostgreSQLPacketPayload) (payload)).readInt1()));\n    if ('p' != messageType) {\n        org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLErrorResponsePacket responsePacket = createErrorPacket(org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode.SQLSERVER_REJECTED_ESTABLISHMENT_OF_SQLCONNECTION, java.lang.String.format(\"PasswordMessage is expected, message type 'p', but not '%s'\", messageType));\n        context.writeAndFlush(responsePacket);\n        context.close();\n        currentAuthResult = org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult.continued();\n        return currentAuthResult;\n    }\n    org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLPasswordMessagePacket passwordMessagePacket = new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLPasswordMessagePacket(((org.apache.shardingsphere.db.protocol.postgresql.payload.PostgreSQLPacketPayload) (payload)));\n    org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult loginResult = org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationHandler.loginWithMd5Password(currentAuthResult.getUsername(), currentAuthResult.getDatabase(), md5Salt, passwordMessagePacket);\n    if (org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode.SUCCESSFUL_COMPLETION != loginResult.getErrorCode()) {\n        org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLErrorResponsePacket responsePacket = createErrorPacket(loginResult.getErrorCode(), loginResult.getErrorMessage());\n        context.writeAndFlush(responsePacket);\n        context.close();\n        return org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult.continued();\n    } else {\n        // TODO implement PostgreSQLServerInfo like MySQLServerInfo\n        context.write(new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLAuthenticationOKPacket(true));\n        context.write(new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLParameterStatusPacket(\"server_version\", \"12.3\"));\n        context.write(new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLParameterStatusPacket(\"client_encoding\", \"UTF8\"));\n        context.write(new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLParameterStatusPacket(\"server_encoding\", \"UTF8\"));\n        context.writeAndFlush(new org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLReadyForQueryPacket());\n        return org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult.finished(currentAuthResult.getUsername(), currentAuthResult.getDatabase());\n    }\n}",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 96,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_96-107_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "if (currentAuthResult != null) {\n    org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult loginResult = org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationHandler.loginWithMd5Password(currentAuthResult.getUsername(), currentAuthResult.getDatabase(), md5Salt, passwordMessagePacket);\n}",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_106-106_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult loginResult = (currentAuthResult != null) ? org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationHandler.loginWithMd5Password(currentAuthResult.getUsername(), currentAuthResult.getDatabase(), md5Salt, passwordMessagePacket) : null",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_106_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult loginResult = (currentAuthResult != null) ? org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationHandler.loginWithMd5Password(currentAuthResult.getUsername(), currentAuthResult.getDatabase(), md5Salt, passwordMessagePacket) : new org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult()",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_106_2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "if (currentAuthResult == null) {\n    return new org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult();\n}",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_106-106_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "if (currentAuthResult == null) {\n    currentAuthResult = null;\n}",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_106-106_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_48237c8",
+        "patch": {
+            "contents": "(currentAuthResult != null ? currentAuthResult : null).getUsername()",
+            "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+            "patched_line": 106,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_106_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

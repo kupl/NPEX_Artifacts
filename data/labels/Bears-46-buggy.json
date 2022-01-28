@@ -1,0 +1,236 @@
+[
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "if (metadata != null) {\n    return metadata.keySet();\n}",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_389-389_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "(metadata != null ? metadata : new java.util.HashMap<>()).keySet()",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_389_1--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "if (metadata == null) {\n    throw new java.lang.ClassCastException();\n}",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_389-389_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "if (metadata == null) {\n    metadata = new java.util.HashMap<>();\n}",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_389-389_4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.WC",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "if (metadata == null) {\n    throw new java.lang.IllegalStateException();\n}",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_389-389_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "if (metadata == null) {\n    throw new spoon.reflect.declaration.ParentNotInitializedException(\"\");\n}",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_389-389_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "return metadata != null ? metadata.keySet() : null",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_389_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "if (metadata == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_389-389_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "return metadata != null ? metadata.keySet() : new java.util.HashSet<>()",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_389_4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "(metadata != null ? metadata : new java.util.HashMap()).keySet()",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_389_1--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "if (metadata == null) {\n    metadata = new java.util.HashMap();\n}",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_389-389_4--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "return metadata != null ? metadata.keySet() : new java.util.HashSet()",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_389_4--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "(metadata != null ? metadata : java.util.Collections.emptyMap()).keySet()",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_389_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "if (metadata == null) {\n    metadata = java.util.Collections.emptyMap();\n}",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_389-389_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "if (metadata == null) {\n    metadata = null;\n}",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_389-389_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "(metadata != null ? metadata : null).keySet()",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_389_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "if (metadata == null) {\n    return java.util.Collections.emptySet();\n}",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_389-389_6"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Bears-46-buggy",
+        "patch": {
+            "contents": "return metadata != null ? metadata.keySet() : java.util.Collections.emptySet()",
+            "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+            "patched_line": 390,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_389_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    }
+]

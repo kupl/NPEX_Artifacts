@@ -1,0 +1,210 @@
+[
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "if (property.getField() != null) {\n    boolean isObjectId = ((property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.ObjectId.class) != null) || (property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.MongoObjectId.class) != null)) || org.bson.types.ObjectId.class.isAssignableFrom(property.getField().getRawType());\n}",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_85-85_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "org.bson.types.ObjectId.class.isAssignableFrom(property.getField() != null ? property.getField().getRawType() : true)",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_87_3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "if (property.getField() == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_85-85_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "(property.getField() != null ? property.getField() : new com.fasterxml.jackson.databind.introspect.AnnotatedField()).getRawType()",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_87_0--3--3--3--3--3--3--3--3--3--3--3--3--3--4--4--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "boolean isObjectId = ((property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.ObjectId.class) != null) || (property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.MongoObjectId.class) != null)) || (property.getField() != null ? org.bson.types.ObjectId.class.isAssignableFrom(property.getField().getRawType()) : false)",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_87_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "if (property.getField() == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_85-85_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "if (property.getField() == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_85-85_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "org.bson.types.ObjectId.class.isAssignableFrom(property.getField() != null ? property.getField().getRawType() : false)",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_87_2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--4--4--4--4--4--4--4--4--4--4--4--4--4--6--6--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "boolean isObjectId = ((property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.ObjectId.class) != null) || (property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.MongoObjectId.class) != null)) || (property.getField() != null ? org.bson.types.ObjectId.class.isAssignableFrom(property.getField().getRawType()) : true)",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_87_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "org.bson.types.ObjectId.class.isAssignableFrom(property.getField() != null ? property.getField().getRawType() : new java.lang.Class<?>())",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_87_5--5--5--5--5--5--5--5--5--5--5--5--5--5--7--7--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "org.bson.types.ObjectId.class.isAssignableFrom(property.getField() != null ? property.getField().getRawType() : null)",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_87_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "boolean isObjectId = ((property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.ObjectId.class) != null) || (property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.MongoObjectId.class) != null)) || (property.getField() != null ? org.bson.types.ObjectId.class.isAssignableFrom(property.getField().getRawType()) : isObjectId)",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_87_6--4--4--4--7--7--7--7--7--7--7--7--7--7--7--7--7--9--9--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "boolean isObjectId = ((property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.ObjectId.class) != null) || (property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.MongoObjectId.class) != null)) || (property.getField() != null ? org.bson.types.ObjectId.class.isAssignableFrom(property.getField().getRawType()) : property.getField().getRawType() == null)",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_87_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "if (property.getField() == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_85-85_2--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "(property.getField() != null ? property.getField() : null).getRawType()",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_87_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "jongo-f46f658-buggy",
+        "patch": {
+            "contents": "org.bson.types.ObjectId.class.isAssignableFrom(property.getField() != null ? property.getField().getRawType() : java.lang.Object.class)",
+            "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+            "patched_line": 86,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_87_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    }
+]

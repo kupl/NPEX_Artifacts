@@ -1,0 +1,12 @@
++ ---------------------------------------------------------------------------------------------------------------------- +
+| bug_id   | label                    | detail                     | description | patch_id                              |
++ ---------------------------------------------------------------------------------------------------------------------- +
+| chart-25 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipSinkStatementStrategy_404-404_0   |
+| chart-25 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_404-404_2           |
+| chart-25 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipReturnStrategy_404-404_3          |
+| chart-25 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_404_4 |
+| chart-25 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_404_2 |
+| chart-25 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_404_3 |
+| chart-25 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_404_0          |
+| chart-25 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | InitPointerStrategy_404-404_1         |
++ ---------------------------------------------------------------------------------------------------------------------- +

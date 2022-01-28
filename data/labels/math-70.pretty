@@ -1,0 +1,24 @@
++ ---------------------------------------------------------------------------------------------------------------------- +
+| bug_id  | label                    | detail                       | description | patch_id                             |
++ ---------------------------------------------------------------------------------------------------------------------- +
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipSinkStatementStrategy_66-66_0    |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipBreakStrategy_89-86_1            |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_89_4 |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipContinueStrategy_89-106_6        |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipSinkStatementStrategy_89-89_2    |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_89_2 |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_66-66_2           |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipBlockStrategy_87-106_0           |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_66-66_4           |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_66_4 |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_66_2 |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnParam_79-89_5              |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnParam_79-89_3              |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_66_3 |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnParam_79-89_4              |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_89_0          |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | InitPointerStrategy_66-66_1          |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_89_3 |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_66_0          |
+| math-70 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_66-66_3           |
++ ---------------------------------------------------------------------------------------------------------------------- +

@@ -1,0 +1,25 @@
++ --------------------------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id                               | label                    | detail                     | description | patch_id                               |
++ --------------------------------------------------------------------------------------------------------------------------------------------------- +
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipBlockStrategy_229-241_0            |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_230_3  |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplaceEntireExpressionStrategy_230_10 |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipSinkStatementStrategy_230-230_1    |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_230_9  |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipReturnStrategy_230-230_4           |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_230_7  |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplaceEntireExpressionStrategy_230_11 |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_230_12 |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_230_4  |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_230_8  |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_230-230_3            |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_230_5  |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | SkipThrowStrategy_229-229_2            |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_229_0           |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipSinkStatementStrategy_229-229_1    |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipReturnStrategy_229-229_3           |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplaceEntireExpressionStrategy_230_6  |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_230_0           |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | InitPointerStrategy_230-230_2          |
+| sling-org-apache-sling-pipes_674819d | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | ReplaceEntireExpressionStrategy_230_2  |
++ --------------------------------------------------------------------------------------------------------------------------------------------------- +

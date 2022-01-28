@@ -1,0 +1,249 @@
+[
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet == null) {\n    return true;\n}",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_250-250_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet == null) {\n    return false;\n}",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_250-250_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_250-250_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null) {\n    return org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet.contains(locale);\n}",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_250-250_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "return org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet.contains(locale) : true",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_250_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "return org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet.contains(locale) : false",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_250_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "(org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet : org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet).contains(locale)",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_250_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--4--4--4--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet == null) {\n    org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet = org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet;\n}",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_250-250_1--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--5--5--5--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "(org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet : org.apache.commons.lang3.LocaleUtils.cAvailableLocaleList).contains(locale)",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_250_1--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--6--6--6--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "(org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet : new java.util.HashSet<>()).contains(locale)",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategy_250_1--5--5--5--5--5--5--5--5--5--5--5--5--5--7--7--7--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet == null) {\n    org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet = new java.util.HashSet<>();\n}",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_250-250_2--6--6--6--6--6--6--6--6--6--6--6--6--6--8--8--8--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "return org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet.contains(locale) : locale == null",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_250_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "(org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet : new java.util.HashSet()).contains(locale)",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_250_1--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet == null) {\n    org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet = new java.util.HashSet();\n}",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_250-250_2--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_250-250_3--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet == null) {\n    org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet = null;\n}",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_250-250_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "(org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet : java.util.Collections.emptySet()).contains(locale)",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_250_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet == null) {\n    org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet = java.util.Collections.emptySet();\n}",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_250-250_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "lang-57",
+        "patch": {
+            "contents": "(org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet : null).contains(locale)",
+            "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+            "patched_line": 259,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_250_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

@@ -1,0 +1,9 @@
+bug_id,label,detail,description,patch_id
+checkstyle-8381754-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplacePointerStrategy_122_1
+checkstyle-8381754-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_122-122_2
+checkstyle-8381754-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipReturnStrategy_122-122_1
+checkstyle-8381754-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipSinkStatementStrategy_122-122_0
+checkstyle-8381754-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_122_4
+checkstyle-8381754-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_122_6
+checkstyle-8381754-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_122_0
+checkstyle-8381754-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_122_5

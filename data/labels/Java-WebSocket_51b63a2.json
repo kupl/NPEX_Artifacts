@@ -1,0 +1,106 @@
+[
+    {
+        "bug_id": "Java-WebSocket_51b63a2",
+        "patch": {
+            "contents": "if (selector == null) {\n    selector = new java.nio.channels.Selector();\n}",
+            "original_filepath": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+            "patched_line": 266,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_257-257_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Java-WebSocket_51b63a2",
+        "patch": {
+            "contents": "(selector != null ? selector : new java.nio.channels.Selector()).wakeup()",
+            "original_filepath": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+            "patched_line": 266,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_257_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Java-WebSocket_51b63a2",
+        "patch": {
+            "contents": "if (selector != null) {\n    selector.wakeup();\n    selectorthread.join(timeout);\n}",
+            "original_filepath": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+            "patched_line": 266,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_257-258_0"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "Java-WebSocket_51b63a2",
+        "patch": {
+            "contents": "if (selector != null) {\n    selector.wakeup();\n}",
+            "original_filepath": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+            "patched_line": 266,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_257-257_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "Java-WebSocket_51b63a2",
+        "patch": {
+            "contents": "if (selector == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+            "patched_line": 266,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_257-257_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "Java-WebSocket_51b63a2",
+        "patch": {
+            "contents": "if (selector == null) {\n    throw new java.lang.InterruptedException();\n}",
+            "original_filepath": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+            "patched_line": 266,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_257-257_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Java-WebSocket_51b63a2",
+        "patch": {
+            "contents": "if (selector == null) {\n    selector = null;\n}",
+            "original_filepath": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+            "patched_line": 266,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_257-257_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Java-WebSocket_51b63a2",
+        "patch": {
+            "contents": "(selector != null ? selector : null).wakeup()",
+            "original_filepath": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+            "patched_line": 266,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_257_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

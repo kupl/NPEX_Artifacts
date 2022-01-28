@@ -1,0 +1,171 @@
+[
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? field.getAnnotation(picocli.CommandLine.Parameters.class).index() : null)",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_1024_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? field.getAnnotation(picocli.CommandLine.Parameters.class).index() : new picocli.CommandLine.Range())",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_1024_0--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--3--2--2--2--2--2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "if (field.getAnnotation(picocli.CommandLine.Parameters.class) != null) {\n    return picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class).index());\n}",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_1024-1024_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "if (field.getAnnotation(picocli.CommandLine.Parameters.class) == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_1024-1024_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "return field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class).index()) : null",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_1024_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "return field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class).index()) : new picocli.CommandLine.Range()",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_1024_6--4--4--4--4--4--4--4--4--4--4--4--4--4--4--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? field.getAnnotation(picocli.CommandLine.Parameters.class).index() : new java.lang.String())",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_1024_4--5--5--5--5--5--5--5--5--5--5--5--5--5--5--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? field.getAnnotation(picocli.CommandLine.Parameters.class).index() : this.originalValue)",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_1024_2--3--3--3--6--6--6--6--6--6--6--6--6--6--6--6--6--6--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? field.getAnnotation(picocli.CommandLine.Parameters.class).index() : \"\")",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_1024_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "if (field.getAnnotation(picocli.CommandLine.Parameters.class) == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1024-1024_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? field.getAnnotation(picocli.CommandLine.Parameters.class).index() : \"null\")",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_1024_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "(field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? field.getAnnotation(picocli.CommandLine.Parameters.class) : null).index()",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1024_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "picocli_758f4c0",
+        "patch": {
+            "contents": "picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? field.getAnnotation(picocli.CommandLine.Parameters.class).index() : \"NULL\")",
+            "original_filepath": "src/main/java/picocli/CommandLine.java",
+            "patched_line": 1032,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_1024_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

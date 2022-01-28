@@ -1,0 +1,13 @@
++ -------------------------------------------------------------------------------------------------------------------- +
+| bug_id          | label                    | detail                   | description | patch_id                       |
++ -------------------------------------------------------------------------------------------------------------------- +
+| Bears-222-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipBreakStrategy_172-171_1    |
+| Bears-222-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipReturnStrategy_172-172_7   |
+| Bears-222-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipBlockStrategy_172-172_0    |
+| Bears-222-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipThrowStrategy_172-172_6    |
+| Bears-222-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipContinueStrategy_172-172_5 |
+| Bears-222-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | InitPointerStrategy_172-172_3  |
+| Bears-222-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | InitPointerStrategy_172-172_4  |
+| Bears-222-buggy | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | ReplacePointerStrategy_172_0   |
+| Bears-222-buggy | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_172_1   |
++ -------------------------------------------------------------------------------------------------------------------- +

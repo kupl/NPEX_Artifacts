@@ -1,0 +1,10 @@
++ ---------------------------------------------------------------------------------------------------------------------- +
+| bug_id     | label                    | detail                     | description | patch_id                            |
++ ---------------------------------------------------------------------------------------------------------------------- +
+| sling-6487 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipSinkStatementStrategy_123-123_0 |
+| sling-6487 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipReturnStrategy_123-123_1        |
+| sling-6487 | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT |             | SkipReturnStrategy_126-126_1        |
+| sling-6487 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL   |             | SkipSinkStatementStrategy_126-126_0 |
+| sling-6487 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_123_0        |
+| sling-6487 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL      |             | ReplacePointerStrategy_126_0        |
++ ---------------------------------------------------------------------------------------------------------------------- +

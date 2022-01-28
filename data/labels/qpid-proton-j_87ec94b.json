@@ -1,0 +1,158 @@
+[
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "if (_encoder.getType(element.getValue()) == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_101-101_5"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "if (_encoder.getType(element.getValue()) == null) {\n    return 0;\n}",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_101-101_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "elementEncoding = (_encoder.getType(element.getValue()) != null) ? _encoder.getType(element.getValue()).getEncoding(element.getValue()) : null",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_101_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "if (_encoder.getType(element.getValue()) != null) {\n    final java.util.Map.Entry<?, ?> element = iter.next();\n    org.apache.qpid.proton.codec.TypeEncoding elementEncoding;\n    if (fixedKeyType == null) {\n        elementEncoding = _encoder.getType(element.getKey()).getEncoding(element.getKey());\n    } else {\n        elementEncoding = fixedKeyType.getEncoding(element.getKey());\n    }\n    len += elementEncoding.getConstructorSize() + elementEncoding.getValueSize(element.getKey());\n    elementEncoding = _encoder.getType(element.getValue()).getEncoding(element.getValue());\n    len += elementEncoding.getConstructorSize() + elementEncoding.getValueSize(element.getValue());\n}",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 84,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_88-102_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "if (_encoder.getType(element.getValue()) == null) {\n    break;\n}",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_101-86_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "if (_encoder.getType(element.getValue()) != null) {\n    elementEncoding = _encoder.getType(element.getValue()).getEncoding(element.getValue());\n}",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_101-101_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "if (_encoder.getType(element.getValue()) == null) {\n    return 1;\n}",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_101-101_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "if (_encoder.getType(element.getValue()) == null) {\n    throw new org.apache.qpid.proton.codec.DecodeException();\n}",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_101-101_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "if (_encoder.getType(element.getValue()) == null) {\n    continue;\n}",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_101-102_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "if (_encoder.getType(element.getValue()) == null) {\n    return null;\n}",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_101-101_6--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "(_encoder.getType(element.getValue()) != null ? _encoder.getType(element.getValue()) : null).getEncoding(element.getValue())",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_101_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "qpid-proton-j_87ec94b",
+        "patch": {
+            "contents": "if (_encoder.getType(element.getValue()) == null) {\n    return -1;\n}",
+            "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+            "patched_line": 92,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_101-101_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "bug_id": "httpcomponents-client_65c6c25",
+        "patch": {
+            "contents": "if (context != null) {\n    context.setAttribute(org.apache.hc.core5.http.protocol.HttpCoreContext.HTTP_REQUEST, request);\n}",
+            "original_filepath": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/classic/MinimalHttpClient.java",
+            "patched_line": 139,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_145-145_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "httpcomponents-client_65c6c25",
+        "patch": {
+            "contents": "if (context == null) {\n    return null;\n}",
+            "original_filepath": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/classic/MinimalHttpClient.java",
+            "patched_line": 139,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_145-145_2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "httpcomponents-client_65c6c25",
+        "patch": {
+            "contents": "if (context != null) {\n    if (!execRuntime.isEndpointAcquired()) {\n        execRuntime.acquireEndpoint(exchangeId, route, null, clientContext);\n    }\n    if (!execRuntime.isEndpointConnected()) {\n        execRuntime.connectEndpoint(clientContext);\n    }\n    context.setAttribute(org.apache.hc.core5.http.protocol.HttpCoreContext.HTTP_REQUEST, request);\n    context.setAttribute(org.apache.hc.client5.http.protocol.HttpClientContext.HTTP_ROUTE, route);\n    httpProcessor.process(request, request.getEntity(), context);\n    final org.apache.hc.core5.http.ClassicHttpResponse response = execRuntime.execute(exchangeId, request, clientContext);\n    httpProcessor.process(response, response.getEntity(), context);\n    if (reuseStrategy.keepAlive(request, response, context)) {\n        execRuntime.markConnectionReusable(null, org.apache.hc.core5.util.TimeValue.NEG_ONE_MILLISECOND);\n    } else {\n        execRuntime.markConnectionNonReusable();\n    }\n    // check for entity, release connection if possible\n    final org.apache.hc.core5.http.HttpEntity entity = response.getEntity();\n    if ((entity == null) || (!entity.isStreaming())) {\n        // connection not needed and (assumed to be) in re-usable state\n        execRuntime.releaseEndpoint();\n        return new org.apache.hc.client5.http.impl.classic.CloseableHttpResponse(response, null);\n    }\n    org.apache.hc.client5.http.impl.classic.ResponseEntityProxy.enhance(response, execRuntime);\n    return new org.apache.hc.client5.http.impl.classic.CloseableHttpResponse(response, execRuntime);\n}",
+            "original_filepath": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/classic/MinimalHttpClient.java",
+            "patched_line": 133,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_138-166_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "httpcomponents-client_65c6c25",
+        "patch": {
+            "contents": "if (context == null) {\n    return null;\n}",
+            "original_filepath": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/classic/MinimalHttpClient.java",
+            "patched_line": 113,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_115-145_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "httpcomponents-client_65c6c25",
+        "patch": {
+            "contents": "(context != null ? context : null).setAttribute(org.apache.hc.core5.http.protocol.HttpCoreContext.HTTP_REQUEST, request)",
+            "original_filepath": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/classic/MinimalHttpClient.java",
+            "patched_line": 139,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_145_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

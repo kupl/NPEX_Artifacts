@@ -1,0 +1,600 @@
+[
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues != null) {\n    fieldValues.put(fieldInfo.name, value);\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_121-121_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    throw new com.alibaba.fastjson.JSONException();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_121-121_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_121-121_3--3--3--3--3--3--3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--4--4--4--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": ""
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "(fieldValues != null ? fieldValues : new java.util.HashMap<>()).put(fieldInfo.name, value)",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_121_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--5--5--5--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_121-121_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    fieldValues = new java.util.HashMap<>();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_121-121_4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--7--7--7--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    return;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 55,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_54-121_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "boolean match = (fieldValues != null) ? parseField(parser, key, object, type, fieldValues, setFlags) : false",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_850_7--5--5--5--5--5--5--5--5--5--5--5--9--9--9--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    break;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_850-497_5--6--6--6--6--6--6--6--6--6--6--6--10--10--10--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "(fieldValues != null ? fieldValues : new java.util.HashMap()).put(fieldInfo.name, value)",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_121_0--11--11--11--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues != null) {\n    unwrappedFieldDeser.parseField(parser, fieldObject, objectType, fieldValues);\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1149,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_1156-1156_5--7--7--7--7--7--7--7--7--7--7--7--12--12--12--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "parseField(parser, key, object, type, fieldValues != null ? fieldValues : new java.util.HashMap(), setFlags)",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_850_6--8--8--8--8--8--8--8--8--8--8--8--13--13--13--9"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    return true;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1082,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_1082-1156_8--9--9--9--9--9--9--9--9--9--9--9--14--14--14--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    return false;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1082,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_1082-1224_4--10--10--10--10--10--10--10--10--10--10--10--15--15--15--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "fieldDeserializer.parseField(parser, object, objectType, fieldValues != null ? fieldValues : new java.util.HashMap())",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1209,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1224_0--11--11--11--11--11--11--11--11--11--11--11--16--16--16--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "boolean match = (fieldValues != null) ? parseField(parser, key, object, type, fieldValues, setFlags) : true",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_850_8--12--12--12--12--12--12--12--12--12--12--12--17--17--17--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_850-850_2--13--13--13--13--13--13--13--13--13--13--13--18--18--18--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1156-1156_2--14--14--14--14--14--14--14--14--14--14--14--19--19--19--15"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    continue;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_850-873_1--15--15--15--15--15--15--15--15--15--15--15--20--20--20--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    fieldValues = new java.util.HashMap();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1149,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_1156-1156_6--16--16--16--16--16--16--16--16--16--16--16--21--21--21--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    fieldValues = new java.util.HashMap();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_121-121_4--22--22--22--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_850-850_4--17--17--17--17--17--17--17--17--17--17--17--23--23--23--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "unwrappedFieldDeser.parseField(parser, fieldObject, objectType, fieldValues != null ? fieldValues : new java.util.HashMap())",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1149,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_1156_0--18--18--18--18--18--18--18--18--18--18--18--24--24--24--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "boolean match = (fieldValues != null) ? parseField(parser, key, object, type, fieldValues, setFlags) : key == null",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_850_1--19--19--19--19--19--19--19--19--19--19--19--25--25--25--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    break;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1149,
+            "strategy": "SkipBreakStrategy",
+            "patch_id": "SkipBreakStrategy_1156-1135_4--20--20--20--20--20--20--20--20--20--20--20--26--26--26--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues != null) {\n    boolean match = parseField(parser, key, object, type, fieldValues, setFlags);\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_850-850_6--21--21--21--21--21--21--21--21--21--21--21--27--27--27--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    fieldValues = new java.util.HashMap();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1209,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_1224-1224_3--22--22--22--22--22--22--22--22--22--22--22--28--28--28--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "boolean match = (fieldValues != null) ? parseField(parser, key, object, type, fieldValues, setFlags) : setFlags == null",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_850_5--23--23--23--23--23--23--23--23--23--23--23--29--29--29--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "boolean match = (fieldValues != null) ? parseField(parser, key, object, type, fieldValues, setFlags) : type == null",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_850_3--24--24--24--24--24--24--24--24--24--24--24--30--30--30--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    continue;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1149,
+            "strategy": "SkipContinueStrategy",
+            "patch_id": "SkipContinueStrategy_1156-1139_1--25--25--25--25--25--25--25--25--25--25--25--31--31--31--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "boolean match = (fieldValues != null) ? parseField(parser, key, object, type, fieldValues, setFlags) : parser == null",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_850_0--26--26--26--26--26--26--26--26--26--26--26--32--32--32--28"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues != null) {\n    fieldObject = fieldInfo.field.get(object);\n    if (fieldObject == null) {\n        fieldObject = ((com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer) (fieldValueDeser)).createInstance(parser, fieldInfo.fieldType);\n        fieldDeser.setValue(object, fieldObject);\n    }\n    lexer.nextTokenWithColon(defaultFieldDeserializer.getFastMatchToken());\n    unwrappedFieldDeser.parseField(parser, fieldObject, objectType, fieldValues);\n    fieldIndex = i;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1143,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_1150-1157_0--27--27--27--27--27--27--27--27--27--27--27--33--33--33--29"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    fieldValues = new java.util.HashMap();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_850-850_7--28--28--28--28--28--28--28--28--28--28--28--34--34--34--30"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TODO",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1209,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1224-1224_0--29--29--29--29--29--29--29--29--29--29--29--35--35--35--31"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    throw new com.alibaba.fastjson.JSONException();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1209,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1224-1224_1--30--30--30--30--30--30--30--30--30--30--30--36--36--36--32"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_850-850_8--31--31--31--31--31--31--31--31--31--31--31--37--37--37--33"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues != null) {\n    boolean match = parseField(parser, key, object, type, fieldValues, setFlags);\n    if (!match) {\n        if (lexer.token() == com.alibaba.fastjson.parser.JSONToken.RBRACE) {\n            lexer.nextToken();\n            break;\n        }\n        continue;\n    } else if (lexer.token() == com.alibaba.fastjson.parser.JSONToken.COLON) {\n        throw new com.alibaba.fastjson.JSONException(\"syntax error, unexpect token ':'\");\n    }\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 797,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_850-852_0--32--32--32--32--32--32--32--32--32--32--32--38--38--38--34"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "boolean match = (fieldValues != null) ? parseField(parser, key, object, type, fieldValues, setFlags) : object == null",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_850_2--33--33--33--33--33--33--33--33--33--33--33--39--39--39--35"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    throw new com.alibaba.fastjson.JSONException();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1149,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_1156-1156_3--34--34--34--34--34--34--34--34--34--34--34--40--40--40--36"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues != null) {\n    fieldDeserializer.parseField(parser, object, objectType, fieldValues);\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 1209,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_1224-1224_2--35--35--35--35--35--35--35--35--35--35--35--41--41--41--37"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "boolean match = (fieldValues != null) ? parseField(parser, key, object, type, fieldValues, setFlags) : fieldValues == null",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_850_4--36--36--36--36--36--36--36--36--36--36--36--42--42--42--38"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    throw new com.alibaba.fastjson.JSONException();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+            "patched_line": 798,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_850-850_3--37--37--37--37--37--37--37--37--37--37--37--43--43--43--39"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "(fieldValues != null ? fieldValues : java.util.Collections.emptyMap()).put(fieldInfo.name, value)",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_121_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    fieldValues = null;\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_121-121_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "if (fieldValues == null) {\n    fieldValues = java.util.Collections.emptyMap();\n}",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_121-121_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "fastjson_7c05c6f",
+        "patch": {
+            "contents": "(fieldValues != null ? fieldValues : null).put(fieldInfo.name, value)",
+            "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+            "patched_line": 108,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_121_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

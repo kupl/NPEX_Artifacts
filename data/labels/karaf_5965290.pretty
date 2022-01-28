@@ -1,0 +1,19 @@
++ -------------------------------------------------------------------------------------------------------------------------- +
+| bug_id        | label                    | detail                   | description | patch_id                               |
++ -------------------------------------------------------------------------------------------------------------------------- +
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_103_11 |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | InitPointerStrategy_103-103_2          |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_103_10 |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipSinkStatementStrategy_103-103_0    |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipReturnStrategy_103-103_5           |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_103_9  |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_103_1           |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_103_8  |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | InitPointerStrategy_103-103_1          |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplaceEntireExpressionStrategy_103_12 |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_103_0           |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | InitPointerStrategy_103-103_3          |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | InitPointerStrategy_103-103_4          |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_103_3           |
+| karaf_5965290 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_103_2           |
++ -------------------------------------------------------------------------------------------------------------------------- +

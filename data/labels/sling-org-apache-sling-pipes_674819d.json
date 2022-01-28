@@ -1,0 +1,1666 @@
+[
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result != null) {\n    java.lang.Object result = evaluate(expr);\n    if (!result.getClass().getName().startsWith(\"java.lang.\")) {\n        // special case of the date in which case jdk.nashorn.api.scripting.ScriptObjectMirror will\n        // be returned\n        org.apache.sling.pipes.PipeBindings.JsDate jsDate = ((javax.script.Invocable) (engine)).getInterface(result, org.apache.sling.pipes.PipeBindings.JsDate.class);\n        if (jsDate != null) {\n            java.util.Date date = new java.util.Date(jsDate.getTime() + ((jsDate.getTimezoneOffset() * 60) * 1000));\n            java.util.Calendar cal = java.util.Calendar.getInstance();\n            cal.setTime(date);\n            return cal;\n        }\n    }\n    return result;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_229-241_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass() : true).getName()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_230_6--2--2--2--2--2--2--2--2--2--2--2--2--2--2--3--3--3--3--3--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass() : new java.lang.String()).getName()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_230_0--3--3--3--3--3--3--3--3--3--3--3--3--3--3--4--4--4--4--4--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr != null) {\n    org.apache.sling.pipes.PipeBindings.log.error(\"Unable to evaluate the script for expr {} \", expr, e);\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_243-243_0--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass() : null).getName()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "evaluate(expr != null ? expr : new java.lang.String())",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_229_2--6--6--6--6--6--5--5--5--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = new java.lang.String();\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_229-229_2--7--7--7--7--7--6--6--6--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--7--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_245-245_2--8--8--8--8--8--7--7--7--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "org.apache.sling.pipes.PipeBindings.log.error(\"Unable to evaluate the script for expr {} \", expr != null ? expr : new java.lang.String(), e)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_243_0--9--9--9--9--9--8--8--8--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : false).startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_230_9--4--4--4--4--4--4--4--4--4--4--4--5--4--4--10--10--10--10--10--9--9--9--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "!(result != null ? result.getClass().getName().startsWith(\"java.lang.\") : true)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_10"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_243-243_3--12--12--12--12--12--10--10--10--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result != null) {\n    if (!result.getClass().getName().startsWith(\"java.lang.\")) {\n        // special case of the date in which case jdk.nashorn.api.scripting.ScriptObjectMirror will\n        // be returned\n        org.apache.sling.pipes.PipeBindings.JsDate jsDate = ((javax.script.Invocable) (engine)).getInterface(result, org.apache.sling.pipes.PipeBindings.JsDate.class);\n        if (jsDate != null) {\n            java.util.Date date = new java.util.Date(jsDate.getTime() + ((jsDate.getTimezoneOffset() * 60) * 1000));\n            java.util.Calendar cal = java.util.Calendar.getInstance();\n            cal.setTime(date);\n            return cal;\n        }\n    }\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_230-230_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = new java.lang.Object();\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_230-230_16--14--14--14--14--14--11--11--11--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--11--11--11--11--11--11--11--11--11--11--11--11"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "!(result != null ? result.getClass().getName().startsWith(\"java.lang.\") : false)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_230-230_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass() : false).getName()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_230_5--5--5--5--5--5--5--5--5--5--5--5--6--5--5--17--17--17--17--17--12--12--12--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--13--12--12--12--12--12--12--12--12--12--12--12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = new java.lang.String();\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_245-245_4--18--18--18--18--18--13--13--13--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--14--13--13--13--13--13--13--13--13--13--13--13"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = new java.lang.String();\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_243-243_2--19--19--19--19--19--14--14--14--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--15--14--14--14--14--14--14--14--14--14--14--14"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : new java.lang.Object()).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_230_4--20--20--20--20--20--15--15--15--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--16--15--15--15--15--15--15--15--15--15--15--15"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr != null) {\n    java.lang.Object result = evaluate(expr);\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_229-229_2--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--17--16--16--16--16--16--16--16--16--16--16--16"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : true).startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategyLiteral_230_10--6--6--6--6--6--6--6--6--6--6--6--7--6--6--21--21--21--21--21--16--16--16--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--18--17--17--17--17--17--17--17--17--17--17--17"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr != null) {\n    return expr;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_245-245_1--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--19--18--18--18--18--18--18--18--18--18--18--18"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_229-229_3--22--22--22--22--22--17--17--17--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--20--19--19--19--19--19--19--19--19--19--19--19"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "return expr != null ? expr : new java.lang.String()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_245_0--23--23--23--23--23--18--18--18--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--21--20--20--20--20--20--20--20--20--20--20--20"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : new java.lang.Object()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_229_21--24--24--24--24--24--19--19--19--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--22--21--21--21--21--21--21--21--21--21--21--21"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass() : new java.lang.Class<? extends java.lang.Object>()).getName()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_230_36--25--25--25--25--25--20--20--20--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--23--22--22--22--22--22--22--22--22--22--22--22"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : new java.lang.String()).startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_230_38--26--26--26--26--26--21--21--21--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--24--23--23--23--23--23--23--23--23--23--23--23"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : null",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_229_0--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--25--24--24--24--24--24--24--24--24--24--24--24"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : null).startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result != null ? !result.getClass().getName().startsWith(\"java.lang.\") : false) {\n    // special case of the date in which case jdk.nashorn.api.scripting.ScriptObjectMirror will\n    // be returned\n    org.apache.sling.pipes.PipeBindings.JsDate jsDate = ((javax.script.Invocable) (engine)).getInterface(result, org.apache.sling.pipes.PipeBindings.JsDate.class);\n    if (jsDate != null) {\n        java.util.Date date = new java.util.Date(jsDate.getTime() + ((jsDate.getTimezoneOffset() * 60) * 1000));\n        java.util.Calendar cal = java.util.Calendar.getInstance();\n        cal.setTime(date);\n        return cal;\n    }\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_11"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result != null ? !result.getClass().getName().startsWith(\"java.lang.\") : true) {\n    // special case of the date in which case jdk.nashorn.api.scripting.ScriptObjectMirror will\n    // be returned\n    org.apache.sling.pipes.PipeBindings.JsDate jsDate = ((javax.script.Invocable) (engine)).getInterface(result, org.apache.sling.pipes.PipeBindings.JsDate.class);\n    if (jsDate != null) {\n        java.util.Date date = new java.util.Date(jsDate.getTime() + ((jsDate.getTimezoneOffset() * 60) * 1000));\n        java.util.Calendar cal = java.util.Calendar.getInstance();\n        cal.setTime(date);\n        return cal;\n    }\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_12"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : expr",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_5--31--30--30--30--30--23--23--23--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--27--26--25--25--25--25--25--25--25--25--25--25--25"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "evaluate(expr != null ? expr : org.apache.sling.pipes.PipeBindings.NN_ADDITIONALBINDINGS)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_229_0--32--31--31--31--31--24--24--24--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--28--27--26--26--26--26--26--26--26--26--26--26--26"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = org.apache.sling.pipes.PipeBindings.PATH_BINDING;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_245-245_2--33--32--32--32--32--25--25--25--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--29--28--27--27--27--27--27--27--27--27--27--27--27"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : date).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_2--34--33--33--33--33--26--26--26--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--30--29--28--28--28--28--28--28--28--28--28--28--28"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : expr).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_0--36--34--34--34--34--27--27--27--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--31--30--29--29--29--29--29--29--29--29--29--29--29"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = org.apache.sling.pipes.PipeBindings.PATH_BINDING;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_243-243_3--37--35--35--35--35--28--28--28--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--32--31--30--30--30--30--30--30--30--30--30--30--30"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : org.apache.sling.pipes.PipeBindings.NN_ADDITIONALBINDINGS",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_12--38--36--36--36--36--29--29--29--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--33--32--31--31--31--31--31--31--31--31--31--31--31"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = this.engine;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_9--39--37--37--37--37--30--30--30--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--34--33--32--32--32--32--32--32--32--32--32--32--32"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = org.apache.sling.pipes.PipeBindings.PN_ADDITIONALSCRIPTS;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_229-229_2--40--38--38--38--38--31--31--31--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--35--34--33--33--33--33--33--33--33--33--33--33--33"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : org.apache.sling.pipes.PipeBindings.PN_ADDITIONALSCRIPTS).startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_230_33--41--39--39--39--39--32--32--32--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--36--35--34--34--34--34--34--34--34--34--34--34--34"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "evaluate(expr != null ? expr : org.apache.sling.pipes.PipeBindings.PATH_BINDING)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_229_2--42--40--40--40--40--33--33--33--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--37--36--35--35--35--35--35--35--35--35--35--35--35"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : cal",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_9--43--41--41--41--41--34--34--34--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--38--37--36--36--36--36--36--36--36--36--36--36--36"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = org.apache.sling.pipes.PipeBindings.PN_ADDITIONALSCRIPTS;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_245-245_1--44--42--42--42--42--35--35--35--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--39--38--37--37--37--37--37--37--37--37--37--37--37"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : org.apache.sling.pipes.PipeBindings.log).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_5--45--43--43--43--43--36--36--36--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--40--39--38--38--38--38--38--38--38--38--38--38--38"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = org.apache.sling.pipes.PipeBindings.NN_ADDITIONALBINDINGS;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_245-245_0--46--44--44--44--44--37--37--37--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--41--40--39--39--39--39--39--39--39--39--39--39--39"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = org.apache.sling.pipes.PipeBindings.NN_ADDITIONALBINDINGS;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_243-243_1--47--45--45--45--45--38--38--38--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--42--41--40--40--40--40--40--40--40--40--40--40--40"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : org.apache.sling.pipes.PipeBindings.PATH_BINDING).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_10--48--46--46--46--46--39--39--39--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--43--42--41--41--41--41--41--41--41--41--41--41--41"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : this.outputResources",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_18--49--47--47--47--47--40--40--40--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--44--43--42--42--42--42--42--42--42--42--42--42--42"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : org.apache.sling.pipes.PipeBindings.INJECTED_SCRIPT",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_19--50--48--48--48--48--41--41--41--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--45--44--43--43--43--43--43--43--43--43--43--43--43"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = expr;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_1--51--49--49--49--49--42--42--42--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--46--45--44--44--44--44--44--44--44--44--44--44--44"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "org.apache.sling.pipes.PipeBindings.log.error(\"Unable to evaluate the script for expr {} \", expr != null ? expr : org.apache.sling.pipes.PipeBindings.PN_ADDITIONALSCRIPTS, e)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_243_1--52--50--50--50--50--43--43--43--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--47--46--45--45--45--45--45--45--45--45--45--45--45"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "return expr != null ? expr : org.apache.sling.pipes.PipeBindings.PN_ADDITIONALSCRIPTS",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_245_1--53--51--51--51--51--44--44--44--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--48--47--46--46--46--46--46--46--46--46--46--46--46"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = jsDate;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_2--54--52--52--52--52--45--45--45--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--49--48--47--47--47--47--47--47--47--47--47--47--47"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : org.apache.sling.pipes.PipeBindings.PN_ADDITIONALSCRIPTS).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_7--55--53--53--53--53--46--46--46--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--50--49--48--48--48--48--48--48--48--48--48--48--48"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : jsDate).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_1--56--54--54--54--54--47--47--47--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--51--50--49--49--49--49--49--49--49--49--49--49--49"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "org.apache.sling.pipes.PipeBindings.log.error(\"Unable to evaluate the script for expr {} \", expr != null ? expr : org.apache.sling.pipes.PipeBindings.log, e)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_243_3--57--55--55--55--55--48--48--48--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--52--51--50--50--50--50--50--50--50--50--50--50--50"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : this.scriptContext",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_15--58--56--56--56--56--49--49--49--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--53--52--51--51--51--51--51--51--51--51--51--51--51"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = org.apache.sling.pipes.PipeBindings.PN_ADDITIONALSCRIPTS;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_243-243_2--59--57--57--57--57--50--50--50--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--54--53--52--52--52--52--52--52--52--52--52--52--52"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : this.engine).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_8--60--58--58--58--58--51--51--51--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--55--54--53--53--53--53--53--53--53--53--53--53--53"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : org.apache.sling.pipes.PipeBindings.INJECTED_SCRIPT).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_13--61--59--59--59--59--52--52--52--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--56--55--54--54--54--54--54--54--54--54--54--54--54"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = org.apache.sling.pipes.PipeBindings.log;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_6--62--60--60--60--60--53--53--53--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--57--56--55--55--55--55--55--55--55--55--55--55--55"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : cal).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_3--63--61--61--61--61--54--54--54--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--58--57--56--56--56--56--56--56--56--56--56--56--56"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : org.apache.sling.pipes.PipeBindings.log",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_11--64--62--62--62--62--55--55--55--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--59--58--57--57--57--57--57--57--57--57--57--57--57"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = date;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_3--65--63--63--63--63--56--56--56--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--60--59--58--58--58--58--58--58--58--58--58--58--58"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : org.apache.sling.pipes.PipeBindings.PATH_BINDING",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_16--66--64--64--64--64--57--57--57--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--61--60--59--59--59--59--59--59--59--59--59--59--59"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = org.apache.sling.pipes.PipeBindings.NN_ADDITIONALBINDINGS;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_7--68--66--66--66--66--59--59--59--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--63--61--60--60--60--60--60--60--60--60--60--60--60"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "org.apache.sling.pipes.PipeBindings.log.error(\"Unable to evaluate the script for expr {} \", expr != null ? expr : org.apache.sling.pipes.PipeBindings.NN_ADDITIONALBINDINGS, e)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_243_0--69--67--67--67--67--60--60--60--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--64--62--61--61--61--61--61--61--61--61--61--61--61"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : this.pathBindings).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_11--70--68--68--68--68--61--61--61--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--65--63--62--62--62--62--62--62--62--62--62--62--62"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : this.pathBindings",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_17--71--69--69--69--69--62--62--62--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--66--64--63--63--63--63--63--63--63--63--63--63--63"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = org.apache.sling.pipes.PipeBindings.PN_ADDITIONALSCRIPTS;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_8--72--70--70--70--70--63--63--63--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--67--65--64--64--64--64--64--64--64--64--64--64--64"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "return expr != null ? expr : org.apache.sling.pipes.PipeBindings.NN_ADDITIONALBINDINGS",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_245_0--73--71--71--71--71--64--64--64--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--68--66--65--65--65--65--65--65--65--65--65--65--65"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : org.apache.sling.pipes.PipeBindings.PN_ADDITIONALSCRIPTS",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_13--74--72--72--72--72--65--65--65--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--69--67--66--66--66--66--66--66--66--66--66--66--66"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = org.apache.sling.pipes.PipeBindings.PATH_BINDING;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_229-229_3--75--73--73--73--73--66--66--66--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--70--68--67--67--67--67--67--67--67--67--67--67--67"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = this.scriptContext;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_10--76--74--74--74--74--67--67--67--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--71--69--68--68--68--68--68--68--68--68--68--68--68"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : this.outputResources).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_12--77--75--75--75--75--68--68--68--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--72--70--69--69--69--69--69--69--69--69--69--69--69"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : org.apache.sling.pipes.PipeBindings.NN_ADDITIONALBINDINGS).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_6--78--76--76--76--76--69--69--69--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--73--71--70--70--70--70--70--70--70--70--70--70--70"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "org.apache.sling.pipes.PipeBindings.log.error(\"Unable to evaluate the script for expr {} \", expr != null ? expr : org.apache.sling.pipes.PipeBindings.PATH_BINDING, e)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_243_2--79--77--77--77--77--70--70--70--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--74--72--71--71--71--71--71--71--71--71--71--71--71"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : this.scriptContext).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_9--80--78--78--78--78--71--71--71--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--75--73--72--72--72--72--72--72--72--72--72--72--72"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "return expr != null ? expr : org.apache.sling.pipes.PipeBindings.PATH_BINDING",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_245_2--81--79--79--79--79--72--72--72--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--76--74--73--73--73--73--73--73--73--73--73--73--73"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = org.apache.sling.pipes.PipeBindings.NN_ADDITIONALBINDINGS;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_229-229_1--82--80--80--80--80--73--73--73--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--77--75--74--74--74--74--74--74--74--74--74--74--74"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : jsDate",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_7--83--81--81--81--81--74--74--74--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--78--76--75--75--75--75--75--75--75--75--75--75--75"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : this.engine",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_14--85--83--83--83--83--76--76--76--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--80--77--76--76--76--76--76--76--76--76--76--76--76"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : e).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_230_4--86--84--84--84--84--77--77--77--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--81--78--77--77--77--77--77--77--77--77--77--77--77"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = this.pathBindings;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_12--87--85--85--85--85--78--78--78--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--82--79--78--78--78--78--78--78--78--78--78--78--78"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = e;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_5--88--86--86--86--86--79--79--79--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--83--80--79--79--79--79--79--79--79--79--79--79--79"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : expr).startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_230_31--89--87--87--87--87--80--80--80--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--84--81--80--80--80--80--80--80--80--80--80--80--80"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = org.apache.sling.pipes.PipeBindings.PATH_BINDING;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_11--90--88--88--88--88--81--81--81--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--85--82--81--81--81--81--81--81--81--81--81--81--81"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "evaluate(expr != null ? expr : org.apache.sling.pipes.PipeBindings.PN_ADDITIONALSCRIPTS)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_229_1--91--89--89--89--89--82--82--82--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--86--83--82--82--82--82--82--82--82--82--82--82--82"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = cal;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_4--92--90--90--90--90--83--83--83--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--87--84--83--83--83--83--83--83--83--83--83--83--83"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : org.apache.sling.pipes.PipeBindings.NN_ADDITIONALBINDINGS).startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_230_32--93--91--91--91--91--84--84--84--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--88--85--84--84--84--84--84--84--84--84--84--84--84"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : org.apache.sling.pipes.PipeBindings.PATH_BINDING).startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_230_34--94--92--92--92--92--85--85--85--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--89--86--85--85--85--85--85--85--85--85--85--85--85"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : result",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_6--95--93--93--93--93--86--86--86--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--90--87--86--86--86--86--86--86--86--86--86--86--86"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : e",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_10--96--94--94--94--94--87--87--87--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--91--88--87--87--87--87--87--87--87--87--87--87--87"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = this.outputResources;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_13--97--95--95--95--95--88--88--88--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--92--89--88--88--88--88--88--88--88--88--88--88--88"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = org.apache.sling.pipes.PipeBindings.INJECTED_SCRIPT;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyVar",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyVar_230-230_14--98--96--96--96--96--89--89--89--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--93--90--89--89--89--89--89--89--89--89--89--89--89"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (expr != null) ? evaluate(expr) : date",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_229_8--99--97--97--97--97--90--90--90--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--94--91--90--90--90--90--90--90--90--90--90--90--90"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = \"null\";\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_243-243_5--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--95--92--91--91--91--91--91--91--91--91--91--91--91"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr != null) {\n    java.lang.Object result = evaluate(expr);\n    if (!result.getClass().getName().startsWith(\"java.lang.\")) {\n        // special case of the date in which case jdk.nashorn.api.scripting.ScriptObjectMirror will\n        // be returned\n        org.apache.sling.pipes.PipeBindings.JsDate jsDate = ((javax.script.Invocable) (engine)).getInterface(result, org.apache.sling.pipes.PipeBindings.JsDate.class);\n        if (jsDate != null) {\n            java.util.Date date = new java.util.Date(jsDate.getTime() + ((jsDate.getTimezoneOffset() * 60) * 1000));\n            java.util.Calendar cal = java.util.Calendar.getInstance();\n            cal.setTime(date);\n            return cal;\n        }\n    }\n    return result;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_229-241_0--91--91--91--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--96--93--92--92--92--92--92--92--92--92--92--92--92"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "evaluate(expr != null ? expr : \"null\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_229_1--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--97--94--93--93--93--93--93--93--93--93--93--93--93"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "org.apache.sling.pipes.PipeBindings.log.error(\"Unable to evaluate the script for expr {} \", expr != null ? expr : \"\", e)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_243_1--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--98--95--94--94--94--94--94--94--94--94--94--94--94"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = \"\";\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_245-245_5--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--99--96--95--95--95--95--95--95--95--95--95--95--95"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    throw new javax.script.ScriptException(\"\");\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_245-245_0--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--100--97--96--96--96--96--96--96--96--96--96--96--96"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 236,
+            "strategy": "SkipReturnParam",
+            "patch_id": "SkipReturnParam_228-243_3--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--101--98--97--97--97--97--97--97--97--97--97--97--97"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "return expr != null ? expr : \"null\"",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_245_1--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--102--99--98--98--98--98--98--98--98--98--98--98--98"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "org.apache.sling.pipes.PipeBindings.log.error(\"Unable to evaluate the script for expr {} \", expr != null ? expr : \"null\", e)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_243_0--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--103--100--99--99--99--99--99--99--99--99--99--99--99"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "return expr != null ? expr : null",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_245_0--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--104--101--100--100--100--100--100--100--100--100--100--100--100"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "evaluate(expr != null ? expr : \"\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_229_2--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--105--102--101--101--101--101--101--101--101--101--101--101--101"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "return expr != null ? expr : \"\"",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_245_2--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--106--103--102--102--102--102--102--102--102--102--102--102--102"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = \"null\";\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_229-229_5--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--107--104--103--103--103--103--103--103--103--103--103--103--103"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = \"null\";\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 253,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_245-245_4--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--108--105--104--104--104--104--104--104--104--104--104--104--104"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = \"\";\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_229-229_6--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--109--106--105--105--105--105--105--105--105--105--105--105--105"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    throw new javax.script.ScriptException(\"\");\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_243-243_1--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--110--107--106--106--106--106--106--106--106--106--106--106--106"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    expr = \"\";\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 251,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyLiteral",
+            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyLiteral_243-243_6--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--111--108--107--107--107--107--107--107--107--107--107--107--107"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (expr == null) {\n    throw new javax.script.ScriptException(\"\");\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_229-229_1--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--112--109--108--108--108--108--108--108--108--108--108--108--108"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : \"\").startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "!(result != null ? result.getClass().getName().startsWith(\"java.lang.\") : \"java.lang.\" == null)",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    throw new javax.script.ScriptException(\"\");\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_230-230_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : \"null\").startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (evaluate(expr) == null) {\n    throw new javax.script.ScriptException(\"\");\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_229-229_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "java.lang.Object result = (evaluate(expr) != null) ? evaluate(expr) : null",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_229_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (evaluate(expr) != null) {\n    java.lang.Object result = evaluate(expr);\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_229-229_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (evaluate(expr) == null) {\n    return null;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 237,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_229-229_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass().getName() : \"NULL\").startsWith(\"java.lang.\")",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result : null).getClass()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_230_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "if (result == null) {\n    result = null;\n}",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "npex.synthesizer.strategy.InitPointerStrategyEqual",
+            "patch_id": "InitPointerStrategy_230-230_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "sling-org-apache-sling-pipes_674819d",
+        "patch": {
+            "contents": "(result != null ? result.getClass() : java.lang.Object.class).getName()",
+            "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+            "patched_line": 238,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_230_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    }
+]

@@ -1,0 +1,236 @@
+[
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "new org.apache.shardingsphere.infra.metadata.schema.ShardingSphereSchema(schema.getTables() != null ? schema.getTables().entrySet().stream().collect(java.util.stream.Collectors.toMap(java.util.Map.Entry::getKey, ( entry) -> convertTable(entry.getValue()), ( oldValue, currentValue) -> oldValue, java.util.LinkedHashMap::new)) : null)",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "return schema.getTables() != null ? new org.apache.shardingsphere.infra.metadata.schema.ShardingSphereSchema(schema.getTables().entrySet().stream().collect(java.util.stream.Collectors.toMap(java.util.Map.Entry::getKey, ( entry) -> convertTable(entry.getValue()), ( oldValue, currentValue) -> oldValue, java.util.LinkedHashMap::new))) : null",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_8"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "(schema.getTables() != null ? schema.getTables().entrySet() : new java.util.HashSet<>()).stream()",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_6--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "if (schema.getTables() != null) {\n    return new org.apache.shardingsphere.infra.metadata.schema.ShardingSphereSchema(schema.getTables().entrySet().stream().collect(java.util.stream.Collectors.toMap(java.util.Map.Entry::getKey, ( entry) -> convertTable(entry.getValue()), ( oldValue, currentValue) -> oldValue, java.util.LinkedHashMap::new)));\n}",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_58-58_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "new org.apache.shardingsphere.infra.metadata.schema.ShardingSphereSchema(schema.getTables() != null ? schema.getTables().entrySet().stream().collect(java.util.stream.Collectors.toMap(java.util.Map.Entry::getKey, ( entry) -> convertTable(entry.getValue()), ( oldValue, currentValue) -> oldValue, java.util.LinkedHashMap::new)) : new java.util.HashMap<>())",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_7--2--2--2--2--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "if (schema.getTables() == null) {\n    return null;\n}",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_58-58_1"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "(schema.getTables() != null ? schema.getTables() : new java.util.HashMap<>()).entrySet()",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_58_2--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--5--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.AMBIGUOUS",
+        "detail": "LabelDetail.TODO",
+        "description": "LinkedHashMap with empty entries equals to an empty HashMap? "
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "new org.apache.shardingsphere.infra.metadata.schema.ShardingSphereSchema(schema.getTables() != null ? schema.getTables().entrySet().stream().collect(java.util.stream.Collectors.toMap(java.util.Map.Entry::getKey, ( entry) -> convertTable(entry.getValue()), ( oldValue, currentValue) -> oldValue, java.util.LinkedHashMap::new)) : new java.util.LinkedHashMap<>())",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_7--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--6--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "return schema.getTables() != null ? new org.apache.shardingsphere.infra.metadata.schema.ShardingSphereSchema(schema.getTables().entrySet().stream().collect(java.util.stream.Collectors.toMap(java.util.Map.Entry::getKey, ( entry) -> convertTable(entry.getValue()), ( oldValue, currentValue) -> oldValue, java.util.LinkedHashMap::new))) : new org.apache.shardingsphere.infra.metadata.schema.ShardingSphereSchema()",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_9"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "(schema.getTables() != null ? schema.getTables().entrySet() : new java.util.HashSet()).stream()",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_6--7--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "new org.apache.shardingsphere.infra.metadata.schema.ShardingSphereSchema(schema.getTables() != null ? schema.getTables().entrySet().stream().collect(java.util.stream.Collectors.toMap(java.util.Map.Entry::getKey, ( entry) -> convertTable(entry.getValue()), ( oldValue, currentValue) -> oldValue, java.util.LinkedHashMap::new)) : new java.util.LinkedHashMap())",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_7--8--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "(schema.getTables() != null ? schema.getTables() : new java.util.HashMap()).entrySet()",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_58_2--9--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "(schema.getTables() != null ? schema.getTables().entrySet() : null).stream()",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "(schema.getTables() != null ? schema.getTables() : java.util.Collections.emptyMap()).entrySet()",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_58_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "(schema.getTables() != null ? schema.getTables() : null).entrySet()",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_58_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "(schema.getTables() != null ? schema.getTables().entrySet().stream() : null).collect(java.util.stream.Collectors.toMap(java.util.Map.Entry::getKey, ( entry) -> convertTable(entry.getValue()), ( oldValue, currentValue) -> oldValue, java.util.LinkedHashMap::new))",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "if (schema.getTables() == null) {\n    return new org.apache.shardingsphere.infra.metadata.schema.ShardingSphereSchema();\n}",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_58-58_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_e46f68d",
+        "patch": {
+            "contents": "(schema.getTables() != null ? schema.getTables().entrySet() : java.util.Collections.emptySet()).stream()",
+            "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+            "patched_line": 59,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_58_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    }
+]

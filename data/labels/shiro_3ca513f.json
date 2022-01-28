@@ -1,0 +1,223 @@
+[
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "if (mi.getThis() == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_62-62_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": ""
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "if (mi.getThis() != null) {\n    return annotation == null ? mi.getThis().getClass().getAnnotation(clazz) : annotation;\n}",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_62-62_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis().getClass() : null).getAnnotation(clazz)",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategyLiteral",
+            "patch_id": "ReplaceEntireExpressionStrategy_62_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis() : new java.lang.Object()).getClass()",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplacePointerStrategyObject",
+            "patch_id": "ReplacePointerStrategyObject_62_8--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--3--2--2--2--2--2--2--2--2--2--2--2--2--2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "if (mi.getThis() == null) {\n    return null;\n}",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_62-62_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": ""
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "return annotation == null ? mi.getThis() != null ? mi.getThis().getClass().getAnnotation(clazz) : null : annotation",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_62_4"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis().getClass() : new java.lang.Class<? extends java.lang.Object>()).getAnnotation(clazz)",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategyObject",
+            "patch_id": "ReplaceEntireExpressionStrategyObject_62_18--5--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--4--3--3--3--3--3--3--3--3--3--3--3--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "return mi.getThis() != null ? annotation == null ? mi.getThis().getClass().getAnnotation(clazz) : annotation : null",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_62_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis() : msg).getClass()",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_62_3--7--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--5--4--4--4--4--4--4--4--4--4--4--4--4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis() : annotation).getClass()",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_62_4--8--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--6--5--5--5--5--5--5--5--5--5--5--5--5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "return mi.getThis() != null ? annotation == null ? mi.getThis().getClass().getAnnotation(clazz) : annotation : annotation",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_62_16--11--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--8--7--6--6--6--6--6--6--6--6--6--6--6--6"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis() : m).getClass()",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_62_2--13--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--9--8--7--7--7--7--7--7--7--7--7--7--7--7"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis() : clazz).getClass()",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_62_1--14--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--10--9--8--8--8--8--8--8--8--8--8--8--8--8"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis() : mi).getClass()",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplacePointerStrategyVar",
+            "patch_id": "ReplacePointerStrategyVar_62_0--15--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--11--10--9--9--9--9--9--9--9--9--9--9--9--9"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis().getClass() : clazz).getAnnotation(clazz)",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategyVar",
+            "patch_id": "ReplaceEntireExpressionStrategyVar_62_13--16--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--12--11--10--10--10--10--10--10--10--10--10--10--10--10"
+        },
+        "label": "LabelOverall.PASSTEST",
+        "detail": "LabelDetail.PASS_TEST",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis().getClass() : java.lang.Object.class).getAnnotation(clazz)",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_62_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "shiro_3ca513f",
+        "patch": {
+            "contents": "(mi.getThis() != null ? mi.getThis() : null).getClass()",
+            "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+            "patched_line": 72,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_62_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

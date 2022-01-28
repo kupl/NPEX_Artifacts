@@ -1,0 +1,15 @@
++ ----------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id             | label                    | detail                       | description | patch_id                               |
++ ----------------------------------------------------------------------------------------------------------------------------------- +
+| commons-io_1ac7bef | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipThrowStrategy_196-196_3            |
+| commons-io_1ac7bef | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | SkipReturnParam_196-196_1              |
+| commons-io_1ac7bef | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnParam_196-196_2              |
+| commons-io_1ac7bef | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_196-196_0    |
+| commons-io_1ac7bef | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_196_10 |
+| commons-io_1ac7bef | LabelOverall.CORRECT     | LabelDetail.MANUAL_CORRECT   |             | ReplaceEntireExpressionStrategy_196_8  |
+| commons-io_1ac7bef | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_196_1           |
+| commons-io_1ac7bef | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_196_0           |
+| commons-io_1ac7bef | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_196_9  |
+| commons-io_1ac7bef | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_196_2           |
+| commons-io_1ac7bef | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_196_3           |
++ ----------------------------------------------------------------------------------------------------------------------------------- +

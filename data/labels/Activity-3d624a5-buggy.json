@@ -1,0 +1,145 @@
+[
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "if (execution.getActivity() == null) {\n    throw new java.lang.Exception();\n}",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_44-44_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "!(execution.getActivity() != null ? execution.getActivity().equals(activity) : true)",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_44_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "if (execution.getActivity() == null) {\n    throw new org.activiti.engine.ActivitiException(\"\");\n}",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_44-44_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "if (execution.getActivity() != null ? !execution.getActivity().equals(activity) : true) {\n    execution.setActivity(activity);\n}",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_44_6"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "if (execution.getActivity() != null) {\n    if (!execution.getActivity().equals(activity)) {\n        execution.setActivity(activity);\n    }\n}",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_44-44_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "!(execution.getActivity() != null ? execution.getActivity().equals(activity) : activity == null)",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_44_2"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "if (execution.getActivity() == null) {\n    return;\n}",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_44-44_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "!(execution.getActivity() != null ? execution.getActivity().equals(activity) : false)",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_44_3"
+        },
+        "label": "LabelOverall.CORRECT",
+        "detail": "LabelDetail.MANUAL_CORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "if (execution.getActivity() == null) {\n    throw new java.lang.RuntimeException();\n}",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_44-44_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "if (execution.getActivity() != null ? !execution.getActivity().equals(activity) : false) {\n    execution.setActivity(activity);\n}",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_44_5"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "Activity-3d624a5-buggy",
+        "patch": {
+            "contents": "(execution.getActivity() != null ? execution.getActivity() : null).equals(activity)",
+            "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+            "patched_line": 41,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplacePointerStrategy_44_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    }
+]

@@ -1,0 +1,10 @@
++ -------------------------------------------------------------------------------------------------------------------------------- +
+| bug_id           | label                    | detail                       | description | patch_id                              |
++ -------------------------------------------------------------------------------------------------------------------------------- +
+| Activiti_0d83e98 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_125_2 |
+| Activiti_0d83e98 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplaceEntireExpressionStrategy_125_3 |
+| Activiti_0d83e98 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_125-125_2          |
+| Activiti_0d83e98 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | SkipSinkStatementStrategy_125-125_0   |
+| Activiti_0d83e98 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipThrowStrategy_125-125_1           |
+| Activiti_0d83e98 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | ReplacePointerStrategy_125_0          |
++ -------------------------------------------------------------------------------------------------------------------------------- +
