@@ -3,23 +3,22 @@ from __future__ import annotations
 import os
 from config import *
 
-NPEX_DIR = os.getenv("NPEX_DIR")
+N_CPUS = 10
+
+NPEX_DIR = "/root/Workspace/tools/npex"
+JDK_15 = "/usr/lib/jvm/jdk-15.0.1"
+LABEL_DIR = f"/root/Workspace/data/labels"
+BENCH_DIR = f"/root/Workspace/benchmarks"
+
 INFER_DIR = f"{NPEX_DIR}/npex-analyzer"
 CLASSIFIER_DIR = f"{os.path.dirname(os.path.abspath(__file__))}/../data/models_learned"
-
-JDK_15 = "/usr/lib/jvm/jdk-15.0.1"
 JAVA_15 = f"{JDK_15}/bin/java"
 NPEX_JAR = f"{NPEX_DIR}/npex-driver/target/npex-driver-1.0-SNAPSHOT.jar"
-
 INFER = f"{INFER_DIR}/infer/bin/infer"
 NPEX_synthesizer_script = f"{NPEX_DIR}/scripts/main.py"
 NPEX_analyzer_script = f"{INFER_DIR}/scripts/verify.py"
 NPEX_CMD = f"{JAVA_15} --enable-preview -cp {NPEX_JAR} npex.driver.Main"
 
-LABEL_DIR = f"/root/Workspace/data/labels"
-BENCH_DIR = f"/root/Workspace/benchmarks"
-
-N_CPUS = 10
 
 vfix_benches = [
     "chart-14", "chart-15", "chart-16", "chart-25", "chart-26", "chart-4", "collections-360", "collections-39",

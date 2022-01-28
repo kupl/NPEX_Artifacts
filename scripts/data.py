@@ -354,15 +354,11 @@ class Result:
         return {
             "bug_id": self.bug_id,
             "source": source,
-            # "Loc": str(self.kLoc),
-            "bug_class": self.bug_class,
             "result": self.result.to_string(),
-            "time_to_infer": f"{self.infer_time:.2f}",
             "#patches": str(self.n_patches),
+            "time_to_infer": f"{self.infer_time:.2f}",
             "time_to_validate": f"{self.verify_time:.2f}",
-            "comp": f"{self.compile_time:.2f}",
-            "Exist": str(self.has_correct),
-            "TC_fail": str(self.incorrect_passed),
+            "NPEX_Base": "O" if self.has_correct and self.incorrect_passed is False else "X"
         }
 
     @staticmethod
