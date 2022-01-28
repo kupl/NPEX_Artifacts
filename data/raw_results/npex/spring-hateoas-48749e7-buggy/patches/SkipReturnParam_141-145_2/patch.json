@@ -1,0 +1,5 @@
+{
+    "contents": "if (obj == null) {\n    return true;\n}",
+    "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+    "patched_lines": [144]
+}

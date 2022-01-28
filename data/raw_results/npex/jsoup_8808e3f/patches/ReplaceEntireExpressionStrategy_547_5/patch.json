@@ -1,0 +1,5 @@
+{
+    "contents": "(value != null ? org.jsoup.internal.Normalizer.lowerCase(value) : \"null\").startsWith(prot)",
+    "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+    "patched_lines": [548]
+}

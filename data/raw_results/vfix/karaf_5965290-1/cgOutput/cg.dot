@@ -1,0 +1,49 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"101: parseHeading" [color=red] [style=bold]
+"24: public void <init>()"
+"44: parseTestDoc"
+"37: parse" [style=bold]
+"32: public void <init>(org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiVisitor)" [style=bold]
+"47: parse" [style=bold]
+"42: unescapeJava" [style=bold]
+"96: parseEnumeration" [style=bold]
+"119: parseLink" [style=bold]
+"92: parseEsc"
+"134: nextToken" [style=bold]
+"129: public void <init>(java.lang.String)" [style=bold]
+"2: main"->"24: public void <init>()" [style=dotted];
+
+"2: main"->"44: parseTestDoc" [style=dotted];
+
+"44: parseTestDoc"->"37: parse" [style=dotted];
+
+"44: parseTestDoc"->"32: public void <init>(org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiVisitor)" [style=dotted];
+
+"37: parse"->"47: parse";
+
+"47: parse"->"42: unescapeJava";
+
+"47: parse"->"96: parseEnumeration";
+
+"47: parse"->"101: parseHeading";
+
+"47: parse"->"119: parseLink";
+
+"47: parse"->"92: parseEsc" [style=dotted];
+
+"47: parse"->"134: nextToken";
+
+"47: parse"->"129: public void <init>(java.lang.String)";
+
+"96: parseEnumeration"->"134: nextToken";
+
+"101: parseHeading"->"134: nextToken";
+
+"119: parseLink"->"134: nextToken";
+
+"92: parseEsc"->"134: nextToken" [style=dotted];
+
+}

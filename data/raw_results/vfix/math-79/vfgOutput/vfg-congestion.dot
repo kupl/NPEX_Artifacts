@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"90: cluster = staticinvoke <org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer: org.apache.commons.math.stat.clustering.Cluster getNearestCluster(java.util.Collection,org.apache.commons.math.stat.clustering.Clusterable)>(clusters, p)" [label=1] [style=bold] [color=gold]
+"91: virtualinvoke cluster.<org.apache.commons.math.stat.clustering.Cluster: void addPoint(org.apache.commons.math.stat.clustering.Clusterable)>(p)" [label=1] [style=bold] [color=red]
+"90: cluster = staticinvoke <org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer: org.apache.commons.math.stat.clustering.Cluster getNearestCluster(java.util.Collection,org.apache.commons.math.stat.clustering.Clusterable)>(clusters, p)"->"91: virtualinvoke cluster.<org.apache.commons.math.stat.clustering.Cluster: void addPoint(org.apache.commons.math.stat.clustering.Clusterable)>(p)";
+
+}

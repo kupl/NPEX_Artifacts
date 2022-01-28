@@ -1,0 +1,5 @@
+{
+    "contents": "java.util.Iterator iterator = (this.dataset != null) ? this.dataset.getKeys().iterator() : null",
+    "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+    "patched_lines": [1385]
+}

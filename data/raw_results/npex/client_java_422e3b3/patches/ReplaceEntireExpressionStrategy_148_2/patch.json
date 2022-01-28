@@ -1,0 +1,5 @@
+{
+    "contents": "if (includedNames != null ? includedNames.isEmpty() : false) {\n    return collectors().iterator();\n} else {\n    java.util.HashSet<io.prometheus.client.Collector> collectors = new java.util.HashSet<io.prometheus.client.Collector>();\n    synchronized(namesToCollectors) {\n        for (java.util.Map.Entry<java.lang.String, io.prometheus.client.Collector> entry : namesToCollectors.entrySet()) {\n            if (includedNames.contains(entry.getKey())) {\n                collectors.add(entry.getValue());\n            }\n        }\n    }\n    return collectors.iterator();\n}",
+    "original_filepath": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+    "patched_lines": [149]
+}

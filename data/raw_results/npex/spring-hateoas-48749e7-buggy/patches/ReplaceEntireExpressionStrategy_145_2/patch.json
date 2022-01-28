@@ -1,0 +1,5 @@
+{
+    "contents": "(obj != null ? obj.getClass() : java.lang.Object.class).equals(thisClass)",
+    "original_filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+    "patched_lines": [148]
+}

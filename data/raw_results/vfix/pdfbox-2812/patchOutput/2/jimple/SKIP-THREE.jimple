@@ -1,0 +1,144 @@
+    public static org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace createColorSpace(org.apache.pdfbox.pdmodel.PDDocument, java.awt.color.ColorSpace) throws java.io.IOException
+    {
+        org.apache.pdfbox.pdmodel.PDDocument doc;
+        java.awt.color.ColorSpace cs;
+        java.awt.color.ICC_ColorSpace ics;
+        boolean $z0, $z1;
+        java.io.IOException $r0;
+        java.lang.StringBuilder $r1, $r2;
+        java.lang.String $r3;
+        org.apache.pdfbox.pdmodel.graphics.color.PDICCBased $r4;
+        org.apache.pdfbox.cos.COSArray $r5;
+        int $i0, $i1, i;
+        org.apache.pdfbox.cos.COSFloat $r6, $r7;
+        float $f0, $f1;
+        java.awt.color.ICC_Profile $r8;
+        byte[] $r9;
+        java.lang.Throwable $r10;
+        org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace retval, ret0;
+        org.apache.pdfbox.pdmodel.common.PDStream i#4;
+        java.io.OutputStream output;
+
+        doc := @parameter0: org.apache.pdfbox.pdmodel.PDDocument;
+
+        cs := @parameter1: java.awt.color.ColorSpace;
+
+        $z0 = virtualinvoke cs.<java.awt.color.ColorSpace: boolean isCS_sRGB()>();
+
+        if $z0 == 0 goto label01;
+
+        retval = <org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB: org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB INSTANCE>;
+
+        goto label11;
+
+     label01:
+        $z1 = cs instanceof java.awt.color.ICC_ColorSpace;
+
+        if $z1 == 0 goto label10;
+
+        ics = (java.awt.color.ICC_ColorSpace) cs;
+
+        $r4 = new org.apache.pdfbox.pdmodel.graphics.color.PDICCBased;
+
+        specialinvoke $r4.<org.apache.pdfbox.pdmodel.graphics.color.PDICCBased: void <init>(org.apache.pdfbox.pdmodel.PDDocument)>(doc);
+
+        retval = $r4;
+
+        $r5 = new org.apache.pdfbox.cos.COSArray;
+
+        specialinvoke $r5.<org.apache.pdfbox.cos.COSArray: void <init>()>();
+
+        i = 0;
+
+        goto label03;
+
+     label02:
+        $r6 = new org.apache.pdfbox.cos.COSFloat;
+
+        $f0 = virtualinvoke ics.<java.awt.color.ICC_ColorSpace: float getMinValue(int)>(i);
+
+        specialinvoke $r6.<org.apache.pdfbox.cos.COSFloat: void <init>(float)>($f0);
+
+        virtualinvoke $r5.<org.apache.pdfbox.cos.COSArray: void add(org.apache.pdfbox.cos.COSBase)>($r6);
+
+        $r7 = new org.apache.pdfbox.cos.COSFloat;
+
+        $f1 = virtualinvoke ics.<java.awt.color.ICC_ColorSpace: float getMaxValue(int)>(i);
+
+        specialinvoke $r7.<org.apache.pdfbox.cos.COSFloat: void <init>(float)>($f1);
+
+        virtualinvoke $r5.<org.apache.pdfbox.cos.COSArray: void add(org.apache.pdfbox.cos.COSBase)>($r7);
+
+        i = i + 1;
+
+     label03:
+        $i0 = virtualinvoke cs.<java.awt.color.ColorSpace: int getNumComponents()>();
+
+        if i < $i0 goto label02;
+
+        i#4 = virtualinvoke $r4.<org.apache.pdfbox.pdmodel.graphics.color.PDICCBased: org.apache.pdfbox.pdmodel.common.PDStream getPDStream()>();
+
+        output = null;
+
+     label04:
+        if i#4 != null goto label05;
+
+        ret0 = new org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace;
+
+        specialinvoke ret0.<org.apache.pdfbox.pdmodel.graphics.color.PDPattern: void <init>()>();
+
+        return ret0;
+
+     label05:
+        output = virtualinvoke i#4.<org.apache.pdfbox.pdmodel.common.PDStream: java.io.OutputStream createOutputStream()>();
+
+        $r8 = virtualinvoke ics.<java.awt.color.ICC_ColorSpace: java.awt.color.ICC_Profile getProfile()>();
+
+        $r9 = virtualinvoke $r8.<java.awt.color.ICC_Profile: byte[] getData()>();
+
+        virtualinvoke output.<java.io.OutputStream: void write(byte[])>($r9);
+
+        goto label08;
+
+     label06:
+        $r10 := @caughtexception;
+
+        if output == null goto label07;
+
+        virtualinvoke output.<java.io.OutputStream: void close()>();
+
+     label07:
+        throw $r10;
+
+     label08:
+        if output == null goto label09;
+
+        virtualinvoke output.<java.io.OutputStream: void close()>();
+
+     label09:
+        $i1 = virtualinvoke cs.<java.awt.color.ColorSpace: int getNumComponents()>();
+
+        virtualinvoke $r4.<org.apache.pdfbox.pdmodel.graphics.color.PDICCBased: void setNumberOfComponents(int)>($i1);
+
+        goto label11;
+
+     label10:
+        $r0 = new java.io.IOException;
+
+        $r1 = new java.lang.StringBuilder;
+
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>(java.lang.String)>("Not yet implemented:");
+
+        $r2 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(cs);
+
+        $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke $r0.<java.io.IOException: void <init>(java.lang.String)>($r3);
+
+        throw $r0;
+
+     label11:
+        return retval;
+
+        catch java.lang.Throwable from label04 to label06 with label06;
+    }

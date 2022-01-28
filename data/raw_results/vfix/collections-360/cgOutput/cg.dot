@@ -1,0 +1,651 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"11: main" [color=gold] [style=bold]
+"221: setNextObject" [color=red] [style=bold]
+"122: hasNext" [style=bold]
+"111: public void <init>(org.apache.commons.collections.Predicate)" [style=bold]
+"77: public void <init>()" [style=bold]
+"9: <clinit>" [style=bold]
+"350: anyPredicate" [style=bold]
+"42: protected void <init>(java.util.List)" [style=bold]
+"81: getInstance" [style=bold]
+"243: clearPreviousObject"
+"63: evaluate"
+"73: evaluate"
+"101: evaluate"
+"147: evaluate"
+"73: evaluate"
+"75: evaluate"
+"75: evaluate"
+"71: evaluate"
+"81: evaluate"
+"75: evaluate"
+"71: evaluate"
+"70: evaluate"
+"100: evaluate"
+"75: evaluate"
+"76: evaluate"
+"71: evaluate"
+"72: evaluate"
+"89: evaluate"
+"109: evaluate"
+"67: evaluate"
+"65: evaluate"
+"130: next"
+"212: clearNextObject"
+"56: protected void <init>(java.util.List)" [style=bold]
+"36: <clinit>" [style=bold]
+"98: public void <init>(org.apache.commons.collections.Predicate[])"
+"98: validate" [style=bold]
+"58: falsePredicate" [style=bold]
+"120: transform"
+"47: public void <init>(java.lang.String)"
+"139: equals"
+"67: protected void <init>(java.util.Collection)" [style=bold]
+"65: private void <init>()"
+"106: iterator" [style=bold]
+"114: size" [style=bold]
+"70: public void <init>(java.lang.String, java.lang.Throwable)"
+"0: decorated"
+"81: decorated" [style=bold]
+"66: decorated" [style=bold]
+"11: main"->"122: hasNext";
+
+"11: main"->"111: public void <init>(org.apache.commons.collections.Predicate)";
+
+"11: main"->"77: public void <init>()";
+
+"11: main"->"9: <clinit>";
+
+"11: main"->"350: anyPredicate";
+
+"122: hasNext"->"221: setNextObject";
+
+"77: public void <init>()"->"42: protected void <init>(java.util.List)";
+
+"9: <clinit>"->"9: <clinit>";
+
+"350: anyPredicate"->"81: getInstance";
+
+"221: setNextObject"->"243: clearPreviousObject" [style=dotted];
+
+"221: setNextObject"->"122: hasNext";
+
+"221: setNextObject"->"63: evaluate" [style=dotted];
+
+"221: setNextObject"->"73: evaluate" [style=dotted];
+
+"221: setNextObject"->"101: evaluate" [style=dotted];
+
+"221: setNextObject"->"147: evaluate" [style=dotted];
+
+"221: setNextObject"->"73: evaluate" [style=dotted];
+
+"221: setNextObject"->"75: evaluate" [style=dotted];
+
+"221: setNextObject"->"75: evaluate" [style=dotted];
+
+"221: setNextObject"->"71: evaluate" [style=dotted];
+
+"221: setNextObject"->"81: evaluate" [style=dotted];
+
+"221: setNextObject"->"75: evaluate" [style=dotted];
+
+"221: setNextObject"->"71: evaluate" [style=dotted];
+
+"221: setNextObject"->"70: evaluate" [style=dotted];
+
+"221: setNextObject"->"100: evaluate" [style=dotted];
+
+"221: setNextObject"->"75: evaluate" [style=dotted];
+
+"221: setNextObject"->"76: evaluate" [style=dotted];
+
+"221: setNextObject"->"71: evaluate" [style=dotted];
+
+"221: setNextObject"->"72: evaluate" [style=dotted];
+
+"221: setNextObject"->"89: evaluate" [style=dotted];
+
+"221: setNextObject"->"109: evaluate" [style=dotted];
+
+"221: setNextObject"->"67: evaluate" [style=dotted];
+
+"221: setNextObject"->"65: evaluate" [style=dotted];
+
+"221: setNextObject"->"130: next" [style=dotted];
+
+"221: setNextObject"->"212: clearNextObject" [style=dotted];
+
+"221: setNextObject"->"221: setNextObject";
+
+"42: protected void <init>(java.util.List)"->"56: protected void <init>(java.util.List)";
+
+"81: getInstance"->"36: <clinit>";
+
+"81: getInstance"->"98: public void <init>(org.apache.commons.collections.Predicate[])" [style=dotted];
+
+"81: getInstance"->"98: validate";
+
+"81: getInstance"->"58: falsePredicate";
+
+"73: evaluate"->"120: transform" [style=dotted];
+
+"73: evaluate"->"47: public void <init>(java.lang.String)" [style=dotted];
+
+"101: evaluate"->"76: evaluate" [style=dotted];
+
+"101: evaluate"->"63: evaluate" [style=dotted];
+
+"101: evaluate"->"147: evaluate" [style=dotted];
+
+"101: evaluate"->"71: evaluate" [style=dotted];
+
+"101: evaluate"->"101: evaluate" [style=dotted];
+
+"101: evaluate"->"75: evaluate" [style=dotted];
+
+"101: evaluate"->"89: evaluate" [style=dotted];
+
+"101: evaluate"->"73: evaluate" [style=dotted];
+
+"101: evaluate"->"71: evaluate" [style=dotted];
+
+"101: evaluate"->"73: evaluate" [style=dotted];
+
+"101: evaluate"->"109: evaluate" [style=dotted];
+
+"101: evaluate"->"81: evaluate" [style=dotted];
+
+"101: evaluate"->"70: evaluate" [style=dotted];
+
+"101: evaluate"->"100: evaluate" [style=dotted];
+
+"101: evaluate"->"67: evaluate" [style=dotted];
+
+"101: evaluate"->"75: evaluate" [style=dotted];
+
+"101: evaluate"->"71: evaluate" [style=dotted];
+
+"101: evaluate"->"72: evaluate" [style=dotted];
+
+"101: evaluate"->"65: evaluate" [style=dotted];
+
+"101: evaluate"->"75: evaluate" [style=dotted];
+
+"101: evaluate"->"75: evaluate" [style=dotted];
+
+"147: evaluate"->"76: evaluate" [style=dotted];
+
+"147: evaluate"->"63: evaluate" [style=dotted];
+
+"147: evaluate"->"147: evaluate" [style=dotted];
+
+"147: evaluate"->"71: evaluate" [style=dotted];
+
+"147: evaluate"->"101: evaluate" [style=dotted];
+
+"147: evaluate"->"75: evaluate" [style=dotted];
+
+"147: evaluate"->"89: evaluate" [style=dotted];
+
+"147: evaluate"->"73: evaluate" [style=dotted];
+
+"147: evaluate"->"71: evaluate" [style=dotted];
+
+"147: evaluate"->"73: evaluate" [style=dotted];
+
+"147: evaluate"->"109: evaluate" [style=dotted];
+
+"147: evaluate"->"81: evaluate" [style=dotted];
+
+"147: evaluate"->"70: evaluate" [style=dotted];
+
+"147: evaluate"->"100: evaluate" [style=dotted];
+
+"147: evaluate"->"67: evaluate" [style=dotted];
+
+"147: evaluate"->"75: evaluate" [style=dotted];
+
+"147: evaluate"->"71: evaluate" [style=dotted];
+
+"147: evaluate"->"72: evaluate" [style=dotted];
+
+"147: evaluate"->"65: evaluate" [style=dotted];
+
+"147: evaluate"->"75: evaluate" [style=dotted];
+
+"147: evaluate"->"75: evaluate" [style=dotted];
+
+"73: evaluate"->"47: public void <init>(java.lang.String)" [style=dotted];
+
+"73: evaluate"->"63: evaluate" [style=dotted];
+
+"73: evaluate"->"147: evaluate" [style=dotted];
+
+"73: evaluate"->"71: evaluate" [style=dotted];
+
+"73: evaluate"->"101: evaluate" [style=dotted];
+
+"73: evaluate"->"75: evaluate" [style=dotted];
+
+"73: evaluate"->"89: evaluate" [style=dotted];
+
+"73: evaluate"->"73: evaluate" [style=dotted];
+
+"73: evaluate"->"71: evaluate" [style=dotted];
+
+"73: evaluate"->"73: evaluate" [style=dotted];
+
+"73: evaluate"->"109: evaluate" [style=dotted];
+
+"73: evaluate"->"81: evaluate" [style=dotted];
+
+"73: evaluate"->"70: evaluate" [style=dotted];
+
+"73: evaluate"->"100: evaluate" [style=dotted];
+
+"73: evaluate"->"67: evaluate" [style=dotted];
+
+"73: evaluate"->"75: evaluate" [style=dotted];
+
+"73: evaluate"->"71: evaluate" [style=dotted];
+
+"73: evaluate"->"72: evaluate" [style=dotted];
+
+"73: evaluate"->"65: evaluate" [style=dotted];
+
+"73: evaluate"->"75: evaluate" [style=dotted];
+
+"73: evaluate"->"75: evaluate" [style=dotted];
+
+"73: evaluate"->"76: evaluate" [style=dotted];
+
+"75: evaluate"->"76: evaluate" [style=dotted];
+
+"75: evaluate"->"63: evaluate" [style=dotted];
+
+"75: evaluate"->"147: evaluate" [style=dotted];
+
+"75: evaluate"->"71: evaluate" [style=dotted];
+
+"75: evaluate"->"101: evaluate" [style=dotted];
+
+"75: evaluate"->"75: evaluate" [style=dotted];
+
+"75: evaluate"->"89: evaluate" [style=dotted];
+
+"75: evaluate"->"73: evaluate" [style=dotted];
+
+"75: evaluate"->"71: evaluate" [style=dotted];
+
+"75: evaluate"->"73: evaluate" [style=dotted];
+
+"75: evaluate"->"109: evaluate" [style=dotted];
+
+"75: evaluate"->"81: evaluate" [style=dotted];
+
+"75: evaluate"->"70: evaluate" [style=dotted];
+
+"75: evaluate"->"100: evaluate" [style=dotted];
+
+"75: evaluate"->"67: evaluate" [style=dotted];
+
+"75: evaluate"->"75: evaluate" [style=dotted];
+
+"75: evaluate"->"71: evaluate" [style=dotted];
+
+"75: evaluate"->"72: evaluate" [style=dotted];
+
+"75: evaluate"->"65: evaluate" [style=dotted];
+
+"75: evaluate"->"75: evaluate" [style=dotted];
+
+"75: evaluate"->"75: evaluate" [style=dotted];
+
+"71: evaluate"->"76: evaluate" [style=dotted];
+
+"71: evaluate"->"63: evaluate" [style=dotted];
+
+"71: evaluate"->"147: evaluate" [style=dotted];
+
+"71: evaluate"->"71: evaluate" [style=dotted];
+
+"71: evaluate"->"101: evaluate" [style=dotted];
+
+"71: evaluate"->"75: evaluate" [style=dotted];
+
+"71: evaluate"->"89: evaluate" [style=dotted];
+
+"71: evaluate"->"73: evaluate" [style=dotted];
+
+"71: evaluate"->"71: evaluate" [style=dotted];
+
+"71: evaluate"->"73: evaluate" [style=dotted];
+
+"71: evaluate"->"109: evaluate" [style=dotted];
+
+"71: evaluate"->"81: evaluate" [style=dotted];
+
+"71: evaluate"->"70: evaluate" [style=dotted];
+
+"71: evaluate"->"100: evaluate" [style=dotted];
+
+"71: evaluate"->"67: evaluate" [style=dotted];
+
+"71: evaluate"->"75: evaluate" [style=dotted];
+
+"71: evaluate"->"71: evaluate" [style=dotted];
+
+"71: evaluate"->"72: evaluate" [style=dotted];
+
+"71: evaluate"->"65: evaluate" [style=dotted];
+
+"71: evaluate"->"75: evaluate" [style=dotted];
+
+"71: evaluate"->"75: evaluate" [style=dotted];
+
+"81: evaluate"->"120: transform" [style=dotted];
+
+"81: evaluate"->"63: evaluate" [style=dotted];
+
+"81: evaluate"->"147: evaluate" [style=dotted];
+
+"81: evaluate"->"71: evaluate" [style=dotted];
+
+"81: evaluate"->"101: evaluate" [style=dotted];
+
+"81: evaluate"->"75: evaluate" [style=dotted];
+
+"81: evaluate"->"89: evaluate" [style=dotted];
+
+"81: evaluate"->"73: evaluate" [style=dotted];
+
+"81: evaluate"->"71: evaluate" [style=dotted];
+
+"81: evaluate"->"73: evaluate" [style=dotted];
+
+"81: evaluate"->"109: evaluate" [style=dotted];
+
+"81: evaluate"->"81: evaluate" [style=dotted];
+
+"81: evaluate"->"70: evaluate" [style=dotted];
+
+"81: evaluate"->"100: evaluate" [style=dotted];
+
+"81: evaluate"->"67: evaluate" [style=dotted];
+
+"81: evaluate"->"75: evaluate" [style=dotted];
+
+"81: evaluate"->"71: evaluate" [style=dotted];
+
+"81: evaluate"->"72: evaluate" [style=dotted];
+
+"81: evaluate"->"65: evaluate" [style=dotted];
+
+"81: evaluate"->"75: evaluate" [style=dotted];
+
+"81: evaluate"->"75: evaluate" [style=dotted];
+
+"81: evaluate"->"76: evaluate" [style=dotted];
+
+"70: evaluate"->"76: evaluate" [style=dotted];
+
+"70: evaluate"->"63: evaluate" [style=dotted];
+
+"70: evaluate"->"147: evaluate" [style=dotted];
+
+"70: evaluate"->"71: evaluate" [style=dotted];
+
+"70: evaluate"->"101: evaluate" [style=dotted];
+
+"70: evaluate"->"75: evaluate" [style=dotted];
+
+"70: evaluate"->"89: evaluate" [style=dotted];
+
+"70: evaluate"->"73: evaluate" [style=dotted];
+
+"70: evaluate"->"71: evaluate" [style=dotted];
+
+"70: evaluate"->"73: evaluate" [style=dotted];
+
+"70: evaluate"->"109: evaluate" [style=dotted];
+
+"70: evaluate"->"81: evaluate" [style=dotted];
+
+"70: evaluate"->"70: evaluate" [style=dotted];
+
+"70: evaluate"->"100: evaluate" [style=dotted];
+
+"70: evaluate"->"67: evaluate" [style=dotted];
+
+"70: evaluate"->"75: evaluate" [style=dotted];
+
+"70: evaluate"->"71: evaluate" [style=dotted];
+
+"70: evaluate"->"72: evaluate" [style=dotted];
+
+"70: evaluate"->"65: evaluate" [style=dotted];
+
+"70: evaluate"->"75: evaluate" [style=dotted];
+
+"70: evaluate"->"75: evaluate" [style=dotted];
+
+"100: evaluate"->"76: evaluate" [style=dotted];
+
+"100: evaluate"->"63: evaluate" [style=dotted];
+
+"100: evaluate"->"147: evaluate" [style=dotted];
+
+"100: evaluate"->"71: evaluate" [style=dotted];
+
+"100: evaluate"->"101: evaluate" [style=dotted];
+
+"100: evaluate"->"75: evaluate" [style=dotted];
+
+"100: evaluate"->"89: evaluate" [style=dotted];
+
+"100: evaluate"->"73: evaluate" [style=dotted];
+
+"100: evaluate"->"71: evaluate" [style=dotted];
+
+"100: evaluate"->"73: evaluate" [style=dotted];
+
+"100: evaluate"->"109: evaluate" [style=dotted];
+
+"100: evaluate"->"81: evaluate" [style=dotted];
+
+"100: evaluate"->"70: evaluate" [style=dotted];
+
+"100: evaluate"->"100: evaluate" [style=dotted];
+
+"100: evaluate"->"67: evaluate" [style=dotted];
+
+"100: evaluate"->"75: evaluate" [style=dotted];
+
+"100: evaluate"->"71: evaluate" [style=dotted];
+
+"100: evaluate"->"72: evaluate" [style=dotted];
+
+"100: evaluate"->"65: evaluate" [style=dotted];
+
+"100: evaluate"->"75: evaluate" [style=dotted];
+
+"100: evaluate"->"75: evaluate" [style=dotted];
+
+"75: evaluate"->"76: evaluate" [style=dotted];
+
+"75: evaluate"->"63: evaluate" [style=dotted];
+
+"75: evaluate"->"147: evaluate" [style=dotted];
+
+"75: evaluate"->"71: evaluate" [style=dotted];
+
+"75: evaluate"->"101: evaluate" [style=dotted];
+
+"75: evaluate"->"75: evaluate" [style=dotted];
+
+"75: evaluate"->"89: evaluate" [style=dotted];
+
+"75: evaluate"->"73: evaluate" [style=dotted];
+
+"75: evaluate"->"71: evaluate" [style=dotted];
+
+"75: evaluate"->"73: evaluate" [style=dotted];
+
+"75: evaluate"->"109: evaluate" [style=dotted];
+
+"75: evaluate"->"81: evaluate" [style=dotted];
+
+"75: evaluate"->"70: evaluate" [style=dotted];
+
+"75: evaluate"->"100: evaluate" [style=dotted];
+
+"75: evaluate"->"67: evaluate" [style=dotted];
+
+"75: evaluate"->"75: evaluate" [style=dotted];
+
+"75: evaluate"->"71: evaluate" [style=dotted];
+
+"75: evaluate"->"72: evaluate" [style=dotted];
+
+"75: evaluate"->"65: evaluate" [style=dotted];
+
+"75: evaluate"->"75: evaluate" [style=dotted];
+
+"75: evaluate"->"75: evaluate" [style=dotted];
+
+"71: evaluate"->"76: evaluate" [style=dotted];
+
+"71: evaluate"->"63: evaluate" [style=dotted];
+
+"71: evaluate"->"147: evaluate" [style=dotted];
+
+"71: evaluate"->"71: evaluate" [style=dotted];
+
+"71: evaluate"->"101: evaluate" [style=dotted];
+
+"71: evaluate"->"75: evaluate" [style=dotted];
+
+"71: evaluate"->"89: evaluate" [style=dotted];
+
+"71: evaluate"->"73: evaluate" [style=dotted];
+
+"71: evaluate"->"71: evaluate" [style=dotted];
+
+"71: evaluate"->"73: evaluate" [style=dotted];
+
+"71: evaluate"->"109: evaluate" [style=dotted];
+
+"71: evaluate"->"81: evaluate" [style=dotted];
+
+"71: evaluate"->"70: evaluate" [style=dotted];
+
+"71: evaluate"->"100: evaluate" [style=dotted];
+
+"71: evaluate"->"67: evaluate" [style=dotted];
+
+"71: evaluate"->"75: evaluate" [style=dotted];
+
+"71: evaluate"->"71: evaluate" [style=dotted];
+
+"71: evaluate"->"72: evaluate" [style=dotted];
+
+"71: evaluate"->"65: evaluate" [style=dotted];
+
+"71: evaluate"->"75: evaluate" [style=dotted];
+
+"71: evaluate"->"75: evaluate" [style=dotted];
+
+"89: evaluate"->"139: equals" [style=dotted];
+
+"109: evaluate"->"76: evaluate" [style=dotted];
+
+"109: evaluate"->"63: evaluate" [style=dotted];
+
+"109: evaluate"->"147: evaluate" [style=dotted];
+
+"109: evaluate"->"71: evaluate" [style=dotted];
+
+"109: evaluate"->"101: evaluate" [style=dotted];
+
+"109: evaluate"->"75: evaluate" [style=dotted];
+
+"109: evaluate"->"89: evaluate" [style=dotted];
+
+"109: evaluate"->"73: evaluate" [style=dotted];
+
+"109: evaluate"->"71: evaluate" [style=dotted];
+
+"109: evaluate"->"73: evaluate" [style=dotted];
+
+"109: evaluate"->"109: evaluate" [style=dotted];
+
+"109: evaluate"->"81: evaluate" [style=dotted];
+
+"109: evaluate"->"70: evaluate" [style=dotted];
+
+"109: evaluate"->"100: evaluate" [style=dotted];
+
+"109: evaluate"->"67: evaluate" [style=dotted];
+
+"109: evaluate"->"75: evaluate" [style=dotted];
+
+"109: evaluate"->"71: evaluate" [style=dotted];
+
+"109: evaluate"->"72: evaluate" [style=dotted];
+
+"109: evaluate"->"65: evaluate" [style=dotted];
+
+"109: evaluate"->"75: evaluate" [style=dotted];
+
+"109: evaluate"->"75: evaluate" [style=dotted];
+
+"65: evaluate"->"47: public void <init>(java.lang.String)" [style=dotted];
+
+"130: next"->"221: setNextObject" [style=dotted];
+
+"130: next"->"212: clearNextObject" [style=dotted];
+
+"56: protected void <init>(java.util.List)"->"67: protected void <init>(java.util.Collection)";
+
+"36: <clinit>"->"36: <clinit>";
+
+"36: <clinit>"->"65: private void <init>()" [style=dotted];
+
+"98: validate"->"122: hasNext";
+
+"98: validate"->"130: next" [style=dotted];
+
+"98: validate"->"106: iterator";
+
+"98: validate"->"114: size";
+
+"58: falsePredicate"->"36: <clinit>";
+
+"120: transform"->"70: public void <init>(java.lang.String, java.lang.Throwable)" [style=dotted];
+
+"120: transform"->"47: public void <init>(java.lang.String)" [style=dotted];
+
+"139: equals"->"0: decorated" [style=dotted];
+
+"139: equals"->"139: equals" [style=dotted];
+
+"139: equals"->"81: decorated" [style=dotted];
+
+"106: iterator"->"0: decorated" [style=dotted];
+
+"106: iterator"->"106: iterator";
+
+"106: iterator"->"81: decorated";
+
+"114: size"->"0: decorated" [style=dotted];
+
+"114: size"->"114: size";
+
+"0: decorated"->"66: decorated" [style=dotted];
+
+"66: decorated"->"81: decorated";
+
+}

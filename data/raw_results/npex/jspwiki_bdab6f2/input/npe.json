@@ -1,0 +1,10 @@
+{
+    "filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+    "line": 78,
+    "sink_field": "length",
+    "npe_class": "HttpUtil",
+    "npe_method": "retrieveCookieValue",
+    "jvmti_identify_succeed": true,
+    "deref_field": "value",
+    "nullpointer": "value"
+}

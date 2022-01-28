@@ -1,0 +1,5 @@
+{
+    "contents": "(this.uri != null ? this.uri : null).getQuery()",
+    "original_filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+    "patched_lines": [348]
+}

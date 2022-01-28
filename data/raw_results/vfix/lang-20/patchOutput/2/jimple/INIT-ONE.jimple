@@ -1,0 +1,92 @@
+    public static java.lang.String join(java.lang.Object[], java.lang.String, int, int)
+    {
+        java.lang.Object[] array;
+        int startIndex, endIndex, noOfItems, $i0, $i1, $i2, i;
+        java.lang.StringBuilder $r0;
+        java.lang.Object $r1, $r2, $r4, $r5;
+        java.lang.String $r3, $r8, separator;
+
+        array := @parameter0: java.lang.Object[];
+
+        separator := @parameter1: java.lang.String;
+
+        startIndex := @parameter2: int;
+
+        endIndex := @parameter3: int;
+
+        if array != null goto label01;
+
+        return null;
+
+     label01:
+        if separator != null goto label02;
+
+        separator = "";
+
+     label02:
+        noOfItems = endIndex - startIndex;
+
+        if noOfItems > 0 goto label03;
+
+        return "";
+
+     label03:
+        $r0 = new java.lang.StringBuilder;
+
+        $r1 = array[startIndex];
+
+        if $r1 != null goto label04;
+
+        $i2 = 16;
+
+        goto label06;
+
+     label04:
+        $r2 = array[startIndex];
+
+        $r3 = virtualinvoke $r2.<java.lang.Object: java.lang.String toString()>();
+
+        if $r3 != null goto label05;
+
+        $r3 = new java.lang.String;
+
+        specialinvoke $r3.<java.lang.String: void <init>()>();
+
+     label05:
+        $i2 = virtualinvoke $r3.<java.lang.String: int length()>();
+
+     label06:
+        $i0 = virtualinvoke separator.<java.lang.String: int length()>();
+
+        $i1 = $i2 + $i0;
+
+        specialinvoke $r0.<java.lang.StringBuilder: void <init>(int)>($i1);
+
+        i = startIndex;
+
+        goto label10;
+
+     label07:
+        if i <= startIndex goto label08;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(separator);
+
+     label08:
+        $r4 = array[i];
+
+        if $r4 == null goto label09;
+
+        $r5 = array[i];
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r5);
+
+     label09:
+        i = i + 1;
+
+     label10:
+        if i < endIndex goto label07;
+
+        $r8 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        return $r8;
+    }

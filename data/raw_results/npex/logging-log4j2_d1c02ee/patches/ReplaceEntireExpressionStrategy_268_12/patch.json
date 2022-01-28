@@ -1,0 +1,5 @@
+{
+    "contents": "return value != null ? value.toLowerCase().equals(node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase()) : node2.getAttributes().get(org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy.REF).toLowerCase() == null",
+    "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+    "patched_lines": [269]
+}

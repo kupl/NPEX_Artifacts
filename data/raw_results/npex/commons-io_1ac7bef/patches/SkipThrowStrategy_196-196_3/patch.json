@@ -1,0 +1,5 @@
+{
+    "contents": "if (end == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+    "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+    "patched_lines": [212]
+}

@@ -1,0 +1,322 @@
+    private static java.lang.String replaceEach(java.lang.String, java.lang.String[], java.lang.String[], boolean, int)
+    {
+        java.lang.String text, $r0, $r1, $r2, $r3, $r4, $r5, $r8, $r10, $r11, $r12, $r13, $r14, $r16, $r22, $r28, i#61;
+        java.lang.String[] searchList, replacementList;
+        boolean repeat, $z0, $z1;
+        int timeToLive, searchLength, replacementLength, $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i12, $i13, $i15, textIndex, replaceIndex, i, tempIndex#10, increase, i#29, greater, $i16;
+        boolean[] noMoreMatchesForReplIndex;
+        java.lang.StringBuilder $r6, $r18, $r19, $r20, $r21, $r24, $r25, $r26, $r27;
+        char $c11, $c14;
+        java.lang.IllegalArgumentException $r17;
+        java.lang.IllegalStateException $r23;
+
+        text := @parameter0: java.lang.String;
+
+        searchList := @parameter1: java.lang.String[];
+
+        replacementList := @parameter2: java.lang.String[];
+
+        repeat := @parameter3: boolean;
+
+        timeToLive := @parameter4: int;
+
+        if text == null goto label01;
+
+        $i0 = virtualinvoke text.<java.lang.String: int length()>();
+
+        if $i0 == 0 goto label01;
+
+        if searchList == null goto label01;
+
+        $i1 = lengthof searchList;
+
+        if $i1 == 0 goto label01;
+
+        if replacementList == null goto label01;
+
+        $i2 = lengthof replacementList;
+
+        if $i2 != 0 goto label02;
+
+     label01:
+        return text;
+
+     label02:
+        if timeToLive >= 0 goto label03;
+
+        $r23 = new java.lang.IllegalStateException;
+
+        $r24 = new java.lang.StringBuilder;
+
+        specialinvoke $r24.<java.lang.StringBuilder: void <init>(java.lang.String)>("TimeToLive of ");
+
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(timeToLive);
+
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" is less than 0: ");
+
+        $r27 = virtualinvoke $r26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(text);
+
+        $r28 = virtualinvoke $r27.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke $r23.<java.lang.IllegalStateException: void <init>(java.lang.String)>($r28);
+
+        throw $r23;
+
+     label03:
+        searchLength = lengthof searchList;
+
+        replacementLength = lengthof replacementList;
+
+        if searchLength == replacementLength goto label04;
+
+        $r17 = new java.lang.IllegalArgumentException;
+
+        $r18 = new java.lang.StringBuilder;
+
+        specialinvoke $r18.<java.lang.StringBuilder: void <init>(java.lang.String)>("Search and Replace array lengths don\'t match: ");
+
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(searchLength);
+
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" vs ");
+
+        $r21 = virtualinvoke $r20.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(replacementLength);
+
+        $r22 = virtualinvoke $r21.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke $r17.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r22);
+
+        throw $r17;
+
+     label04:
+        noMoreMatchesForReplIndex = newarray (boolean)[searchLength];
+
+        textIndex = -1;
+
+        replaceIndex = -1;
+
+        i = 0;
+
+        goto label10;
+
+     label05:
+        $z0 = noMoreMatchesForReplIndex[i];
+
+        if $z0 != 0 goto label09;
+
+        $r0 = searchList[i];
+
+        if $r0 == null goto label09;
+
+        $r1 = searchList[i];
+
+        $i3 = virtualinvoke $r1.<java.lang.String: int length()>();
+
+        if $i3 == 0 goto label09;
+
+        $r2 = replacementList[i];
+
+        if $r2 != null goto label06;
+
+        goto label09;
+
+     label06:
+        $r3 = searchList[i];
+
+        tempIndex#10 = virtualinvoke text.<java.lang.String: int indexOf(java.lang.String)>($r3);
+
+        if tempIndex#10 != -1 goto label07;
+
+        noMoreMatchesForReplIndex[i] = 1;
+
+        goto label09;
+
+     label07:
+        if textIndex == -1 goto label08;
+
+        if tempIndex#10 >= textIndex goto label09;
+
+     label08:
+        textIndex = tempIndex#10;
+
+        replaceIndex = i;
+
+     label09:
+        i = i + 1;
+
+     label10:
+        if i < searchLength goto label05;
+
+        if textIndex != -1 goto label11;
+
+        return text;
+
+     label11:
+        i = 0;
+
+        increase = 0;
+
+        i#29 = 0;
+
+        goto label15;
+
+     label12:
+        $r4 = replacementList[i#29];
+
+        if $r4 != null goto label13;
+
+        $r4 = new java.lang.String;
+
+        specialinvoke $r4.<java.lang.String: void <init>()>();
+
+     label13:
+        $i4 = virtualinvoke $r4.<java.lang.String: int length()>();
+
+        $r5 = searchList[i#29];
+
+        $i5 = virtualinvoke $r5.<java.lang.String: int length()>();
+
+        greater = $i4 - $i5;
+
+        if greater <= 0 goto label14;
+
+        $i6 = 3 * greater;
+
+        increase = increase + $i6;
+
+     label14:
+        i#29 = i#29 + 1;
+
+     label15:
+        $i16 = lengthof searchList;
+
+        if i#29 < $i16 goto label12;
+
+        $i7 = virtualinvoke text.<java.lang.String: int length()>();
+
+        $i8 = $i7 / 5;
+
+        increase = staticinvoke <java.lang.Math: int min(int,int)>(increase, $i8);
+
+        $r6 = new java.lang.StringBuilder;
+
+        $i9 = virtualinvoke text.<java.lang.String: int length()>();
+
+        $i10 = $i9 + increase;
+
+        specialinvoke $r6.<java.lang.StringBuilder: void <init>(int)>($i10);
+
+        goto label25;
+
+     label16:
+        greater = i;
+
+        goto label18;
+
+     label17:
+        $c11 = virtualinvoke text.<java.lang.String: char charAt(int)>(greater);
+
+        virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>($c11);
+
+        greater = greater + 1;
+
+     label18:
+        if greater < textIndex goto label17;
+
+        $r8 = replacementList[replaceIndex];
+
+        virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r8);
+
+        $r10 = searchList[replaceIndex];
+
+        $i12 = virtualinvoke $r10.<java.lang.String: int length()>();
+
+        i = textIndex + $i12;
+
+        textIndex = -1;
+
+        replaceIndex = -1;
+
+        greater = 0;
+
+        goto label24;
+
+     label19:
+        $z1 = noMoreMatchesForReplIndex[greater];
+
+        if $z1 != 0 goto label23;
+
+        $r11 = searchList[greater];
+
+        if $r11 == null goto label23;
+
+        $r12 = searchList[greater];
+
+        $i13 = virtualinvoke $r12.<java.lang.String: int length()>();
+
+        if $i13 == 0 goto label23;
+
+        $r13 = replacementList[greater];
+
+        if $r13 != null goto label20;
+
+        goto label23;
+
+     label20:
+        $r14 = searchList[greater];
+
+        tempIndex#10 = virtualinvoke text.<java.lang.String: int indexOf(java.lang.String,int)>($r14, i);
+
+        if tempIndex#10 != -1 goto label21;
+
+        noMoreMatchesForReplIndex[greater] = 1;
+
+        goto label23;
+
+     label21:
+        if textIndex == -1 goto label22;
+
+        if tempIndex#10 >= textIndex goto label23;
+
+     label22:
+        textIndex = tempIndex#10;
+
+        replaceIndex = greater;
+
+     label23:
+        greater = greater + 1;
+
+     label24:
+        if greater < searchLength goto label19;
+
+     label25:
+        if textIndex != -1 goto label16;
+
+        greater = virtualinvoke text.<java.lang.String: int length()>();
+
+        i#29 = i;
+
+        goto label27;
+
+     label26:
+        $c14 = virtualinvoke text.<java.lang.String: char charAt(int)>(i#29);
+
+        virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>($c14);
+
+        i#29 = i#29 + 1;
+
+     label27:
+        if i#29 < greater goto label26;
+
+        i#61 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        if repeat != 0 goto label28;
+
+        return i#61;
+
+     label28:
+        $i15 = timeToLive - 1;
+
+        $r16 = staticinvoke <org.apache.commons.lang3.StringUtils: java.lang.String replaceEach(java.lang.String,java.lang.String[],java.lang.String[],boolean,int)>(i#61, searchList, replacementList, repeat, $i15);
+
+        return $r16;
+    }

@@ -1,0 +1,5 @@
+{
+    "contents": "if (line == null) {\n    line = \"\";\n}",
+    "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+    "patched_lines": [576]
+}

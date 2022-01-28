@@ -1,0 +1,62 @@
+[
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+        "line": 44,
+        "method_name": "handleEvent"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/EventSubscriptionEntity.java",
+        "line": 80,
+        "method_name": "processEventSync"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/EventSubscriptionEntity.java",
+        "line": 71,
+        "method_name": "eventReceived"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/SignalEventReceivedCmd.java",
+        "line": 61,
+        "method_name": "execute"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/cmd/SignalEventReceivedCmd.java",
+        "line": 29,
+        "method_name": "execute"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/interceptor/CommandExecutorImpl.java",
+        "line": 24,
+        "method_name": "execute"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/interceptor/CommandContextInterceptor.java",
+        "line": 42,
+        "method_name": "execute"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/interceptor/LogInterceptor.java",
+        "line": 33,
+        "method_name": "execute"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/RuntimeServiceImpl.java",
+        "line": 181,
+        "method_name": "signalEventReceived"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/test/java/org/activiti/engine/test/bpmn/event/signal/SignalEventTest.java",
+        "line": 142,
+        "method_name": "testSignalBoundaryOnSubProcess"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/test/PvmTestCase.java",
+        "line": 75,
+        "method_name": "runTest"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/test/AbstractActivitiTestCase.java",
+        "line": 90,
+        "method_name": "runBare"
+    }
+]

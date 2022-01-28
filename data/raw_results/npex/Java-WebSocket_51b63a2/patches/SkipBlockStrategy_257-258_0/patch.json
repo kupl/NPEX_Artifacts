@@ -1,0 +1,5 @@
+{
+    "contents": "if (selector != null) {\n    selector.wakeup();\n    selectorthread.join(timeout);\n}",
+    "original_filepath": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+    "patched_lines": [266]
+}

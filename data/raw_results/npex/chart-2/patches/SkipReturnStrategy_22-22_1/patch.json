@@ -1,0 +1,5 @@
+{
+    "contents": "if (r == null) {\n    return;\n}",
+    "original_filepath": "Main.java",
+    "patched_lines": [22]
+}

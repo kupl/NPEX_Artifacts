@@ -1,0 +1,5 @@
+{
+    "contents": "if (fieldValues == null) {\n    return;\n}",
+    "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+    "patched_lines": [55]
+}

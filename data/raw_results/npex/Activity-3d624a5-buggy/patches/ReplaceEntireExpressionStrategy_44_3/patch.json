@@ -1,0 +1,5 @@
+{
+    "contents": "!(execution.getActivity() != null ? execution.getActivity().equals(activity) : false)",
+    "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+    "patched_lines": [41]
+}

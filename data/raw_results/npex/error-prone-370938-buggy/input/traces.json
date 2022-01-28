@@ -1,0 +1,162 @@
+[
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+        "line": 282,
+        "method_name": "normalizeBase"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+        "line": 272,
+        "method_name": "computeBase"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+        "line": 185,
+        "method_name": "visitMethodInvocation"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+        "line": 172,
+        "method_name": "visitMethodInvocation"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+        "line": 104,
+        "method_name": "bind"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+        "line": 72,
+        "method_name": "bindString"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByUtils.java",
+        "line": 92,
+        "method_name": "isGuardedByValid"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByValidator.java",
+        "line": 72,
+        "method_name": "validate"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByValidator.java",
+        "line": 68,
+        "method_name": "matchVariable"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/scanner/ErrorProneScanner.java",
+        "line": 1005,
+        "method_name": "visitVariable"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/scanner/ErrorProneScanner.java",
+        "line": 142,
+        "method_name": "visitVariable"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/scanner/Scanner.java",
+        "line": 119,
+        "method_name": "scan"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/scanner/Scanner.java",
+        "line": 45,
+        "method_name": "scan"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/scanner/ErrorProneScanner.java",
+        "line": 586,
+        "method_name": "visitClass"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/scanner/ErrorProneScanner.java",
+        "line": 142,
+        "method_name": "visitClass"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/scanner/Scanner.java",
+        "line": 80,
+        "method_name": "scan"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/ErrorProneAnalyzer.java",
+        "line": 153,
+        "method_name": "reportReadyForAnalysis"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/ErrorProneAnalyzer.java",
+        "line": 124,
+        "method_name": "finished"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/ErrorProneJavacJavaCompiler.java",
+        "line": 121,
+        "method_name": "postFlow"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/ErrorProneJavacJavaCompiler.java",
+        "line": 93,
+        "method_name": "flow"
+    },
+    {
+        "filepath": "examples/maven/error_prone_should_flag/src/main/java/Main.java",
+        "line": 523,
+        "method_name": "compile"
+    },
+    {
+        "filepath": "core/src/main/java/com/google/errorprone/ErrorProneCompiler.java",
+        "line": 258,
+        "method_name": "run"
+    },
+    {
+        "filepath": "core/src/test/java/com/google/errorprone/CompilationTestHelper.java",
+        "line": 221,
+        "method_name": "compile"
+    },
+    {
+        "filepath": "core/src/test/java/com/google/errorprone/CompilationTestHelper.java",
+        "line": 202,
+        "method_name": "assertCompileFailsWithMessages"
+    },
+    {
+        "filepath": "core/src/test/java/com/google/errorprone/CompilationTestHelper.java",
+        "line": 189,
+        "method_name": "assertCompileFailsWithMessages"
+    },
+    {
+        "filepath": "core/src/test/java/com/google/errorprone/CompilationTestHelper.java",
+        "line": 215,
+        "method_name": "assertCompileFailsWithMessages"
+    },
+    {
+        "filepath": "core/src/test/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByValidatorTest.java",
+        "line": 238,
+        "method_name": "testNonExistantMethod"
+    },
+    {
+        "filepath": "core/src/test/java/com/google/errorprone/DiagnosticTestHelper.java",
+        "line": 218,
+        "method_name": "assertHasDiagnosticOnAllMatchingLines"
+    },
+    {
+        "filepath": "core/src/test/java/com/google/errorprone/CompilationTestHelper.java",
+        "line": 205,
+        "method_name": "assertCompileFailsWithMessages"
+    },
+    {
+        "filepath": "core/src/test/java/com/google/errorprone/CompilationTestHelper.java",
+        "line": 189,
+        "method_name": "assertCompileFailsWithMessages"
+    },
+    {
+        "filepath": "core/src/test/java/com/google/errorprone/CompilationTestHelper.java",
+        "line": 215,
+        "method_name": "assertCompileFailsWithMessages"
+    },
+    {
+        "filepath": "core/src/test/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByValidatorTest.java",
+        "line": 238,
+        "method_name": "testNonExistantMethod"
+    }
+]

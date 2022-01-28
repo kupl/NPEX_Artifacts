@@ -1,0 +1,5 @@
+{
+    "contents": "if (((java.lang.Integer) (map.get(\"priority\"))) != null) {\n    ruleDefinition.setPriority(((java.lang.Integer) (map.get(\"priority\"))));\n}",
+    "original_filepath": "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java",
+    "patched_lines": [60]
+}

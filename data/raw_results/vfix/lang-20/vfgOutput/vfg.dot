@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"3383: $i2 = virtualinvoke $r3.<java.lang.String: int length()>()" [style=bold] [color=red]
+"3383: $r3 = virtualinvoke $r2.<java.lang.Object: java.lang.String toString()>()" [style=bold] [color=gold]
+"3383: $r3 = virtualinvoke $r2.<java.lang.Object: java.lang.String toString()>()"->"3383: $i2 = virtualinvoke $r3.<java.lang.String: int length()>()";
+
+}

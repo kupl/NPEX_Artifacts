@@ -1,0 +1,5 @@
+{
+    "contents": "if (ast == null) {\n    return;\n}",
+    "original_filepath": "org/apache/xmpbox/xml/DomXmpParser.java",
+    "patched_lines": [390]
+}

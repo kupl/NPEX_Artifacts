@@ -1,0 +1,84 @@
+    public org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo consumerRunningInfo(java.lang.String)
+    {
+        org.apache.rocketmq.client.impl.factory.MQClientInstance this;
+        java.lang.String consumerGroup, addr, $r9, $r12, nsAddr#2;
+        org.apache.rocketmq.client.impl.consumer.MQConsumerInner mqConsumerInner;
+        org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo consumerRunningInfo;
+        java.util.List nsList;
+        java.util.concurrent.ConcurrentMap $r0;
+        java.lang.Object $r1, $r14;
+        org.apache.rocketmq.client.impl.MQClientAPIImpl $r2;
+        org.apache.rocketmq.remoting.RemotingClient $r3;
+        java.lang.StringBuilder $r4, $r15;
+        java.util.Properties $r5, $r7, $r11;
+        org.apache.rocketmq.common.protocol.heartbeat.ConsumeType $r8;
+        int $i0;
+        boolean $z0;
+        java.util.Iterator nsAddr;
+
+        this := @this: org.apache.rocketmq.client.impl.factory.MQClientInstance;
+
+        consumerGroup := @parameter0: java.lang.String;
+
+        $r0 = this.<org.apache.rocketmq.client.impl.factory.MQClientInstance: java.util.concurrent.ConcurrentMap consumerTable>;
+
+        $r1 = interfaceinvoke $r0.<java.util.concurrent.ConcurrentMap: java.lang.Object get(java.lang.Object)>(consumerGroup);
+
+        mqConsumerInner = (org.apache.rocketmq.client.impl.consumer.MQConsumerInner) $r1;
+
+        consumerRunningInfo = interfaceinvoke mqConsumerInner.<org.apache.rocketmq.client.impl.consumer.MQConsumerInner: org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo consumerRunningInfo()>();
+
+        $r2 = this.<org.apache.rocketmq.client.impl.factory.MQClientInstance: org.apache.rocketmq.client.impl.MQClientAPIImpl mQClientAPIImpl>;
+
+        $r3 = virtualinvoke $r2.<org.apache.rocketmq.client.impl.MQClientAPIImpl: org.apache.rocketmq.remoting.RemotingClient getRemotingClient()>();
+
+        nsList = interfaceinvoke $r3.<org.apache.rocketmq.remoting.RemotingClient: java.util.List getNameServerAddressList()>();
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        if nsList == null goto label2;
+
+        nsAddr = interfaceinvoke nsList.<java.util.List: java.util.Iterator iterator()>();
+
+     label1:
+        $z0 = interfaceinvoke nsAddr.<java.util.Iterator: boolean hasNext()>();
+
+        if $z0 == 0 goto label2;
+
+        $r14 = interfaceinvoke nsAddr.<java.util.Iterator: java.lang.Object next()>();
+
+        addr = (java.lang.String) $r14;
+
+        $r15 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(addr);
+
+        virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(";");
+
+        goto label1;
+
+     label2:
+        nsAddr#2 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        $r5 = virtualinvoke consumerRunningInfo.<org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo: java.util.Properties getProperties()>();
+
+        virtualinvoke $r5.<java.util.Properties: java.lang.Object put(java.lang.Object,java.lang.Object)>("PROP_NAMESERVER_ADDR", nsAddr#2);
+
+        $r7 = virtualinvoke consumerRunningInfo.<org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo: java.util.Properties getProperties()>();
+
+        $r8 = interfaceinvoke mqConsumerInner.<org.apache.rocketmq.client.impl.consumer.MQConsumerInner: org.apache.rocketmq.common.protocol.heartbeat.ConsumeType consumeType()>();
+
+        $r9 = virtualinvoke $r8.<org.apache.rocketmq.common.protocol.heartbeat.ConsumeType: java.lang.String name()>();
+
+        virtualinvoke $r7.<java.util.Properties: java.lang.Object put(java.lang.Object,java.lang.Object)>("PROP_CONSUME_TYPE", $r9);
+
+        $r11 = virtualinvoke consumerRunningInfo.<org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo: java.util.Properties getProperties()>();
+
+        $i0 = <org.apache.rocketmq.common.MQVersion: int CURRENT_VERSION>;
+
+        $r12 = staticinvoke <org.apache.rocketmq.common.MQVersion: java.lang.String getVersionDesc(int)>($i0);
+
+        virtualinvoke $r11.<java.util.Properties: java.lang.Object put(java.lang.Object,java.lang.Object)>("PROP_CLIENT_VERSION", $r12);
+
+        return consumerRunningInfo;
+    }

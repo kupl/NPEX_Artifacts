@@ -1,0 +1,5 @@
+{
+    "contents": "if (value == null) {\n    throw new java.lang.IllegalStateException();\n}",
+    "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+    "patched_lines": [981]
+}

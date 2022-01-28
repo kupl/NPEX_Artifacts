@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+    "line": 884,
+    "sink_field": "getEncoding",
+    "npe_class": "XMLConfiguration",
+    "npe_method": "createTransformer",
+    "jvmti_identify_succeed": true,
+    "deref_field": "locator",
+    "nullpointer": "locator"
+}

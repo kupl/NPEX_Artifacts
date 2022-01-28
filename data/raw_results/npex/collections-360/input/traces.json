@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "org/apache/commons/collections/iterators/FilterListIterator.java",
+        "line": 232,
+        "method_name": "setNextObject"
+    },
+    {
+        "filepath": "org/apache/commons/collections/iterators/FilterListIterator.java",
+        "line": 123,
+        "method_name": "hasNext"
+    },
+    {
+        "filepath": "org/apache/commons/collections/Main.java",
+        "line": 16,
+        "method_name": "main"
+    }
+]

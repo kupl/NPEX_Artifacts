@@ -1,0 +1,5 @@
+{
+    "contents": "if ((annotation != null ? annotation.getType() : 0) == com.puppycrawl.tools.checkstyle.api.TokenTypes.ANNOTATION) {\n    final com.puppycrawl.tools.checkstyle.api.DetailAST overrideToken = annotation.findFirstToken(com.puppycrawl.tools.checkstyle.api.TokenTypes.IDENT);\n    if (\"Override\".equals(overrideToken.getText())) {\n        overridden = true;\n    }\n}",
+    "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+    "patched_lines": [130]
+}

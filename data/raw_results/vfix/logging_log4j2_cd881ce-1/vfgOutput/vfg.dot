@@ -1,0 +1,11 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"320: $i0 = lengthof params" [color=red]
+"1276: virtualinvoke this.<org.apache.logging.log4j.spi.AbstractLogger: void enter(java.lang.String,java.lang.String,java.lang.Object[])>($r1, null, $r0)" [style=bold]
+"1276: $r0 = (java.lang.Object[]) null" [style=bold] [color=gold]
+"1276: $r0 = (java.lang.Object[]) null"->"1276: virtualinvoke this.<org.apache.logging.log4j.spi.AbstractLogger: void enter(java.lang.String,java.lang.String,java.lang.Object[])>($r1, null, $r0)";
+
+"1276: virtualinvoke this.<org.apache.logging.log4j.spi.AbstractLogger: void enter(java.lang.String,java.lang.String,java.lang.Object[])>($r1, null, $r0)"->"320: $i0 = lengthof params" [style=dotted];
+
+}

@@ -1,0 +1,10 @@
+{
+    "filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+    "line": 62,
+    "sink_field": "getClass",
+    "npe_class": "DefaultAnnotationResolver",
+    "npe_method": "getAnnotation",
+    "jvmti_identify_succeed": true,
+    "deref_field": "getThis",
+    "nullpointer": "mi.getThis()"
+}

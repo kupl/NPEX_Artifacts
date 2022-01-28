@@ -1,0 +1,5 @@
+{
+    "contents": "if (org.activiti.engine.impl.context.Context.getCommandContext() == null) {\n    throw new org.activiti.engine.ActivitiException(\"\");\n}",
+    "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/JPAEntityMappings.java",
+    "patched_lines": [126]
+}

@@ -1,0 +1,46 @@
+    private boolean isJcrData(org.apache.sling.api.resource.Resource)
+    {
+        org.apache.sling.security.impl.ContentDispositionFilter$RewriterResponse this;
+        org.apache.sling.api.resource.Resource resource, jcrContent;
+        java.lang.Object $r0, $r1;
+        boolean $z0, $z1, jcrData;
+        org.apache.sling.api.resource.ValueMap props;
+
+        this := @this: org.apache.sling.security.impl.ContentDispositionFilter$RewriterResponse;
+
+        resource := @parameter0: org.apache.sling.api.resource.Resource;
+
+        jcrData = 0;
+
+        if resource == null goto label2;
+
+        $r0 = interfaceinvoke resource.<org.apache.sling.api.resource.Resource: java.lang.Object adaptTo(java.lang.Class)>(class "Lorg/apache/sling/api/resource/ValueMap;");
+
+        props = (org.apache.sling.api.resource.ValueMap) $r0;
+
+        $z0 = interfaceinvoke props.<org.apache.sling.api.resource.ValueMap: boolean containsKey(java.lang.Object)>("jcr:data");
+
+        if $z0 == 0 goto label1;
+
+        jcrData = 1;
+
+        goto label2;
+
+     label1:
+        jcrContent = interfaceinvoke resource.<org.apache.sling.api.resource.Resource: org.apache.sling.api.resource.Resource getChild(java.lang.String)>("jcr:content");
+
+        if jcrContent == null goto label2;
+
+        $r1 = interfaceinvoke jcrContent.<org.apache.sling.api.resource.Resource: java.lang.Object adaptTo(java.lang.Class)>(class "Lorg/apache/sling/api/resource/ValueMap;");
+
+        props = (org.apache.sling.api.resource.ValueMap) $r1;
+
+        $z1 = interfaceinvoke props.<org.apache.sling.api.resource.ValueMap: boolean containsKey(java.lang.Object)>("jcr:data");
+
+        if $z1 == 0 goto label2;
+
+        jcrData = 1;
+
+     label2:
+        return jcrData;
+    }

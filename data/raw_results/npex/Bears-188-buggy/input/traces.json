@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line": 103,
+        "method_name": "paintComponent"
+    },
+    {
+        "filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+        "line": 59,
+        "method_name": "updateDisplayedValues"
+    },
+    {
+        "filepath": "src/test/java/hu/oe/nik/szfmv/visualization/DashboardTest.java",
+        "line": 32,
+        "method_name": "allRequiredValuesReceivedOnUpdate"
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+        "line": 526,
+        "method_name": "getResourcesLocal"
+    },
+    {
+        "filepath": "org/apache/felix/framework/Main.java",
+        "line": 14,
+        "method_name": "testGetResourcesLocalNullContentPath"
+    },
+    {
+        "filepath": "org/apache/felix/framework/Main.java",
+        "line": 7,
+        "method_name": "main"
+    }
+]

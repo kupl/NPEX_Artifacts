@@ -1,0 +1,5 @@
+{
+    "contents": "if (this.parameters == null) {\n    return null;\n}",
+    "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+    "patched_lines": [139]
+}

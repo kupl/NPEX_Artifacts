@@ -1,0 +1,11 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"131: rect = virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: org.apache.pdfbox.pdmodel.common.PDRectangle getRectangle()>()" [style=bold] [color=gold]
+"136: $f0 = virtualinvoke rect.<org.apache.pdfbox.pdmodel.common.PDRectangle: float getWidth()>()" [style=bold] [color=red]
+"136: $f1 = virtualinvoke rect.<org.apache.pdfbox.pdmodel.common.PDRectangle: float getHeight()>()" [style=bold] [color=red]
+"131: rect = virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: org.apache.pdfbox.pdmodel.common.PDRectangle getRectangle()>()"->"136: $f0 = virtualinvoke rect.<org.apache.pdfbox.pdmodel.common.PDRectangle: float getWidth()>()";
+
+"131: rect = virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: org.apache.pdfbox.pdmodel.common.PDRectangle getRectangle()>()"->"136: $f1 = virtualinvoke rect.<org.apache.pdfbox.pdmodel.common.PDRectangle: float getHeight()>()";
+
+}

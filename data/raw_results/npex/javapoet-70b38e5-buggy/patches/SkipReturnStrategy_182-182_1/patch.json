@@ -1,0 +1,5 @@
+{
+    "contents": "if (types.getWildcardType(null, string) == null) {\n    return;\n}",
+    "original_filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+    "patched_lines": [183]
+}

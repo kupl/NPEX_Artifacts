@@ -1,0 +1,5 @@
+{
+    "contents": "(annotation != null ? annotation : new com.puppycrawl.tools.checkstyle.api.DetailAST()).getType()",
+    "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+    "patched_lines": [130]
+}

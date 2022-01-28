@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/apache/commons/dbcp2/cpdsadapter/DriverAdapterCPDS.java",
+    "line": 768,
+    "sink_field": "contains",
+    "npe_class": "DriverAdapterCPDS",
+    "npe_method": "toString",
+    "jvmti_identify_succeed": true,
+    "deref_field": "connectionProperties",
+    "nullpointer": "connectionProperties"
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "if (attributeType.getSyntax() != null) {\n    // Check the value\n    if (attributeType.getSyntax().getSyntaxChecker() != null) {\n        if (!attributeType.getSyntax().getSyntaxChecker().isValidSyntax(upValue)) {\n            throw new org.apache.directory.api.ldap.model.exception.LdapInvalidAttributeValueException(org.apache.directory.api.ldap.model.message.ResultCodeEnum.INVALID_ATTRIBUTE_SYNTAX, org.apache.directory.api.i18n.I18n.err(org.apache.directory.api.i18n.I18n.ERR_13246_INVALID_VALUE_PER_SYNTAX));\n        }\n    } else {\n        // We should always have a SyntaxChecker\n        throw new java.lang.IllegalArgumentException(org.apache.directory.api.i18n.I18n.err(org.apache.directory.api.i18n.I18n.ERR_13219_NULL_SYNTAX_CHECKER, normValue));\n    }\n}",
+    "original_filepath": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+    "patched_lines": [272]
+}

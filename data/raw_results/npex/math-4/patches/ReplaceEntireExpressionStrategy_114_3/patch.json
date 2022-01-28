@@ -1,0 +1,5 @@
+{
+    "contents": "return point != null ? point.subtract(zero).dotProduct(direction) : 0.0",
+    "original_filepath": "org/apache/commons/math3/geometry/euclidean/threed/Line.java",
+    "patched_lines": [125]
+}

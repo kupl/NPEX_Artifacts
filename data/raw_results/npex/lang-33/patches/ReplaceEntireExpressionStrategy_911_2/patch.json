@@ -1,0 +1,5 @@
+{
+    "contents": "classes[i] = (o != null) ? o.getClass() : java.lang.Object.class",
+    "original_filepath": "org/apache/commons/lang3/ClassUtils.java",
+    "patched_lines": [923]
+}

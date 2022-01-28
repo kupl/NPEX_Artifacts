@@ -1,0 +1,5 @@
+{
+    "contents": "if (cl == null) {\n    continue;\n}",
+    "original_filepath": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+    "patched_lines": [34]
+}

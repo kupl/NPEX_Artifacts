@@ -1,0 +1,34 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"5: main" [color=gold] [style=bold]
+"120: resolveTemplate" [color=red] [style=bold]
+"75: public void <init>()" [style=bold]
+"42: <clinit>"
+"80: public void <init>(org.thymeleaf.templateresource.ITemplateResource, boolean, org.thymeleaf.templatemode.TemplateMode, boolean, org.thymeleaf.cache.ICacheEntryValidity)"
+"111: isMarkup"
+"114: fakeProvideTemplateMode" [style=bold]
+"38: public void <init>(org.apache.sling.api.resource.Resource)" [style=bold]
+"46: public void <init>()"
+"35: notNull"
+"5: main"->"75: public void <init>()";
+
+"5: main"->"120: resolveTemplate";
+
+"120: resolveTemplate"->"42: <clinit>" [style=dotted];
+
+"120: resolveTemplate"->"80: public void <init>(org.thymeleaf.templateresource.ITemplateResource, boolean, org.thymeleaf.templatemode.TemplateMode, boolean, org.thymeleaf.cache.ICacheEntryValidity)" [style=dotted];
+
+"120: resolveTemplate"->"111: isMarkup" [style=dotted];
+
+"120: resolveTemplate"->"114: fakeProvideTemplateMode";
+
+"120: resolveTemplate"->"38: public void <init>(org.apache.sling.api.resource.Resource)";
+
+"42: <clinit>"->"42: <clinit>" [style=dotted];
+
+"42: <clinit>"->"46: public void <init>()" [style=dotted];
+
+"80: public void <init>(org.thymeleaf.templateresource.ITemplateResource, boolean, org.thymeleaf.templatemode.TemplateMode, boolean, org.thymeleaf.cache.ICacheEntryValidity)"->"35: notNull" [style=dotted];
+
+}

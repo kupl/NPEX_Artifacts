@@ -1,0 +1,5 @@
+{
+    "contents": "if (g != null) {\n    super.paintComponent(g);\n}",
+    "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+    "patched_lines": [110]
+}

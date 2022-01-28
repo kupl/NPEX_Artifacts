@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+	"line": 91,
+	"deref_field": "cluster",
+	"sink_field": "addPoint",
+	"npe_class": "KMeansPlusPlusClusterer",
+	"npe_method": "assignPointsToClusters",
+	"jvmti_identify_succeed": true
+}

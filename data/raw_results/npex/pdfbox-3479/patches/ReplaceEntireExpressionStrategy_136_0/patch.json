@@ -1,0 +1,5 @@
+{
+    "contents": "java.awt.geom.Point2D.Float point2D = (rect != null) ? matrix.transformPoint(rect.getWidth(), rect.getHeight()) : null",
+    "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+    "patched_lines": [132]
+}

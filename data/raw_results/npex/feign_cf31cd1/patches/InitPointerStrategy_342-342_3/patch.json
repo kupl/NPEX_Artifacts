@@ -1,0 +1,5 @@
+{
+    "contents": "if (headers == null) {\n    headers = java.util.Collections.emptyMap();\n}",
+    "original_filepath": "core/src/main/java/feign/Response.java",
+    "patched_lines": [341]
+}

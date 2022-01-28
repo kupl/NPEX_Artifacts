@@ -1,0 +1,173 @@
+    public void setAppearanceValue(java.lang.String) throws java.io.IOException
+    {
+        org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper this;
+        java.lang.String apValue;
+        org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget widget;
+        java.util.Iterator l3;
+        org.apache.pdfbox.pdmodel.interactive.action.PDFormFieldAdditionalActions actions;
+        org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceEntry appearance;
+        org.apache.pdfbox.pdmodel.common.PDRectangle rect, $r8;
+        int rotation, $i0;
+        org.apache.pdfbox.util.Matrix matrix;
+        java.awt.geom.Point2D$Float point2D;
+        org.apache.pdfbox.pdmodel.interactive.form.PDVariableText $r0, $r3, $r5;
+        java.util.List $r1;
+        java.lang.Object $r2;
+        boolean $z0, $z1;
+        org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream $r4, appearanceStream;
+        org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm $r6;
+        org.apache.pdfbox.pdmodel.PDDocument $r7;
+        double $d0, $d1, $d2, $d3;
+        float $f0, $f1, $f2, $f3, $f4, $f5;
+        java.awt.geom.AffineTransform $r9;
+        org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceCharacteristicsDictionary $r10;
+        org.apache.pdfbox.pdmodel.common.PDStream $r11;
+        org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceDictionary $r12, appearanceDict;
+        org.apache.pdfbox.pdmodel.interactive.action.PDAction $r13;
+        org.apache.pdfbox.cos.COSDictionary $r14;
+        org.apache.pdfbox.cos.COSName $r15;
+        org.apache.pdfbox.cos.COSBase $r16;
+
+        this := @this: org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper;
+
+        apValue := @parameter0: java.lang.String;
+
+        this.<org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper: java.lang.String value> = apValue;
+
+        $r0 = this.<org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper: org.apache.pdfbox.pdmodel.interactive.form.PDVariableText field>;
+
+        $r1 = virtualinvoke $r0.<org.apache.pdfbox.pdmodel.interactive.form.PDVariableText: java.util.List getWidgets()>();
+
+        l3 = interfaceinvoke $r1.<java.util.List: java.util.Iterator iterator()>();
+
+        goto label9;
+
+     label1:
+        $r2 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>();
+
+        widget = (org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget) $r2;
+
+        $r3 = this.<org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper: org.apache.pdfbox.pdmodel.interactive.form.PDVariableText field>;
+
+        actions = virtualinvoke $r3.<org.apache.pdfbox.pdmodel.interactive.form.PDVariableText: org.apache.pdfbox.pdmodel.interactive.action.PDFormFieldAdditionalActions getActions()>();
+
+        if actions == null goto label2;
+
+        $r13 = virtualinvoke actions.<org.apache.pdfbox.pdmodel.interactive.action.PDFormFieldAdditionalActions: org.apache.pdfbox.pdmodel.interactive.action.PDAction getF()>();
+
+        if $r13 == null goto label2;
+
+        $r14 = virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: org.apache.pdfbox.cos.COSDictionary getCOSObject()>();
+
+        $r15 = <org.apache.pdfbox.cos.COSName: org.apache.pdfbox.cos.COSName AP>;
+
+        $r16 = virtualinvoke $r14.<org.apache.pdfbox.cos.COSDictionary: org.apache.pdfbox.cos.COSBase getDictionaryObject(org.apache.pdfbox.cos.COSName)>($r15);
+
+        if $r16 == null goto label9;
+
+     label2:
+        appearanceDict = virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceDictionary getAppearance()>();
+
+        if appearanceDict != null goto label3;
+
+        $r12 = new org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceDictionary;
+
+        specialinvoke $r12.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceDictionary: void <init>()>();
+
+        appearanceDict = $r12;
+
+        virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: void setAppearance(org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceDictionary)>($r12);
+
+     label3:
+        appearance = virtualinvoke appearanceDict.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceDictionary: org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceEntry getNormalAppearance()>();
+
+        $z0 = virtualinvoke appearance.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceEntry: boolean isStream()>();
+
+        if $z0 == 0 goto label4;
+
+        appearanceStream = virtualinvoke appearance.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceEntry: org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream getAppearanceStream()>();
+
+        goto label6;
+
+     label4:
+        $r4 = new org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream;
+
+        $r5 = this.<org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper: org.apache.pdfbox.pdmodel.interactive.form.PDVariableText field>;
+
+        $r6 = virtualinvoke $r5.<org.apache.pdfbox.pdmodel.interactive.form.PDVariableText: org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm getAcroForm()>();
+
+        $r7 = virtualinvoke $r6.<org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm: org.apache.pdfbox.pdmodel.PDDocument getDocument()>();
+
+        specialinvoke $r4.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream: void <init>(org.apache.pdfbox.pdmodel.PDDocument)>($r7);
+
+        appearanceStream = $r4;
+
+        rect = virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: org.apache.pdfbox.pdmodel.common.PDRectangle getRectangle()>();
+
+        rotation = specialinvoke this.<org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper: int resolveRotation(org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget)>(widget);
+
+        $d0 = (double) rotation;
+
+        $d1 = staticinvoke <java.lang.Math: double toRadians(double)>($d0);
+
+        matrix = staticinvoke <org.apache.pdfbox.util.Matrix: org.apache.pdfbox.util.Matrix getRotateInstance(double,float,float)>($d1, 0.0F, 0.0F);
+
+        $f0 = virtualinvoke rect.<org.apache.pdfbox.pdmodel.common.PDRectangle: float getWidth()>();
+
+        if rect == null goto label5;
+
+        $f1 = virtualinvoke rect.<org.apache.pdfbox.pdmodel.common.PDRectangle: float getHeight()>();
+
+        point2D = virtualinvoke matrix.<org.apache.pdfbox.util.Matrix: java.awt.geom.Point2D$Float transformPoint(float,float)>($f0, $f1);
+
+        $r8 = new org.apache.pdfbox.pdmodel.common.PDRectangle;
+
+        $d2 = virtualinvoke point2D.<java.awt.geom.Point2D$Float: double getX()>();
+
+        $f2 = (float) $d2;
+
+        $f3 = staticinvoke <java.lang.Math: float abs(float)>($f2);
+
+        $d3 = virtualinvoke point2D.<java.awt.geom.Point2D$Float: double getY()>();
+
+        $f4 = (float) $d3;
+
+        $f5 = staticinvoke <java.lang.Math: float abs(float)>($f4);
+
+        specialinvoke $r8.<org.apache.pdfbox.pdmodel.common.PDRectangle: void <init>(float,float)>($f3, $f5);
+
+        virtualinvoke $r4.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream: void setBBox(org.apache.pdfbox.pdmodel.common.PDRectangle)>($r8);
+
+        $r9 = specialinvoke this.<org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper: java.awt.geom.AffineTransform calculateMatrix(org.apache.pdfbox.pdmodel.common.PDRectangle,int)>($r8, rotation);
+
+        virtualinvoke $r4.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream: void setMatrix(java.awt.geom.AffineTransform)>($r9);
+
+     label5:
+        virtualinvoke $r4.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream: void setFormType(int)>(1);
+
+        virtualinvoke appearanceDict.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceDictionary: void setNormalAppearance(org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream)>($r4);
+
+     label6:
+        $r10 = virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceCharacteristicsDictionary getAppearanceCharacteristics()>();
+
+        if $r10 != null goto label7;
+
+        $r11 = virtualinvoke appearanceStream.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream: org.apache.pdfbox.pdmodel.common.PDStream getContentStream()>();
+
+        $i0 = virtualinvoke $r11.<org.apache.pdfbox.pdmodel.common.PDStream: int getLength()>();
+
+        if $i0 != 0 goto label8;
+
+     label7:
+        specialinvoke this.<org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper: void initializeAppearanceContent(org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget,org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream)>(widget, appearanceStream);
+
+     label8:
+        specialinvoke this.<org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper: void setAppearanceContent(org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget,org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAppearanceStream)>(widget, appearanceStream);
+
+     label9:
+        $z1 = interfaceinvoke l3.<java.util.Iterator: boolean hasNext()>();
+
+        if $z1 != 0 goto label1;
+
+        return;
+    }

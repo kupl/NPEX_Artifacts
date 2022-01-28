@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"126: $z0 = virtualinvoke templateMode.<org.thymeleaf.templatemode.TemplateMode: boolean isMarkup()>()" [style=bold] [color=red]
+"123: templateMode = virtualinvoke this.<org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolver: org.thymeleaf.templatemode.TemplateMode fakeProvideTemplateMode()>()" [style=bold] [color=gold]
+"123: templateMode = virtualinvoke this.<org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolver: org.thymeleaf.templatemode.TemplateMode fakeProvideTemplateMode()>()"->"126: $z0 = virtualinvoke templateMode.<org.thymeleaf.templatemode.TemplateMode: boolean isMarkup()>()";
+
+}

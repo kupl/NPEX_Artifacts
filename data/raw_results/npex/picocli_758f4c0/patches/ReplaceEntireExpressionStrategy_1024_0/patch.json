@@ -1,0 +1,5 @@
+{
+    "contents": "return field.getAnnotation(picocli.CommandLine.Parameters.class) != null ? picocli.CommandLine.Range.valueOf(field.getAnnotation(picocli.CommandLine.Parameters.class).index()) : null",
+    "original_filepath": "src/main/java/picocli/CommandLine.java",
+    "patched_lines": [1032]
+}

@@ -1,0 +1,164 @@
+    private void encryptDataAESother(byte[], java.io.InputStream, java.io.OutputStream, boolean) throws java.io.IOException
+    {
+        org.apache.pdfbox.pdmodel.encryption.SecurityHandler this;
+        byte[] finalKey, iv, buffer, $r2, $r3;
+        java.io.InputStream data;
+        java.io.OutputStream output;
+        boolean decrypt, $z0;
+        int $i0;
+        javax.crypto.NoSuchPaddingException $r5;
+        java.security.InvalidKeyException $r7;
+        java.security.NoSuchAlgorithmException $r9;
+        java.security.InvalidAlgorithmParameterException $r11;
+        javax.crypto.BadPaddingException $r13;
+        javax.crypto.IllegalBlockSizeException $r15;
+        javax.crypto.Cipher decryptCipher;
+        byte $b1;
+        java.lang.RuntimeException tmp$1727639117;
+        javax.crypto.spec.SecretKeySpec tmp$1227607266;
+        javax.crypto.spec.IvParameterSpec tmp$508632070;
+        java.io.IOException tmp$279646038, tmp$964363006, tmp$1919770463, tmp$1478899686, tmp$1542562155;
+        java.security.Key tmp$1639901910;
+        java.security.spec.AlgorithmParameterSpec tmp$1303176924;
+        java.lang.Throwable tmp$1287205409, tmp$1183870694, tmp$625200116;
+
+        this := @this: org.apache.pdfbox.pdmodel.encryption.SecurityHandler;
+
+        finalKey := @parameter0: byte[];
+
+        data := @parameter1: java.io.InputStream;
+
+        output := @parameter2: java.io.OutputStream;
+
+        decrypt := @parameter3: boolean;
+
+        iv = newarray (byte)[16];
+
+        $z0 = specialinvoke this.<org.apache.pdfbox.pdmodel.encryption.SecurityHandler: boolean prepareAESInitializationVector(boolean,byte[],java.io.InputStream,java.io.OutputStream)>(decrypt, iv, data, output);
+
+        if $z0 != 0 goto label01;
+
+        return;
+
+     label01:
+        decryptCipher = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>("AES/CBC/PKCS5Padding");
+
+     label02:
+        goto label04;
+
+     label03:
+        $r9 := @caughtexception;
+
+        tmp$1727639117 = new java.lang.RuntimeException;
+
+        specialinvoke tmp$1727639117.<java.lang.RuntimeException: void <init>(java.lang.Throwable)>($r9);
+
+        throw tmp$1727639117;
+
+     label04:
+        tmp$1227607266 = new javax.crypto.spec.SecretKeySpec;
+
+        specialinvoke tmp$1227607266.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(finalKey, "AES");
+
+        tmp$508632070 = new javax.crypto.spec.IvParameterSpec;
+
+        specialinvoke tmp$508632070.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(iv);
+
+        if decrypt == 0 goto label05;
+
+        $b1 = 2;
+
+        goto label06;
+
+     label05:
+        $b1 = 1;
+
+     label06:
+        tmp$1639901910 = (java.security.Key) tmp$1227607266;
+
+        tmp$1303176924 = (java.security.spec.AlgorithmParameterSpec) tmp$508632070;
+
+        virtualinvoke decryptCipher.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>($b1, tmp$1639901910, tmp$1303176924);
+
+        buffer = newarray (byte)[256];
+
+        goto label08;
+
+     label07:
+        $r2 = virtualinvoke decryptCipher.<javax.crypto.Cipher: byte[] update(byte[],int,int)>(buffer, 0, $i0);
+
+        staticinvoke <system.SystemLib: void write(byte[])>($r2);
+
+     label08:
+        $i0 = virtualinvoke data.<java.io.InputStream: int read(byte[])>(buffer);
+
+        if $i0 != -1 goto label07;
+
+        $r3 = virtualinvoke decryptCipher.<javax.crypto.Cipher: byte[] doFinal()>();
+
+        virtualinvoke output.<java.io.OutputStream: void write(byte[])>($r3);
+
+     label09:
+        goto label15;
+
+     label10:
+        $r7 := @caughtexception;
+
+        tmp$279646038 = new java.io.IOException;
+
+        specialinvoke tmp$279646038.<java.io.IOException: void <init>(java.lang.Throwable)>($r7);
+
+        throw tmp$279646038;
+
+     label11:
+        $r11 := @caughtexception;
+
+        tmp$964363006 = new java.io.IOException;
+
+        specialinvoke tmp$964363006.<java.io.IOException: void <init>(java.lang.Throwable)>($r11);
+
+        throw tmp$964363006;
+
+     label12:
+        $r5 := @caughtexception;
+
+        tmp$1919770463 = new java.io.IOException;
+
+        tmp$1287205409 = (java.lang.Throwable) $r5;
+
+        specialinvoke tmp$1919770463.<java.io.IOException: void <init>(java.lang.Throwable)>(tmp$1287205409);
+
+        throw tmp$1919770463;
+
+     label13:
+        $r15 := @caughtexception;
+
+        tmp$1478899686 = new java.io.IOException;
+
+        tmp$1183870694 = (java.lang.Throwable) $r15;
+
+        specialinvoke tmp$1478899686.<java.io.IOException: void <init>(java.lang.Throwable)>(tmp$1183870694);
+
+        throw tmp$1478899686;
+
+     label14:
+        $r13 := @caughtexception;
+
+        tmp$1542562155 = new java.io.IOException;
+
+        tmp$625200116 = (java.lang.Throwable) $r13;
+
+        specialinvoke tmp$1542562155.<java.io.IOException: void <init>(java.lang.Throwable)>(tmp$625200116);
+
+        throw tmp$1542562155;
+
+     label15:
+        return;
+
+        catch java.security.NoSuchAlgorithmException from label01 to label02 with label03;
+        catch java.security.InvalidKeyException from label01 to label09 with label10;
+        catch java.security.InvalidAlgorithmParameterException from label01 to label09 with label11;
+        catch javax.crypto.NoSuchPaddingException from label01 to label09 with label12;
+        catch javax.crypto.IllegalBlockSizeException from label01 to label09 with label13;
+        catch javax.crypto.BadPaddingException from label01 to label09 with label14;
+    }

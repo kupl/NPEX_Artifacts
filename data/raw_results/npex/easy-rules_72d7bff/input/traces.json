@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "easy-rules-mvel/src/test/java/org/jeasy/rules/mvel/MVELRuleDefinitionReaderTest.java",
+        "line": 80,
+        "method_name": "testRuleDefinitionReading_withDefaultValues"
+    }
+]

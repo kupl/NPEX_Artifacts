@@ -1,0 +1,14 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"4473: r = virtualinvoke this.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRendererForDataset(org.jfree.data.xy.XYDataset)>(annotation#29)" [style=bold] [color=gold]
+"4493: c = interfaceinvoke r.<org.jfree.chart.renderer.xy.XYItemRenderer: java.util.Collection getAnnotations()>()" [style=bold] [color=red]
+"4485: $r5 = interfaceinvoke r.<org.jfree.chart.renderer.xy.XYItemRenderer: org.jfree.data.Range findRangeBounds(org.jfree.data.xy.XYDataset)>(annotation#29)" [color=red]
+"4476: $r7 = interfaceinvoke r.<org.jfree.chart.renderer.xy.XYItemRenderer: org.jfree.data.Range findDomainBounds(org.jfree.data.xy.XYDataset)>(annotation#29)" [color=red]
+"4473: r = virtualinvoke this.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRendererForDataset(org.jfree.data.xy.XYDataset)>(annotation#29)"->"4476: $r7 = interfaceinvoke r.<org.jfree.chart.renderer.xy.XYItemRenderer: org.jfree.data.Range findDomainBounds(org.jfree.data.xy.XYDataset)>(annotation#29)" [style=dotted];
+
+"4473: r = virtualinvoke this.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRendererForDataset(org.jfree.data.xy.XYDataset)>(annotation#29)"->"4485: $r5 = interfaceinvoke r.<org.jfree.chart.renderer.xy.XYItemRenderer: org.jfree.data.Range findRangeBounds(org.jfree.data.xy.XYDataset)>(annotation#29)" [style=dotted];
+
+"4473: r = virtualinvoke this.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRendererForDataset(org.jfree.data.xy.XYDataset)>(annotation#29)"->"4493: c = interfaceinvoke r.<org.jfree.chart.renderer.xy.XYItemRenderer: java.util.Collection getAnnotations()>()";
+
+}

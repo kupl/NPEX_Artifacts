@@ -1,0 +1,11 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"444: $r2 = virtualinvoke $r1.<org.apache.pdfbox.cos.COSDictionary: org.apache.pdfbox.cos.COSBase getItem(org.apache.pdfbox.cos.COSName)>($r0)" [label=1] [style=bold] [color=gold]
+"444: defaultAppearance = (org.apache.pdfbox.cos.COSString) $r2" [label=1] [style=bold]
+"445: $r3 = virtualinvoke defaultAppearance.<org.apache.pdfbox.cos.COSString: java.lang.String getString()>()" [label=1] [style=bold] [color=red]
+"444: $r2 = virtualinvoke $r1.<org.apache.pdfbox.cos.COSDictionary: org.apache.pdfbox.cos.COSBase getItem(org.apache.pdfbox.cos.COSName)>($r0)"->"444: defaultAppearance = (org.apache.pdfbox.cos.COSString) $r2";
+
+"444: defaultAppearance = (org.apache.pdfbox.cos.COSString) $r2"->"445: $r3 = virtualinvoke defaultAppearance.<org.apache.pdfbox.cos.COSString: java.lang.String getString()>()";
+
+}

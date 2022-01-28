@@ -1,0 +1,5 @@
+{
+    "contents": "if (policy == null) {\n    throw new org.apache.maven.shared.release.policy.PolicyException(\"\");\n}",
+    "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+    "patched_lines": [324]
+}

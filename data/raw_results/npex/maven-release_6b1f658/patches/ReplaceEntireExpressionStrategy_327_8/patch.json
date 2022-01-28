@@ -1,0 +1,5 @@
+{
+    "contents": "(policy != null ? policy.getReleaseVersion(request) : new org.apache.maven.shared.release.policy.version.VersionPolicyResult()).getVersion()",
+    "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+    "patched_lines": [324]
+}

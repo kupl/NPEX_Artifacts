@@ -1,0 +1,436 @@
+    protected org.jfree.chart.axis.AxisState drawLabel(java.lang.String, java.awt.Graphics2D, java.awt.geom.Rectangle2D, java.awt.geom.Rectangle2D, org.jfree.chart.util.RectangleEdge, org.jfree.chart.axis.AxisState, org.jfree.chart.plot.PlotRenderingInfo)
+    {
+        org.jfree.chart.axis.Axis this;
+        java.lang.String label, $r6, $r7;
+        java.awt.Graphics2D g2;
+        java.awt.geom.Rectangle2D plotArea, dataArea, labelBounds;
+        org.jfree.chart.util.RectangleEdge edge, $r1, $r2, $r3, $r4;
+        org.jfree.chart.axis.AxisState state, ret0;
+        org.jfree.chart.plot.PlotRenderingInfo plotState;
+        java.awt.Font font;
+        org.jfree.chart.util.RectangleInsets insets;
+        java.awt.FontMetrics fm;
+        boolean $z0;
+        java.awt.Paint $r0;
+        org.jfree.chart.entity.AxisLabelEntity $r5;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, $d16, $d17, $d18, $d19, $d20, $d21, $d22, $d23, $d24, $d25, $d26, $d27, $d28, $d29, $d30, $d31, $d32, $d33, $d34, $d35, $d36, $d37, $d38, $d39, $d40, $d41, $d42, $d43, $d44, $d45, $d46, $d47, $d48, $d49, $d50, $d51, $d52, $d53, $d54, $d55, $d56, $d57, $d58, $d59, $d60, $d61, $d62, $d63, $d64, $d65, $d66, $d67, $d68, $d69, $d70, $d71, $d72, $d73, $d74, $d75, $d76, $d77, $d78;
+        org.jfree.chart.text.TextAnchor $r8, $r9, $r11, $r12, $r14, $r15, $r17, $r18;
+        java.awt.geom.Rectangle2D$Float $r10, $r13, $r16, $r19, hotspot;
+        float $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $f10, $f11, $f12, $f13, $f14, $f15, w, h, labelx, labely;
+        java.lang.IllegalArgumentException $r20;
+        java.awt.geom.AffineTransform t;
+        java.awt.Shape rotatedLabelBounds;
+        org.jfree.chart.ChartRenderingInfo t#35;
+        org.jfree.chart.entity.EntityCollection rotatedLabelBounds#36;
+
+        this := @this: org.jfree.chart.axis.Axis;
+
+        label := @parameter0: java.lang.String;
+
+        g2 := @parameter1: java.awt.Graphics2D;
+
+        plotArea := @parameter2: java.awt.geom.Rectangle2D;
+
+        dataArea := @parameter3: java.awt.geom.Rectangle2D;
+
+        edge := @parameter4: org.jfree.chart.util.RectangleEdge;
+
+        state := @parameter5: org.jfree.chart.axis.AxisState;
+
+        plotState := @parameter6: org.jfree.chart.plot.PlotRenderingInfo;
+
+        if state != null goto label1;
+
+        $r20 = new java.lang.IllegalArgumentException;
+
+        specialinvoke $r20.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Null \'state\' argument.");
+
+        throw $r20;
+
+     label1:
+        if label == null goto label2;
+
+        $z0 = virtualinvoke label.<java.lang.String: boolean equals(java.lang.Object)>("");
+
+        if $z0 == 0 goto label3;
+
+     label2:
+        return state;
+
+     label3:
+        font = virtualinvoke this.<org.jfree.chart.axis.Axis: java.awt.Font getLabelFont()>();
+
+        insets = virtualinvoke this.<org.jfree.chart.axis.Axis: org.jfree.chart.util.RectangleInsets getLabelInsets()>();
+
+        virtualinvoke g2.<java.awt.Graphics2D: void setFont(java.awt.Font)>(font);
+
+        $r0 = virtualinvoke this.<org.jfree.chart.axis.Axis: java.awt.Paint getLabelPaint()>();
+
+        virtualinvoke g2.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r0);
+
+        fm = virtualinvoke g2.<java.awt.Graphics2D: java.awt.FontMetrics getFontMetrics()>();
+
+        labelBounds = staticinvoke <org.jfree.chart.text.TextUtilities: java.awt.geom.Rectangle2D getTextBounds(java.lang.String,java.awt.Graphics2D,java.awt.FontMetrics)>(label, g2, fm);
+
+        hotspot = null;
+
+        $r1 = <org.jfree.chart.util.RectangleEdge: org.jfree.chart.util.RectangleEdge TOP>;
+
+        if edge != $r1 goto label4;
+
+        $d61 = virtualinvoke this.<org.jfree.chart.axis.Axis: double getLabelAngle()>();
+
+        $d62 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getCenterX()>();
+
+        $d63 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getCenterY()>();
+
+        t = staticinvoke <java.awt.geom.AffineTransform: java.awt.geom.AffineTransform getRotateInstance(double,double,double)>($d61, $d62, $d63);
+
+        rotatedLabelBounds = virtualinvoke t.<java.awt.geom.AffineTransform: java.awt.Shape createTransformedShape(java.awt.Shape)>(labelBounds);
+
+        labelBounds = interfaceinvoke rotatedLabelBounds.<java.awt.Shape: java.awt.geom.Rectangle2D getBounds2D()>();
+
+        $d64 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getWidth()>();
+
+        w = (float) $d64;
+
+        $d65 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getHeight()>();
+
+        h = (float) $d65;
+
+        $d66 = virtualinvoke dataArea.<java.awt.geom.Rectangle2D: double getCenterX()>();
+
+        labelx = (float) $d66;
+
+        $d67 = virtualinvoke state.<org.jfree.chart.axis.AxisState: double getCursor()>();
+
+        $d68 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getBottom()>();
+
+        $d71 = $d67 - $d68;
+
+        $d69 = (double) h;
+
+        $d70 = $d69 / 2.0;
+
+        $d72 = $d71 - $d70;
+
+        labely = (float) $d72;
+
+        $r17 = <org.jfree.chart.text.TextAnchor: org.jfree.chart.text.TextAnchor CENTER>;
+
+        $d73 = virtualinvoke this.<org.jfree.chart.axis.Axis: double getLabelAngle()>();
+
+        $r18 = <org.jfree.chart.text.TextAnchor: org.jfree.chart.text.TextAnchor CENTER>;
+
+        staticinvoke <org.jfree.chart.text.TextUtilities: void drawRotatedString(java.lang.String,java.awt.Graphics2D,float,float,org.jfree.chart.text.TextAnchor,double,org.jfree.chart.text.TextAnchor)>(label, g2, labelx, labely, $r17, $d73, $r18);
+
+        $r19 = new java.awt.geom.Rectangle2D$Float;
+
+        $f12 = w / 2.0F;
+
+        $f15 = labelx - $f12;
+
+        $f13 = h / 2.0F;
+
+        $f14 = labely - $f13;
+
+        specialinvoke $r19.<java.awt.geom.Rectangle2D$Float: void <init>(float,float,float,float)>($f15, $f14, w, h);
+
+        hotspot = $r19;
+
+        $d74 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getTop()>();
+
+        $d75 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getHeight()>();
+
+        $d76 = $d74 + $d75;
+
+        $d77 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getBottom()>();
+
+        $d78 = $d76 + $d77;
+
+        virtualinvoke state.<org.jfree.chart.axis.AxisState: void cursorUp(double)>($d78);
+
+        goto label7;
+
+     label4:
+        $r2 = <org.jfree.chart.util.RectangleEdge: org.jfree.chart.util.RectangleEdge BOTTOM>;
+
+        if edge != $r2 goto label5;
+
+        $d43 = virtualinvoke this.<org.jfree.chart.axis.Axis: double getLabelAngle()>();
+
+        $d44 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getCenterX()>();
+
+        $d45 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getCenterY()>();
+
+        t = staticinvoke <java.awt.geom.AffineTransform: java.awt.geom.AffineTransform getRotateInstance(double,double,double)>($d43, $d44, $d45);
+
+        rotatedLabelBounds = virtualinvoke t.<java.awt.geom.AffineTransform: java.awt.Shape createTransformedShape(java.awt.Shape)>(labelBounds);
+
+        labelBounds = interfaceinvoke rotatedLabelBounds.<java.awt.Shape: java.awt.geom.Rectangle2D getBounds2D()>();
+
+        $d46 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getWidth()>();
+
+        w = (float) $d46;
+
+        $d47 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getHeight()>();
+
+        h = (float) $d47;
+
+        $d48 = virtualinvoke dataArea.<java.awt.geom.Rectangle2D: double getCenterX()>();
+
+        labelx = (float) $d48;
+
+        $d49 = virtualinvoke state.<org.jfree.chart.axis.AxisState: double getCursor()>();
+
+        $d50 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getTop()>();
+
+        $d53 = $d49 + $d50;
+
+        $d51 = (double) h;
+
+        $d52 = $d51 / 2.0;
+
+        $d54 = $d53 + $d52;
+
+        labely = (float) $d54;
+
+        $r14 = <org.jfree.chart.text.TextAnchor: org.jfree.chart.text.TextAnchor CENTER>;
+
+        $d55 = virtualinvoke this.<org.jfree.chart.axis.Axis: double getLabelAngle()>();
+
+        $r15 = <org.jfree.chart.text.TextAnchor: org.jfree.chart.text.TextAnchor CENTER>;
+
+        staticinvoke <org.jfree.chart.text.TextUtilities: void drawRotatedString(java.lang.String,java.awt.Graphics2D,float,float,org.jfree.chart.text.TextAnchor,double,org.jfree.chart.text.TextAnchor)>(label, g2, labelx, labely, $r14, $d55, $r15);
+
+        $r16 = new java.awt.geom.Rectangle2D$Float;
+
+        $f8 = w / 2.0F;
+
+        $f11 = labelx - $f8;
+
+        $f9 = h / 2.0F;
+
+        $f10 = labely - $f9;
+
+        specialinvoke $r16.<java.awt.geom.Rectangle2D$Float: void <init>(float,float,float,float)>($f11, $f10, w, h);
+
+        hotspot = $r16;
+
+        $d56 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getTop()>();
+
+        $d57 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getHeight()>();
+
+        $d58 = $d56 + $d57;
+
+        $d59 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getBottom()>();
+
+        $d60 = $d58 + $d59;
+
+        virtualinvoke state.<org.jfree.chart.axis.AxisState: void cursorDown(double)>($d60);
+
+        goto label7;
+
+     label5:
+        $r3 = <org.jfree.chart.util.RectangleEdge: org.jfree.chart.util.RectangleEdge LEFT>;
+
+        if edge != $r3 goto label6;
+
+        $d23 = virtualinvoke this.<org.jfree.chart.axis.Axis: double getLabelAngle()>();
+
+        $d24 = $d23 - 1.5707963267948966;
+
+        $d25 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getCenterX()>();
+
+        $d26 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getCenterY()>();
+
+        t = staticinvoke <java.awt.geom.AffineTransform: java.awt.geom.AffineTransform getRotateInstance(double,double,double)>($d24, $d25, $d26);
+
+        rotatedLabelBounds = virtualinvoke t.<java.awt.geom.AffineTransform: java.awt.Shape createTransformedShape(java.awt.Shape)>(labelBounds);
+
+        labelBounds = interfaceinvoke rotatedLabelBounds.<java.awt.Shape: java.awt.geom.Rectangle2D getBounds2D()>();
+
+        $d27 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getWidth()>();
+
+        w = (float) $d27;
+
+        $d28 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getHeight()>();
+
+        h = (float) $d28;
+
+        $d29 = virtualinvoke state.<org.jfree.chart.axis.AxisState: double getCursor()>();
+
+        $d30 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getRight()>();
+
+        $d33 = $d29 - $d30;
+
+        $d31 = (double) w;
+
+        $d32 = $d31 / 2.0;
+
+        $d34 = $d33 - $d32;
+
+        labelx = (float) $d34;
+
+        $d35 = virtualinvoke dataArea.<java.awt.geom.Rectangle2D: double getCenterY()>();
+
+        labely = (float) $d35;
+
+        $r11 = <org.jfree.chart.text.TextAnchor: org.jfree.chart.text.TextAnchor CENTER>;
+
+        $d36 = virtualinvoke this.<org.jfree.chart.axis.Axis: double getLabelAngle()>();
+
+        $d37 = $d36 - 1.5707963267948966;
+
+        $r12 = <org.jfree.chart.text.TextAnchor: org.jfree.chart.text.TextAnchor CENTER>;
+
+        staticinvoke <org.jfree.chart.text.TextUtilities: void drawRotatedString(java.lang.String,java.awt.Graphics2D,float,float,org.jfree.chart.text.TextAnchor,double,org.jfree.chart.text.TextAnchor)>(label, g2, labelx, labely, $r11, $d37, $r12);
+
+        $r13 = new java.awt.geom.Rectangle2D$Float;
+
+        $f4 = w / 2.0F;
+
+        $f7 = labelx - $f4;
+
+        $f5 = h / 2.0F;
+
+        $f6 = labely - $f5;
+
+        specialinvoke $r13.<java.awt.geom.Rectangle2D$Float: void <init>(float,float,float,float)>($f7, $f6, w, h);
+
+        hotspot = $r13;
+
+        $d38 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getLeft()>();
+
+        $d39 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getWidth()>();
+
+        $d40 = $d38 + $d39;
+
+        $d41 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getRight()>();
+
+        $d42 = $d40 + $d41;
+
+        virtualinvoke state.<org.jfree.chart.axis.AxisState: void cursorLeft(double)>($d42);
+
+        goto label7;
+
+     label6:
+        $r4 = <org.jfree.chart.util.RectangleEdge: org.jfree.chart.util.RectangleEdge RIGHT>;
+
+        if edge != $r4 goto label7;
+
+        $d0 = virtualinvoke this.<org.jfree.chart.axis.Axis: double getLabelAngle()>();
+
+        $d1 = $d0 + 1.5707963267948966;
+
+        $d2 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getCenterX()>();
+
+        $d3 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getCenterY()>();
+
+        t = staticinvoke <java.awt.geom.AffineTransform: java.awt.geom.AffineTransform getRotateInstance(double,double,double)>($d1, $d2, $d3);
+
+        rotatedLabelBounds = virtualinvoke t.<java.awt.geom.AffineTransform: java.awt.Shape createTransformedShape(java.awt.Shape)>(labelBounds);
+
+        labelBounds = interfaceinvoke rotatedLabelBounds.<java.awt.Shape: java.awt.geom.Rectangle2D getBounds2D()>();
+
+        $d4 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getWidth()>();
+
+        w = (float) $d4;
+
+        $d5 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getHeight()>();
+
+        h = (float) $d5;
+
+        $d6 = virtualinvoke state.<org.jfree.chart.axis.AxisState: double getCursor()>();
+
+        $d7 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getLeft()>();
+
+        $d10 = $d6 + $d7;
+
+        $d8 = (double) w;
+
+        $d9 = $d8 / 2.0;
+
+        $d11 = $d10 + $d9;
+
+        labelx = (float) $d11;
+
+        $d12 = virtualinvoke dataArea.<java.awt.geom.Rectangle2D: double getY()>();
+
+        $d13 = virtualinvoke dataArea.<java.awt.geom.Rectangle2D: double getHeight()>();
+
+        $d14 = $d13 / 2.0;
+
+        $d15 = $d12 + $d14;
+
+        labely = (float) $d15;
+
+        $r8 = <org.jfree.chart.text.TextAnchor: org.jfree.chart.text.TextAnchor CENTER>;
+
+        $d16 = virtualinvoke this.<org.jfree.chart.axis.Axis: double getLabelAngle()>();
+
+        $d17 = $d16 + 1.5707963267948966;
+
+        $r9 = <org.jfree.chart.text.TextAnchor: org.jfree.chart.text.TextAnchor CENTER>;
+
+        staticinvoke <org.jfree.chart.text.TextUtilities: void drawRotatedString(java.lang.String,java.awt.Graphics2D,float,float,org.jfree.chart.text.TextAnchor,double,org.jfree.chart.text.TextAnchor)>(label, g2, labelx, labely, $r8, $d17, $r9);
+
+        $r10 = new java.awt.geom.Rectangle2D$Float;
+
+        $f0 = w / 2.0F;
+
+        $f3 = labelx - $f0;
+
+        $f1 = h / 2.0F;
+
+        $f2 = labely - $f1;
+
+        specialinvoke $r10.<java.awt.geom.Rectangle2D$Float: void <init>(float,float,float,float)>($f3, $f2, w, h);
+
+        hotspot = $r10;
+
+        $d18 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getLeft()>();
+
+        $d19 = virtualinvoke labelBounds.<java.awt.geom.Rectangle2D: double getWidth()>();
+
+        $d20 = $d18 + $d19;
+
+        $d21 = virtualinvoke insets.<org.jfree.chart.util.RectangleInsets: double getRight()>();
+
+        $d22 = $d20 + $d21;
+
+        virtualinvoke state.<org.jfree.chart.axis.AxisState: void cursorRight(double)>($d22);
+
+     label7:
+        if plotState == null goto label9;
+
+        if hotspot == null goto label9;
+
+        t#35 = virtualinvoke plotState.<org.jfree.chart.plot.PlotRenderingInfo: org.jfree.chart.ChartRenderingInfo getOwner()>();
+
+        if t#35 != null goto label8;
+
+        ret0 = new org.jfree.chart.axis.AxisState;
+
+        specialinvoke ret0.<org.jfree.chart.axis.AxisState: void <init>()>();
+
+        return ret0;
+
+     label8:
+        rotatedLabelBounds#36 = virtualinvoke t#35.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection getEntityCollection()>();
+
+        if rotatedLabelBounds#36 == null goto label9;
+
+        $r5 = new org.jfree.chart.entity.AxisLabelEntity;
+
+        $r7 = this.<org.jfree.chart.axis.Axis: java.lang.String labelToolTip>;
+
+        $r6 = this.<org.jfree.chart.axis.Axis: java.lang.String labelURL>;
+
+        specialinvoke $r5.<org.jfree.chart.entity.AxisLabelEntity: void <init>(org.jfree.chart.axis.Axis,java.awt.Shape,java.lang.String,java.lang.String)>(this, hotspot, $r7, $r6);
+
+        interfaceinvoke rotatedLabelBounds#36.<org.jfree.chart.entity.EntityCollection: void add(org.jfree.chart.entity.ChartEntity)>($r5);
+
+     label9:
+        return state;
+    }

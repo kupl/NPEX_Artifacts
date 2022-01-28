@@ -1,0 +1,10 @@
+{
+    "filepath": "ninja-core/src/main/java/ninja/Route.java",
+    "line": 128,
+    "sink_field": "keySet",
+    "npe_class": "Route",
+    "npe_method": "getPathParametersEncoded",
+    "jvmti_identify_succeed": true,
+    "deref_field": "parameters",
+    "nullpointer": "this.parameters"
+}

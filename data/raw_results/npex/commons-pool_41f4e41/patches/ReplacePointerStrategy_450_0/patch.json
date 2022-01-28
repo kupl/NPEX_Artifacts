@@ -1,0 +1,5 @@
+{
+    "contents": "(objectDeque != null ? objectDeque : null).getAllObjects()",
+    "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+    "patched_lines": [473]
+}

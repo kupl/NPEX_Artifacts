@@ -1,0 +1,5 @@
+{
+    "contents": "if (value == null) {\n    return;\n}",
+    "original_filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+    "patched_lines": [53]
+}

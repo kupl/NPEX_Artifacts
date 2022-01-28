@@ -1,0 +1,14 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"427: $r3 = virtualinvoke $r2.<org.apache.pdfbox.cos.COSDictionary: org.apache.pdfbox.cos.COSBase getDictionaryObject(org.apache.pdfbox.cos.COSName)>($r1)" [label=2] [style=bold] [color=gold]
+"427: fields = (org.apache.pdfbox.cos.COSArray) $r3" [label=2] [style=bold]
+"431: $r4 = virtualinvoke fields.<org.apache.pdfbox.cos.COSArray: org.apache.pdfbox.cos.COSBase getObject(int)>(i)" [label=1] [color=red]
+"429: $i1 = virtualinvoke fields.<org.apache.pdfbox.cos.COSArray: int size()>()" [label=1] [style=bold] [color=red]
+"427: $r3 = virtualinvoke $r2.<org.apache.pdfbox.cos.COSDictionary: org.apache.pdfbox.cos.COSBase getDictionaryObject(org.apache.pdfbox.cos.COSName)>($r1)"->"427: fields = (org.apache.pdfbox.cos.COSArray) $r3";
+
+"427: fields = (org.apache.pdfbox.cos.COSArray) $r3"->"431: $r4 = virtualinvoke fields.<org.apache.pdfbox.cos.COSArray: org.apache.pdfbox.cos.COSBase getObject(int)>(i)" [style=dotted];
+
+"427: fields = (org.apache.pdfbox.cos.COSArray) $r3"->"429: $i1 = virtualinvoke fields.<org.apache.pdfbox.cos.COSArray: int size()>()";
+
+}

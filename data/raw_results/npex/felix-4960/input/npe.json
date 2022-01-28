@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+	"line": 526,
+	"deref_field": "contentPath",
+	"sink_field": "size",
+	"npe_class": "BundleRevisionImpl",
+	"npe_method": "getResourcesLocal",
+	"jvmti_identify_succeed": true
+}

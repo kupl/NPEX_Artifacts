@@ -1,0 +1,17 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"574: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>" [label=1] [style=bold]
+"574: $i0 = lengthof $r0" [label=1] [style=bold] [color=red]
+"208: this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys> = null" [label=2] [style=bold] [color=gold]
+"690: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>" [label=1]
+"690: $i0 = lengthof $r0" [label=1] [color=red]
+"574: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>"->"574: $i0 = lengthof $r0";
+
+"208: this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys> = null"->"574: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>";
+
+"690: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>"->"690: $i0 = lengthof $r0" [style=dotted];
+
+"208: this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys> = null"->"690: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>" [style=dotted];
+
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "(unions != null ? unions : null).isEmpty()",
+    "original_filepath": "sdk/src/main/java/com/google/cloud/dataflow/sdk/transforms/join/CoGbkResult.java",
+    "patched_lines": [317]
+}

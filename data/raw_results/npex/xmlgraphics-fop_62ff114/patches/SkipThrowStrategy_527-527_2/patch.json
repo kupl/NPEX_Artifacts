@@ -1,0 +1,5 @@
+{
+    "contents": "if (currentPageViewport == null) {\n    throw new java.lang.IllegalStateException();\n}",
+    "original_filepath": "fop-core/src/main/java/org/apache/fop/render/AbstractRenderer.java",
+    "patched_lines": [523]
+}

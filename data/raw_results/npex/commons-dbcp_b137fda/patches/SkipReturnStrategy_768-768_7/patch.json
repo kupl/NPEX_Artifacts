@@ -1,0 +1,5 @@
+{
+    "contents": "if (connectionProperties == null) {\n    return \"NULL\";\n}",
+    "original_filepath": "src/main/java/org/apache/commons/dbcp2/cpdsadapter/DriverAdapterCPDS.java",
+    "patched_lines": [774]
+}

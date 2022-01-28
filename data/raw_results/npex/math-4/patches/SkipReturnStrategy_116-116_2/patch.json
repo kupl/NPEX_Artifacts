@@ -1,0 +1,5 @@
+{
+    "contents": "if (v1D == null) {\n    return null;\n}",
+    "original_filepath": "org/apache/commons/math3/geometry/euclidean/threed/SubLine.java",
+    "patched_lines": [132]
+}

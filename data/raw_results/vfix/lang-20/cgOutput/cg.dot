@@ -1,0 +1,434 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"7: main" [color=gold] [style=bold]
+"3368: join" [color=red] [style=bold]
+"4: <clinit>" [style=bold]
+"143: testJoin_Objectarray" [style=bold]
+"44: void <init>()" [style=bold]
+"146: <clinit>" [style=bold]
+"3229: join" [style=bold]
+"3334: join" [style=bold]
+"158: toString"
+"1057: toString"
+"47: toString" [style=bold]
+"131: toString"
+"684: toString"
+"86: getRight"
+"78: getLeft"
+"1021: getObject"
+"385: appendEnd"
+"1948: getNullText"
+"1030: getStringBuffer"
+"1042: getStyle"
+"554: getUpToClass"
+"514: appendFieldsIn"
+"80: <clinit>"
+"1481: appendContentEnd"
+"399: removeLastFieldSeparator"
+"198: unregister"
+"847: append"
+"574: getValue"
+"480: accept"
+"610: reflectionAppendArray"
+"2216: void <init>()"
+"2184: void <init>()"
+"2150: void <init>()"
+"2252: void <init>()"
+"2117: void <init>()"
+"147: getRegistry"
+"429: append"
+"586: isAppendStatics"
+"597: isAppendTransients"
+"915: reflectionAppendArrayDetail"
+"316: protected void <init>()"
+"1834: setContentEnd"
+"1808: setContentStart"
+"1665: setUseFieldNames"
+"1645: setUseIdentityHashCode"
+"1603: setUseClassName"
+"1625: setUseShortClassName"
+"88: <clinit>"
+"1913: setFieldSeparatorAtStart"
+"1886: setFieldSeparator"
+"1512: appendFieldStart"
+"1525: appendFieldEnd"
+"461: appendInternal"
+"1564: isFullDetail"
+"1493: appendNullText"
+"27: <clinit>"
+"1243: getSystemProperty"
+"98: get"
+"1204: getJavaVersionMatches"
+"1225: getOSMatchesName"
+"1215: getOSMatches"
+"1502: appendFieldSeparator"
+"622: appendSummary"
+"585: appendDetail"
+"942: appendSummary"
+"889: appendDetail"
+"1430: appendSummary"
+"1410: appendDetail"
+"1369: appendSummary"
+"1349: appendDetail"
+"1308: appendSummary"
+"1288: appendDetail"
+"1247: appendSummary"
+"1227: appendDetail"
+"1186: appendSummary"
+"1166: appendDetail"
+"1125: appendSummary"
+"1105: appendDetail"
+"1064: appendSummary"
+"1044: appendDetail"
+"1003: appendSummary"
+"983: appendDetail"
+"1544: appendSummarySize"
+"609: appendDetail"
+"597: appendDetail"
+"572: appendCyclicObject"
+"162: isRegistered"
+"176: register"
+"55: private void <init>(java.lang.String, int, float, java.lang.String)"
+"1326: isJavaVersionMatch"
+"1362: isOSNameMatch"
+"1345: isOSMatch"
+"1580: getShortClassName"
+"848: appendDetail"
+"820: appendDetail"
+"792: appendDetail"
+"764: appendDetail"
+"736: appendDetail"
+"708: appendDetail"
+"680: appendDetail"
+"652: appendDetail"
+"54: <clinit>"
+"268: identityToString"
+"52: <clinit>"
+"167: getShortClassName"
+"507: void <init>()"
+"110: addAbbreviation"
+"186: getShortClassName"
+"7: main"->"4: <clinit>";
+
+"7: main"->"143: testJoin_Objectarray";
+
+"4: <clinit>"->"4: <clinit>";
+
+"4: <clinit>"->"44: void <init>()";
+
+"143: testJoin_Objectarray"->"146: <clinit>";
+
+"143: testJoin_Objectarray"->"4: <clinit>";
+
+"143: testJoin_Objectarray"->"3229: join";
+
+"146: <clinit>"->"146: <clinit>";
+
+"3229: join"->"146: <clinit>";
+
+"3229: join"->"3334: join";
+
+"3334: join"->"146: <clinit>";
+
+"3334: join"->"3368: join";
+
+"3368: join"->"158: toString" [style=dotted];
+
+"3368: join"->"1057: toString" [style=dotted];
+
+"3368: join"->"47: toString";
+
+"3368: join"->"131: toString" [style=dotted];
+
+"3368: join"->"684: toString" [style=dotted];
+
+"158: toString"->"86: getRight" [style=dotted];
+
+"158: toString"->"78: getLeft" [style=dotted];
+
+"1057: toString"->"1021: getObject" [style=dotted];
+
+"1057: toString"->"385: appendEnd" [style=dotted];
+
+"1057: toString"->"1948: getNullText" [style=dotted];
+
+"1057: toString"->"1030: getStringBuffer" [style=dotted];
+
+"1057: toString"->"1042: getStyle" [style=dotted];
+
+"684: toString"->"1021: getObject" [style=dotted];
+
+"684: toString"->"1948: getNullText" [style=dotted];
+
+"684: toString"->"1057: toString" [style=dotted];
+
+"684: toString"->"554: getUpToClass" [style=dotted];
+
+"684: toString"->"514: appendFieldsIn" [style=dotted];
+
+"684: toString"->"1042: getStyle" [style=dotted];
+
+"385: appendEnd"->"80: <clinit>" [style=dotted];
+
+"385: appendEnd"->"1481: appendContentEnd" [style=dotted];
+
+"385: appendEnd"->"399: removeLastFieldSeparator" [style=dotted];
+
+"385: appendEnd"->"198: unregister" [style=dotted];
+
+"514: appendFieldsIn"->"847: append" [style=dotted];
+
+"514: appendFieldsIn"->"574: getValue" [style=dotted];
+
+"514: appendFieldsIn"->"480: accept" [style=dotted];
+
+"514: appendFieldsIn"->"610: reflectionAppendArray" [style=dotted];
+
+"514: appendFieldsIn"->"1021: getObject" [style=dotted];
+
+"80: <clinit>"->"80: <clinit>" [style=dotted];
+
+"80: <clinit>"->"2216: void <init>()" [style=dotted];
+
+"80: <clinit>"->"2184: void <init>()" [style=dotted];
+
+"80: <clinit>"->"2150: void <init>()" [style=dotted];
+
+"80: <clinit>"->"2252: void <init>()" [style=dotted];
+
+"80: <clinit>"->"2117: void <init>()" [style=dotted];
+
+"198: unregister"->"80: <clinit>" [style=dotted];
+
+"198: unregister"->"147: getRegistry" [style=dotted];
+
+"847: append"->"429: append" [style=dotted];
+
+"574: getValue"->"1021: getObject" [style=dotted];
+
+"480: accept"->"586: isAppendStatics" [style=dotted];
+
+"480: accept"->"597: isAppendTransients" [style=dotted];
+
+"610: reflectionAppendArray"->"1042: getStyle" [style=dotted];
+
+"610: reflectionAppendArray"->"915: reflectionAppendArrayDetail" [style=dotted];
+
+"610: reflectionAppendArray"->"1030: getStringBuffer" [style=dotted];
+
+"2216: void <init>()"->"316: protected void <init>()" [style=dotted];
+
+"2216: void <init>()"->"1834: setContentEnd" [style=dotted];
+
+"2216: void <init>()"->"1808: setContentStart" [style=dotted];
+
+"2216: void <init>()"->"1665: setUseFieldNames" [style=dotted];
+
+"2216: void <init>()"->"1645: setUseIdentityHashCode" [style=dotted];
+
+"2216: void <init>()"->"1603: setUseClassName" [style=dotted];
+
+"2184: void <init>()"->"316: protected void <init>()" [style=dotted];
+
+"2184: void <init>()"->"1645: setUseIdentityHashCode" [style=dotted];
+
+"2184: void <init>()"->"1625: setUseShortClassName" [style=dotted];
+
+"2150: void <init>()"->"316: protected void <init>()" [style=dotted];
+
+"2150: void <init>()"->"1665: setUseFieldNames" [style=dotted];
+
+"2252: void <init>()"->"88: <clinit>" [style=dotted];
+
+"2252: void <init>()"->"1834: setContentEnd" [style=dotted];
+
+"2252: void <init>()"->"1913: setFieldSeparatorAtStart" [style=dotted];
+
+"2252: void <init>()"->"1886: setFieldSeparator" [style=dotted];
+
+"2252: void <init>()"->"1808: setContentStart" [style=dotted];
+
+"2252: void <init>()"->"316: protected void <init>()" [style=dotted];
+
+"2117: void <init>()"->"316: protected void <init>()" [style=dotted];
+
+"147: getRegistry"->"80: <clinit>" [style=dotted];
+
+"429: append"->"1512: appendFieldStart" [style=dotted];
+
+"429: append"->"1525: appendFieldEnd" [style=dotted];
+
+"429: append"->"461: appendInternal" [style=dotted];
+
+"429: append"->"1564: isFullDetail" [style=dotted];
+
+"429: append"->"1493: appendNullText" [style=dotted];
+
+"915: reflectionAppendArrayDetail"->"461: appendInternal" [style=dotted];
+
+"915: reflectionAppendArrayDetail"->"1493: appendNullText" [style=dotted];
+
+"88: <clinit>"->"88: <clinit>" [style=dotted];
+
+"88: <clinit>"->"27: <clinit>" [style=dotted];
+
+"88: <clinit>"->"1243: getSystemProperty" [style=dotted];
+
+"88: <clinit>"->"98: get" [style=dotted];
+
+"88: <clinit>"->"1204: getJavaVersionMatches" [style=dotted];
+
+"88: <clinit>"->"1225: getOSMatchesName" [style=dotted];
+
+"88: <clinit>"->"1215: getOSMatches" [style=dotted];
+
+"1525: appendFieldEnd"->"1502: appendFieldSeparator" [style=dotted];
+
+"461: appendInternal"->"80: <clinit>" [style=dotted];
+
+"461: appendInternal"->"622: appendSummary" [style=dotted];
+
+"461: appendInternal"->"585: appendDetail" [style=dotted];
+
+"461: appendInternal"->"942: appendSummary" [style=dotted];
+
+"461: appendInternal"->"889: appendDetail" [style=dotted];
+
+"461: appendInternal"->"1430: appendSummary" [style=dotted];
+
+"461: appendInternal"->"1410: appendDetail" [style=dotted];
+
+"461: appendInternal"->"1369: appendSummary" [style=dotted];
+
+"461: appendInternal"->"1349: appendDetail" [style=dotted];
+
+"461: appendInternal"->"1308: appendSummary" [style=dotted];
+
+"461: appendInternal"->"1288: appendDetail" [style=dotted];
+
+"461: appendInternal"->"1247: appendSummary" [style=dotted];
+
+"461: appendInternal"->"1227: appendDetail" [style=dotted];
+
+"461: appendInternal"->"1186: appendSummary" [style=dotted];
+
+"461: appendInternal"->"1166: appendDetail" [style=dotted];
+
+"461: appendInternal"->"1125: appendSummary" [style=dotted];
+
+"461: appendInternal"->"1105: appendDetail" [style=dotted];
+
+"461: appendInternal"->"1064: appendSummary" [style=dotted];
+
+"461: appendInternal"->"1044: appendDetail" [style=dotted];
+
+"461: appendInternal"->"1003: appendSummary" [style=dotted];
+
+"461: appendInternal"->"983: appendDetail" [style=dotted];
+
+"461: appendInternal"->"1544: appendSummarySize" [style=dotted];
+
+"461: appendInternal"->"609: appendDetail" [style=dotted];
+
+"461: appendInternal"->"597: appendDetail" [style=dotted];
+
+"461: appendInternal"->"572: appendCyclicObject" [style=dotted];
+
+"461: appendInternal"->"162: isRegistered" [style=dotted];
+
+"461: appendInternal"->"176: register" [style=dotted];
+
+"461: appendInternal"->"198: unregister" [style=dotted];
+
+"27: <clinit>"->"27: <clinit>" [style=dotted];
+
+"27: <clinit>"->"55: private void <init>(java.lang.String, int, float, java.lang.String)" [style=dotted];
+
+"98: get"->"27: <clinit>" [style=dotted];
+
+"1204: getJavaVersionMatches"->"88: <clinit>" [style=dotted];
+
+"1204: getJavaVersionMatches"->"1326: isJavaVersionMatch" [style=dotted];
+
+"1225: getOSMatchesName"->"88: <clinit>" [style=dotted];
+
+"1225: getOSMatchesName"->"1362: isOSNameMatch" [style=dotted];
+
+"1215: getOSMatches"->"88: <clinit>" [style=dotted];
+
+"1215: getOSMatches"->"1345: isOSMatch" [style=dotted];
+
+"622: appendSummary"->"1580: getShortClassName" [style=dotted];
+
+"942: appendSummary"->"1544: appendSummarySize" [style=dotted];
+
+"889: appendDetail"->"461: appendInternal" [style=dotted];
+
+"889: appendDetail"->"1493: appendNullText" [style=dotted];
+
+"1430: appendSummary"->"1544: appendSummarySize" [style=dotted];
+
+"1410: appendDetail"->"848: appendDetail" [style=dotted];
+
+"1369: appendSummary"->"1544: appendSummarySize" [style=dotted];
+
+"1349: appendDetail"->"820: appendDetail" [style=dotted];
+
+"1308: appendSummary"->"1544: appendSummarySize" [style=dotted];
+
+"1288: appendDetail"->"792: appendDetail" [style=dotted];
+
+"1247: appendSummary"->"1544: appendSummarySize" [style=dotted];
+
+"1227: appendDetail"->"764: appendDetail" [style=dotted];
+
+"1186: appendSummary"->"1544: appendSummarySize" [style=dotted];
+
+"1166: appendDetail"->"736: appendDetail" [style=dotted];
+
+"1125: appendSummary"->"1544: appendSummarySize" [style=dotted];
+
+"1105: appendDetail"->"708: appendDetail" [style=dotted];
+
+"1064: appendSummary"->"1544: appendSummarySize" [style=dotted];
+
+"1044: appendDetail"->"680: appendDetail" [style=dotted];
+
+"1003: appendSummary"->"1544: appendSummarySize" [style=dotted];
+
+"983: appendDetail"->"652: appendDetail" [style=dotted];
+
+"572: appendCyclicObject"->"54: <clinit>" [style=dotted];
+
+"572: appendCyclicObject"->"268: identityToString" [style=dotted];
+
+"162: isRegistered"->"80: <clinit>" [style=dotted];
+
+"162: isRegistered"->"147: getRegistry" [style=dotted];
+
+"176: register"->"80: <clinit>" [style=dotted];
+
+"176: register"->"147: getRegistry" [style=dotted];
+
+"1580: getShortClassName"->"52: <clinit>" [style=dotted];
+
+"1580: getShortClassName"->"167: getShortClassName" [style=dotted];
+
+"54: <clinit>"->"54: <clinit>" [style=dotted];
+
+"54: <clinit>"->"507: void <init>()" [style=dotted];
+
+"52: <clinit>"->"52: <clinit>" [style=dotted];
+
+"52: <clinit>"->"110: addAbbreviation" [style=dotted];
+
+"167: getShortClassName"->"52: <clinit>" [style=dotted];
+
+"167: getShortClassName"->"186: getShortClassName" [style=dotted];
+
+"110: addAbbreviation"->"52: <clinit>" [style=dotted];
+
+"186: getShortClassName"->"52: <clinit>" [style=dotted];
+
+}

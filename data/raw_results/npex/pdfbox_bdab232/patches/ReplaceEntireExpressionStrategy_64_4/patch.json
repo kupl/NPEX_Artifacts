@@ -1,0 +1,5 @@
+{
+    "contents": "new java.lang.String(((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))) != null ? ((org.apache.pdfbox.cos.COSString) (action.getDictionaryObject(org.apache.pdfbox.cos.COSName.URI))).getBytes() : null, org.apache.pdfbox.util.Charsets.UTF_8)",
+    "original_filepath": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+    "patched_lines": [70]
+}

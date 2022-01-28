@@ -1,0 +1,5 @@
+{
+    "contents": "if (channel == null) {\n    return null;\n}",
+    "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+    "patched_lines": [110]
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "if (value != null) {\n    LOG.log(java.util.logging.Level.FINEST, ((\"Invalid enum createValue '\" + value) + \"' for \") + enumType.getName(), e);\n}",
+    "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+    "patched_lines": [61]
+}

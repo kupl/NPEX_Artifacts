@@ -1,0 +1,18 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"8: main" [color=gold] [style=bold]
+"249: isAvailableLocale" [color=red] [style=bold]
+"13: setUp" [style=bold]
+"50: <clinit>" [style=bold]
+"8: main"->"13: setUp";
+
+"13: setUp"->"50: <clinit>";
+
+"13: setUp"->"249: isAvailableLocale";
+
+"50: <clinit>"->"50: <clinit>";
+
+"249: isAvailableLocale"->"50: <clinit>";
+
+}

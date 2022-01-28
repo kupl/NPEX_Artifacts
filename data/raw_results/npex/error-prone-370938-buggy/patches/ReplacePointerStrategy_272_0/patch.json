@@ -1,0 +1,5 @@
+{
+    "contents": "normalizeBase(context, symbol != null ? symbol : null, null)",
+    "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+    "patched_lines": [277]
+}

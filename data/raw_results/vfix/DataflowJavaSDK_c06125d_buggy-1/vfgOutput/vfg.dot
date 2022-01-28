@@ -1,0 +1,20 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"319: unions = (java.util.List) $r3" [style=bold]
+"319: $r3 = interfaceinvoke $r1.<java.util.Map: java.lang.Object get(java.lang.Object)>($r2)" [style=bold] [color=gold]
+"320: $z0 = interfaceinvoke unions.<java.util.List: boolean isEmpty()>()" [style=bold] [color=red]
+"332: $r4 = interfaceinvoke unions.<java.util.List: java.lang.Object get(int)>(0)" [style=bold] [color=red]
+"329: $i1 = interfaceinvoke unions.<java.util.List: int size()>()" [color=red]
+"328: $i0 = interfaceinvoke unions.<java.util.List: int size()>()" [style=bold] [color=red]
+"319: $r3 = interfaceinvoke $r1.<java.util.Map: java.lang.Object get(java.lang.Object)>($r2)"->"319: unions = (java.util.List) $r3";
+
+"319: unions = (java.util.List) $r3"->"320: $z0 = interfaceinvoke unions.<java.util.List: boolean isEmpty()>()";
+
+"319: unions = (java.util.List) $r3"->"328: $i0 = interfaceinvoke unions.<java.util.List: int size()>()";
+
+"319: unions = (java.util.List) $r3"->"329: $i1 = interfaceinvoke unions.<java.util.List: int size()>()" [style=dotted];
+
+"319: unions = (java.util.List) $r3"->"332: $r4 = interfaceinvoke unions.<java.util.List: java.lang.Object get(int)>(0)";
+
+}

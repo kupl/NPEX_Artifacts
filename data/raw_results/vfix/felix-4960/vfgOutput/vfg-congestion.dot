@@ -1,0 +1,14 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"507: contentPath = virtualinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.util.List getContentPath()>()" [label=3] [style=bold] [color=gold]
+"511: $i1 = interfaceinvoke contentPath.<java.util.List: int size()>()" [label=1] [color=red]
+"528: $r1 = interfaceinvoke contentPath.<java.util.List: java.lang.Object get(int)>(i)" [label=1] [color=red]
+"526: $i3 = interfaceinvoke contentPath.<java.util.List: int size()>()" [label=1] [style=bold] [color=red]
+"507: contentPath = virtualinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.util.List getContentPath()>()"->"511: $i1 = interfaceinvoke contentPath.<java.util.List: int size()>()" [style=dotted];
+
+"507: contentPath = virtualinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.util.List getContentPath()>()"->"528: $r1 = interfaceinvoke contentPath.<java.util.List: java.lang.Object get(int)>(i)" [style=dotted];
+
+"507: contentPath = virtualinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.util.List getContentPath()>()"->"526: $i3 = interfaceinvoke contentPath.<java.util.List: int size()>()";
+
+}

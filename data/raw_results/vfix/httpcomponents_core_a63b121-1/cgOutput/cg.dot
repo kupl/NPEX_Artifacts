@@ -1,0 +1,115 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"570: appendPathSegments" [color=red] [style=bold]
+"46: public void <init>()"
+"686: testAppendNullSegmentsList"
+"147: <clinit>" [style=bold]
+"261: build"
+"459: setHost" [style=bold]
+"364: setScheme" [style=bold]
+"93: public void <init>()" [style=bold]
+"265: buildString"
+"557: setPathSegments"
+"806: getPathSegments"
+"52: isBlank" [style=bold]
+"42: <clinit>"
+"53: <clinit>"
+"116: encode"
+"123: isIPv6Address"
+"120: encode"
+"42: isEmpty"
+"231: formatPath"
+"243: formatQuery"
+"90: encode"
+"97: isIPv6StdAddress"
+"107: isIPv6HexCompressedAddress"
+"70: getValue"
+"65: getName"
+"112: encode"
+"2: main"->"46: public void <init>()" [style=dotted];
+
+"2: main"->"686: testAppendNullSegmentsList" [style=dotted];
+
+"686: testAppendNullSegmentsList"->"147: <clinit>" [style=dotted];
+
+"686: testAppendNullSegmentsList"->"261: build" [style=dotted];
+
+"686: testAppendNullSegmentsList"->"570: appendPathSegments" [style=dotted];
+
+"686: testAppendNullSegmentsList"->"459: setHost" [style=dotted];
+
+"686: testAppendNullSegmentsList"->"364: setScheme" [style=dotted];
+
+"686: testAppendNullSegmentsList"->"93: public void <init>()" [style=dotted];
+
+"147: <clinit>"->"147: <clinit>";
+
+"261: build"->"265: buildString" [style=dotted];
+
+"570: appendPathSegments"->"557: setPathSegments" [style=dotted];
+
+"570: appendPathSegments"->"806: getPathSegments" [style=dotted];
+
+"364: setScheme"->"52: isBlank";
+
+"265: buildString"->"42: <clinit>" [style=dotted];
+
+"265: buildString"->"53: <clinit>" [style=dotted];
+
+"265: buildString"->"147: <clinit>" [style=dotted];
+
+"265: buildString"->"116: encode" [style=dotted];
+
+"265: buildString"->"123: isIPv6Address" [style=dotted];
+
+"265: buildString"->"120: encode" [style=dotted];
+
+"265: buildString"->"42: isEmpty" [style=dotted];
+
+"265: buildString"->"231: formatPath" [style=dotted];
+
+"265: buildString"->"243: formatQuery" [style=dotted];
+
+"265: buildString"->"90: encode" [style=dotted];
+
+"42: <clinit>"->"42: <clinit>" [style=dotted];
+
+"53: <clinit>"->"53: <clinit>" [style=dotted];
+
+"116: encode"->"42: <clinit>" [style=dotted];
+
+"116: encode"->"90: encode" [style=dotted];
+
+"123: isIPv6Address"->"53: <clinit>" [style=dotted];
+
+"123: isIPv6Address"->"97: isIPv6StdAddress" [style=dotted];
+
+"123: isIPv6Address"->"107: isIPv6HexCompressedAddress" [style=dotted];
+
+"120: encode"->"42: <clinit>" [style=dotted];
+
+"120: encode"->"90: encode" [style=dotted];
+
+"231: formatPath"->"42: <clinit>" [style=dotted];
+
+"231: formatPath"->"116: encode" [style=dotted];
+
+"243: formatQuery"->"42: <clinit>" [style=dotted];
+
+"243: formatQuery"->"70: getValue" [style=dotted];
+
+"243: formatQuery"->"65: getName" [style=dotted];
+
+"243: formatQuery"->"112: encode" [style=dotted];
+
+"97: isIPv6StdAddress"->"53: <clinit>" [style=dotted];
+
+"107: isIPv6HexCompressedAddress"->"53: <clinit>" [style=dotted];
+
+"112: encode"->"42: <clinit>" [style=dotted];
+
+"112: encode"->"90: encode" [style=dotted];
+
+}

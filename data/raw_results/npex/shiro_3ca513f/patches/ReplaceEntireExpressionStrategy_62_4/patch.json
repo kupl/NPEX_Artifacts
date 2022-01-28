@@ -1,0 +1,5 @@
+{
+    "contents": "return annotation == null ? mi.getThis() != null ? mi.getThis().getClass().getAnnotation(clazz) : null : annotation",
+    "original_filepath": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+    "patched_lines": [72]
+}

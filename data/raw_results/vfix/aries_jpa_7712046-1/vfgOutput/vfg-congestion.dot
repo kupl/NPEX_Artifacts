@@ -1,0 +1,22 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"39: l3 = virtualinvoke cl.<java.lang.Class: java.lang.reflect.Field[] getDeclaredFields()>()" [label=2] [style=bold] [color=red]
+"46: l3#5 = virtualinvoke cl.<java.lang.Class: java.lang.reflect.Method[] getDeclaredMethods()>()" [label=2] [style=bold] [color=red]
+"32: cl = c" [label=4] [style=bold]
+"33: staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>(annotation, $r0, cl)" [label=4] [style=bold]
+"32: cl = virtualinvoke cl.<java.lang.Class: java.lang.Class getSuperclass()>()" [label=2] [style=bold]
+"96: members = virtualinvoke $r0.<org.apache.aries.jpa.blueprint.impl.AnnotationScanner: java.util.List getJpaAnnotatedMembers(java.lang.Class,java.lang.Class)>(class "Lorg/apache/aries/jpa/blueprint/impl/TestInterface;", class "Ljavax/persistence/PersistenceUnit;")" [label=4] [color=gold]
+"32: cl = c"->"33: staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>(annotation, $r0, cl)";
+
+"32: cl = c"->"32: cl = virtualinvoke cl.<java.lang.Class: java.lang.Class getSuperclass()>()";
+
+"32: cl = virtualinvoke cl.<java.lang.Class: java.lang.Class getSuperclass()>()"->"33: staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>(annotation, $r0, cl)";
+
+"33: staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>(annotation, $r0, cl)"->"39: l3 = virtualinvoke cl.<java.lang.Class: java.lang.reflect.Field[] getDeclaredFields()>()";
+
+"33: staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>(annotation, $r0, cl)"->"46: l3#5 = virtualinvoke cl.<java.lang.Class: java.lang.reflect.Method[] getDeclaredMethods()>()";
+
+"96: members = virtualinvoke $r0.<org.apache.aries.jpa.blueprint.impl.AnnotationScanner: java.util.List getJpaAnnotatedMembers(java.lang.Class,java.lang.Class)>(class "Lorg/apache/aries/jpa/blueprint/impl/TestInterface;", class "Ljavax/persistence/PersistenceUnit;")"->"32: cl = c" [style=dotted];
+
+}

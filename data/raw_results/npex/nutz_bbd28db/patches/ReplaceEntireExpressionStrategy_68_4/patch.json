@@ -1,0 +1,5 @@
+{
+    "contents": "for (java.lang.Object val : request.getParams() != null ? request.getParams().values() : null) {\n    if ((val instanceof java.io.File) || (val instanceof java.io.File[])) {\n        return new org.nutz.http.sender.FilePostSender(request);\n    }\n}",
+    "original_filepath": "src/org/nutz/http/Sender.java",
+    "patched_lines": [70]
+}

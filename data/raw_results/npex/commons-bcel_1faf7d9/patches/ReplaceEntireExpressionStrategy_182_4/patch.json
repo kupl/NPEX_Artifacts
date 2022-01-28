@@ -1,0 +1,5 @@
+{
+    "contents": "new org.apache.bcel.generic.InstructionList(m.getCode() != null ? m.getCode().getCode() : new byte[]{  })",
+    "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+    "patched_lines": [190]
+}

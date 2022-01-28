@@ -1,0 +1,5 @@
+{
+    "contents": "int strLen = (str != null) ? str.length() : -1",
+    "original_filepath": "org/apache/commons/lang3/text/StrBuilder.java",
+    "patched_lines": [1333]
+}

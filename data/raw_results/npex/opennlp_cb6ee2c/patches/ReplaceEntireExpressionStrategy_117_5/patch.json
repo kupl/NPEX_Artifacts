@@ -1,0 +1,5 @@
+{
+    "contents": "!(keyValues != null ? keyValues.isEmpty() : true)",
+    "original_filepath": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+    "patched_lines": [127]
+}

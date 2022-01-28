@@ -1,0 +1,5 @@
+{
+    "contents": "for (java.lang.StackTraceElement element : stackTrace != null ? stackTrace : null) {\n    if ((element != null) && org.apache.maven.surefire.report.SmartStackTraceParser.isInSupers(clazz, element.getClassName())) {\n        result.add(element);\n    }\n}",
+    "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+    "patched_lines": [194]
+}

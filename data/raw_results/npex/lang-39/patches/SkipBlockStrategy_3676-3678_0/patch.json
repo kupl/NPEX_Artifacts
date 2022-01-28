@@ -1,0 +1,5 @@
+{
+    "contents": "if (replacement_str != null) {\n    java.lang.String replacement_str = replacementList[i];\n    int greater = replacement_str.length() - searchList[i].length();\n    if (greater > 0) {\n        increase += 3 * greater;// assume 3 matches\n\n    }\n}",
+    "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+    "patched_lines": [3702]
+}

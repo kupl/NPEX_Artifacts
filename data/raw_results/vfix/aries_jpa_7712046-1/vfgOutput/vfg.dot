@@ -1,0 +1,22 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"33: staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>(annotation, $r0, cl)" [style=bold]
+"32: cl = c" [style=bold]
+"96: members = virtualinvoke $r0.<org.apache.aries.jpa.blueprint.impl.AnnotationScanner: java.util.List getJpaAnnotatedMembers(java.lang.Class,java.lang.Class)>(class "Lorg/apache/aries/jpa/blueprint/impl/TestInterface;", class "Ljavax/persistence/PersistenceUnit;")" [color=gold]
+"39: l3 = virtualinvoke cl.<java.lang.Class: java.lang.reflect.Field[] getDeclaredFields()>()" [style=bold] [color=red]
+"46: l3#5 = virtualinvoke cl.<java.lang.Class: java.lang.reflect.Method[] getDeclaredMethods()>()" [style=bold] [color=red]
+"32: cl = virtualinvoke cl.<java.lang.Class: java.lang.Class getSuperclass()>()" [style=bold]
+"32: cl = c"->"33: staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>(annotation, $r0, cl)";
+
+"32: cl = c"->"32: cl = virtualinvoke cl.<java.lang.Class: java.lang.Class getSuperclass()>()";
+
+"32: cl = virtualinvoke cl.<java.lang.Class: java.lang.Class getSuperclass()>()"->"33: staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>(annotation, $r0, cl)";
+
+"33: staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>(annotation, $r0, cl)"->"39: l3 = virtualinvoke cl.<java.lang.Class: java.lang.reflect.Field[] getDeclaredFields()>()";
+
+"33: staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>(annotation, $r0, cl)"->"46: l3#5 = virtualinvoke cl.<java.lang.Class: java.lang.reflect.Method[] getDeclaredMethods()>()";
+
+"96: members = virtualinvoke $r0.<org.apache.aries.jpa.blueprint.impl.AnnotationScanner: java.util.List getJpaAnnotatedMembers(java.lang.Class,java.lang.Class)>(class "Lorg/apache/aries/jpa/blueprint/impl/TestInterface;", class "Ljavax/persistence/PersistenceUnit;")"->"32: cl = c" [style=dotted];
+
+}

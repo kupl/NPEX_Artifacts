@@ -1,0 +1,81 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"7: main" [color=gold] [style=bold]
+"572: getCategoryIndex" [color=red] [style=bold]
+"4: <clinit>" [style=bold]
+"12: testChart16A" [style=bold]
+"31: testGetCategoryIndex" [style=bold]
+"64: testGetRowCount"
+"114: testGetColumnIndex"
+"97: testGetColumnCount"
+"90: public void <init>(double[][], double[][])" [style=bold]
+"689: getColumnCount"
+"624: getColumnIndex"
+"124: createNumberArray2D" [style=bold]
+"106: public void <init>(java.lang.Number[][], java.lang.Number[][])" [style=bold]
+"105: createNumberArray"
+"141: public void <init>(java.lang.Comparable[], java.lang.Comparable[], java.lang.Number[][], java.lang.Number[][])" [style=bold]
+"592: generateKeys"
+"64: protected void <init>()" [style=bold]
+"93: protected void <init>()" [style=bold]
+"62: public void <init>()" [style=bold]
+"7: main"->"4: <clinit>";
+
+"7: main"->"12: testChart16A";
+
+"4: <clinit>"->"4: <clinit>";
+
+"12: testChart16A"->"4: <clinit>";
+
+"12: testChart16A"->"31: testGetCategoryIndex";
+
+"12: testChart16A"->"64: testGetRowCount" [style=dotted];
+
+"12: testChart16A"->"114: testGetColumnIndex" [style=dotted];
+
+"12: testChart16A"->"97: testGetColumnCount" [style=dotted];
+
+"31: testGetCategoryIndex"->"572: getCategoryIndex";
+
+"31: testGetCategoryIndex"->"90: public void <init>(double[][], double[][])";
+
+"31: testGetCategoryIndex"->"4: <clinit>";
+
+"64: testGetRowCount"->"689: getColumnCount" [style=dotted];
+
+"64: testGetRowCount"->"90: public void <init>(double[][], double[][])" [style=dotted];
+
+"64: testGetRowCount"->"4: <clinit>" [style=dotted];
+
+"114: testGetColumnIndex"->"624: getColumnIndex" [style=dotted];
+
+"114: testGetColumnIndex"->"90: public void <init>(double[][], double[][])" [style=dotted];
+
+"114: testGetColumnIndex"->"4: <clinit>" [style=dotted];
+
+"97: testGetColumnCount"->"689: getColumnCount" [style=dotted];
+
+"97: testGetColumnCount"->"90: public void <init>(double[][], double[][])" [style=dotted];
+
+"97: testGetColumnCount"->"4: <clinit>" [style=dotted];
+
+"90: public void <init>(double[][], double[][])"->"124: createNumberArray2D";
+
+"90: public void <init>(double[][], double[][])"->"106: public void <init>(java.lang.Number[][], java.lang.Number[][])";
+
+"624: getColumnIndex"->"572: getCategoryIndex" [style=dotted];
+
+"124: createNumberArray2D"->"105: createNumberArray" [style=dotted];
+
+"106: public void <init>(java.lang.Number[][], java.lang.Number[][])"->"141: public void <init>(java.lang.Comparable[], java.lang.Comparable[], java.lang.Number[][], java.lang.Number[][])";
+
+"141: public void <init>(java.lang.Comparable[], java.lang.Comparable[], java.lang.Number[][], java.lang.Number[][])"->"592: generateKeys" [style=dotted];
+
+"141: public void <init>(java.lang.Comparable[], java.lang.Comparable[], java.lang.Number[][], java.lang.Number[][])"->"64: protected void <init>()";
+
+"64: protected void <init>()"->"93: protected void <init>()";
+
+"93: protected void <init>()"->"62: public void <init>()";
+
+}

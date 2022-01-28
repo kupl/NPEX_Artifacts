@@ -1,0 +1,27 @@
+[
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/BaseCheckTestSupport.java",
+        "line": 133,
+        "method_name": "verify"
+    },
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/BaseCheckTestSupport.java",
+        "line": 108,
+        "method_name": "verify"
+    },
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/BaseCheckTestSupport.java",
+        "line": 99,
+        "method_name": "verify"
+    },
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/filters/SuppressWarningsFilterTest.java",
+        "line": 88,
+        "method_name": "verifySuppressed"
+    },
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/filters/SuppressWarningsFilterTest.java",
+        "line": 62,
+        "method_name": "testNone"
+    }
+]

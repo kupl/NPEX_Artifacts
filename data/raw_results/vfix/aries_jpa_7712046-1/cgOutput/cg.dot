@@ -1,0 +1,20 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"38: parseClass" [color=red] [style=bold]
+"42: public void <init>() throws java.lang.NoSuchMethodException, java.lang.SecurityException, java.lang.NoSuchFieldException"
+"94: getFactoryTest"
+"30: getJpaAnnotatedMembers" [style=bold]
+"27: public void <init>()" [style=bold]
+"2: main"->"42: public void <init>() throws java.lang.NoSuchMethodException, java.lang.SecurityException, java.lang.NoSuchFieldException" [style=dotted];
+
+"2: main"->"94: getFactoryTest" [style=dotted];
+
+"94: getFactoryTest"->"30: getJpaAnnotatedMembers" [style=dotted];
+
+"94: getFactoryTest"->"27: public void <init>()" [style=dotted];
+
+"30: getJpaAnnotatedMembers"->"38: parseClass";
+
+}

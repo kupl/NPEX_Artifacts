@@ -1,0 +1,32 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"198: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>" [label=4] [style=bold]
+"198: size = virtualinvoke $r0.<com.zaxxer.hikari.util.FastList: int size()>()" [label=4] [style=bold] [color=red]
+"256: this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements> = null" [label=3] [style=bold] [color=gold]
+"168: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>" [label=1]
+"168: virtualinvoke $r0.<com.zaxxer.hikari.util.FastList: boolean remove(java.lang.Object)>(statement)" [label=1] [color=red]
+"191: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>" [label=1]
+"191: virtualinvoke $r0.<com.zaxxer.hikari.util.FastList: boolean add(java.lang.Object)>(statement)" [label=1] [color=red]
+"256: this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements> = null" [label=1] [style=bold] [color=gold]
+"256: this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements> = null" [label=1] [style=bold] [color=gold]
+"89: this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements> = openStatements" [label=1] [style=bold] [color=gold]
+"198: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>"->"198: size = virtualinvoke $r0.<com.zaxxer.hikari.util.FastList: int size()>()";
+
+"256: this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements> = null"->"198: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>";
+
+"168: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>"->"168: virtualinvoke $r0.<com.zaxxer.hikari.util.FastList: boolean remove(java.lang.Object)>(statement)" [style=dotted];
+
+"256: this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements> = null"->"168: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>" [style=dotted];
+
+"191: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>"->"191: virtualinvoke $r0.<com.zaxxer.hikari.util.FastList: boolean add(java.lang.Object)>(statement)" [style=dotted];
+
+"256: this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements> = null"->"191: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>" [style=dotted];
+
+"256: this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements> = null"->"198: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>";
+
+"256: this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements> = null"->"198: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>";
+
+"89: this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements> = openStatements"->"198: $r0 = this.<com.zaxxer.hikari.pool.ProxyConnection: com.zaxxer.hikari.util.FastList openStatements>";
+
+}

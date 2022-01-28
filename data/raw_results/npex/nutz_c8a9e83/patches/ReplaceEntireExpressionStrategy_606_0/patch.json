@@ -1,0 +1,5 @@
+{
+    "contents": "ann = (cc != null) ? cc.getAnnotation(annType) : null",
+    "original_filepath": "src/org/nutz/lang/Mirror.java",
+    "patched_lines": [616]
+}

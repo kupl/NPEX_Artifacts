@@ -1,0 +1,5 @@
+{
+    "contents": "for (java.util.Map.Entry<java.lang.String, java.util.Collection<java.lang.String>> entry : headers != null ? headers.entrySet() : null) {\n    java.lang.String headerName = entry.getKey();\n    if (!result.containsKey(headerName)) {\n        result.put(headerName.toLowerCase(java.util.Locale.ROOT), new java.util.LinkedList<java.lang.String>());\n    }\n    result.get(headerName).addAll(entry.getValue());\n}",
+    "original_filepath": "core/src/main/java/feign/Response.java",
+    "patched_lines": [341]
+}

@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "src/test/java/com/zaxxer/hikari/pool/ConnectionStateTest.java",
+        "line": 109,
+        "method_name": "testCatalog"
+    }
+]

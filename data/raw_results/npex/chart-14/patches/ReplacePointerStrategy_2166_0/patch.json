@@ -1,0 +1,5 @@
+{
+    "contents": "(markers != null ? markers : null).remove(marker)",
+    "original_filepath": "org/jfree/chart/plot/CategoryPlot.java",
+    "patched_lines": [2177]
+}

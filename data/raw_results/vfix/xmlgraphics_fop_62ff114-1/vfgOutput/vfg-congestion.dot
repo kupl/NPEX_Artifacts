@@ -1,0 +1,29 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"527: $r7 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [label=2] [style=bold]
+"527: pageIndex = virtualinvoke $r7.<org.apache.fop.area.PageViewport: int getPageIndex()>()" [label=2] [style=bold] [color=red]
+"320: this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport> = null" [label=5] [color=gold]
+"482: $r0 = this.<org.apache.fop.render.intermediate.IFRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [label=1] [color=red]
+"500: $r2 = this.<org.apache.fop.render.intermediate.IFRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [label=1]
+"500: $z0 = virtualinvoke $r2.<org.apache.fop.area.PageViewport: boolean isFirstWithID(java.lang.String)>(id)" [label=1] [color=red]
+"466: $r1 = this.<org.apache.fop.render.intermediate.IFRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [label=1] [color=red]
+"256: $r0 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [label=1] [color=red]
+"320: this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport> = null" [label=1] [color=gold]
+"527: $r7 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport>"->"527: pageIndex = virtualinvoke $r7.<org.apache.fop.area.PageViewport: int getPageIndex()>()";
+
+"320: this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport> = null"->"527: $r7 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [style=dotted];
+
+"320: this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport> = null"->"482: $r0 = this.<org.apache.fop.render.intermediate.IFRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [style=dotted];
+
+"500: $r2 = this.<org.apache.fop.render.intermediate.IFRenderer: org.apache.fop.area.PageViewport currentPageViewport>"->"500: $z0 = virtualinvoke $r2.<org.apache.fop.area.PageViewport: boolean isFirstWithID(java.lang.String)>(id)" [style=dotted];
+
+"320: this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport> = null"->"500: $r2 = this.<org.apache.fop.render.intermediate.IFRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [style=dotted];
+
+"320: this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport> = null"->"466: $r1 = this.<org.apache.fop.render.intermediate.IFRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [style=dotted];
+
+"320: this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport> = null"->"256: $r0 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [style=dotted];
+
+"320: this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport> = null"->"527: $r7 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport>" [style=dotted];
+
+}

@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"106: $r11 = virtualinvoke $r10.<org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: java.lang.String getDatabase()>()" [style=bold] [color=red]
+"106: $r10 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult currentAuthResult>" [style=bold] [color=gold]
+"106: $r10 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult currentAuthResult>"->"106: $r11 = virtualinvoke $r10.<org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: java.lang.String getDatabase()>()";
+
+}

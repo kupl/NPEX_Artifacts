@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"52: $i0 = interfaceinvoke $r1.<java.util.List: int size()>()" [style=bold] [color=red]
+"52: $r1 = this.<hu.oe.nik.szfmv.detector.classes.Detector: java.util.List worldObjects>" [style=bold] [color=gold]
+"52: $r1 = this.<hu.oe.nik.szfmv.detector.classes.Detector: java.util.List worldObjects>"->"52: $i0 = interfaceinvoke $r1.<java.util.List: int size()>()";
+
+}

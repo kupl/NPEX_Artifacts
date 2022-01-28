@@ -1,0 +1,5 @@
+{
+    "contents": "if (input != null) {\n    input.close();\n}",
+    "original_filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+    "patched_lines": [215]
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "if (fields == null) {\n    fields = null;\n}",
+    "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+    "patched_lines": [432]
+}

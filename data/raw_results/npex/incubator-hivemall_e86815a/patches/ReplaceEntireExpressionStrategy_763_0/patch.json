@@ -1,0 +1,5 @@
+{
+    "contents": "final hivemall.utils.collections.IMapIterator<java.lang.Object, hivemall.model.IWeightValue> itor = (model != null) ? model.entries() : null",
+    "original_filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+    "patched_lines": [765]
+}

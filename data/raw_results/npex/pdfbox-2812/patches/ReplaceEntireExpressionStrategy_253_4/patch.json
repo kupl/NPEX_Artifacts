@@ -1,0 +1,5 @@
+{
+    "contents": "output = (iccData != null) ? iccData.createOutputStream() : null",
+    "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+    "patched_lines": [259]
+}

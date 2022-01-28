@@ -1,0 +1,5 @@
+{
+    "contents": "if (attributeType.getSyntax() == null) {\n    return;\n}",
+    "original_filepath": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+    "patched_lines": [272]
+}

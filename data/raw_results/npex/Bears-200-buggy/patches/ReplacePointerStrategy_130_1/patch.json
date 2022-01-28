@@ -1,0 +1,5 @@
+{
+    "contents": "org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source != null ? source : \"null\", throwable)",
+    "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+    "patched_lines": [140]
+}

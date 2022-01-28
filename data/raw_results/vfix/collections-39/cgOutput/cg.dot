@@ -1,0 +1,90 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"9: main" [color=gold] [style=bold]
+"543: load" [color=red] [style=bold]
+"13: testSaveAndLoad" [style=bold]
+"191: <clinit>" [style=bold]
+"531: load" [style=bold]
+"747: save"
+"453: public void <init>()" [style=bold]
+"305: escape"
+"174: run" [style=bold]
+"172: void <init>(org.apache.commons.collections.ExtendedProperties)"
+"654: addProperty" [style=bold]
+"511: getInclude" [style=bold]
+"378: readProperty" [style=bold]
+"368: public void <init>(java.io.Reader)" [style=bold]
+"702: addPropertyInternal" [style=bold]
+"423: hasMoreTokens" [style=bold]
+"432: nextToken" [style=bold]
+"414: public void <init>(java.lang.String)" [style=bold]
+"320: unescape" [style=bold]
+"348: access$0"
+"349: endsWithSlash" [style=bold]
+"337: countPreceding" [style=bold]
+"9: main"->"13: testSaveAndLoad";
+
+"13: testSaveAndLoad"->"191: <clinit>";
+
+"13: testSaveAndLoad"->"531: load";
+
+"13: testSaveAndLoad"->"747: save" [style=dotted];
+
+"13: testSaveAndLoad"->"453: public void <init>()";
+
+"191: <clinit>"->"191: <clinit>";
+
+"531: load"->"543: load";
+
+"747: save"->"191: <clinit>" [style=dotted];
+
+"747: save"->"305: escape" [style=dotted];
+
+"453: public void <init>()"->"174: run";
+
+"453: public void <init>()"->"172: void <init>(org.apache.commons.collections.ExtendedProperties)" [style=dotted];
+
+"543: load"->"654: addProperty";
+
+"543: load"->"531: load";
+
+"543: load"->"511: getInclude";
+
+"543: load"->"378: readProperty";
+
+"543: load"->"368: public void <init>(java.io.Reader)";
+
+"654: addProperty"->"191: <clinit>";
+
+"654: addProperty"->"702: addPropertyInternal";
+
+"654: addProperty"->"423: hasMoreTokens";
+
+"654: addProperty"->"432: nextToken";
+
+"654: addProperty"->"414: public void <init>(java.lang.String)";
+
+"654: addProperty"->"320: unescape";
+
+"511: getInclude"->"191: <clinit>";
+
+"378: readProperty"->"191: <clinit>";
+
+"378: readProperty"->"348: access$0" [style=dotted];
+
+"432: nextToken"->"423: hasMoreTokens";
+
+"432: nextToken"->"191: <clinit>";
+
+"432: nextToken"->"348: access$0" [style=dotted];
+
+"348: access$0"->"191: <clinit>" [style=dotted];
+
+"348: access$0"->"349: endsWithSlash" [style=dotted];
+
+"349: endsWithSlash"->"191: <clinit>";
+
+"349: endsWithSlash"->"337: countPreceding";
+
+}

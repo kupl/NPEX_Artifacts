@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"571: $i0 = interfaceinvoke pathSegments.<java.util.List: int size()>()" [style=bold] [color=red]
+"690: $r3 = virtualinvoke $r2.<org.apache.hc.core5.net.URIBuilder: org.apache.hc.core5.net.URIBuilder appendPathSegments(java.util.List)>(null)" [color=gold]
+"690: $r3 = virtualinvoke $r2.<org.apache.hc.core5.net.URIBuilder: org.apache.hc.core5.net.URIBuilder appendPathSegments(java.util.List)>(null)"->"571: $i0 = interfaceinvoke pathSegments.<java.util.List: int size()>()" [style=dotted];
+
+}

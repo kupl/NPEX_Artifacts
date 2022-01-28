@@ -1,0 +1,5 @@
+{
+    "contents": "(fields != null ? fields : new org.apache.pdfbox.cos.COSArray()).size()",
+    "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+    "patched_lines": [432]
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "int greater = (replacement_str != null ? replacement_str.length() : -1) - searchList[i].length()",
+    "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+    "patched_lines": [3703]
+}

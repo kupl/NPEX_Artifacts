@@ -1,0 +1,5 @@
+{
+    "contents": "if (unions != null ? unions.isEmpty() : false) {\n    if (useDefault) {\n        return defaultValue;\n    } else {\n        throw new java.lang.IllegalArgumentException((\"TupleTag \" + tag) + \" corresponds to an empty result, and no default was provided\");\n    }\n}",
+    "original_filepath": "sdk/src/main/java/com/google/cloud/dataflow/sdk/transforms/join/CoGbkResult.java",
+    "patched_lines": [317]
+}

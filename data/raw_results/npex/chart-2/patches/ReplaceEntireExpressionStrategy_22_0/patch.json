@@ -1,0 +1,5 @@
+{
+    "contents": "Main.eql(1.0, r != null ? r.getLowerBound() : 0.0, Main)",
+    "original_filepath": "Main.java",
+    "patched_lines": [22]
+}

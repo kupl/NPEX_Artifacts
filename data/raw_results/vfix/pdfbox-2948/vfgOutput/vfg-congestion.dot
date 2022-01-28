@@ -1,0 +1,11 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"252: filters = virtualinvoke this.<org.apache.pdfbox.pdmodel.common.PDStream: java.util.List getFilters()>()" [label=2] [style=bold] [color=gold]
+"256: $r2 = interfaceinvoke filters.<java.util.List: java.lang.Object get(int)>(i)" [label=1] [color=red]
+"254: $i0 = interfaceinvoke filters.<java.util.List: int size()>()" [label=1] [style=bold] [color=red]
+"252: filters = virtualinvoke this.<org.apache.pdfbox.pdmodel.common.PDStream: java.util.List getFilters()>()"->"256: $r2 = interfaceinvoke filters.<java.util.List: java.lang.Object get(int)>(i)" [style=dotted];
+
+"252: filters = virtualinvoke this.<org.apache.pdfbox.pdmodel.common.PDStream: java.util.List getFilters()>()"->"254: $i0 = interfaceinvoke filters.<java.util.List: int size()>()";
+
+}

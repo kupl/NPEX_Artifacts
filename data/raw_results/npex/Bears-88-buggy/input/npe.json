@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+    "line": 68,
+    "deref_field": "getArgumentValue",
+    "sink_field": "getValue",
+    "npe_class": "RepositoryBeanNameGenerator",
+    "npe_method": "getRepositoryInterfaceFrom",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "beanDefinition.getConstructorArgumentValues().getArgumentValue(0, Class.class)"
+}

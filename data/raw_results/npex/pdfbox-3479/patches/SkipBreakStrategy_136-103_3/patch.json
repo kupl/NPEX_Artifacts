@@ -1,0 +1,5 @@
+{
+    "contents": "if (rect == null) {\n    break;\n}",
+    "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+    "patched_lines": [132]
+}

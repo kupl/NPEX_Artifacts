@@ -1,0 +1,5 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"211: virtualinvoke input.<java.io.InputStream: void close()>()" [style=bold] [color=red]
+}

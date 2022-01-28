@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"128: shading = virtualinvoke shadingPattern.<org.apache.pdfbox.pdmodel.graphics.pattern.PDShadingPattern: org.apache.pdfbox.pdmodel.graphics.shading.PDShading getShading()>()" [label=1] [style=bold] [color=gold]
+"130: $r1 = virtualinvoke shading.<org.apache.pdfbox.pdmodel.graphics.shading.PDShading: java.awt.Paint toPaint(org.apache.pdfbox.util.Matrix)>($r0)" [label=1] [style=bold] [color=red]
+"128: shading = virtualinvoke shadingPattern.<org.apache.pdfbox.pdmodel.graphics.pattern.PDShadingPattern: org.apache.pdfbox.pdmodel.graphics.shading.PDShading getShading()>()"->"130: $r1 = virtualinvoke shading.<org.apache.pdfbox.pdmodel.graphics.shading.PDShading: java.awt.Paint toPaint(org.apache.pdfbox.util.Matrix)>($r0)";
+
+}

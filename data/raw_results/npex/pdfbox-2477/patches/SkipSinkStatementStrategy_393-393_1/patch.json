@@ -1,0 +1,5 @@
+{
+    "contents": "if (ast != null) {\n    // pdfbox-2477\n    ast.setPrefix(prefix);\n}",
+    "original_filepath": "org/apache/xmpbox/xml/DomXmpParser.java",
+    "patched_lines": [390]
+}

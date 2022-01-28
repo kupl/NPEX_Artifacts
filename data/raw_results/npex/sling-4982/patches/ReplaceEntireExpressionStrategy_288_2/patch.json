@@ -1,0 +1,5 @@
+{
+    "contents": "if (props != null ? props.containsKey(org.apache.sling.security.impl.ContentDispositionFilter.RewriterResponse.PROP_JCR_DATA) : org.apache.sling.security.impl.ContentDispositionFilter.RewriterResponse.PROP_JCR_DATA == null) {\n    jcrData = true;\n} else {\n    org.apache.sling.api.resource.Resource jcrContent = resource.getChild(org.apache.sling.security.impl.ContentDispositionFilter.RewriterResponse.JCR_CONTENT_LEAF);\n    if (jcrContent != null) {\n        props = jcrContent.adaptTo(org.apache.sling.api.resource.ValueMap.class);\n        if (props.containsKey(org.apache.sling.security.impl.ContentDispositionFilter.RewriterResponse.PROP_JCR_DATA)) {\n            jcrData = true;\n        }\n    }\n}",
+    "original_filepath": "org/apache/sling/security/impl/ContentDispositionFilter.java",
+    "patched_lines": [289]
+}

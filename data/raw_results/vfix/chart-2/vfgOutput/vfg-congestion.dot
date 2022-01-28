@@ -1,0 +1,4 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+}

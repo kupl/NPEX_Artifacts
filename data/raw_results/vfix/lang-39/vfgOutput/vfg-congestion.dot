@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"3676: $r4 = replacementList[i#29]" [label=1] [style=bold] [color=gold]
+"3676: $i4 = virtualinvoke $r4.<java.lang.String: int length()>()" [label=1] [style=bold] [color=red]
+"3676: $r4 = replacementList[i#29]"->"3676: $i4 = virtualinvoke $r4.<java.lang.String: int length()>()";
+
+}

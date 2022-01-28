@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/test/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapperTest.java",
+        "line": 74,
+        "method_name": "assertSwapToShardingSphereSchemaWithoutTable"
+    }
+]

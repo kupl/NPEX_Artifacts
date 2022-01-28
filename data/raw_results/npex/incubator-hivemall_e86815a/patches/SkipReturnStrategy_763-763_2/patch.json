@@ -1,0 +1,5 @@
+{
+    "contents": "if (model == null) {\n    return;\n}",
+    "original_filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+    "patched_lines": [765]
+}

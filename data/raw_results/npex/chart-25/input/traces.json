@@ -1,0 +1,47 @@
+[
+    {
+        "filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+        "line": 404,
+        "method_name": "drawVerticalItem"
+    },
+    {
+        "filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+        "line": 212,
+        "method_name": "drawItem"
+    },
+    {
+        "filepath": "org/jfree/chart/plot/CategoryPlot.java",
+        "line": 2868,
+        "method_name": "render"
+    },
+    {
+        "filepath": "org/jfree/chart/plot/CategoryPlot.java",
+        "line": 2673,
+        "method_name": "draw"
+    },
+    {
+        "filepath": "org/jfree/chart/JFreeChart.java",
+        "line": 1219,
+        "method_name": "draw"
+    },
+    {
+        "filepath": "org/jfree/chart/JFreeChart.java",
+        "line": 1393,
+        "method_name": "createBufferedImage"
+    },
+    {
+        "filepath": "org/jfree/chart/JFreeChart.java",
+        "line": 1373,
+        "method_name": "createBufferedImage"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 29,
+        "method_name": "testDrawWithNullMeanVertical"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 13,
+        "method_name": "main"
+    }
+]

@@ -1,0 +1,5 @@
+{
+    "contents": "// Check the module class path.\nfor (int i = 0; i < (contentPath != null ? contentPath.size() : -1); i++) {\n    if (contentPath.get(i).hasEntry(name)) {\n        // Use the class path index + 1 for creating the path so\n        // that we can differentiate between module content URLs\n        // (where the path will start with 0) and module class\n        // path URLs.\n        l.add(createURL(i + 1, name));\n    }\n}",
+    "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+    "patched_lines": [516]
+}

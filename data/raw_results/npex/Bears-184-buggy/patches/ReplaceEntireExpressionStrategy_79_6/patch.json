@@ -1,0 +1,5 @@
+{
+    "contents": "// \nmetamodel.getEntities().stream().filter(( it) -> it.getJavaType() != null ? it.getJavaType().equals(entity) : true)",
+    "original_filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+    "patched_lines": [94]
+}

@@ -1,0 +1,26 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"113: lemmatize" [color=red] [style=bold]
+"29: loadDictionary"
+"36: testForNullPointerException"
+"23: public void <init>()"
+"49: public void <init>(java.io.InputStream) throws java.io.IOException" [style=bold]
+"87: lemmatize" [style=bold]
+"80: getDictKeys" [style=bold]
+"2: main"->"29: loadDictionary" [style=dotted];
+
+"2: main"->"36: testForNullPointerException" [style=dotted];
+
+"2: main"->"23: public void <init>()" [style=dotted];
+
+"29: loadDictionary"->"49: public void <init>(java.io.InputStream) throws java.io.IOException" [style=dotted];
+
+"36: testForNullPointerException"->"87: lemmatize" [style=dotted];
+
+"87: lemmatize"->"113: lemmatize";
+
+"113: lemmatize"->"80: getDictKeys";
+
+}

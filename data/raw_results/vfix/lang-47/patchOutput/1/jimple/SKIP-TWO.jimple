@@ -1,0 +1,88 @@
+    public org.apache.commons.lang3.text.StrBuilder appendFixedWidthPadRight(java.lang.Object, int, char)
+    {
+        org.apache.commons.lang3.text.StrBuilder this;
+        java.lang.Object obj;
+        int width, strLen, padLen, $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, i;
+        char padChar;
+        char[] $r1, $r2, $r3;
+        java.lang.String $r5;
+
+        this := @this: org.apache.commons.lang3.text.StrBuilder;
+
+        obj := @parameter0: java.lang.Object;
+
+        width := @parameter1: int;
+
+        padChar := @parameter2: char;
+
+        if width <= 0 goto label7;
+
+        $i0 = this.<org.apache.commons.lang3.text.StrBuilder: int size>;
+
+        $i1 = $i0 + width;
+
+        virtualinvoke this.<org.apache.commons.lang3.text.StrBuilder: org.apache.commons.lang3.text.StrBuilder ensureCapacity(int)>($i1);
+
+        if obj != null goto label1;
+
+        $r5 = virtualinvoke this.<org.apache.commons.lang3.text.StrBuilder: java.lang.String getNullText()>();
+
+        goto label2;
+
+     label1:
+        $r5 = virtualinvoke obj.<java.lang.Object: java.lang.String toString()>();
+
+     label2:
+        if $r5 == null goto label6;
+
+        strLen = virtualinvoke $r5.<java.lang.String: int length()>();
+
+        if strLen < width goto label3;
+
+        $r3 = this.<org.apache.commons.lang3.text.StrBuilder: char[] buffer>;
+
+        $i8 = this.<org.apache.commons.lang3.text.StrBuilder: int size>;
+
+        virtualinvoke $r5.<java.lang.String: void getChars(int,int,char[],int)>(0, width, $r3, $i8);
+
+        goto label6;
+
+     label3:
+        padLen = width - strLen;
+
+        $r1 = this.<org.apache.commons.lang3.text.StrBuilder: char[] buffer>;
+
+        $i2 = this.<org.apache.commons.lang3.text.StrBuilder: int size>;
+
+        virtualinvoke $r5.<java.lang.String: void getChars(int,int,char[],int)>(0, strLen, $r1, $i2);
+
+        i = 0;
+
+        goto label5;
+
+     label4:
+        $r2 = this.<org.apache.commons.lang3.text.StrBuilder: char[] buffer>;
+
+        $i3 = this.<org.apache.commons.lang3.text.StrBuilder: int size>;
+
+        $i4 = $i3 + strLen;
+
+        $i5 = $i4 + i;
+
+        $r2[$i5] = padChar;
+
+        i = i + 1;
+
+     label5:
+        if i < padLen goto label4;
+
+     label6:
+        $i6 = this.<org.apache.commons.lang3.text.StrBuilder: int size>;
+
+        $i7 = $i6 + width;
+
+        this.<org.apache.commons.lang3.text.StrBuilder: int size> = $i7;
+
+     label7:
+        return this;
+    }

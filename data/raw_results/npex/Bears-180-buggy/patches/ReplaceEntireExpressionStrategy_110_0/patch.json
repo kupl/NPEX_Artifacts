@@ -1,0 +1,5 @@
+{
+    "contents": "return uri.getHost() != null ? com.google.cloud.storage.BlobId.of(uri.getHost(), uri.getPath().substring(1, uri.getPath().length())) : null",
+    "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+    "patched_lines": [111]
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "if (rect == null) {\n    rect = new org.apache.pdfbox.pdmodel.common.PDRectangle();\n}",
+    "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+    "patched_lines": [132]
+}

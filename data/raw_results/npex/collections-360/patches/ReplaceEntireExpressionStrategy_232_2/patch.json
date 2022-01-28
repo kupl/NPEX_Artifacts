@@ -1,0 +1,5 @@
+{
+    "contents": "while (iterator != null ? iterator.hasNext() : false) {\n    E object = iterator.next();\n    if (predicate.evaluate(object)) {\n        nextObject = object;\n        nextObjectSet = true;\n        ret = true;\n    }\n} ",
+    "original_filepath": "org/apache/commons/collections/iterators/FilterListIterator.java",
+    "patched_lines": [231]
+}

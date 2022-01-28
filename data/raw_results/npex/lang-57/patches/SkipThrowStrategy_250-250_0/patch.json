@@ -1,0 +1,5 @@
+{
+    "contents": "if (org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+    "original_filepath": "org/apache/commons/lang3/LocaleUtils.java",
+    "patched_lines": [259]
+}

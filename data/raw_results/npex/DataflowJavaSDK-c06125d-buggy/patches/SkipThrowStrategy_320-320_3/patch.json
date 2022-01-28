@@ -1,0 +1,5 @@
+{
+    "contents": "if (unions == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+    "original_filepath": "sdk/src/main/java/com/google/cloud/dataflow/sdk/transforms/join/CoGbkResult.java",
+    "patched_lines": [317]
+}

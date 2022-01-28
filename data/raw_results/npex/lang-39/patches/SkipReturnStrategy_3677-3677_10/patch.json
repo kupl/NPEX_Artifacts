@@ -1,0 +1,5 @@
+{
+    "contents": "if (replacement_str == null) {\n    return \"\";\n}",
+    "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+    "patched_lines": [3703]
+}

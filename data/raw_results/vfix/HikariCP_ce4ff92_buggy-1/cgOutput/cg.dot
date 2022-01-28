@@ -1,0 +1,1324 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"197: closeStatements" [color=red] [style=bold]
+"14: public void <init>()"
+"75: testReadOnly"
+"40: <clinit>" [style=bold]
+"-1: isReadOnly"
+"224: close" [style=bold]
+"-1: setReadOnly"
+"435: unwrap" [style=bold]
+"280: close" [style=bold]
+"77: getConnection" [style=bold]
+"288: setDataSourceClassName" [style=bold]
+"184: setConnectionTestQuery" [style=bold]
+"610: setMaximumPoolSize" [style=bold]
+"627: setMinimumIdle" [style=bold]
+"161: setCatalog" [style=bold]
+"55: public void <init>()" [style=bold]
+"48: <clinit>" [style=bold]
+"145: checkException"
+"451: <clinit>" [style=bold]
+"84: recycle" [style=bold]
+"113: isMarkedEvicted" [style=bold]
+"-1: clearWarnings"
+"180: currentTime" [style=bold]
+"121: currentTime"
+"103: resetConnectionState" [style=bold]
+"108: getPoolName"
+"-1: rollback"
+"46: cancel" [style=bold]
+"91: cancel"
+"73: <clinit>" [style=bold]
+"391: setReadOnly" [style=bold]
+"209: shutdown" [style=bold]
+"145: getConnection" [style=bold]
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)" [style=bold]
+"655: getPoolName" [style=bold]
+"748: validate" [style=bold]
+"301: isClosed" [style=bold]
+"65: <clinit>" [style=bold]
+"43: <clinit>" [style=bold]
+"100: public void <init>()" [style=bold]
+"123: evict"
+"455: getClosedConnection" [style=bold]
+"395: releaseConnection" [style=bold]
+"175: resetConnectionState" [style=bold]
+"63: toString"
+"364: rollback"
+"147: clear"
+"67: close"
+"100: get"
+"162: size" [style=bold]
+"28: <clinit>" [style=bold]
+"571: close"
+"603: close" [style=bold]
+"194: elapsedMillis"
+"128: elapsedMillis"
+"733: getThreadFactory" [style=bold]
+"603: getMaximumPoolSize" [style=bold]
+"246: close" [style=bold]
+"676: getScheduledExecutorService" [style=bold]
+"252: unregisterMBeans" [style=bold]
+"380: logPoolState" [style=bold]
+"209: shutdownNetworkTimeoutExecutor" [style=bold]
+"326: getTotalConnections" [style=bold]
+"340: softEvictConnections" [style=bold]
+"485: abortActiveConnections" [style=bold]
+"104: createThreadPoolExecutor" [style=bold]
+"157: getConnection" [style=bold]
+"51: void <init>(long, java.util.concurrent.ScheduledExecutorService)" [style=bold]
+"578: void <init>(com.zaxxer.hikari.pool.HikariPool, com.zaxxer.hikari.pool.HikariPool$1)" [style=bold]
+"24: public void <init>(java.lang.String, boolean)" [style=bold]
+"51: public void <init>()"
+"507: getHealthCheckRegistry" [style=bold]
+"467: getMetricRegistry" [style=bold]
+"448: getMetricsTrackerFactory" [style=bold]
+"575: getLeakDetectionThreshold" [style=bold]
+"387: isAllowPoolSuspension" [style=bold]
+"92: public void <init>(com.zaxxer.hikari.util.ConcurrentBag$IBagStateListener)" [style=bold]
+"552: void <init>(com.zaxxer.hikari.pool.HikariPool, com.zaxxer.hikari.pool.HikariPool$1)" [style=bold]
+"506: initializeConnections" [style=bold]
+"225: registerMBeans" [style=bold]
+"288: setHealthCheckRegistry" [style=bold]
+"266: setMetricRegistry" [style=bold]
+"277: setMetricsTrackerFactory" [style=bold]
+"65: void <init>(com.zaxxer.hikari.HikariConfig)" [style=bold]
+"58: <clinit>" [style=bold]
+"29: <clinit>"
+"33: <clinit>" [style=bold]
+"858: logConfiguration"
+"806: validateNumerics" [style=bold]
+"39: getNullIfEmpty" [style=bold]
+"879: loadProperties"
+"407: closeConnection" [style=bold]
+"455: void <init>()" [style=bold]
+"597: recordConnectionUsage" [style=bold]
+"189: requite" [style=bold]
+"576: recordConnectionUsage"
+"543: stringFromResetBits"
+"448: setNetworkTimeout" [style=bold]
+"-1: setCatalog"
+"-1: setTransactionIsolation"
+"-1: setAutoCommit"
+"131: getNetworkTimeoutState"
+"116: getCatalogState"
+"121: getTransactionIsolationState"
+"111: getAutoCommitState"
+"126: getReadOnlyState" [style=bold]
+"90: toString"
+"167: untrackStatement"
+"102: access$000"
+"40: close"
+"78: close"
+"563: isRegisterMbeans" [style=bold]
+"333: getThreadsAwaitingConnection"
+"319: getIdleConnections" [style=bold]
+"312: getActiveConnections"
+"352: size" [style=bold]
+"336: getCount" [style=bold]
+"281: values" [style=bold]
+"527: softEvictConnection" [style=bold]
+"208: iterator"
+"260: values" [style=bold]
+"226: remove" [style=bold]
+"101: quietlyCloseConnection" [style=bold]
+"170: close" [style=bold]
+"-1: abort"
+"66: release"
+"34: release" [style=bold]
+"69: start" [style=bold]
+"585: recordBorrowStats"
+"609: recordBorrowStats" [style=bold]
+"156: getLastConnectionFailure"
+"123: isConnectionAlive"
+"201: elapsedMillis" [style=bold]
+"135: elapsedMillis"
+"98: createProxyConnection" [style=bold]
+"125: borrow" [style=bold]
+"31: acquire" [style=bold]
+"61: acquire"
+"578: private void <init>(com.zaxxer.hikari.pool.HikariPool)" [style=bold]
+"55: private void <init>(boolean)" [style=bold]
+"103: void <init>(com.zaxxer.hikari.util.ConcurrentBag)"
+"57: public void <init>()" [style=bold]
+"372: useWeakThreadLocals" [style=bold]
+"552: private void <init>(com.zaxxer.hikari.pool.HikariPool)" [style=bold]
+"410: isInitializationFailFast" [style=bold]
+"638: public void <init>(java.lang.Throwable)"
+"465: fillPool" [style=bold]
+"308: newConnection" [style=bold]
+"59: registerHealthChecks"
+"28: public void <init>(com.codahale.metrics.MetricRegistry)"
+"591: void <init>()" [style=bold]
+"564: void <init>(com.zaxxer.hikari.metrics.MetricsTracker)"
+"40: create"
+"537: getPoolStats"
+"214: getConnectionTimeout" [style=bold]
+"426: isIsolateInternalQueries" [style=bold]
+"171: getConnectionTestQuery" [style=bold]
+"691: getTransactionIsolation" [style=bold]
+"367: isAutoCommit" [style=bold]
+"553: isReadOnly" [style=bold]
+"151: getCatalog" [style=bold]
+"282: initializeDataSource" [style=bold]
+"126: getTransactionIsolation" [style=bold]
+"29: void <init>(boolean)" [style=bold]
+"44: void <init>()" [style=bold]
+"39: <clinit>" [style=bold]
+"74: getPropertyNames"
+"97: getProperty"
+"115: copyProperties"
+"43: setTargetFromProperties" [style=bold]
+"418: run" [style=bold]
+"415: void <init>(com.zaxxer.hikari.pool.HikariPool, java.sql.Connection, java.lang.String)"
+"165: lazySet" [style=bold]
+"67: signal" [style=bold]
+"75: add" [style=bold]
+"129: getMillisSinceBorrowed"
+"97: recordConnectionUsageMillis"
+"35: recordConnectionUsageMillis"
+"-1: setNetworkTimeout"
+"409: setCatalog"
+"400: setTransactionIsolation"
+"382: setAutoCommit"
+"127: remove"
+"106: create" [style=bold]
+"325: getPendingQueue"
+"151: getState"
+"298: reserve" [style=bold]
+"118: markEvicted"
+"158: compareAndSet" [style=bold]
+"38: <clinit>" [style=bold]
+"57: private void <init>(com.zaxxer.hikari.pool.ProxyLeakTask, com.zaxxer.hikari.pool.PoolEntry)"
+"90: recordConnectionAcquiredNanos"
+"31: recordConnectionAcquiredNanos"
+"215: elapsedNanos"
+"149: elapsedNanos"
+"-1: execute"
+"-1: execute"
+"-1: execute"
+"396: setQueryTimeout"
+"420: getAndSetNetworkTimeout" [style=bold]
+"-1: createStatement"
+"-1: isValid"
+"240: getValidationTimeout"
+"-1: getProxyConnection"
+"91: waitUntilSequenceExceeded" [style=bold]
+"301: addBagItem" [style=bold]
+"77: currentSequence" [style=bold]
+"185: remove"
+"63: access$700"
+"52: create" [style=bold]
+"117: void <init>(com.zaxxer.hikari.util.QueuedSequenceSynchronizer, com.zaxxer.hikari.util.QueuedSequenceSynchronizer$1)" [style=bold]
+"474: run"
+"471: void <init>(com.zaxxer.hikari.pool.HikariPool)"
+"620: getMinimumIdle" [style=bold]
+"713: getUsername" [style=bold]
+"334: setupConnection" [style=bold]
+"105: getConnection"
+"100: getConnection"
+"94: getConnection"
+"639: getPassword" [style=bold]
+"124: void <init>(com.codahale.metrics.Timer, long)"
+"67: void <init>(com.zaxxer.hikari.HikariConfig)"
+"93: void <init>(com.zaxxer.hikari.pool.HikariPool, long)"
+"538: getHealthCheckProperties"
+"559: protected void <init>()" [style=bold]
+"35: public void <init>(java.lang.String, com.zaxxer.hikari.metrics.PoolStats, com.codahale.metrics.MetricRegistry)"
+"537: void <init>(com.zaxxer.hikari.pool.HikariPool, long)"
+"484: createNetworkTimeoutExecutor" [style=bold]
+"521: setLoginTimeout" [style=bold]
+"41: public void <init>(java.lang.String, java.lang.String, java.util.Properties, java.lang.String, java.lang.String)"
+"267: getDataSource" [style=bold]
+"308: getDataSourceProperties" [style=bold]
+"318: getDriverClassName" [style=bold]
+"283: getDataSourceClassName" [style=bold]
+"352: getJdbcUrl" [style=bold]
+"34: <clinit>"
+"69: createInstance" [style=bold]
+"27: void <init>(boolean, com.zaxxer.hikari.util.SuspendResumeLock$1)"
+"31: void <init>(com.zaxxer.hikari.pool.ProxyLeakTask$1)"
+"99: toString"
+"136: toString"
+"50: toString"
+"52: toString"
+"320: toString"
+"293: addDataSourceProperty"
+"124: setProperty"
+"418: setNetworkTimeout"
+"174: public void <init>()" [style=bold]
+"115: public void <init>()"
+"114: getQueueLength"
+"58: void <init>()" [style=bold]
+"93: execute"
+"45: checkException"
+"-1: setQueryTimeout"
+"-1: setQueryTimeout"
+"-1: setQueryTimeout"
+"-1: getNetworkTimeout"
+"271: createStatement"
+"-1: protected void <init>(com.zaxxer.hikari.pool.PoolEntry, java.sql.Connection, com.zaxxer.hikari.util.FastList, com.zaxxer.hikari.pool.ProxyLeakTask, long, boolean, boolean)"
+"80: get" [style=bold]
+"114: get"
+"70: public void <init>()"
+"89: public void <init>(java.lang.Class) throws java.lang.Exception"
+"77: public void <init>()" [style=bold]
+"117: private void <init>(com.zaxxer.hikari.util.QueuedSequenceSynchronizer)" [style=bold]
+"195: getConnectionInitSql" [style=bold]
+"-1: getTransactionIsolation"
+"463: executeSql" [style=bold]
+"365: checkValidationMode" [style=bold]
+"66: void <init>(com.zaxxer.hikari.metrics.dropwizard.CodaHaleMetricsTracker, com.zaxxer.hikari.metrics.PoolStats)"
+"58: void <init>(com.zaxxer.hikari.metrics.dropwizard.CodaHaleMetricsTracker, com.zaxxer.hikari.metrics.PoolStats)"
+"50: void <init>(com.zaxxer.hikari.metrics.dropwizard.CodaHaleMetricsTracker, com.zaxxer.hikari.metrics.PoolStats)"
+"42: void <init>(com.zaxxer.hikari.metrics.dropwizard.CodaHaleMetricsTracker, com.zaxxer.hikari.metrics.PoolStats)"
+"26: public void <init>()"
+"38: public void <init>(long)"
+"498: void <init>(com.zaxxer.hikari.pool.PoolBase$1)"
+"128: setLoginTimeout"
+"118: setLoginTimeout"
+"64: private void <init>()"
+"180: stateToString"
+"172: markCommitStateDirty"
+"-1: getProxyStatement"
+"190: trackStatement"
+"85: protected void <init>(com.zaxxer.hikari.pool.PoolEntry, java.sql.Connection, com.zaxxer.hikari.util.FastList, com.zaxxer.hikari.pool.ProxyLeakTask, long, boolean, boolean)" [style=bold]
+"-1: commit"
+"498: private void <init>()"
+"63: getUnwrappedDataSource"
+"-1: protected void <init>(com.zaxxer.hikari.pool.ProxyConnection, java.sql.Statement)"
+"355: commit"
+"161: getUnwrappedDataSource"
+"38: protected void <init>(com.zaxxer.hikari.pool.ProxyConnection, java.sql.Statement)"
+"2: main"->"14: public void <init>()" [style=dotted];
+
+"2: main"->"75: testReadOnly" [style=dotted];
+
+"75: testReadOnly"->"40: <clinit>" [style=dotted];
+
+"75: testReadOnly"->"-1: isReadOnly" [style=dotted];
+
+"75: testReadOnly"->"224: close" [style=dotted];
+
+"75: testReadOnly"->"-1: setReadOnly" [style=dotted];
+
+"75: testReadOnly"->"435: unwrap" [style=dotted];
+
+"75: testReadOnly"->"280: close" [style=dotted];
+
+"75: testReadOnly"->"77: getConnection" [style=dotted];
+
+"75: testReadOnly"->"288: setDataSourceClassName" [style=dotted];
+
+"75: testReadOnly"->"184: setConnectionTestQuery" [style=dotted];
+
+"75: testReadOnly"->"610: setMaximumPoolSize" [style=dotted];
+
+"75: testReadOnly"->"627: setMinimumIdle" [style=dotted];
+
+"75: testReadOnly"->"161: setCatalog" [style=dotted];
+
+"75: testReadOnly"->"55: public void <init>()" [style=dotted];
+
+"75: testReadOnly"->"48: <clinit>" [style=dotted];
+
+"40: <clinit>"->"40: <clinit>";
+
+"40: <clinit>"->"48: <clinit>";
+
+"-1: isReadOnly"->"-1: isReadOnly" [style=dotted];
+
+"-1: isReadOnly"->"145: checkException" [style=dotted];
+
+"224: close"->"451: <clinit>";
+
+"224: close"->"84: recycle";
+
+"224: close"->"113: isMarkedEvicted";
+
+"224: close"->"-1: clearWarnings" [style=dotted];
+
+"224: close"->"180: currentTime";
+
+"224: close"->"121: currentTime" [style=dotted];
+
+"224: close"->"103: resetConnectionState";
+
+"224: close"->"108: getPoolName" [style=dotted];
+
+"224: close"->"-1: rollback" [style=dotted];
+
+"224: close"->"46: cancel";
+
+"224: close"->"91: cancel" [style=dotted];
+
+"224: close"->"145: checkException" [style=dotted];
+
+"224: close"->"197: closeStatements";
+
+"224: close"->"73: <clinit>";
+
+"-1: setReadOnly"->"391: setReadOnly" [style=dotted];
+
+"-1: setReadOnly"->"145: checkException" [style=dotted];
+
+"435: unwrap"->"435: unwrap";
+
+"280: close"->"40: <clinit>";
+
+"280: close"->"209: shutdown";
+
+"280: close"->"48: <clinit>";
+
+"77: getConnection"->"145: getConnection";
+
+"77: getConnection"->"100: public void <init>(com.zaxxer.hikari.HikariConfig)";
+
+"77: getConnection"->"655: getPoolName";
+
+"77: getConnection"->"748: validate";
+
+"77: getConnection"->"301: isClosed";
+
+"77: getConnection"->"40: <clinit>";
+
+"77: getConnection"->"48: <clinit>";
+
+"77: getConnection"->"65: <clinit>";
+
+"77: getConnection"->"43: <clinit>";
+
+"55: public void <init>()"->"100: public void <init>()";
+
+"48: <clinit>"->"48: <clinit>";
+
+"145: checkException"->"73: <clinit>" [style=dotted];
+
+"145: checkException"->"145: checkException" [style=dotted];
+
+"145: checkException"->"123: evict" [style=dotted];
+
+"145: checkException"->"46: cancel" [style=dotted];
+
+"145: checkException"->"91: cancel" [style=dotted];
+
+"145: checkException"->"108: getPoolName" [style=dotted];
+
+"145: checkException"->"451: <clinit>" [style=dotted];
+
+"451: <clinit>"->"451: <clinit>";
+
+"451: <clinit>"->"455: getClosedConnection";
+
+"84: recycle"->"395: releaseConnection";
+
+"-1: clearWarnings"->"-1: clearWarnings" [style=dotted];
+
+"-1: clearWarnings"->"145: checkException" [style=dotted];
+
+"103: resetConnectionState"->"175: resetConnectionState";
+
+"108: getPoolName"->"63: toString" [style=dotted];
+
+"-1: rollback"->"364: rollback" [style=dotted];
+
+"-1: rollback"->"145: checkException" [style=dotted];
+
+"197: closeStatements"->"451: <clinit>";
+
+"197: closeStatements"->"147: clear" [style=dotted];
+
+"197: closeStatements"->"145: checkException" [style=dotted];
+
+"197: closeStatements"->"67: close" [style=dotted];
+
+"197: closeStatements"->"100: get" [style=dotted];
+
+"197: closeStatements"->"162: size";
+
+"73: <clinit>"->"73: <clinit>";
+
+"73: <clinit>"->"28: <clinit>";
+
+"391: setReadOnly"->"-1: setReadOnly" [style=dotted];
+
+"209: shutdown"->"65: <clinit>";
+
+"209: shutdown"->"571: close" [style=dotted];
+
+"209: shutdown"->"603: close";
+
+"209: shutdown"->"194: elapsedMillis" [style=dotted];
+
+"209: shutdown"->"128: elapsedMillis" [style=dotted];
+
+"209: shutdown"->"180: currentTime";
+
+"209: shutdown"->"121: currentTime" [style=dotted];
+
+"209: shutdown"->"733: getThreadFactory";
+
+"209: shutdown"->"603: getMaximumPoolSize";
+
+"209: shutdown"->"246: close";
+
+"209: shutdown"->"676: getScheduledExecutorService";
+
+"209: shutdown"->"252: unregisterMBeans";
+
+"209: shutdown"->"380: logPoolState";
+
+"209: shutdown"->"209: shutdownNetworkTimeoutExecutor";
+
+"209: shutdown"->"326: getTotalConnections";
+
+"209: shutdown"->"340: softEvictConnections";
+
+"209: shutdown"->"485: abortActiveConnections";
+
+"209: shutdown"->"43: <clinit>";
+
+"209: shutdown"->"104: createThreadPoolExecutor";
+
+"145: getConnection"->"157: getConnection";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"51: void <init>(long, java.util.concurrent.ScheduledExecutorService)";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"578: void <init>(com.zaxxer.hikari.pool.HikariPool, com.zaxxer.hikari.pool.HikariPool$1)";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"24: public void <init>(java.lang.String, boolean)";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"51: public void <init>()" [style=dotted];
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"507: getHealthCheckRegistry";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"467: getMetricRegistry";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"448: getMetricsTrackerFactory";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"575: getLeakDetectionThreshold";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"676: getScheduledExecutorService";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"733: getThreadFactory";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"603: getMaximumPoolSize";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"387: isAllowPoolSuspension";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"92: public void <init>(com.zaxxer.hikari.util.ConcurrentBag$IBagStateListener)";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"552: void <init>(com.zaxxer.hikari.pool.HikariPool, com.zaxxer.hikari.pool.HikariPool$1)";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"506: initializeConnections";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"225: registerMBeans";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"288: setHealthCheckRegistry";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"266: setMetricRegistry";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"277: setMetricsTrackerFactory";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"65: void <init>(com.zaxxer.hikari.HikariConfig)";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"58: <clinit>";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"29: <clinit>" [style=dotted];
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"33: <clinit>";
+
+"100: public void <init>(com.zaxxer.hikari.HikariConfig)"->"104: createThreadPoolExecutor";
+
+"748: validate"->"48: <clinit>";
+
+"748: validate"->"858: logConfiguration" [style=dotted];
+
+"748: validate"->"806: validateNumerics";
+
+"748: validate"->"39: getNullIfEmpty";
+
+"65: <clinit>"->"65: <clinit>";
+
+"65: <clinit>"->"43: <clinit>";
+
+"65: <clinit>"->"28: <clinit>";
+
+"43: <clinit>"->"43: <clinit>";
+
+"100: public void <init>()"->"879: loadProperties" [style=dotted];
+
+"100: public void <init>()"->"48: <clinit>";
+
+"123: evict"->"407: closeConnection" [style=dotted];
+
+"455: getClosedConnection"->"455: void <init>()";
+
+"395: releaseConnection"->"597: recordConnectionUsage";
+
+"395: releaseConnection"->"189: requite";
+
+"395: releaseConnection"->"576: recordConnectionUsage" [style=dotted];
+
+"175: resetConnectionState"->"543: stringFromResetBits" [style=dotted];
+
+"175: resetConnectionState"->"448: setNetworkTimeout";
+
+"175: resetConnectionState"->"-1: setCatalog" [style=dotted];
+
+"175: resetConnectionState"->"-1: setTransactionIsolation" [style=dotted];
+
+"175: resetConnectionState"->"-1: setAutoCommit" [style=dotted];
+
+"175: resetConnectionState"->"-1: setReadOnly" [style=dotted];
+
+"175: resetConnectionState"->"131: getNetworkTimeoutState" [style=dotted];
+
+"175: resetConnectionState"->"116: getCatalogState" [style=dotted];
+
+"175: resetConnectionState"->"121: getTransactionIsolationState" [style=dotted];
+
+"175: resetConnectionState"->"111: getAutoCommitState" [style=dotted];
+
+"175: resetConnectionState"->"126: getReadOnlyState";
+
+"63: toString"->"90: toString" [style=dotted];
+
+"364: rollback"->"73: <clinit>" [style=dotted];
+
+"364: rollback"->"180: currentTime" [style=dotted];
+
+"364: rollback"->"121: currentTime" [style=dotted];
+
+"364: rollback"->"-1: rollback" [style=dotted];
+
+"67: close"->"167: untrackStatement" [style=dotted];
+
+"67: close"->"145: checkException" [style=dotted];
+
+"67: close"->"67: close" [style=dotted];
+
+"28: <clinit>"->"28: <clinit>";
+
+"28: <clinit>"->"102: access$000" [style=dotted];
+
+"571: close"->"40: close" [style=dotted];
+
+"571: close"->"78: close" [style=dotted];
+
+"252: unregisterMBeans"->"563: isRegisterMbeans";
+
+"380: logPoolState"->"65: <clinit>";
+
+"380: logPoolState"->"333: getThreadsAwaitingConnection" [style=dotted];
+
+"380: logPoolState"->"319: getIdleConnections";
+
+"380: logPoolState"->"312: getActiveConnections" [style=dotted];
+
+"380: logPoolState"->"326: getTotalConnections";
+
+"380: logPoolState"->"43: <clinit>";
+
+"326: getTotalConnections"->"352: size";
+
+"326: getTotalConnections"->"336: getCount";
+
+"340: softEvictConnections"->"281: values";
+
+"340: softEvictConnections"->"527: softEvictConnection";
+
+"340: softEvictConnections"->"208: iterator" [style=dotted];
+
+"485: abortActiveConnections"->"260: values";
+
+"485: abortActiveConnections"->"226: remove";
+
+"485: abortActiveConnections"->"101: quietlyCloseConnection";
+
+"485: abortActiveConnections"->"170: close";
+
+"485: abortActiveConnections"->"-1: abort" [style=dotted];
+
+"485: abortActiveConnections"->"208: iterator" [style=dotted];
+
+"104: createThreadPoolExecutor"->"24: public void <init>(java.lang.String, boolean)";
+
+"157: getConnection"->"65: <clinit>";
+
+"157: getConnection"->"194: elapsedMillis" [style=dotted];
+
+"157: getConnection"->"128: elapsedMillis" [style=dotted];
+
+"157: getConnection"->"66: release" [style=dotted];
+
+"157: getConnection"->"34: release";
+
+"157: getConnection"->"69: start";
+
+"157: getConnection"->"585: recordBorrowStats" [style=dotted];
+
+"157: getConnection"->"609: recordBorrowStats";
+
+"157: getConnection"->"156: getLastConnectionFailure" [style=dotted];
+
+"157: getConnection"->"380: logPoolState";
+
+"157: getConnection"->"407: closeConnection";
+
+"157: getConnection"->"123: isConnectionAlive" [style=dotted];
+
+"157: getConnection"->"201: elapsedMillis";
+
+"157: getConnection"->"135: elapsedMillis" [style=dotted];
+
+"157: getConnection"->"98: createProxyConnection";
+
+"157: getConnection"->"113: isMarkedEvicted";
+
+"157: getConnection"->"180: currentTime";
+
+"157: getConnection"->"121: currentTime" [style=dotted];
+
+"157: getConnection"->"125: borrow";
+
+"157: getConnection"->"31: acquire";
+
+"157: getConnection"->"61: acquire" [style=dotted];
+
+"157: getConnection"->"43: <clinit>";
+
+"578: void <init>(com.zaxxer.hikari.pool.HikariPool, com.zaxxer.hikari.pool.HikariPool$1)"->"578: private void <init>(com.zaxxer.hikari.pool.HikariPool)";
+
+"51: public void <init>()"->"55: private void <init>(boolean)" [style=dotted];
+
+"92: public void <init>(com.zaxxer.hikari.util.ConcurrentBag$IBagStateListener)"->"103: void <init>(com.zaxxer.hikari.util.ConcurrentBag)" [style=dotted];
+
+"92: public void <init>(com.zaxxer.hikari.util.ConcurrentBag$IBagStateListener)"->"57: public void <init>()";
+
+"92: public void <init>(com.zaxxer.hikari.util.ConcurrentBag$IBagStateListener)"->"372: useWeakThreadLocals";
+
+"552: void <init>(com.zaxxer.hikari.pool.HikariPool, com.zaxxer.hikari.pool.HikariPool$1)"->"552: private void <init>(com.zaxxer.hikari.pool.HikariPool)";
+
+"506: initializeConnections"->"410: isInitializationFailFast";
+
+"506: initializeConnections"->"638: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"506: initializeConnections"->"224: close";
+
+"506: initializeConnections"->"465: fillPool";
+
+"506: initializeConnections"->"209: shutdown";
+
+"506: initializeConnections"->"308: newConnection";
+
+"225: registerMBeans"->"563: isRegisterMbeans";
+
+"288: setHealthCheckRegistry"->"59: registerHealthChecks" [style=dotted];
+
+"266: setMetricRegistry"->"28: public void <init>(com.codahale.metrics.MetricRegistry)" [style=dotted];
+
+"266: setMetricRegistry"->"277: setMetricsTrackerFactory";
+
+"277: setMetricsTrackerFactory"->"655: getPoolName";
+
+"277: setMetricsTrackerFactory"->"591: void <init>()";
+
+"277: setMetricsTrackerFactory"->"564: void <init>(com.zaxxer.hikari.metrics.MetricsTracker)" [style=dotted];
+
+"277: setMetricsTrackerFactory"->"40: create" [style=dotted];
+
+"277: setMetricsTrackerFactory"->"537: getPoolStats" [style=dotted];
+
+"65: void <init>(com.zaxxer.hikari.HikariConfig)"->"214: getConnectionTimeout";
+
+"65: void <init>(com.zaxxer.hikari.HikariConfig)"->"655: getPoolName";
+
+"65: void <init>(com.zaxxer.hikari.HikariConfig)"->"426: isIsolateInternalQueries";
+
+"65: void <init>(com.zaxxer.hikari.HikariConfig)"->"171: getConnectionTestQuery";
+
+"65: void <init>(com.zaxxer.hikari.HikariConfig)"->"691: getTransactionIsolation";
+
+"65: void <init>(com.zaxxer.hikari.HikariConfig)"->"367: isAutoCommit";
+
+"65: void <init>(com.zaxxer.hikari.HikariConfig)"->"553: isReadOnly";
+
+"65: void <init>(com.zaxxer.hikari.HikariConfig)"->"151: getCatalog";
+
+"65: void <init>(com.zaxxer.hikari.HikariConfig)"->"282: initializeDataSource";
+
+"65: void <init>(com.zaxxer.hikari.HikariConfig)"->"126: getTransactionIsolation";
+
+"58: <clinit>"->"58: <clinit>";
+
+"29: <clinit>"->"29: <clinit>" [style=dotted];
+
+"29: <clinit>"->"29: void <init>(boolean)" [style=dotted];
+
+"33: <clinit>"->"33: <clinit>";
+
+"33: <clinit>"->"44: void <init>()";
+
+"858: logConfiguration"->"48: <clinit>" [style=dotted];
+
+"858: logConfiguration"->"39: <clinit>" [style=dotted];
+
+"858: logConfiguration"->"74: getPropertyNames" [style=dotted];
+
+"858: logConfiguration"->"97: getProperty" [style=dotted];
+
+"858: logConfiguration"->"115: copyProperties" [style=dotted];
+
+"806: validateNumerics"->"48: <clinit>";
+
+"879: loadProperties"->"39: <clinit>" [style=dotted];
+
+"879: loadProperties"->"43: setTargetFromProperties" [style=dotted];
+
+"407: closeConnection"->"65: <clinit>";
+
+"407: closeConnection"->"418: run";
+
+"407: closeConnection"->"415: void <init>(com.zaxxer.hikari.pool.HikariPool, java.sql.Connection, java.lang.String)" [style=dotted];
+
+"407: closeConnection"->"170: close";
+
+"407: closeConnection"->"226: remove";
+
+"407: closeConnection"->"43: <clinit>";
+
+"189: requite"->"165: lazySet";
+
+"189: requite"->"67: signal";
+
+"189: requite"->"75: add";
+
+"576: recordConnectionUsage"->"129: getMillisSinceBorrowed" [style=dotted];
+
+"576: recordConnectionUsage"->"97: recordConnectionUsageMillis" [style=dotted];
+
+"576: recordConnectionUsage"->"35: recordConnectionUsageMillis" [style=dotted];
+
+"543: stringFromResetBits"->"43: <clinit>" [style=dotted];
+
+"448: setNetworkTimeout"->"-1: setNetworkTimeout" [style=dotted];
+
+"-1: setCatalog"->"409: setCatalog" [style=dotted];
+
+"-1: setCatalog"->"145: checkException" [style=dotted];
+
+"-1: setTransactionIsolation"->"400: setTransactionIsolation" [style=dotted];
+
+"-1: setTransactionIsolation"->"145: checkException" [style=dotted];
+
+"-1: setAutoCommit"->"382: setAutoCommit" [style=dotted];
+
+"-1: setAutoCommit"->"145: checkException" [style=dotted];
+
+"167: untrackStatement"->"127: remove" [style=dotted];
+
+"102: access$000"->"106: create" [style=dotted];
+
+"333: getThreadsAwaitingConnection"->"325: getPendingQueue" [style=dotted];
+
+"319: getIdleConnections"->"336: getCount";
+
+"312: getActiveConnections"->"336: getCount" [style=dotted];
+
+"336: getCount"->"151: getState" [style=dotted];
+
+"527: softEvictConnection"->"298: reserve";
+
+"527: softEvictConnection"->"118: markEvicted" [style=dotted];
+
+"527: softEvictConnection"->"407: closeConnection";
+
+"260: values"->"75: add";
+
+"260: values"->"151: getState" [style=dotted];
+
+"226: remove"->"58: <clinit>";
+
+"226: remove"->"158: compareAndSet";
+
+"101: quietlyCloseConnection"->"224: close";
+
+"101: quietlyCloseConnection"->"448: setNetworkTimeout";
+
+"170: close"->"38: <clinit>";
+
+"170: close"->"108: getPoolName" [style=dotted];
+
+"-1: abort"->"-1: abort" [style=dotted];
+
+"-1: abort"->"145: checkException" [style=dotted];
+
+"69: start"->"33: <clinit>";
+
+"69: start"->"57: private void <init>(com.zaxxer.hikari.pool.ProxyLeakTask, com.zaxxer.hikari.pool.PoolEntry)" [style=dotted];
+
+"585: recordBorrowStats"->"28: <clinit>" [style=dotted];
+
+"585: recordBorrowStats"->"90: recordConnectionAcquiredNanos" [style=dotted];
+
+"585: recordBorrowStats"->"31: recordConnectionAcquiredNanos" [style=dotted];
+
+"585: recordBorrowStats"->"215: elapsedNanos" [style=dotted];
+
+"585: recordBorrowStats"->"149: elapsedNanos" [style=dotted];
+
+"585: recordBorrowStats"->"180: currentTime" [style=dotted];
+
+"585: recordBorrowStats"->"121: currentTime" [style=dotted];
+
+"123: isConnectionAlive"->"67: close" [style=dotted];
+
+"123: isConnectionAlive"->"-1: execute" [style=dotted];
+
+"123: isConnectionAlive"->"-1: execute" [style=dotted];
+
+"123: isConnectionAlive"->"-1: execute" [style=dotted];
+
+"123: isConnectionAlive"->"171: getConnectionTestQuery" [style=dotted];
+
+"123: isConnectionAlive"->"448: setNetworkTimeout" [style=dotted];
+
+"123: isConnectionAlive"->"396: setQueryTimeout" [style=dotted];
+
+"123: isConnectionAlive"->"420: getAndSetNetworkTimeout" [style=dotted];
+
+"123: isConnectionAlive"->"-1: rollback" [style=dotted];
+
+"123: isConnectionAlive"->"-1: createStatement" [style=dotted];
+
+"123: isConnectionAlive"->"-1: isValid" [style=dotted];
+
+"123: isConnectionAlive"->"240: getValidationTimeout" [style=dotted];
+
+"98: createProxyConnection"->"-1: getProxyConnection" [style=dotted];
+
+"125: borrow"->"91: waitUntilSequenceExceeded";
+
+"125: borrow"->"301: addBagItem";
+
+"125: borrow"->"77: currentSequence";
+
+"125: borrow"->"158: compareAndSet";
+
+"125: borrow"->"185: remove" [style=dotted];
+
+"125: borrow"->"162: size";
+
+"578: private void <init>(com.zaxxer.hikari.pool.HikariPool)"->"65: <clinit>";
+
+"578: private void <init>(com.zaxxer.hikari.pool.HikariPool)"->"180: currentTime";
+
+"578: private void <init>(com.zaxxer.hikari.pool.HikariPool)"->"121: currentTime" [style=dotted];
+
+"578: private void <init>(com.zaxxer.hikari.pool.HikariPool)"->"43: <clinit>";
+
+"578: private void <init>(com.zaxxer.hikari.pool.HikariPool)"->"63: access$700" [style=dotted];
+
+"57: public void <init>()"->"52: create";
+
+"57: public void <init>()"->"117: void <init>(com.zaxxer.hikari.util.QueuedSequenceSynchronizer, com.zaxxer.hikari.util.QueuedSequenceSynchronizer$1)";
+
+"465: fillPool"->"474: run" [style=dotted];
+
+"465: fillPool"->"471: void <init>(com.zaxxer.hikari.pool.HikariPool)" [style=dotted];
+
+"465: fillPool"->"301: addBagItem";
+
+"465: fillPool"->"319: getIdleConnections";
+
+"465: fillPool"->"620: getMinimumIdle";
+
+"465: fillPool"->"603: getMaximumPoolSize";
+
+"465: fillPool"->"65: <clinit>";
+
+"465: fillPool"->"43: <clinit>";
+
+"308: newConnection"->"713: getUsername";
+
+"308: newConnection"->"101: quietlyCloseConnection";
+
+"308: newConnection"->"334: setupConnection";
+
+"308: newConnection"->"105: getConnection" [style=dotted];
+
+"308: newConnection"->"100: getConnection" [style=dotted];
+
+"308: newConnection"->"77: getConnection";
+
+"308: newConnection"->"94: getConnection" [style=dotted];
+
+"308: newConnection"->"639: getPassword";
+
+"59: registerHealthChecks"->"124: void <init>(com.codahale.metrics.Timer, long)" [style=dotted];
+
+"59: registerHealthChecks"->"67: void <init>(com.zaxxer.hikari.HikariConfig)" [style=dotted];
+
+"59: registerHealthChecks"->"93: void <init>(com.zaxxer.hikari.pool.HikariPool, long)" [style=dotted];
+
+"59: registerHealthChecks"->"655: getPoolName" [style=dotted];
+
+"59: registerHealthChecks"->"214: getConnectionTimeout" [style=dotted];
+
+"59: registerHealthChecks"->"467: getMetricRegistry" [style=dotted];
+
+"59: registerHealthChecks"->"538: getHealthCheckProperties" [style=dotted];
+
+"591: void <init>()"->"559: protected void <init>()";
+
+"40: create"->"35: public void <init>(java.lang.String, com.zaxxer.hikari.metrics.PoolStats, com.codahale.metrics.MetricRegistry)" [style=dotted];
+
+"537: getPoolStats"->"537: void <init>(com.zaxxer.hikari.pool.HikariPool, long)" [style=dotted];
+
+"282: initializeDataSource"->"484: createNetworkTimeoutExecutor";
+
+"282: initializeDataSource"->"521: setLoginTimeout";
+
+"282: initializeDataSource"->"41: public void <init>(java.lang.String, java.lang.String, java.util.Properties, java.lang.String, java.lang.String)" [style=dotted];
+
+"282: initializeDataSource"->"267: getDataSource";
+
+"282: initializeDataSource"->"308: getDataSourceProperties";
+
+"282: initializeDataSource"->"318: getDriverClassName";
+
+"282: initializeDataSource"->"283: getDataSourceClassName";
+
+"282: initializeDataSource"->"639: getPassword";
+
+"282: initializeDataSource"->"713: getUsername";
+
+"282: initializeDataSource"->"352: getJdbcUrl";
+
+"282: initializeDataSource"->"39: <clinit>";
+
+"282: initializeDataSource"->"34: <clinit>" [style=dotted];
+
+"282: initializeDataSource"->"69: createInstance";
+
+"282: initializeDataSource"->"43: setTargetFromProperties";
+
+"29: void <init>(boolean)"->"27: void <init>(boolean, com.zaxxer.hikari.util.SuspendResumeLock$1)" [style=dotted];
+
+"44: void <init>()"->"31: void <init>(com.zaxxer.hikari.pool.ProxyLeakTask$1)" [style=dotted];
+
+"39: <clinit>"->"39: <clinit>";
+
+"115: copyProperties"->"99: toString" [style=dotted];
+
+"115: copyProperties"->"136: toString" [style=dotted];
+
+"115: copyProperties"->"50: toString" [style=dotted];
+
+"115: copyProperties"->"52: toString" [style=dotted];
+
+"115: copyProperties"->"63: toString" [style=dotted];
+
+"115: copyProperties"->"320: toString" [style=dotted];
+
+"43: setTargetFromProperties"->"39: <clinit>";
+
+"43: setTargetFromProperties"->"293: addDataSourceProperty" [style=dotted];
+
+"43: setTargetFromProperties"->"99: toString" [style=dotted];
+
+"43: setTargetFromProperties"->"136: toString" [style=dotted];
+
+"43: setTargetFromProperties"->"50: toString" [style=dotted];
+
+"43: setTargetFromProperties"->"52: toString" [style=dotted];
+
+"43: setTargetFromProperties"->"63: toString" [style=dotted];
+
+"43: setTargetFromProperties"->"320: toString" [style=dotted];
+
+"43: setTargetFromProperties"->"124: setProperty" [style=dotted];
+
+"418: run"->"101: quietlyCloseConnection";
+
+"129: getMillisSinceBorrowed"->"28: <clinit>" [style=dotted];
+
+"129: getMillisSinceBorrowed"->"194: elapsedMillis" [style=dotted];
+
+"129: getMillisSinceBorrowed"->"128: elapsedMillis" [style=dotted];
+
+"-1: setNetworkTimeout"->"418: setNetworkTimeout" [style=dotted];
+
+"-1: setNetworkTimeout"->"145: checkException" [style=dotted];
+
+"409: setCatalog"->"-1: setCatalog" [style=dotted];
+
+"400: setTransactionIsolation"->"-1: setTransactionIsolation" [style=dotted];
+
+"382: setAutoCommit"->"-1: setAutoCommit" [style=dotted];
+
+"106: create"->"174: public void <init>()";
+
+"106: create"->"115: public void <init>()" [style=dotted];
+
+"325: getPendingQueue"->"114: getQueueLength" [style=dotted];
+
+"298: reserve"->"158: compareAndSet";
+
+"38: <clinit>"->"38: <clinit>";
+
+"38: <clinit>"->"58: void <init>()";
+
+"57: private void <init>(com.zaxxer.hikari.pool.ProxyLeakTask, com.zaxxer.hikari.pool.PoolEntry)"->"99: toString" [style=dotted];
+
+"-1: execute"->"93: execute" [style=dotted];
+
+"-1: execute"->"45: checkException" [style=dotted];
+
+"-1: execute"->"93: execute" [style=dotted];
+
+"-1: execute"->"45: checkException" [style=dotted];
+
+"-1: execute"->"93: execute" [style=dotted];
+
+"-1: execute"->"45: checkException" [style=dotted];
+
+"396: setQueryTimeout"->"-1: setQueryTimeout" [style=dotted];
+
+"396: setQueryTimeout"->"-1: setQueryTimeout" [style=dotted];
+
+"396: setQueryTimeout"->"-1: setQueryTimeout" [style=dotted];
+
+"420: getAndSetNetworkTimeout"->"-1: getNetworkTimeout" [style=dotted];
+
+"420: getAndSetNetworkTimeout"->"-1: setNetworkTimeout" [style=dotted];
+
+"-1: createStatement"->"271: createStatement" [style=dotted];
+
+"-1: createStatement"->"145: checkException" [style=dotted];
+
+"-1: isValid"->"-1: isValid" [style=dotted];
+
+"-1: isValid"->"145: checkException" [style=dotted];
+
+"-1: getProxyConnection"->"-1: protected void <init>(com.zaxxer.hikari.pool.PoolEntry, java.sql.Connection, com.zaxxer.hikari.util.FastList, com.zaxxer.hikari.pool.ProxyLeakTask, long, boolean, boolean)" [style=dotted];
+
+"77: currentSequence"->"80: get";
+
+"77: currentSequence"->"114: get" [style=dotted];
+
+"63: access$700"->"65: <clinit>" [style=dotted];
+
+"63: access$700"->"43: <clinit>" [style=dotted];
+
+"52: create"->"70: public void <init>()" [style=dotted];
+
+"52: create"->"89: public void <init>(java.lang.Class) throws java.lang.Exception" [style=dotted];
+
+"52: create"->"77: public void <init>()";
+
+"117: void <init>(com.zaxxer.hikari.util.QueuedSequenceSynchronizer, com.zaxxer.hikari.util.QueuedSequenceSynchronizer$1)"->"117: private void <init>(com.zaxxer.hikari.util.QueuedSequenceSynchronizer)";
+
+"474: run"->"380: logPoolState" [style=dotted];
+
+"334: setupConnection"->"420: getAndSetNetworkTimeout";
+
+"334: setupConnection"->"195: getConnectionInitSql";
+
+"334: setupConnection"->"-1: setCatalog" [style=dotted];
+
+"334: setupConnection"->"-1: setTransactionIsolation" [style=dotted];
+
+"334: setupConnection"->"-1: getTransactionIsolation" [style=dotted];
+
+"334: setupConnection"->"-1: setReadOnly" [style=dotted];
+
+"334: setupConnection"->"-1: setAutoCommit" [style=dotted];
+
+"334: setupConnection"->"448: setNetworkTimeout";
+
+"334: setupConnection"->"463: executeSql";
+
+"334: setupConnection"->"365: checkValidationMode";
+
+"100: getConnection"->"94: getConnection" [style=dotted];
+
+"35: public void <init>(java.lang.String, com.zaxxer.hikari.metrics.PoolStats, com.codahale.metrics.MetricRegistry)"->"66: void <init>(com.zaxxer.hikari.metrics.dropwizard.CodaHaleMetricsTracker, com.zaxxer.hikari.metrics.PoolStats)" [style=dotted];
+
+"35: public void <init>(java.lang.String, com.zaxxer.hikari.metrics.PoolStats, com.codahale.metrics.MetricRegistry)"->"58: void <init>(com.zaxxer.hikari.metrics.dropwizard.CodaHaleMetricsTracker, com.zaxxer.hikari.metrics.PoolStats)" [style=dotted];
+
+"35: public void <init>(java.lang.String, com.zaxxer.hikari.metrics.PoolStats, com.codahale.metrics.MetricRegistry)"->"50: void <init>(com.zaxxer.hikari.metrics.dropwizard.CodaHaleMetricsTracker, com.zaxxer.hikari.metrics.PoolStats)" [style=dotted];
+
+"35: public void <init>(java.lang.String, com.zaxxer.hikari.metrics.PoolStats, com.codahale.metrics.MetricRegistry)"->"42: void <init>(com.zaxxer.hikari.metrics.dropwizard.CodaHaleMetricsTracker, com.zaxxer.hikari.metrics.PoolStats)" [style=dotted];
+
+"35: public void <init>(java.lang.String, com.zaxxer.hikari.metrics.PoolStats, com.codahale.metrics.MetricRegistry)"->"26: public void <init>()" [style=dotted];
+
+"537: void <init>(com.zaxxer.hikari.pool.HikariPool, long)"->"38: public void <init>(long)" [style=dotted];
+
+"484: createNetworkTimeoutExecutor"->"24: public void <init>(java.lang.String, boolean)";
+
+"484: createNetworkTimeoutExecutor"->"733: getThreadFactory";
+
+"484: createNetworkTimeoutExecutor"->"498: void <init>(com.zaxxer.hikari.pool.PoolBase$1)" [style=dotted];
+
+"521: setLoginTimeout"->"128: setLoginTimeout" [style=dotted];
+
+"521: setLoginTimeout"->"118: setLoginTimeout" [style=dotted];
+
+"41: public void <init>(java.lang.String, java.lang.String, java.util.Properties, java.lang.String, java.lang.String)"->"99: toString" [style=dotted];
+
+"41: public void <init>(java.lang.String, java.lang.String, java.util.Properties, java.lang.String, java.lang.String)"->"136: toString" [style=dotted];
+
+"41: public void <init>(java.lang.String, java.lang.String, java.util.Properties, java.lang.String, java.lang.String)"->"50: toString" [style=dotted];
+
+"41: public void <init>(java.lang.String, java.lang.String, java.util.Properties, java.lang.String, java.lang.String)"->"52: toString" [style=dotted];
+
+"41: public void <init>(java.lang.String, java.lang.String, java.util.Properties, java.lang.String, java.lang.String)"->"63: toString" [style=dotted];
+
+"41: public void <init>(java.lang.String, java.lang.String, java.util.Properties, java.lang.String, java.lang.String)"->"320: toString" [style=dotted];
+
+"41: public void <init>(java.lang.String, java.lang.String, java.util.Properties, java.lang.String, java.lang.String)"->"34: <clinit>" [style=dotted];
+
+"34: <clinit>"->"34: <clinit>" [style=dotted];
+
+"27: void <init>(boolean, com.zaxxer.hikari.util.SuspendResumeLock$1)"->"55: private void <init>(boolean)" [style=dotted];
+
+"31: void <init>(com.zaxxer.hikari.pool.ProxyLeakTask$1)"->"64: private void <init>()" [style=dotted];
+
+"136: toString"->"28: <clinit>" [style=dotted];
+
+"136: toString"->"180: stateToString" [style=dotted];
+
+"136: toString"->"201: elapsedMillis" [style=dotted];
+
+"136: toString"->"135: elapsedMillis" [style=dotted];
+
+"136: toString"->"180: currentTime" [style=dotted];
+
+"136: toString"->"121: currentTime" [style=dotted];
+
+"52: toString"->"52: toString" [style=dotted];
+
+"124: setProperty"->"39: <clinit>" [style=dotted];
+
+"124: setProperty"->"99: toString" [style=dotted];
+
+"124: setProperty"->"136: toString" [style=dotted];
+
+"124: setProperty"->"50: toString" [style=dotted];
+
+"124: setProperty"->"52: toString" [style=dotted];
+
+"124: setProperty"->"63: toString" [style=dotted];
+
+"124: setProperty"->"320: toString" [style=dotted];
+
+"124: setProperty"->"208: iterator" [style=dotted];
+
+"418: setNetworkTimeout"->"-1: setNetworkTimeout" [style=dotted];
+
+"93: execute"->"172: markCommitStateDirty" [style=dotted];
+
+"93: execute"->"-1: execute" [style=dotted];
+
+"93: execute"->"-1: execute" [style=dotted];
+
+"93: execute"->"-1: execute" [style=dotted];
+
+"45: checkException"->"145: checkException" [style=dotted];
+
+"-1: setQueryTimeout"->"-1: setQueryTimeout" [style=dotted];
+
+"-1: setQueryTimeout"->"45: checkException" [style=dotted];
+
+"-1: setQueryTimeout"->"-1: setQueryTimeout" [style=dotted];
+
+"-1: setQueryTimeout"->"-1: setQueryTimeout" [style=dotted];
+
+"-1: setQueryTimeout"->"45: checkException" [style=dotted];
+
+"-1: setQueryTimeout"->"-1: setQueryTimeout" [style=dotted];
+
+"-1: setQueryTimeout"->"-1: setQueryTimeout" [style=dotted];
+
+"-1: setQueryTimeout"->"-1: setQueryTimeout" [style=dotted];
+
+"-1: setQueryTimeout"->"45: checkException" [style=dotted];
+
+"-1: getNetworkTimeout"->"-1: getNetworkTimeout" [style=dotted];
+
+"-1: getNetworkTimeout"->"145: checkException" [style=dotted];
+
+"271: createStatement"->"-1: getProxyStatement" [style=dotted];
+
+"271: createStatement"->"190: trackStatement" [style=dotted];
+
+"271: createStatement"->"-1: createStatement" [style=dotted];
+
+"-1: protected void <init>(com.zaxxer.hikari.pool.PoolEntry, java.sql.Connection, com.zaxxer.hikari.util.FastList, com.zaxxer.hikari.pool.ProxyLeakTask, long, boolean, boolean)"->"85: protected void <init>(com.zaxxer.hikari.pool.PoolEntry, java.sql.Connection, com.zaxxer.hikari.util.FastList, com.zaxxer.hikari.pool.ProxyLeakTask, long, boolean, boolean)" [style=dotted];
+
+"-1: getTransactionIsolation"->"-1: getTransactionIsolation" [style=dotted];
+
+"-1: getTransactionIsolation"->"145: checkException" [style=dotted];
+
+"463: executeSql"->"-1: createStatement" [style=dotted];
+
+"463: executeSql"->"67: close" [style=dotted];
+
+"463: executeSql"->"-1: execute" [style=dotted];
+
+"463: executeSql"->"-1: execute" [style=dotted];
+
+"463: executeSql"->"-1: execute" [style=dotted];
+
+"463: executeSql"->"-1: rollback" [style=dotted];
+
+"463: executeSql"->"-1: commit" [style=dotted];
+
+"365: checkValidationMode"->"-1: isValid" [style=dotted];
+
+"365: checkValidationMode"->"463: executeSql";
+
+"365: checkValidationMode"->"171: getConnectionTestQuery";
+
+"38: public void <init>(long)"->"28: <clinit>" [style=dotted];
+
+"498: void <init>(com.zaxxer.hikari.pool.PoolBase$1)"->"498: private void <init>()" [style=dotted];
+
+"128: setLoginTimeout"->"63: getUnwrappedDataSource" [style=dotted];
+
+"128: setLoginTimeout"->"128: setLoginTimeout" [style=dotted];
+
+"128: setLoginTimeout"->"118: setLoginTimeout" [style=dotted];
+
+"172: markCommitStateDirty"->"73: <clinit>" [style=dotted];
+
+"172: markCommitStateDirty"->"180: currentTime" [style=dotted];
+
+"172: markCommitStateDirty"->"121: currentTime" [style=dotted];
+
+"-1: getProxyStatement"->"-1: protected void <init>(com.zaxxer.hikari.pool.ProxyConnection, java.sql.Statement)" [style=dotted];
+
+"190: trackStatement"->"75: add" [style=dotted];
+
+"-1: commit"->"355: commit" [style=dotted];
+
+"-1: commit"->"145: checkException" [style=dotted];
+
+"63: getUnwrappedDataSource"->"161: getUnwrappedDataSource" [style=dotted];
+
+"-1: protected void <init>(com.zaxxer.hikari.pool.ProxyConnection, java.sql.Statement)"->"38: protected void <init>(com.zaxxer.hikari.pool.ProxyConnection, java.sql.Statement)" [style=dotted];
+
+"355: commit"->"73: <clinit>" [style=dotted];
+
+"355: commit"->"180: currentTime" [style=dotted];
+
+"355: commit"->"121: currentTime" [style=dotted];
+
+"355: commit"->"-1: commit" [style=dotted];
+
+}

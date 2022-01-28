@@ -1,0 +1,5 @@
+{
+    "contents": "(props != null ? props : null).containsKey(org.apache.sling.security.impl.ContentDispositionFilter.RewriterResponse.PROP_JCR_DATA)",
+    "original_filepath": "org/apache/sling/security/impl/ContentDispositionFilter.java",
+    "patched_lines": [289]
+}

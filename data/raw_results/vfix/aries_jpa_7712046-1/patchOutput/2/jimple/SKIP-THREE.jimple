@@ -1,0 +1,40 @@
+    public java.util.List getJpaAnnotatedMembers(java.lang.Class, java.lang.Class)
+    {
+        org.apache.aries.jpa.blueprint.impl.AnnotationScanner this;
+        java.lang.Class c, 'annotation', cl;
+        java.util.ArrayList $r0;
+        java.util.List ret0;
+
+        this := @this: org.apache.aries.jpa.blueprint.impl.AnnotationScanner;
+
+        c := @parameter0: java.lang.Class;
+
+        'annotation' := @parameter1: java.lang.Class;
+
+        $r0 = new java.util.ArrayList;
+
+        specialinvoke $r0.<java.util.ArrayList: void <init>()>();
+
+        cl = c;
+
+     label1:
+        if cl == class "Ljava/lang/Object;" goto label3;
+
+        if cl != null goto label2;
+
+        ret0 = new java.util.List;
+
+        specialinvoke ret0.<java.util.Vector: void <init>()>();
+
+        return ret0;
+
+     label2:
+        staticinvoke <org.apache.aries.jpa.blueprint.impl.AnnotationScanner: void parseClass(java.lang.Class,java.util.List,java.lang.Class)>('annotation', $r0, cl);
+
+        cl = virtualinvoke cl.<java.lang.Class: java.lang.Class getSuperclass()>();
+
+        goto label1;
+
+     label3:
+        return $r0;
+    }

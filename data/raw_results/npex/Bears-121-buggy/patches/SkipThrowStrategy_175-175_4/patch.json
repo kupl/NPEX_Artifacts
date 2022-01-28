@@ -1,0 +1,5 @@
+{
+    "contents": "if (channel == null) {\n    throw new java.lang.Exception();\n}",
+    "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+    "patched_lines": [172]
+}

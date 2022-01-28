@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+        "line": 254,
+        "method_name": "createInputStream"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 40,
+        "method_name": "testCreateInputStreamNullFilters"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 18,
+        "method_name": "testPDFBOX2948"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 14,
+        "method_name": "main"
+    }
+]

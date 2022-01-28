@@ -1,0 +1,5 @@
+{
+    "contents": "boolean isObjectId = ((property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.ObjectId.class) != null) || (property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.MongoObjectId.class) != null)) || (property.getField() != null ? org.bson.types.ObjectId.class.isAssignableFrom(property.getField().getRawType()) : true)",
+    "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+    "patched_lines": [86]
+}

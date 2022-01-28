@@ -1,0 +1,911 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"431: main" [color=gold] [style=bold]
+"108: getDeviceSession" [color=red] [style=bold]
+"29: <clinit>" [style=bold]
+"345: testDecode" [style=bold]
+"27: void <init>()" [style=bold]
+"166: <clinit>" [style=bold]
+"29: void <init>()"
+"350: init" [style=bold]
+"43: setProtocolType"
+"156: verifyPosition" [style=bold]
+"117: text" [style=bold]
+"160: verifyPosition"
+"86: position"
+"143: verifyNull"
+"36: public void <init>(org.traccar.protocol.SuntechProtocol)" [style=bold]
+"31: public void <init>()" [style=bold]
+"22: public void <init>()" [style=bold]
+"169: decode" [style=bold]
+"190: verifyDecodedPosition"
+"101: concatenateStrings" [style=bold]
+"233: setLongitude"
+"223: setLatitude"
+"213: setValid"
+"192: setTime"
+"19: public void <init>()" [style=bold]
+"67: getBoolean" [style=bold]
+"71: getInteger" [style=bold]
+"67: getProtocolName" [style=bold]
+"149: public void <init>(org.traccar.Protocol)" [style=bold]
+"67: getConfig" [style=bold]
+"46: setSupportedDataCommands" [style=bold]
+"36: public void <init>(java.lang.String)" [style=bold]
+"99: decode23"
+"50: decode9" [style=bold]
+"166: setDeviceTime"
+"184: setFixTime"
+"17: public void <init>()" [style=bold]
+"53: getString" [style=bold]
+"75: getInteger" [style=bold]
+"42: getName" [style=bold]
+"32: public void <init>()" [style=bold]
+"26: getDeviceId"
+"77: set"
+"59: set"
+"83: set"
+"263: setCourse"
+"253: setSpeed"
+"26: setDeviceId"
+"134: setProtocol" [style=bold]
+"30: knotsFromKph"
+"20: public void <init>()" [style=bold]
+"95: getEnvironmentVariableName"
+"48: hasKey" [style=bold]
+"54: addActiveDevice"
+"21: public void <init>(long)"
+"74: findDeviceId"
+"109: getConnectionManager"
+"30: public void <init>(long, org.traccar.Protocol, org.jboss.netty.channel.Channel, java.net.SocketAddress)"
+"37: addUnknownDevice"
+"25: getId"
+"46: getDeviceByUniqueId"
+"160: getDeviceByUniqueId"
+"49: <clinit>"
+"85: getIdentityManager"
+"125: warning"
+"121: warning"
+"155: refresh"
+"123: refreshPermissions"
+"201: addDevice"
+"79: getLong"
+"91: setGroupId"
+"141: setCategory"
+"39: setUniqueId"
+"29: setName"
+"20: public void <init>()"
+"103: getDeviceManager"
+"143: info"
+"115: getPermissionsManager"
+"145: getGeofenceManager"
+"32: createDevice"
+"83: updateDeviceCache"
+"129: warning"
+"82: getLogger"
+"43: containsPoint"
+"38: containsPoint"
+"92: containsPoint"
+"229: getLongitude"
+"219: getLatitude"
+"80: getGeometry"
+"51: getLastPosition"
+"268: getLastPosition"
+"32: getGroupId"
+"316: getGroupById"
+"101: setGeofenceIds"
+"97: getGeofenceIds"
+"87: getGroupId"
+"32: getGeofenceId"
+"22: getDeviceId"
+"172: getAllDevices"
+"426: getDeviceGeofences"
+"267: getGeofence"
+"76: getGroupGeofences"
+"110: getDeviceGeofences"
+"32: getGeofenceId"
+"22: getGroupId"
+"407: getGroupGeofences"
+"320: getAllGroups"
+"32: getDeviceId"
+"22: getUserId"
+"197: getDevicePermissions"
+"130: getDevices"
+"118: getGroups"
+"68: getDeviceUsers"
+"75: getGroupDevices"
+"61: getDevicePermissions"
+"54: getGroupPermissions"
+"32: getGroupId"
+"22: getUserId"
+"202: getGroupPermissions"
+"91: public void <init>(java.util.Collection, java.util.Collection)"
+"107: getPhone"
+"35: getUniqueId"
+"212: addDevice"
+"83: getLong"
+"29: setId"
+"294: getCurrentDeviceGeofences"
+"111: setPhone"
+"39: setAttributes"
+"121: setModel"
+"131: setContact"
+"35: getAttributes"
+"117: getModel"
+"127: getContact"
+"137: getCategory"
+"25: getName"
+"207: getAllDevices"
+"151: exceptionStack"
+"27: distance"
+"38: distanceToLine"
+"41: getLon"
+"33: getLat"
+"83: normalizeLon"
+"129: create"
+"412: executeQuery"
+"129: getQuery"
+"288: updateGroupCache"
+"74: getDevice"
+"142: getNodes"
+"70: getGroup"
+"78: setParent"
+"39: void <init>(org.traccar.model.Device)"
+"35: void <init>(org.traccar.model.Group)"
+"134: create"
+"472: executeUpdate"
+"259: setObject"
+"92: getAllDeviceGeofences"
+"22: getDeviceId"
+"49: private void <init>(javax.sql.DataSource, java.lang.String, boolean) throws java.sql.SQLException"
+"398: process"
+"388: process"
+"374: process"
+"319: process"
+"330: process"
+"352: process"
+"363: process"
+"341: process"
+"314: addProcessors"
+"36: setGroupId"
+"26: setName"
+"22: getName"
+"250: getAllGroups"
+"84: getChildren"
+"207: setString"
+"241: setBlob"
+"224: setDate"
+"194: setDouble"
+"177: setLong"
+"160: setInteger"
+"147: setBoolean"
+"28: <clinit>"
+"39: toXmlString"
+"79: getObjectMapper"
+"70: parse"
+"395: void <init>(org.traccar.database.QueryBuilder, java.lang.String, java.lang.reflect.Method, java.lang.Class)"
+"384: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)"
+"370: void <init>(org.traccar.database.QueryBuilder, java.lang.String, java.lang.reflect.Method)"
+"359: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)"
+"348: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)"
+"337: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)"
+"326: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)"
+"315: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)"
+"138: indexes"
+"31: format"
+"431: main"->"29: <clinit>";
+
+"431: main"->"345: testDecode";
+
+"431: main"->"27: void <init>()";
+
+"29: <clinit>"->"166: <clinit>";
+
+"29: <clinit>"->"29: void <init>()" [style=dotted];
+
+"29: <clinit>"->"350: init";
+
+"345: testDecode"->"43: setProtocolType" [style=dotted];
+
+"345: testDecode"->"156: verifyPosition";
+
+"345: testDecode"->"117: text";
+
+"345: testDecode"->"160: verifyPosition" [style=dotted];
+
+"345: testDecode"->"86: position" [style=dotted];
+
+"345: testDecode"->"143: verifyNull" [style=dotted];
+
+"345: testDecode"->"36: public void <init>(org.traccar.protocol.SuntechProtocol)";
+
+"345: testDecode"->"31: public void <init>()";
+
+"166: <clinit>"->"166: <clinit>";
+
+"350: init"->"166: <clinit>";
+
+"350: init"->"22: public void <init>()";
+
+"156: verifyPosition"->"169: decode";
+
+"156: verifyPosition"->"190: verifyDecodedPosition" [style=dotted];
+
+"117: text"->"101: concatenateStrings";
+
+"160: verifyPosition"->"169: decode" [style=dotted];
+
+"160: verifyPosition"->"190: verifyDecodedPosition" [style=dotted];
+
+"86: position"->"233: setLongitude" [style=dotted];
+
+"86: position"->"223: setLatitude" [style=dotted];
+
+"86: position"->"213: setValid" [style=dotted];
+
+"86: position"->"192: setTime" [style=dotted];
+
+"86: position"->"19: public void <init>()" [style=dotted];
+
+"36: public void <init>(org.traccar.protocol.SuntechProtocol)"->"166: <clinit>";
+
+"36: public void <init>(org.traccar.protocol.SuntechProtocol)"->"67: getBoolean";
+
+"36: public void <init>(org.traccar.protocol.SuntechProtocol)"->"71: getInteger";
+
+"36: public void <init>(org.traccar.protocol.SuntechProtocol)"->"67: getProtocolName";
+
+"36: public void <init>(org.traccar.protocol.SuntechProtocol)"->"149: public void <init>(org.traccar.Protocol)";
+
+"36: public void <init>(org.traccar.protocol.SuntechProtocol)"->"67: getConfig";
+
+"31: public void <init>()"->"46: setSupportedDataCommands";
+
+"31: public void <init>()"->"36: public void <init>(java.lang.String)";
+
+"169: decode"->"99: decode23" [style=dotted];
+
+"169: decode"->"50: decode9";
+
+"192: setTime"->"166: setDeviceTime" [style=dotted];
+
+"192: setTime"->"184: setFixTime" [style=dotted];
+
+"19: public void <init>()"->"17: public void <init>()";
+
+"67: getBoolean"->"53: getString";
+
+"71: getInteger"->"75: getInteger";
+
+"67: getProtocolName"->"42: getName";
+
+"149: public void <init>(org.traccar.Protocol)"->"32: public void <init>()";
+
+"67: getConfig"->"166: <clinit>";
+
+"99: decode23"->"26: getDeviceId" [style=dotted];
+
+"99: decode23"->"77: set" [style=dotted];
+
+"99: decode23"->"59: set" [style=dotted];
+
+"99: decode23"->"83: set" [style=dotted];
+
+"99: decode23"->"213: setValid" [style=dotted];
+
+"99: decode23"->"263: setCourse" [style=dotted];
+
+"99: decode23"->"253: setSpeed" [style=dotted];
+
+"99: decode23"->"233: setLongitude" [style=dotted];
+
+"99: decode23"->"223: setLatitude" [style=dotted];
+
+"99: decode23"->"192: setTime" [style=dotted];
+
+"99: decode23"->"26: setDeviceId" [style=dotted];
+
+"99: decode23"->"134: setProtocol" [style=dotted];
+
+"99: decode23"->"108: getDeviceSession" [style=dotted];
+
+"99: decode23"->"67: getProtocolName" [style=dotted];
+
+"99: decode23"->"19: public void <init>()" [style=dotted];
+
+"99: decode23"->"30: knotsFromKph" [style=dotted];
+
+"50: decode9"->"26: getDeviceId" [style=dotted];
+
+"50: decode9"->"59: set" [style=dotted];
+
+"50: decode9"->"213: setValid" [style=dotted];
+
+"50: decode9"->"263: setCourse" [style=dotted];
+
+"50: decode9"->"253: setSpeed" [style=dotted];
+
+"50: decode9"->"233: setLongitude" [style=dotted];
+
+"50: decode9"->"223: setLatitude" [style=dotted];
+
+"50: decode9"->"192: setTime" [style=dotted];
+
+"50: decode9"->"83: set" [style=dotted];
+
+"50: decode9"->"26: setDeviceId" [style=dotted];
+
+"50: decode9"->"134: setProtocol";
+
+"50: decode9"->"108: getDeviceSession";
+
+"50: decode9"->"67: getProtocolName";
+
+"50: decode9"->"19: public void <init>()";
+
+"50: decode9"->"30: knotsFromKph" [style=dotted];
+
+"17: public void <init>()"->"20: public void <init>()";
+
+"53: getString"->"95: getEnvironmentVariableName" [style=dotted];
+
+"75: getInteger"->"53: getString";
+
+"75: getInteger"->"48: hasKey";
+
+"108: getDeviceSession"->"166: <clinit>";
+
+"108: getDeviceSession"->"54: addActiveDevice" [style=dotted];
+
+"108: getDeviceSession"->"21: public void <init>(long)" [style=dotted];
+
+"108: getDeviceSession"->"26: getDeviceId" [style=dotted];
+
+"108: getDeviceSession"->"74: findDeviceId" [style=dotted];
+
+"108: getDeviceSession"->"67: getBoolean";
+
+"108: getDeviceSession"->"67: getConfig";
+
+"108: getDeviceSession"->"109: getConnectionManager" [style=dotted];
+
+"48: hasKey"->"95: getEnvironmentVariableName" [style=dotted];
+
+"54: addActiveDevice"->"30: public void <init>(long, org.traccar.Protocol, org.jboss.netty.channel.Channel, java.net.SocketAddress)" [style=dotted];
+
+"74: findDeviceId"->"166: <clinit>" [style=dotted];
+
+"74: findDeviceId"->"37: addUnknownDevice" [style=dotted];
+
+"74: findDeviceId"->"67: getBoolean" [style=dotted];
+
+"74: findDeviceId"->"25: getId" [style=dotted];
+
+"74: findDeviceId"->"46: getDeviceByUniqueId" [style=dotted];
+
+"74: findDeviceId"->"160: getDeviceByUniqueId" [style=dotted];
+
+"74: findDeviceId"->"49: <clinit>" [style=dotted];
+
+"74: findDeviceId"->"85: getIdentityManager" [style=dotted];
+
+"74: findDeviceId"->"125: warning" [style=dotted];
+
+"74: findDeviceId"->"67: getConfig" [style=dotted];
+
+"74: findDeviceId"->"121: warning" [style=dotted];
+
+"109: getConnectionManager"->"166: <clinit>" [style=dotted];
+
+"37: addUnknownDevice"->"166: <clinit>" [style=dotted];
+
+"37: addUnknownDevice"->"155: refresh" [style=dotted];
+
+"37: addUnknownDevice"->"123: refreshPermissions" [style=dotted];
+
+"37: addUnknownDevice"->"201: addDevice" [style=dotted];
+
+"37: addUnknownDevice"->"79: getLong" [style=dotted];
+
+"37: addUnknownDevice"->"53: getString" [style=dotted];
+
+"37: addUnknownDevice"->"25: getId" [style=dotted];
+
+"37: addUnknownDevice"->"91: setGroupId" [style=dotted];
+
+"37: addUnknownDevice"->"141: setCategory" [style=dotted];
+
+"37: addUnknownDevice"->"39: setUniqueId" [style=dotted];
+
+"37: addUnknownDevice"->"29: setName" [style=dotted];
+
+"37: addUnknownDevice"->"20: public void <init>()" [style=dotted];
+
+"37: addUnknownDevice"->"49: <clinit>" [style=dotted];
+
+"37: addUnknownDevice"->"67: getConfig" [style=dotted];
+
+"37: addUnknownDevice"->"103: getDeviceManager" [style=dotted];
+
+"37: addUnknownDevice"->"143: info" [style=dotted];
+
+"37: addUnknownDevice"->"115: getPermissionsManager" [style=dotted];
+
+"37: addUnknownDevice"->"145: getGeofenceManager" [style=dotted];
+
+"37: addUnknownDevice"->"125: warning" [style=dotted];
+
+"46: getDeviceByUniqueId"->"32: createDevice" [style=dotted];
+
+"160: getDeviceByUniqueId"->"83: updateDeviceCache" [style=dotted];
+
+"160: getDeviceByUniqueId"->"67: getBoolean" [style=dotted];
+
+"49: <clinit>"->"49: <clinit>" [style=dotted];
+
+"85: getIdentityManager"->"166: <clinit>" [style=dotted];
+
+"125: warning"->"49: <clinit>" [style=dotted];
+
+"125: warning"->"129: warning" [style=dotted];
+
+"121: warning"->"49: <clinit>" [style=dotted];
+
+"121: warning"->"82: getLogger" [style=dotted];
+
+"155: refresh"->"43: containsPoint" [style=dotted];
+
+"155: refresh"->"38: containsPoint" [style=dotted];
+
+"155: refresh"->"92: containsPoint" [style=dotted];
+
+"155: refresh"->"229: getLongitude" [style=dotted];
+
+"155: refresh"->"219: getLatitude" [style=dotted];
+
+"155: refresh"->"80: getGeometry" [style=dotted];
+
+"155: refresh"->"51: getLastPosition" [style=dotted];
+
+"155: refresh"->"268: getLastPosition" [style=dotted];
+
+"155: refresh"->"32: getGroupId" [style=dotted];
+
+"155: refresh"->"316: getGroupById" [style=dotted];
+
+"155: refresh"->"101: setGeofenceIds" [style=dotted];
+
+"155: refresh"->"25: getId" [style=dotted];
+
+"155: refresh"->"97: getGeofenceIds" [style=dotted];
+
+"155: refresh"->"87: getGroupId" [style=dotted];
+
+"155: refresh"->"32: getGeofenceId" [style=dotted];
+
+"155: refresh"->"22: getDeviceId" [style=dotted];
+
+"155: refresh"->"172: getAllDevices" [style=dotted];
+
+"155: refresh"->"426: getDeviceGeofences" [style=dotted];
+
+"155: refresh"->"267: getGeofence" [style=dotted];
+
+"155: refresh"->"76: getGroupGeofences" [style=dotted];
+
+"155: refresh"->"110: getDeviceGeofences" [style=dotted];
+
+"155: refresh"->"32: getGeofenceId" [style=dotted];
+
+"155: refresh"->"22: getGroupId" [style=dotted];
+
+"155: refresh"->"407: getGroupGeofences" [style=dotted];
+
+"155: refresh"->"166: <clinit>" [style=dotted];
+
+"155: refresh"->"49: <clinit>" [style=dotted];
+
+"155: refresh"->"103: getDeviceManager" [style=dotted];
+
+"155: refresh"->"85: getIdentityManager" [style=dotted];
+
+"155: refresh"->"125: warning" [style=dotted];
+
+"123: refreshPermissions"->"166: <clinit>" [style=dotted];
+
+"123: refreshPermissions"->"25: getId" [style=dotted];
+
+"123: refreshPermissions"->"320: getAllGroups" [style=dotted];
+
+"123: refreshPermissions"->"32: getDeviceId" [style=dotted];
+
+"123: refreshPermissions"->"22: getUserId" [style=dotted];
+
+"123: refreshPermissions"->"197: getDevicePermissions" [style=dotted];
+
+"123: refreshPermissions"->"130: getDevices" [style=dotted];
+
+"123: refreshPermissions"->"118: getGroups" [style=dotted];
+
+"123: refreshPermissions"->"68: getDeviceUsers" [style=dotted];
+
+"123: refreshPermissions"->"75: getGroupDevices" [style=dotted];
+
+"123: refreshPermissions"->"61: getDevicePermissions" [style=dotted];
+
+"123: refreshPermissions"->"54: getGroupPermissions" [style=dotted];
+
+"123: refreshPermissions"->"32: getGroupId" [style=dotted];
+
+"123: refreshPermissions"->"22: getUserId" [style=dotted];
+
+"123: refreshPermissions"->"202: getGroupPermissions" [style=dotted];
+
+"123: refreshPermissions"->"91: public void <init>(java.util.Collection, java.util.Collection)" [style=dotted];
+
+"123: refreshPermissions"->"172: getAllDevices" [style=dotted];
+
+"123: refreshPermissions"->"49: <clinit>" [style=dotted];
+
+"123: refreshPermissions"->"103: getDeviceManager" [style=dotted];
+
+"123: refreshPermissions"->"125: warning" [style=dotted];
+
+"201: addDevice"->"107: getPhone" [style=dotted];
+
+"201: addDevice"->"35: getUniqueId" [style=dotted];
+
+"201: addDevice"->"25: getId" [style=dotted];
+
+"201: addDevice"->"212: addDevice" [style=dotted];
+
+"79: getLong"->"83: getLong" [style=dotted];
+
+"20: public void <init>()"->"20: public void <init>()" [style=dotted];
+
+"103: getDeviceManager"->"166: <clinit>" [style=dotted];
+
+"143: info"->"49: <clinit>" [style=dotted];
+
+"143: info"->"82: getLogger" [style=dotted];
+
+"115: getPermissionsManager"->"166: <clinit>" [style=dotted];
+
+"145: getGeofenceManager"->"166: <clinit>" [style=dotted];
+
+"32: createDevice"->"20: public void <init>()" [style=dotted];
+
+"32: createDevice"->"39: setUniqueId" [style=dotted];
+
+"32: createDevice"->"29: setName" [style=dotted];
+
+"32: createDevice"->"29: setId" [style=dotted];
+
+"83: updateDeviceCache"->"294: getCurrentDeviceGeofences" [style=dotted];
+
+"83: updateDeviceCache"->"268: getLastPosition" [style=dotted];
+
+"83: updateDeviceCache"->"111: setPhone" [style=dotted];
+
+"83: updateDeviceCache"->"107: getPhone" [style=dotted];
+
+"83: updateDeviceCache"->"39: setUniqueId" [style=dotted];
+
+"83: updateDeviceCache"->"35: getUniqueId" [style=dotted];
+
+"83: updateDeviceCache"->"39: setAttributes" [style=dotted];
+
+"83: updateDeviceCache"->"121: setModel" [style=dotted];
+
+"83: updateDeviceCache"->"131: setContact" [style=dotted];
+
+"83: updateDeviceCache"->"141: setCategory" [style=dotted];
+
+"83: updateDeviceCache"->"91: setGroupId" [style=dotted];
+
+"83: updateDeviceCache"->"29: setName" [style=dotted];
+
+"83: updateDeviceCache"->"101: setGeofenceIds" [style=dotted];
+
+"83: updateDeviceCache"->"25: getId" [style=dotted];
+
+"83: updateDeviceCache"->"35: getAttributes" [style=dotted];
+
+"83: updateDeviceCache"->"117: getModel" [style=dotted];
+
+"83: updateDeviceCache"->"127: getContact" [style=dotted];
+
+"83: updateDeviceCache"->"137: getCategory" [style=dotted];
+
+"83: updateDeviceCache"->"87: getGroupId" [style=dotted];
+
+"83: updateDeviceCache"->"25: getName" [style=dotted];
+
+"83: updateDeviceCache"->"207: getAllDevices" [style=dotted];
+
+"83: updateDeviceCache"->"166: <clinit>" [style=dotted];
+
+"83: updateDeviceCache"->"145: getGeofenceManager" [style=dotted];
+
+"129: warning"->"49: <clinit>" [style=dotted];
+
+"129: warning"->"151: exceptionStack" [style=dotted];
+
+"129: warning"->"82: getLogger" [style=dotted];
+
+"82: getLogger"->"49: <clinit>" [style=dotted];
+
+"43: containsPoint"->"27: distance" [style=dotted];
+
+"38: containsPoint"->"38: distanceToLine" [style=dotted];
+
+"38: containsPoint"->"41: getLon" [style=dotted];
+
+"38: containsPoint"->"33: getLat" [style=dotted];
+
+"92: containsPoint"->"41: getLon" [style=dotted];
+
+"92: containsPoint"->"83: normalizeLon" [style=dotted];
+
+"172: getAllDevices"->"49: <clinit>" [style=dotted];
+
+"172: getAllDevices"->"83: updateDeviceCache" [style=dotted];
+
+"172: getAllDevices"->"125: warning" [style=dotted];
+
+"426: getDeviceGeofences"->"129: create" [style=dotted];
+
+"426: getDeviceGeofences"->"412: executeQuery" [style=dotted];
+
+"426: getDeviceGeofences"->"129: getQuery" [style=dotted];
+
+"407: getGroupGeofences"->"129: create" [style=dotted];
+
+"407: getGroupGeofences"->"412: executeQuery" [style=dotted];
+
+"407: getGroupGeofences"->"129: getQuery" [style=dotted];
+
+"320: getAllGroups"->"49: <clinit>" [style=dotted];
+
+"320: getAllGroups"->"288: updateGroupCache" [style=dotted];
+
+"320: getAllGroups"->"125: warning" [style=dotted];
+
+"197: getDevicePermissions"->"129: create" [style=dotted];
+
+"197: getDevicePermissions"->"412: executeQuery" [style=dotted];
+
+"197: getDevicePermissions"->"129: getQuery" [style=dotted];
+
+"130: getDevices"->"74: getDevice" [style=dotted];
+
+"130: getDevices"->"142: getNodes" [style=dotted];
+
+"118: getGroups"->"70: getGroup" [style=dotted];
+
+"118: getGroups"->"142: getNodes" [style=dotted];
+
+"202: getGroupPermissions"->"129: create" [style=dotted];
+
+"202: getGroupPermissions"->"412: executeQuery" [style=dotted];
+
+"202: getGroupPermissions"->"129: getQuery" [style=dotted];
+
+"91: public void <init>(java.util.Collection, java.util.Collection)"->"87: getGroupId" [style=dotted];
+
+"91: public void <init>(java.util.Collection, java.util.Collection)"->"78: setParent" [style=dotted];
+
+"91: public void <init>(java.util.Collection, java.util.Collection)"->"74: getDevice" [style=dotted];
+
+"91: public void <init>(java.util.Collection, java.util.Collection)"->"39: void <init>(org.traccar.model.Device)" [style=dotted];
+
+"91: public void <init>(java.util.Collection, java.util.Collection)"->"25: getId" [style=dotted];
+
+"91: public void <init>(java.util.Collection, java.util.Collection)"->"32: getGroupId" [style=dotted];
+
+"91: public void <init>(java.util.Collection, java.util.Collection)"->"70: getGroup" [style=dotted];
+
+"91: public void <init>(java.util.Collection, java.util.Collection)"->"35: void <init>(org.traccar.model.Group)" [style=dotted];
+
+"212: addDevice"->"134: create" [style=dotted];
+
+"212: addDevice"->"29: setId" [style=dotted];
+
+"212: addDevice"->"472: executeUpdate" [style=dotted];
+
+"212: addDevice"->"259: setObject" [style=dotted];
+
+"212: addDevice"->"129: getQuery" [style=dotted];
+
+"83: getLong"->"53: getString" [style=dotted];
+
+"83: getLong"->"48: hasKey" [style=dotted];
+
+"294: getCurrentDeviceGeofences"->"43: containsPoint" [style=dotted];
+
+"294: getCurrentDeviceGeofences"->"38: containsPoint" [style=dotted];
+
+"294: getCurrentDeviceGeofences"->"92: containsPoint" [style=dotted];
+
+"294: getCurrentDeviceGeofences"->"80: getGeometry" [style=dotted];
+
+"294: getCurrentDeviceGeofences"->"267: getGeofence" [style=dotted];
+
+"294: getCurrentDeviceGeofences"->"92: getAllDeviceGeofences" [style=dotted];
+
+"294: getCurrentDeviceGeofences"->"229: getLongitude" [style=dotted];
+
+"294: getCurrentDeviceGeofences"->"219: getLatitude" [style=dotted];
+
+"294: getCurrentDeviceGeofences"->"22: getDeviceId" [style=dotted];
+
+"207: getAllDevices"->"129: create" [style=dotted];
+
+"207: getAllDevices"->"412: executeQuery" [style=dotted];
+
+"207: getAllDevices"->"129: getQuery" [style=dotted];
+
+"38: distanceToLine"->"27: distance" [style=dotted];
+
+"129: create"->"49: private void <init>(javax.sql.DataSource, java.lang.String, boolean) throws java.sql.SQLException" [style=dotted];
+
+"412: executeQuery"->"398: process" [style=dotted];
+
+"412: executeQuery"->"388: process" [style=dotted];
+
+"412: executeQuery"->"374: process" [style=dotted];
+
+"412: executeQuery"->"319: process" [style=dotted];
+
+"412: executeQuery"->"330: process" [style=dotted];
+
+"412: executeQuery"->"352: process" [style=dotted];
+
+"412: executeQuery"->"363: process" [style=dotted];
+
+"412: executeQuery"->"341: process" [style=dotted];
+
+"412: executeQuery"->"314: addProcessors" [style=dotted];
+
+"129: getQuery"->"49: <clinit>" [style=dotted];
+
+"129: getQuery"->"53: getString" [style=dotted];
+
+"129: getQuery"->"143: info" [style=dotted];
+
+"288: updateGroupCache"->"36: setGroupId" [style=dotted];
+
+"288: updateGroupCache"->"26: setName" [style=dotted];
+
+"288: updateGroupCache"->"25: getId" [style=dotted];
+
+"288: updateGroupCache"->"32: getGroupId" [style=dotted];
+
+"288: updateGroupCache"->"22: getName" [style=dotted];
+
+"288: updateGroupCache"->"250: getAllGroups" [style=dotted];
+
+"142: getNodes"->"84: getChildren" [style=dotted];
+
+"142: getNodes"->"142: getNodes" [style=dotted];
+
+"134: create"->"49: private void <init>(javax.sql.DataSource, java.lang.String, boolean) throws java.sql.SQLException" [style=dotted];
+
+"259: setObject"->"67: getBoolean" [style=dotted];
+
+"259: setObject"->"207: setString" [style=dotted];
+
+"259: setObject"->"241: setBlob" [style=dotted];
+
+"259: setObject"->"224: setDate" [style=dotted];
+
+"259: setObject"->"194: setDouble" [style=dotted];
+
+"259: setObject"->"177: setLong" [style=dotted];
+
+"259: setObject"->"160: setInteger" [style=dotted];
+
+"259: setObject"->"147: setBoolean" [style=dotted];
+
+"259: setObject"->"166: <clinit>" [style=dotted];
+
+"259: setObject"->"28: <clinit>" [style=dotted];
+
+"259: setObject"->"49: <clinit>" [style=dotted];
+
+"259: setObject"->"67: getConfig" [style=dotted];
+
+"259: setObject"->"39: toXmlString" [style=dotted];
+
+"259: setObject"->"79: getObjectMapper" [style=dotted];
+
+"259: setObject"->"125: warning" [style=dotted];
+
+"92: getAllDeviceGeofences"->"110: getDeviceGeofences" [style=dotted];
+
+"49: private void <init>(javax.sql.DataSource, java.lang.String, boolean) throws java.sql.SQLException"->"70: parse" [style=dotted];
+
+"398: process"->"166: <clinit>" [style=dotted];
+
+"398: process"->"49: <clinit>" [style=dotted];
+
+"398: process"->"79: getObjectMapper" [style=dotted];
+
+"398: process"->"125: warning" [style=dotted];
+
+"388: process"->"49: <clinit>" [style=dotted];
+
+"388: process"->"125: warning" [style=dotted];
+
+"374: process"->"49: <clinit>" [style=dotted];
+
+"374: process"->"125: warning" [style=dotted];
+
+"319: process"->"49: <clinit>" [style=dotted];
+
+"319: process"->"125: warning" [style=dotted];
+
+"330: process"->"49: <clinit>" [style=dotted];
+
+"330: process"->"125: warning" [style=dotted];
+
+"352: process"->"49: <clinit>" [style=dotted];
+
+"352: process"->"125: warning" [style=dotted];
+
+"363: process"->"49: <clinit>" [style=dotted];
+
+"363: process"->"125: warning" [style=dotted];
+
+"341: process"->"49: <clinit>" [style=dotted];
+
+"341: process"->"125: warning" [style=dotted];
+
+"314: addProcessors"->"395: void <init>(org.traccar.database.QueryBuilder, java.lang.String, java.lang.reflect.Method, java.lang.Class)" [style=dotted];
+
+"314: addProcessors"->"384: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)" [style=dotted];
+
+"314: addProcessors"->"370: void <init>(org.traccar.database.QueryBuilder, java.lang.String, java.lang.reflect.Method)" [style=dotted];
+
+"314: addProcessors"->"359: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)" [style=dotted];
+
+"314: addProcessors"->"348: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)" [style=dotted];
+
+"314: addProcessors"->"337: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)" [style=dotted];
+
+"314: addProcessors"->"326: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)" [style=dotted];
+
+"314: addProcessors"->"315: void <init>(org.traccar.database.QueryBuilder, java.lang.reflect.Method, java.lang.String)" [style=dotted];
+
+"250: getAllGroups"->"129: create" [style=dotted];
+
+"250: getAllGroups"->"412: executeQuery" [style=dotted];
+
+"250: getAllGroups"->"129: getQuery" [style=dotted];
+
+"207: setString"->"138: indexes" [style=dotted];
+
+"241: setBlob"->"138: indexes" [style=dotted];
+
+"224: setDate"->"138: indexes" [style=dotted];
+
+"194: setDouble"->"138: indexes" [style=dotted];
+
+"177: setLong"->"138: indexes" [style=dotted];
+
+"160: setInteger"->"138: indexes" [style=dotted];
+
+"147: setBoolean"->"138: indexes" [style=dotted];
+
+"28: <clinit>"->"28: <clinit>" [style=dotted];
+
+"39: toXmlString"->"28: <clinit>" [style=dotted];
+
+"39: toXmlString"->"31: format" [style=dotted];
+
+"79: getObjectMapper"->"166: <clinit>" [style=dotted];
+
+"31: format"->"28: <clinit>" [style=dotted];
+
+}

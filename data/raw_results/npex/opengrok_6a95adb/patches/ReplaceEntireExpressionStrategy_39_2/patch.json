@@ -1,0 +1,5 @@
+{
+    "contents": "this(iterable != null ? iterable.iterator() : null)",
+    "original_filepath": "src/org/opensolaris/opengrok/analysis/IteratorReader.java",
+    "patched_lines": [40]
+}

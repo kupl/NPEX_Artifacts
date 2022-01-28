@@ -1,0 +1,5 @@
+{
+    "contents": "if (getStep() == null) {\n    throw new java.lang.ClassCastException();\n}",
+    "original_filepath": "src/main/java/spoon/reflect/visitor/chain/CtQueryImpl.java",
+    "patched_lines": [283]
+}

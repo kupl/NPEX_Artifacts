@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"768: $r28 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: java.util.Properties connectionProperties>" [label=1] [style=bold] [color=gold]
+"768: $z2 = virtualinvoke $r28.<java.util.Properties: boolean contains(java.lang.Object)>("password")" [label=1] [style=bold] [color=red]
+"768: $r28 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: java.util.Properties connectionProperties>"->"768: $z2 = virtualinvoke $r28.<java.util.Properties: boolean contains(java.lang.Object)>("password")";
+
+}

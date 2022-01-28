@@ -1,0 +1,5 @@
+{
+    "contents": "for (net.sf.jsqlparser.statement.select.WithItem item : subSelect.getWithItemsList() != null ? subSelect.getWithItemsList() : null) {\n    item.accept(selectVisitor);\n}",
+    "original_filepath": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+    "patched_lines": [217]
+}

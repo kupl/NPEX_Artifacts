@@ -1,0 +1,10 @@
+{
+    "filepath": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+    "line": 71,
+    "sink_field": "equals",
+    "npe_class": "ColumnType",
+    "npe_method": "compare",
+    "jvmti_identify_succeed": true,
+    "deref_field": "get",
+    "nullpointer": "original.get(rowNumber)"
+}

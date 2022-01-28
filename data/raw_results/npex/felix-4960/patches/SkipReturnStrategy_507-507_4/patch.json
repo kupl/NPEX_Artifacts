@@ -1,0 +1,5 @@
+{
+    "contents": "if (getContentPath() == null) {\n    return null;\n}",
+    "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+    "patched_lines": [503]
+}

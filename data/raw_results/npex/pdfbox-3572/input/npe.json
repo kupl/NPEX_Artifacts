@@ -1,0 +1,8 @@
+{
+	"filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+	"line": 271,
+	"deref_field": "update",
+  "npe_class": "SecurityHandler",
+	"npe_method": "encryptDataAESother",
+	"jvmti_identify_succeed": false
+}

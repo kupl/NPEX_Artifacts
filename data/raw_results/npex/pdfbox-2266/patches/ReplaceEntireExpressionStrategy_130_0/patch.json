@@ -1,0 +1,5 @@
+{
+    "contents": "return shading != null ? shading.toPaint(shadingPattern.getMatrix()) : null",
+    "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+    "patched_lines": [129]
+}

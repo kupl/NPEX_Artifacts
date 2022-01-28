@@ -1,0 +1,5 @@
+{
+    "contents": "// if direction is right to left, then end is left edge,\n// else end is right edge (for top-bottom/bottom-top block\n// progression directions)\n// binding edge is on left edge for odd pages and\n// on right edge for even pages\nint pageIndex = (currentPageViewport != null) ? currentPageViewport.getPageIndex() : 1",
+    "original_filepath": "fop-core/src/main/java/org/apache/fop/render/AbstractRenderer.java",
+    "patched_lines": [523]
+}

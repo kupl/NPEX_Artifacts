@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/sling/security/impl/ContentDispositionFilter.java",
+	"line": 288,
+	"deref_field": "props",
+	"sink_field": "containsKey",
+	"npe_class": "RewriterResponse",
+	"npe_method": "isJcrData",
+	"jvmti_identify_succeed": true
+}

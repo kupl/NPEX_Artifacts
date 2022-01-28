@@ -1,0 +1,5 @@
+{
+    "contents": "if (props == null) {\n    props = null;\n}",
+    "original_filepath": "org/apache/sling/security/impl/ContentDispositionFilter.java",
+    "patched_lines": [289]
+}

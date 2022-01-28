@@ -1,0 +1,11 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"971: $z1 = virtualinvoke value.<java.lang.String: boolean equals(java.lang.Object)>($r13)" [style=bold] [color=red]
+"968: value = (java.lang.String) $r12" [style=bold]
+"968: $r12 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r11)" [style=bold] [color=gold]
+"968: $r12 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r11)"->"968: value = (java.lang.String) $r12";
+
+"968: value = (java.lang.String) $r12"->"971: $z1 = virtualinvoke value.<java.lang.String: boolean equals(java.lang.Object)>($r13)";
+
+}

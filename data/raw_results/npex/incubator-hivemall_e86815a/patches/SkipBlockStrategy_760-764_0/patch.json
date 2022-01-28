@@ -1,0 +1,5 @@
+{
+    "contents": "if (model != null) {\n    final hivemall.model.WeightValue probe = new hivemall.model.WeightValue();\n    final java.lang.Object[] forwardMapObj = new java.lang.Object[2];\n    final org.apache.hadoop.io.FloatWritable fv = new org.apache.hadoop.io.FloatWritable();\n    final hivemall.utils.collections.IMapIterator<java.lang.Object, hivemall.model.IWeightValue> itor = model.entries();\n    while (itor.next() != (-1)) {\n        itor.getValue(probe);\n        if (!probe.isTouched()) {\n            continue;// skip outputting untouched weights\n\n        }\n        final float v = probe.get();\n        if (v == 0.0F) {\n            continue;\n        }\n        fv.set(v);\n        java.lang.Object k = itor.getKey();\n        forwardMapObj[0] = k;\n        forwardMapObj[1] = fv;\n        forward(forwardMapObj);\n        numForwarded++;\n    } \n}",
+    "original_filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+    "patched_lines": [761]
+}

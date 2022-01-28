@@ -1,0 +1,5 @@
+{
+    "contents": "if (filters == null) {\n    return null;\n}",
+    "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+    "patched_lines": [264]
+}

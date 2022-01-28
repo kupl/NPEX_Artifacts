@@ -1,0 +1,5 @@
+{
+    "contents": "if (this.parameters != null) {\n    java.util.Iterator<java.lang.String> it = this.parameters.keySet().iterator();\n    for (int i = 1; i < (m.groupCount() + 1); i++) {\n        java.lang.String parameterName = it.next();\n        map.put(parameterName, m.group(i));\n    }\n}",
+    "original_filepath": "ninja-core/src/main/java/ninja/Route.java",
+    "patched_lines": [139]
+}

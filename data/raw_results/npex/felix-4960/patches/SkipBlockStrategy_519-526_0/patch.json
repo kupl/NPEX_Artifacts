@@ -1,0 +1,5 @@
+{
+    "contents": "if (contentPath != null) {\n    // Remove leading slash, if present.\n    if (name.startsWith(\"/\")) {\n        name = name.substring(1);\n    }\n    // Check the module class path.\n    for (int i = 0; i < contentPath.size(); i++) {\n        if (contentPath.get(i).hasEntry(name)) {\n            // Use the class path index + 1 for creating the path so\n            // that we can differentiate between module content URLs\n            // (where the path will start with 0) and module class\n            // path URLs.\n            l.add(createURL(i + 1, name));\n        }\n    }\n}",
+    "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+    "patched_lines": [511]
+}

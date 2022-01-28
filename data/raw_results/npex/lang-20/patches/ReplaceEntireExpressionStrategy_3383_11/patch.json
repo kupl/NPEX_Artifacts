@@ -1,0 +1,5 @@
+{
+    "contents": "new java.lang.StringBuilder((array[startIndex].toString() != null ? array[startIndex] == null ? 16 : array[startIndex].toString().length() : 0) + separator.length())",
+    "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+    "patched_lines": [3413]
+}

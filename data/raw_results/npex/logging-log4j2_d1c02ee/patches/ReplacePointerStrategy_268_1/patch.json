@@ -1,0 +1,5 @@
+{
+    "contents": "(value != null ? value : \"null\").toLowerCase()",
+    "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+    "patched_lines": [269]
+}

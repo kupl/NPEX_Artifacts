@@ -1,0 +1,14 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"402: seriesGap#4 = interfaceinvoke dataset.<org.jfree.data.statistics.StatisticalCategoryDataset: java.lang.Number getMeanValue(int,int)>(row, column)" [style=bold] [color=gold]
+"404: value = virtualinvoke seriesGap#4.<java.lang.Number: double doubleValue()>()" [style=bold] [color=red]
+"462: $d31 = virtualinvoke seriesGap#4.<java.lang.Number: double doubleValue()>()" [style=bold] [color=red]
+"460: $d29 = virtualinvoke seriesGap#4.<java.lang.Number: double doubleValue()>()" [style=bold] [color=red]
+"402: seriesGap#4 = interfaceinvoke dataset.<org.jfree.data.statistics.StatisticalCategoryDataset: java.lang.Number getMeanValue(int,int)>(row, column)"->"404: value = virtualinvoke seriesGap#4.<java.lang.Number: double doubleValue()>()";
+
+"402: seriesGap#4 = interfaceinvoke dataset.<org.jfree.data.statistics.StatisticalCategoryDataset: java.lang.Number getMeanValue(int,int)>(row, column)"->"460: $d29 = virtualinvoke seriesGap#4.<java.lang.Number: double doubleValue()>()";
+
+"402: seriesGap#4 = interfaceinvoke dataset.<org.jfree.data.statistics.StatisticalCategoryDataset: java.lang.Number getMeanValue(int,int)>(row, column)"->"462: $d31 = virtualinvoke seriesGap#4.<java.lang.Number: double doubleValue()>()";
+
+}

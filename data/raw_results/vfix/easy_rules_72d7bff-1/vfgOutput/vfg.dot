@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"59: $r6 = (java.lang.Integer) $r5" [color=red]
+"59: $r5 = interfaceinvoke map.<java.util.Map: java.lang.Object get(java.lang.Object)>("priority")" [color=gold]
+"59: $r5 = interfaceinvoke map.<java.util.Map: java.lang.Object get(java.lang.Object)>("priority")"->"59: $r6 = (java.lang.Integer) $r5" [style=dotted];
+
+}

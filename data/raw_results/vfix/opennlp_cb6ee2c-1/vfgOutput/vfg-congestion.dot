@@ -1,0 +1,14 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"116: $r1 = interfaceinvoke $r0.<java.util.Map: java.lang.Object get(java.lang.Object)>(keys)" [label=2] [style=bold] [color=gold]
+"116: keyValues = (java.util.List) $r1" [label=2] [style=bold]
+"117: $z0 = interfaceinvoke keyValues.<java.util.List: boolean isEmpty()>()" [label=1] [style=bold] [color=red]
+"118: $r2 = interfaceinvoke keyValues.<java.util.List: java.lang.Object get(int)>(0)" [label=1] [color=red]
+"116: $r1 = interfaceinvoke $r0.<java.util.Map: java.lang.Object get(java.lang.Object)>(keys)"->"116: keyValues = (java.util.List) $r1";
+
+"116: keyValues = (java.util.List) $r1"->"117: $z0 = interfaceinvoke keyValues.<java.util.List: boolean isEmpty()>()";
+
+"116: keyValues = (java.util.List) $r1"->"118: $r2 = interfaceinvoke keyValues.<java.util.List: java.lang.Object get(int)>(0)" [style=dotted];
+
+}

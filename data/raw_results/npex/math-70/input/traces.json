@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+        "line": 89,
+        "method_name": "solve"
+    },
+    {
+        "filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+        "line": 66,
+        "method_name": "solve"
+    },
+    {
+        "filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+        "line": 72,
+        "method_name": "solve"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 17,
+        "method_name": "main"
+    }
+]

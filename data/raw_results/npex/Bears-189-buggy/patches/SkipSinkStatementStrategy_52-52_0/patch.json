@@ -1,0 +1,5 @@
+{
+    "contents": "if (worldObjects != null) {\n    for (int x = 0; x < worldObjects.size(); x++) {\n        hu.oe.nik.szfmv.environment.WorldObject actualObject = worldObjects.get(x);\n        if (actualObject.getShape().intersects(sensorVision.getBounds())) {\n            noticeableObjects.add(actualObject);\n        }\n    }\n}",
+    "original_filepath": "src/main/java/hu/oe/nik/szfmv/detector/classes/Detector.java",
+    "patched_lines": [64]
+}

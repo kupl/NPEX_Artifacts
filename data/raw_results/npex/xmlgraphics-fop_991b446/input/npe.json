@@ -1,0 +1,10 @@
+{
+    "filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+    "line": 138,
+    "sink_field": "length",
+    "npe_class": "SingleByteFont",
+    "npe_method": "getBoundingBox",
+    "jvmti_identify_succeed": false,
+    "deref_field": "boundingBoxes",
+    "nullpointer": "boundingBoxes"
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "if (queueAddArgs.getConf() != null) {\n    this.conf = new org.imdea.vcd.queue.clock.Clock<>(queueAddArgs.getConf());\n}",
+    "original_filepath": "src/main/java/org/imdea/vcd/queue/QueueAddArgs.java",
+    "patched_lines": [22]
+}

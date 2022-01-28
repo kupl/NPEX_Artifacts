@@ -1,0 +1,5 @@
+{
+    "contents": "if (g == null) {\n    return;\n}",
+    "original_filepath": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+    "patched_lines": [110]
+}

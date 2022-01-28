@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "org/apache/commons/lang3/StringUtils.java",
+        "line": 3676,
+        "method_name": "replaceEach"
+    },
+    {
+        "filepath": "org/apache/commons/lang3/StringUtils.java",
+        "line": 3502,
+        "method_name": "replaceEach"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 111,
+        "method_name": "testReplace_StringStringArrayStringArray"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 7,
+        "method_name": "main"
+    }
+]

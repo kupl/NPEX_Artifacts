@@ -1,0 +1,5 @@
+{
+    "contents": "if (connThrottle != null) {\n    if (connThrottle.isConnectionWeightEnabled()) {\n        if (sessionId == 0) {\n            if (localSessionEnabled) {\n                tokensNeeded = connThrottle.getRequiredTokensForLocal();\n            } else {\n                tokensNeeded = connThrottle.getRequiredTokensForGlobal();\n            }\n        } else {\n            tokensNeeded = connThrottle.getRequiredTokensForRenew();\n        }\n    }\n}",
+    "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+    "patched_lines": [1299]
+}

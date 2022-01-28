@@ -1,0 +1,5 @@
+{
+    "contents": "if (subSelect.getWithItemsList() == null) {\n    return;\n}",
+    "original_filepath": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+    "patched_lines": [217]
+}

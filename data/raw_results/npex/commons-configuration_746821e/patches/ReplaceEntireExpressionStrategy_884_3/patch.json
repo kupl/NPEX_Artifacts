@@ -1,0 +1,5 @@
+{
+    "contents": "if ((locator != null ? locator.getEncoding() : \"null\") != null) {\n    transformer.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, locator.getEncoding());\n}",
+    "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+    "patched_lines": [894]
+}

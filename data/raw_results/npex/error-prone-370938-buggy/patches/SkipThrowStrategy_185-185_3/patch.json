@@ -1,0 +1,5 @@
+{
+    "contents": "if (method == null) {\n    throw new com.google.errorprone.bugpatterns.threadsafety.IllegalGuardedBy(\"\");\n}",
+    "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+    "patched_lines": [184]
+}

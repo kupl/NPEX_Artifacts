@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "src/test/java/spoon/test/filters/FilterTest.java",
+        "line": 832,
+        "method_name": "testClassCastExceptionOnForEach"
+    }
+]

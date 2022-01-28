@@ -1,0 +1,5 @@
+{
+    "contents": "org.jfree.chart.ChartRenderingInfo owner = (plotState.getOwner() != null) ? plotState.getOwner() : new org.jfree.chart.ChartRenderingInfo()",
+    "original_filepath": "org/jfree/chart/axis/Axis.java",
+    "patched_lines": [1173]
+}

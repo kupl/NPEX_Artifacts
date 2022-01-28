@@ -1,0 +1,113 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"1379: $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [style=bold]
+"1379: $r1 = interfaceinvoke $r0.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()" [label=1] [style=bold] [color=red]
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset" [label=25] [style=bold] [color=gold]
+"2093: $r1 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2458: $r4 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1]
+"2458: n = interfaceinvoke $r4.<org.jfree.data.general.PieDataset: java.lang.Number getValue(java.lang.Comparable)>(key)" [label=1] [color=red]
+"2388: $r9 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"874: $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"879: $r2 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1]
+"879: $i0 = interfaceinvoke $r2.<org.jfree.data.general.PieDataset: int getItemCount()>()" [label=1] [color=red]
+"876: $r3 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1]
+"876: key = interfaceinvoke $r3.<org.jfree.data.general.PieDataset: java.lang.Comparable getKey(int)>(section)" [label=1] [color=red]
+"551: $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2207: $r4 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2239: $r5 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1]
+"2239: $r6 = interfaceinvoke $r5.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()" [label=1] [color=red]
+"2209: $r7 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1]
+"2209: keys = interfaceinvoke $r7.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()" [label=1] [color=red]
+"2210: $r8 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2217: $r9 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1]
+"2217: n = interfaceinvoke $r9.<org.jfree.data.general.PieDataset: java.lang.Number getValue(int)>(section)" [label=1] [color=red]
+"564: existing = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1]
+"566: interfaceinvoke existing.<org.jfree.data.general.PieDataset: void removeChangeListener(org.jfree.data.general.DatasetChangeListener)>(this)" [label=1] [color=red]
+"2575: $r3 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2523: $r3 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2253: $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1]
+"2253: n = interfaceinvoke $r0.<org.jfree.data.general.PieDataset: java.lang.Number getValue(int)>(section)" [label=1] [color=red]
+"2315: $r16 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2320: $r14 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2323: $r13 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2617: $r2 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1]
+"2617: keys = interfaceinvoke $r2.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()" [label=1] [color=red]
+"2623: $r4 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1]
+"2623: n = interfaceinvoke $r4.<org.jfree.data.general.PieDataset: java.lang.Number getValue(java.lang.Comparable)>(key)" [label=1] [color=red]
+"2638: $r5 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2645: $r16 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"2649: $r14 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [label=1] [color=red]
+"1379: $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"1379: $r1 = interfaceinvoke $r0.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()";
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"1379: $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>";
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2093: $r1 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"2458: $r4 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"2458: n = interfaceinvoke $r4.<org.jfree.data.general.PieDataset: java.lang.Number getValue(java.lang.Comparable)>(key)" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2458: $r4 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2388: $r9 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"874: $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"879: $r2 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"879: $i0 = interfaceinvoke $r2.<org.jfree.data.general.PieDataset: int getItemCount()>()" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"879: $r2 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"876: $r3 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"876: key = interfaceinvoke $r3.<org.jfree.data.general.PieDataset: java.lang.Comparable getKey(int)>(section)" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"876: $r3 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"551: $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2207: $r4 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"2239: $r5 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"2239: $r6 = interfaceinvoke $r5.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2239: $r5 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"2209: $r7 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"2209: keys = interfaceinvoke $r7.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2209: $r7 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2210: $r8 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"2217: $r9 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"2217: n = interfaceinvoke $r9.<org.jfree.data.general.PieDataset: java.lang.Number getValue(int)>(section)" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2217: $r9 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"564: existing = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"566: interfaceinvoke existing.<org.jfree.data.general.PieDataset: void removeChangeListener(org.jfree.data.general.DatasetChangeListener)>(this)" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"564: existing = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2575: $r3 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2523: $r3 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"2253: $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"2253: n = interfaceinvoke $r0.<org.jfree.data.general.PieDataset: java.lang.Number getValue(int)>(section)" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2253: $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2315: $r16 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2320: $r14 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2323: $r13 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"2617: $r2 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"2617: keys = interfaceinvoke $r2.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2617: $r2 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"2623: $r4 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>"->"2623: n = interfaceinvoke $r4.<org.jfree.data.general.PieDataset: java.lang.Number getValue(java.lang.Comparable)>(key)" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2623: $r4 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2638: $r5 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2645: $r16 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+"493: this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset> = dataset"->"2649: $r14 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>" [style=dotted];
+
+}

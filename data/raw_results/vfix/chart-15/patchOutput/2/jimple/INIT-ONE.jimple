@@ -1,0 +1,56 @@
+    public double getMaximumExplodePercent()
+    {
+        org.jfree.chart.plot.PiePlot this;
+        java.util.Iterator iterator;
+        java.lang.Comparable key;
+        java.lang.Number explode;
+        org.jfree.data.general.PieDataset $r0;
+        java.util.List $r1;
+        java.lang.Object $r2, $r4;
+        java.util.Map $r3;
+        double $d0, result;
+        boolean $z0;
+
+        this := @this: org.jfree.chart.plot.PiePlot;
+
+        result = 0.0;
+
+        $r0 = this.<org.jfree.chart.plot.PiePlot: org.jfree.data.general.PieDataset dataset>;
+
+        if $r0 != null goto label1;
+
+        $r0 = new org.jfree.data.general.DefaultPieDataset;
+
+        specialinvoke $r0.<org.jfree.data.general.DefaultPieDataset: void <init>()>();
+
+     label1:
+        $r1 = interfaceinvoke $r0.<org.jfree.data.general.PieDataset: java.util.List getKeys()>();
+
+        iterator = interfaceinvoke $r1.<java.util.List: java.util.Iterator iterator()>();
+
+        goto label3;
+
+     label2:
+        $r2 = interfaceinvoke iterator.<java.util.Iterator: java.lang.Object next()>();
+
+        key = (java.lang.Comparable) $r2;
+
+        $r3 = this.<org.jfree.chart.plot.PiePlot: java.util.Map explodePercentages>;
+
+        $r4 = interfaceinvoke $r3.<java.util.Map: java.lang.Object get(java.lang.Object)>(key);
+
+        explode = (java.lang.Number) $r4;
+
+        if explode == null goto label3;
+
+        $d0 = virtualinvoke explode.<java.lang.Number: double doubleValue()>();
+
+        result = staticinvoke <java.lang.Math: double max(double,double)>(result, $d0);
+
+     label3:
+        $z0 = interfaceinvoke iterator.<java.util.Iterator: boolean hasNext()>();
+
+        if $z0 != 0 goto label2;
+
+        return result;
+    }

@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "server/src/test/java/org/apache/iotdb/db/metadata/MManagerBasicTest.java",
+        "line": 444,
+        "method_name": "testGetChildNodePathInNextLevel"
+    }
+]

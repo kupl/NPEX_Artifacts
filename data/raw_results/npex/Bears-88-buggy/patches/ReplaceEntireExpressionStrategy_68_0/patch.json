@@ -1,0 +1,5 @@
+{
+    "contents": "java.lang.Object value = (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) != null) ? beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class).getValue() : null",
+    "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+    "patched_lines": [77]
+}

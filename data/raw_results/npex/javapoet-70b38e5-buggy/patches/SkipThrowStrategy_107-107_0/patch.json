@@ -1,0 +1,5 @@
+{
+    "contents": "if (mirror == null) {\n    throw new java.lang.AssertionError();\n}",
+    "original_filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+    "patched_lines": [111]
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line": 107,
+        "method_name": "get"
+    },
+    {
+        "filepath": "src/main/java/com/squareup/javapoet/WildcardTypeName.java",
+        "line": 92,
+        "method_name": "get"
+    },
+    {
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line": 151,
+        "method_name": "visitWildcard"
+    },
+    {
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line": 107,
+        "method_name": "visitWildcard"
+    },
+    {
+        "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+        "line": 107,
+        "method_name": "get"
+    },
+    {
+        "filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+        "line": 183,
+        "method_name": "wildcardMirrorSuperType"
+    }
+]

@@ -1,0 +1,25 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"109: $r0 = interfaceinvoke channel.<org.jboss.netty.channel.Channel: org.jboss.netty.channel.ChannelPipeline getPipeline()>()" [style=bold] [color=red]
+"113: deviceSession = virtualinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.DeviceSession getDeviceSession(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String[])>(channel, remoteAddress, $r31)"
+"177: $r2 = specialinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.model.Position decode23(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String,java.lang.String[])>(channel, remoteAddress, protocol, values)"
+"161: $r0 = virtualinvoke decoder.<org.traccar.BaseProtocolDecoder: java.lang.Object decode(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.Object)>(null, null, object)" [color=gold]
+"157: $r0 = virtualinvoke decoder.<org.traccar.BaseProtocolDecoder: java.lang.Object decode(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.Object)>(null, null, object)" [style=bold] [color=gold]
+"64: deviceSession = virtualinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.DeviceSession getDeviceSession(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String[])>(channel, remoteAddress, $r10)" [style=bold]
+"175: $r3 = specialinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.model.Position decode9(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String[])>(channel, remoteAddress, values)" [style=bold]
+"169:channel := @parameter0: org.jboss.netty.channel.Channel"->"175: $r3 = specialinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.model.Position decode9(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String[])>(channel, remoteAddress, values)" [style=dotted];
+
+"113: deviceSession = virtualinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.DeviceSession getDeviceSession(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String[])>(channel, remoteAddress, $r31)"->"109: $r0 = interfaceinvoke channel.<org.jboss.netty.channel.Channel: org.jboss.netty.channel.ChannelPipeline getPipeline()>()" [style=dotted];
+
+"64: deviceSession = virtualinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.DeviceSession getDeviceSession(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String[])>(channel, remoteAddress, $r10)"->"109: $r0 = interfaceinvoke channel.<org.jboss.netty.channel.Channel: org.jboss.netty.channel.ChannelPipeline getPipeline()>()";
+
+"177: $r2 = specialinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.model.Position decode23(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String,java.lang.String[])>(channel, remoteAddress, protocol, values)"->"113: deviceSession = virtualinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.DeviceSession getDeviceSession(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String[])>(channel, remoteAddress, $r31)" [style=dotted];
+
+"175: $r3 = specialinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.model.Position decode9(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String[])>(channel, remoteAddress, values)"->"64: deviceSession = virtualinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.DeviceSession getDeviceSession(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String[])>(channel, remoteAddress, $r10)";
+
+"157: $r0 = virtualinvoke decoder.<org.traccar.BaseProtocolDecoder: java.lang.Object decode(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.Object)>(null, null, object)"->"177: $r2 = specialinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.model.Position decode23(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String,java.lang.String[])>(channel, remoteAddress, protocol, values)" [style=dotted];
+
+"161: $r0 = virtualinvoke decoder.<org.traccar.BaseProtocolDecoder: java.lang.Object decode(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.Object)>(null, null, object)"->"177: $r2 = specialinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.model.Position decode23(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String,java.lang.String[])>(channel, remoteAddress, protocol, values)" [style=dotted];
+
+}

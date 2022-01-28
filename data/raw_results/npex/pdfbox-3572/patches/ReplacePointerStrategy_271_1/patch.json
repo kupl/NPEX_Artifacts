@@ -1,0 +1,5 @@
+{
+    "contents": "system.SystemLib.write(decryptCipher.update(buffer, 0, n) != null ? decryptCipher.update(buffer, 0, n) : new byte[]{  })",
+    "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+    "patched_lines": [275]
+}

@@ -1,0 +1,22 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"105: contains" [color=red] [style=bold]
+"387: showText" [style=bold]
+"279: encode" [style=bold]
+"341: encode" [style=bold]
+"-1: UnknownMethod"->"-1: UnknownMethod" [style=dotted];
+
+"-1: UnknownMethod"->"-1: UnknownMethod" [style=dotted];
+
+"-1: UnknownMethod"->"-1: UnknownMethod" [style=dotted];
+
+"-1: UnknownMethod"->"387: showText" [style=dotted];
+
+"387: showText"->"279: encode";
+
+"279: encode"->"341: encode";
+
+"341: encode"->"105: contains";
+
+}

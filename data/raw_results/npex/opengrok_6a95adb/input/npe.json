@@ -1,0 +1,10 @@
+{
+    "filepath": "src/org/opensolaris/opengrok/analysis/IteratorReader.java",
+    "line": 39,
+    "sink_field": "iterator",
+    "npe_class": "IteratorReader",
+    "npe_method": "<init>",
+    "jvmti_identify_succeed": true,
+    "deref_field": "iterable",
+    "nullpointer": "iterable"
+}

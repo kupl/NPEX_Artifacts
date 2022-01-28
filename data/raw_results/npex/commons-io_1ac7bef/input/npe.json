@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+    "line": 196,
+    "sink_field": "length",
+    "npe_class": "IOCase",
+    "npe_method": "checkEndsWith",
+    "jvmti_identify_succeed": true,
+    "deref_field": "end",
+    "nullpointer": "end"
+}

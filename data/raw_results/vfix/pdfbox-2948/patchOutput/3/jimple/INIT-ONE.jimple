@@ -1,0 +1,86 @@
+    public java.io.InputStream createInputStream(java.util.List) throws java.io.IOException
+    {
+        org.apache.pdfbox.pdmodel.common.PDStream this;
+        java.util.List stopFilters, filters;
+        org.apache.pdfbox.cos.COSName nextFilter;
+        org.apache.pdfbox.filter.Filter filter;
+        org.apache.pdfbox.cos.COSStream $r0, $r5;
+        java.io.ByteArrayOutputStream $r1;
+        int $i0, i;
+        java.lang.Object $r2;
+        java.lang.String $r3;
+        boolean $z0;
+        org.apache.pdfbox.filter.FilterFactory $r4;
+        java.io.ByteArrayInputStream $r7;
+        byte[] $r8;
+        java.io.InputStream is;
+
+        this := @this: org.apache.pdfbox.pdmodel.common.PDStream;
+
+        stopFilters := @parameter0: java.util.List;
+
+        $r0 = this.<org.apache.pdfbox.pdmodel.common.PDStream: org.apache.pdfbox.cos.COSStream stream>;
+
+        is = virtualinvoke $r0.<org.apache.pdfbox.cos.COSStream: java.io.InputStream createRawInputStream()>();
+
+        $r1 = new java.io.ByteArrayOutputStream;
+
+        specialinvoke $r1.<java.io.ByteArrayOutputStream: void <init>()>();
+
+        filters = virtualinvoke this.<org.apache.pdfbox.pdmodel.common.PDStream: java.util.List getFilters()>();
+
+        i = 0;
+
+        goto label3;
+
+     label1:
+        $r2 = interfaceinvoke filters.<java.util.List: java.lang.Object get(int)>(i);
+
+        nextFilter = (org.apache.pdfbox.cos.COSName) $r2;
+
+        $r3 = virtualinvoke nextFilter.<org.apache.pdfbox.cos.COSName: java.lang.String getName()>();
+
+        $z0 = interfaceinvoke stopFilters.<java.util.List: boolean contains(java.lang.Object)>($r3);
+
+        if $z0 == 0 goto label2;
+
+        goto label5;
+
+     label2:
+        $r4 = <org.apache.pdfbox.filter.FilterFactory: org.apache.pdfbox.filter.FilterFactory INSTANCE>;
+
+        filter = virtualinvoke $r4.<org.apache.pdfbox.filter.FilterFactory: org.apache.pdfbox.filter.Filter getFilter(org.apache.pdfbox.cos.COSName)>(nextFilter);
+
+        $r5 = this.<org.apache.pdfbox.pdmodel.common.PDStream: org.apache.pdfbox.cos.COSStream stream>;
+
+        virtualinvoke filter.<org.apache.pdfbox.filter.Filter: org.apache.pdfbox.filter.DecodeResult decode(java.io.InputStream,java.io.OutputStream,org.apache.pdfbox.cos.COSDictionary,int)>(is, $r1, $r5, i);
+
+        staticinvoke <org.apache.pdfbox.io.IOUtils: void closeQuietly(java.io.Closeable)>(is);
+
+        $r7 = new java.io.ByteArrayInputStream;
+
+        $r8 = virtualinvoke $r1.<java.io.ByteArrayOutputStream: byte[] toByteArray()>();
+
+        specialinvoke $r7.<java.io.ByteArrayInputStream: void <init>(byte[])>($r8);
+
+        is = $r7;
+
+        virtualinvoke $r1.<java.io.ByteArrayOutputStream: void reset()>();
+
+        i = i + 1;
+
+     label3:
+        if filters != null goto label4;
+
+        filters = new java.util.LinkedList;
+
+        specialinvoke filters.<java.util.LinkedList: void <init>()>();
+
+     label4:
+        $i0 = interfaceinvoke filters.<java.util.List: int size()>();
+
+        if i < $i0 goto label1;
+
+     label5:
+        return is;
+    }

@@ -1,0 +1,5 @@
+{
+    "contents": "if (annotated == null) {\n    return null;\n}",
+    "original_filepath": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+    "patched_lines": [1355]
+}

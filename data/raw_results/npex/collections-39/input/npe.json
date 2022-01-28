@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/commons/collections/ExtendedProperties.java",
+	"line": 569,
+	"deref_field": "line",
+	"sink_field": "indexOf",
+	"npe_class": "ExtendedProperties",
+	"npe_method": "load",
+	"jvmti_identify_succeed": true
+}

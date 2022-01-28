@@ -1,0 +1,72 @@
+[
+    {
+        "filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+        "line": 286,
+        "method_name": "isSingleLineFor"
+    },
+    {
+        "filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+        "line": 203,
+        "method_name": "isSingleLineStatement"
+    },
+    {
+        "filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+        "line": 177,
+        "method_name": "isSkipStatement"
+    },
+    {
+        "filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+        "line": 164,
+        "method_name": "visitToken"
+    },
+    {
+        "filepath": "src/main/java/com/puppycrawl/tools/checkstyle/TreeWalker.java",
+        "line": 388,
+        "method_name": "notifyVisit"
+    },
+    {
+        "filepath": "src/main/java/com/puppycrawl/tools/checkstyle/TreeWalker.java",
+        "line": 499,
+        "method_name": "processIter"
+    },
+    {
+        "filepath": "src/main/java/com/puppycrawl/tools/checkstyle/TreeWalker.java",
+        "line": 330,
+        "method_name": "walk"
+    },
+    {
+        "filepath": "src/main/java/com/puppycrawl/tools/checkstyle/TreeWalker.java",
+        "line": 203,
+        "method_name": "processFiltered"
+    },
+    {
+        "filepath": "src/main/java/com/puppycrawl/tools/checkstyle/api/AbstractFileSetCheck.java",
+        "line": 79,
+        "method_name": "process"
+    },
+    {
+        "filepath": "src/main/java/com/puppycrawl/tools/checkstyle/Checker.java",
+        "line": 265,
+        "method_name": "process"
+    },
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/BaseCheckTestSupport.java",
+        "line": 138,
+        "method_name": "verify"
+    },
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/BaseCheckTestSupport.java",
+        "line": 125,
+        "method_name": "verify"
+    },
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/BaseCheckTestSupport.java",
+        "line": 107,
+        "method_name": "verify"
+    },
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheckTest.java",
+        "line": 76,
+        "method_name": "testSingleLineStatements"
+    }
+]

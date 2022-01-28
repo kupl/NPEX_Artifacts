@@ -1,0 +1,5 @@
+{
+    "contents": "if (metadata == null) {\n    throw new java.lang.IllegalStateException();\n}",
+    "original_filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+    "patched_lines": [390]
+}

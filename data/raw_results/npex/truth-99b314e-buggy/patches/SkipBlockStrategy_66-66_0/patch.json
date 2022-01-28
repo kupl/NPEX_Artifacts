@@ -1,0 +1,5 @@
+{
+    "contents": "if (expected != null) {\n    fail(\"has key/value pair\", com.google.common.collect.ImmutableList.of(key, expected), \"actually has key/value pair\", com.google.common.collect.ImmutableList.of(key, actual));\n}",
+    "original_filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+    "patched_lines": [66]
+}

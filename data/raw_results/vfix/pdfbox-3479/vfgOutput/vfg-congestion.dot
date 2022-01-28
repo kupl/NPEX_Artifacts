@@ -1,0 +1,11 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"131: rect = virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: org.apache.pdfbox.pdmodel.common.PDRectangle getRectangle()>()" [label=2] [style=bold] [color=gold]
+"136: $f0 = virtualinvoke rect.<org.apache.pdfbox.pdmodel.common.PDRectangle: float getWidth()>()" [label=1] [style=bold] [color=red]
+"136: $f1 = virtualinvoke rect.<org.apache.pdfbox.pdmodel.common.PDRectangle: float getHeight()>()" [label=1] [style=bold] [color=red]
+"131: rect = virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: org.apache.pdfbox.pdmodel.common.PDRectangle getRectangle()>()"->"136: $f0 = virtualinvoke rect.<org.apache.pdfbox.pdmodel.common.PDRectangle: float getWidth()>()";
+
+"131: rect = virtualinvoke widget.<org.apache.pdfbox.pdmodel.interactive.'annotation'.PDAnnotationWidget: org.apache.pdfbox.pdmodel.common.PDRectangle getRectangle()>()"->"136: $f1 = virtualinvoke rect.<org.apache.pdfbox.pdmodel.common.PDRectangle: float getHeight()>()";
+
+}

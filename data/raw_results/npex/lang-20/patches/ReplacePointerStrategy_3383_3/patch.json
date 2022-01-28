@@ -1,0 +1,5 @@
+{
+    "contents": "(array[startIndex].toString() != null ? array[startIndex].toString() : null).length()",
+    "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+    "patched_lines": [3413]
+}

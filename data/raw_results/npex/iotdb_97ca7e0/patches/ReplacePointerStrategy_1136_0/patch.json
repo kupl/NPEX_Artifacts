@@ -1,0 +1,5 @@
+{
+    "contents": "(node != null ? node : null).getChildren()",
+    "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+    "patched_lines": [1151]
+}

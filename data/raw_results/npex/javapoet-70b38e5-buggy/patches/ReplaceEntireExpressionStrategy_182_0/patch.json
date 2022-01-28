@@ -1,0 +1,5 @@
+{
+    "contents": "javax.lang.model.type.WildcardType wildcard = (types.getWildcardType(null, string) != null) ? types.getWildcardType(null, string) : null",
+    "original_filepath": "src/test/java/com/squareup/javapoet/TypesTest.java",
+    "patched_lines": [183]
+}

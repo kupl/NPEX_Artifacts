@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "log4j-core/src/test/java/org/apache/logging/log4j/core/async/RingBufferLogEventTest.java",
+        "line": 185,
+        "method_name": "testMessageTextNeverThrowsNpe"
+    }
+]

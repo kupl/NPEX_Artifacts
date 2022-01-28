@@ -1,0 +1,59 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"562: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null" [color=gold]
+"784: probe#38 = interfaceinvoke $r22.<hivemall.model.PredictionModel: long getNumMixed()>()" [style=bold] [color=red]
+"784: $r22 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>" [style=bold]
+"533: interfaceinvoke $r6.<hivemall.model.PredictionModel: void setWeight(java.lang.Object,float)>(feature, new_weight)" [color=red]
+"533: $r6 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"
+"552: interfaceinvoke $r2.<hivemall.model.PredictionModel: void setWeight(java.lang.Object,float)>(feature, new_weight)" [color=red]
+"530: interfaceinvoke $r7.<hivemall.model.PredictionModel: void delete(java.lang.Object)>(feature)" [color=red]
+"552: $r2 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"
+"530: $r7 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"
+"549: interfaceinvoke $r3.<hivemall.model.PredictionModel: void delete(java.lang.Object)>(feature)" [color=red]
+"549: $r3 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"
+"153: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = $r5" [style=bold] [color=gold]
+"461: old_w = interfaceinvoke $r0.<hivemall.model.PredictionModel: float getWeight(java.lang.Object)>(k)" [color=red]
+"461: $r0 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"
+"545: weight = interfaceinvoke $r0.<hivemall.model.PredictionModel: float getWeight(java.lang.Object)>(feature)" [color=red]
+"501: weight = interfaceinvoke $r0.<hivemall.model.PredictionModel: float getWeight(java.lang.Object)>(feature)" [color=red]
+"545: $r0 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"
+"501: $r0 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"
+"568: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null" [style=bold] [color=gold]
+"784: $r22 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"->"784: probe#38 = interfaceinvoke $r22.<hivemall.model.PredictionModel: long getNumMixed()>()";
+
+"562: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null"->"784: $r22 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>" [style=dotted];
+
+"530: $r7 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"->"530: interfaceinvoke $r7.<hivemall.model.PredictionModel: void delete(java.lang.Object)>(feature)" [style=dotted];
+
+"562: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null"->"530: $r7 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>" [style=dotted];
+
+"533: $r6 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"->"533: interfaceinvoke $r6.<hivemall.model.PredictionModel: void setWeight(java.lang.Object,float)>(feature, new_weight)" [style=dotted];
+
+"562: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null"->"533: $r6 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>" [style=dotted];
+
+"461: $r0 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"->"461: old_w = interfaceinvoke $r0.<hivemall.model.PredictionModel: float getWeight(java.lang.Object)>(k)" [style=dotted];
+
+"562: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null"->"461: $r0 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>" [style=dotted];
+
+"545: $r0 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"->"545: weight = interfaceinvoke $r0.<hivemall.model.PredictionModel: float getWeight(java.lang.Object)>(feature)" [style=dotted];
+
+"562: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null"->"545: $r0 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>" [style=dotted];
+
+"549: $r3 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"->"549: interfaceinvoke $r3.<hivemall.model.PredictionModel: void delete(java.lang.Object)>(feature)" [style=dotted];
+
+"562: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null"->"549: $r3 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>" [style=dotted];
+
+"552: $r2 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"->"552: interfaceinvoke $r2.<hivemall.model.PredictionModel: void setWeight(java.lang.Object,float)>(feature, new_weight)" [style=dotted];
+
+"562: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null"->"552: $r2 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>" [style=dotted];
+
+"501: $r0 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>"->"501: weight = interfaceinvoke $r0.<hivemall.model.PredictionModel: float getWeight(java.lang.Object)>(feature)" [style=dotted];
+
+"562: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null"->"501: $r0 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>" [style=dotted];
+
+"153: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = $r5"->"784: $r22 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>";
+
+"568: this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model> = null"->"784: $r22 = this.<hivemall.GeneralLearnerBaseUDTF: hivemall.model.PredictionModel model>";
+
+}

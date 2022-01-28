@@ -1,0 +1,129 @@
+    private java.lang.Object innerGetOnly(com.google.cloud.dataflow.sdk.values.TupleTag, java.lang.Object, boolean)
+    {
+        com.google.cloud.dataflow.sdk.transforms.join.CoGbkResult this;
+        com.google.cloud.dataflow.sdk.values.TupleTag tag;
+        java.lang.Object defaultValue, $r3, $r4, $r6, ret0;
+        boolean useDefault, $z0;
+        int index, $i0, $i1;
+        java.util.List unions;
+        com.google.cloud.dataflow.sdk.transforms.join.CoGbkResultSchema $r0;
+        java.util.Map $r1;
+        java.lang.Integer $r2;
+        com.google.cloud.dataflow.sdk.transforms.join.RawUnionValue $r5;
+        java.lang.IllegalArgumentException $r7, $r14, $r20;
+        java.lang.StringBuilder $r8, $r9, $r10, $r11, $r12, $r15, $r16, $r17, $r18, $r21, $r22, $r23, $r24;
+        java.lang.String $r13, $r19, $r25;
+
+        this := @this: com.google.cloud.dataflow.sdk.transforms.join.CoGbkResult;
+
+        tag := @parameter0: com.google.cloud.dataflow.sdk.values.TupleTag;
+
+        defaultValue := @parameter1: java.lang.Object;
+
+        useDefault := @parameter2: boolean;
+
+        $r0 = this.<com.google.cloud.dataflow.sdk.transforms.join.CoGbkResult: com.google.cloud.dataflow.sdk.transforms.join.CoGbkResultSchema schema>;
+
+        index = virtualinvoke $r0.<com.google.cloud.dataflow.sdk.transforms.join.CoGbkResultSchema: int getIndex(com.google.cloud.dataflow.sdk.values.TupleTag)>(tag);
+
+        if index >= 0 goto label1;
+
+        $r20 = new java.lang.IllegalArgumentException;
+
+        $r21 = new java.lang.StringBuilder;
+
+        specialinvoke $r21.<java.lang.StringBuilder: void <init>()>();
+
+        $r22 = virtualinvoke $r21.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("TupleTag ");
+
+        $r23 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(tag);
+
+        $r24 = virtualinvoke $r23.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" is not in the schema");
+
+        $r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke $r20.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r25);
+
+        throw $r20;
+
+     label1:
+        $r1 = this.<com.google.cloud.dataflow.sdk.transforms.join.CoGbkResult: java.util.Map valueMap>;
+
+        $r2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(index);
+
+        $r3 = interfaceinvoke $r1.<java.util.Map: java.lang.Object get(java.lang.Object)>($r2);
+
+        unions = (java.util.List) $r3;
+
+        $z0 = interfaceinvoke unions.<java.util.List: boolean isEmpty()>();
+
+        if $z0 == 0 goto label3;
+
+        if useDefault == 0 goto label2;
+
+        return defaultValue;
+
+     label2:
+        $r14 = new java.lang.IllegalArgumentException;
+
+        $r15 = new java.lang.StringBuilder;
+
+        specialinvoke $r15.<java.lang.StringBuilder: void <init>()>();
+
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("TupleTag ");
+
+        $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(tag);
+
+        $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" corresponds to an empty result, and no default was provided");
+
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke $r14.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r19);
+
+        throw $r14;
+
+     label3:
+        $i0 = interfaceinvoke unions.<java.util.List: int size()>();
+
+        if $i0 == 1 goto label4;
+
+        $r7 = new java.lang.IllegalArgumentException;
+
+        $r8 = new java.lang.StringBuilder;
+
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>()>();
+
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("TupleTag ");
+
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(tag);
+
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" corresponds to a non-singleton result of size ");
+
+        $i1 = interfaceinvoke unions.<java.util.List: int size()>();
+
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i1);
+
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke $r7.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r13);
+
+        throw $r7;
+
+     label4:
+        if unions != null goto label5;
+
+        ret0 = new java.lang.Object;
+
+        specialinvoke ret0.<java.lang.Object: void <init>()>();
+
+        return ret0;
+
+     label5:
+        $r4 = interfaceinvoke unions.<java.util.List: java.lang.Object get(int)>(0);
+
+        $r5 = (com.google.cloud.dataflow.sdk.transforms.join.RawUnionValue) $r4;
+
+        $r6 = virtualinvoke $r5.<com.google.cloud.dataflow.sdk.transforms.join.RawUnionValue: java.lang.Object getValue()>();
+
+        return $r6;
+    }

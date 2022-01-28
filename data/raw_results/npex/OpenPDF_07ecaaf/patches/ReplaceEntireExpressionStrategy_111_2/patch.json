@@ -1,0 +1,5 @@
+{
+    "contents": "return cipher != null ? cipher.doFinal() : null",
+    "original_filepath": "openpdf/src/main/java/com/lowagie/text/pdf/StandardDecryption.java",
+    "patched_lines": [112]
+}

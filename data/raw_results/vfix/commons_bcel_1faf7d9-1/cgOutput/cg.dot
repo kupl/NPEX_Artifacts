@@ -1,0 +1,3425 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)" [color=red] [style=bold]
+"30: public void <init>()"
+"124: testInvalidNullMethodBody_MailDateFormat"
+"133: testInvalidNullMethodBody"
+"36: <clinit>" [style=bold]
+"490: getConstantPool" [style=bold]
+"351: getClassName" [style=bold]
+"425: getMethods" [style=bold]
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)" [style=bold]
+"62: <clinit>"
+"78: <clinit>" [style=bold]
+"64: lookupClass" [style=bold]
+"36: <clinit>" [style=bold]
+"43: getInstance" [style=bold]
+"46: <clinit>" [style=bold]
+"58: public void <init>(org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.generic.ConstantPoolGen, boolean)"
+"86: getAnnotationEntries"
+"129: getExceptionNames"
+"119: copy"
+"54: copy"
+"55: copy"
+"136: copy"
+"154: copy"
+"146: copy"
+"182: copy"
+"201: copy"
+"133: copy"
+"337: copy"
+"132: copy"
+"147: copy"
+"64: copy"
+"84: copy"
+"133: copy"
+"231: copy"
+"166: copy"
+"266: copy"
+"169: copy"
+"61: copy"
+"135: copy"
+"32: copy"
+"171: copy"
+"179: copy"
+"165: copy"
+"146: copy"
+"745: getConstantPool"
+"136: findHandle"
+"98: getLineNumber"
+"106: getStartPC"
+"113: getLineNumberTable"
+"75: getPrev"
+"1130: getEnd"
+"197: getCode"
+"290: getConstantString" [style=bold]
+"131: getHandlerPC"
+"139: getStartPC"
+"123: getEndPC"
+"115: getCatchType"
+"163: getAttributes"
+"206: getExceptionTable"
+"214: getMaxLocals"
+"222: getMaxStack"
+"116: addAttribute"
+"124: addAnnotationEntry"
+"508: addException"
+"561: addCodeAttribute"
+"744: updateLocalVariableTable"
+"394: addLineNumber"
+"453: addExceptionHandler"
+"810: setMaxLocals"
+"823: setMaxStack"
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"
+"153: public void <init>(byte[])"
+"115: getCode" [style=bold]
+"170: getConstantPool"
+"153: getAttributes" [style=bold]
+"48: getAccessFlags" [style=bold]
+"219: getName" [style=bold]
+"229: getSignature" [style=bold]
+"230: getReturnType" [style=bold]
+"244: getArgumentTypes" [style=bold]
+"35: getInstance"
+"51: <clinit>" [style=bold]
+"210: public void <init>(org.apache.bcel.classfile.ConstantPool)" [style=bold]
+"314: addField" [style=bold]
+"287: addMethod" [style=bold]
+"278: addAnnotationEntry"
+"274: addAttribute" [style=bold]
+"225: addInterface"
+"170: unpackAnnotations" [style=bold]
+"40: public void <init>(int)" [style=bold]
+"401: getInterfaceNames" [style=bold]
+"385: getFields" [style=bold]
+"332: getAttributes" [style=bold]
+"448: getMinor" [style=bold]
+"417: getMajor" [style=bold]
+"375: getConstantPool" [style=bold]
+"456: getSourceFileName" [style=bold]
+"468: getSuperclassName" [style=bold]
+"476: getSuperclassNameIndex" [style=bold]
+"367: getClassNameIndex" [style=bold]
+"62: void <init>()" [style=bold]
+"78: void <init>()"
+"32: loadClass"
+"432: <clinit>" [style=bold]
+"47: getInstance" [style=bold]
+"169: void <init>()"
+"63: void <init>(byte, java.lang.String)"
+"61: void <init>()"
+"42: public void <init>(java.lang.String)" [style=bold]
+"34: void <init>(byte)" [style=bold]
+"433: addUtf8"
+"119: getElementValuePairs"
+"78: isRuntimeVisible"
+"104: getAnnotationTypeIndex"
+"96: getAnnotationType"
+"71: copyValues"
+"318: getConstantPool" [style=bold]
+"285: clone"
+"361: setConstantPool"
+"296: copy"
+"140: copy"
+"390: copy"
+"210: copy"
+"50: <clinit>" [style=bold]
+"209: copy"
+"114: copy"
+"118: copy"
+"118: copy"
+"107: copy"
+"113: copy"
+"102: copy"
+"43: public void <init>(org.apache.bcel.classfile.Constant[])"
+"70: getNext"
+"255: getConstant" [style=bold]
+"247: getBytes" [style=bold]
+"98: getNameIndex"
+"98: getNameIndex"
+"94: getStringIndex"
+"95: getNameIndex" [style=bold]
+"1123: getStart"
+"210: getOrigIndex"
+"202: getIndex"
+"185: getSignature"
+"167: getName"
+"158: getLength"
+"218: getStartPC"
+"264: addLocalVariable"
+"333: removeLocalVariables"
+"111: getLocalVariableTable"
+"195: getType" [style=bold]
+"40: public void <init>(org.apache.bcel.generic.InstructionHandle, int)"
+"34: public void <init>(java.lang.String)"
+"52: public void <init>(org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.ObjectType)"
+"315: addLocalVariable"
+"875: setArgumentNames"
+"119: isStatic"
+"159: isNative"
+"175: isAbstract"
+"103: setConstantPool"
+"900: setInstructionList"
+"840: setClassName"
+"93: setName"
+"855: setArgumentTypes"
+"70: setType"
+"65: protected void <init>(int)"
+"44: <clinit>"
+"187: setTarget"
+"266: getIndices"
+"261: getPosition"
+"203: setTarget"
+"186: getIndex"
+"80: getInstruction"
+"38: public void <init>(java.lang.String, java.lang.Throwable)"
+"160: setPosition"
+"61: setPosition"
+"40: getIndex"
+"34: public void <init>(byte[])"
+"317: append"
+"330: append"
+"158: readInstruction"
+"108: findHandle"
+"42: public void <init>(java.lang.String, java.lang.Throwable)"
+"35: public void <init>(java.lang.String)"
+"179: unwrap"
+"271: getConstantPool" [style=bold]
+"94: public void <init>(org.apache.bcel.classfile.Constant[])" [style=bold]
+"65: loadClass" [style=bold]
+"553: public void <init>(java.lang.String)" [style=bold]
+"467: getClassPath" [style=bold]
+"39: private void <init>(org.apache.bcel.util.ClassPath)" [style=bold]
+"67: protected void <init>(byte, java.lang.String)" [style=bold]
+"37: void <init>()" [style=bold]
+"30: protected void <init>(byte, java.lang.String)" [style=bold]
+"355: <clinit>" [style=bold]
+"1941: getShortTypeName" [style=bold]
+"85: <clinit>" [style=bold]
+"83: void <init>(int)" [style=bold]
+"212: public void <init>(java.lang.String)" [style=bold]
+"226: adjustSize"
+"420: lookupUtf8"
+"34: <clinit>" [style=bold]
+"39: public void <init>(org.apache.bcel.classfile.ElementValuePair, org.apache.bcel.generic.ConstantPoolGen, boolean)"
+"143: copy"
+"162: copy"
+"86: getTag" [style=bold]
+"236: getConstant" [style=bold]
+"517: getConstantName"
+"107: getType"
+"80: public void <init>(int, java.lang.String, org.apache.bcel.generic.Type, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, int)"
+"127: getSize"
+"212: dispose"
+"990: next"
+"1011: hasNext"
+"59: <clinit>" [style=bold]
+"57: public void <init>(org.apache.bcel.generic.Type, int)"
+"1246: typeOfSignature" [style=bold]
+"184: wrap" [style=bold]
+"43: getType" [style=bold]
+"959: typeSignatureToString"
+"102: setSourceLine"
+"80: setInstruction"
+"98: setHandlerPC"
+"89: setEndPC"
+"80: setStartPC"
+"298: addLocalVariable"
+"35: <clinit>"
+"213: notifyTarget"
+"270: setPosition"
+"56: getPosition"
+"51: void <init>(byte[])"
+"127: getInstructionHandle"
+"297: append"
+"44: getBranchHandle"
+"45: <clinit>"
+"95: initFromFile"
+"49: initFromFile"
+"97: initFromFile"
+"85: initFromFile"
+"77: initFromFile"
+"75: initFromFile"
+"69: initFromFile"
+"61: initFromFile"
+"83: initFromFile"
+"72: initFromFile"
+"72: initFromFile"
+"61: initFromFile"
+"73: initFromFile"
+"89: initFromFile"
+"177: initFromFile"
+"110: initFromFile"
+"128: initFromFile"
+"143: initFromFile"
+"520: setOpcode"
+"26: public void <init>()"
+"26: public void <init>()"
+"26: public void <init>()"
+"34: void <init>()"
+"34: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"41: void <init>()"
+"33: void <init>()"
+"33: void <init>()"
+"33: void <init>()"
+"41: void <init>()"
+"33: void <init>()"
+"45: void <init>()"
+"44: void <init>()"
+"40: void <init>()"
+"41: void <init>()"
+"40: void <init>()"
+"35: void <init>()"
+"36: void <init>()"
+"35: void <init>()"
+"35: void <init>()"
+"35: void <init>()"
+"35: void <init>()"
+"40: void <init>()"
+"32: void <init>()"
+"32: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"38: void <init>()"
+"39: public void <init>(int)"
+"39: public void <init>(int)"
+"39: public void <init>(int)"
+"36: public void <init>(int)"
+"39: public void <init>(int)"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"39: public void <init>(int)"
+"39: public void <init>(int)"
+"39: public void <init>(int)"
+"36: public void <init>(int)"
+"39: public void <init>(int)"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"31: void <init>()"
+"35: void <init>()"
+"37: void <init>()"
+"39: void <init>()"
+"39: void <init>()"
+"293: getInstruction"
+"114: getSignatureIndex"
+"99: getNameIndex"
+"119: getNameAndTypeIndex"
+"103: getClassIndex"
+"79: getBootstrapMethodAttrIndex"
+"687: getInputStream" [style=bold]
+"113: loadClass" [style=bold]
+"63: findClass" [style=bold]
+"256: void <init>(java.util.zip.ZipFile)" [style=bold]
+"354: public void <init>(java.lang.String) throws java.io.IOException"
+"422: void <init>(java.util.zip.ZipFile)"
+"175: void <init>(java.lang.String)"
+"44: <clinit>" [style=bold]
+"445: addJdkModules" [style=bold]
+"510: getPathComponents" [style=bold]
+"37: public void <init>(org.apache.bcel.util.ClassPath)" [style=bold]
+"96: void <init>()"
+"60: <clinit>" [style=bold]
+"58: access$100"
+"65: void <init>(byte)" [style=bold]
+"34: void <init>()"
+"164: copy"
+"54: getValue"
+"59: getNameIndex"
+"47: getNameString"
+"53: public void <init>(int, java.lang.String, org.apache.bcel.generic.Type, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle)"
+"176: setStart"
+"182: setEnd"
+"996: next"
+"59: void <init>()" [style=bold]
+"99: getSignature"
+"401: setSignature"
+"51: wrap"
+"478: compactClassName" [style=bold]
+"47: unwrap"
+"190: removeTargeter"
+"200: addTargeter"
+"120: protected void <init>(org.apache.bcel.generic.Instruction)"
+"91: isEmpty"
+"301: setNext"
+"311: setPrev"
+"37: private void <init>(org.apache.bcel.generic.BranchInstruction)"
+"29: public void <init>()"
+"29: public void <init>()"
+"32: public void <init>()"
+"31: public void <init>()"
+"27: public void <init>()"
+"30: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"27: public void <init>()"
+"29: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"28: public void <init>()"
+"27: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"28: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"30: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"31: public void <init>()"
+"30: public void <init>()"
+"29: public void <init>()"
+"30: public void <init>()"
+"31: public void <init>()"
+"30: public void <init>()"
+"29: public void <init>()"
+"28: public void <init>()"
+"29: public void <init>()"
+"30: public void <init>()"
+"29: public void <init>()"
+"28: public void <init>()"
+"29: public void <init>()"
+"30: public void <init>()"
+"29: public void <init>()"
+"28: public void <init>()"
+"29: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"27: public void <init>()"
+"28: public void <init>()"
+"28: public void <init>()"
+"27: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"30: public void <init>()"
+"27: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"29: public void <init>()"
+"30: public void <init>()"
+"39: public void <init>(double)"
+"39: public void <init>(float)"
+"39: public void <init>(long)"
+"39: public void <init>(int)"
+"30: public void <init>()"
+"26: public void <init>()"
+"529: setLength"
+"228: setIndexOnly"
+"79: setIndex"
+"152: initFromFile"
+"388: setIndices"
+"346: setMatch"
+"373: setTargets"
+"355: setIndices"
+"364: setMatches"
+"382: getPadding"
+"317: setFixed_length"
+"335: setMatch_length"
+"279: setIndex"
+"130: setIndex"
+"504: getOpcode"
+"55: public void <init>(short, short)"
+"35: void <init>()"
+"34: void <init>()"
+"29: void <init>()"
+"50: void <init>()"
+"51: void <init>()"
+"37: void <init>()"
+"31: void <init>()"
+"77: void <init>()"
+"63: void <init>()"
+"42: protected void <init>(short, short, int)"
+"32: void <init>(short, short)"
+"42: protected void <init>(short, short, int)"
+"32: void <init>(short, short)"
+"700: getInputStream" [style=bold]
+"523: packageToFolder" [style=bold]
+"68: public void <init>(java.io.InputStream, java.lang.String)" [style=bold]
+"46: storeClass" [style=bold]
+"117: parse" [style=bold]
+"61: void <init>(java.util.zip.ZipFile)" [style=bold]
+"270: public void <init>(java.nio.file.Path)"
+"122: list"
+"57: public void <init>() throws java.io.IOException"
+"48: void <init>(org.apache.bcel.util.ClassPath$1)"
+"37: void <init>(org.apache.bcel.util.ClassPath)" [style=bold]
+"65: void <init>(int, float, boolean)" [style=bold]
+"54: getElementValueType"
+"63: public void <init>(org.apache.bcel.classfile.ClassElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"
+"79: public void <init>(org.apache.bcel.classfile.ArrayElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"
+"53: public void <init>(org.apache.bcel.classfile.AnnotationElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"
+"75: public void <init>(org.apache.bcel.classfile.EnumElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"
+"494: compactClassName" [style=bold]
+"89: setInstruction"
+"103: setInstruction"
+"41: protected void <init>(short)"
+"40: protected void <init>(short)"
+"40: protected void <init>(short)"
+"37: protected void <init>(short)"
+"40: protected void <init>(short)"
+"49: setSize"
+"56: void <init>()"
+"36: void <init>()"
+"73: protected void <init>(short, short, int)"
+"53: void <init>(short, short)"
+"90: getInputStream"
+"197: getInputStream"
+"293: getInputStream"
+"651: getClassFile"
+"762: setRepository" [style=bold]
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)" [style=bold]
+"201: readAttributes" [style=bold]
+"289: readMethods" [style=bold]
+"247: readFields" [style=bold]
+"275: readInterfaces" [style=bold]
+"215: readClassInfo" [style=bold]
+"237: readConstantPool" [style=bold]
+"303: readVersion" [style=bold]
+"263: readID" [style=bold]
+"73: <clinit>" [style=bold]
+"102: list"
+"77: private void <init>(java.net.URLClassLoader, java.nio.file.FileSystem)"
+"48: private void <init>()"
+"49: protected void <init>(int, org.apache.bcel.generic.ConstantPoolGen)"
+"42: getIndex"
+"47: getClassString"
+"84: getElementValuesArray"
+"62: getAnnotationEntry"
+"78: getValueIndex"
+"83: getTypeIndex"
+"71: getEnumValueString"
+"64: getEnumTypeString"
+"363: addInteger"
+"512: addDouble"
+"401: addFloat"
+"473: addLong"
+"61: getElementValueType"
+"136: getValueShort"
+"126: getValueBoolean"
+"116: getValueDouble"
+"106: getValueFloat"
+"96: getValueLong"
+"85: getValueChar"
+"74: getValueByte"
+"63: getValueInt"
+"52: getValueString"
+"42: getIndex"
+"247: dispose"
+"250: dispose"
+"536: dispose"
+"120: getIndex"
+"165: setIndex"
+"122: setIndex"
+"57: access$100"
+"670: getClassFileInternal"
+"126: getSourceFileName" [style=bold]
+"34: <clinit>"
+"35: <clinit>" [style=bold]
+"217: readAttribute" [style=bold]
+"81: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException" [style=bold]
+"68: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException" [style=bold]
+"54: public void <init>(java.io.DataInput) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException" [style=bold]
+"75: void <init>()"
+"117: getConstantPool"
+"343: lookupInteger"
+"40: public void <init>(int)"
+"491: lookupDouble"
+"40: public void <init>(double)"
+"380: lookupFloat"
+"40: public void <init>(float)"
+"453: lookupLong"
+"40: public void <init>(long)" [style=bold]
+"122: getType"
+"94: getBytes"
+"94: getBytes"
+"95: getBytes"
+"94: getBytes"
+"43: wide"
+"76: setWide"
+"379: getClassFile"
+"75: getClassFile"
+"282: getClassFile"
+"187: getClassFile"
+"34: void <init>()" [style=bold]
+"35: void <init>()"
+"106: readAttribute" [style=bold]
+"102: protected void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException" [style=bold]
+"128: readConstant" [style=bold]
+"153: getIndex"
+"261: toEntryName"
+"81: void <init>(org.apache.bcel.util.ClassPath$AbstractZip, java.util.zip.ZipEntry)"
+"427: toEntryName"
+"284: void <init>(org.apache.bcel.util.ClassPath$JrtModule, java.nio.file.Path)"
+"188: void <init>(org.apache.bcel.util.ClassPath$Dir, java.io.File)"
+"68: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"68: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"67: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"67: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"54: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"37: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"66: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"65: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"48: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"41: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"40: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"40: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"46: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"45: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"93: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"56: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"57: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"69: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"75: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"69: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"57: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=bold]
+"56: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=bold]
+"43: <clinit>"
+"2354: getAttributeName" [style=bold]
+"83: println"
+"122: protected void <init>(int, int, int, org.apache.bcel.classfile.Attribute[], org.apache.bcel.classfile.ConstantPool)" [style=bold]
+"54: void <init>(java.io.DataInput) throws java.io.IOException"
+"54: void <init>(java.io.DataInput) throws java.io.IOException"
+"50: void <init>(java.io.DataInput) throws java.io.IOException"
+"50: void <init>(java.io.DataInput) throws java.io.IOException"
+"52: void <init>(java.io.DataInput) throws java.io.IOException"
+"53: void <init>(java.io.DataInput) throws java.io.IOException"
+"53: void <init>(java.io.DataInput) throws java.io.IOException"
+"60: void <init>(java.io.DataInput) throws java.io.IOException"
+"60: void <init>(java.io.DataInput) throws java.io.IOException" [style=bold]
+"61: void <init>(java.io.DataInput) throws java.io.IOException"
+"60: void <init>(java.io.DataInput) throws java.io.IOException"
+"51: void <init>(java.io.DataInput) throws java.io.IOException"
+"45: void <init>(java.io.DataInput) throws java.io.IOException"
+"45: void <init>(java.io.DataInput) throws java.io.IOException"
+"45: void <init>(java.io.DataInput) throws java.io.IOException"
+"51: void <init>(java.io.DataInput) throws java.io.IOException" [style=bold]
+"159: getInstance" [style=bold]
+"54: public void <init>(int, int, int[], org.apache.bcel.classfile.ConstantPool)"
+"54: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)"
+"53: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)"
+"53: public void <init>(int, int, int[], org.apache.bcel.classfile.ConstantPool)"
+"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=bold]
+"45: void <init>(java.io.DataInput) throws java.io.IOException"
+"46: void <init>(java.io.DataInput) throws java.io.IOException"
+"46: void <init>(java.io.DataInput) throws java.io.IOException"
+"45: void <init>(java.io.DataInput) throws java.io.IOException"
+"50: void <init>(java.io.DataInput) throws java.io.IOException"
+"52: public void <init>(int, int, org.apache.bcel.classfile.BootstrapMethod[], org.apache.bcel.classfile.ConstantPool)"
+"58: void <init>(java.io.DataInput) throws java.io.IOException"
+"50: public void <init>(int, int, org.apache.bcel.classfile.StackMapEntry[], org.apache.bcel.classfile.ConstantPool)"
+"49: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"52: private void <init>(int, int, int, int, org.apache.bcel.classfile.ConstantPool)"
+"65: public void <init>(int, int, org.apache.bcel.classfile.LocalVariable[], org.apache.bcel.classfile.ConstantPool)"
+"72: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"77: readElementValue"
+"52: public void <init>(int, int, org.apache.bcel.classfile.ElementValue, org.apache.bcel.classfile.ConstantPool)"
+"42: void <init>(byte, int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"42: void <init>(byte, int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool, boolean) throws java.io.IOException"
+"74: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)"
+"67: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)"
+"70: public void <init>(int, int, int, int, org.apache.bcel.classfile.ConstantPool)"
+"53: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)"
+"59: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)"
+"55: public void <init>(int, int, org.apache.bcel.classfile.InnerClass[], org.apache.bcel.classfile.ConstantPool)"
+"55: void <init>(java.io.DataInput) throws java.io.IOException"
+"54: public void <init>(int, int, org.apache.bcel.classfile.LocalVariable[], org.apache.bcel.classfile.ConstantPool)"
+"56: public void <init>(int, int, org.apache.bcel.classfile.LineNumber[], org.apache.bcel.classfile.ConstantPool)"
+"55: void <init>(java.io.DataInput) throws java.io.IOException"
+"57: public void <init>(int, int, int[], org.apache.bcel.classfile.ConstantPool)"
+"60: void <init>(java.io.DataInput) throws java.io.IOException"
+"369: setLength"
+"111: public void <init>(int, int, int, int, byte[], org.apache.bcel.classfile.CodeException[], org.apache.bcel.classfile.Attribute[], org.apache.bcel.classfile.ConstantPool)"
+"75: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)" [style=bold]
+"68: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)" [style=bold]
+"161: setAttributes" [style=bold]
+"63: public void <init>(int)"
+"63: public void <init>(int)"
+"55: public void <init>(int, int)"
+"55: public void <init>(int, int)"
+"57: public void <init>(int)"
+"58: public void <init>(int, int)"
+"62: public void <init>(int, int)"
+"59: public void <init>(int)"
+"70: void <init>(byte, java.io.DataInput) throws java.io.IOException"
+"60: public void <init>(int)" [style=bold]
+"173: getInstance" [style=bold]
+"67: private void <init>(int, int)"
+"46: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"124: public void <init>(int, int, org.apache.bcel.classfile.StackMapType[], org.apache.bcel.classfile.StackMapType[], org.apache.bcel.classfile.ConstantPool)"
+"86: public void <init>(int, int, int, int, int, org.apache.bcel.classfile.ConstantPool)"
+"52: read"
+"48: public void <init>(int, org.apache.bcel.classfile.ElementValue[], org.apache.bcel.classfile.ConstantPool)"
+"33: public void <init>(int, org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.classfile.ConstantPool)"
+"36: public void <init>(int, int, org.apache.bcel.classfile.ConstantPool)"
+"37: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)"
+"33: public void <init>(int, int, org.apache.bcel.classfile.ConstantPool)"
+"61: public void <init>(byte, int, int, org.apache.bcel.classfile.ParameterAnnotationEntry[], org.apache.bcel.classfile.ConstantPool)"
+"42: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"
+"59: public void <init>(byte, int, int, org.apache.bcel.classfile.AnnotationEntry[], org.apache.bcel.classfile.ConstantPool, boolean)"
+"67: public void <init>(int, int, int, int)"
+"63: public void <init>(int, int)"
+"75: public void <init>(int, int, int, int)"
+"244: calculateLength"
+"79: protected void <init>(byte, int, int)"
+"79: isEnabled" [style=bold]
+"130: getCachedInstance"
+"74: public void <init>(int, int[])"
+"111: hasIndex"
+"58: public void <init>(byte, int, org.apache.bcel.classfile.ConstantPool)"
+"39: public void <init>(int, org.apache.bcel.classfile.ElementValue, org.apache.bcel.classfile.ConstantPool)"
+"63: public void <init>(int, org.apache.bcel.classfile.ConstantPool, boolean)"
+"47: protected void <init>(int, org.apache.bcel.classfile.ConstantPool)"
+"326: getLength"
+"231: getInternalLength"
+"58: access$300"
+"58: access$200"
+"2: main"->"30: public void <init>()" [style=dotted];
+
+"2: main"->"124: testInvalidNullMethodBody_MailDateFormat" [style=dotted];
+
+"124: testInvalidNullMethodBody_MailDateFormat"->"133: testInvalidNullMethodBody" [style=dotted];
+
+"133: testInvalidNullMethodBody"->"36: <clinit>" [style=dotted];
+
+"133: testInvalidNullMethodBody"->"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)" [style=dotted];
+
+"133: testInvalidNullMethodBody"->"490: getConstantPool" [style=dotted];
+
+"133: testInvalidNullMethodBody"->"351: getClassName" [style=dotted];
+
+"133: testInvalidNullMethodBody"->"425: getMethods" [style=dotted];
+
+"133: testInvalidNullMethodBody"->"131: public void <init>(org.apache.bcel.classfile.JavaClass)" [style=dotted];
+
+"133: testInvalidNullMethodBody"->"62: <clinit>" [style=dotted];
+
+"133: testInvalidNullMethodBody"->"78: <clinit>" [style=dotted];
+
+"133: testInvalidNullMethodBody"->"64: lookupClass" [style=dotted];
+
+"36: <clinit>"->"36: <clinit>";
+
+"36: <clinit>"->"36: <clinit>";
+
+"36: <clinit>"->"43: getInstance";
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"46: <clinit>";
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"58: public void <init>(org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.generic.ConstantPoolGen, boolean)" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"86: getAnnotationEntries" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"129: getExceptionNames" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"119: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"54: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"55: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"136: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"154: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"146: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"182: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"201: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"133: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"337: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"132: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"147: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"64: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"84: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"133: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"231: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"166: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"266: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"169: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"61: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"135: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"32: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"171: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"179: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"165: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"146: copy" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"745: getConstantPool" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"136: findHandle" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"98: getLineNumber" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"106: getStartPC" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"113: getLineNumberTable" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"75: getPrev" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"1130: getEnd" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"197: getCode" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"290: getConstantString";
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"131: getHandlerPC" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"139: getStartPC" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"123: getEndPC" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"115: getCatchType" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"163: getAttributes" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"206: getExceptionTable" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"214: getMaxLocals" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"222: getMaxStack" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"116: addAttribute" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"124: addAnnotationEntry" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"508: addException" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"561: addCodeAttribute" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"744: updateLocalVariableTable" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"394: addLineNumber" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"453: addExceptionHandler" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"810: setMaxLocals" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"823: setMaxStack" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"153: public void <init>(byte[])" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"115: getCode";
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"170: getConstantPool" [style=dotted];
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"153: getAttributes";
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"48: getAccessFlags";
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"219: getName";
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"229: getSignature";
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"230: getReturnType";
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"244: getArgumentTypes";
+
+"177: public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)"->"35: getInstance" [style=dotted];
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"51: <clinit>";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"210: public void <init>(org.apache.bcel.classfile.ConstantPool)";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"314: addField";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"287: addMethod";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"278: addAnnotationEntry" [style=dotted];
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"274: addAttribute";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"225: addInterface" [style=dotted];
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"170: unpackAnnotations";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"40: public void <init>(int)";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"401: getInterfaceNames";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"385: getFields";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"425: getMethods";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"332: getAttributes";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"448: getMinor";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"417: getMajor";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"375: getConstantPool";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"456: getSourceFileName";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"468: getSuperclassName";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"351: getClassName";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"476: getSuperclassNameIndex";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"367: getClassNameIndex";
+
+"131: public void <init>(org.apache.bcel.classfile.JavaClass)"->"48: getAccessFlags";
+
+"62: <clinit>"->"62: <clinit>" [style=dotted];
+
+"62: <clinit>"->"62: void <init>()" [style=dotted];
+
+"78: <clinit>"->"78: <clinit>";
+
+"78: <clinit>"->"78: void <init>()" [style=dotted];
+
+"64: lookupClass"->"36: <clinit>";
+
+"64: lookupClass"->"32: loadClass" [style=dotted];
+
+"36: <clinit>"->"36: <clinit>";
+
+"43: getInstance"->"432: <clinit>";
+
+"43: getInstance"->"36: <clinit>";
+
+"43: getInstance"->"47: getInstance";
+
+"46: <clinit>"->"46: <clinit>";
+
+"46: <clinit>"->"169: void <init>()" [style=dotted];
+
+"46: <clinit>"->"63: void <init>(byte, java.lang.String)" [style=dotted];
+
+"46: <clinit>"->"61: void <init>()" [style=dotted];
+
+"46: <clinit>"->"42: public void <init>(java.lang.String)";
+
+"46: <clinit>"->"34: void <init>(byte)";
+
+"58: public void <init>(org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"433: addUtf8" [style=dotted];
+
+"58: public void <init>(org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"119: getElementValuePairs" [style=dotted];
+
+"58: public void <init>(org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"78: isRuntimeVisible" [style=dotted];
+
+"58: public void <init>(org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"104: getAnnotationTypeIndex" [style=dotted];
+
+"58: public void <init>(org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"96: getAnnotationType" [style=dotted];
+
+"58: public void <init>(org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"71: copyValues" [style=dotted];
+
+"129: getExceptionNames"->"290: getConstantString" [style=dotted];
+
+"129: getExceptionNames"->"318: getConstantPool" [style=dotted];
+
+"119: copy"->"285: clone" [style=dotted];
+
+"54: copy"->"285: clone" [style=dotted];
+
+"55: copy"->"285: clone" [style=dotted];
+
+"136: copy"->"361: setConstantPool" [style=dotted];
+
+"136: copy"->"285: clone" [style=dotted];
+
+"154: copy"->"285: clone" [style=dotted];
+
+"154: copy"->"361: setConstantPool" [style=dotted];
+
+"146: copy"->"361: setConstantPool" [style=dotted];
+
+"146: copy"->"285: clone" [style=dotted];
+
+"182: copy"->"285: clone" [style=dotted];
+
+"182: copy"->"361: setConstantPool" [style=dotted];
+
+"182: copy"->"296: copy" [style=dotted];
+
+"201: copy"->"285: clone" [style=dotted];
+
+"201: copy"->"361: setConstantPool" [style=dotted];
+
+"201: copy"->"140: copy" [style=dotted];
+
+"133: copy"->"285: clone" [style=dotted];
+
+"133: copy"->"361: setConstantPool" [style=dotted];
+
+"133: copy"->"390: copy" [style=dotted];
+
+"337: copy"->"171: copy" [style=dotted];
+
+"337: copy"->"166: copy" [style=dotted];
+
+"337: copy"->"132: copy" [style=dotted];
+
+"337: copy"->"84: copy" [style=dotted];
+
+"337: copy"->"54: copy" [style=dotted];
+
+"337: copy"->"135: copy" [style=dotted];
+
+"337: copy"->"154: copy" [style=dotted];
+
+"337: copy"->"266: copy" [style=dotted];
+
+"337: copy"->"55: copy" [style=dotted];
+
+"337: copy"->"182: copy" [style=dotted];
+
+"337: copy"->"61: copy" [style=dotted];
+
+"337: copy"->"146: copy" [style=dotted];
+
+"337: copy"->"64: copy" [style=dotted];
+
+"337: copy"->"337: copy" [style=dotted];
+
+"337: copy"->"136: copy" [style=dotted];
+
+"337: copy"->"32: copy" [style=dotted];
+
+"337: copy"->"201: copy" [style=dotted];
+
+"337: copy"->"133: copy" [style=dotted];
+
+"337: copy"->"147: copy" [style=dotted];
+
+"337: copy"->"133: copy" [style=dotted];
+
+"337: copy"->"165: copy" [style=dotted];
+
+"337: copy"->"231: copy" [style=dotted];
+
+"337: copy"->"146: copy" [style=dotted];
+
+"337: copy"->"119: copy" [style=dotted];
+
+"337: copy"->"169: copy" [style=dotted];
+
+"337: copy"->"179: copy" [style=dotted];
+
+"337: copy"->"210: copy" [style=dotted];
+
+"337: copy"->"361: setConstantPool" [style=dotted];
+
+"337: copy"->"285: clone" [style=dotted];
+
+"337: copy"->"50: <clinit>" [style=dotted];
+
+"132: copy"->"285: clone" [style=dotted];
+
+"132: copy"->"361: setConstantPool" [style=dotted];
+
+"147: copy"->"285: clone" [style=dotted];
+
+"147: copy"->"361: setConstantPool" [style=dotted];
+
+"147: copy"->"209: copy" [style=dotted];
+
+"64: copy"->"285: clone" [style=dotted];
+
+"84: copy"->"285: clone" [style=dotted];
+
+"133: copy"->"285: clone" [style=dotted];
+
+"133: copy"->"361: setConstantPool" [style=dotted];
+
+"231: copy"->"285: clone" [style=dotted];
+
+"231: copy"->"361: setConstantPool" [style=dotted];
+
+"231: copy"->"114: copy" [style=dotted];
+
+"231: copy"->"118: copy" [style=dotted];
+
+"231: copy"->"118: copy" [style=dotted];
+
+"231: copy"->"107: copy" [style=dotted];
+
+"166: copy"->"361: setConstantPool" [style=dotted];
+
+"166: copy"->"285: clone" [style=dotted];
+
+"266: copy"->"285: clone" [style=dotted];
+
+"169: copy"->"285: clone" [style=dotted];
+
+"61: copy"->"285: clone" [style=dotted];
+
+"61: copy"->"361: setConstantPool" [style=dotted];
+
+"61: copy"->"113: copy" [style=dotted];
+
+"135: copy"->"285: clone" [style=dotted];
+
+"135: copy"->"361: setConstantPool" [style=dotted];
+
+"135: copy"->"296: copy" [style=dotted];
+
+"32: copy"->"102: copy" [style=dotted];
+
+"171: copy"->"361: setConstantPool" [style=dotted];
+
+"171: copy"->"285: clone" [style=dotted];
+
+"179: copy"->"361: setConstantPool" [style=dotted];
+
+"179: copy"->"285: clone" [style=dotted];
+
+"165: copy"->"361: setConstantPool" [style=dotted];
+
+"165: copy"->"285: clone" [style=dotted];
+
+"146: copy"->"285: clone" [style=dotted];
+
+"745: getConstantPool"->"43: public void <init>(org.apache.bcel.classfile.Constant[])" [style=dotted];
+
+"136: findHandle"->"70: getNext" [style=dotted];
+
+"290: getConstantString"->"255: getConstant";
+
+"290: getConstantString"->"247: getBytes";
+
+"290: getConstantString"->"98: getNameIndex" [style=dotted];
+
+"290: getConstantString"->"98: getNameIndex" [style=dotted];
+
+"290: getConstantString"->"94: getStringIndex" [style=dotted];
+
+"290: getConstantString"->"95: getNameIndex";
+
+"744: updateLocalVariableTable"->"46: <clinit>" [style=dotted];
+
+"744: updateLocalVariableTable"->"1123: getStart" [style=dotted];
+
+"744: updateLocalVariableTable"->"136: findHandle" [style=dotted];
+
+"744: updateLocalVariableTable"->"210: getOrigIndex" [style=dotted];
+
+"744: updateLocalVariableTable"->"202: getIndex" [style=dotted];
+
+"744: updateLocalVariableTable"->"185: getSignature" [style=dotted];
+
+"744: updateLocalVariableTable"->"167: getName" [style=dotted];
+
+"744: updateLocalVariableTable"->"158: getLength" [style=dotted];
+
+"744: updateLocalVariableTable"->"218: getStartPC" [style=dotted];
+
+"744: updateLocalVariableTable"->"264: addLocalVariable" [style=dotted];
+
+"744: updateLocalVariableTable"->"333: removeLocalVariables" [style=dotted];
+
+"744: updateLocalVariableTable"->"111: getLocalVariableTable" [style=dotted];
+
+"744: updateLocalVariableTable"->"195: getType" [style=dotted];
+
+"394: addLineNumber"->"40: public void <init>(org.apache.bcel.generic.InstructionHandle, int)" [style=dotted];
+
+"453: addExceptionHandler"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"453: addExceptionHandler"->"52: public void <init>(org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.ObjectType)" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"46: <clinit>" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"1123: getStart" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"315: addLocalVariable" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"875: setArgumentNames" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"119: isStatic" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"159: isNative" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"175: isAbstract" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"103: setConstantPool" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"900: setInstructionList" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"840: setClassName" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"93: setName" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"855: setArgumentTypes" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"70: setType" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"65: protected void <init>(int)" [style=dotted];
+
+"121: public void <init>(int, org.apache.bcel.generic.Type, org.apache.bcel.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, org.apache.bcel.generic.InstructionList, org.apache.bcel.generic.ConstantPoolGen)"->"35: getInstance" [style=dotted];
+
+"153: public void <init>(byte[])"->"44: <clinit>" [style=dotted];
+
+"153: public void <init>(byte[])"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"153: public void <init>(byte[])"->"187: setTarget" [style=dotted];
+
+"153: public void <init>(byte[])"->"266: getIndices" [style=dotted];
+
+"153: public void <init>(byte[])"->"261: getPosition" [style=dotted];
+
+"153: public void <init>(byte[])"->"203: setTarget" [style=dotted];
+
+"153: public void <init>(byte[])"->"186: getIndex" [style=dotted];
+
+"153: public void <init>(byte[])"->"80: getInstruction" [style=dotted];
+
+"153: public void <init>(byte[])"->"38: public void <init>(java.lang.String, java.lang.Throwable)" [style=dotted];
+
+"153: public void <init>(byte[])"->"160: setPosition" [style=dotted];
+
+"153: public void <init>(byte[])"->"61: setPosition" [style=dotted];
+
+"153: public void <init>(byte[])"->"40: getIndex" [style=dotted];
+
+"153: public void <init>(byte[])"->"34: public void <init>(byte[])" [style=dotted];
+
+"153: public void <init>(byte[])"->"317: append" [style=dotted];
+
+"153: public void <init>(byte[])"->"330: append" [style=dotted];
+
+"153: public void <init>(byte[])"->"158: readInstruction" [style=dotted];
+
+"153: public void <init>(byte[])"->"108: findHandle" [style=dotted];
+
+"115: getCode"->"153: getAttributes";
+
+"219: getName"->"255: getConstant";
+
+"219: getName"->"247: getBytes";
+
+"229: getSignature"->"255: getConstant";
+
+"229: getSignature"->"247: getBytes";
+
+"230: getReturnType"->"46: <clinit>";
+
+"230: getReturnType"->"42: public void <init>(java.lang.String, java.lang.Throwable)" [style=dotted];
+
+"230: getReturnType"->"195: getType";
+
+"244: getArgumentTypes"->"46: <clinit>";
+
+"244: getArgumentTypes"->"42: public void <init>(java.lang.String, java.lang.Throwable)" [style=dotted];
+
+"244: getArgumentTypes"->"35: public void <init>(java.lang.String)" [style=dotted];
+
+"244: getArgumentTypes"->"195: getType";
+
+"244: getArgumentTypes"->"179: unwrap" [style=dotted];
+
+"35: getInstance"->"42: public void <init>(java.lang.String)" [style=dotted];
+
+"51: <clinit>"->"51: <clinit>";
+
+"210: public void <init>(org.apache.bcel.classfile.ConstantPool)"->"271: getConstantPool";
+
+"210: public void <init>(org.apache.bcel.classfile.ConstantPool)"->"94: public void <init>(org.apache.bcel.classfile.Constant[])";
+
+"170: unpackAnnotations"->"58: public void <init>(org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.generic.ConstantPoolGen, boolean)" [style=dotted];
+
+"170: unpackAnnotations"->"86: getAnnotationEntries" [style=dotted];
+
+"170: unpackAnnotations"->"490: getConstantPool";
+
+"32: loadClass"->"65: loadClass" [style=dotted];
+
+"432: <clinit>"->"432: <clinit>";
+
+"432: <clinit>"->"553: public void <init>(java.lang.String)";
+
+"432: <clinit>"->"467: getClassPath";
+
+"47: getInstance"->"36: <clinit>";
+
+"47: getInstance"->"39: private void <init>(org.apache.bcel.util.ClassPath)";
+
+"63: void <init>(byte, java.lang.String)"->"67: protected void <init>(byte, java.lang.String)" [style=dotted];
+
+"61: void <init>()"->"37: void <init>()" [style=dotted];
+
+"42: public void <init>(java.lang.String)"->"30: protected void <init>(byte, java.lang.String)";
+
+"34: void <init>(byte)"->"355: <clinit>";
+
+"34: void <init>(byte)"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"34: void <init>(byte)"->"67: protected void <init>(byte, java.lang.String)";
+
+"34: void <init>(byte)"->"1941: getShortTypeName";
+
+"433: addUtf8"->"85: <clinit>" [style=dotted];
+
+"433: addUtf8"->"83: void <init>(int)" [style=dotted];
+
+"433: addUtf8"->"212: public void <init>(java.lang.String)" [style=dotted];
+
+"433: addUtf8"->"226: adjustSize" [style=dotted];
+
+"433: addUtf8"->"420: lookupUtf8" [style=dotted];
+
+"433: addUtf8"->"34: <clinit>" [style=dotted];
+
+"96: getAnnotationType"->"255: getConstant" [style=dotted];
+
+"96: getAnnotationType"->"247: getBytes" [style=dotted];
+
+"71: copyValues"->"39: public void <init>(org.apache.bcel.classfile.ElementValuePair, org.apache.bcel.generic.ConstantPoolGen, boolean)" [style=dotted];
+
+"390: copy"->"143: copy" [style=dotted];
+
+"50: <clinit>"->"50: <clinit>";
+
+"102: copy"->"285: clone" [style=dotted];
+
+"102: copy"->"361: setConstantPool" [style=dotted];
+
+"102: copy"->"162: copy" [style=dotted];
+
+"255: getConstant"->"355: <clinit>";
+
+"255: getConstant"->"35: public void <init>(java.lang.String)" [style=dotted];
+
+"255: getConstant"->"86: getTag";
+
+"255: getConstant"->"236: getConstant";
+
+"255: getConstant"->"517: getConstantName" [style=dotted];
+
+"185: getSignature"->"255: getConstant" [style=dotted];
+
+"185: getSignature"->"247: getBytes" [style=dotted];
+
+"167: getName"->"255: getConstant" [style=dotted];
+
+"167: getName"->"247: getBytes" [style=dotted];
+
+"264: addLocalVariable"->"107: getType" [style=dotted];
+
+"264: addLocalVariable"->"80: public void <init>(int, java.lang.String, org.apache.bcel.generic.Type, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, int)" [style=dotted];
+
+"264: addLocalVariable"->"127: getSize" [style=dotted];
+
+"333: removeLocalVariables"->"212: dispose" [style=dotted];
+
+"333: removeLocalVariables"->"990: next" [style=dotted];
+
+"333: removeLocalVariables"->"1011: hasNext" [style=dotted];
+
+"195: getType"->"59: <clinit>";
+
+"195: getType"->"57: public void <init>(org.apache.bcel.generic.Type, int)" [style=dotted];
+
+"195: getType"->"46: <clinit>";
+
+"195: getType"->"1246: typeOfSignature";
+
+"195: getType"->"184: wrap";
+
+"195: getType"->"43: getType";
+
+"195: getType"->"195: getType";
+
+"195: getType"->"179: unwrap" [style=dotted];
+
+"195: getType"->"959: typeSignatureToString" [style=dotted];
+
+"195: getType"->"35: getInstance" [style=dotted];
+
+"40: public void <init>(org.apache.bcel.generic.InstructionHandle, int)"->"102: setSourceLine" [style=dotted];
+
+"40: public void <init>(org.apache.bcel.generic.InstructionHandle, int)"->"80: setInstruction" [style=dotted];
+
+"52: public void <init>(org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.ObjectType)"->"98: setHandlerPC" [style=dotted];
+
+"52: public void <init>(org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.ObjectType)"->"89: setEndPC" [style=dotted];
+
+"52: public void <init>(org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.ObjectType)"->"80: setStartPC" [style=dotted];
+
+"315: addLocalVariable"->"298: addLocalVariable" [style=dotted];
+
+"70: setType"->"107: getType" [style=dotted];
+
+"65: protected void <init>(int)"->"40: public void <init>(int)" [style=dotted];
+
+"44: <clinit>"->"35: <clinit>" [style=dotted];
+
+"44: <clinit>"->"44: <clinit>" [style=dotted];
+
+"187: setTarget"->"213: notifyTarget" [style=dotted];
+
+"203: setTarget"->"213: notifyTarget" [style=dotted];
+
+"61: setPosition"->"270: setPosition" [style=dotted];
+
+"61: setPosition"->"160: setPosition" [style=dotted];
+
+"40: getIndex"->"56: getPosition" [style=dotted];
+
+"34: public void <init>(byte[])"->"51: void <init>(byte[])" [style=dotted];
+
+"317: append"->"127: getInstructionHandle" [style=dotted];
+
+"317: append"->"297: append" [style=dotted];
+
+"330: append"->"44: getBranchHandle" [style=dotted];
+
+"330: append"->"297: append" [style=dotted];
+
+"158: readInstruction"->"45: <clinit>" [style=dotted];
+
+"158: readInstruction"->"95: initFromFile" [style=dotted];
+
+"158: readInstruction"->"49: initFromFile" [style=dotted];
+
+"158: readInstruction"->"97: initFromFile" [style=dotted];
+
+"158: readInstruction"->"85: initFromFile" [style=dotted];
+
+"158: readInstruction"->"77: initFromFile" [style=dotted];
+
+"158: readInstruction"->"75: initFromFile" [style=dotted];
+
+"158: readInstruction"->"69: initFromFile" [style=dotted];
+
+"158: readInstruction"->"61: initFromFile" [style=dotted];
+
+"158: readInstruction"->"83: initFromFile" [style=dotted];
+
+"158: readInstruction"->"72: initFromFile" [style=dotted];
+
+"158: readInstruction"->"72: initFromFile" [style=dotted];
+
+"158: readInstruction"->"61: initFromFile" [style=dotted];
+
+"158: readInstruction"->"73: initFromFile" [style=dotted];
+
+"158: readInstruction"->"89: initFromFile" [style=dotted];
+
+"158: readInstruction"->"177: initFromFile" [style=dotted];
+
+"158: readInstruction"->"110: initFromFile" [style=dotted];
+
+"158: readInstruction"->"128: initFromFile" [style=dotted];
+
+"158: readInstruction"->"143: initFromFile" [style=dotted];
+
+"158: readInstruction"->"520: setOpcode" [style=dotted];
+
+"158: readInstruction"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"158: readInstruction"->"26: public void <init>()" [style=dotted];
+
+"158: readInstruction"->"26: public void <init>()" [style=dotted];
+
+"158: readInstruction"->"26: public void <init>()" [style=dotted];
+
+"158: readInstruction"->"34: void <init>()" [style=dotted];
+
+"158: readInstruction"->"34: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"41: void <init>()" [style=dotted];
+
+"158: readInstruction"->"33: void <init>()" [style=dotted];
+
+"158: readInstruction"->"33: void <init>()" [style=dotted];
+
+"158: readInstruction"->"33: void <init>()" [style=dotted];
+
+"158: readInstruction"->"41: void <init>()" [style=dotted];
+
+"158: readInstruction"->"33: void <init>()" [style=dotted];
+
+"158: readInstruction"->"45: void <init>()" [style=dotted];
+
+"158: readInstruction"->"44: void <init>()" [style=dotted];
+
+"158: readInstruction"->"40: void <init>()" [style=dotted];
+
+"158: readInstruction"->"41: void <init>()" [style=dotted];
+
+"158: readInstruction"->"40: void <init>()" [style=dotted];
+
+"158: readInstruction"->"35: void <init>()" [style=dotted];
+
+"158: readInstruction"->"36: void <init>()" [style=dotted];
+
+"158: readInstruction"->"35: void <init>()" [style=dotted];
+
+"158: readInstruction"->"35: void <init>()" [style=dotted];
+
+"158: readInstruction"->"35: void <init>()" [style=dotted];
+
+"158: readInstruction"->"35: void <init>()" [style=dotted];
+
+"158: readInstruction"->"40: void <init>()" [style=dotted];
+
+"158: readInstruction"->"32: void <init>()" [style=dotted];
+
+"158: readInstruction"->"32: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"38: void <init>()" [style=dotted];
+
+"158: readInstruction"->"39: public void <init>(int)" [style=dotted];
+
+"158: readInstruction"->"39: public void <init>(int)" [style=dotted];
+
+"158: readInstruction"->"39: public void <init>(int)" [style=dotted];
+
+"158: readInstruction"->"36: public void <init>(int)" [style=dotted];
+
+"158: readInstruction"->"39: public void <init>(int)" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"39: public void <init>(int)" [style=dotted];
+
+"158: readInstruction"->"39: public void <init>(int)" [style=dotted];
+
+"158: readInstruction"->"39: public void <init>(int)" [style=dotted];
+
+"158: readInstruction"->"36: public void <init>(int)" [style=dotted];
+
+"158: readInstruction"->"39: public void <init>(int)" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"31: void <init>()" [style=dotted];
+
+"158: readInstruction"->"35: void <init>()" [style=dotted];
+
+"158: readInstruction"->"37: void <init>()" [style=dotted];
+
+"158: readInstruction"->"39: void <init>()" [style=dotted];
+
+"158: readInstruction"->"39: void <init>()" [style=dotted];
+
+"158: readInstruction"->"293: getInstruction" [style=dotted];
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"83: void <init>(int)";
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"114: getSignatureIndex" [style=dotted];
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"99: getNameIndex" [style=dotted];
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"95: getNameIndex";
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"119: getNameAndTypeIndex" [style=dotted];
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"103: getClassIndex" [style=dotted];
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"79: getBootstrapMethodAttrIndex" [style=dotted];
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"247: getBytes";
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"94: getStringIndex" [style=dotted];
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"34: <clinit>";
+
+"94: public void <init>(org.apache.bcel.classfile.Constant[])"->"51: <clinit>";
+
+"65: loadClass"->"687: getInputStream";
+
+"65: loadClass"->"113: loadClass";
+
+"65: loadClass"->"63: findClass";
+
+"553: public void <init>(java.lang.String)"->"256: void <init>(java.util.zip.ZipFile)";
+
+"553: public void <init>(java.lang.String)"->"354: public void <init>(java.lang.String) throws java.io.IOException" [style=dotted];
+
+"553: public void <init>(java.lang.String)"->"422: void <init>(java.util.zip.ZipFile)" [style=dotted];
+
+"553: public void <init>(java.lang.String)"->"175: void <init>(java.lang.String)" [style=dotted];
+
+"553: public void <init>(java.lang.String)"->"44: <clinit>";
+
+"467: getClassPath"->"990: next" [style=dotted];
+
+"467: getClassPath"->"1011: hasNext" [style=dotted];
+
+"467: getClassPath"->"432: <clinit>";
+
+"467: getClassPath"->"445: addJdkModules";
+
+"467: getClassPath"->"510: getPathComponents";
+
+"39: private void <init>(org.apache.bcel.util.ClassPath)"->"37: public void <init>(org.apache.bcel.util.ClassPath)";
+
+"37: void <init>()"->"67: protected void <init>(byte, java.lang.String)";
+
+"30: protected void <init>(byte, java.lang.String)"->"67: protected void <init>(byte, java.lang.String)";
+
+"355: <clinit>"->"355: <clinit>";
+
+"1941: getShortTypeName"->"355: <clinit>";
+
+"85: <clinit>"->"85: <clinit>";
+
+"85: <clinit>"->"96: void <init>()" [style=dotted];
+
+"85: <clinit>"->"34: <clinit>";
+
+"85: <clinit>"->"60: <clinit>";
+
+"85: <clinit>"->"58: access$100" [style=dotted];
+
+"212: public void <init>(java.lang.String)"->"85: <clinit>";
+
+"212: public void <init>(java.lang.String)"->"65: void <init>(byte)";
+
+"212: public void <init>(java.lang.String)"->"34: <clinit>";
+
+"226: adjustSize"->"34: <clinit>" [style=dotted];
+
+"34: <clinit>"->"34: <clinit>";
+
+"34: <clinit>"->"34: void <init>()" [style=dotted];
+
+"39: public void <init>(org.apache.bcel.classfile.ElementValuePair, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"164: copy" [style=dotted];
+
+"39: public void <init>(org.apache.bcel.classfile.ElementValuePair, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"433: addUtf8" [style=dotted];
+
+"39: public void <init>(org.apache.bcel.classfile.ElementValuePair, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"54: getValue" [style=dotted];
+
+"39: public void <init>(org.apache.bcel.classfile.ElementValuePair, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"59: getNameIndex" [style=dotted];
+
+"39: public void <init>(org.apache.bcel.classfile.ElementValuePair, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"47: getNameString" [style=dotted];
+
+"236: getConstant"->"35: public void <init>(java.lang.String)" [style=dotted];
+
+"517: getConstantName"->"355: <clinit>" [style=dotted];
+
+"80: public void <init>(int, java.lang.String, org.apache.bcel.generic.Type, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle, int)"->"53: public void <init>(int, java.lang.String, org.apache.bcel.generic.Type, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle)" [style=dotted];
+
+"212: dispose"->"176: setStart" [style=dotted];
+
+"212: dispose"->"182: setEnd" [style=dotted];
+
+"990: next"->"996: next" [style=dotted];
+
+"59: <clinit>"->"59: <clinit>";
+
+"59: <clinit>"->"59: void <init>()";
+
+"57: public void <init>(org.apache.bcel.generic.Type, int)"->"30: protected void <init>(byte, java.lang.String)" [style=dotted];
+
+"57: public void <init>(org.apache.bcel.generic.Type, int)"->"99: getSignature" [style=dotted];
+
+"57: public void <init>(org.apache.bcel.generic.Type, int)"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"57: public void <init>(org.apache.bcel.generic.Type, int)"->"107: getType" [style=dotted];
+
+"57: public void <init>(org.apache.bcel.generic.Type, int)"->"401: setSignature" [style=dotted];
+
+"1246: typeOfSignature"->"59: <clinit>";
+
+"1246: typeOfSignature"->"42: public void <init>(java.lang.String, java.lang.Throwable)" [style=dotted];
+
+"1246: typeOfSignature"->"35: public void <init>(java.lang.String)" [style=dotted];
+
+"1246: typeOfSignature"->"1246: typeOfSignature";
+
+"43: getType"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"959: typeSignatureToString"->"59: <clinit>" [style=dotted];
+
+"959: typeSignatureToString"->"42: public void <init>(java.lang.String, java.lang.Throwable)" [style=dotted];
+
+"959: typeSignatureToString"->"35: public void <init>(java.lang.String)" [style=dotted];
+
+"959: typeSignatureToString"->"51: wrap" [style=dotted];
+
+"959: typeSignatureToString"->"478: compactClassName" [style=dotted];
+
+"959: typeSignatureToString"->"959: typeSignatureToString" [style=dotted];
+
+"959: typeSignatureToString"->"47: unwrap" [style=dotted];
+
+"80: setInstruction"->"213: notifyTarget" [style=dotted];
+
+"98: setHandlerPC"->"213: notifyTarget" [style=dotted];
+
+"89: setEndPC"->"213: notifyTarget" [style=dotted];
+
+"80: setStartPC"->"213: notifyTarget" [style=dotted];
+
+"298: addLocalVariable"->"264: addLocalVariable" [style=dotted];
+
+"35: <clinit>"->"35: <clinit>" [style=dotted];
+
+"213: notifyTarget"->"190: removeTargeter" [style=dotted];
+
+"213: notifyTarget"->"200: addTargeter" [style=dotted];
+
+"127: getInstructionHandle"->"120: protected void <init>(org.apache.bcel.generic.Instruction)" [style=dotted];
+
+"297: append"->"91: isEmpty" [style=dotted];
+
+"297: append"->"301: setNext" [style=dotted];
+
+"297: append"->"311: setPrev" [style=dotted];
+
+"44: getBranchHandle"->"37: private void <init>(org.apache.bcel.generic.BranchInstruction)" [style=dotted];
+
+"45: <clinit>"->"45: <clinit>" [style=dotted];
+
+"45: <clinit>"->"39: public void <init>(int)" [style=dotted];
+
+"45: <clinit>"->"39: public void <init>(int)" [style=dotted];
+
+"45: <clinit>"->"39: public void <init>(int)" [style=dotted];
+
+"45: <clinit>"->"39: public void <init>(int)" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"32: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"31: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"30: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"28: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"28: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"30: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"31: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"30: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"30: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"31: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"30: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"28: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"30: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"28: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"30: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"28: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"28: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"28: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"30: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"27: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"29: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"30: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"39: public void <init>(double)" [style=dotted];
+
+"45: <clinit>"->"39: public void <init>(float)" [style=dotted];
+
+"45: <clinit>"->"39: public void <init>(long)" [style=dotted];
+
+"45: <clinit>"->"39: public void <init>(int)" [style=dotted];
+
+"45: <clinit>"->"30: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"26: public void <init>()" [style=dotted];
+
+"45: <clinit>"->"44: <clinit>" [style=dotted];
+
+"95: initFromFile"->"529: setLength" [style=dotted];
+
+"95: initFromFile"->"228: setIndexOnly" [style=dotted];
+
+"49: initFromFile"->"529: setLength" [style=dotted];
+
+"49: initFromFile"->"520: setOpcode" [style=dotted];
+
+"49: initFromFile"->"79: setIndex" [style=dotted];
+
+"97: initFromFile"->"529: setLength" [style=dotted];
+
+"85: initFromFile"->"110: initFromFile" [style=dotted];
+
+"85: initFromFile"->"529: setLength" [style=dotted];
+
+"77: initFromFile"->"152: initFromFile" [style=dotted];
+
+"77: initFromFile"->"388: setIndices" [style=dotted];
+
+"77: initFromFile"->"346: setMatch" [style=dotted];
+
+"77: initFromFile"->"373: setTargets" [style=dotted];
+
+"77: initFromFile"->"355: setIndices" [style=dotted];
+
+"77: initFromFile"->"364: setMatches" [style=dotted];
+
+"77: initFromFile"->"529: setLength" [style=dotted];
+
+"77: initFromFile"->"382: getPadding" [style=dotted];
+
+"77: initFromFile"->"317: setFixed_length" [style=dotted];
+
+"77: initFromFile"->"335: setMatch_length" [style=dotted];
+
+"75: initFromFile"->"529: setLength" [style=dotted];
+
+"69: initFromFile"->"152: initFromFile" [style=dotted];
+
+"69: initFromFile"->"388: setIndices" [style=dotted];
+
+"69: initFromFile"->"346: setMatch" [style=dotted];
+
+"69: initFromFile"->"373: setTargets" [style=dotted];
+
+"69: initFromFile"->"355: setIndices" [style=dotted];
+
+"69: initFromFile"->"364: setMatches" [style=dotted];
+
+"69: initFromFile"->"529: setLength" [style=dotted];
+
+"69: initFromFile"->"382: getPadding" [style=dotted];
+
+"69: initFromFile"->"317: setFixed_length" [style=dotted];
+
+"69: initFromFile"->"335: setMatch_length" [style=dotted];
+
+"61: initFromFile"->"529: setLength" [style=dotted];
+
+"61: initFromFile"->"279: setIndex" [style=dotted];
+
+"83: initFromFile"->"529: setLength" [style=dotted];
+
+"72: initFromFile"->"110: initFromFile" [style=dotted];
+
+"72: initFromFile"->"529: setLength" [style=dotted];
+
+"72: initFromFile"->"110: initFromFile" [style=dotted];
+
+"72: initFromFile"->"529: setLength" [style=dotted];
+
+"61: initFromFile"->"529: setLength" [style=dotted];
+
+"61: initFromFile"->"279: setIndex" [style=dotted];
+
+"73: initFromFile"->"529: setLength" [style=dotted];
+
+"89: initFromFile"->"529: setLength" [style=dotted];
+
+"89: initFromFile"->"130: setIndex" [style=dotted];
+
+"177: initFromFile"->"529: setLength" [style=dotted];
+
+"110: initFromFile"->"529: setLength" [style=dotted];
+
+"110: initFromFile"->"79: setIndex" [style=dotted];
+
+"110: initFromFile"->"130: setIndex" [style=dotted];
+
+"128: initFromFile"->"529: setLength" [style=dotted];
+
+"128: initFromFile"->"504: getOpcode" [style=dotted];
+
+"26: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"26: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"26: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"34: void <init>()"->"35: void <init>()" [style=dotted];
+
+"34: void <init>()"->"34: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"41: void <init>()"->"50: void <init>()" [style=dotted];
+
+"33: void <init>()"->"50: void <init>()" [style=dotted];
+
+"33: void <init>()"->"50: void <init>()" [style=dotted];
+
+"33: void <init>()"->"50: void <init>()" [style=dotted];
+
+"41: void <init>()"->"51: void <init>()" [style=dotted];
+
+"33: void <init>()"->"50: void <init>()" [style=dotted];
+
+"45: void <init>()"->"37: void <init>()" [style=dotted];
+
+"44: void <init>()"->"37: void <init>()" [style=dotted];
+
+"40: void <init>()"->"37: void <init>()" [style=dotted];
+
+"41: void <init>()"->"37: void <init>()" [style=dotted];
+
+"40: void <init>()"->"37: void <init>()" [style=dotted];
+
+"35: void <init>()"->"31: void <init>()" [style=dotted];
+
+"36: void <init>()"->"31: void <init>()" [style=dotted];
+
+"35: void <init>()"->"31: void <init>()" [style=dotted];
+
+"35: void <init>()"->"31: void <init>()" [style=dotted];
+
+"35: void <init>()"->"77: void <init>()" [style=dotted];
+
+"35: void <init>()"->"77: void <init>()" [style=dotted];
+
+"40: void <init>()"->"51: void <init>()" [style=dotted];
+
+"32: void <init>()"->"35: void <init>()" [style=dotted];
+
+"32: void <init>()"->"34: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"31: void <init>()"->"29: void <init>()" [style=dotted];
+
+"38: void <init>()"->"63: void <init>()" [style=dotted];
+
+"39: public void <init>(int)"->"42: protected void <init>(short, short, int)" [style=dotted];
+
+"39: public void <init>(int)"->"42: protected void <init>(short, short, int)" [style=dotted];
+
+"39: public void <init>(int)"->"42: protected void <init>(short, short, int)" [style=dotted];
+
+"36: public void <init>(int)"->"42: protected void <init>(short, short, int)" [style=dotted];
+
+"39: public void <init>(int)"->"42: protected void <init>(short, short, int)" [style=dotted];
+
+"31: void <init>()"->"32: void <init>(short, short)" [style=dotted];
+
+"31: void <init>()"->"32: void <init>(short, short)" [style=dotted];
+
+"31: void <init>()"->"32: void <init>(short, short)" [style=dotted];
+
+"31: void <init>()"->"32: void <init>(short, short)" [style=dotted];
+
+"31: void <init>()"->"32: void <init>(short, short)" [style=dotted];
+
+"39: public void <init>(int)"->"42: protected void <init>(short, short, int)" [style=dotted];
+
+"39: public void <init>(int)"->"42: protected void <init>(short, short, int)" [style=dotted];
+
+"39: public void <init>(int)"->"42: protected void <init>(short, short, int)" [style=dotted];
+
+"36: public void <init>(int)"->"42: protected void <init>(short, short, int)" [style=dotted];
+
+"39: public void <init>(int)"->"42: protected void <init>(short, short, int)" [style=dotted];
+
+"31: void <init>()"->"32: void <init>(short, short)" [style=dotted];
+
+"31: void <init>()"->"32: void <init>(short, short)" [style=dotted];
+
+"31: void <init>()"->"32: void <init>(short, short)" [style=dotted];
+
+"31: void <init>()"->"32: void <init>(short, short)" [style=dotted];
+
+"31: void <init>()"->"32: void <init>(short, short)" [style=dotted];
+
+"31: void <init>()"->"50: void <init>()" [style=dotted];
+
+"35: void <init>()"->"37: void <init>()" [style=dotted];
+
+"37: void <init>()"->"50: void <init>()" [style=dotted];
+
+"39: void <init>()"->"51: void <init>()" [style=dotted];
+
+"39: void <init>()"->"51: void <init>()" [style=dotted];
+
+"293: getInstruction"->"45: <clinit>" [style=dotted];
+
+"79: getBootstrapMethodAttrIndex"->"103: getClassIndex" [style=dotted];
+
+"687: getInputStream"->"432: <clinit>";
+
+"687: getInputStream"->"700: getInputStream";
+
+"687: getInputStream"->"523: packageToFolder";
+
+"113: loadClass"->"68: public void <init>(java.io.InputStream, java.lang.String)";
+
+"113: loadClass"->"46: storeClass";
+
+"113: loadClass"->"117: parse";
+
+"256: void <init>(java.util.zip.ZipFile)"->"61: void <init>(java.util.zip.ZipFile)";
+
+"354: public void <init>(java.lang.String) throws java.io.IOException"->"44: <clinit>" [style=dotted];
+
+"354: public void <init>(java.lang.String) throws java.io.IOException"->"270: public void <init>(java.nio.file.Path)" [style=dotted];
+
+"354: public void <init>(java.lang.String) throws java.io.IOException"->"122: list" [style=dotted];
+
+"354: public void <init>(java.lang.String) throws java.io.IOException"->"57: public void <init>() throws java.io.IOException" [style=dotted];
+
+"354: public void <init>(java.lang.String) throws java.io.IOException"->"48: void <init>(org.apache.bcel.util.ClassPath$1)" [style=dotted];
+
+"422: void <init>(java.util.zip.ZipFile)"->"61: void <init>(java.util.zip.ZipFile)" [style=dotted];
+
+"175: void <init>(java.lang.String)"->"48: void <init>(org.apache.bcel.util.ClassPath$1)" [style=dotted];
+
+"44: <clinit>"->"44: <clinit>";
+
+"445: addJdkModules"->"432: <clinit>";
+
+"37: public void <init>(org.apache.bcel.util.ClassPath)"->"37: void <init>(org.apache.bcel.util.ClassPath)";
+
+"60: <clinit>"->"65: void <init>(int, float, boolean)";
+
+"60: <clinit>"->"60: <clinit>";
+
+"58: access$100"->"60: <clinit>" [style=dotted];
+
+"164: copy"->"54: getElementValueType" [style=dotted];
+
+"164: copy"->"63: public void <init>(org.apache.bcel.classfile.ClassElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)" [style=dotted];
+
+"164: copy"->"79: public void <init>(org.apache.bcel.classfile.ArrayElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)" [style=dotted];
+
+"164: copy"->"53: public void <init>(org.apache.bcel.classfile.AnnotationElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)" [style=dotted];
+
+"164: copy"->"75: public void <init>(org.apache.bcel.classfile.EnumElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)" [style=dotted];
+
+"164: copy"->"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)" [style=dotted];
+
+"47: getNameString"->"255: getConstant" [style=dotted];
+
+"47: getNameString"->"247: getBytes" [style=dotted];
+
+"53: public void <init>(int, java.lang.String, org.apache.bcel.generic.Type, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle)"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"53: public void <init>(int, java.lang.String, org.apache.bcel.generic.Type, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle)"->"182: setEnd" [style=dotted];
+
+"53: public void <init>(int, java.lang.String, org.apache.bcel.generic.Type, org.apache.bcel.generic.InstructionHandle, org.apache.bcel.generic.InstructionHandle)"->"176: setStart" [style=dotted];
+
+"176: setStart"->"213: notifyTarget" [style=dotted];
+
+"182: setEnd"->"213: notifyTarget" [style=dotted];
+
+"996: next"->"70: getNext" [style=dotted];
+
+"478: compactClassName"->"59: <clinit>";
+
+"478: compactClassName"->"494: compactClassName";
+
+"120: protected void <init>(org.apache.bcel.generic.Instruction)"->"89: setInstruction" [style=dotted];
+
+"120: protected void <init>(org.apache.bcel.generic.Instruction)"->"103: setInstruction" [style=dotted];
+
+"37: private void <init>(org.apache.bcel.generic.BranchInstruction)"->"120: protected void <init>(org.apache.bcel.generic.Instruction)" [style=dotted];
+
+"29: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"29: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"32: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"31: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"27: public void <init>()"->"41: protected void <init>(short)" [style=dotted];
+
+"30: public void <init>()"->"41: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"41: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"41: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"41: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"41: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"27: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"27: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"27: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"28: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"28: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"30: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"31: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"30: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"30: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"31: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"30: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"28: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"30: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"28: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"30: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"28: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"37: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"37: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"37: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"37: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"37: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"37: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"37: protected void <init>(short)" [style=dotted];
+
+"28: public void <init>()"->"37: protected void <init>(short)" [style=dotted];
+
+"28: public void <init>()"->"37: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"30: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"27: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"29: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"30: public void <init>()"->"40: protected void <init>(short)" [style=dotted];
+
+"39: public void <init>(double)"->"55: public void <init>(short, short)" [style=dotted];
+
+"39: public void <init>(double)"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"39: public void <init>(double)"->"520: setOpcode" [style=dotted];
+
+"39: public void <init>(float)"->"55: public void <init>(short, short)" [style=dotted];
+
+"39: public void <init>(float)"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"39: public void <init>(float)"->"520: setOpcode" [style=dotted];
+
+"39: public void <init>(long)"->"55: public void <init>(short, short)" [style=dotted];
+
+"39: public void <init>(long)"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"39: public void <init>(long)"->"520: setOpcode" [style=dotted];
+
+"39: public void <init>(int)"->"55: public void <init>(short, short)" [style=dotted];
+
+"39: public void <init>(int)"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"39: public void <init>(int)"->"520: setOpcode" [style=dotted];
+
+"30: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"26: public void <init>()"->"55: public void <init>(short, short)" [style=dotted];
+
+"79: setIndex"->"130: setIndex" [style=dotted];
+
+"79: setIndex"->"49: setSize" [style=dotted];
+
+"152: initFromFile"->"40: getIndex" [style=dotted];
+
+"152: initFromFile"->"279: setIndex" [style=dotted];
+
+"130: setIndex"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"35: void <init>()"->"56: void <init>()" [style=dotted];
+
+"34: void <init>()"->"56: void <init>()" [style=dotted];
+
+"29: void <init>()"->"56: void <init>()" [style=dotted];
+
+"50: void <init>()"->"51: void <init>()" [style=dotted];
+
+"37: void <init>()"->"36: void <init>()" [style=dotted];
+
+"31: void <init>()"->"36: void <init>()" [style=dotted];
+
+"77: void <init>()"->"56: void <init>()" [style=dotted];
+
+"63: void <init>()"->"51: void <init>()" [style=dotted];
+
+"42: protected void <init>(short, short, int)"->"73: protected void <init>(short, short, int)" [style=dotted];
+
+"32: void <init>(short, short)"->"53: void <init>(short, short)" [style=dotted];
+
+"42: protected void <init>(short, short, int)"->"73: protected void <init>(short, short, int)" [style=dotted];
+
+"32: void <init>(short, short)"->"53: void <init>(short, short)" [style=dotted];
+
+"700: getInputStream"->"90: getInputStream" [style=dotted];
+
+"700: getInputStream"->"197: getInputStream" [style=dotted];
+
+"700: getInputStream"->"293: getInputStream" [style=dotted];
+
+"700: getInputStream"->"651: getClassFile" [style=dotted];
+
+"46: storeClass"->"351: getClassName";
+
+"46: storeClass"->"762: setRepository";
+
+"117: parse"->"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)";
+
+"117: parse"->"201: readAttributes";
+
+"117: parse"->"289: readMethods";
+
+"117: parse"->"247: readFields";
+
+"117: parse"->"275: readInterfaces";
+
+"117: parse"->"215: readClassInfo";
+
+"117: parse"->"237: readConstantPool";
+
+"117: parse"->"303: readVersion";
+
+"117: parse"->"263: readID";
+
+"117: parse"->"73: <clinit>";
+
+"61: void <init>(java.util.zip.ZipFile)"->"48: void <init>(org.apache.bcel.util.ClassPath$1)" [style=dotted];
+
+"270: public void <init>(java.nio.file.Path)"->"48: void <init>(org.apache.bcel.util.ClassPath$1)" [style=dotted];
+
+"122: list"->"102: list" [style=dotted];
+
+"57: public void <init>() throws java.io.IOException"->"77: private void <init>(java.net.URLClassLoader, java.nio.file.FileSystem)" [style=dotted];
+
+"48: void <init>(org.apache.bcel.util.ClassPath$1)"->"48: private void <init>()" [style=dotted];
+
+"63: public void <init>(org.apache.bcel.classfile.ClassElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"49: protected void <init>(int, org.apache.bcel.generic.ConstantPoolGen)" [style=dotted];
+
+"63: public void <init>(org.apache.bcel.classfile.ClassElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"433: addUtf8" [style=dotted];
+
+"63: public void <init>(org.apache.bcel.classfile.ClassElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"42: getIndex" [style=dotted];
+
+"63: public void <init>(org.apache.bcel.classfile.ClassElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"47: getClassString" [style=dotted];
+
+"79: public void <init>(org.apache.bcel.classfile.ArrayElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"164: copy" [style=dotted];
+
+"79: public void <init>(org.apache.bcel.classfile.ArrayElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"84: getElementValuesArray" [style=dotted];
+
+"79: public void <init>(org.apache.bcel.classfile.ArrayElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"49: protected void <init>(int, org.apache.bcel.generic.ConstantPoolGen)" [style=dotted];
+
+"53: public void <init>(org.apache.bcel.classfile.AnnotationElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"49: protected void <init>(int, org.apache.bcel.generic.ConstantPoolGen)" [style=dotted];
+
+"53: public void <init>(org.apache.bcel.classfile.AnnotationElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"58: public void <init>(org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.generic.ConstantPoolGen, boolean)" [style=dotted];
+
+"53: public void <init>(org.apache.bcel.classfile.AnnotationElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"62: getAnnotationEntry" [style=dotted];
+
+"75: public void <init>(org.apache.bcel.classfile.EnumElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"49: protected void <init>(int, org.apache.bcel.generic.ConstantPoolGen)" [style=dotted];
+
+"75: public void <init>(org.apache.bcel.classfile.EnumElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"433: addUtf8" [style=dotted];
+
+"75: public void <init>(org.apache.bcel.classfile.EnumElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"78: getValueIndex" [style=dotted];
+
+"75: public void <init>(org.apache.bcel.classfile.EnumElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"83: getTypeIndex" [style=dotted];
+
+"75: public void <init>(org.apache.bcel.classfile.EnumElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"71: getEnumValueString" [style=dotted];
+
+"75: public void <init>(org.apache.bcel.classfile.EnumElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"64: getEnumTypeString" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"54: getElementValueType" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"363: addInteger" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"512: addDouble" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"401: addFloat" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"473: addLong" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"433: addUtf8" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"61: getElementValueType" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"49: protected void <init>(int, org.apache.bcel.generic.ConstantPoolGen)" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"136: getValueShort" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"126: getValueBoolean" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"116: getValueDouble" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"106: getValueFloat" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"96: getValueLong" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"85: getValueChar" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"74: getValueByte" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"63: getValueInt" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"52: getValueString" [style=dotted];
+
+"118: public void <init>(org.apache.bcel.classfile.SimpleElementValue, org.apache.bcel.generic.ConstantPoolGen, boolean)"->"42: getIndex" [style=dotted];
+
+"89: setInstruction"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"89: setInstruction"->"247: dispose" [style=dotted];
+
+"89: setInstruction"->"250: dispose" [style=dotted];
+
+"89: setInstruction"->"536: dispose" [style=dotted];
+
+"103: setInstruction"->"89: setInstruction" [style=dotted];
+
+"103: setInstruction"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"41: protected void <init>(short)"->"55: public void <init>(short, short)" [style=dotted];
+
+"40: protected void <init>(short)"->"55: public void <init>(short, short)" [style=dotted];
+
+"40: protected void <init>(short)"->"55: public void <init>(short, short)" [style=dotted];
+
+"37: protected void <init>(short)"->"55: public void <init>(short, short)" [style=dotted];
+
+"40: protected void <init>(short)"->"55: public void <init>(short, short)" [style=dotted];
+
+"49: setSize"->"120: getIndex" [style=dotted];
+
+"49: setSize"->"529: setLength" [style=dotted];
+
+"49: setSize"->"520: setOpcode" [style=dotted];
+
+"56: void <init>()"->"51: void <init>()" [style=dotted];
+
+"36: void <init>()"->"50: void <init>()" [style=dotted];
+
+"73: protected void <init>(short, short, int)"->"55: public void <init>(short, short)" [style=dotted];
+
+"73: protected void <init>(short, short, int)"->"165: setIndex" [style=dotted];
+
+"73: protected void <init>(short, short, int)"->"122: setIndex" [style=dotted];
+
+"53: void <init>(short, short)"->"51: void <init>()" [style=dotted];
+
+"90: getInputStream"->"57: access$100" [style=dotted];
+
+"651: getClassFile"->"670: getClassFileInternal" [style=dotted];
+
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)"->"36: <clinit>";
+
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)"->"290: getConstantString";
+
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)"->"126: getSourceFileName";
+
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)"->"40: public void <init>(int)";
+
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)"->"50: <clinit>";
+
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)"->"34: <clinit>" [style=dotted];
+
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)"->"35: <clinit>";
+
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)"->"59: <clinit>";
+
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)"->"43: getInstance";
+
+"121: public void <init>(int, int, java.lang.String, int, int, int, org.apache.bcel.classfile.ConstantPool, int[], org.apache.bcel.classfile.Field[], org.apache.bcel.classfile.Method[], org.apache.bcel.classfile.Attribute[], byte)"->"478: compactClassName";
+
+"201: readAttributes"->"50: <clinit>";
+
+"201: readAttributes"->"217: readAttribute";
+
+"289: readMethods"->"35: <clinit>";
+
+"289: readMethods"->"81: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException";
+
+"247: readFields"->"34: <clinit>" [style=dotted];
+
+"247: readFields"->"68: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException";
+
+"215: readClassInfo"->"35: public void <init>(java.lang.String)" [style=dotted];
+
+"237: readConstantPool"->"54: public void <init>(java.io.DataInput) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException";
+
+"263: readID"->"35: public void <init>(java.lang.String)" [style=dotted];
+
+"73: <clinit>"->"75: void <init>()" [style=dotted];
+
+"73: <clinit>"->"73: <clinit>";
+
+"102: list"->"990: next" [style=dotted];
+
+"102: list"->"1011: hasNext" [style=dotted];
+
+"47: getClassString"->"117: getConstantPool" [style=dotted];
+
+"47: getClassString"->"247: getBytes" [style=dotted];
+
+"47: getClassString"->"255: getConstant" [style=dotted];
+
+"71: getEnumValueString"->"117: getConstantPool" [style=dotted];
+
+"71: getEnumValueString"->"247: getBytes" [style=dotted];
+
+"71: getEnumValueString"->"255: getConstant" [style=dotted];
+
+"64: getEnumTypeString"->"117: getConstantPool" [style=dotted];
+
+"64: getEnumTypeString"->"247: getBytes" [style=dotted];
+
+"64: getEnumTypeString"->"255: getConstant" [style=dotted];
+
+"363: addInteger"->"343: lookupInteger" [style=dotted];
+
+"363: addInteger"->"40: public void <init>(int)" [style=dotted];
+
+"363: addInteger"->"226: adjustSize" [style=dotted];
+
+"512: addDouble"->"491: lookupDouble" [style=dotted];
+
+"512: addDouble"->"40: public void <init>(double)" [style=dotted];
+
+"512: addDouble"->"226: adjustSize" [style=dotted];
+
+"401: addFloat"->"380: lookupFloat" [style=dotted];
+
+"401: addFloat"->"40: public void <init>(float)" [style=dotted];
+
+"401: addFloat"->"226: adjustSize" [style=dotted];
+
+"473: addLong"->"453: lookupLong" [style=dotted];
+
+"473: addLong"->"40: public void <init>(long)" [style=dotted];
+
+"473: addLong"->"226: adjustSize" [style=dotted];
+
+"136: getValueShort"->"122: getType" [style=dotted];
+
+"136: getValueShort"->"94: getBytes" [style=dotted];
+
+"136: getValueShort"->"236: getConstant" [style=dotted];
+
+"136: getValueShort"->"42: getIndex" [style=dotted];
+
+"136: getValueShort"->"117: getConstantPool" [style=dotted];
+
+"126: getValueBoolean"->"122: getType" [style=dotted];
+
+"126: getValueBoolean"->"94: getBytes" [style=dotted];
+
+"126: getValueBoolean"->"236: getConstant" [style=dotted];
+
+"126: getValueBoolean"->"42: getIndex" [style=dotted];
+
+"126: getValueBoolean"->"117: getConstantPool" [style=dotted];
+
+"116: getValueDouble"->"122: getType" [style=dotted];
+
+"116: getValueDouble"->"94: getBytes" [style=dotted];
+
+"116: getValueDouble"->"236: getConstant" [style=dotted];
+
+"116: getValueDouble"->"42: getIndex" [style=dotted];
+
+"116: getValueDouble"->"117: getConstantPool" [style=dotted];
+
+"106: getValueFloat"->"122: getType" [style=dotted];
+
+"106: getValueFloat"->"95: getBytes" [style=dotted];
+
+"106: getValueFloat"->"236: getConstant" [style=dotted];
+
+"106: getValueFloat"->"42: getIndex" [style=dotted];
+
+"106: getValueFloat"->"117: getConstantPool" [style=dotted];
+
+"96: getValueLong"->"122: getType" [style=dotted];
+
+"96: getValueLong"->"94: getBytes" [style=dotted];
+
+"96: getValueLong"->"236: getConstant" [style=dotted];
+
+"96: getValueLong"->"42: getIndex" [style=dotted];
+
+"96: getValueLong"->"117: getConstantPool" [style=dotted];
+
+"85: getValueChar"->"122: getType" [style=dotted];
+
+"85: getValueChar"->"94: getBytes" [style=dotted];
+
+"85: getValueChar"->"255: getConstant" [style=dotted];
+
+"85: getValueChar"->"42: getIndex" [style=dotted];
+
+"85: getValueChar"->"117: getConstantPool" [style=dotted];
+
+"74: getValueByte"->"122: getType" [style=dotted];
+
+"74: getValueByte"->"94: getBytes" [style=dotted];
+
+"74: getValueByte"->"255: getConstant" [style=dotted];
+
+"74: getValueByte"->"42: getIndex" [style=dotted];
+
+"74: getValueByte"->"117: getConstantPool" [style=dotted];
+
+"63: getValueInt"->"122: getType" [style=dotted];
+
+"63: getValueInt"->"94: getBytes" [style=dotted];
+
+"63: getValueInt"->"255: getConstant" [style=dotted];
+
+"63: getValueInt"->"42: getIndex" [style=dotted];
+
+"63: getValueInt"->"117: getConstantPool" [style=dotted];
+
+"52: getValueString"->"122: getType" [style=dotted];
+
+"52: getValueString"->"247: getBytes" [style=dotted];
+
+"52: getValueString"->"255: getConstant" [style=dotted];
+
+"52: getValueString"->"42: getIndex" [style=dotted];
+
+"52: getValueString"->"117: getConstantPool" [style=dotted];
+
+"247: dispose"->"250: dispose" [style=dotted];
+
+"247: dispose"->"190: removeTargeter" [style=dotted];
+
+"250: dispose"->"203: setTarget" [style=dotted];
+
+"165: setIndex"->"529: setLength" [style=dotted];
+
+"165: setIndex"->"43: wide" [style=dotted];
+
+"165: setIndex"->"520: setOpcode" [style=dotted];
+
+"165: setIndex"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"122: setIndex"->"76: setWide" [style=dotted];
+
+"122: setIndex"->"228: setIndexOnly" [style=dotted];
+
+"122: setIndex"->"34: public void <init>(java.lang.String)" [style=dotted];
+
+"670: getClassFileInternal"->"379: getClassFile" [style=dotted];
+
+"670: getClassFileInternal"->"75: getClassFile" [style=dotted];
+
+"670: getClassFileInternal"->"282: getClassFile" [style=dotted];
+
+"670: getClassFileInternal"->"187: getClassFile" [style=dotted];
+
+"126: getSourceFileName"->"318: getConstantPool";
+
+"126: getSourceFileName"->"247: getBytes";
+
+"126: getSourceFileName"->"255: getConstant";
+
+"34: <clinit>"->"34: <clinit>" [style=dotted];
+
+"34: <clinit>"->"34: void <init>()" [style=dotted];
+
+"35: <clinit>"->"35: <clinit>";
+
+"35: <clinit>"->"35: void <init>()" [style=dotted];
+
+"217: readAttribute"->"50: <clinit>";
+
+"217: readAttribute"->"106: readAttribute";
+
+"81: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException"->"102: protected void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException";
+
+"68: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException"->"102: protected void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException";
+
+"54: public void <init>(java.io.DataInput) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException"->"34: <clinit>";
+
+"54: public void <init>(java.io.DataInput) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException"->"86: getTag";
+
+"54: public void <init>(java.io.DataInput) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException"->"128: readConstant";
+
+"343: lookupInteger"->"94: getBytes" [style=dotted];
+
+"40: public void <init>(int)"->"65: void <init>(byte)" [style=dotted];
+
+"491: lookupDouble"->"94: getBytes" [style=dotted];
+
+"40: public void <init>(double)"->"65: void <init>(byte)" [style=dotted];
+
+"380: lookupFloat"->"95: getBytes" [style=dotted];
+
+"40: public void <init>(float)"->"65: void <init>(byte)" [style=dotted];
+
+"453: lookupLong"->"94: getBytes" [style=dotted];
+
+"40: public void <init>(long)"->"65: void <init>(byte)";
+
+"76: setWide"->"153: getIndex" [style=dotted];
+
+"76: setWide"->"529: setLength" [style=dotted];
+
+"379: getClassFile"->"282: getClassFile" [style=dotted];
+
+"75: getClassFile"->"261: toEntryName" [style=dotted];
+
+"75: getClassFile"->"81: void <init>(org.apache.bcel.util.ClassPath$AbstractZip, java.util.zip.ZipEntry)" [style=dotted];
+
+"75: getClassFile"->"427: toEntryName" [style=dotted];
+
+"282: getClassFile"->"432: <clinit>" [style=dotted];
+
+"282: getClassFile"->"284: void <init>(org.apache.bcel.util.ClassPath$JrtModule, java.nio.file.Path)" [style=dotted];
+
+"282: getClassFile"->"523: packageToFolder" [style=dotted];
+
+"187: getClassFile"->"188: void <init>(org.apache.bcel.util.ClassPath$Dir, java.io.File)" [style=dotted];
+
+"106: readAttribute"->"355: <clinit>";
+
+"106: readAttribute"->"68: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"68: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"67: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"67: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"54: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"37: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"66: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"65: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"48: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"41: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"40: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"40: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"46: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"45: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"93: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"56: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"57: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"69: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"75: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"69: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"106: readAttribute"->"57: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException";
+
+"106: readAttribute"->"56: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException";
+
+"106: readAttribute"->"247: getBytes";
+
+"106: readAttribute"->"255: getConstant";
+
+"106: readAttribute"->"50: <clinit>";
+
+"106: readAttribute"->"43: <clinit>" [style=dotted];
+
+"106: readAttribute"->"2354: getAttributeName";
+
+"106: readAttribute"->"83: println" [style=dotted];
+
+"102: protected void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException"->"50: <clinit>";
+
+"102: protected void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException"->"122: protected void <init>(int, int, int, org.apache.bcel.classfile.Attribute[], org.apache.bcel.classfile.ConstantPool)";
+
+"102: protected void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException, org.apache.bcel.classfile.ClassFormatException"->"106: readAttribute";
+
+"128: readConstant"->"85: <clinit>";
+
+"128: readConstant"->"35: public void <init>(java.lang.String)" [style=dotted];
+
+"128: readConstant"->"54: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"54: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"50: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"50: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"52: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"53: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"53: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"60: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"60: void <init>(java.io.DataInput) throws java.io.IOException";
+
+"128: readConstant"->"61: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"60: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"51: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"45: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"45: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"45: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"128: readConstant"->"51: void <init>(java.io.DataInput) throws java.io.IOException";
+
+"128: readConstant"->"34: <clinit>";
+
+"128: readConstant"->"159: getInstance";
+
+"261: toEntryName"->"432: <clinit>" [style=dotted];
+
+"261: toEntryName"->"523: packageToFolder" [style=dotted];
+
+"427: toEntryName"->"432: <clinit>" [style=dotted];
+
+"427: toEntryName"->"523: packageToFolder" [style=dotted];
+
+"68: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"54: public void <init>(int, int, int[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"68: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"54: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"67: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"53: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"67: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"53: public void <init>(int, int, int[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"54: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"54: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"45: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"54: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"46: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"54: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"46: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"54: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"45: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"37: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"37: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"50: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"66: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"52: public void <init>(int, int, org.apache.bcel.classfile.BootstrapMethod[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"66: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"58: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"65: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"50: public void <init>(int, int, org.apache.bcel.classfile.StackMapEntry[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"65: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"49: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"48: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"52: private void <init>(int, int, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"65: public void <init>(int, int, org.apache.bcel.classfile.LocalVariable[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"72: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"41: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"77: readElementValue" [style=dotted];
+
+"41: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"52: public void <init>(int, int, org.apache.bcel.classfile.ElementValue, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"40: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"42: void <init>(byte, int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"40: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"42: void <init>(byte, int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"46: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"42: void <init>(byte, int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool, boolean) throws java.io.IOException" [style=dotted];
+
+"45: public void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"42: void <init>(byte, int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool, boolean) throws java.io.IOException" [style=dotted];
+
+"93: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"74: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"56: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"67: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"57: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"70: public void <init>(int, int, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"69: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"83: println" [style=dotted];
+
+"69: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"53: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"75: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"83: println" [style=dotted];
+
+"75: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"59: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"55: public void <init>(int, int, org.apache.bcel.classfile.InnerClass[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"55: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"69: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"54: public void <init>(int, int, org.apache.bcel.classfile.LocalVariable[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"69: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"72: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"56: public void <init>(int, int, org.apache.bcel.classfile.LineNumber[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"55: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"71: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"57: public void <init>(int, int, int[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"50: <clinit>" [style=dotted];
+
+"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"60: void <init>(java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"369: setLength" [style=dotted];
+
+"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"111: public void <init>(int, int, int, int, byte[], org.apache.bcel.classfile.CodeException[], org.apache.bcel.classfile.Attribute[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"70: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"106: readAttribute" [style=dotted];
+
+"57: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"75: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)";
+
+"56: void <init>(int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"68: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)";
+
+"43: <clinit>"->"43: <clinit>" [style=dotted];
+
+"43: <clinit>"->"50: <clinit>" [style=dotted];
+
+"2354: getAttributeName"->"355: <clinit>";
+
+"83: println"->"50: <clinit>" [style=dotted];
+
+"122: protected void <init>(int, int, int, org.apache.bcel.classfile.Attribute[], org.apache.bcel.classfile.ConstantPool)"->"40: public void <init>(int)";
+
+"122: protected void <init>(int, int, int, org.apache.bcel.classfile.Attribute[], org.apache.bcel.classfile.ConstantPool)"->"161: setAttributes";
+
+"54: void <init>(java.io.DataInput) throws java.io.IOException"->"63: public void <init>(int)" [style=dotted];
+
+"54: void <init>(java.io.DataInput) throws java.io.IOException"->"63: public void <init>(int)" [style=dotted];
+
+"50: void <init>(java.io.DataInput) throws java.io.IOException"->"55: public void <init>(int, int)" [style=dotted];
+
+"50: void <init>(java.io.DataInput) throws java.io.IOException"->"55: public void <init>(int, int)" [style=dotted];
+
+"52: void <init>(java.io.DataInput) throws java.io.IOException"->"57: public void <init>(int)" [style=dotted];
+
+"53: void <init>(java.io.DataInput) throws java.io.IOException"->"58: public void <init>(int, int)" [style=dotted];
+
+"53: void <init>(java.io.DataInput) throws java.io.IOException"->"62: public void <init>(int, int)" [style=dotted];
+
+"60: void <init>(java.io.DataInput) throws java.io.IOException"->"40: public void <init>(double)" [style=dotted];
+
+"60: void <init>(java.io.DataInput) throws java.io.IOException"->"40: public void <init>(long)";
+
+"61: void <init>(java.io.DataInput) throws java.io.IOException"->"40: public void <init>(float)" [style=dotted];
+
+"60: void <init>(java.io.DataInput) throws java.io.IOException"->"40: public void <init>(int)" [style=dotted];
+
+"51: void <init>(java.io.DataInput) throws java.io.IOException"->"59: public void <init>(int)" [style=dotted];
+
+"45: void <init>(java.io.DataInput) throws java.io.IOException"->"70: void <init>(byte, java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"45: void <init>(java.io.DataInput) throws java.io.IOException"->"70: void <init>(byte, java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"45: void <init>(java.io.DataInput) throws java.io.IOException"->"70: void <init>(byte, java.io.DataInput) throws java.io.IOException" [style=dotted];
+
+"51: void <init>(java.io.DataInput) throws java.io.IOException"->"60: public void <init>(int)";
+
+"159: getInstance"->"85: <clinit>";
+
+"159: getInstance"->"34: <clinit>";
+
+"159: getInstance"->"173: getInstance";
+
+"54: public void <init>(int, int, int[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"54: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"53: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"53: public void <init>(int, int, int[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"52: public void <init>(int, int, org.apache.bcel.classfile.BootstrapMethod[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"58: void <init>(java.io.DataInput) throws java.io.IOException"->"67: private void <init>(int, int)" [style=dotted];
+
+"50: public void <init>(int, int, org.apache.bcel.classfile.StackMapEntry[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"49: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"35: public void <init>(java.lang.String)" [style=dotted];
+
+"49: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"46: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"49: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"124: public void <init>(int, int, org.apache.bcel.classfile.StackMapType[], org.apache.bcel.classfile.StackMapType[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"52: private void <init>(int, int, int, int, org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"65: public void <init>(int, int, org.apache.bcel.classfile.LocalVariable[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"72: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"86: public void <init>(int, int, int, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"77: readElementValue"->"52: read" [style=dotted];
+
+"77: readElementValue"->"48: public void <init>(int, org.apache.bcel.classfile.ElementValue[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"77: readElementValue"->"33: public void <init>(int, org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"77: readElementValue"->"36: public void <init>(int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"77: readElementValue"->"37: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"77: readElementValue"->"33: public void <init>(int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"77: readElementValue"->"77: readElementValue" [style=dotted];
+
+"52: public void <init>(int, int, org.apache.bcel.classfile.ElementValue, org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"42: void <init>(byte, int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"61: public void <init>(byte, int, int, org.apache.bcel.classfile.ParameterAnnotationEntry[], org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"42: void <init>(byte, int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"42: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException" [style=dotted];
+
+"42: void <init>(byte, int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool, boolean) throws java.io.IOException"->"52: read" [style=dotted];
+
+"42: void <init>(byte, int, int, java.io.DataInput, org.apache.bcel.classfile.ConstantPool, boolean) throws java.io.IOException"->"59: public void <init>(byte, int, int, org.apache.bcel.classfile.AnnotationEntry[], org.apache.bcel.classfile.ConstantPool, boolean)" [style=dotted];
+
+"74: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)"->"43: <clinit>" [style=dotted];
+
+"74: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)"->"247: getBytes" [style=dotted];
+
+"74: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)"->"255: getConstant" [style=dotted];
+
+"74: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"74: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)"->"50: <clinit>" [style=dotted];
+
+"67: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"70: public void <init>(int, int, int, int, org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"53: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"59: public void <init>(int, int, byte[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"55: public void <init>(int, int, org.apache.bcel.classfile.InnerClass[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"55: void <init>(java.io.DataInput) throws java.io.IOException"->"67: public void <init>(int, int, int, int)" [style=dotted];
+
+"54: public void <init>(int, int, org.apache.bcel.classfile.LocalVariable[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"56: public void <init>(int, int, org.apache.bcel.classfile.LineNumber[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"55: void <init>(java.io.DataInput) throws java.io.IOException"->"63: public void <init>(int, int)" [style=dotted];
+
+"57: public void <init>(int, int, int[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"60: void <init>(java.io.DataInput) throws java.io.IOException"->"75: public void <init>(int, int, int, int)" [style=dotted];
+
+"111: public void <init>(int, int, int, int, byte[], org.apache.bcel.classfile.CodeException[], org.apache.bcel.classfile.Attribute[], org.apache.bcel.classfile.ConstantPool)"->"50: <clinit>" [style=dotted];
+
+"111: public void <init>(int, int, int, int, byte[], org.apache.bcel.classfile.CodeException[], org.apache.bcel.classfile.Attribute[], org.apache.bcel.classfile.ConstantPool)"->"369: setLength" [style=dotted];
+
+"111: public void <init>(int, int, int, int, byte[], org.apache.bcel.classfile.CodeException[], org.apache.bcel.classfile.Attribute[], org.apache.bcel.classfile.ConstantPool)"->"244: calculateLength" [style=dotted];
+
+"111: public void <init>(int, int, int, int, byte[], org.apache.bcel.classfile.CodeException[], org.apache.bcel.classfile.Attribute[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"75: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)";
+
+"68: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)";
+
+"63: public void <init>(int)"->"65: void <init>(byte)" [style=dotted];
+
+"63: public void <init>(int)"->"65: void <init>(byte)" [style=dotted];
+
+"55: public void <init>(int, int)"->"79: protected void <init>(byte, int, int)" [style=dotted];
+
+"55: public void <init>(int, int)"->"79: protected void <init>(byte, int, int)" [style=dotted];
+
+"57: public void <init>(int)"->"65: void <init>(byte)" [style=dotted];
+
+"58: public void <init>(int, int)"->"65: void <init>(byte)" [style=dotted];
+
+"62: public void <init>(int, int)"->"65: void <init>(byte)" [style=dotted];
+
+"59: public void <init>(int)"->"65: void <init>(byte)" [style=dotted];
+
+"70: void <init>(byte, java.io.DataInput) throws java.io.IOException"->"79: protected void <init>(byte, int, int)" [style=dotted];
+
+"60: public void <init>(int)"->"65: void <init>(byte)";
+
+"173: getInstance"->"60: <clinit>";
+
+"173: getInstance"->"212: public void <init>(java.lang.String)";
+
+"173: getInstance"->"85: <clinit>";
+
+"173: getInstance"->"34: <clinit>";
+
+"173: getInstance"->"79: isEnabled";
+
+"173: getInstance"->"130: getCachedInstance" [style=dotted];
+
+"67: private void <init>(int, int)"->"74: public void <init>(int, int[])" [style=dotted];
+
+"46: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"111: hasIndex" [style=dotted];
+
+"46: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"58: public void <init>(byte, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"52: read"->"77: readElementValue" [style=dotted];
+
+"52: read"->"39: public void <init>(int, org.apache.bcel.classfile.ElementValue, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"52: read"->"63: public void <init>(int, org.apache.bcel.classfile.ConstantPool, boolean)" [style=dotted];
+
+"48: public void <init>(int, org.apache.bcel.classfile.ElementValue[], org.apache.bcel.classfile.ConstantPool)"->"47: protected void <init>(int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"33: public void <init>(int, org.apache.bcel.classfile.AnnotationEntry, org.apache.bcel.classfile.ConstantPool)"->"47: protected void <init>(int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"36: public void <init>(int, int, org.apache.bcel.classfile.ConstantPool)"->"47: protected void <init>(int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"37: public void <init>(int, int, int, org.apache.bcel.classfile.ConstantPool)"->"47: protected void <init>(int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"33: public void <init>(int, int, org.apache.bcel.classfile.ConstantPool)"->"47: protected void <init>(int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"61: public void <init>(byte, int, int, org.apache.bcel.classfile.ParameterAnnotationEntry[], org.apache.bcel.classfile.ConstantPool)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"42: void <init>(java.io.DataInput, org.apache.bcel.classfile.ConstantPool) throws java.io.IOException"->"52: read" [style=dotted];
+
+"59: public void <init>(byte, int, int, org.apache.bcel.classfile.AnnotationEntry[], org.apache.bcel.classfile.ConstantPool, boolean)"->"255: protected void <init>(byte, int, int, org.apache.bcel.classfile.ConstantPool)" [style=dotted];
+
+"244: calculateLength"->"326: getLength" [style=dotted];
+
+"244: calculateLength"->"231: getInternalLength" [style=dotted];
+
+"79: protected void <init>(byte, int, int)"->"65: void <init>(byte)" [style=dotted];
+
+"79: isEnabled"->"60: <clinit>";
+
+"130: getCachedInstance"->"60: <clinit>" [style=dotted];
+
+"130: getCachedInstance"->"212: public void <init>(java.lang.String)" [style=dotted];
+
+"130: getCachedInstance"->"85: <clinit>" [style=dotted];
+
+"130: getCachedInstance"->"34: <clinit>" [style=dotted];
+
+"130: getCachedInstance"->"58: access$300" [style=dotted];
+
+"130: getCachedInstance"->"58: access$200" [style=dotted];
+
+"58: access$300"->"60: <clinit>" [style=dotted];
+
+"58: access$200"->"60: <clinit>" [style=dotted];
+
+}

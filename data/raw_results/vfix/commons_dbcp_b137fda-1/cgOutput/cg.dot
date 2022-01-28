@@ -1,0 +1,54 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"740: toString" [color=red] [style=bold]
+"50: public void <init>()"
+"375: testToStringWithoutConnectionProperties"
+"125: <clinit>" [style=bold]
+"438: setPassword" [style=bold]
+"483: setUser" [style=bold]
+"461: setUrl" [style=bold]
+"509: setDriver" [style=bold]
+"136: public void <init>()" [style=bold]
+"35: <clinit>" [style=bold]
+"724: update" [style=bold]
+"325: assertInitializationAllowed" [style=bold]
+"188: toCharArray" [style=bold]
+"2: main"->"50: public void <init>()" [style=dotted];
+
+"2: main"->"375: testToStringWithoutConnectionProperties" [style=dotted];
+
+"375: testToStringWithoutConnectionProperties"->"125: <clinit>" [style=dotted];
+
+"375: testToStringWithoutConnectionProperties"->"740: toString" [style=dotted];
+
+"375: testToStringWithoutConnectionProperties"->"438: setPassword" [style=dotted];
+
+"375: testToStringWithoutConnectionProperties"->"483: setUser" [style=dotted];
+
+"375: testToStringWithoutConnectionProperties"->"461: setUrl" [style=dotted];
+
+"375: testToStringWithoutConnectionProperties"->"509: setDriver" [style=dotted];
+
+"375: testToStringWithoutConnectionProperties"->"136: public void <init>()" [style=dotted];
+
+"438: setPassword"->"35: <clinit>";
+
+"438: setPassword"->"724: update";
+
+"438: setPassword"->"325: assertInitializationAllowed";
+
+"438: setPassword"->"188: toCharArray";
+
+"483: setUser"->"325: assertInitializationAllowed";
+
+"483: setUser"->"724: update";
+
+"461: setUrl"->"325: assertInitializationAllowed";
+
+"509: setDriver"->"325: assertInitializationAllowed";
+
+"35: <clinit>"->"35: <clinit>";
+
+}

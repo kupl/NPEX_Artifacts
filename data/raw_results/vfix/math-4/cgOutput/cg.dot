@@ -1,0 +1,246 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"9: main" [color=gold] [style=bold]
+"113: getAbscissa" [color=red] [style=bold]
+"6: <clinit>" [style=bold]
+"13: testIntersectionNotIntersecting" [style=bold]
+"40: <clinit>" [style=bold]
+"112: intersection" [style=bold]
+"55: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException" [style=bold]
+"94: public void <init>(double, double, double)" [style=bold]
+"50: <clinit>"
+"253: checkPoint"
+"128: toSubSpace" [style=bold]
+"215: intersection" [style=bold]
+"136: buildIntervalSet" [style=bold]
+"43: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Line, org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet)" [style=bold]
+"53: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException" [style=bold]
+"49: private void <init>(java.lang.String, int)"
+"264: checkPoint"
+"35: <clinit>" [style=bold]
+"64: public void <init>(double)" [style=bold]
+"194: closestPoint" [style=bold]
+"155: contains" [style=bold]
+"46: public void <init>(double, double)" [style=bold]
+"127: getX" [style=bold]
+"73: reset" [style=bold]
+"201: getPlus"
+"209: getMinus"
+"234: getAttribute"
+"193: getCut"
+"311: getCell"
+"285: subtract" [style=bold]
+"452: dotProduct" [style=bold]
+"69: <clinit>" [style=bold]
+"150: public void <init>(double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D, double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)" [style=bold]
+"163: distance" [style=bold]
+"93: buildTree" [style=bold]
+"66: protected void <init>(org.apache.commons.math3.geometry.partitioning.BSPTree)" [style=bold]
+"40: <clinit>"
+"136: public void <init>(double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)" [style=bold]
+"42: public transient void <init>(org.apache.commons.math3.exception.util.Localizable, java.lang.Object[])"
+"248: getNormSq" [style=bold]
+"96: <clinit>" [style=bold]
+"384: sqrt" [style=bold]
+"57: getOffset"
+"71: getHyperplane"
+"3024: abs"
+"975: linearCombination" [style=bold]
+"895: linearCombination" [style=bold]
+"242: getNorm" [style=bold]
+"113: public void <init>(org.apache.commons.math3.geometry.partitioning.SubHyperplane, org.apache.commons.math3.geometry.partitioning.BSPTree, org.apache.commons.math3.geometry.partitioning.BSPTree, java.lang.Object)" [style=bold]
+"92: public void <init>(java.lang.Object)" [style=bold]
+"73: wholeHyperplane" [style=bold]
+"41: public void <init>(org.apache.commons.math3.geometry.euclidean.oned.Vector1D, boolean)" [style=bold]
+"369: private void <init>(java.lang.String, int, java.lang.String)"
+"86: addMessage"
+"63: public void <init>(java.lang.Throwable)"
+"38: public void <init>(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)" [style=bold]
+"41: flatten"
+"48: protected void <init>(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)" [style=bold]
+"9: main"->"6: <clinit>";
+
+"9: main"->"13: testIntersectionNotIntersecting";
+
+"6: <clinit>"->"6: <clinit>";
+
+"13: testIntersectionNotIntersecting"->"40: <clinit>";
+
+"13: testIntersectionNotIntersecting"->"112: intersection";
+
+"13: testIntersectionNotIntersecting"->"55: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException";
+
+"13: testIntersectionNotIntersecting"->"94: public void <init>(double, double, double)";
+
+"13: testIntersectionNotIntersecting"->"6: <clinit>";
+
+"40: <clinit>"->"40: <clinit>";
+
+"40: <clinit>"->"94: public void <init>(double, double, double)";
+
+"112: intersection"->"50: <clinit>" [style=dotted];
+
+"112: intersection"->"253: checkPoint" [style=dotted];
+
+"112: intersection"->"128: toSubSpace";
+
+"112: intersection"->"215: intersection";
+
+"55: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException"->"136: buildIntervalSet";
+
+"55: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException"->"43: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Line, org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet)";
+
+"55: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException"->"53: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException";
+
+"50: <clinit>"->"50: <clinit>" [style=dotted];
+
+"50: <clinit>"->"49: private void <init>(java.lang.String, int)" [style=dotted];
+
+"253: checkPoint"->"264: checkPoint" [style=dotted];
+
+"128: toSubSpace"->"35: <clinit>";
+
+"128: toSubSpace"->"64: public void <init>(double)";
+
+"128: toSubSpace"->"113: getAbscissa";
+
+"215: intersection"->"194: closestPoint";
+
+"215: intersection"->"155: contains";
+
+"136: buildIntervalSet"->"53: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException";
+
+"136: buildIntervalSet"->"46: public void <init>(double, double)";
+
+"136: buildIntervalSet"->"127: getX";
+
+"136: buildIntervalSet"->"128: toSubSpace";
+
+"53: public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException"->"73: reset";
+
+"264: checkPoint"->"50: <clinit>" [style=dotted];
+
+"264: checkPoint"->"264: checkPoint" [style=dotted];
+
+"264: checkPoint"->"201: getPlus" [style=dotted];
+
+"264: checkPoint"->"209: getMinus" [style=dotted];
+
+"264: checkPoint"->"234: getAttribute" [style=dotted];
+
+"264: checkPoint"->"193: getCut" [style=dotted];
+
+"264: checkPoint"->"311: getCell" [style=dotted];
+
+"35: <clinit>"->"35: <clinit>";
+
+"35: <clinit>"->"64: public void <init>(double)";
+
+"113: getAbscissa"->"285: subtract";
+
+"113: getAbscissa"->"452: dotProduct";
+
+"194: closestPoint"->"69: <clinit>";
+
+"194: closestPoint"->"150: public void <init>(double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D, double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)";
+
+"194: closestPoint"->"452: dotProduct";
+
+"194: closestPoint"->"285: subtract";
+
+"194: closestPoint"->"40: <clinit>";
+
+"155: contains"->"163: distance";
+
+"46: public void <init>(double, double)"->"93: buildTree";
+
+"46: public void <init>(double, double)"->"66: protected void <init>(org.apache.commons.math3.geometry.partitioning.BSPTree)";
+
+"73: reset"->"40: <clinit>" [style=dotted];
+
+"73: reset"->"150: public void <init>(double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D, double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)";
+
+"73: reset"->"452: dotProduct";
+
+"73: reset"->"136: public void <init>(double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)";
+
+"73: reset"->"42: public transient void <init>(org.apache.commons.math3.exception.util.Localizable, java.lang.Object[])" [style=dotted];
+
+"73: reset"->"248: getNormSq";
+
+"73: reset"->"285: subtract";
+
+"73: reset"->"40: <clinit>";
+
+"73: reset"->"96: <clinit>";
+
+"73: reset"->"384: sqrt";
+
+"311: getCell"->"96: <clinit>" [style=dotted];
+
+"311: getCell"->"311: getCell" [style=dotted];
+
+"311: getCell"->"57: getOffset" [style=dotted];
+
+"311: getCell"->"71: getHyperplane" [style=dotted];
+
+"311: getCell"->"3024: abs" [style=dotted];
+
+"285: subtract"->"40: <clinit>";
+
+"285: subtract"->"94: public void <init>(double, double, double)";
+
+"452: dotProduct"->"975: linearCombination";
+
+"69: <clinit>"->"69: <clinit>";
+
+"150: public void <init>(double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D, double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)"->"895: linearCombination";
+
+"163: distance"->"40: <clinit>";
+
+"163: distance"->"242: getNorm";
+
+"163: distance"->"150: public void <init>(double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D, double, org.apache.commons.math3.geometry.euclidean.threed.Vector3D)";
+
+"163: distance"->"452: dotProduct";
+
+"163: distance"->"285: subtract";
+
+"93: buildTree"->"113: public void <init>(org.apache.commons.math3.geometry.partitioning.SubHyperplane, org.apache.commons.math3.geometry.partitioning.BSPTree, org.apache.commons.math3.geometry.partitioning.BSPTree, java.lang.Object)";
+
+"93: buildTree"->"92: public void <init>(java.lang.Object)";
+
+"93: buildTree"->"73: wholeHyperplane";
+
+"93: buildTree"->"41: public void <init>(org.apache.commons.math3.geometry.euclidean.oned.Vector1D, boolean)";
+
+"93: buildTree"->"64: public void <init>(double)";
+
+"93: buildTree"->"35: <clinit>";
+
+"40: <clinit>"->"40: <clinit>" [style=dotted];
+
+"40: <clinit>"->"369: private void <init>(java.lang.String, int, java.lang.String)" [style=dotted];
+
+"42: public transient void <init>(org.apache.commons.math3.exception.util.Localizable, java.lang.Object[])"->"86: addMessage" [style=dotted];
+
+"42: public transient void <init>(org.apache.commons.math3.exception.util.Localizable, java.lang.Object[])"->"63: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"96: <clinit>"->"96: <clinit>";
+
+"57: getOffset"->"127: getX" [style=dotted];
+
+"242: getNorm"->"96: <clinit>";
+
+"242: getNorm"->"384: sqrt";
+
+"73: wholeHyperplane"->"38: public void <init>(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)";
+
+"86: addMessage"->"41: flatten" [style=dotted];
+
+"38: public void <init>(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)"->"48: protected void <init>(org.apache.commons.math3.geometry.partitioning.Hyperplane, org.apache.commons.math3.geometry.partitioning.Region)";
+
+"41: flatten"->"41: flatten" [style=dotted];
+
+}

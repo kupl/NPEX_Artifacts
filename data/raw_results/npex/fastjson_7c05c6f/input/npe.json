@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+    "line": 121,
+    "sink_field": "put",
+    "npe_class": "DefaultFieldDeserializer",
+    "npe_method": "parseField",
+    "jvmti_identify_succeed": true,
+    "deref_field": "fieldValues",
+    "nullpointer": "fieldValues"
+}

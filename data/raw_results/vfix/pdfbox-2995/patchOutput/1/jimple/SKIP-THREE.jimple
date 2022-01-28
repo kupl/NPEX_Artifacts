@@ -1,0 +1,32 @@
+    public java.lang.String getDefaultAppearance()
+    {
+        org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm this;
+        org.apache.pdfbox.cos.COSString defaultAppearance;
+        org.apache.pdfbox.cos.COSName $r0;
+        org.apache.pdfbox.cos.COSDictionary $r1;
+        org.apache.pdfbox.cos.COSBase $r2;
+        java.lang.String $r3, ret0;
+
+        this := @this: org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
+
+        $r1 = this.<org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm: org.apache.pdfbox.cos.COSDictionary dictionary>;
+
+        $r0 = <org.apache.pdfbox.cos.COSName: org.apache.pdfbox.cos.COSName DA>;
+
+        $r2 = virtualinvoke $r1.<org.apache.pdfbox.cos.COSDictionary: org.apache.pdfbox.cos.COSBase getItem(org.apache.pdfbox.cos.COSName)>($r0);
+
+        defaultAppearance = (org.apache.pdfbox.cos.COSString) $r2;
+
+        if defaultAppearance != null goto label1;
+
+        ret0 = new java.lang.String;
+
+        specialinvoke ret0.<java.lang.String: void <init>()>();
+
+        return ret0;
+
+     label1:
+        $r3 = virtualinvoke defaultAppearance.<org.apache.pdfbox.cos.COSString: java.lang.String getString()>();
+
+        return $r3;
+    }

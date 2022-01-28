@@ -1,0 +1,17 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"51: getAnnotation" [color=red] [style=bold]
+"32: public void <init>()"
+"65: testNullMethodInvocation"
+"40: public void <init>()" [style=bold]
+"2: main"->"32: public void <init>()" [style=dotted];
+
+"2: main"->"65: testNullMethodInvocation" [style=dotted];
+
+"32: public void <init>()"->"40: public void <init>()" [style=dotted];
+
+"65: testNullMethodInvocation"->"51: getAnnotation" [style=dotted];
+
+}

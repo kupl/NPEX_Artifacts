@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"1191: t#35 = virtualinvoke plotState.<org.jfree.chart.plot.PlotRenderingInfo: org.jfree.chart.ChartRenderingInfo getOwner()>()" [label=1] [style=bold] [color=gold]
+"1192: rotatedLabelBounds#36 = virtualinvoke t#35.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection getEntityCollection()>()" [label=1] [style=bold] [color=red]
+"1191: t#35 = virtualinvoke plotState.<org.jfree.chart.plot.PlotRenderingInfo: org.jfree.chart.ChartRenderingInfo getOwner()>()"->"1192: rotatedLabelBounds#36 = virtualinvoke t#35.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection getEntityCollection()>()";
+
+}

@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+    "line": 450,
+    "sink_field": "getAllObjects",
+    "npe_class": "GenericKeyedObjectPool",
+    "npe_method": "returnObject",
+    "jvmti_identify_succeed": true,
+    "deref_field": "objectDeque",
+    "nullpointer": "objectDeque"
+}

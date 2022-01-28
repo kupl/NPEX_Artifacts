@@ -1,0 +1,10 @@
+{
+    "filepath": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+    "line": 763,
+    "sink_field": "entries",
+    "npe_class": "GeneralLearnerBaseUDTF",
+    "npe_method": "forwardModel",
+    "jvmti_identify_succeed": true,
+    "deref_field": "model",
+    "nullpointer": "model"
+}

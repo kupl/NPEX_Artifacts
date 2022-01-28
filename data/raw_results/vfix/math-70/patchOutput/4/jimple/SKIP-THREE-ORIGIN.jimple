@@ -1,0 +1,87 @@
+    public double solve(org.apache.commons.math.analysis.UnivariateRealFunction, double, double) throws org.apache.commons.math.MaxIterationsExceededException, org.apache.commons.math.FunctionEvaluationException
+    {
+        org.apache.commons.math.analysis.solvers.BisectionSolver this;
+        org.apache.commons.math.analysis.UnivariateRealFunction f;
+        double fm, fmin, $d0, $d1, $d2, $d3, min, max, m;
+        byte $b0, $b1;
+        int $i2, $i3, i, $i4;
+        org.apache.commons.math.MaxIterationsExceededException $r0;
+
+        this := @this: org.apache.commons.math.analysis.solvers.BisectionSolver;
+
+        f := @parameter0: org.apache.commons.math.analysis.UnivariateRealFunction;
+
+        min := @parameter1: double;
+
+        max := @parameter2: double;
+
+        virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: void clearResult()>();
+
+        virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: void verifyInterval(double,double)>(min, max);
+
+        m = 0.0;
+
+        i = 0;
+
+        goto label5;
+
+     label1:
+        m = staticinvoke <org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils: double midpoint(double,double)>(min, max);
+
+        fmin = interfaceinvoke f.<org.apache.commons.math.analysis.UnivariateRealFunction: double value(double)>(min);
+
+        fm = interfaceinvoke f.<org.apache.commons.math.analysis.UnivariateRealFunction: double value(double)>(m);
+
+        $d0 = fm * fmin;
+
+        $b0 = $d0 cmpl 0.0;
+
+        if $b0 <= 0 goto label2;
+
+        min = m;
+
+        goto label3;
+
+     label2:
+        max = m;
+
+     label3:
+        $d1 = max - min;
+
+        $d2 = staticinvoke <java.lang.Math: double abs(double)>($d1);
+
+        $d3 = this.<org.apache.commons.math.analysis.solvers.BisectionSolver: double absoluteAccuracy>;
+
+        $b1 = $d2 cmpg $d3;
+
+        if $b1 > 0 goto label4;
+
+        m = staticinvoke <org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils: double midpoint(double,double)>(min, max);
+
+        virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: void setResult(double,int)>(m, i);
+
+        i = this.<org.apache.commons.math.analysis.solvers.BisectionSolver: int maximalIterationCount>;
+
+     label4:
+        i = i + 1;
+
+     label5:
+        $i4 = this.<org.apache.commons.math.analysis.solvers.BisectionSolver: int maximalIterationCount>;
+
+        if i < $i4 goto label1;
+
+        $i2 = this.<org.apache.commons.math.analysis.solvers.BisectionSolver: int maximalIterationCount>;
+
+        if i != $i2 goto label6;
+
+        $r0 = new org.apache.commons.math.MaxIterationsExceededException;
+
+        $i3 = this.<org.apache.commons.math.analysis.solvers.BisectionSolver: int maximalIterationCount>;
+
+        specialinvoke $r0.<org.apache.commons.math.MaxIterationsExceededException: void <init>(int)>($i3);
+
+        throw $r0;
+
+     label6:
+        return m;
+    }

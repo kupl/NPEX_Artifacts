@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+	"line": 253,
+	"deref_field": "iccData",
+	"sink_field": "createOutputStream",
+	"npe_class": "PDColorSpaceFactory",
+	"npe_method": "createColorSpace",
+	"jvmti_identify_succeed": true
+}

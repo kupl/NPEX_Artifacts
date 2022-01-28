@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "httpcore5/src/test/java/org/apache/hc/core5/net/TestURIBuilder.java",
+        "line": 690,
+        "method_name": "testAppendNullSegmentsList"
+    }
+]

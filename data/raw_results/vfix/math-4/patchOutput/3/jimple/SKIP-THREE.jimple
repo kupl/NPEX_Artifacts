@@ -1,0 +1,27 @@
+    public org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)
+    {
+        org.apache.commons.math3.geometry.euclidean.threed.Line this;
+        org.apache.commons.math3.geometry.Vector point;
+        org.apache.commons.math3.geometry.euclidean.oned.Vector1D $r0;
+        org.apache.commons.math3.geometry.euclidean.threed.Vector3D $r1;
+        double $d0;
+
+        this := @this: org.apache.commons.math3.geometry.euclidean.threed.Line;
+
+        point := @parameter0: org.apache.commons.math3.geometry.Vector;
+
+        $r0 = new org.apache.commons.math3.geometry.euclidean.oned.Vector1D;
+
+        $r1 = (org.apache.commons.math3.geometry.euclidean.threed.Vector3D) point;
+
+        if $r1 != null goto label1;
+
+        return null;
+
+     label1:
+        $d0 = virtualinvoke this.<org.apache.commons.math3.geometry.euclidean.threed.Line: double getAbscissa(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)>($r1);
+
+        specialinvoke $r0.<org.apache.commons.math3.geometry.euclidean.oned.Vector1D: void <init>(double)>($d0);
+
+        return $r0;
+    }

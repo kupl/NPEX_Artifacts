@@ -1,0 +1,5 @@
+{
+    "contents": "if (v1D != null) {\n    // check location of point with respect to first sub-line\n    org.apache.commons.math3.geometry.partitioning.Region.Location loc1 = remainingRegion.checkPoint(line.toSubSpace(v1D));\n}",
+    "original_filepath": "org/apache/commons/math3/geometry/euclidean/threed/SubLine.java",
+    "patched_lines": [132]
+}

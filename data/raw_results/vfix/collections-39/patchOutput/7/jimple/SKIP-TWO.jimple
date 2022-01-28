@@ -1,0 +1,195 @@
+    public synchronized void load(java.io.InputStream, java.lang.String) throws java.io.IOException
+    {
+        org.apache.commons.collections.ExtendedProperties this;
+        java.io.InputStream input;
+        java.lang.String enc, key, $r0, $r1, $r2, $r3, $r4, $r5, $r7, $r9, $r12, $r13, $r15, ex, value;
+        int equalSign, $i0;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        java.lang.StringBuffer $r6, $r8, $r11, $r14;
+        java.io.File $r10, $r17, file;
+        java.io.FileInputStream $r16;
+        org.apache.commons.collections.ExtendedProperties$PropertiesReader $r18, $r20, $r25, reader;
+        java.io.InputStreamReader $r19, $r21, $r26;
+        java.lang.Throwable $r22;
+        java.io.UnsupportedEncodingException $r23, $r24;
+
+        this := @this: org.apache.commons.collections.ExtendedProperties;
+
+        input := @parameter0: java.io.InputStream;
+
+        enc := @parameter1: java.lang.String;
+
+        reader = null;
+
+        if enc == null goto label04;
+
+     label01:
+        $r20 = new org.apache.commons.collections.ExtendedProperties$PropertiesReader;
+
+        $r21 = new java.io.InputStreamReader;
+
+        specialinvoke $r21.<java.io.InputStreamReader: void <init>(java.io.InputStream,java.lang.String)>(input, enc);
+
+        specialinvoke $r20.<org.apache.commons.collections.ExtendedProperties$PropertiesReader: void <init>(java.io.Reader)>($r21);
+
+        reader = $r20;
+
+     label02:
+        goto label04;
+
+     label03:
+        $r23 := @caughtexception;
+
+     label04:
+        if reader != null goto label08;
+
+     label05:
+        $r18 = new org.apache.commons.collections.ExtendedProperties$PropertiesReader;
+
+        $r19 = new java.io.InputStreamReader;
+
+        specialinvoke $r19.<java.io.InputStreamReader: void <init>(java.io.InputStream,java.lang.String)>(input, "8859_1");
+
+        specialinvoke $r18.<org.apache.commons.collections.ExtendedProperties$PropertiesReader: void <init>(java.io.Reader)>($r19);
+
+        reader = $r18;
+
+     label06:
+        goto label08;
+
+     label07:
+        $r24 := @caughtexception;
+
+        $r25 = new org.apache.commons.collections.ExtendedProperties$PropertiesReader;
+
+        $r26 = new java.io.InputStreamReader;
+
+        specialinvoke $r26.<java.io.InputStreamReader: void <init>(java.io.InputStream)>(input);
+
+        specialinvoke $r25.<org.apache.commons.collections.ExtendedProperties$PropertiesReader: void <init>(java.io.Reader)>($r26);
+
+        reader = $r25;
+
+     label08:
+        ex = virtualinvoke reader.<org.apache.commons.collections.ExtendedProperties$PropertiesReader: java.lang.String readProperty()>();
+
+        equalSign = virtualinvoke ex.<java.lang.String: int indexOf(int)>(61);
+
+        if equalSign <= 0 goto label08;
+
+        $r0 = virtualinvoke ex.<java.lang.String: java.lang.String substring(int,int)>(0, equalSign);
+
+        key = virtualinvoke $r0.<java.lang.String: java.lang.String trim()>();
+
+        $i0 = equalSign + 1;
+
+        if ex == null goto label14;
+
+        $r1 = virtualinvoke ex.<java.lang.String: java.lang.String substring(int)>($i0);
+
+        value = virtualinvoke $r1.<java.lang.String: java.lang.String trim()>();
+
+        $r2 = "";
+
+        $z0 = virtualinvoke $r2.<java.lang.String: boolean equals(java.lang.Object)>(value);
+
+        if $z0 == 0 goto label09;
+
+        goto label08;
+
+     label09:
+        $r3 = virtualinvoke this.<org.apache.commons.collections.ExtendedProperties: java.lang.String getInclude()>();
+
+        if $r3 == null goto label13;
+
+        $r4 = virtualinvoke this.<org.apache.commons.collections.ExtendedProperties: java.lang.String getInclude()>();
+
+        $z1 = virtualinvoke key.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>($r4);
+
+        if $z1 == 0 goto label13;
+
+        $r5 = this.<org.apache.commons.collections.ExtendedProperties: java.lang.String fileSeparator>;
+
+        $z2 = virtualinvoke value.<java.lang.String: boolean startsWith(java.lang.String)>($r5);
+
+        if $z2 == 0 goto label10;
+
+        $r17 = new java.io.File;
+
+        specialinvoke $r17.<java.io.File: void <init>(java.lang.String)>(value);
+
+        file = $r17;
+
+        goto label12;
+
+     label10:
+        $r6 = new java.lang.StringBuffer;
+
+        specialinvoke $r6.<java.lang.StringBuffer: void <init>(java.lang.String)>(".");
+
+        $r7 = this.<org.apache.commons.collections.ExtendedProperties: java.lang.String fileSeparator>;
+
+        $r8 = virtualinvoke $r6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r7);
+
+        $r9 = virtualinvoke $r8.<java.lang.StringBuffer: java.lang.String toString()>();
+
+        $z3 = virtualinvoke value.<java.lang.String: boolean startsWith(java.lang.String)>($r9);
+
+        if $z3 == 0 goto label11;
+
+        value = virtualinvoke value.<java.lang.String: java.lang.String substring(int)>(2);
+
+     label11:
+        $r10 = new java.io.File;
+
+        $r11 = new java.lang.StringBuffer;
+
+        $r12 = this.<org.apache.commons.collections.ExtendedProperties: java.lang.String basePath>;
+
+        $r13 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r12);
+
+        specialinvoke $r11.<java.lang.StringBuffer: void <init>(java.lang.String)>($r13);
+
+        $r14 = virtualinvoke $r11.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(value);
+
+        $r15 = virtualinvoke $r14.<java.lang.StringBuffer: java.lang.String toString()>();
+
+        specialinvoke $r10.<java.io.File: void <init>(java.lang.String)>($r15);
+
+        file = $r10;
+
+     label12:
+        if file == null goto label08;
+
+        $z4 = virtualinvoke file.<java.io.File: boolean exists()>();
+
+        if $z4 == 0 goto label08;
+
+        $z5 = virtualinvoke file.<java.io.File: boolean canRead()>();
+
+        if $z5 == 0 goto label08;
+
+        $r16 = new java.io.FileInputStream;
+
+        specialinvoke $r16.<java.io.FileInputStream: void <init>(java.io.File)>(file);
+
+        virtualinvoke this.<org.apache.commons.collections.ExtendedProperties: void load(java.io.InputStream)>($r16);
+
+        goto label08;
+
+     label13:
+        virtualinvoke this.<org.apache.commons.collections.ExtendedProperties: void addProperty(java.lang.String,java.lang.Object)>(key, value);
+
+        goto label08;
+
+     label14:
+        $r22 := @caughtexception;
+
+        this.<org.apache.commons.collections.ExtendedProperties: boolean isInitialized> = 1;
+
+        throw $r22;
+
+        catch java.io.UnsupportedEncodingException from label01 to label02 with label03;
+        catch java.io.UnsupportedEncodingException from label05 to label06 with label07;
+        catch java.lang.Throwable from label08 to label14 with label14;
+    }

@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"62: $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Class getClass()>()" [style=bold] [color=red]
+"62: $r0 = interfaceinvoke mi.<org.apache.shiro.aop.MethodInvocation: java.lang.Object getThis()>()" [style=bold] [color=gold]
+"62: $r0 = interfaceinvoke mi.<org.apache.shiro.aop.MethodInvocation: java.lang.Object getThis()>()"->"62: $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Class getClass()>()";
+
+}

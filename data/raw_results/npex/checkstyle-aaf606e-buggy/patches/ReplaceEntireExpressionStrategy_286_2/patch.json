@@ -1,0 +1,5 @@
+{
+    "contents": "result = literalFor.getLineNo() == (block != null ? block.getLineNo() : 0)",
+    "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+    "patched_lines": [295]
+}

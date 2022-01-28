@@ -1,0 +1,5 @@
+{
+    "contents": "if (connectionProperties != null ? connectionProperties.contains(pwdKey) : true) {\n    tmpProps = ((java.util.Properties) (connectionProperties.clone()));\n    tmpProps.remove(pwdKey);\n}",
+    "original_filepath": "src/main/java/org/apache/commons/dbcp2/cpdsadapter/DriverAdapterCPDS.java",
+    "patched_lines": [774]
+}

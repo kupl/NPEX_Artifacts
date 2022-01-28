@@ -1,0 +1,5 @@
+{
+    "contents": "if (boundingBoxes == null) {\n    boundingBoxes = new java.awt.Rectangle[]{  };\n}",
+    "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+    "patched_lines": [139]
+}

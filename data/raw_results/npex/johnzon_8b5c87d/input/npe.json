@@ -1,0 +1,10 @@
+{
+    "filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+    "line": 43,
+    "sink_field": "name",
+    "npe_class": "EnumConverter",
+    "npe_method": "toString",
+    "jvmti_identify_succeed": true,
+    "deref_field": "instance",
+    "nullpointer": "instance"
+}

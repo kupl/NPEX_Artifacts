@@ -1,0 +1,9 @@
+{
+	"filepath": "Main.java",
+	"line": 22,
+	"deref_field": "r",
+	"sink_field": "getLowerBound",
+	"npe_class": "Main",
+	"npe_method": "testBug2849731_2",
+	"jvmti_identify_succeed": true
+}

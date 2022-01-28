@@ -1,0 +1,46 @@
+    public int getCategoryIndex(java.lang.Comparable)
+    {
+        org.jfree.data.category.DefaultIntervalCategoryDataset this;
+        java.lang.Comparable category, $r2;
+        java.lang.Comparable[] $r0, $r1;
+        int $i0, result, i;
+        boolean $z0;
+
+        this := @this: org.jfree.data.category.DefaultIntervalCategoryDataset;
+
+        category := @parameter0: java.lang.Comparable;
+
+        result = -1;
+
+        i = 0;
+
+        goto label3;
+
+     label1:
+        $r1 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>;
+
+        $r2 = $r1[i];
+
+        $z0 = virtualinvoke category.<java.lang.Object: boolean equals(java.lang.Object)>($r2);
+
+        if $z0 == 0 goto label2;
+
+        result = i;
+
+        goto label4;
+
+     label2:
+        i = i + 1;
+
+     label3:
+        $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>;
+
+        if $r0 == null goto label4;
+
+        $i0 = lengthof $r0;
+
+        if i < $i0 goto label1;
+
+     label4:
+        return result;
+    }

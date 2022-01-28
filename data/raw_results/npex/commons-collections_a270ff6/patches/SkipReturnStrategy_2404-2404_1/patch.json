@@ -1,0 +1,5 @@
+{
+    "contents": "if (subtree == null) {\n    return;\n}",
+    "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+    "patched_lines": [2399]
+}

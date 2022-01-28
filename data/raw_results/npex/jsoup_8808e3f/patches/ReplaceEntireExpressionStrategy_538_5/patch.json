@@ -1,0 +1,5 @@
+{
+    "contents": "// allows anchor links\nif (value != null ? isValidAnchor(value) : false) {\n    return true;\n} else {\n    continue;\n}",
+    "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+    "patched_lines": [540]
+}

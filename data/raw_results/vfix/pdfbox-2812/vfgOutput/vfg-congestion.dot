@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"249: i#4 = virtualinvoke $r4.<org.apache.pdfbox.pdmodel.graphics.color.PDICCBased: org.apache.pdfbox.pdmodel.common.PDStream getPDStream()>()" [label=1] [style=bold] [color=gold]
+"253: output = virtualinvoke i#4.<org.apache.pdfbox.pdmodel.common.PDStream: java.io.OutputStream createOutputStream()>()" [label=1] [style=bold] [color=red]
+"249: i#4 = virtualinvoke $r4.<org.apache.pdfbox.pdmodel.graphics.color.PDICCBased: org.apache.pdfbox.pdmodel.common.PDStream getPDStream()>()"->"253: output = virtualinvoke i#4.<org.apache.pdfbox.pdmodel.common.PDStream: java.io.OutputStream createOutputStream()>()";
+
+}

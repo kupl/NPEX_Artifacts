@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "stella-faces/src/test/java/br/com/caelum/stella/faces/validation/StellaCNPJValidatorTest.java",
+        "line": 92,
+        "method_name": "shouldNotThrowNullPointerExceptionWhenCNPJIsNull"
+    }
+]

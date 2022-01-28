@@ -1,0 +1,5 @@
+{
+    "contents": "for (int i = 0; i < (this.categoryKeys != null ? this.categoryKeys : new java.lang.Comparable[]{  }).length; i++) {\n    if (category.equals(this.categoryKeys[i])) {\n        result = i;\n        break;\n    }\n}",
+    "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+    "patched_lines": [583]
+}

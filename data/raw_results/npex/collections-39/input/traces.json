@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "org/apache/commons/collections/ExtendedProperties.java",
+        "line": 569,
+        "method_name": "load"
+    },
+    {
+        "filepath": "org/apache/commons/collections/ExtendedProperties.java",
+        "line": 532,
+        "method_name": "load"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 26,
+        "method_name": "testSaveAndLoad"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 10,
+        "method_name": "main"
+    }
+]

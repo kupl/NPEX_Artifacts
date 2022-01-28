@@ -1,0 +1,5 @@
+{
+    "contents": "if (_encoder.getType(element.getValue()) == null) {\n    continue;\n}",
+    "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+    "patched_lines": [92]
+}

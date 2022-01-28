@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+	"line": 106,
+	"deref_field": "names",
+	"sink_field": "contains",
+	"npe_class": "Encoding",
+	"npe_method": "contains",
+	"jvmti_identify_succeed": true
+}

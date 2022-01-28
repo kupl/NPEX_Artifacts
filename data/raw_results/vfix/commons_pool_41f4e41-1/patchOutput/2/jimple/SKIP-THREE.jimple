@@ -1,0 +1,234 @@
+    public void returnObject(java.lang.Object, java.lang.Object)
+    {
+        org.apache.commons.pool2.impl.GenericKeyedObjectPool this;
+        java.lang.Object key, obj, $r1, $r4;
+        org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque objectDeque;
+        org.apache.commons.pool2.PooledObject p;
+        long activeTime;
+        java.util.Map $r0, $r2;
+        org.apache.commons.pool2.impl.BaseGenericObjectPool$IdentityWrapper $r3;
+        boolean $z0, $z1, $z2, $z4, $z5, $z6, $z8, $z9, $z10, $z12;
+        org.apache.commons.pool2.KeyedPooledObjectFactory $r5, $r7;
+        int $i0, e;
+        java.lang.IllegalStateException $r6, $r9;
+        org.apache.commons.pool2.impl.LinkedBlockingDeque $r8, $r11, e#5;
+        java.lang.Exception $r10, $r12, $r14, $r15;
+        java.lang.Throwable $r13;
+
+        this := @this: org.apache.commons.pool2.impl.GenericKeyedObjectPool;
+
+        key := @parameter0: java.lang.Object;
+
+        obj := @parameter1: java.lang.Object;
+
+        $r0 = this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: java.util.Map poolMap>;
+
+        $r1 = interfaceinvoke $r0.<java.util.Map: java.lang.Object get(java.lang.Object)>(key);
+
+        objectDeque = (org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque) $r1;
+
+        if objectDeque != null goto label01;
+
+        return;
+
+     label01:
+        $r2 = virtualinvoke objectDeque.<org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque: java.util.Map getAllObjects()>();
+
+        $r3 = new org.apache.commons.pool2.impl.BaseGenericObjectPool$IdentityWrapper;
+
+        specialinvoke $r3.<org.apache.commons.pool2.impl.BaseGenericObjectPool$IdentityWrapper: void <init>(java.lang.Object)>(obj);
+
+        $r4 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>($r3);
+
+        p = (org.apache.commons.pool2.PooledObject) $r4;
+
+        if p != null goto label02;
+
+        $r9 = new java.lang.IllegalStateException;
+
+        specialinvoke $r9.<java.lang.IllegalStateException: void <init>(java.lang.String)>("Returned object not currently part of this pool");
+
+        throw $r9;
+
+     label02:
+        virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void markReturningState(org.apache.commons.pool2.PooledObject)>(p);
+
+        activeTime = interfaceinvoke p.<org.apache.commons.pool2.PooledObject: long getActiveTimeMillis()>();
+
+     label03:
+        $z0 = virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean getTestOnReturn()>();
+
+        if $z0 == 0 goto label10;
+
+        $r7 = this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: org.apache.commons.pool2.KeyedPooledObjectFactory factory>;
+
+        $z6 = interfaceinvoke $r7.<org.apache.commons.pool2.KeyedPooledObjectFactory: boolean validateObject(java.lang.Object,org.apache.commons.pool2.PooledObject)>(key, p);
+
+        if $z6 != 0 goto label10;
+
+     label04:
+        specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean destroy(java.lang.Object,org.apache.commons.pool2.PooledObject,boolean)>(key, p, 1);
+
+     label05:
+        goto label07;
+
+     label06:
+        $r15 := @caughtexception;
+
+        virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void swallowException(java.lang.Exception)>($r15);
+
+     label07:
+        $r8 = staticinvoke <org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque: org.apache.commons.pool2.impl.LinkedBlockingDeque access$000(org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque)>(objectDeque);
+
+        specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void whenWaitersAddObject(java.lang.Object,org.apache.commons.pool2.impl.LinkedBlockingDeque)>(key, $r8);
+
+     label08:
+        $z8 = specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean hasBorrowWaiters()>();
+
+        if $z8 == 0 goto label09;
+
+        specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void reuseCapacity()>();
+
+     label09:
+        virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void updateStatsReturn(long)>(activeTime);
+
+        return;
+
+     label10:
+        $r5 = this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: org.apache.commons.pool2.KeyedPooledObjectFactory factory>;
+
+        interfaceinvoke $r5.<org.apache.commons.pool2.KeyedPooledObjectFactory: void passivateObject(java.lang.Object,org.apache.commons.pool2.PooledObject)>(key, p);
+
+     label11:
+        goto label19;
+
+     label12:
+        $r14 := @caughtexception;
+
+        virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void swallowException(java.lang.Exception)>($r14);
+
+     label13:
+        specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean destroy(java.lang.Object,org.apache.commons.pool2.PooledObject,boolean)>(key, p, 1);
+
+     label14:
+        goto label16;
+
+     label15:
+        $r10 := @caughtexception;
+
+        virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void swallowException(java.lang.Exception)>($r10);
+
+     label16:
+        $r11 = staticinvoke <org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque: org.apache.commons.pool2.impl.LinkedBlockingDeque access$000(org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque)>(objectDeque);
+
+        specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void whenWaitersAddObject(java.lang.Object,org.apache.commons.pool2.impl.LinkedBlockingDeque)>(key, $r11);
+
+     label17:
+        $z9 = specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean hasBorrowWaiters()>();
+
+        if $z9 == 0 goto label18;
+
+        specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void reuseCapacity()>();
+
+     label18:
+        virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void updateStatsReturn(long)>(activeTime);
+
+        return;
+
+     label19:
+        $z1 = interfaceinvoke p.<org.apache.commons.pool2.PooledObject: boolean deallocate()>();
+
+        if $z1 != 0 goto label20;
+
+        $r6 = new java.lang.IllegalStateException;
+
+        specialinvoke $r6.<java.lang.IllegalStateException: void <init>(java.lang.String)>("Object has already been returned to this pool");
+
+        throw $r6;
+
+     label20:
+        e = virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: int getMaxIdlePerKey()>();
+
+        e#5 = virtualinvoke objectDeque.<org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque: org.apache.commons.pool2.impl.LinkedBlockingDeque getIdleObjects()>();
+
+        $z2 = virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean isClosed()>();
+
+        if $z2 != 0 goto label21;
+
+        if e <= -1 goto label24;
+
+        $i0 = virtualinvoke e#5.<org.apache.commons.pool2.impl.LinkedBlockingDeque: int size()>();
+
+        if e > $i0 goto label24;
+
+     label21:
+        specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean destroy(java.lang.Object,org.apache.commons.pool2.PooledObject,boolean)>(key, p, 1);
+
+     label22:
+        goto label27;
+
+     label23:
+        $r12 := @caughtexception;
+
+        virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void swallowException(java.lang.Exception)>($r12);
+
+        goto label27;
+
+     label24:
+        $z4 = virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean getLifo()>();
+
+        if $z4 == 0 goto label25;
+
+        virtualinvoke e#5.<org.apache.commons.pool2.impl.LinkedBlockingDeque: void addFirst(java.lang.Object)>(p);
+
+        goto label26;
+
+     label25:
+        virtualinvoke e#5.<org.apache.commons.pool2.impl.LinkedBlockingDeque: void addLast(java.lang.Object)>(p);
+
+     label26:
+        $z5 = virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean isClosed()>();
+
+        if $z5 == 0 goto label27;
+
+        virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void clear(java.lang.Object)>(key);
+
+     label27:
+        $z12 = specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean hasBorrowWaiters()>();
+
+        if $z12 == 0 goto label28;
+
+        specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void reuseCapacity()>();
+
+     label28:
+        virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void updateStatsReturn(long)>(activeTime);
+
+        goto label32;
+
+     label29:
+        $r13 := @caughtexception;
+
+     label30:
+        $z10 = specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: boolean hasBorrowWaiters()>();
+
+        if $z10 == 0 goto label31;
+
+        specialinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void reuseCapacity()>();
+
+     label31:
+        virtualinvoke this.<org.apache.commons.pool2.impl.GenericKeyedObjectPool: void updateStatsReturn(long)>(activeTime);
+
+        throw $r13;
+
+     label32:
+        return;
+
+        catch java.lang.Exception from label04 to label05 with label06;
+        catch java.lang.Exception from label10 to label11 with label12;
+        catch java.lang.Exception from label13 to label14 with label15;
+        catch java.lang.Exception from label21 to label22 with label23;
+        catch java.lang.Throwable from label03 to label08 with label29;
+        catch java.lang.Throwable from label10 to label17 with label29;
+        catch java.lang.Throwable from label19 to label27 with label29;
+        catch java.lang.Throwable from label29 to label30 with label29;
+    }

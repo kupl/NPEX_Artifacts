@@ -1,0 +1,10 @@
+{
+    "filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+    "line": 419,
+    "sink_field": "getAlgorithm",
+    "npe_class": "JwsUtils",
+    "npe_method": "loadSignatureVerifier",
+    "jvmti_identify_succeed": true,
+    "deref_field": "inHeaders",
+    "nullpointer": "inHeaders"
+}

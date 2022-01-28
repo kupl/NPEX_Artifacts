@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"393: virtualinvoke ast.<org.apache.xmpbox.type.AbstractStructuredType: void setPrefix(java.lang.String)>(prefix)" [style=bold] [color=red]
+"391: ast = specialinvoke this.<org.apache.xmpbox.xml.DomXmpParser: org.apache.xmpbox.type.AbstractStructuredType parseLiDescription(org.apache.xmpbox.XMPMetadata,javax.xml.namespace.QName,org.w3c.dom.Element)>(xmp, $r2, property)" [style=bold] [color=gold]
+"391: ast = specialinvoke this.<org.apache.xmpbox.xml.DomXmpParser: org.apache.xmpbox.type.AbstractStructuredType parseLiDescription(org.apache.xmpbox.XMPMetadata,javax.xml.namespace.QName,org.w3c.dom.Element)>(xmp, $r2, property)"->"393: virtualinvoke ast.<org.apache.xmpbox.type.AbstractStructuredType: void setPrefix(java.lang.String)>(prefix)";
+
+}

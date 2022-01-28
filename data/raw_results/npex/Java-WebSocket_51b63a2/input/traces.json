@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "src/test/java/org/java_websocket/util/ThreadCheck.java",
+        "line": 69,
+        "method_name": "checkZombies"
+    },
+    {
+        "filepath": "src/test/java/org/java_websocket/util/ThreadCheck.java",
+        "line": 49,
+        "method_name": "after"
+    }
+]

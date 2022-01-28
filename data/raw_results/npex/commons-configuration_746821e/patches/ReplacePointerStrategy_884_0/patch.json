@@ -1,0 +1,5 @@
+{
+    "contents": "(locator != null ? locator : null).getEncoding()",
+    "original_filepath": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+    "patched_lines": [894]
+}

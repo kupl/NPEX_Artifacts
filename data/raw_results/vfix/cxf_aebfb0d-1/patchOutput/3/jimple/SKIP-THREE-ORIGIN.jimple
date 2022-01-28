@@ -1,0 +1,212 @@
+    public static org.apache.cxf.rs.security.jose.jws.JwsSignatureVerifier loadSignatureVerifier(org.apache.cxf.message.Message, java.util.Properties, org.apache.cxf.rs.security.jose.jws.JwsHeaders)
+    {
+        org.apache.cxf.message.Message m;
+        java.util.Properties props;
+        org.apache.cxf.rs.security.jose.jws.JwsHeaders inHeaders;
+        org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm $r0, $r5, $r11, $r12, $r18, $r21, $r26, $r28, signatureAlgo, publicJwk#24;
+        java.util.logging.Logger $r1;
+        org.apache.cxf.rs.security.jose.jws.JwsException $r2, $r30;
+        org.apache.cxf.rs.security.jose.jws.JwsException$Error $r3, $r31;
+        int $i0;
+        java.security.cert.X509Certificate $r4, $r25, publicJwk#5;
+        java.lang.String $r6, $r7, $r10, $r17, $r20, $r32, inHeaderKid, $r33;
+        boolean $z0, $z1, $z2, $z3;
+        org.apache.cxf.rs.security.jose.jws.NoneJwsSignatureVerifier $r8;
+        org.apache.cxf.rs.security.jose.jwk.KeyOperation $r9;
+        java.lang.Object $r13, $r14, $r15, $r16, $r24, $r34;
+        org.apache.cxf.rs.security.jose.jws.JwsSignatureVerifier $r19, $r22, $r27, $r29, theVerifier;
+        java.util.List $r23, publicJwk#4;
+        org.apache.cxf.rs.security.jose.jwk.JsonWebKey publicJwk;
+        java.security.cert.X509Certificate[] signatureAlgo#25;
+
+        m := @parameter0: org.apache.cxf.message.Message;
+
+        props := @parameter1: java.util.Properties;
+
+        inHeaders := @parameter2: org.apache.cxf.rs.security.jose.jws.JwsHeaders;
+
+        theVerifier = null;
+
+        inHeaderKid = null;
+
+        if inHeaders == null goto label08;
+
+        inHeaderKid = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: java.lang.String getKeyId()>();
+
+        $r13 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: java.lang.Object getHeader(java.lang.String)>("jwk");
+
+        if $r13 == null goto label04;
+
+        publicJwk = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: org.apache.cxf.rs.security.jose.jwk.JsonWebKey getJsonWebKey()>();
+
+        if inHeaderKid == null goto label01;
+
+        $r32 = virtualinvoke publicJwk.<org.apache.cxf.rs.security.jose.jwk.JsonWebKey: java.lang.String getKeyId()>();
+
+        $z2 = virtualinvoke inHeaderKid.<java.lang.String: boolean equals(java.lang.Object)>($r32);
+
+        if $z2 == 0 goto label02;
+
+     label01:
+        $z1 = staticinvoke <org.apache.cxf.message.MessageUtils: boolean getContextualBoolean(org.apache.cxf.message.Message,java.lang.String,boolean)>(m, "rs.security.accept.public.key", 0);
+
+        if $z1 != 0 goto label03;
+
+     label02:
+        $r30 = new org.apache.cxf.rs.security.jose.jws.JwsException;
+
+        $r31 = <org.apache.cxf.rs.security.jose.jws.JwsException$Error: org.apache.cxf.rs.security.jose.jws.JwsException$Error INVALID_KEY>;
+
+        specialinvoke $r30.<org.apache.cxf.rs.security.jose.jws.JwsException: void <init>(org.apache.cxf.rs.security.jose.jws.JwsException$Error)>($r31);
+
+        throw $r30;
+
+     label03:
+        $r28 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm getSignatureAlgorithm()>();
+
+        $r29 = staticinvoke <org.apache.cxf.rs.security.jose.jws.JwsUtils: org.apache.cxf.rs.security.jose.jws.JwsSignatureVerifier getSignatureVerifier(org.apache.cxf.rs.security.jose.jwk.JsonWebKey,org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm)>(publicJwk, $r28);
+
+        return $r29;
+
+     label04:
+        $r14 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: java.lang.Object getHeader(java.lang.String)>("x5c");
+
+        if $r14 == null goto label05;
+
+        $r23 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: java.util.List getX509Chain()>();
+
+        publicJwk#4 = staticinvoke <org.apache.cxf.rs.security.jose.common.KeyManagementUtils: java.util.List toX509CertificateChain(java.util.List)>($r23);
+
+        staticinvoke <org.apache.cxf.rs.security.jose.common.KeyManagementUtils: void validateCertificateChain(java.util.Properties,java.util.List)>(props, publicJwk#4);
+
+        $r24 = interfaceinvoke publicJwk#4.<java.util.List: java.lang.Object get(int)>(0);
+
+        $r25 = (java.security.cert.X509Certificate) $r24;
+
+        $r26 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm getSignatureAlgorithm()>();
+
+        $r27 = staticinvoke <org.apache.cxf.rs.security.jose.jws.JwsUtils: org.apache.cxf.rs.security.jose.jws.JwsSignatureVerifier getPublicKeySignatureVerifier(java.security.cert.X509Certificate,org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm)>($r25, $r26);
+
+        return $r27;
+
+     label05:
+        $r15 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: java.lang.Object getHeader(java.lang.String)>("x5t");
+
+        if $r15 == null goto label07;
+
+        $r20 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: java.lang.String getX509Thumbprint()>();
+
+        publicJwk#5 = staticinvoke <org.apache.cxf.rs.security.jose.common.KeyManagementUtils: java.security.cert.X509Certificate getCertificateFromThumbprint(java.lang.String,java.lang.String,org.apache.cxf.message.Message,java.util.Properties)>($r20, "SHA-1", m, props);
+
+        if publicJwk#5 == null goto label06;
+
+        $r21 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm getSignatureAlgorithm()>();
+
+        $r22 = staticinvoke <org.apache.cxf.rs.security.jose.jws.JwsUtils: org.apache.cxf.rs.security.jose.jws.JwsSignatureVerifier getPublicKeySignatureVerifier(java.security.cert.X509Certificate,org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm)>(publicJwk#5, $r21);
+
+        return $r22;
+
+     label06:
+        goto label08;
+
+     label07:
+        $r16 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: java.lang.Object getHeader(java.lang.String)>("x5t#S256");
+
+        if $r16 == null goto label08;
+
+        $r17 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: java.lang.String getX509ThumbprintSHA256()>();
+
+        publicJwk#5 = staticinvoke <org.apache.cxf.rs.security.jose.common.KeyManagementUtils: java.security.cert.X509Certificate getCertificateFromThumbprint(java.lang.String,java.lang.String,org.apache.cxf.message.Message,java.util.Properties)>($r17, "SHA-256", m, props);
+
+        if publicJwk#5 == null goto label08;
+
+        $r18 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm getSignatureAlgorithm()>();
+
+        $r19 = staticinvoke <org.apache.cxf.rs.security.jose.jws.JwsUtils: org.apache.cxf.rs.security.jose.jws.JwsSignatureVerifier getPublicKeySignatureVerifier(java.security.cert.X509Certificate,org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm)>(publicJwk#5, $r18);
+
+        return $r19;
+
+     label08:
+        $r33 = "jwk";
+
+        $r34 = virtualinvoke props.<java.util.Properties: java.lang.Object get(java.lang.Object)>("rs.security.keystore.type");
+
+        $z3 = virtualinvoke $r33.<java.lang.String: boolean equals(java.lang.Object)>($r34);
+
+        if $z3 == 0 goto label10;
+
+        $r9 = <org.apache.cxf.rs.security.jose.jwk.KeyOperation: org.apache.cxf.rs.security.jose.jwk.KeyOperation VERIFY>;
+
+        publicJwk = staticinvoke <org.apache.cxf.rs.security.jose.jwk.JwkUtils: org.apache.cxf.rs.security.jose.jwk.JsonWebKey loadJsonWebKey(org.apache.cxf.message.Message,java.util.Properties,org.apache.cxf.rs.security.jose.jwk.KeyOperation,java.lang.String)>(m, props, $r9, inHeaderKid);
+
+        if publicJwk == null goto label09;
+
+        $r10 = virtualinvoke publicJwk.<org.apache.cxf.rs.security.jose.jwk.JsonWebKey: java.lang.String getAlgorithm()>();
+
+        $r11 = staticinvoke <org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm: org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm getAlgorithm(java.lang.String)>($r10);
+
+        $r12 = staticinvoke <org.apache.cxf.rs.security.jose.jws.JwsUtils: org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm getDefaultKeyAlgorithm(org.apache.cxf.rs.security.jose.jwk.JsonWebKey)>(publicJwk);
+
+        signatureAlgo = staticinvoke <org.apache.cxf.rs.security.jose.jws.JwsUtils: org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm getSignatureAlgorithm(org.apache.cxf.message.Message,java.util.Properties,org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm,org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm)>(m, props, $r11, $r12);
+
+        theVerifier = staticinvoke <org.apache.cxf.rs.security.jose.jws.JwsUtils: org.apache.cxf.rs.security.jose.jws.JwsSignatureVerifier getSignatureVerifier(org.apache.cxf.rs.security.jose.jwk.JsonWebKey,org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm)>(publicJwk, signatureAlgo);
+
+     label09:
+        goto label12;
+
+     label10:
+        publicJwk#24 = staticinvoke <org.apache.cxf.rs.security.jose.jws.JwsUtils: org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm getSignatureAlgorithm(org.apache.cxf.message.Message,java.util.Properties,org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm,org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm)>(m, props, null, null);
+
+        $r0 = <org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm: org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm NONE>;
+
+        if publicJwk#24 != $r0 goto label11;
+
+        $r5 = <org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm: org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm NONE>;
+
+        $r6 = virtualinvoke $r5.<org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm: java.lang.String getJwaName()>();
+
+        $r7 = virtualinvoke inHeaders.<org.apache.cxf.rs.security.jose.jws.JwsHeaders: java.lang.String getAlgorithm()>();
+
+        $z0 = virtualinvoke $r6.<java.lang.String: boolean equals(java.lang.Object)>($r7);
+
+        if $z0 == 0 goto label11;
+
+        $r8 = new org.apache.cxf.rs.security.jose.jws.NoneJwsSignatureVerifier;
+
+        specialinvoke $r8.<org.apache.cxf.rs.security.jose.jws.NoneJwsSignatureVerifier: void <init>()>();
+
+        theVerifier = $r8;
+
+        goto label12;
+
+     label11:
+        signatureAlgo#25 = staticinvoke <org.apache.cxf.rs.security.jose.common.KeyManagementUtils: java.security.cert.X509Certificate[] loadX509CertificateOrChain(org.apache.cxf.message.Message,java.util.Properties)>(m, props);
+
+        if signatureAlgo#25 == null goto label12;
+
+        $i0 = lengthof signatureAlgo#25;
+
+        if $i0 <= 0 goto label12;
+
+        $r4 = signatureAlgo#25[0];
+
+        theVerifier = staticinvoke <org.apache.cxf.rs.security.jose.jws.JwsUtils: org.apache.cxf.rs.security.jose.jws.JwsSignatureVerifier getPublicKeySignatureVerifier(java.security.cert.X509Certificate,org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm)>($r4, publicJwk#24);
+
+     label12:
+        if theVerifier != null goto label13;
+
+        $r1 = <org.apache.cxf.rs.security.jose.jws.JwsUtils: java.util.logging.Logger LOG>;
+
+        virtualinvoke $r1.<java.util.logging.Logger: void warning(java.lang.String)>("Verifier is not available");
+
+        $r2 = new org.apache.cxf.rs.security.jose.jws.JwsException;
+
+        $r3 = <org.apache.cxf.rs.security.jose.jws.JwsException$Error: org.apache.cxf.rs.security.jose.jws.JwsException$Error NO_VERIFIER>;
+
+        specialinvoke $r2.<org.apache.cxf.rs.security.jose.jws.JwsException: void <init>(org.apache.cxf.rs.security.jose.jws.JwsException$Error)>($r3);
+
+        throw $r2;
+
+     label13:
+        return theVerifier;
+    }

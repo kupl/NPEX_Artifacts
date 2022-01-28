@@ -1,0 +1,114 @@
+    private int calculateSize(java.util.Map)
+    {
+        org.apache.qpid.proton.codec.MapType this;
+        java.util.Map map;
+        java.util.Iterator iter;
+        org.apache.qpid.proton.codec.AMQPType fixedKeyType, $r6, $r11;
+        java.util.Map$Entry element;
+        java.util.Set $r0;
+        boolean $z0;
+        java.lang.Object $r1, $r2, $r3, $r5, $r7, $r8, $r10, $r12;
+        int $i0, $i1, $i2, $i3, $i4, $i5, len;
+        org.apache.qpid.proton.codec.EncoderImpl $r4, $r9;
+        java.lang.Throwable $r13;
+        org.apache.qpid.proton.codec.TypeEncoding elementEncoding;
+
+        this := @this: org.apache.qpid.proton.codec.MapType;
+
+        map := @parameter0: java.util.Map;
+
+        len = 0;
+
+        $r0 = interfaceinvoke map.<java.util.Map: java.util.Set entrySet()>();
+
+        iter = interfaceinvoke $r0.<java.util.Set: java.util.Iterator iterator()>();
+
+        fixedKeyType = this.<org.apache.qpid.proton.codec.MapType: org.apache.qpid.proton.codec.AMQPType fixedKeyType>;
+
+        virtualinvoke this.<org.apache.qpid.proton.codec.MapType: void setKeyEncoding(org.apache.qpid.proton.codec.AMQPType)>(null);
+
+     label1:
+        $z0 = interfaceinvoke iter.<java.util.Iterator: boolean hasNext()>();
+
+        if $z0 == 0 goto label5;
+
+        $r1 = interfaceinvoke iter.<java.util.Iterator: java.lang.Object next()>();
+
+        element = (java.util.Map$Entry) $r1;
+
+        if fixedKeyType != null goto label2;
+
+        $r9 = this.<org.apache.qpid.proton.codec.MapType: org.apache.qpid.proton.codec.EncoderImpl _encoder>;
+
+        $r10 = interfaceinvoke element.<java.util.Map$Entry: java.lang.Object getKey()>();
+
+        $r11 = virtualinvoke $r9.<org.apache.qpid.proton.codec.EncoderImpl: org.apache.qpid.proton.codec.AMQPType getType(java.lang.Object)>($r10);
+
+        $r12 = interfaceinvoke element.<java.util.Map$Entry: java.lang.Object getKey()>();
+
+        elementEncoding = interfaceinvoke $r11.<org.apache.qpid.proton.codec.AMQPType: org.apache.qpid.proton.codec.TypeEncoding getEncoding(java.lang.Object)>($r12);
+
+        goto label3;
+
+     label2:
+        $r2 = interfaceinvoke element.<java.util.Map$Entry: java.lang.Object getKey()>();
+
+        elementEncoding = interfaceinvoke fixedKeyType.<org.apache.qpid.proton.codec.AMQPType: org.apache.qpid.proton.codec.TypeEncoding getEncoding(java.lang.Object)>($r2);
+
+     label3:
+        $i0 = interfaceinvoke elementEncoding.<org.apache.qpid.proton.codec.TypeEncoding: int getConstructorSize()>();
+
+        $r3 = interfaceinvoke element.<java.util.Map$Entry: java.lang.Object getKey()>();
+
+        $i1 = interfaceinvoke elementEncoding.<org.apache.qpid.proton.codec.TypeEncoding: int getValueSize(java.lang.Object)>($r3);
+
+        $i2 = $i0 + $i1;
+
+        len = len + $i2;
+
+        $r4 = this.<org.apache.qpid.proton.codec.MapType: org.apache.qpid.proton.codec.EncoderImpl _encoder>;
+
+        $r5 = interfaceinvoke element.<java.util.Map$Entry: java.lang.Object getValue()>();
+
+        $r6 = virtualinvoke $r4.<org.apache.qpid.proton.codec.EncoderImpl: org.apache.qpid.proton.codec.AMQPType getType(java.lang.Object)>($r5);
+
+        $r7 = interfaceinvoke element.<java.util.Map$Entry: java.lang.Object getValue()>();
+
+        if $r6 != null goto label4;
+
+        return 0;
+
+     label4:
+        elementEncoding = interfaceinvoke $r6.<org.apache.qpid.proton.codec.AMQPType: org.apache.qpid.proton.codec.TypeEncoding getEncoding(java.lang.Object)>($r7);
+
+        $i3 = interfaceinvoke elementEncoding.<org.apache.qpid.proton.codec.TypeEncoding: int getConstructorSize()>();
+
+        $r8 = interfaceinvoke element.<java.util.Map$Entry: java.lang.Object getValue()>();
+
+        $i4 = interfaceinvoke elementEncoding.<org.apache.qpid.proton.codec.TypeEncoding: int getValueSize(java.lang.Object)>($r8);
+
+        $i5 = $i3 + $i4;
+
+        len = len + $i5;
+
+        goto label1;
+
+     label5:
+        virtualinvoke this.<org.apache.qpid.proton.codec.MapType: void setKeyEncoding(org.apache.qpid.proton.codec.AMQPType)>(fixedKeyType);
+
+        goto label8;
+
+     label6:
+        $r13 := @caughtexception;
+
+     label7:
+        virtualinvoke this.<org.apache.qpid.proton.codec.MapType: void setKeyEncoding(org.apache.qpid.proton.codec.AMQPType)>(fixedKeyType);
+
+        throw $r13;
+
+     label8:
+        return len;
+
+        catch java.lang.Throwable from label1 to label5 with label6;
+        catch java.lang.Throwable from label6 to label7 with label6;
+    }

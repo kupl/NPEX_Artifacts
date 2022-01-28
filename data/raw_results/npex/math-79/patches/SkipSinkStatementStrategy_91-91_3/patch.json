@@ -1,0 +1,5 @@
+{
+    "contents": "if (cluster != null) {\n    cluster.addPoint(p);\n}",
+    "original_filepath": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+    "patched_lines": [102]
+}

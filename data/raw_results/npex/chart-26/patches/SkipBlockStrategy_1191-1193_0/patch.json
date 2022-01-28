@@ -1,0 +1,5 @@
+{
+    "contents": "if (owner != null) {\n    org.jfree.chart.ChartRenderingInfo owner = plotState.getOwner();\n    org.jfree.chart.entity.EntityCollection entities = owner.getEntityCollection();\n    if (entities != null) {\n        entities.add(new org.jfree.chart.entity.AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL));\n    }\n}",
+    "original_filepath": "org/jfree/chart/axis/Axis.java",
+    "patched_lines": [1173]
+}

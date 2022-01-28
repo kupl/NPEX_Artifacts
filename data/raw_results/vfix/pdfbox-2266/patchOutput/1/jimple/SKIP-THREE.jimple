@@ -1,0 +1,37 @@
+    public java.awt.Paint toPaint(org.apache.pdfbox.rendering.PDFRenderer, org.apache.pdfbox.pdmodel.graphics.color.PDColor, int) throws java.io.IOException
+    {
+        org.apache.pdfbox.pdmodel.graphics.color.PDPattern this;
+        org.apache.pdfbox.rendering.PDFRenderer renderer;
+        org.apache.pdfbox.pdmodel.graphics.color.PDColor color;
+        int pageHeight;
+        org.apache.pdfbox.pdmodel.graphics.pattern.PDAbstractPattern pattern;
+        org.apache.pdfbox.pdmodel.graphics.pattern.PDShadingPattern shadingPattern;
+        org.apache.pdfbox.pdmodel.graphics.shading.PDShading shading;
+        org.apache.pdfbox.util.Matrix $r0;
+        java.awt.Paint $r1;
+
+        this := @this: org.apache.pdfbox.pdmodel.graphics.color.PDPattern;
+
+        renderer := @parameter0: org.apache.pdfbox.rendering.PDFRenderer;
+
+        color := @parameter1: org.apache.pdfbox.pdmodel.graphics.color.PDColor;
+
+        pageHeight := @parameter2: int;
+
+        pattern = virtualinvoke this.<org.apache.pdfbox.pdmodel.graphics.color.PDPattern: org.apache.pdfbox.pdmodel.graphics.pattern.PDAbstractPattern getPattern(org.apache.pdfbox.pdmodel.graphics.color.PDColor)>(color);
+
+        shadingPattern = (org.apache.pdfbox.pdmodel.graphics.pattern.PDShadingPattern) pattern;
+
+        shading = virtualinvoke shadingPattern.<org.apache.pdfbox.pdmodel.graphics.pattern.PDShadingPattern: org.apache.pdfbox.pdmodel.graphics.shading.PDShading getShading()>();
+
+        $r0 = virtualinvoke shadingPattern.<org.apache.pdfbox.pdmodel.graphics.pattern.PDShadingPattern: org.apache.pdfbox.util.Matrix getMatrix()>();
+
+        if shading != null goto label1;
+
+        return null;
+
+     label1:
+        $r1 = virtualinvoke shading.<org.apache.pdfbox.pdmodel.graphics.shading.PDShading: java.awt.Paint toPaint(org.apache.pdfbox.util.Matrix)>($r0);
+
+        return $r1;
+    }

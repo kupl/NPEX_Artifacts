@@ -1,0 +1,5 @@
+{
+    "contents": "if (request.getParams() == null) {\n    throw new java.lang.IllegalStateException();\n}",
+    "original_filepath": "src/org/nutz/http/Sender.java",
+    "patched_lines": [70]
+}

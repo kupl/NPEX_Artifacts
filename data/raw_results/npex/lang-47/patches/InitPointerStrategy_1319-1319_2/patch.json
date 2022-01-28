@@ -1,0 +1,5 @@
+{
+    "contents": "if (str == null) {\n    str = \"\";\n}",
+    "original_filepath": "org/apache/commons/lang3/text/StrBuilder.java",
+    "patched_lines": [1333]
+}

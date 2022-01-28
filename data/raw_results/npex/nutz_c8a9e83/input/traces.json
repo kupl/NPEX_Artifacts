@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "test/org/nutz/lang/MirrorTest.java",
+        "line": 654,
+        "method_name": "test_annotation_NPE"
+    }
+]

@@ -1,0 +1,5 @@
+{
+    "contents": "org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo consumerRunningInfo = (mqConsumerInner != null) ? mqConsumerInner.consumerRunningInfo() : null",
+    "original_filepath": "client/src/main/java/org/apache/rocketmq/client/impl/factory/MQClientInstance.java",
+    "patched_lines": [1218]
+}

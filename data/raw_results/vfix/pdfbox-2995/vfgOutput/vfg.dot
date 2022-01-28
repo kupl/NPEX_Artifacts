@@ -1,0 +1,11 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"445: $r3 = virtualinvoke defaultAppearance.<org.apache.pdfbox.cos.COSString: java.lang.String getString()>()" [style=bold] [color=red]
+"444: defaultAppearance = (org.apache.pdfbox.cos.COSString) $r2" [style=bold]
+"444: $r2 = virtualinvoke $r1.<org.apache.pdfbox.cos.COSDictionary: org.apache.pdfbox.cos.COSBase getItem(org.apache.pdfbox.cos.COSName)>($r0)" [style=bold] [color=gold]
+"444: $r2 = virtualinvoke $r1.<org.apache.pdfbox.cos.COSDictionary: org.apache.pdfbox.cos.COSBase getItem(org.apache.pdfbox.cos.COSName)>($r0)"->"444: defaultAppearance = (org.apache.pdfbox.cos.COSString) $r2";
+
+"444: defaultAppearance = (org.apache.pdfbox.cos.COSString) $r2"->"445: $r3 = virtualinvoke defaultAppearance.<org.apache.pdfbox.cos.COSString: java.lang.String getString()>()";
+
+}

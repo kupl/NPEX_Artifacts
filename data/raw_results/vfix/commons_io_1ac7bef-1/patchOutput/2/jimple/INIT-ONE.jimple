@@ -1,0 +1,42 @@
+    public boolean checkEndsWith(java.lang.String, java.lang.String)
+    {
+        org.apache.commons.io.IOCase this;
+        java.lang.String str, end;
+        int endLen, $i0, $i1;
+        boolean $z0, $z1, $z2;
+
+        this := @this: org.apache.commons.io.IOCase;
+
+        str := @parameter0: java.lang.String;
+
+        end := @parameter1: java.lang.String;
+
+        if end != null goto label1;
+
+        end = new java.lang.String;
+
+        specialinvoke end.<java.lang.String: void <init>()>();
+
+     label1:
+        endLen = virtualinvoke end.<java.lang.String: int length()>();
+
+        $z0 = this.<org.apache.commons.io.IOCase: boolean sensitive>;
+
+        if $z0 != 0 goto label2;
+
+        $z2 = 1;
+
+        goto label3;
+
+     label2:
+        $z2 = 0;
+
+     label3:
+        $i0 = virtualinvoke str.<java.lang.String: int length()>();
+
+        $i1 = $i0 - endLen;
+
+        $z1 = virtualinvoke str.<java.lang.String: boolean regionMatches(boolean,int,java.lang.String,int,int)>($z2, $i1, end, 0, endLen);
+
+        return $z1;
+    }

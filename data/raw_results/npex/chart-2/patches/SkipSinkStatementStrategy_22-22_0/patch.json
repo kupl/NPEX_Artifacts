@@ -1,0 +1,5 @@
+{
+    "contents": "if (r != null) {\n    if (Main.eql(1.0, r.getLowerBound(), Main)) {\n        java.lang.System.out.println(\"PASS\");\n    } else {\n        Main.pass = false;\n        java.lang.System.out.println(\"FAIL\");\n    }\n}",
+    "original_filepath": "Main.java",
+    "patched_lines": [22]
+}

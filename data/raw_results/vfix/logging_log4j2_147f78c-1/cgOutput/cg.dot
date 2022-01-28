@@ -1,0 +1,31 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"212: getFormattedMessage" [color=red] [style=bold]
+"44: public void <init>()"
+"180: testMessageTextNeverThrowsNpe"
+"48: <clinit>" [style=bold]
+"45: public void <init>()" [style=bold]
+"43: public void <init>(java.lang.String)" [style=bold]
+"56: void <init>(org.apache.logging.log4j.core.async.RingBufferLogEvent$1)"
+"56: private void <init>()"
+"2: main"->"44: public void <init>()" [style=dotted];
+
+"2: main"->"180: testMessageTextNeverThrowsNpe" [style=dotted];
+
+"180: testMessageTextNeverThrowsNpe"->"48: <clinit>" [style=dotted];
+
+"180: testMessageTextNeverThrowsNpe"->"212: getFormattedMessage" [style=dotted];
+
+"180: testMessageTextNeverThrowsNpe"->"45: public void <init>()" [style=dotted];
+
+"48: <clinit>"->"48: <clinit>";
+
+"48: <clinit>"->"43: public void <init>(java.lang.String)";
+
+"48: <clinit>"->"56: void <init>(org.apache.logging.log4j.core.async.RingBufferLogEvent$1)" [style=dotted];
+
+"56: void <init>(org.apache.logging.log4j.core.async.RingBufferLogEvent$1)"->"56: private void <init>()" [style=dotted];
+
+}

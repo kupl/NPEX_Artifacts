@@ -1,0 +1,31 @@
+    public final org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder addExecInterceptorFirst(java.lang.String, org.apache.hc.client5.http.async.AsyncExecChainHandler)
+    {
+        org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder this;
+        java.lang.String name;
+        org.apache.hc.client5.http.async.AsyncExecChainHandler interceptor;
+        org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder$ExecInterceptorEntry $r2;
+        org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder$ExecInterceptorEntry$Postion $r3;
+        java.util.LinkedList $r4;
+
+        this := @this: org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder;
+
+        name := @parameter0: java.lang.String;
+
+        interceptor := @parameter1: org.apache.hc.client5.http.async.AsyncExecChainHandler;
+
+        staticinvoke <org.apache.hc.core5.util.Args: java.lang.Object notNull(java.lang.Object,java.lang.String)>(name, "Name");
+
+        staticinvoke <org.apache.hc.core5.util.Args: java.lang.Object notNull(java.lang.Object,java.lang.String)>(interceptor, "Interceptor");
+
+        $r4 = this.<org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder: java.util.LinkedList execInterceptors>;
+
+        $r2 = new org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder$ExecInterceptorEntry;
+
+        $r3 = <org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder$ExecInterceptorEntry$Postion: org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder$ExecInterceptorEntry$Postion FIRST>;
+
+        specialinvoke $r2.<org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder$ExecInterceptorEntry: void <init>(org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder$ExecInterceptorEntry$Postion,java.lang.String,org.apache.hc.client5.http.async.AsyncExecChainHandler,java.lang.String,org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder$1)>($r3, name, interceptor, null, null);
+
+        virtualinvoke $r4.<java.util.LinkedList: boolean add(java.lang.Object)>($r2);
+
+        return this;
+    }

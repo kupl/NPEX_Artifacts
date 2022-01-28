@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "src/test/java/org/apache/commons/collections4/trie/PatriciaTrieTest.java",
+        "line": 386,
+        "method_name": "testPrefixMapClear"
+    }
+]

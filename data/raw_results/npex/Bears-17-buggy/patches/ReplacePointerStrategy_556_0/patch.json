@@ -1,0 +1,5 @@
+{
+    "contents": "_findAnnotation(a != null ? a : null, com.fasterxml.jackson.annotation.JsonSubTypes.class)",
+    "original_filepath": "src/main/java/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.java",
+    "patched_lines": [556]
+}

@@ -1,0 +1,119 @@
+    public org.apache.pdfbox.pdmodel.interactive.form.PDField getField(java.lang.String)
+    {
+        org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm this;
+        java.lang.String fullyQualifiedName, $r7, $r8, $r9;
+        java.lang.String[] nameSubSection;
+        org.apache.pdfbox.cos.COSArray fields;
+        org.apache.pdfbox.cos.COSDictionary element, $r2;
+        org.apache.pdfbox.cos.COSString fieldName;
+        org.apache.pdfbox.pdmodel.interactive.form.PDField root, kid, retval;
+        java.util.Map $r0, $r10;
+        org.apache.pdfbox.cos.COSName $r1, $r5;
+        org.apache.pdfbox.cos.COSBase $r3, $r4, $r6;
+        boolean $z0, $z1;
+        int $i0, i, $i1;
+        java.lang.Object $r11;
+
+        this := @this: org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
+
+        fullyQualifiedName := @parameter0: java.lang.String;
+
+        retval = null;
+
+        $r0 = this.<org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm: java.util.Map fieldCache>;
+
+        if $r0 == null goto label1;
+
+        $r10 = this.<org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm: java.util.Map fieldCache>;
+
+        $r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>(fullyQualifiedName);
+
+        retval = (org.apache.pdfbox.pdmodel.interactive.form.PDField) $r11;
+
+        goto label9;
+
+     label1:
+        nameSubSection = virtualinvoke fullyQualifiedName.<java.lang.String: java.lang.String[] split(java.lang.String)>("\\.");
+
+        $r2 = this.<org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm: org.apache.pdfbox.cos.COSDictionary dictionary>;
+
+        $r1 = <org.apache.pdfbox.cos.COSName: org.apache.pdfbox.cos.COSName FIELDS>;
+
+        $r3 = virtualinvoke $r2.<org.apache.pdfbox.cos.COSDictionary: org.apache.pdfbox.cos.COSBase getDictionaryObject(org.apache.pdfbox.cos.COSName)>($r1);
+
+        fields = (org.apache.pdfbox.cos.COSArray) $r3;
+
+        i = 0;
+
+        goto label7;
+
+     label2:
+        $r4 = virtualinvoke fields.<org.apache.pdfbox.cos.COSArray: org.apache.pdfbox.cos.COSBase getObject(int)>(i);
+
+        element = (org.apache.pdfbox.cos.COSDictionary) $r4;
+
+        if element == null goto label6;
+
+        $r5 = <org.apache.pdfbox.cos.COSName: org.apache.pdfbox.cos.COSName T>;
+
+        $r6 = virtualinvoke element.<org.apache.pdfbox.cos.COSDictionary: org.apache.pdfbox.cos.COSBase getDictionaryObject(org.apache.pdfbox.cos.COSName)>($r5);
+
+        fieldName = (org.apache.pdfbox.cos.COSString) $r6;
+
+        $r7 = virtualinvoke fieldName.<org.apache.pdfbox.cos.COSString: java.lang.String getString()>();
+
+        $z0 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>(fullyQualifiedName);
+
+        if $z0 != 0 goto label3;
+
+        $r8 = virtualinvoke fieldName.<org.apache.pdfbox.cos.COSString: java.lang.String getString()>();
+
+        $r9 = nameSubSection[0];
+
+        $z1 = virtualinvoke $r8.<java.lang.String: boolean equals(java.lang.Object)>($r9);
+
+        if $z1 == 0 goto label6;
+
+     label3:
+        root = staticinvoke <org.apache.pdfbox.pdmodel.interactive.form.PDField: org.apache.pdfbox.pdmodel.interactive.form.PDField fromDictionary(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm,org.apache.pdfbox.cos.COSDictionary,org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField)>(this, element, null);
+
+        if root == null goto label6;
+
+        $i0 = lengthof nameSubSection;
+
+        if $i0 <= 1 goto label5;
+
+        kid = virtualinvoke root.<org.apache.pdfbox.pdmodel.interactive.form.PDField: org.apache.pdfbox.pdmodel.interactive.form.PDField findKid(java.lang.String[],int)>(nameSubSection, 1);
+
+        if kid == null goto label4;
+
+        retval = kid;
+
+        goto label6;
+
+     label4:
+        retval = root;
+
+        goto label6;
+
+     label5:
+        retval = root;
+
+     label6:
+        i = i + 1;
+
+     label7:
+        if fields != null goto label8;
+
+        return null;
+
+     label8:
+        $i1 = virtualinvoke fields.<org.apache.pdfbox.cos.COSArray: int size()>();
+
+        if i >= $i1 goto label9;
+
+        if retval == null goto label2;
+
+     label9:
+        return retval;
+    }

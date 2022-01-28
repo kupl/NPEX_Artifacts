@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "ldap/model/src/test/java/org/apache/directory/api/ldap/model/entry/AttributeTest.java",
+        "line": 1542,
+        "method_name": "testNullAT"
+    }
+]

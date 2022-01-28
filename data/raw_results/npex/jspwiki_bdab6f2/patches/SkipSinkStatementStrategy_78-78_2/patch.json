@@ -1,0 +1,5 @@
+{
+    "contents": "if (value != null) {\n    if (value.length() == 0) {\n        return null;\n    }\n}",
+    "original_filepath": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+    "patched_lines": [89]
+}

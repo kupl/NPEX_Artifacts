@@ -1,0 +1,5 @@
+{
+    "contents": "return defaultAppearance != null ? defaultAppearance.getString() : \"null\"",
+    "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+    "patched_lines": [450]
+}

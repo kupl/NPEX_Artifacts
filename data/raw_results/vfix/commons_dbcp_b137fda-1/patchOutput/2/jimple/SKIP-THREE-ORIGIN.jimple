@@ -1,0 +1,118 @@
+    public synchronized java.lang.String toString()
+    {
+        org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS this;
+        java.lang.StringBuilder $r0;
+        java.lang.String $r1, $r3, $r6, $r9, $r33;
+        int $i0, $i1, $i3, $i4, $i5;
+        boolean $z0, $z1, $z2, $z3;
+        long $l2;
+        java.util.Properties $r28, $r34, tmpProps;
+        java.lang.Object $r35;
+
+        this := @this: org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS;
+
+        $r0 = new java.lang.StringBuilder;
+
+        $r1 = specialinvoke this.<java.lang.Object: java.lang.String toString()>();
+
+        specialinvoke $r0.<java.lang.StringBuilder: void <init>(java.lang.String)>($r1);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("[description=");
+
+        $r3 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: java.lang.String description>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r3);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", url=");
+
+        $r6 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: java.lang.String url>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r6);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", driver=");
+
+        $r9 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: java.lang.String driver>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r9);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", loginTimeout=");
+
+        $i0 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: int loginTimeout>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i0);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", poolPreparedStatements=");
+
+        $z0 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: boolean poolPreparedStatements>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(boolean)>($z0);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", maxIdle=");
+
+        $i1 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: int maxIdle>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i1);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", timeBetweenEvictionRunsMillis=");
+
+        $l2 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: long timeBetweenEvictionRunsMillis>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>($l2);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", numTestsPerEvictionRun=");
+
+        $i3 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: int numTestsPerEvictionRun>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i3);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", minEvictableIdleTimeMillis=");
+
+        $i4 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: int minEvictableIdleTimeMillis>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i4);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", maxPreparedStatements=");
+
+        $i5 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: int maxPreparedStatements>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i5);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", getConnectionCalled=");
+
+        $z1 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: boolean getConnectionCalled>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(boolean)>($z1);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", connectionProperties=");
+
+        tmpProps = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: java.util.Properties connectionProperties>;
+
+        $r28 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: java.util.Properties connectionProperties>;
+
+        $z2 = virtualinvoke $r28.<java.util.Properties: boolean contains(java.lang.Object)>("password");
+
+        if $z2 == 0 goto label1;
+
+        $r34 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: java.util.Properties connectionProperties>;
+
+        $r35 = virtualinvoke $r34.<java.util.Properties: java.lang.Object clone()>();
+
+        tmpProps = (java.util.Properties) $r35;
+
+        virtualinvoke tmpProps.<java.util.Properties: java.lang.Object remove(java.lang.Object)>("password");
+
+     label1:
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(tmpProps);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", accessToUnderlyingConnectionAllowed=");
+
+        $z3 = this.<org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS: boolean accessToUnderlyingConnectionAllowed>;
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(boolean)>($z3);
+
+        virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("]");
+
+        $r33 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        return $r33;
+    }

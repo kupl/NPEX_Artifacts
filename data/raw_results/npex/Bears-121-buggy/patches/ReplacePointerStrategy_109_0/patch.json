@@ -1,0 +1,5 @@
+{
+    "contents": "(channel != null ? channel : null).getPipeline()",
+    "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+    "patched_lines": [110]
+}

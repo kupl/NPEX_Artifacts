@@ -1,0 +1,5 @@
+{
+    "contents": "/* may be overridden anyway */\nthis(m.getAccessFlags(), org.apache.bcel.generic.Type.getReturnType(m.getSignature()), org.apache.bcel.generic.Type.getArgumentTypes(m.getSignature()), null, m.getName(), class_name, (m.getAccessFlags() & (org.apache.bcel.Const.ACC_ABSTRACT | org.apache.bcel.Const.ACC_NATIVE)) == 0 ? m.getCode() != null ? new org.apache.bcel.generic.InstructionList(m.getCode().getCode()) : null : null, cp)",
+    "original_filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+    "patched_lines": [189]
+}

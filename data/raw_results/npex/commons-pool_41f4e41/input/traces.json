@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "src/test/java/org/apache/commons/pool2/impl/TestGenericKeyedObjectPool.java",
+        "line": 201,
+        "method_name": "testReturnObjectThrowsIllegalStateException"
+    }
+]

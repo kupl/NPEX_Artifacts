@@ -1,0 +1,5 @@
+{
+    "contents": "if (value == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+    "original_filepath": "stella-core/src/main/java/br/com/caelum/stella/validation/CNPJValidator.java",
+    "patched_lines": [126]
+}

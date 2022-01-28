@@ -1,0 +1,324 @@
+    public void <init>(org.apache.bcel.classfile.Method, java.lang.String, org.apache.bcel.generic.ConstantPoolGen)
+    {
+        org.apache.bcel.generic.MethodGen this;
+        org.apache.bcel.classfile.Method m;
+        java.lang.String class_name, $r0, $r2, $r4, cen, name2#39;
+        org.apache.bcel.generic.ConstantPoolGen cp;
+        org.apache.bcel.classfile.Attribute[] attributes, c_attributes#21;
+        int l6, $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, l7, l13, name2, type, cen#17, length, ce#24, end#34, c_attributes#37;
+        org.apache.bcel.classfile.Attribute attribute, $r8, type#29;
+        org.apache.bcel.classfile.LineNumber l;
+        org.apache.bcel.generic.InstructionHandle ih, $r17, $r19, end;
+        org.apache.bcel.generic.Type $r1;
+        org.apache.bcel.generic.Type[] $r3;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        org.apache.bcel.generic.AnnotationEntryGen $r5;
+        org.apache.bcel.classfile.ExceptionTable $r6;
+        org.apache.bcel.classfile.ConstantPool $r7, $r21;
+        org.apache.bcel.classfile.LocalVariableTypeTable $r9;
+        org.apache.bcel.classfile.LocalVariableTable $r10;
+        org.apache.bcel.classfile.LineNumberTable $r11;
+        org.apache.bcel.generic.InstructionList $r12, $r15, $r16, $r18, $r20, $r26;
+        org.apache.bcel.classfile.Code $r13, $r22, c;
+        byte[] $r14, $r23;
+        org.apache.bcel.classfile.CodeException[] ces;
+        org.apache.bcel.classfile.CodeException ce;
+        org.apache.bcel.generic.ObjectType c_type;
+        org.apache.bcel.classfile.LineNumber[] c_type#31;
+        java.lang.String[] c#35;
+        org.apache.bcel.classfile.Annotations c#40;
+        org.apache.bcel.classfile.AnnotationEntry[] ces#41;
+        org.apache.bcel.classfile.AnnotationEntry ce#45;
+
+        this := @this: org.apache.bcel.generic.MethodGen;
+
+        m := @parameter0: org.apache.bcel.classfile.Method;
+
+        class_name := @parameter1: java.lang.String;
+
+        cp := @parameter2: org.apache.bcel.generic.ConstantPoolGen;
+
+        $i0 = virtualinvoke m.<org.apache.bcel.classfile.Method: int getAccessFlags()>();
+
+        $r0 = virtualinvoke m.<org.apache.bcel.classfile.Method: java.lang.String getSignature()>();
+
+        $r1 = staticinvoke <org.apache.bcel.generic.Type: org.apache.bcel.generic.Type getReturnType(java.lang.String)>($r0);
+
+        $r2 = virtualinvoke m.<org.apache.bcel.classfile.Method: java.lang.String getSignature()>();
+
+        $r3 = staticinvoke <org.apache.bcel.generic.Type: org.apache.bcel.generic.Type[] getArgumentTypes(java.lang.String)>($r2);
+
+        $r4 = virtualinvoke m.<org.apache.bcel.classfile.Method: java.lang.String getName()>();
+
+        $i1 = virtualinvoke m.<org.apache.bcel.classfile.Method: int getAccessFlags()>();
+
+        $i2 = $i1 & 1280;
+
+        if $i2 != 0 goto label01;
+
+        $r26 = new org.apache.bcel.generic.InstructionList;
+
+        $r22 = virtualinvoke m.<org.apache.bcel.classfile.Method: org.apache.bcel.classfile.Code getCode()>();
+
+        if $r22 == null goto label25;
+
+        $r23 = virtualinvoke $r22.<org.apache.bcel.classfile.Code: byte[] getCode()>();
+
+        specialinvoke $r26.<org.apache.bcel.generic.InstructionList: void <init>(byte[])>($r23);
+
+        goto label02;
+
+     label01:
+        $r26 = null;
+
+     label02:
+        specialinvoke this.<org.apache.bcel.generic.MethodGen: void <init>(int,org.apache.bcel.generic.Type,org.apache.bcel.generic.Type[],java.lang.String[],java.lang.String,java.lang.String,org.apache.bcel.generic.InstructionList,org.apache.bcel.generic.ConstantPoolGen)>($i0, $r1, $r3, null, $r4, class_name, $r26, cp);
+
+        attributes = virtualinvoke m.<org.apache.bcel.classfile.Method: org.apache.bcel.classfile.Attribute[] getAttributes()>();
+
+        l6 = lengthof attributes;
+
+        l7 = 0;
+
+     label03:
+        if l7 >= l6 goto label26;
+
+        attribute = attributes[l7];
+
+        $z0 = attribute instanceof org.apache.bcel.classfile.Code;
+
+        if $z0 == 0 goto label18;
+
+        c = (org.apache.bcel.classfile.Code) attribute;
+
+        $i3 = virtualinvoke c.<org.apache.bcel.classfile.Code: int getMaxStack()>();
+
+        virtualinvoke this.<org.apache.bcel.generic.MethodGen: void setMaxStack(int)>($i3);
+
+        $i4 = virtualinvoke c.<org.apache.bcel.classfile.Code: int getMaxLocals()>();
+
+        virtualinvoke this.<org.apache.bcel.generic.MethodGen: void setMaxLocals(int)>($i4);
+
+        ces = virtualinvoke c.<org.apache.bcel.classfile.Code: org.apache.bcel.classfile.CodeException[] getExceptionTable()>();
+
+        if ces == null goto label08;
+
+        l13 = lengthof ces;
+
+        name2 = 0;
+
+     label04:
+        if name2 >= l13 goto label08;
+
+        ce = ces[name2];
+
+        type = virtualinvoke ce.<org.apache.bcel.classfile.CodeException: int getCatchType()>();
+
+        c_type = null;
+
+        if type <= 0 goto label05;
+
+        $r21 = virtualinvoke m.<org.apache.bcel.classfile.Method: org.apache.bcel.classfile.ConstantPool getConstantPool()>();
+
+        cen = virtualinvoke $r21.<org.apache.bcel.classfile.ConstantPool: java.lang.String getConstantString(int,byte)>(type, 7);
+
+        c_type = staticinvoke <org.apache.bcel.generic.ObjectType: org.apache.bcel.generic.ObjectType getInstance(java.lang.String)>(cen);
+
+     label05:
+        cen#17 = virtualinvoke ce.<org.apache.bcel.classfile.CodeException: int getEndPC()>();
+
+        $r13 = virtualinvoke m.<org.apache.bcel.classfile.Method: org.apache.bcel.classfile.Code getCode()>();
+
+        $r14 = virtualinvoke $r13.<org.apache.bcel.classfile.Code: byte[] getCode()>();
+
+        length = lengthof $r14;
+
+        if length != cen#17 goto label06;
+
+        $r20 = this.<org.apache.bcel.generic.MethodGen: org.apache.bcel.generic.InstructionList il>;
+
+        end = virtualinvoke $r20.<org.apache.bcel.generic.InstructionList: org.apache.bcel.generic.InstructionHandle getEnd()>();
+
+        goto label07;
+
+     label06:
+        $r15 = this.<org.apache.bcel.generic.MethodGen: org.apache.bcel.generic.InstructionList il>;
+
+        end = virtualinvoke $r15.<org.apache.bcel.generic.InstructionList: org.apache.bcel.generic.InstructionHandle findHandle(int)>(cen#17);
+
+        end = virtualinvoke end.<org.apache.bcel.generic.InstructionHandle: org.apache.bcel.generic.InstructionHandle getPrev()>();
+
+     label07:
+        $r16 = this.<org.apache.bcel.generic.MethodGen: org.apache.bcel.generic.InstructionList il>;
+
+        $i7 = virtualinvoke ce.<org.apache.bcel.classfile.CodeException: int getStartPC()>();
+
+        $r17 = virtualinvoke $r16.<org.apache.bcel.generic.InstructionList: org.apache.bcel.generic.InstructionHandle findHandle(int)>($i7);
+
+        $r18 = this.<org.apache.bcel.generic.MethodGen: org.apache.bcel.generic.InstructionList il>;
+
+        $i8 = virtualinvoke ce.<org.apache.bcel.classfile.CodeException: int getHandlerPC()>();
+
+        $r19 = virtualinvoke $r18.<org.apache.bcel.generic.InstructionList: org.apache.bcel.generic.InstructionHandle findHandle(int)>($i8);
+
+        virtualinvoke this.<org.apache.bcel.generic.MethodGen: org.apache.bcel.generic.CodeExceptionGen addExceptionHandler(org.apache.bcel.generic.InstructionHandle,org.apache.bcel.generic.InstructionHandle,org.apache.bcel.generic.InstructionHandle,org.apache.bcel.generic.ObjectType)>($r17, end, $r19, c_type);
+
+        name2 = name2 + 1;
+
+        goto label04;
+
+     label08:
+        c_attributes#21 = virtualinvoke c.<org.apache.bcel.classfile.Code: org.apache.bcel.classfile.Attribute[] getAttributes()>();
+
+        name2 = lengthof c_attributes#21;
+
+        ce#24 = 0;
+
+     label09:
+        if ce#24 >= name2 goto label17;
+
+        type#29 = c_attributes#21[ce#24];
+
+        $z3 = type#29 instanceof org.apache.bcel.classfile.LineNumberTable;
+
+        if $z3 == 0 goto label13;
+
+        $r11 = (org.apache.bcel.classfile.LineNumberTable) type#29;
+
+        c_type#31 = virtualinvoke $r11.<org.apache.bcel.classfile.LineNumberTable: org.apache.bcel.classfile.LineNumber[] getLineNumberTable()>();
+
+        length = lengthof c_type#31;
+
+        end#34 = 0;
+
+     label10:
+        if end#34 >= length goto label12;
+
+        l = c_type#31[end#34];
+
+        $r12 = this.<org.apache.bcel.generic.MethodGen: org.apache.bcel.generic.InstructionList il>;
+
+        $i5 = virtualinvoke l.<org.apache.bcel.classfile.LineNumber: int getStartPC()>();
+
+        ih = virtualinvoke $r12.<org.apache.bcel.generic.InstructionList: org.apache.bcel.generic.InstructionHandle findHandle(int)>($i5);
+
+        if ih == null goto label11;
+
+        $i6 = virtualinvoke l.<org.apache.bcel.classfile.LineNumber: int getLineNumber()>();
+
+        virtualinvoke this.<org.apache.bcel.generic.MethodGen: org.apache.bcel.generic.LineNumberGen addLineNumber(org.apache.bcel.generic.InstructionHandle,int)>(ih, $i6);
+
+     label11:
+        end#34 = end#34 + 1;
+
+        goto label10;
+
+     label12:
+        goto label16;
+
+     label13:
+        $z4 = type#29 instanceof org.apache.bcel.classfile.LocalVariableTable;
+
+        if $z4 == 0 goto label14;
+
+        $r10 = (org.apache.bcel.classfile.LocalVariableTable) type#29;
+
+        specialinvoke this.<org.apache.bcel.generic.MethodGen: void updateLocalVariableTable(org.apache.bcel.classfile.LocalVariableTable)>($r10);
+
+        goto label16;
+
+     label14:
+        $z5 = type#29 instanceof org.apache.bcel.classfile.LocalVariableTypeTable;
+
+        if $z5 == 0 goto label15;
+
+        $r7 = virtualinvoke cp.<org.apache.bcel.generic.ConstantPoolGen: org.apache.bcel.classfile.ConstantPool getConstantPool()>();
+
+        $r8 = virtualinvoke type#29.<org.apache.bcel.classfile.Attribute: org.apache.bcel.classfile.Attribute copy(org.apache.bcel.classfile.ConstantPool)>($r7);
+
+        $r9 = (org.apache.bcel.classfile.LocalVariableTypeTable) $r8;
+
+        this.<org.apache.bcel.generic.MethodGen: org.apache.bcel.classfile.LocalVariableTypeTable local_variable_type_table> = $r9;
+
+        goto label16;
+
+     label15:
+        virtualinvoke this.<org.apache.bcel.generic.MethodGen: void addCodeAttribute(org.apache.bcel.classfile.Attribute)>(type#29);
+
+     label16:
+        ce#24 = ce#24 + 1;
+
+        goto label09;
+
+     label17:
+        goto label25;
+
+     label18:
+        $z1 = attribute instanceof org.apache.bcel.classfile.ExceptionTable;
+
+        if $z1 == 0 goto label21;
+
+        $r6 = (org.apache.bcel.classfile.ExceptionTable) attribute;
+
+        c#35 = virtualinvoke $r6.<org.apache.bcel.classfile.ExceptionTable: java.lang.String[] getExceptionNames()>();
+
+        c_attributes#37 = lengthof c#35;
+
+        l13 = 0;
+
+     label19:
+        if l13 >= c_attributes#37 goto label20;
+
+        name2#39 = c#35[l13];
+
+        virtualinvoke this.<org.apache.bcel.generic.MethodGen: void addException(java.lang.String)>(name2#39);
+
+        l13 = l13 + 1;
+
+        goto label19;
+
+     label20:
+        goto label25;
+
+     label21:
+        $z2 = attribute instanceof org.apache.bcel.classfile.Annotations;
+
+        if $z2 == 0 goto label24;
+
+        c#40 = (org.apache.bcel.classfile.Annotations) attribute;
+
+        ces#41 = virtualinvoke c#40.<org.apache.bcel.classfile.Annotations: org.apache.bcel.classfile.AnnotationEntry[] getAnnotationEntries()>();
+
+        l13 = lengthof ces#41;
+
+        name2 = 0;
+
+     label22:
+        if name2 >= l13 goto label23;
+
+        ce#45 = ces#41[name2];
+
+        $r5 = new org.apache.bcel.generic.AnnotationEntryGen;
+
+        specialinvoke $r5.<org.apache.bcel.generic.AnnotationEntryGen: void <init>(org.apache.bcel.classfile.AnnotationEntry,org.apache.bcel.generic.ConstantPoolGen,boolean)>(ce#45, cp, 0);
+
+        virtualinvoke this.<org.apache.bcel.generic.MethodGen: void addAnnotationEntry(org.apache.bcel.generic.AnnotationEntryGen)>($r5);
+
+        name2 = name2 + 1;
+
+        goto label22;
+
+     label23:
+        goto label25;
+
+     label24:
+        virtualinvoke this.<org.apache.bcel.generic.MethodGen: void addAttribute(org.apache.bcel.classfile.Attribute)>(attribute);
+
+     label25:
+        l7 = l7 + 1;
+
+        goto label03;
+
+     label26:
+        return;
+    }

@@ -1,0 +1,5 @@
+{
+    "contents": "if (isLocked.get() == null) {\n    return null;\n}",
+    "original_filepath": "src/main/java/javaslang/Tuples.java",
+    "patched_lines": [856]
+}

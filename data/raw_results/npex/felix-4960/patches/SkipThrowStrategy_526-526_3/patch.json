@@ -1,0 +1,5 @@
+{
+    "contents": "if (contentPath == null) {\n    throw new java.net.MalformedURLException();\n}",
+    "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+    "patched_lines": [516]
+}

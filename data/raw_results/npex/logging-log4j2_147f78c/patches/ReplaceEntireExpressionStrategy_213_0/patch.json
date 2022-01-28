@@ -1,0 +1,5 @@
+{
+    "contents": "return messageText != null ? messageText.toString() : null",
+    "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/async/RingBufferLogEvent.java",
+    "patched_lines": [219]
+}

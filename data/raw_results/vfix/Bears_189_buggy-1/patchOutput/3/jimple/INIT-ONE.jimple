@@ -1,0 +1,68 @@
+    private java.util.List getTheObjectsWhichAreInTheTriangle(java.awt.Point, java.awt.Point, java.awt.Point)
+    {
+        hu.oe.nik.szfmv.detector.classes.Detector this;
+        java.awt.Point a, b, c;
+        java.awt.Polygon sensorVision;
+        hu.oe.nik.szfmv.environment.WorldObject actualObject;
+        java.util.ArrayList $r0;
+        java.util.List $r1, $r2;
+        int $i0, x;
+        java.lang.Object $r3;
+        java.awt.Shape $r4;
+        java.awt.Rectangle $r5;
+        boolean $z0;
+
+        this := @this: hu.oe.nik.szfmv.detector.classes.Detector;
+
+        a := @parameter0: java.awt.Point;
+
+        b := @parameter1: java.awt.Point;
+
+        c := @parameter2: java.awt.Point;
+
+        sensorVision = specialinvoke this.<hu.oe.nik.szfmv.detector.classes.Detector: java.awt.Polygon createTriangle(java.awt.Point,java.awt.Point,java.awt.Point)>(a, b, c);
+
+        $r0 = new java.util.ArrayList;
+
+        specialinvoke $r0.<java.util.ArrayList: void <init>()>();
+
+        x = 0;
+
+     label1:
+        $r1 = this.<hu.oe.nik.szfmv.detector.classes.Detector: java.util.List worldObjects>;
+
+        if $r1 != null goto label2;
+
+        $r1 = new java.util.Vector;
+
+        specialinvoke $r1.<java.util.Vector: void <init>()>();
+
+     label2:
+        $i0 = interfaceinvoke $r1.<java.util.List: int size()>();
+
+        if x >= $i0 goto label4;
+
+        $r2 = this.<hu.oe.nik.szfmv.detector.classes.Detector: java.util.List worldObjects>;
+
+        $r3 = interfaceinvoke $r2.<java.util.List: java.lang.Object get(int)>(x);
+
+        actualObject = (hu.oe.nik.szfmv.environment.WorldObject) $r3;
+
+        $r4 = virtualinvoke actualObject.<hu.oe.nik.szfmv.environment.WorldObject: java.awt.Shape getShape()>();
+
+        $r5 = interfaceinvoke sensorVision.<java.awt.Shape: java.awt.Rectangle getBounds()>();
+
+        $z0 = interfaceinvoke $r4.<java.awt.Shape: boolean intersects(java.awt.geom.Rectangle2D)>($r5);
+
+        if $z0 == 0 goto label3;
+
+        interfaceinvoke $r0.<java.util.List: boolean add(java.lang.Object)>(actualObject);
+
+     label3:
+        x = x + 1;
+
+        goto label1;
+
+     label4:
+        return $r0;
+    }

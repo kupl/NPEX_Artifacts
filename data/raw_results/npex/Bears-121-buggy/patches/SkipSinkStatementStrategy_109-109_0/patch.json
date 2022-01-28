@@ -1,0 +1,5 @@
+{
+    "contents": "if (channel != null) {\n    if ((channel.getPipeline().get(org.jboss.netty.handler.codec.http.HttpRequestDecoder.class) != null) || org.traccar.Context.getConfig().getBoolean(\"decoder.ignoreSessionCache\")) {\n        long deviceId = findDeviceId(remoteAddress, uniqueIds);\n        if (deviceId != 0) {\n            if (org.traccar.Context.getConnectionManager() != null) {\n                org.traccar.Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);\n            }\n            return new org.traccar.DeviceSession(deviceId);\n        } else {\n            return null;\n        }\n    }\n}",
+    "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+    "patched_lines": [110]
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "if (instance == null) {\n    throw new java.lang.IllegalArgumentException();\n}",
+    "original_filepath": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+    "patched_lines": [45]
+}

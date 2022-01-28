@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+	"line": 130,
+	"deref_field": "shading",
+	"sink_field": "toPaint",
+	"npe_class": "PDPattern",
+	"npe_method": "toPaint",
+	"jvmti_identify_succeed": true
+}

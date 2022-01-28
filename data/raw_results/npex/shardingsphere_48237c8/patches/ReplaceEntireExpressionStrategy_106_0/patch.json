@@ -1,0 +1,5 @@
+{
+    "contents": "org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult loginResult = (currentAuthResult != null) ? org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationHandler.loginWithMd5Password(currentAuthResult.getUsername(), currentAuthResult.getDatabase(), md5Salt, passwordMessagePacket) : null",
+    "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+    "patched_lines": [106]
+}

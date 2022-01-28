@@ -1,0 +1,5 @@
+{
+    "contents": "if (execInterceptors == null) {\n    return null;\n}",
+    "original_filepath": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/async/H2AsyncClientBuilder.java",
+    "patched_lines": [345]
+}

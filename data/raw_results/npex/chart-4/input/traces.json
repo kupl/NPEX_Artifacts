@@ -1,0 +1,42 @@
+[
+    {
+        "filepath": "org/jfree/chart/plot/XYPlot.java",
+        "line": 4493,
+        "method_name": "getDataRange"
+    },
+    {
+        "filepath": "org/jfree/chart/axis/NumberAxis.java",
+        "line": 434,
+        "method_name": "autoAdjustRange"
+    },
+    {
+        "filepath": "org/jfree/chart/axis/NumberAxis.java",
+        "line": 417,
+        "method_name": "configure"
+    },
+    {
+        "filepath": "org/jfree/chart/axis/Axis.java",
+        "line": 1044,
+        "method_name": "setPlot"
+    },
+    {
+        "filepath": "org/jfree/chart/plot/XYPlot.java",
+        "line": 660,
+        "method_name": "<init>"
+    },
+    {
+        "filepath": "org/jfree/chart/ChartFactory.java",
+        "line": 1490,
+        "method_name": "createScatterPlot"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 24,
+        "method_name": "testXYAutoRange1"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 14,
+        "method_name": "main"
+    }
+]

@@ -1,0 +1,81 @@
+    private void parseHeading(org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser$Tokenizer)
+    {
+        org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser this;
+        org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser$Tokenizer tokenizer;
+        java.lang.String level, dot, $r0, $r2, $r8, $r13, heading;
+        boolean $z0, $z1;
+        org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiVisitor $r1, $r4, $r10;
+        int $i0;
+        java.lang.StringBuilder $r3, $r5, $r6, $r7, $r9, $r11, $r12;
+
+        this := @this: org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser;
+
+        tokenizer := @parameter0: org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser$Tokenizer;
+
+        level = virtualinvoke tokenizer.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser$Tokenizer: java.lang.String nextToken(java.lang.String)>("123456789");
+
+        $z0 = virtualinvoke level.<java.lang.String: boolean matches(java.lang.String)>("[123456789]");
+
+        if $z0 != 0 goto label1;
+
+        $r10 = this.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser: org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiVisitor visitor>;
+
+        $r9 = new java.lang.StringBuilder;
+
+        specialinvoke $r9.<java.lang.StringBuilder: void <init>()>();
+
+        $r11 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("h");
+
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(level);
+
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        interfaceinvoke $r10.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiVisitor: void text(java.lang.String)>($r13);
+
+        return;
+
+     label1:
+        dot = virtualinvoke tokenizer.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser$Tokenizer: java.lang.String nextToken(java.lang.String)>(".\n");
+
+        $r0 = ".";
+
+        $z1 = virtualinvoke $r0.<java.lang.String: boolean equals(java.lang.Object)>(dot);
+
+        if $z1 != 0 goto label2;
+
+        $r4 = this.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser: org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiVisitor visitor>;
+
+        $r3 = new java.lang.StringBuilder;
+
+        specialinvoke $r3.<java.lang.StringBuilder: void <init>()>();
+
+        $r5 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("h");
+
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(level);
+
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(dot);
+
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        interfaceinvoke $r4.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiVisitor: void text(java.lang.String)>($r8);
+
+        return;
+
+     label2:
+        heading = virtualinvoke tokenizer.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser$Tokenizer: java.lang.String nextToken(java.lang.String)>("\n");
+
+        if heading != null goto label3;
+
+        heading = "";
+
+     label3:
+        $r1 = this.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser: org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiVisitor visitor>;
+
+        $i0 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(level);
+
+        $r2 = virtualinvoke heading.<java.lang.String: java.lang.String trim()>();
+
+        interfaceinvoke $r1.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiVisitor: void heading(int,java.lang.String)>($i0, $r2);
+
+        return;
+    }

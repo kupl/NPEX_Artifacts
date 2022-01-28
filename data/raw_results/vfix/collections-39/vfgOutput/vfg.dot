@@ -1,0 +1,14 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"567: ex = virtualinvoke reader.<org.apache.commons.collections.ExtendedProperties$PropertiesReader: java.lang.String readProperty()>()" [style=bold] [color=gold]
+"569: equalSign = virtualinvoke ex.<java.lang.String: int indexOf(int)>(61)" [style=bold] [color=red]
+"573: $r1 = virtualinvoke ex.<java.lang.String: java.lang.String substring(int)>($i0)" [style=bold] [color=red]
+"572: $r0 = virtualinvoke ex.<java.lang.String: java.lang.String substring(int,int)>(0, equalSign)" [style=bold] [color=red]
+"567: ex = virtualinvoke reader.<org.apache.commons.collections.ExtendedProperties$PropertiesReader: java.lang.String readProperty()>()"->"569: equalSign = virtualinvoke ex.<java.lang.String: int indexOf(int)>(61)";
+
+"567: ex = virtualinvoke reader.<org.apache.commons.collections.ExtendedProperties$PropertiesReader: java.lang.String readProperty()>()"->"572: $r0 = virtualinvoke ex.<java.lang.String: java.lang.String substring(int,int)>(0, equalSign)";
+
+"567: ex = virtualinvoke reader.<org.apache.commons.collections.ExtendedProperties$PropertiesReader: java.lang.String readProperty()>()"->"573: $r1 = virtualinvoke ex.<java.lang.String: java.lang.String substring(int)>($i0)";
+
+}

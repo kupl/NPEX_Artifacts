@@ -1,0 +1,27 @@
+[
+    {
+        "filepath": "core/src/main/java/feign/Response.java",
+        "line": 342,
+        "method_name": "caseInsensitiveCopyOf"
+    },
+    {
+        "filepath": "core/src/main/java/feign/Response.java",
+        "line": 52,
+        "method_name": "<init>"
+    },
+    {
+        "filepath": "core/src/main/java/feign/Response.java",
+        "line": 38,
+        "method_name": "<init>"
+    },
+    {
+        "filepath": "core/src/main/java/feign/Response.java",
+        "line": 133,
+        "method_name": "build"
+    },
+    {
+        "filepath": "core/src/test/java/feign/ResponseTest.java",
+        "line": 81,
+        "method_name": "headersAreOptional"
+    }
+]

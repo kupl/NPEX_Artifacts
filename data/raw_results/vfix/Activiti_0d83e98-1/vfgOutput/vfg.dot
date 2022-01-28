@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"56: manager = interfaceinvoke $r0.<javax.persistence.EntityManagerFactory: javax.persistence.EntityManager createEntityManager()>()" [color=red]
+"56: $r0 = <org.activiti.standalone.jpa.HistoricJPAVariableTest: javax.persistence.EntityManagerFactory entityManagerFactory>" [color=gold]
+"56: $r0 = <org.activiti.standalone.jpa.HistoricJPAVariableTest: javax.persistence.EntityManagerFactory entityManagerFactory>"->"56: manager = interfaceinvoke $r0.<javax.persistence.EntityManagerFactory: javax.persistence.EntityManager createEntityManager()>()" [style=dotted];
+
+}

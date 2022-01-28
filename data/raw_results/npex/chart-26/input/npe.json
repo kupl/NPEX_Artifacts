@@ -1,0 +1,9 @@
+{
+	"filepath": "org/jfree/chart/axis/Axis.java",
+	"line": 1192,
+	"deref_field": "owner",
+	"sink_field": "getEntityCollection",
+	"npe_class": "Axis",
+	"npe_method": "drawLabel",
+	"jvmti_identify_succeed": true
+}

@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"52: $r1 = this.<hu.oe.nik.szfmv.detector.classes.Detector: java.util.List worldObjects>" [label=1] [style=bold] [color=gold]
+"52: $i0 = interfaceinvoke $r1.<java.util.List: int size()>()" [label=1] [style=bold] [color=red]
+"52: $r1 = this.<hu.oe.nik.szfmv.detector.classes.Detector: java.util.List worldObjects>"->"52: $i0 = interfaceinvoke $r1.<java.util.List: int size()>()";
+
+}

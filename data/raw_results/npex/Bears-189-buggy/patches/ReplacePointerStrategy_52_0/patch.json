@@ -1,0 +1,5 @@
+{
+    "contents": "(worldObjects != null ? worldObjects : new java.util.ArrayList()).size()",
+    "original_filepath": "src/main/java/hu/oe/nik/szfmv/detector/classes/Detector.java",
+    "patched_lines": [64]
+}

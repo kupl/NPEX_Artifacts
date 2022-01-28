@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/commons/lang3/text/StrBuilder.java",
+	"line": 1319,
+	"deref_field": "str",
+	"sink_field": "length",
+	"npe_class": "StrBuilder",
+	"npe_method": "appendFixedWidthPadRight",
+	"jvmti_identify_succeed": true
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+        "line": 969,
+        "method_name": "addParameters"
+    },
+    {
+        "filepath": "dubbo-common/src/test/java/com/alibaba/dubbo/common/URLTest.java",
+        "line": 640,
+        "method_name": "testAddParameters"
+    }
+]

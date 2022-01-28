@@ -1,0 +1,378 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"21: main" [color=gold] [style=bold]
+"284: isJcrData" [color=red] [style=bold]
+"14: <clinit>" [style=bold]
+"175: checking" [style=bold]
+"28: void <init>(org.apache.sling.api.resource.Resource)" [style=bold]
+"119: mock" [style=bold]
+"214: public void <init>(org.apache.sling.security.impl.ContentDispositionFilter, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)" [style=bold]
+"59: public void <init>()" [style=bold]
+"243: invoke" [style=bold]
+"11: public void <init>()" [style=bold]
+"59: buildExpectations" [style=bold]
+"274: returnValue" [style=bold]
+"222: will" [style=bold]
+"121: allowing" [style=bold]
+"44: public void <init>()" [style=bold]
+"19: defaultNameFor" [style=bold]
+"126: mock" [style=bold]
+"38: public void <init>(org.apache.sling.api.SlingHttpServletResponse)" [style=bold]
+"59: <clinit>" [style=bold]
+"99: getLogger" [style=bold]
+"16: <clinit>" [style=bold]
+"108: setExpectationErrorTranslator" [style=bold]
+"42: public void <init>()" [style=bold]
+"75: checkLastExpectationWasFullySpecified" [style=bold]
+"22: add" [style=bold]
+"31: toExpectation" [style=bold]
+"23: next"
+"6: next"
+"15: hasNext"
+"18: hasNext"
+"17: public void <init>(java.lang.Object)" [style=bold]
+"67: currentBuilder" [style=bold]
+"55: setAction" [style=bold]
+"102: atLeast" [style=bold]
+"113: of" [style=bold]
+"35: indexOfFirstLowerCaseLetter" [style=bold]
+"27: imposterise" [style=bold]
+"7: public void <init>(org.jmock.api.Invokable)" [style=bold]
+"10: public void <init>(java.lang.Class, java.lang.Object, org.jmock.api.Invokable)" [style=bold]
+"246: public void <init>(org.jmock.Mockery, java.lang.Class, java.lang.String)" [style=bold]
+"42: <clinit>" [style=bold]
+"61: getLoggerFactoryClassStr"
+"57: getLoggerFactory" [style=bold]
+"42: reportFailure"
+"36: reportFailure"
+"63: getLogger" [style=bold]
+"22: private void <init>()"
+"11: public void <init>()" [style=bold]
+"30: public void <init>(org.jmock.api.Imposteriser)" [style=bold]
+"19: <clinit>" [style=bold]
+"15: <clinit>" [style=bold]
+"16: <clinit>" [style=bold]
+"103: checkWasFullySpecified" [style=bold]
+"56: setAction" [style=bold]
+"20: next"
+"12: <clinit>" [style=bold]
+"51: initialiseExpectationCapture" [style=bold]
+"27: atLeast" [style=bold]
+"64: captureExpectedObject" [style=bold]
+"31: void <init>(org.jmock.lib.JavaReflectionImposteriser, org.jmock.api.Invokable) throws java.lang.Throwable" [style=bold]
+"38: prepend" [style=bold]
+"31: combineLoadersOf" [style=bold]
+"12: public void <init>(org.jmock.api.Invokable)" [style=bold]
+"51: private void <init>()" [style=bold]
+"44: class$" [style=bold]
+"67: <clinit>" [style=bold]
+"34: put"
+"79: void <init>(java.lang.String)" [style=bold]
+"154: get"
+"69: createDefaultResults" [style=bold]
+"18: public void <init>()" [style=bold]
+"17: private void <init>()"
+"15: public void <init>()" [style=bold]
+"8: public void <init>(java.lang.Object)"
+"39: setCardinality" [style=bold]
+"20: public void <init>()" [style=bold]
+"31: between" [style=bold]
+"81: asMockedType" [style=bold]
+"261: captureExpectationTo" [style=bold]
+"36: setObjectMatcher" [style=bold]
+"8: public void <init>(java.lang.Object)" [style=bold]
+"35: combineLoadersOf" [style=bold]
+"49: <clinit>" [style=bold]
+"53: public void <init>()" [style=bold]
+"161: put"
+"38: public void <init>()" [style=bold]
+"48: addResult" [style=bold]
+"32: setCardinality" [style=bold]
+"20: public void <init>()" [style=bold]
+"17: public void <init>(int, int)" [style=bold]
+"6: public void <init>(org.jmock.api.Invokable)" [style=bold]
+"12: public void <init>(org.jmock.internal.ExpectationCapture, org.jmock.api.Action)" [style=bold]
+"42: access$200" [style=bold]
+"42: access$100" [style=bold]
+"9: public void <init>()"
+"59: addIfNewElement" [style=bold]
+"21: combine" [style=bold]
+"11: public void <init>()" [style=bold]
+"12: <clinit>" [style=bold]
+"40: anything"
+"52: anything"
+"12: public void <init>(java.lang.ClassLoader, java.lang.ClassLoader)"
+"18: public void <init>()"
+"21: public void <init>(java.lang.String)"
+"21: main"->"14: <clinit>";
+
+"21: main"->"175: checking";
+
+"21: main"->"28: void <init>(org.apache.sling.api.resource.Resource)";
+
+"21: main"->"119: mock";
+
+"21: main"->"214: public void <init>(org.apache.sling.security.impl.ContentDispositionFilter, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)";
+
+"21: main"->"59: public void <init>()";
+
+"21: main"->"243: invoke";
+
+"14: <clinit>"->"14: <clinit>";
+
+"14: <clinit>"->"11: public void <init>()";
+
+"175: checking"->"59: buildExpectations";
+
+"28: void <init>(org.apache.sling.api.resource.Resource)"->"274: returnValue";
+
+"28: void <init>(org.apache.sling.api.resource.Resource)"->"222: will";
+
+"28: void <init>(org.apache.sling.api.resource.Resource)"->"121: allowing";
+
+"28: void <init>(org.apache.sling.api.resource.Resource)"->"44: public void <init>()";
+
+"119: mock"->"19: defaultNameFor";
+
+"119: mock"->"126: mock";
+
+"214: public void <init>(org.apache.sling.security.impl.ContentDispositionFilter, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)"->"38: public void <init>(org.apache.sling.api.SlingHttpServletResponse)";
+
+"59: public void <init>()"->"59: <clinit>";
+
+"59: public void <init>()"->"99: getLogger";
+
+"11: public void <init>()"->"16: <clinit>";
+
+"11: public void <init>()"->"108: setExpectationErrorTranslator";
+
+"11: public void <init>()"->"42: public void <init>()";
+
+"59: buildExpectations"->"75: checkLastExpectationWasFullySpecified";
+
+"59: buildExpectations"->"22: add";
+
+"59: buildExpectations"->"31: toExpectation";
+
+"59: buildExpectations"->"23: next" [style=dotted];
+
+"59: buildExpectations"->"6: next" [style=dotted];
+
+"59: buildExpectations"->"15: hasNext" [style=dotted];
+
+"59: buildExpectations"->"18: hasNext" [style=dotted];
+
+"274: returnValue"->"17: public void <init>(java.lang.Object)";
+
+"222: will"->"67: currentBuilder";
+
+"222: will"->"55: setAction";
+
+"121: allowing"->"102: atLeast";
+
+"121: allowing"->"113: of";
+
+"19: defaultNameFor"->"35: indexOfFirstLowerCaseLetter";
+
+"126: mock"->"27: imposterise";
+
+"126: mock"->"7: public void <init>(org.jmock.api.Invokable)";
+
+"126: mock"->"10: public void <init>(java.lang.Class, java.lang.Object, org.jmock.api.Invokable)";
+
+"126: mock"->"246: public void <init>(org.jmock.Mockery, java.lang.Class, java.lang.String)";
+
+"59: <clinit>"->"42: <clinit>";
+
+"59: <clinit>"->"61: getLoggerFactoryClassStr" [style=dotted];
+
+"59: <clinit>"->"57: getLoggerFactory";
+
+"59: <clinit>"->"59: <clinit>";
+
+"59: <clinit>"->"42: reportFailure" [style=dotted];
+
+"59: <clinit>"->"36: reportFailure" [style=dotted];
+
+"99: getLogger"->"59: <clinit>";
+
+"99: getLogger"->"63: getLogger";
+
+"16: <clinit>"->"16: <clinit>";
+
+"16: <clinit>"->"22: private void <init>()" [style=dotted];
+
+"42: public void <init>()"->"11: public void <init>()";
+
+"42: public void <init>()"->"30: public void <init>(org.jmock.api.Imposteriser)";
+
+"42: public void <init>()"->"19: <clinit>";
+
+"42: public void <init>()"->"15: <clinit>";
+
+"42: public void <init>()"->"16: <clinit>";
+
+"75: checkLastExpectationWasFullySpecified"->"103: checkWasFullySpecified";
+
+"31: toExpectation"->"56: setAction";
+
+"6: next"->"20: next" [style=dotted];
+
+"15: hasNext"->"18: hasNext" [style=dotted];
+
+"15: hasNext"->"15: hasNext" [style=dotted];
+
+"55: setAction"->"56: setAction";
+
+"102: atLeast"->"12: <clinit>";
+
+"102: atLeast"->"51: initialiseExpectationCapture";
+
+"102: atLeast"->"27: atLeast";
+
+"113: of"->"64: captureExpectedObject";
+
+"27: imposterise"->"31: void <init>(org.jmock.lib.JavaReflectionImposteriser, org.jmock.api.Invokable) throws java.lang.Throwable";
+
+"27: imposterise"->"38: prepend";
+
+"27: imposterise"->"31: combineLoadersOf";
+
+"7: public void <init>(org.jmock.api.Invokable)"->"12: public void <init>(org.jmock.api.Invokable)";
+
+"42: <clinit>"->"42: <clinit>";
+
+"42: <clinit>"->"51: private void <init>()";
+
+"42: <clinit>"->"44: class$";
+
+"61: getLoggerFactoryClassStr"->"42: <clinit>" [style=dotted];
+
+"63: getLogger"->"67: <clinit>";
+
+"63: getLogger"->"34: put" [style=dotted];
+
+"63: getLogger"->"79: void <init>(java.lang.String)";
+
+"63: getLogger"->"154: get" [style=dotted];
+
+"30: public void <init>(org.jmock.api.Imposteriser)"->"69: createDefaultResults";
+
+"19: <clinit>"->"19: <clinit>";
+
+"19: <clinit>"->"18: public void <init>()";
+
+"15: <clinit>"->"15: <clinit>";
+
+"15: <clinit>"->"17: private void <init>()" [style=dotted];
+
+"16: <clinit>"->"16: <clinit>";
+
+"16: <clinit>"->"15: public void <init>()";
+
+"20: next"->"8: public void <init>(java.lang.Object)" [style=dotted];
+
+"20: next"->"23: next" [style=dotted];
+
+"20: next"->"6: next" [style=dotted];
+
+"12: <clinit>"->"12: <clinit>";
+
+"12: <clinit>"->"27: atLeast";
+
+"51: initialiseExpectationCapture"->"75: checkLastExpectationWasFullySpecified";
+
+"51: initialiseExpectationCapture"->"39: setCardinality";
+
+"51: initialiseExpectationCapture"->"20: public void <init>()";
+
+"27: atLeast"->"12: <clinit>";
+
+"27: atLeast"->"31: between";
+
+"64: captureExpectedObject"->"81: asMockedType";
+
+"64: captureExpectedObject"->"261: captureExpectationTo";
+
+"64: captureExpectedObject"->"36: setObjectMatcher";
+
+"64: captureExpectedObject"->"8: public void <init>(java.lang.Object)";
+
+"31: combineLoadersOf"->"35: combineLoadersOf";
+
+"51: private void <init>()"->"49: <clinit>";
+
+"51: private void <init>()"->"53: public void <init>()";
+
+"67: <clinit>"->"67: <clinit>";
+
+"34: put"->"161: put" [style=dotted];
+
+"79: void <init>(java.lang.String)"->"38: public void <init>()";
+
+"154: get"->"154: get" [style=dotted];
+
+"69: createDefaultResults"->"48: addResult";
+
+"39: setCardinality"->"32: setCardinality";
+
+"20: public void <init>()"->"20: public void <init>()";
+
+"31: between"->"12: <clinit>";
+
+"31: between"->"17: public void <init>(int, int)";
+
+"261: captureExpectationTo"->"27: imposterise";
+
+"261: captureExpectationTo"->"6: public void <init>(org.jmock.api.Invokable)";
+
+"261: captureExpectationTo"->"12: public void <init>(org.jmock.internal.ExpectationCapture, org.jmock.api.Action)";
+
+"261: captureExpectationTo"->"42: access$200";
+
+"261: captureExpectationTo"->"42: access$100";
+
+"8: public void <init>(java.lang.Object)"->"9: public void <init>()" [style=dotted];
+
+"35: combineLoadersOf"->"59: addIfNewElement";
+
+"35: combineLoadersOf"->"21: combine";
+
+"49: <clinit>"->"49: <clinit>";
+
+"49: <clinit>"->"53: public void <init>()";
+
+"161: put"->"34: put" [style=dotted];
+
+"48: addResult"->"34: put" [style=dotted];
+
+"20: public void <init>()"->"12: <clinit>";
+
+"20: public void <init>()"->"11: public void <init>()";
+
+"20: public void <init>()"->"12: <clinit>";
+
+"20: public void <init>()"->"40: anything" [style=dotted];
+
+"20: public void <init>()"->"52: anything" [style=dotted];
+
+"6: public void <init>(org.jmock.api.Invokable)"->"12: public void <init>(org.jmock.api.Invokable)";
+
+"21: combine"->"12: public void <init>(java.lang.ClassLoader, java.lang.ClassLoader)" [style=dotted];
+
+"12: <clinit>"->"12: <clinit>";
+
+"12: <clinit>"->"11: public void <init>()";
+
+"40: anything"->"18: public void <init>()" [style=dotted];
+
+"52: anything"->"21: public void <init>(java.lang.String)" [style=dotted];
+
+"18: public void <init>()"->"21: public void <init>(java.lang.String)" [style=dotted];
+
+"21: public void <init>(java.lang.String)"->"9: public void <init>()" [style=dotted];
+
+"243: invoke"->"284: isJcrData";
+
+}

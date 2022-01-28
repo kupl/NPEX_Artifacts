@@ -1,0 +1,5 @@
+{
+    "contents": "if (uri.getHost() == null) {\n    return null;\n}",
+    "original_filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+    "patched_lines": [111]
+}

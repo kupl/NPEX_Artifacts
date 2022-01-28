@@ -1,0 +1,18 @@
+    public double solve(double, double) throws org.apache.commons.math.MaxIterationsExceededException, org.apache.commons.math.FunctionEvaluationException
+    {
+        org.apache.commons.math.analysis.solvers.BisectionSolver this;
+        double min, max, $d0;
+        org.apache.commons.math.analysis.UnivariateRealFunction $r0;
+
+        this := @this: org.apache.commons.math.analysis.solvers.BisectionSolver;
+
+        min := @parameter0: double;
+
+        max := @parameter1: double;
+
+        $r0 = this.<org.apache.commons.math.analysis.solvers.BisectionSolver: org.apache.commons.math.analysis.UnivariateRealFunction f>;
+
+        $d0 = virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: double solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double)>($r0, min, max);
+
+        return $d0;
+    }

@@ -1,0 +1,281 @@
+    public org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult auth(io.netty.channel.ChannelHandlerContext, org.apache.shardingsphere.db.protocol.payload.PacketPayload)
+    {
+        org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine this;
+        io.netty.channel.ChannelHandlerContext context;
+        org.apache.shardingsphere.db.protocol.payload.PacketPayload payload;
+        io.netty.buffer.ByteBuf $r0, $r1, $r2, $r67;
+        int $i0, $i1, $i2;
+        java.util.concurrent.atomic.AtomicBoolean $r4, $r45;
+        boolean $z0, $z1, $z2, $z3;
+        org.apache.shardingsphere.db.protocol.postgresql.payload.PostgreSQLPacketPayload $r5, $r7, $r44;
+        org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLPasswordMessagePacket $r6;
+        org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult $r8, $r10, $r25, $r27, $r29, $r34, $r41, $r42, $r53, $r59, $r66, $r70;
+        java.lang.String $r9, $r11, $r26, $r28, $r31, $r38, $r63, databaseName, responsePacket#4;
+        byte[] $r12, $r55, $r57;
+        org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode $r13, $r14, $r30, $r36, $r50, $r62;
+        org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLAuthenticationOKPacket $r15;
+        org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLParameterStatusPacket $r17, $r19, $r21;
+        org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLReadyForQueryPacket $r23;
+        java.lang.Object[] $r35, $r61;
+        java.lang.Character $r37;
+        org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLComStartupPacket $r43;
+        java.util.Map $r46, $r48;
+        java.lang.Object $r47, $r49;
+        org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLRandomGenerator $r54;
+        org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLAuthenticationMD5PasswordPacket $r56;
+        org.apache.shardingsphere.proxy.backend.schema.ProxySchemaContexts $r60;
+        org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLSSLNegativePacket $r68;
+        org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLErrorResponsePacket responsePacket, databaseName#7;
+        char comStartupPacket#6;
+        org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult responsePacket#9;
+
+        this := @this: org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine;
+
+        context := @parameter0: io.netty.channel.ChannelHandlerContext;
+
+        payload := @parameter1: org.apache.shardingsphere.db.protocol.payload.PacketPayload;
+
+        $r0 = interfaceinvoke payload.<org.apache.shardingsphere.db.protocol.payload.PacketPayload: io.netty.buffer.ByteBuf getByteBuf()>();
+
+        $r1 = virtualinvoke $r0.<io.netty.buffer.ByteBuf: io.netty.buffer.ByteBuf markReaderIndex()>();
+
+        $i0 = virtualinvoke $r1.<io.netty.buffer.ByteBuf: int readInt()>();
+
+        if 8 != $i0 goto label1;
+
+        $r67 = interfaceinvoke payload.<org.apache.shardingsphere.db.protocol.payload.PacketPayload: io.netty.buffer.ByteBuf getByteBuf()>();
+
+        $i2 = virtualinvoke $r67.<io.netty.buffer.ByteBuf: int readInt()>();
+
+        if 80877103 != $i2 goto label1;
+
+        $r68 = new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLSSLNegativePacket;
+
+        specialinvoke $r68.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLSSLNegativePacket: void <init>()>();
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)>($r68);
+
+        $r70 = staticinvoke <org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult continued()>();
+
+        return $r70;
+
+     label1:
+        $r2 = interfaceinvoke payload.<org.apache.shardingsphere.db.protocol.payload.PacketPayload: io.netty.buffer.ByteBuf getByteBuf()>();
+
+        virtualinvoke $r2.<io.netty.buffer.ByteBuf: io.netty.buffer.ByteBuf resetReaderIndex()>();
+
+        $r4 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: java.util.concurrent.atomic.AtomicBoolean startupMessageReceived>;
+
+        $z0 = virtualinvoke $r4.<java.util.concurrent.atomic.AtomicBoolean: boolean get()>();
+
+        if $z0 != 0 goto label5;
+
+        $r43 = new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLComStartupPacket;
+
+        $r44 = (org.apache.shardingsphere.db.protocol.postgresql.payload.PostgreSQLPacketPayload) payload;
+
+        specialinvoke $r43.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLComStartupPacket: void <init>(org.apache.shardingsphere.db.protocol.postgresql.payload.PostgreSQLPacketPayload)>($r44);
+
+        $r45 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: java.util.concurrent.atomic.AtomicBoolean startupMessageReceived>;
+
+        virtualinvoke $r45.<java.util.concurrent.atomic.AtomicBoolean: void set(boolean)>(1);
+
+        $r46 = virtualinvoke $r43.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLComStartupPacket: java.util.Map getParametersMap()>();
+
+        $r47 = interfaceinvoke $r46.<java.util.Map: java.lang.Object get(java.lang.Object)>("database");
+
+        databaseName = (java.lang.String) $r47;
+
+        $z1 = staticinvoke <com.google.common.base.Strings: boolean isNullOrEmpty(java.lang.String)>(databaseName);
+
+        if $z1 != 0 goto label2;
+
+        $r60 = staticinvoke <org.apache.shardingsphere.proxy.backend.schema.ProxySchemaContexts: org.apache.shardingsphere.proxy.backend.schema.ProxySchemaContexts getInstance()>();
+
+        $z3 = virtualinvoke $r60.<org.apache.shardingsphere.proxy.backend.schema.ProxySchemaContexts: boolean schemaExists(java.lang.String)>(databaseName);
+
+        if $z3 != 0 goto label2;
+
+        $r62 = <org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode: org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode INVALID_CATALOG_NAME>;
+
+        $r61 = newarray (java.lang.Object)[1];
+
+        $r61[0] = databaseName;
+
+        $r63 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("database \"%s\" does not exist", $r61);
+
+        responsePacket = specialinvoke this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLErrorResponsePacket createErrorPacket(org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode,java.lang.String)>($r62, $r63);
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)>(responsePacket);
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture close()>();
+
+        $r66 = staticinvoke <org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult continued()>();
+
+        return $r66;
+
+     label2:
+        $r48 = virtualinvoke $r43.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLComStartupPacket: java.util.Map getParametersMap()>();
+
+        $r49 = interfaceinvoke $r48.<java.util.Map: java.lang.Object get(java.lang.Object)>("user");
+
+        responsePacket#4 = (java.lang.String) $r49;
+
+        if null == responsePacket#4 goto label3;
+
+        $z2 = virtualinvoke responsePacket#4.<java.lang.String: boolean isEmpty()>();
+
+        if $z2 == 0 goto label4;
+
+     label3:
+        $r50 = <org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode: org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode SQLSERVER_REJECTED_ESTABLISHMENT_OF_SQLCONNECTION>;
+
+        responsePacket = specialinvoke this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLErrorResponsePacket createErrorPacket(org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode,java.lang.String)>($r50, "user not set in StartupMessage");
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)>(responsePacket);
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture close()>();
+
+        $r53 = staticinvoke <org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult continued()>();
+
+        return $r53;
+
+     label4:
+        $r54 = staticinvoke <org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLRandomGenerator: org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLRandomGenerator getInstance()>();
+
+        $r55 = virtualinvoke $r54.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLRandomGenerator: byte[] generateRandomBytes(int)>(4);
+
+        this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: byte[] md5Salt> = $r55;
+
+        $r56 = new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLAuthenticationMD5PasswordPacket;
+
+        $r57 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: byte[] md5Salt>;
+
+        specialinvoke $r56.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLAuthenticationMD5PasswordPacket: void <init>(byte[])>($r57);
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)>($r56);
+
+        $r59 = staticinvoke <org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult continued(java.lang.String,java.lang.String)>(responsePacket#4, databaseName);
+
+        return $r59;
+
+     label5:
+        $r5 = (org.apache.shardingsphere.db.protocol.postgresql.payload.PostgreSQLPacketPayload) payload;
+
+        $i1 = virtualinvoke $r5.<org.apache.shardingsphere.db.protocol.postgresql.payload.PostgreSQLPacketPayload: int readInt1()>();
+
+        comStartupPacket#6 = (char) $i1;
+
+        if 112 == comStartupPacket#6 goto label6;
+
+        $r36 = <org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode: org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode SQLSERVER_REJECTED_ESTABLISHMENT_OF_SQLCONNECTION>;
+
+        $r35 = newarray (java.lang.Object)[1];
+
+        $r37 = staticinvoke <java.lang.Character: java.lang.Character valueOf(char)>(comStartupPacket#6);
+
+        $r35[0] = $r37;
+
+        $r38 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("PasswordMessage is expected, message type \'p\', but not \'%s\'", $r35);
+
+        databaseName#7 = specialinvoke this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLErrorResponsePacket createErrorPacket(org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode,java.lang.String)>($r36, $r38);
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)>(databaseName#7);
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture close()>();
+
+        $r41 = staticinvoke <org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult continued()>();
+
+        this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult currentAuthResult> = $r41;
+
+        $r42 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult currentAuthResult>;
+
+        return $r42;
+
+     label6:
+        $r6 = new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLPasswordMessagePacket;
+
+        $r7 = (org.apache.shardingsphere.db.protocol.postgresql.payload.PostgreSQLPacketPayload) payload;
+
+        specialinvoke $r6.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLPasswordMessagePacket: void <init>(org.apache.shardingsphere.db.protocol.postgresql.payload.PostgreSQLPacketPayload)>($r7);
+
+        $r8 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult currentAuthResult>;
+
+        $r9 = virtualinvoke $r8.<org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: java.lang.String getUsername()>();
+
+        $r10 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult currentAuthResult>;
+
+        if $r10 != null goto label7;
+
+        return null;
+
+     label7:
+        $r11 = virtualinvoke $r10.<org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: java.lang.String getDatabase()>();
+
+        $r12 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: byte[] md5Salt>;
+
+        responsePacket#9 = staticinvoke <org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationHandler: org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult loginWithMd5Password(java.lang.String,java.lang.String,byte[],org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLPasswordMessagePacket)>($r9, $r11, $r12, $r6);
+
+        $r13 = <org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode: org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode SUCCESSFUL_COMPLETION>;
+
+        $r14 = virtualinvoke responsePacket#9.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult: org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode getErrorCode()>();
+
+        if $r13 == $r14 goto label8;
+
+        $r30 = virtualinvoke responsePacket#9.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult: org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode getErrorCode()>();
+
+        $r31 = virtualinvoke responsePacket#9.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLLoginResult: java.lang.String getErrorMessage()>();
+
+        responsePacket = specialinvoke this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLErrorResponsePacket createErrorPacket(org.apache.shardingsphere.db.protocol.postgresql.constant.PostgreSQLErrorCode,java.lang.String)>($r30, $r31);
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)>(responsePacket);
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture close()>();
+
+        $r34 = staticinvoke <org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult continued()>();
+
+        return $r34;
+
+     label8:
+        $r15 = new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLAuthenticationOKPacket;
+
+        specialinvoke $r15.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLAuthenticationOKPacket: void <init>(boolean)>(1);
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture write(java.lang.Object)>($r15);
+
+        $r17 = new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLParameterStatusPacket;
+
+        specialinvoke $r17.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLParameterStatusPacket: void <init>(java.lang.String,java.lang.String)>("server_version", "12.3");
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture write(java.lang.Object)>($r17);
+
+        $r19 = new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLParameterStatusPacket;
+
+        specialinvoke $r19.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLParameterStatusPacket: void <init>(java.lang.String,java.lang.String)>("client_encoding", "UTF8");
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture write(java.lang.Object)>($r19);
+
+        $r21 = new org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLParameterStatusPacket;
+
+        specialinvoke $r21.<org.apache.shardingsphere.db.protocol.postgresql.packet.handshake.PostgreSQLParameterStatusPacket: void <init>(java.lang.String,java.lang.String)>("server_encoding", "UTF8");
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture write(java.lang.Object)>($r21);
+
+        $r23 = new org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLReadyForQueryPacket;
+
+        specialinvoke $r23.<org.apache.shardingsphere.db.protocol.postgresql.packet.generic.PostgreSQLReadyForQueryPacket: void <init>()>();
+
+        interfaceinvoke context.<io.netty.channel.ChannelHandlerContext: io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)>($r23);
+
+        $r25 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult currentAuthResult>;
+
+        $r26 = virtualinvoke $r25.<org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: java.lang.String getUsername()>();
+
+        $r27 = this.<org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult currentAuthResult>;
+
+        $r28 = virtualinvoke $r27.<org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: java.lang.String getDatabase()>();
+
+        $r29 = staticinvoke <org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult: org.apache.shardingsphere.proxy.frontend.engine.AuthenticationResult finished(java.lang.String,java.lang.String)>($r26, $r28);
+
+        return $r29;
+    }

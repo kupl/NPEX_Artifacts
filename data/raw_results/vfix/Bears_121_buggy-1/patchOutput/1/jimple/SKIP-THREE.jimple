@@ -1,0 +1,160 @@
+    public transient org.traccar.DeviceSession getDeviceSession(org.jboss.netty.channel.Channel, java.net.SocketAddress, java.lang.String[])
+    {
+        org.traccar.BaseProtocolDecoder this;
+        org.jboss.netty.channel.Channel channel;
+        java.net.SocketAddress remoteAddress;
+        java.lang.String[] uniqueIds;
+        org.jboss.netty.channel.ChannelPipeline $r0;
+        org.jboss.netty.channel.ChannelHandler $r1;
+        byte $b0, $b1, $b2, $b4;
+        org.traccar.database.ConnectionManager $r2, $r4, $r9, $r10, $r17, $r18;
+        org.traccar.DeviceSession $r3, $r7, $r8, $r14, deviceSession, $r20;
+        org.traccar.Protocol $r5, $r11, $r19;
+        org.traccar.Config $r6;
+        boolean $z0, $z1;
+        java.util.Map $r12, $r15;
+        java.lang.Object $r13;
+        long $l3, deviceId;
+        int $i5;
+
+        this := @this: org.traccar.BaseProtocolDecoder;
+
+        channel := @parameter0: org.jboss.netty.channel.Channel;
+
+        remoteAddress := @parameter1: java.net.SocketAddress;
+
+        uniqueIds := @parameter2: java.lang.String[];
+
+        if channel != null goto label01;
+
+        return null;
+
+     label01:
+        $r0 = interfaceinvoke channel.<org.jboss.netty.channel.Channel: org.jboss.netty.channel.ChannelPipeline getPipeline()>();
+
+        $r1 = interfaceinvoke $r0.<org.jboss.netty.channel.ChannelPipeline: org.jboss.netty.channel.ChannelHandler get(java.lang.Class)>(class "Lorg/jboss/netty/handler/codec/http/HttpRequestDecoder;");
+
+        if $r1 != null goto label02;
+
+        $r6 = staticinvoke <org.traccar.Context: org.traccar.Config getConfig()>();
+
+        $z0 = virtualinvoke $r6.<org.traccar.Config: boolean getBoolean(java.lang.String)>("decoder.ignoreSessionCache");
+
+        if $z0 == 0 goto label05;
+
+     label02:
+        deviceId = specialinvoke this.<org.traccar.BaseProtocolDecoder: long findDeviceId(java.net.SocketAddress,java.lang.String[])>(remoteAddress, uniqueIds);
+
+        $b0 = deviceId cmp 0L;
+
+        if $b0 == 0 goto label04;
+
+        $r2 = staticinvoke <org.traccar.Context: org.traccar.database.ConnectionManager getConnectionManager()>();
+
+        if $r2 == null goto label03;
+
+        $r4 = staticinvoke <org.traccar.Context: org.traccar.database.ConnectionManager getConnectionManager()>();
+
+        $r5 = this.<org.traccar.BaseProtocolDecoder: org.traccar.Protocol protocol>;
+
+        virtualinvoke $r4.<org.traccar.database.ConnectionManager: void addActiveDevice(long,org.traccar.Protocol,org.jboss.netty.channel.Channel,java.net.SocketAddress)>(deviceId, $r5, channel, remoteAddress);
+
+     label03:
+        $r3 = new org.traccar.DeviceSession;
+
+        specialinvoke $r3.<org.traccar.DeviceSession: void <init>(long)>(deviceId);
+
+        return $r3;
+
+     label04:
+        return null;
+
+     label05:
+        $z1 = channel instanceof org.jboss.netty.channel.socket.DatagramChannel;
+
+        if $z1 == 0 goto label10;
+
+        deviceId = specialinvoke this.<org.traccar.BaseProtocolDecoder: long findDeviceId(java.net.SocketAddress,java.lang.String[])>(remoteAddress, uniqueIds);
+
+        $r12 = this.<org.traccar.BaseProtocolDecoder: java.util.Map addressDeviceSessions>;
+
+        $r13 = interfaceinvoke $r12.<java.util.Map: java.lang.Object get(java.lang.Object)>(remoteAddress);
+
+        deviceSession = (org.traccar.DeviceSession) $r13;
+
+        if deviceSession == null goto label07;
+
+        $l3 = virtualinvoke deviceSession.<org.traccar.DeviceSession: long getDeviceId()>();
+
+        $b4 = $l3 cmp deviceId;
+
+        if $b4 == 0 goto label06;
+
+        $i5 = lengthof uniqueIds;
+
+        if $i5 != 0 goto label07;
+
+     label06:
+        return deviceSession;
+
+     label07:
+        $b2 = deviceId cmp 0L;
+
+        if $b2 == 0 goto label09;
+
+        $r14 = new org.traccar.DeviceSession;
+
+        specialinvoke $r14.<org.traccar.DeviceSession: void <init>(long)>(deviceId);
+
+        $r15 = this.<org.traccar.BaseProtocolDecoder: java.util.Map addressDeviceSessions>;
+
+        interfaceinvoke $r15.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(remoteAddress, $r14);
+
+        $r17 = staticinvoke <org.traccar.Context: org.traccar.database.ConnectionManager getConnectionManager()>();
+
+        if $r17 == null goto label08;
+
+        $r18 = staticinvoke <org.traccar.Context: org.traccar.database.ConnectionManager getConnectionManager()>();
+
+        $r19 = this.<org.traccar.BaseProtocolDecoder: org.traccar.Protocol protocol>;
+
+        virtualinvoke $r18.<org.traccar.database.ConnectionManager: void addActiveDevice(long,org.traccar.Protocol,org.jboss.netty.channel.Channel,java.net.SocketAddress)>(deviceId, $r19, channel, remoteAddress);
+
+     label08:
+        return $r14;
+
+     label09:
+        return null;
+
+     label10:
+        $r7 = this.<org.traccar.BaseProtocolDecoder: org.traccar.DeviceSession channelDeviceSession>;
+
+        if $r7 != null goto label11;
+
+        deviceId = specialinvoke this.<org.traccar.BaseProtocolDecoder: long findDeviceId(java.net.SocketAddress,java.lang.String[])>(remoteAddress, uniqueIds);
+
+        $b1 = deviceId cmp 0L;
+
+        if $b1 == 0 goto label11;
+
+        $r8 = new org.traccar.DeviceSession;
+
+        specialinvoke $r8.<org.traccar.DeviceSession: void <init>(long)>(deviceId);
+
+        this.<org.traccar.BaseProtocolDecoder: org.traccar.DeviceSession channelDeviceSession> = $r8;
+
+        $r9 = staticinvoke <org.traccar.Context: org.traccar.database.ConnectionManager getConnectionManager()>();
+
+        if $r9 == null goto label11;
+
+        $r10 = staticinvoke <org.traccar.Context: org.traccar.database.ConnectionManager getConnectionManager()>();
+
+        $r11 = this.<org.traccar.BaseProtocolDecoder: org.traccar.Protocol protocol>;
+
+        virtualinvoke $r10.<org.traccar.database.ConnectionManager: void addActiveDevice(long,org.traccar.Protocol,org.jboss.netty.channel.Channel,java.net.SocketAddress)>(deviceId, $r11, channel, remoteAddress);
+
+     label11:
+        $r20 = this.<org.traccar.BaseProtocolDecoder: org.traccar.DeviceSession channelDeviceSession>;
+
+        return $r20;
+    }

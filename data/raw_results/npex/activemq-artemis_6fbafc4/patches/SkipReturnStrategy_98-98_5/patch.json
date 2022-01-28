@@ -1,0 +1,5 @@
+{
+    "contents": "if (inList == null) {\n    return null;\n}",
+    "original_filepath": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+    "patched_lines": [98]
+}

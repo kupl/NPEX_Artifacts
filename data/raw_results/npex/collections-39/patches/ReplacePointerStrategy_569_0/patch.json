@@ -1,0 +1,5 @@
+{
+    "contents": "(line != null ? line : \"null\").indexOf('=')",
+    "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+    "patched_lines": [576]
+}

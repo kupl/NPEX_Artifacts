@@ -1,0 +1,5 @@
+{
+    "contents": "org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders != null ? inHeaders.getAlgorithm() : \"\")",
+    "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+    "patched_lines": [402]
+}

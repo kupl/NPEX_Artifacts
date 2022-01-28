@@ -1,0 +1,5 @@
+{
+    "contents": "final org.apache.commons.pool2.PooledObject<T> p = (objectDeque != null) ? objectDeque.getAllObjects().get(new org.apache.commons.pool2.impl.BaseGenericObjectPool.IdentityWrapper<>(obj)) : null",
+    "original_filepath": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+    "patched_lines": [473]
+}

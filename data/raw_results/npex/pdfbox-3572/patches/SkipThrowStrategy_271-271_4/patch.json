@@ -1,0 +1,5 @@
+{
+    "contents": "if (decryptCipher.update(buffer, 0, n) == null) {\n    throw new java.io.IOException();\n}",
+    "original_filepath": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+    "patched_lines": [275]
+}

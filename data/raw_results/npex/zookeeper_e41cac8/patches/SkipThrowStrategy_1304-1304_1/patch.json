@@ -1,0 +1,5 @@
+{
+    "contents": "if (connThrottle == null) {\n    throw new org.apache.zookeeper.server.ClientCnxnLimitException();\n}",
+    "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+    "patched_lines": [1299]
+}

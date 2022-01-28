@@ -1,0 +1,159 @@
+    public org.apache.felix.scrplugin.description.ClassDescription processClass(java.lang.Class, java.lang.String) throws org.apache.felix.scrplugin.SCRDescriptorFailureException, org.apache.felix.scrplugin.SCRDescriptorException
+    {
+        org.apache.felix.scrplugin.helper.ClassScanner this;
+        java.lang.Class annotatedClass;
+        java.lang.String location, $r1, $r2, $r3, $r17, $r19, $r24, $r27, pathToClassFile;
+        java.io.InputStream input, $r29;
+        java.util.List annotations;
+        java.lang.StringBuilder $r0, $r4, $r13, $r15, $r16, $r18, $r23, $r25, $r26;
+        org.apache.felix.scrplugin.Project $r5, $r6;
+        java.lang.ClassLoader $r7;
+        org.objectweb.asm.ClassReader $r8;
+        org.objectweb.asm.tree.ClassNode $r9;
+        int $i0;
+        org.apache.felix.scrplugin.description.ClassDescription $r10;
+        org.apache.felix.scrplugin.annotations.ScannedClass $r11;
+        org.apache.felix.scrplugin.annotations.AnnotationProcessor $r12;
+        org.apache.felix.scrplugin.Log $r14;
+        java.lang.Throwable $r20;
+        java.lang.IllegalArgumentException $r21;
+        org.apache.felix.scrplugin.SCRDescriptorException $r22;
+        java.io.IOException $r28;
+
+        this := @this: org.apache.felix.scrplugin.helper.ClassScanner;
+
+        annotatedClass := @parameter0: java.lang.Class;
+
+        location := @parameter1: java.lang.String;
+
+     label01:
+        $r0 = new java.lang.StringBuilder;
+
+        $r1 = virtualinvoke annotatedClass.<java.lang.Class: java.lang.String getName()>();
+
+        $r2 = virtualinvoke $r1.<java.lang.String: java.lang.String replace(char,char)>(46, 47);
+
+        $r3 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r2);
+
+        specialinvoke $r0.<java.lang.StringBuilder: void <init>(java.lang.String)>($r3);
+
+        $r4 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".class");
+
+        pathToClassFile = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        $r5 = this.<org.apache.felix.scrplugin.helper.ClassScanner: org.apache.felix.scrplugin.Project project>;
+
+        if $r5 != null goto label02;
+
+        $r29 = null;
+
+        goto label03;
+
+     label02:
+        $r6 = this.<org.apache.felix.scrplugin.helper.ClassScanner: org.apache.felix.scrplugin.Project project>;
+
+        $r7 = virtualinvoke $r6.<org.apache.felix.scrplugin.Project: java.lang.ClassLoader getClassLoader()>();
+
+        $r29 = virtualinvoke $r7.<java.lang.ClassLoader: java.io.InputStream getResourceAsStream(java.lang.String)>(pathToClassFile);
+
+     label03:
+        input = $r29;
+
+     label04:
+        $r8 = new org.objectweb.asm.ClassReader;
+
+        specialinvoke $r8.<org.objectweb.asm.ClassReader: void <init>(java.io.InputStream)>($r29);
+
+        goto label07;
+
+     label05:
+        $r20 := @caughtexception;
+
+        if input != null goto label06;
+
+        return null;
+
+     label06:
+        virtualinvoke input.<java.io.InputStream: void close()>();
+
+        throw $r20;
+
+     label07:
+        virtualinvoke $r29.<java.io.InputStream: void close()>();
+
+        $r9 = new org.objectweb.asm.tree.ClassNode;
+
+        specialinvoke $r9.<org.objectweb.asm.tree.ClassNode: void <init>()>();
+
+        virtualinvoke $r8.<org.objectweb.asm.ClassReader: void accept(org.objectweb.asm.ClassVisitor,int)>($r9, 7);
+
+        annotations = specialinvoke this.<org.apache.felix.scrplugin.helper.ClassScanner: java.util.List extractAnnotation(org.objectweb.asm.tree.ClassNode,java.lang.Class)>($r9, annotatedClass);
+
+        $i0 = interfaceinvoke annotations.<java.util.List: int size()>();
+
+        if $i0 <= 0 goto label11;
+
+        $r10 = new org.apache.felix.scrplugin.description.ClassDescription;
+
+        specialinvoke $r10.<org.apache.felix.scrplugin.description.ClassDescription: void <init>(java.lang.Class,java.lang.String)>(annotatedClass, location);
+
+        $r12 = this.<org.apache.felix.scrplugin.helper.ClassScanner: org.apache.felix.scrplugin.annotations.AnnotationProcessor aProcessor>;
+
+        $r11 = new org.apache.felix.scrplugin.annotations.ScannedClass;
+
+        specialinvoke $r11.<org.apache.felix.scrplugin.annotations.ScannedClass: void <init>(java.util.List,java.lang.Class)>(annotations, annotatedClass);
+
+        interfaceinvoke $r12.<org.apache.felix.scrplugin.annotations.AnnotationProcessor: void process(org.apache.felix.scrplugin.annotations.ScannedClass,org.apache.felix.scrplugin.description.ClassDescription)>($r11, $r10);
+
+        $r14 = this.<org.apache.felix.scrplugin.helper.ClassScanner: org.apache.felix.scrplugin.Log log>;
+
+        $r13 = new java.lang.StringBuilder;
+
+        specialinvoke $r13.<java.lang.StringBuilder: void <init>(java.lang.String)>("Found descriptions ");
+
+        $r15 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r10);
+
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" in ");
+
+        $r17 = virtualinvoke annotatedClass.<java.lang.Class: java.lang.String getName()>();
+
+        $r18 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r17);
+
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        interfaceinvoke $r14.<org.apache.felix.scrplugin.Log: void debug(java.lang.String)>($r19);
+
+     label08:
+        return $r10;
+
+     label09:
+        $r21 := @caughtexception;
+
+        $r22 = new org.apache.felix.scrplugin.SCRDescriptorException;
+
+        $r23 = new java.lang.StringBuilder;
+
+        specialinvoke $r23.<java.lang.StringBuilder: void <init>(java.lang.String)>("Unable to scan class files: ");
+
+        $r24 = virtualinvoke annotatedClass.<java.lang.Class: java.lang.String getName()>();
+
+        $r25 = virtualinvoke $r23.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r24);
+
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" (Class file format probably not supported by ASM ?)");
+
+        $r27 = virtualinvoke $r26.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke $r22.<org.apache.felix.scrplugin.SCRDescriptorException: void <init>(java.lang.String,java.lang.String,java.lang.Throwable)>($r27, location, $r21);
+
+        throw $r22;
+
+     label10:
+        $r28 := @caughtexception;
+
+     label11:
+        return null;
+
+        catch java.lang.Throwable from label04 to label05 with label05;
+        catch java.lang.IllegalArgumentException from label01 to label08 with label09;
+        catch java.io.IOException from label01 to label08 with label10;
+    }

@@ -1,0 +1,5 @@
+{
+    "contents": "(viAdj != null ? viAdj : new java.util.ArrayList()).add(target.addEdge(vi, ring.get((i + j) % n)))",
+    "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+    "patched_lines": [176]
+}

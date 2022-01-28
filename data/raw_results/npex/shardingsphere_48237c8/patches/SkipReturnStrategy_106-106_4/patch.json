@@ -1,0 +1,5 @@
+{
+    "contents": "if (currentAuthResult == null) {\n    return null;\n}",
+    "original_filepath": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+    "patched_lines": [106]
+}

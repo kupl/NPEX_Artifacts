@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"182: $r23 = virtualinvoke $r22.<org.apache.bcel.classfile.Code: byte[] getCode()>()" [style=bold] [color=red]
+"182: $r22 = virtualinvoke m.<org.apache.bcel.classfile.Method: org.apache.bcel.classfile.Code getCode()>()" [style=bold] [color=gold]
+"182: $r22 = virtualinvoke m.<org.apache.bcel.classfile.Method: org.apache.bcel.classfile.Code getCode()>()"->"182: $r23 = virtualinvoke $r22.<org.apache.bcel.classfile.Code: byte[] getCode()>()";
+
+}

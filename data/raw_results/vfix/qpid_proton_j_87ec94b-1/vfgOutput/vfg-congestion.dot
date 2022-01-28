@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"101: $r6 = virtualinvoke $r4.<org.apache.qpid.proton.codec.EncoderImpl: org.apache.qpid.proton.codec.AMQPType getType(java.lang.Object)>($r5)" [label=1] [style=bold] [color=gold]
+"101: elementEncoding = interfaceinvoke $r6.<org.apache.qpid.proton.codec.AMQPType: org.apache.qpid.proton.codec.TypeEncoding getEncoding(java.lang.Object)>($r7)" [label=1] [style=bold] [color=red]
+"101: $r6 = virtualinvoke $r4.<org.apache.qpid.proton.codec.EncoderImpl: org.apache.qpid.proton.codec.AMQPType getType(java.lang.Object)>($r5)"->"101: elementEncoding = interfaceinvoke $r6.<org.apache.qpid.proton.codec.AMQPType: org.apache.qpid.proton.codec.TypeEncoding getEncoding(java.lang.Object)>($r7)";
+
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "com.squareup.javapoet.TypeName extendsBound = (mirror.getExtendsBound() != null) ? com.squareup.javapoet.TypeName.get(mirror.getExtendsBound()) : null",
+    "original_filepath": "src/main/java/com/squareup/javapoet/WildcardTypeName.java",
+    "patched_lines": [93]
+}

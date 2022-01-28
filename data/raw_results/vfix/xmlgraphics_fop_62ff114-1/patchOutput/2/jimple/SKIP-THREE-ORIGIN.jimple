@@ -1,0 +1,282 @@
+    protected void renderMainReference(org.apache.fop.area.MainReference)
+    {
+        org.apache.fop.render.AbstractRenderer this;
+        org.apache.fop.area.MainReference mainReference;
+        java.util.List spans;
+        int saveBPPos, saveIPPos, pageIndex, $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, saveSpanBPPos, level, $i33, $i34, $i35, $i36, $i37;
+        java.util.Iterator l7;
+        java.lang.Object span1, $r1, $r4;
+        org.apache.fop.area.NormalFlow flow;
+        boolean $z0, $z1, $z2, $z3;
+        java.lang.Integer $r0, $r3;
+        org.apache.fop.traits.Direction $r2, $r5, $r6, $r8, $r9, $r10, $r11, $r12;
+        org.apache.fop.area.PageViewport $r7;
+        org.apache.fop.area.Span span;
+
+        this := @this: org.apache.fop.render.AbstractRenderer;
+
+        mainReference := @parameter0: org.apache.fop.area.MainReference;
+
+        spans = virtualinvoke mainReference.<org.apache.fop.area.MainReference: java.util.List getSpans()>();
+
+        saveBPPos = this.<org.apache.fop.render.AbstractRenderer: int currentBPPosition>;
+
+        saveIPPos = this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition>;
+
+        saveSpanBPPos = saveBPPos;
+
+        l7 = interfaceinvoke spans.<java.util.List: java.util.Iterator iterator()>();
+
+     label01:
+        $z0 = interfaceinvoke l7.<java.util.Iterator: boolean hasNext()>();
+
+        if $z0 == 0 goto label17;
+
+        span1 = interfaceinvoke l7.<java.util.Iterator: java.lang.Object next()>();
+
+        span = (org.apache.fop.area.Span) span1;
+
+        $i0 = virtualinvoke span.<org.apache.fop.area.Span: int getColumnCount()>();
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnCount> = $i0;
+
+        $i1 = virtualinvoke span.<org.apache.fop.area.Span: int getColumnGap()>();
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnGap> = $i1;
+
+        $i2 = virtualinvoke span.<org.apache.fop.area.Span: int getColumnWidth()>();
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnWidth> = $i2;
+
+        $r0 = <org.apache.fop.area.Trait: java.lang.Integer BLOCK_PROGRESSION_DIRECTION>;
+
+        $r1 = virtualinvoke span.<org.apache.fop.area.Span: java.lang.Object getTrait(java.lang.Integer)>($r0);
+
+        $r2 = (org.apache.fop.traits.Direction) $r1;
+
+        this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.traits.Direction blockProgressionDirection> = $r2;
+
+        $r3 = <org.apache.fop.area.Trait: java.lang.Integer INLINE_PROGRESSION_DIRECTION>;
+
+        $r4 = virtualinvoke span.<org.apache.fop.area.Span: java.lang.Object getTrait(java.lang.Integer)>($r3);
+
+        $r5 = (org.apache.fop.traits.Direction) $r4;
+
+        this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.traits.Direction inlineProgressionDirection> = $r5;
+
+        level = virtualinvoke span.<org.apache.fop.area.Span: int getBidiLevel()>();
+
+        if level >= 0 goto label02;
+
+        level = 0;
+
+     label02:
+        $i3 = level & 1;
+
+        if $i3 != 1 goto label03;
+
+        $i27 = this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition>;
+
+        $i28 = virtualinvoke span.<org.apache.fop.area.Span: int getIPD()>();
+
+        $i29 = $i27 + $i28;
+
+        this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition> = $i29;
+
+        $i31 = this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition>;
+
+        $i30 = this.<org.apache.fop.render.AbstractRenderer: int columnGap>;
+
+        $i32 = $i31 + $i30;
+
+        this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition> = $i32;
+
+     label03:
+        this.<org.apache.fop.render.AbstractRenderer: int columnIndex> = 0;
+
+     label04:
+        $i33 = this.<org.apache.fop.render.AbstractRenderer: int columnIndex>;
+
+        $i34 = this.<org.apache.fop.render.AbstractRenderer: int columnCount>;
+
+        if $i33 >= $i34 goto label16;
+
+        $i6 = this.<org.apache.fop.render.AbstractRenderer: int columnIndex>;
+
+        flow = virtualinvoke span.<org.apache.fop.area.Span: org.apache.fop.area.NormalFlow getNormalFlow(int)>($i6);
+
+        $r6 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.traits.Direction inlineProgressionDirection>;
+
+        if $r6 == null goto label05;
+
+        $r12 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.traits.Direction inlineProgressionDirection>;
+
+        $i26 = virtualinvoke $r12.<org.apache.fop.traits.Direction: int getEnumValue()>();
+
+        if $i26 != 199 goto label06;
+
+     label05:
+        $z3 = 1;
+
+        goto label07;
+
+     label06:
+        $z3 = 0;
+
+     label07:
+        if flow == null goto label15;
+
+        $r7 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.area.PageViewport currentPageViewport>;
+
+        pageIndex = virtualinvoke $r7.<org.apache.fop.area.PageViewport: int getPageIndex()>();
+
+        this.<org.apache.fop.render.AbstractRenderer: boolean bindingOnStartEdge> = 0;
+
+        this.<org.apache.fop.render.AbstractRenderer: boolean bindingOnEndEdge> = 0;
+
+        if $z3 == 0 goto label10;
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnStartIPPosition> = 0;
+
+        $i23 = this.<org.apache.fop.render.AbstractRenderer: int columnWidth>;
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnEndIPPosition> = $i23;
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnLeftIPPosition> = 0;
+
+        $i24 = this.<org.apache.fop.render.AbstractRenderer: int columnWidth>;
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnRightIPPosition> = $i24;
+
+        $r10 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.traits.Direction blockProgressionDirection>;
+
+        if $r10 == null goto label08;
+
+        $r11 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.traits.Direction blockProgressionDirection>;
+
+        $z2 = virtualinvoke $r11.<org.apache.fop.traits.Direction: boolean isVertical()>();
+
+        if $z2 == 0 goto label13;
+
+     label08:
+        $i25 = pageIndex % 2;
+
+        if $i25 != 0 goto label09;
+
+        this.<org.apache.fop.render.AbstractRenderer: boolean bindingOnStartEdge> = 1;
+
+        goto label13;
+
+     label09:
+        this.<org.apache.fop.render.AbstractRenderer: boolean bindingOnEndEdge> = 1;
+
+        goto label13;
+
+     label10:
+        $i7 = this.<org.apache.fop.render.AbstractRenderer: int columnWidth>;
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnStartIPPosition> = $i7;
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnEndIPPosition> = 0;
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnLeftIPPosition> = 0;
+
+        $i8 = this.<org.apache.fop.render.AbstractRenderer: int columnWidth>;
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnRightIPPosition> = $i8;
+
+        $r8 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.traits.Direction blockProgressionDirection>;
+
+        if $r8 == null goto label11;
+
+        $r9 = this.<org.apache.fop.render.AbstractRenderer: org.apache.fop.traits.Direction blockProgressionDirection>;
+
+        $z1 = virtualinvoke $r9.<org.apache.fop.traits.Direction: boolean isVertical()>();
+
+        if $z1 == 0 goto label13;
+
+     label11:
+        $i9 = pageIndex % 2;
+
+        if $i9 != 0 goto label12;
+
+        this.<org.apache.fop.render.AbstractRenderer: boolean bindingOnEndEdge> = 1;
+
+        goto label13;
+
+     label12:
+        this.<org.apache.fop.render.AbstractRenderer: boolean bindingOnStartEdge> = 1;
+
+     label13:
+        this.<org.apache.fop.render.AbstractRenderer: int currentBPPosition> = saveSpanBPPos;
+
+        $i35 = level & 1;
+
+        if $i35 != 1 goto label14;
+
+        $i17 = this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition>;
+
+        $i18 = virtualinvoke flow.<org.apache.fop.area.NormalFlow: int getIPD()>();
+
+        $i19 = $i17 - $i18;
+
+        this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition> = $i19;
+
+        $i21 = this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition>;
+
+        $i20 = this.<org.apache.fop.render.AbstractRenderer: int columnGap>;
+
+        $i22 = $i21 - $i20;
+
+        this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition> = $i22;
+
+     label14:
+        virtualinvoke this.<org.apache.fop.render.AbstractRenderer: void renderFlow(org.apache.fop.area.NormalFlow)>(flow);
+
+        $i10 = level & 1;
+
+        if $i10 != 0 goto label15;
+
+        $i11 = this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition>;
+
+        $i12 = virtualinvoke flow.<org.apache.fop.area.NormalFlow: int getIPD()>();
+
+        $i13 = $i11 + $i12;
+
+        this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition> = $i13;
+
+        $i15 = this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition>;
+
+        $i14 = this.<org.apache.fop.render.AbstractRenderer: int columnGap>;
+
+        $i16 = $i15 + $i14;
+
+        this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition> = $i16;
+
+     label15:
+        $i36 = this.<org.apache.fop.render.AbstractRenderer: int columnIndex>;
+
+        $i37 = $i36 + 1;
+
+        this.<org.apache.fop.render.AbstractRenderer: int columnIndex> = $i37;
+
+        goto label04;
+
+     label16:
+        this.<org.apache.fop.render.AbstractRenderer: int currentIPPosition> = saveIPPos;
+
+        $i4 = virtualinvoke span.<org.apache.fop.area.Span: int getHeight()>();
+
+        $i5 = saveSpanBPPos + $i4;
+
+        this.<org.apache.fop.render.AbstractRenderer: int currentBPPosition> = $i5;
+
+        saveSpanBPPos = this.<org.apache.fop.render.AbstractRenderer: int currentBPPosition>;
+
+        goto label01;
+
+     label17:
+        this.<org.apache.fop.render.AbstractRenderer: int currentBPPosition> = saveBPPos;
+
+        return;
+    }

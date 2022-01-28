@@ -1,0 +1,22 @@
+    public static boolean isAvailableLocale(java.util.Locale)
+    {
+        java.util.Locale locale;
+        java.util.Set $r0;
+        boolean $z0;
+
+        locale := @parameter0: java.util.Locale;
+
+        $r0 = <org.apache.commons.lang3.LocaleUtils: java.util.Set cAvailableLocaleSet>;
+
+        if $r0 != null goto label1;
+
+        $z0 = 0;
+
+        goto label2;
+
+     label1:
+        $z0 = interfaceinvoke $r0.<java.util.Set: boolean contains(java.lang.Object)>(locale);
+
+     label2:
+        return $z0;
+    }

@@ -1,0 +1,14 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"89: fmin = interfaceinvoke f.<org.apache.commons.math.analysis.UnivariateRealFunction: double value(double)>(min)" [label=1] [style=bold] [color=red]
+"90: fm = interfaceinvoke f.<org.apache.commons.math.analysis.UnivariateRealFunction: double value(double)>(m)" [label=1] [color=red]
+"66: $r0 = this.<org.apache.commons.math.analysis.solvers.BisectionSolver: org.apache.commons.math.analysis.UnivariateRealFunction f>" [label=2] [style=bold] [color=gold]
+"66: $d0 = virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: double solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double)>($r0, min, max)" [label=2] [style=bold]
+"66: $r0 = this.<org.apache.commons.math.analysis.solvers.BisectionSolver: org.apache.commons.math.analysis.UnivariateRealFunction f>"->"66: $d0 = virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: double solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double)>($r0, min, max)";
+
+"66: $d0 = virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: double solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double)>($r0, min, max)"->"89: fmin = interfaceinvoke f.<org.apache.commons.math.analysis.UnivariateRealFunction: double value(double)>(min)";
+
+"66: $d0 = virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: double solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double)>($r0, min, max)"->"90: fm = interfaceinvoke f.<org.apache.commons.math.analysis.UnivariateRealFunction: double value(double)>(m)" [style=dotted];
+
+}

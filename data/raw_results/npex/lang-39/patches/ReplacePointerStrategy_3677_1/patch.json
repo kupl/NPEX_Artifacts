@@ -1,0 +1,5 @@
+{
+    "contents": "(replacement_str != null ? replacement_str : \"null\").length()",
+    "original_filepath": "org/apache/commons/lang3/StringUtils.java",
+    "patched_lines": [3703]
+}

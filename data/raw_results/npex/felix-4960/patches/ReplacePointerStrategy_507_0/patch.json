@@ -1,0 +1,5 @@
+{
+    "contents": "// Special case \"/\" so that it returns a root URLs for\n// each bundle class path entry...this isn't very\n// clean or meaningful, but the Spring guys want it.\nfinal java.util.List<org.apache.felix.framework.cache.Content> contentPath = (getContentPath() != null) ? getContentPath() : java.util.Collections.emptyList()",
+    "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+    "patched_lines": [503]
+}

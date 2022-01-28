@@ -1,0 +1,5 @@
+{
+    "contents": "if (f != null) {\n    m = org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.midpoint(min, max);\n    fmin = f.value(min);\n    fm = f.value(m);\n    if ((fm * fmin) > 0.0) {\n        // max and m bracket the root.\n        min = m;\n    } else {\n        // min and m bracket the root.\n        max = m;\n    }\n    if (java.lang.Math.abs(max - min) <= absoluteAccuracy) {\n        m = org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.midpoint(min, max);\n        setResult(m, i);\n        i = maximalIterationCount;// +\n\n        // return m;\n    }\n    ++i;\n}",
+    "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+    "patched_lines": [89]
+}

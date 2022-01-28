@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"910: $r0 = array[i]" [label=1] [style=bold] [color=gold]
+"910: $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Class getClass()>()" [label=1] [style=bold] [color=red]
+"910: $r0 = array[i]"->"910: $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Class getClass()>()";
+
+}

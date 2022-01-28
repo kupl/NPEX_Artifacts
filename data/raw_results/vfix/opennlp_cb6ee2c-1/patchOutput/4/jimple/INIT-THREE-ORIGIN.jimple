@@ -1,0 +1,39 @@
+    private java.lang.String lemmatize(java.lang.String, java.lang.String)
+    {
+        opennlp.tools.lemmatizer.DictionaryLemmatizer this;
+        java.lang.String word, postag, lemma;
+        java.util.List keys, keyValues;
+        java.util.Map $r0;
+        java.lang.Object $r1, $r2;
+        boolean $z0;
+
+        this := @this: opennlp.tools.lemmatizer.DictionaryLemmatizer;
+
+        word := @parameter0: java.lang.String;
+
+        postag := @parameter1: java.lang.String;
+
+        keys = specialinvoke this.<opennlp.tools.lemmatizer.DictionaryLemmatizer: java.util.List getDictKeys(java.lang.String,java.lang.String)>(word, postag);
+
+        $r0 = this.<opennlp.tools.lemmatizer.DictionaryLemmatizer: java.util.Map dictMap>;
+
+        $r1 = interfaceinvoke $r0.<java.util.Map: java.lang.Object get(java.lang.Object)>(keys);
+
+        keyValues = (java.util.List) $r1;
+
+        $z0 = interfaceinvoke keyValues.<java.util.List: boolean isEmpty()>();
+
+        if $z0 != 0 goto label1;
+
+        $r2 = interfaceinvoke keyValues.<java.util.List: java.lang.Object get(int)>(0);
+
+        lemma = (java.lang.String) $r2;
+
+        goto label2;
+
+     label1:
+        lemma = "O";
+
+     label2:
+        return lemma;
+    }

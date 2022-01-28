@@ -1,0 +1,37 @@
+[
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/JPAEntityMappings.java",
+        "line": 127,
+        "method_name": "findEntity"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/JPAEntityMappings.java",
+        "line": 121,
+        "method_name": "getJPAEntity"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/JPAEntityVariableType.java",
+        "line": 79,
+        "method_name": "getValue"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/persistence/entity/HistoricVariableInstanceEntity.java",
+        "line": 128,
+        "method_name": "getValue"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/test/java/org/activiti/standalone/jpa/HistoricJPAVariableTest.java",
+        "line": 121,
+        "method_name": "testGetJPAEntityAsHistoricLog"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/test/PvmTestCase.java",
+        "line": 65,
+        "method_name": "runTest"
+    },
+    {
+        "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/test/AbstractActivitiTestCase.java",
+        "line": 100,
+        "method_name": "runBare"
+    }
+]

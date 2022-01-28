@@ -1,0 +1,14 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"448: $r1 = interfaceinvoke $r0.<java.util.Map: java.lang.Object get(java.lang.Object)>(key)" [label=2] [style=bold] [color=gold]
+"448: objectDeque = (org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque) $r1" [label=2] [style=bold]
+"450: $r2 = virtualinvoke objectDeque.<org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque: java.util.Map getAllObjects()>()" [label=1] [style=bold] [color=red]
+"492: e#5 = virtualinvoke objectDeque.<org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque: org.apache.commons.pool2.impl.LinkedBlockingDeque getIdleObjects()>()" [label=1] [color=red]
+"448: $r1 = interfaceinvoke $r0.<java.util.Map: java.lang.Object get(java.lang.Object)>(key)"->"448: objectDeque = (org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque) $r1";
+
+"448: objectDeque = (org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque) $r1"->"450: $r2 = virtualinvoke objectDeque.<org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque: java.util.Map getAllObjects()>()";
+
+"448: objectDeque = (org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque) $r1"->"492: e#5 = virtualinvoke objectDeque.<org.apache.commons.pool2.impl.GenericKeyedObjectPool$ObjectDeque: org.apache.commons.pool2.impl.LinkedBlockingDeque getIdleObjects()>()" [style=dotted];
+
+}

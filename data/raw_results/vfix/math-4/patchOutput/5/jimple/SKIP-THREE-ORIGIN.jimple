@@ -1,0 +1,30 @@
+    private static org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet buildIntervalSet(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException
+    {
+        org.apache.commons.math3.geometry.euclidean.threed.Vector3D start, end;
+        org.apache.commons.math3.geometry.euclidean.threed.Line $r0;
+        org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet $r1;
+        org.apache.commons.math3.geometry.euclidean.oned.Vector1D $r2, $r3;
+        double $d0, $d1;
+
+        start := @parameter0: org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
+
+        end := @parameter1: org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
+
+        $r0 = new org.apache.commons.math3.geometry.euclidean.threed.Line;
+
+        specialinvoke $r0.<org.apache.commons.math3.geometry.euclidean.threed.Line: void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D,org.apache.commons.math3.geometry.euclidean.threed.Vector3D)>(start, end);
+
+        $r1 = new org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet;
+
+        $r2 = virtualinvoke $r0.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(start);
+
+        $d0 = virtualinvoke $r2.<org.apache.commons.math3.geometry.euclidean.oned.Vector1D: double getX()>();
+
+        $r3 = virtualinvoke $r0.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(end);
+
+        $d1 = virtualinvoke $r3.<org.apache.commons.math3.geometry.euclidean.oned.Vector1D: double getX()>();
+
+        specialinvoke $r1.<org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet: void <init>(double,double)>($d0, $d1);
+
+        return $r1;
+    }

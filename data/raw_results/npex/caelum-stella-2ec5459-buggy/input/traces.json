@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "stella-bean-validation/src/main/java/br/com/caelum/stella/bean/validation/xml/Pattern.java",
+        "line": 1093,
+        "method_name": "matcher"
+    },
+    {
+        "filepath": "stella-core/src/main/java/br/com/caelum/stella/validation/CNPJValidator.java",
+        "line": 125,
+        "method_name": "isEligible"
+    },
+    {
+        "filepath": "stella-core/src/test/java/br/com/caelum/stella/validation/CNPJValidatorTest.java",
+        "line": 153,
+        "method_name": "shouldNotBeEligibleWithNullCNPJ"
+    }
+]

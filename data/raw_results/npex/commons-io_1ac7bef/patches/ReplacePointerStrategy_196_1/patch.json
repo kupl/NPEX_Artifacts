@@ -1,0 +1,5 @@
+{
+    "contents": "(end != null ? end : \"null\").length()",
+    "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+    "patched_lines": [212]
+}

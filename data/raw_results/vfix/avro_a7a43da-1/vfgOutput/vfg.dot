@@ -1,0 +1,174 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"
+"1311: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("values")"
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"
+"1306: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("items")"
+"1263: fieldTypeNode = virtualinvoke field.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("type")" [color=gold]
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"
+"1344: name#112 = (org.codehaus.jackson.JsonNode) $r7"
+"1344: $r7 = interfaceinvoke type#111.<java.util.Iterator: java.lang.Object next()>()" [color=gold]
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)" [style=bold]
+"1035: $r11 = virtualinvoke $r10.<org.codehaus.jackson.map.ObjectMapper: org.codehaus.jackson.JsonNode readTree(org.codehaus.jackson.JsonParser)>(parser)" [style=bold] [color=gold]
+"1228: $z0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isTextual()>()" [style=bold] [color=red]
+"1342: type#111 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator iterator()>()" [color=red]
+"1341: $i0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: int size()>()" [color=red]
+"1339: $z2 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isArray()>()" [color=red]
+"1327: $r23 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>(fieldsNode#104)" [color=red]
+"1323: space#91 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator getFieldNames()>()" [color=red]
+"1316: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("size")" [color=red]
+"1297: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("symbols")" [color=red]
+"1257: fieldsNode = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("fields")" [color=red]
+"1233: $z1 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isObject()>()" [color=red]
+"1229: $r92 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>()" [color=red]
+"1267: $r40 = virtualinvoke fieldTypeNode.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>()" [color=red]
+"1266: $z13 = virtualinvoke fieldTypeNode.<org.codehaus.jackson.JsonNode: boolean isTextual()>()" [color=red]
+"1035: $r11 = virtualinvoke $r10.<org.codehaus.jackson.map.ObjectMapper: org.codehaus.jackson.JsonNode readTree(org.codehaus.jackson.JsonParser)>(parser)"->"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)";
+
+"1263: fieldTypeNode = virtualinvoke field.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("type")"->"1266: $z13 = virtualinvoke fieldTypeNode.<org.codehaus.jackson.JsonNode: boolean isTextual()>()" [style=dotted];
+
+"1263: fieldTypeNode = virtualinvoke field.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("type")"->"1267: $r40 = virtualinvoke fieldTypeNode.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>()" [style=dotted];
+
+"1263: fieldTypeNode = virtualinvoke field.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("type")"->"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)" [style=dotted];
+
+"1306: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("items")"->"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)" [style=dotted];
+
+"1311: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("values")"->"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)" [style=dotted];
+
+"1344: $r7 = interfaceinvoke type#111.<java.util.Iterator: java.lang.Object next()>()"->"1344: name#112 = (org.codehaus.jackson.JsonNode) $r7" [style=dotted];
+
+"1344: name#112 = (org.codehaus.jackson.JsonNode) $r7"->"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1228: $z0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isTextual()>()";
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1229: $r92 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>()" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1233: $z1 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isObject()>()" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1257: fieldsNode = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("fields")" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1297: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("symbols")" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1306: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("items")" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1311: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("values")" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1316: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("size")" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1323: space#91 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator getFieldNames()>()" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1327: $r23 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>(fieldsNode#104)" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1339: $z2 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isArray()>()" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1341: $i0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: int size()>()" [style=dotted];
+
+"1035: e = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>($r11, $r12)"->"1342: type#111 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator iterator()>()" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1228: $z0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isTextual()>()" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1229: $r92 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>()" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1233: $z1 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isObject()>()" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1257: fieldsNode = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("fields")" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1297: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("symbols")" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1306: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("items")" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1311: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("values")" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1316: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("size")" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1323: space#91 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator getFieldNames()>()" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1327: $r23 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>(fieldsNode#104)" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1339: $z2 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isArray()>()" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1341: $i0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: int size()>()" [style=dotted];
+
+"1272: fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names)"->"1342: type#111 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator iterator()>()" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1228: $z0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isTextual()>()" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1229: $r92 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>()" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1233: $z1 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isObject()>()" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1257: fieldsNode = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("fields")" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1297: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("symbols")" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1306: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("items")" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1311: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("values")" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1316: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("size")" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1323: space#91 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator getFieldNames()>()" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1327: $r23 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>(fieldsNode#104)" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1339: $z2 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isArray()>()" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1341: $i0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: int size()>()" [style=dotted];
+
+"1309: $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1342: type#111 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator iterator()>()" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1228: $z0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isTextual()>()" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1229: $r92 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>()" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1233: $z1 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isObject()>()" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1257: fieldsNode = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("fields")" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1297: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("symbols")" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1306: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("items")" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1311: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("values")" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1316: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("size")" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1323: space#91 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator getFieldNames()>()" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1327: $r23 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>(fieldsNode#104)" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1339: $z2 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isArray()>()" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1341: $i0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: int size()>()" [style=dotted];
+
+"1314: $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names)"->"1342: type#111 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator iterator()>()" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1228: $z0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isTextual()>()" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1229: $r92 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>()" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1233: $z1 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isObject()>()" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1257: fieldsNode = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("fields")" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1297: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("symbols")" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1306: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("items")" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1311: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("values")" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1316: space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("size")" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1323: space#91 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator getFieldNames()>()" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1327: $r23 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>(fieldsNode#104)" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1339: $z2 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isArray()>()" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1341: $i0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: int size()>()" [style=dotted];
+
+"1343: $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names)"->"1342: type#111 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator iterator()>()" [style=dotted];
+
+}

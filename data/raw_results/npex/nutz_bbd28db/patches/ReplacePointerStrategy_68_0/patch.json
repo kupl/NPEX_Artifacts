@@ -1,0 +1,5 @@
+{
+    "contents": "(request.getParams() != null ? request.getParams() : java.util.Collections.emptyMap()).values()",
+    "original_filepath": "src/org/nutz/http/Sender.java",
+    "patched_lines": [70]
+}

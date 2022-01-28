@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+    "line": 182,
+    "sink_field": "getCode",
+    "npe_class": "MethodGen",
+    "npe_method": "<init>",
+    "jvmti_identify_succeed": true,
+    "deref_field": "getCode",
+    "nullpointer": "m.getCode()"
+}

@@ -1,0 +1,145 @@
+    public void <init>(java.lang.Comparable[], java.lang.Comparable[], java.lang.Number[][], java.lang.Number[][])
+    {
+        org.jfree.data.category.DefaultIntervalCategoryDataset this;
+        java.lang.Comparable[] seriesKeys, categoryKeys, $r4, $r11;
+        java.lang.Number[][] starts, ends;
+        java.util.ResourceBundle resources;
+        int seriesCount, $i0, $i1, $i2, $i3, errMsg#3;
+        java.lang.StringBuilder $r0, $r3, $r7, $r10;
+        java.lang.String $r1, $r2, $r8, $r9, errMsg;
+        java.lang.Number[] $r5, $r6;
+        java.lang.IllegalArgumentException $r12, $r13, $r14, $r15;
+
+        this := @this: org.jfree.data.category.DefaultIntervalCategoryDataset;
+
+        seriesKeys := @parameter0: java.lang.Comparable[];
+
+        categoryKeys := @parameter1: java.lang.Comparable[];
+
+        starts := @parameter2: java.lang.Number[][];
+
+        ends := @parameter3: java.lang.Number[][];
+
+        specialinvoke this.<org.jfree.data.general.AbstractSeriesDataset: void <init>()>();
+
+        this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Number[][] startData> = starts;
+
+        this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Number[][] endData> = ends;
+
+        if starts == null goto label9;
+
+        if ends == null goto label9;
+
+        resources = staticinvoke <java.util.ResourceBundle: java.util.ResourceBundle getBundle(java.lang.String)>("org.jfree.data.resources.DataPackageResources");
+
+        seriesCount = lengthof starts;
+
+        $i0 = lengthof ends;
+
+        if seriesCount == $i0 goto label1;
+
+        $r15 = new java.lang.IllegalArgumentException;
+
+        specialinvoke $r15.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("DefaultIntervalCategoryDataset: the number of series in the start value dataset does not match the number of series in the end value dataset.");
+
+        throw $r15;
+
+     label1:
+        if seriesCount <= 0 goto label8;
+
+        if seriesKeys == null goto label3;
+
+        $i3 = lengthof seriesKeys;
+
+        if $i3 == seriesCount goto label2;
+
+        $r14 = new java.lang.IllegalArgumentException;
+
+        specialinvoke $r14.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The number of series keys does not match the number of series in the data.");
+
+        throw $r14;
+
+     label2:
+        this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] seriesKeys> = seriesKeys;
+
+        goto label4;
+
+     label3:
+        $r0 = new java.lang.StringBuilder;
+
+        $r1 = virtualinvoke resources.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("series.default-prefix");
+
+        $r2 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r1);
+
+        specialinvoke $r0.<java.lang.StringBuilder: void <init>(java.lang.String)>($r2);
+
+        $r3 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" ");
+
+        errMsg = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        $r4 = specialinvoke this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] generateKeys(int,java.lang.String)>(seriesCount, errMsg);
+
+        this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] seriesKeys> = $r4;
+
+     label4:
+        $r5 = starts[0];
+
+        errMsg#3 = lengthof $r5;
+
+        $r6 = ends[0];
+
+        $i1 = lengthof $r6;
+
+        if errMsg#3 == $i1 goto label5;
+
+        $r13 = new java.lang.IllegalArgumentException;
+
+        specialinvoke $r13.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("DefaultIntervalCategoryDataset: the number of categories in the start value dataset does not match the number of categories in the end value dataset.");
+
+        throw $r13;
+
+     label5:
+        if categoryKeys == null goto label7;
+
+        $i2 = lengthof categoryKeys;
+
+        if $i2 == errMsg#3 goto label6;
+
+        $r12 = new java.lang.IllegalArgumentException;
+
+        specialinvoke $r12.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The number of category keys does not match the number of categories in the data.");
+
+        throw $r12;
+
+     label6:
+        this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys> = categoryKeys;
+
+        goto label9;
+
+     label7:
+        $r7 = new java.lang.StringBuilder;
+
+        $r8 = virtualinvoke resources.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("categories.default-prefix");
+
+        $r9 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r8);
+
+        specialinvoke $r7.<java.lang.StringBuilder: void <init>(java.lang.String)>($r9);
+
+        $r10 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" ");
+
+        errMsg = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        $r11 = specialinvoke this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] generateKeys(int,java.lang.String)>(errMsg#3, errMsg);
+
+        this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys> = $r11;
+
+        goto label9;
+
+     label8:
+        this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] seriesKeys> = null;
+
+        this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys> = null;
+
+     label9:
+        return;
+    }

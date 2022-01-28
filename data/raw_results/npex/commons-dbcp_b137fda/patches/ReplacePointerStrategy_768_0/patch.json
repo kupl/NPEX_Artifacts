@@ -1,0 +1,5 @@
+{
+    "contents": "(connectionProperties != null ? connectionProperties : null).contains(pwdKey)",
+    "original_filepath": "src/main/java/org/apache/commons/dbcp2/cpdsadapter/DriverAdapterCPDS.java",
+    "patched_lines": [774]
+}

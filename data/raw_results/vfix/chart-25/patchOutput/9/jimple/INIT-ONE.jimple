@@ -1,0 +1,343 @@
+    protected void drawVerticalItem(java.awt.Graphics2D, org.jfree.chart.renderer.category.CategoryItemRendererState, java.awt.geom.Rectangle2D, org.jfree.chart.plot.CategoryPlot, org.jfree.chart.axis.CategoryAxis, org.jfree.chart.axis.ValueAxis, org.jfree.data.statistics.StatisticalCategoryDataset, int, int)
+    {
+        org.jfree.chart.renderer.category.StatisticalBarRenderer this;
+        java.awt.Graphics2D g2;
+        org.jfree.chart.renderer.category.CategoryItemRendererState state;
+        java.awt.geom.Rectangle2D dataArea;
+        org.jfree.chart.plot.CategoryPlot plot;
+        org.jfree.chart.axis.CategoryAxis domainAxis;
+        org.jfree.chart.axis.ValueAxis rangeAxis;
+        org.jfree.data.statistics.StatisticalCategoryDataset dataset;
+        int row, column, seriesCount, categoryCount, $i0, $i13, $i14;
+        org.jfree.chart.util.RectangleEdge xAxisLocation, yAxisLocation;
+        double lclip, uclip, transY1, transY2, rectY, rectWidth, rectHeight, valueDelta, highVal, lowVal, $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, $d16, $d17, $d18, $d19, $d20, $d21, $d22, $d23, $d24, $d25, $d26, $d27, rectX, seriesGap, value, base, $d28, $d29, $d30, $d31, $d32;
+        java.awt.Paint seriesPaint, $r1, $r2, $r12, $r15;
+        org.jfree.chart.labels.CategoryItemLabelGenerator generator;
+        org.jfree.chart.entity.EntityCollection entities;
+        byte $b1, $b2, $b3, $b4, $b5, $b8, $b9, $b10, $b11, $b12;
+        java.awt.Stroke $r0, $r13, $r14, $r18;
+        java.awt.geom.Line2D$Double $r3, $r4, $r5;
+        boolean $z0, $z1, $z2;
+        java.lang.Number seriesGap#4, $r17;
+        java.awt.geom.Rectangle2D$Double $r16;
+
+        this := @this: org.jfree.chart.renderer.category.StatisticalBarRenderer;
+
+        g2 := @parameter0: java.awt.Graphics2D;
+
+        state := @parameter1: org.jfree.chart.renderer.category.CategoryItemRendererState;
+
+        dataArea := @parameter2: java.awt.geom.Rectangle2D;
+
+        plot := @parameter3: org.jfree.chart.plot.CategoryPlot;
+
+        domainAxis := @parameter4: org.jfree.chart.axis.CategoryAxis;
+
+        rangeAxis := @parameter5: org.jfree.chart.axis.ValueAxis;
+
+        dataset := @parameter6: org.jfree.data.statistics.StatisticalCategoryDataset;
+
+        row := @parameter7: int;
+
+        column := @parameter8: int;
+
+        xAxisLocation = virtualinvoke plot.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.util.RectangleEdge getDomainAxisEdge()>();
+
+        $i0 = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: int getColumnCount()>();
+
+        rectX = virtualinvoke domainAxis.<org.jfree.chart.axis.CategoryAxis: double getCategoryStart(int,int,java.awt.geom.Rectangle2D,org.jfree.chart.util.RectangleEdge)>(column, $i0, dataArea, xAxisLocation);
+
+        seriesCount = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: int getRowCount()>();
+
+        categoryCount = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: int getColumnCount()>();
+
+        if seriesCount <= 1 goto label01;
+
+        $d20 = virtualinvoke dataArea.<java.awt.geom.Rectangle2D: double getWidth()>();
+
+        $d21 = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: double getItemMargin()>();
+
+        $d23 = $d20 * $d21;
+
+        $i13 = seriesCount - 1;
+
+        $i14 = categoryCount * $i13;
+
+        $d22 = (double) $i14;
+
+        seriesGap = $d23 / $d22;
+
+        $d24 = (double) row;
+
+        $d25 = virtualinvoke state.<org.jfree.chart.renderer.category.CategoryItemRendererState: double getBarWidth()>();
+
+        $d26 = $d25 + seriesGap;
+
+        $d27 = $d24 * $d26;
+
+        rectX = rectX + $d27;
+
+        goto label02;
+
+     label01:
+        $d0 = (double) row;
+
+        $d1 = virtualinvoke state.<org.jfree.chart.renderer.category.CategoryItemRendererState: double getBarWidth()>();
+
+        $d2 = $d0 * $d1;
+
+        rectX = rectX + $d2;
+
+     label02:
+        seriesGap#4 = interfaceinvoke dataset.<org.jfree.data.statistics.StatisticalCategoryDataset: java.lang.Number getMeanValue(int,int)>(row, column);
+
+        value = virtualinvoke seriesGap#4.<java.lang.Number: double doubleValue()>();
+
+        base = 0.0;
+
+        lclip = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: double getLowerClip()>();
+
+        uclip = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: double getUpperClip()>();
+
+        $b1 = uclip cmpg 0.0;
+
+        if $b1 > 0 goto label04;
+
+        $b11 = value cmpl uclip;
+
+        if $b11 < 0 goto label03;
+
+        return;
+
+     label03:
+        base = uclip;
+
+        $b12 = value cmpg lclip;
+
+        if $b12 > 0 goto label08;
+
+        value = lclip;
+
+        goto label08;
+
+     label04:
+        $b2 = lclip cmpg 0.0;
+
+        if $b2 > 0 goto label06;
+
+        $b9 = value cmpl uclip;
+
+        if $b9 < 0 goto label05;
+
+        value = uclip;
+
+        goto label08;
+
+     label05:
+        $b10 = value cmpg lclip;
+
+        if $b10 > 0 goto label08;
+
+        value = lclip;
+
+        goto label08;
+
+     label06:
+        $b3 = value cmpg lclip;
+
+        if $b3 > 0 goto label07;
+
+        return;
+
+     label07:
+        base = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: double getLowerClip()>();
+
+        $b4 = value cmpl uclip;
+
+        if $b4 < 0 goto label08;
+
+        value = uclip;
+
+     label08:
+        yAxisLocation = virtualinvoke plot.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.util.RectangleEdge getRangeAxisEdge()>();
+
+        transY1 = virtualinvoke rangeAxis.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.chart.util.RectangleEdge)>(base, dataArea, yAxisLocation);
+
+        transY2 = virtualinvoke rangeAxis.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.chart.util.RectangleEdge)>(value, dataArea, yAxisLocation);
+
+        rectY = staticinvoke <java.lang.Math: double min(double,double)>(transY2, transY1);
+
+        rectWidth = virtualinvoke state.<org.jfree.chart.renderer.category.CategoryItemRendererState: double getBarWidth()>();
+
+        $d28 = transY2 - transY1;
+
+        rectHeight = staticinvoke <java.lang.Math: double abs(double)>($d28);
+
+        $r16 = new java.awt.geom.Rectangle2D$Double;
+
+        specialinvoke $r16.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>(rectX, rectY, rectWidth, rectHeight);
+
+        seriesPaint = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: java.awt.Paint getItemPaint(int,int)>(row, column);
+
+        virtualinvoke g2.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(seriesPaint);
+
+        virtualinvoke g2.<java.awt.Graphics2D: void fill(java.awt.Shape)>($r16);
+
+        $z1 = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: boolean isDrawBarOutline()>();
+
+        if $z1 == 0 goto label09;
+
+        $d19 = virtualinvoke state.<org.jfree.chart.renderer.category.CategoryItemRendererState: double getBarWidth()>();
+
+        $b8 = $d19 cmpl 3.0;
+
+        if $b8 <= 0 goto label09;
+
+        $r14 = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: java.awt.Stroke getItemStroke(int,int)>(row, column);
+
+        virtualinvoke g2.<java.awt.Graphics2D: void setStroke(java.awt.Stroke)>($r14);
+
+        $r15 = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: java.awt.Paint getItemOutlinePaint(int,int)>(row, column);
+
+        virtualinvoke g2.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r15);
+
+        virtualinvoke g2.<java.awt.Graphics2D: void draw(java.awt.Shape)>($r16);
+
+     label09:
+        $r17 = interfaceinvoke dataset.<org.jfree.data.statistics.StatisticalCategoryDataset: java.lang.Number getStdDevValue(int,int)>(row, column);
+
+        valueDelta = virtualinvoke $r17.<java.lang.Number: double doubleValue()>();
+
+        $d29 = virtualinvoke seriesGap#4.<java.lang.Number: double doubleValue()>();
+
+        $d30 = $d29 + valueDelta;
+
+        highVal = virtualinvoke rangeAxis.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.chart.util.RectangleEdge)>($d30, dataArea, yAxisLocation);
+
+        if seriesGap#4 != null goto label10;
+
+        seriesGap#4 = new java.util.concurrent.atomic.AtomicInteger;
+
+        specialinvoke seriesGap#4.<java.util.concurrent.atomic.AtomicInteger: void <init>()>();
+
+     label10:
+        $d31 = virtualinvoke seriesGap#4.<java.lang.Number: double doubleValue()>();
+
+        $d32 = $d31 - valueDelta;
+
+        lowVal = virtualinvoke rangeAxis.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.chart.util.RectangleEdge)>($d32, dataArea, yAxisLocation);
+
+        $r18 = this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: java.awt.Stroke errorIndicatorStroke>;
+
+        if $r18 == null goto label11;
+
+        $r13 = this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: java.awt.Stroke errorIndicatorStroke>;
+
+        virtualinvoke g2.<java.awt.Graphics2D: void setStroke(java.awt.Stroke)>($r13);
+
+        goto label12;
+
+     label11:
+        $r0 = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: java.awt.Stroke getItemOutlineStroke(int,int)>(row, column);
+
+        virtualinvoke g2.<java.awt.Graphics2D: void setStroke(java.awt.Stroke)>($r0);
+
+     label12:
+        $r1 = this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: java.awt.Paint errorIndicatorPaint>;
+
+        if $r1 == null goto label13;
+
+        $r12 = this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: java.awt.Paint errorIndicatorPaint>;
+
+        virtualinvoke g2.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r12);
+
+        goto label14;
+
+     label13:
+        $r2 = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: java.awt.Paint getItemOutlinePaint(int,int)>(row, column);
+
+        virtualinvoke g2.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r2);
+
+     label14:
+        $r3 = new java.awt.geom.Line2D$Double;
+
+        $d3 = rectWidth / 2.0;
+
+        $d6 = rectX + $d3;
+
+        $d4 = rectWidth / 2.0;
+
+        $d5 = rectX + $d4;
+
+        specialinvoke $r3.<java.awt.geom.Line2D$Double: void <init>(double,double,double,double)>($d6, lowVal, $d5, highVal);
+
+        virtualinvoke g2.<java.awt.Graphics2D: void draw(java.awt.Shape)>($r3);
+
+        $r4 = new java.awt.geom.Line2D$Double;
+
+        $d7 = rectWidth / 2.0;
+
+        $d8 = rectX + $d7;
+
+        $d12 = $d8 - 5.0;
+
+        $d9 = rectWidth / 2.0;
+
+        $d10 = rectX + $d9;
+
+        $d11 = $d10 + 5.0;
+
+        specialinvoke $r4.<java.awt.geom.Line2D$Double: void <init>(double,double,double,double)>($d12, highVal, $d11, highVal);
+
+        virtualinvoke g2.<java.awt.Graphics2D: void draw(java.awt.Shape)>($r4);
+
+        $r5 = new java.awt.geom.Line2D$Double;
+
+        $d13 = rectWidth / 2.0;
+
+        $d14 = rectX + $d13;
+
+        $d18 = $d14 - 5.0;
+
+        $d15 = rectWidth / 2.0;
+
+        $d16 = rectX + $d15;
+
+        $d17 = $d16 + 5.0;
+
+        specialinvoke $r5.<java.awt.geom.Line2D$Double: void <init>(double,double,double,double)>($d18, lowVal, $d17, lowVal);
+
+        virtualinvoke g2.<java.awt.Graphics2D: void draw(java.awt.Shape)>($r5);
+
+        generator = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: org.jfree.chart.labels.CategoryItemLabelGenerator getItemLabelGenerator(int,int)>(row, column);
+
+        if generator == null goto label17;
+
+        $z0 = virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: boolean isItemLabelVisible(int,int)>(row, column);
+
+        if $z0 == 0 goto label17;
+
+        $b5 = value cmpg 0.0;
+
+        if $b5 >= 0 goto label15;
+
+        $z2 = 1;
+
+        goto label16;
+
+     label15:
+        $z2 = 0;
+
+     label16:
+        virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: void drawItemLabel(java.awt.Graphics2D,org.jfree.data.category.CategoryDataset,int,int,org.jfree.chart.plot.CategoryPlot,org.jfree.chart.labels.CategoryItemLabelGenerator,java.awt.geom.Rectangle2D,boolean)>(g2, dataset, row, column, plot, generator, $r16, $z2);
+
+     label17:
+        entities = virtualinvoke state.<org.jfree.chart.renderer.category.CategoryItemRendererState: org.jfree.chart.entity.EntityCollection getEntityCollection()>();
+
+        if entities == null goto label18;
+
+        virtualinvoke this.<org.jfree.chart.renderer.category.StatisticalBarRenderer: void addItemEntity(org.jfree.chart.entity.EntityCollection,org.jfree.data.category.CategoryDataset,int,int,java.awt.Shape)>(entities, dataset, row, column, $r16);
+
+     label18:
+        return;
+    }

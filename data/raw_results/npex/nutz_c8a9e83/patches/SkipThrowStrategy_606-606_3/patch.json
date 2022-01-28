@@ -1,0 +1,5 @@
+{
+    "contents": "if (cc == null) {\n    throw new org.nutz.castor.FailToCastObjectException(\"\");\n}",
+    "original_filepath": "src/org/nutz/lang/Mirror.java",
+    "patched_lines": [616]
+}

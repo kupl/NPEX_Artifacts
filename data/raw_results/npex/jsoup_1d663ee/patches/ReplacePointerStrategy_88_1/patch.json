@@ -1,0 +1,5 @@
+{
+    "contents": "(parent != null ? parent : new org.jsoup.nodes.Attributes()).get(this.key)",
+    "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+    "patched_lines": [95]
+}

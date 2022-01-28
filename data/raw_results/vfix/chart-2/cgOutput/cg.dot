@@ -1,0 +1,628 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"11: main" [color=gold] [style=bold]
+"15: testBug2849731_2" [color=red] [style=bold]
+"8: <clinit>" [style=bold]
+"110: getUpperBound"
+"101: getLowerBound"
+"83: addSeries" [style=bold]
+"93: add" [style=bold]
+"63: public void <init>(java.lang.Comparable)" [style=bold]
+"72: public void <init>()" [style=bold]
+"725: iterateDomainBounds" [style=bold]
+"74: eql"
+"175: fireDatasetChanged" [style=bold]
+"48: public void <init>()" [style=bold]
+"296: addChangeListener" [style=bold]
+"63: public void <init>(double, double, double, double, double, double)" [style=bold]
+"215: add" [style=bold]
+"78: public void <init>(java.lang.Comparable, boolean, boolean)" [style=bold]
+"50: public void <init>()" [style=bold]
+"741: iterateDomainBounds" [style=bold]
+"86: public void <init>(java.lang.Object, org.jfree.data.general.Dataset, org.jfree.chart.event.DatasetChangeInfo)" [style=bold]
+"188: notifyListeners" [style=bold]
+"71: public void <init>(java.lang.Comparable, java.lang.Object)" [style=bold]
+"76: public void <init>(double, double, double, double, double)" [style=bold]
+"60: public void <init>(java.lang.String)"
+"314: fireSeriesChanged" [style=bold]
+"130: getItemCount" [style=bold]
+"274: indexOf"
+"85: getComparable"
+"125: compareTo"
+"97: public void <init>(java.lang.Comparable, boolean, boolean)" [style=bold]
+"54: public void <init>()" [style=bold]
+"85: public strictfp void <init>(double, double)"
+"81: getEndXValue"
+"186: getEndXValue" [style=bold]
+"63: getStartXValue"
+"172: getStartXValue" [style=bold]
+"75: getXValue"
+"317: getItemCount"
+"146: getItemCount" [style=bold]
+"217: getSeriesCount"
+"98: getSeriesCount" [style=bold]
+"388: datasetChanged"
+"69: public void <init>(java.lang.Object)" [style=bold]
+"327: notifyListeners" [style=bold]
+"270: equals"
+"162: equals"
+"217: compareTo"
+"103: protected void <init>(java.lang.Comparable)" [style=bold]
+"65: protected void <init>()" [style=bold]
+"265: getEndX"
+"354: getEndX"
+"134: getXHighValue" [style=bold]
+"253: getStartX"
+"342: getStartX"
+"119: getXLowValue" [style=bold]
+"158: getX"
+"329: getX"
+"257: getSeries"
+"343: getItemCount"
+"112: getSeries" [style=bold]
+"399: recalculateInterval"
+"81: public void <init>(java.lang.Object, org.jfree.data.general.SeriesChangeInfo)" [style=bold]
+"112: seriesChanged"
+"79: <clinit>"
+"124: equal"
+"107: getX"
+"112: protected void <init>(java.lang.Comparable, java.lang.String)" [style=bold]
+"94: protected void <init>()" [style=bold]
+"296: getEndX"
+"188: getDataItem" [style=bold]
+"111: getXHighValue" [style=bold]
+"261: getStartX"
+"96: getXLowValue" [style=bold]
+"104: getX"
+"643: getX"
+"415: calculateIntervalForSeries"
+"96: equals"
+"86: equals"
+"440: equals"
+"122: equals"
+"106: equals"
+"952: equals"
+"130: equals"
+"371: equals"
+"95: equals"
+"334: equals"
+"343: equals"
+"138: equals"
+"113: equals"
+"233: equals"
+"408: equals"
+"359: equals"
+"397: equals"
+"446: equals"
+"480: equals"
+"62: public void <init>()" [style=bold]
+"239: getIntervalWidth"
+"176: getIntervalPositionFactor"
+"332: getDataItem" [style=bold]
+"94: getObject" [style=bold]
+"100: getXHigh" [style=bold]
+"91: getXLow" [style=bold]
+"72: getX"
+"632: getRawDataItem"
+"83: toString"
+"110: toString"
+"257: equals"
+"82: toString"
+"117: getItemCount"
+"168: getValue"
+"143: getKey"
+"81: getItemCount"
+"94: getObject"
+"114: getKey"
+"101: toString"
+"166: getRowKeys"
+"119: getValue"
+"204: getColumnKeys"
+"104: getColumnCount"
+"93: getRowCount"
+"163: getRowKeys"
+"111: getObject"
+"97: getColumnCount"
+"86: getRowCount"
+"204: getColumnKeys"
+"149: isAutoWidth"
+"159: getDescription"
+"131: getKey"
+"84: getValue"
+"90: getObject"
+"81: getKey"
+"172: getObject"
+"132: getIndex"
+"53: public void <init>(java.lang.String)"
+"11: main"->"8: <clinit>";
+
+"11: main"->"15: testBug2849731_2";
+
+"8: <clinit>"->"8: <clinit>";
+
+"15: testBug2849731_2"->"8: <clinit>";
+
+"15: testBug2849731_2"->"110: getUpperBound" [style=dotted];
+
+"15: testBug2849731_2"->"101: getLowerBound" [style=dotted];
+
+"15: testBug2849731_2"->"83: addSeries";
+
+"15: testBug2849731_2"->"93: add";
+
+"15: testBug2849731_2"->"63: public void <init>(java.lang.Comparable)";
+
+"15: testBug2849731_2"->"72: public void <init>()";
+
+"15: testBug2849731_2"->"725: iterateDomainBounds";
+
+"15: testBug2849731_2"->"74: eql" [style=dotted];
+
+"83: addSeries"->"175: fireDatasetChanged";
+
+"83: addSeries"->"48: public void <init>()";
+
+"83: addSeries"->"296: addChangeListener";
+
+"93: add"->"63: public void <init>(double, double, double, double, double, double)";
+
+"93: add"->"215: add";
+
+"63: public void <init>(java.lang.Comparable)"->"78: public void <init>(java.lang.Comparable, boolean, boolean)";
+
+"72: public void <init>()"->"50: public void <init>()";
+
+"725: iterateDomainBounds"->"741: iterateDomainBounds";
+
+"175: fireDatasetChanged"->"86: public void <init>(java.lang.Object, org.jfree.data.general.Dataset, org.jfree.chart.event.DatasetChangeInfo)";
+
+"175: fireDatasetChanged"->"188: notifyListeners";
+
+"63: public void <init>(double, double, double, double, double, double)"->"71: public void <init>(java.lang.Comparable, java.lang.Object)";
+
+"63: public void <init>(double, double, double, double, double, double)"->"76: public void <init>(double, double, double, double, double)";
+
+"215: add"->"60: public void <init>(java.lang.String)" [style=dotted];
+
+"215: add"->"314: fireSeriesChanged";
+
+"215: add"->"130: getItemCount";
+
+"215: add"->"274: indexOf" [style=dotted];
+
+"215: add"->"85: getComparable" [style=dotted];
+
+"215: add"->"125: compareTo" [style=dotted];
+
+"78: public void <init>(java.lang.Comparable, boolean, boolean)"->"97: public void <init>(java.lang.Comparable, boolean, boolean)";
+
+"50: public void <init>()"->"54: public void <init>()";
+
+"741: iterateDomainBounds"->"85: public strictfp void <init>(double, double)" [style=dotted];
+
+"741: iterateDomainBounds"->"81: getEndXValue" [style=dotted];
+
+"741: iterateDomainBounds"->"186: getEndXValue";
+
+"741: iterateDomainBounds"->"63: getStartXValue" [style=dotted];
+
+"741: iterateDomainBounds"->"172: getStartXValue";
+
+"741: iterateDomainBounds"->"75: getXValue" [style=dotted];
+
+"741: iterateDomainBounds"->"317: getItemCount" [style=dotted];
+
+"741: iterateDomainBounds"->"146: getItemCount";
+
+"741: iterateDomainBounds"->"217: getSeriesCount" [style=dotted];
+
+"741: iterateDomainBounds"->"98: getSeriesCount";
+
+"188: notifyListeners"->"388: datasetChanged" [style=dotted];
+
+"314: fireSeriesChanged"->"69: public void <init>(java.lang.Object)";
+
+"314: fireSeriesChanged"->"327: notifyListeners";
+
+"274: indexOf"->"270: equals" [style=dotted];
+
+"274: indexOf"->"162: equals" [style=dotted];
+
+"274: indexOf"->"85: getComparable" [style=dotted];
+
+"274: indexOf"->"71: public void <init>(java.lang.Comparable, java.lang.Object)" [style=dotted];
+
+"125: compareTo"->"217: compareTo" [style=dotted];
+
+"125: compareTo"->"125: compareTo" [style=dotted];
+
+"97: public void <init>(java.lang.Comparable, boolean, boolean)"->"103: protected void <init>(java.lang.Comparable)";
+
+"54: public void <init>()"->"65: protected void <init>()";
+
+"81: getEndXValue"->"265: getEndX" [style=dotted];
+
+"81: getEndXValue"->"354: getEndX" [style=dotted];
+
+"186: getEndXValue"->"134: getXHighValue";
+
+"63: getStartXValue"->"253: getStartX" [style=dotted];
+
+"63: getStartXValue"->"342: getStartX" [style=dotted];
+
+"172: getStartXValue"->"119: getXLowValue";
+
+"75: getXValue"->"158: getX" [style=dotted];
+
+"75: getXValue"->"329: getX" [style=dotted];
+
+"317: getItemCount"->"257: getSeries" [style=dotted];
+
+"317: getItemCount"->"343: getItemCount" [style=dotted];
+
+"146: getItemCount"->"112: getSeries";
+
+"146: getItemCount"->"130: getItemCount";
+
+"388: datasetChanged"->"399: recalculateInterval" [style=dotted];
+
+"69: public void <init>(java.lang.Object)"->"81: public void <init>(java.lang.Object, org.jfree.data.general.SeriesChangeInfo)";
+
+"327: notifyListeners"->"112: seriesChanged" [style=dotted];
+
+"270: equals"->"79: <clinit>" [style=dotted];
+
+"270: equals"->"124: equal" [style=dotted];
+
+"162: equals"->"79: <clinit>" [style=dotted];
+
+"162: equals"->"270: equals" [style=dotted];
+
+"162: equals"->"162: equals" [style=dotted];
+
+"162: equals"->"124: equal" [style=dotted];
+
+"217: compareTo"->"107: getX" [style=dotted];
+
+"103: protected void <init>(java.lang.Comparable)"->"112: protected void <init>(java.lang.Comparable, java.lang.String)";
+
+"65: protected void <init>()"->"94: protected void <init>()";
+
+"265: getEndX"->"186: getEndXValue" [style=dotted];
+
+"354: getEndX"->"296: getEndX" [style=dotted];
+
+"134: getXHighValue"->"188: getDataItem";
+
+"134: getXHighValue"->"111: getXHighValue";
+
+"253: getStartX"->"172: getStartXValue" [style=dotted];
+
+"342: getStartX"->"261: getStartX" [style=dotted];
+
+"119: getXLowValue"->"188: getDataItem";
+
+"119: getXLowValue"->"96: getXLowValue";
+
+"158: getX"->"104: getX" [style=dotted];
+
+"329: getX"->"643: getX" [style=dotted];
+
+"257: getSeries"->"217: getSeriesCount" [style=dotted];
+
+"112: getSeries"->"98: getSeriesCount";
+
+"399: recalculateInterval"->"415: calculateIntervalForSeries" [style=dotted];
+
+"399: recalculateInterval"->"217: getSeriesCount" [style=dotted];
+
+"399: recalculateInterval"->"98: getSeriesCount" [style=dotted];
+
+"112: seriesChanged"->"48: public void <init>()" [style=dotted];
+
+"112: seriesChanged"->"175: fireDatasetChanged" [style=dotted];
+
+"79: <clinit>"->"79: <clinit>" [style=dotted];
+
+"124: equal"->"96: equals" [style=dotted];
+
+"124: equal"->"86: equals" [style=dotted];
+
+"124: equal"->"440: equals" [style=dotted];
+
+"124: equal"->"122: equals" [style=dotted];
+
+"124: equal"->"106: equals" [style=dotted];
+
+"124: equal"->"952: equals" [style=dotted];
+
+"124: equal"->"130: equals" [style=dotted];
+
+"124: equal"->"371: equals" [style=dotted];
+
+"124: equal"->"95: equals" [style=dotted];
+
+"124: equal"->"334: equals" [style=dotted];
+
+"124: equal"->"343: equals" [style=dotted];
+
+"124: equal"->"138: equals" [style=dotted];
+
+"124: equal"->"270: equals" [style=dotted];
+
+"124: equal"->"113: equals" [style=dotted];
+
+"124: equal"->"233: equals" [style=dotted];
+
+"124: equal"->"408: equals" [style=dotted];
+
+"124: equal"->"359: equals" [style=dotted];
+
+"124: equal"->"162: equals" [style=dotted];
+
+"124: equal"->"397: equals" [style=dotted];
+
+"124: equal"->"446: equals" [style=dotted];
+
+"124: equal"->"480: equals" [style=dotted];
+
+"94: protected void <init>()"->"62: public void <init>()";
+
+"296: getEndX"->"239: getIntervalWidth" [style=dotted];
+
+"296: getEndX"->"176: getIntervalPositionFactor" [style=dotted];
+
+"296: getEndX"->"329: getX" [style=dotted];
+
+"296: getEndX"->"158: getX" [style=dotted];
+
+"188: getDataItem"->"332: getDataItem";
+
+"111: getXHighValue"->"94: getObject";
+
+"111: getXHighValue"->"100: getXHigh";
+
+"261: getStartX"->"239: getIntervalWidth" [style=dotted];
+
+"261: getStartX"->"176: getIntervalPositionFactor" [style=dotted];
+
+"261: getStartX"->"329: getX" [style=dotted];
+
+"261: getStartX"->"158: getX" [style=dotted];
+
+"96: getXLowValue"->"94: getObject";
+
+"96: getXLowValue"->"91: getXLow";
+
+"104: getX"->"188: getDataItem" [style=dotted];
+
+"104: getX"->"72: getX" [style=dotted];
+
+"643: getX"->"632: getRawDataItem" [style=dotted];
+
+"643: getX"->"107: getX" [style=dotted];
+
+"415: calculateIntervalForSeries"->"75: getXValue" [style=dotted];
+
+"415: calculateIntervalForSeries"->"317: getItemCount" [style=dotted];
+
+"415: calculateIntervalForSeries"->"146: getItemCount" [style=dotted];
+
+"96: equals"->"83: toString" [style=dotted];
+
+"122: equals"->"110: toString" [style=dotted];
+
+"952: equals"->"79: <clinit>" [style=dotted];
+
+"952: equals"->"257: equals" [style=dotted];
+
+"952: equals"->"124: equal" [style=dotted];
+
+"130: equals"->"79: <clinit>" [style=dotted];
+
+"130: equals"->"124: equal" [style=dotted];
+
+"95: equals"->"82: toString" [style=dotted];
+
+"334: equals"->"117: getItemCount" [style=dotted];
+
+"334: equals"->"270: equals" [style=dotted];
+
+"334: equals"->"162: equals" [style=dotted];
+
+"334: equals"->"168: getValue" [style=dotted];
+
+"334: equals"->"143: getKey" [style=dotted];
+
+"343: equals"->"81: getItemCount" [style=dotted];
+
+"343: equals"->"96: equals" [style=dotted];
+
+"343: equals"->"86: equals" [style=dotted];
+
+"343: equals"->"440: equals" [style=dotted];
+
+"343: equals"->"122: equals" [style=dotted];
+
+"343: equals"->"106: equals" [style=dotted];
+
+"343: equals"->"952: equals" [style=dotted];
+
+"343: equals"->"130: equals" [style=dotted];
+
+"343: equals"->"371: equals" [style=dotted];
+
+"343: equals"->"95: equals" [style=dotted];
+
+"343: equals"->"334: equals" [style=dotted];
+
+"343: equals"->"343: equals" [style=dotted];
+
+"343: equals"->"138: equals" [style=dotted];
+
+"343: equals"->"270: equals" [style=dotted];
+
+"343: equals"->"113: equals" [style=dotted];
+
+"343: equals"->"233: equals" [style=dotted];
+
+"343: equals"->"408: equals" [style=dotted];
+
+"343: equals"->"359: equals" [style=dotted];
+
+"343: equals"->"162: equals" [style=dotted];
+
+"343: equals"->"397: equals" [style=dotted];
+
+"343: equals"->"446: equals" [style=dotted];
+
+"343: equals"->"480: equals" [style=dotted];
+
+"343: equals"->"94: getObject" [style=dotted];
+
+"343: equals"->"114: getKey" [style=dotted];
+
+"113: equals"->"101: toString" [style=dotted];
+
+"233: equals"->"79: <clinit>" [style=dotted];
+
+"233: equals"->"124: equal" [style=dotted];
+
+"408: equals"->"166: getRowKeys" [style=dotted];
+
+"408: equals"->"119: getValue" [style=dotted];
+
+"408: equals"->"204: getColumnKeys" [style=dotted];
+
+"408: equals"->"104: getColumnCount" [style=dotted];
+
+"408: equals"->"93: getRowCount" [style=dotted];
+
+"359: equals"->"79: <clinit>" [style=dotted];
+
+"359: equals"->"124: equal" [style=dotted];
+
+"397: equals"->"79: <clinit>" [style=dotted];
+
+"397: equals"->"257: equals" [style=dotted];
+
+"397: equals"->"124: equal" [style=dotted];
+
+"446: equals"->"163: getRowKeys" [style=dotted];
+
+"446: equals"->"96: equals" [style=dotted];
+
+"446: equals"->"86: equals" [style=dotted];
+
+"446: equals"->"440: equals" [style=dotted];
+
+"446: equals"->"122: equals" [style=dotted];
+
+"446: equals"->"106: equals" [style=dotted];
+
+"446: equals"->"952: equals" [style=dotted];
+
+"446: equals"->"130: equals" [style=dotted];
+
+"446: equals"->"371: equals" [style=dotted];
+
+"446: equals"->"95: equals" [style=dotted];
+
+"446: equals"->"334: equals" [style=dotted];
+
+"446: equals"->"343: equals" [style=dotted];
+
+"446: equals"->"138: equals" [style=dotted];
+
+"446: equals"->"270: equals" [style=dotted];
+
+"446: equals"->"113: equals" [style=dotted];
+
+"446: equals"->"233: equals" [style=dotted];
+
+"446: equals"->"408: equals" [style=dotted];
+
+"446: equals"->"359: equals" [style=dotted];
+
+"446: equals"->"162: equals" [style=dotted];
+
+"446: equals"->"397: equals" [style=dotted];
+
+"446: equals"->"446: equals" [style=dotted];
+
+"446: equals"->"480: equals" [style=dotted];
+
+"446: equals"->"111: getObject" [style=dotted];
+
+"446: equals"->"97: getColumnCount" [style=dotted];
+
+"446: equals"->"86: getRowCount" [style=dotted];
+
+"446: equals"->"204: getColumnKeys" [style=dotted];
+
+"480: equals"->"79: <clinit>" [style=dotted];
+
+"480: equals"->"440: equals" [style=dotted];
+
+"480: equals"->"124: equal" [style=dotted];
+
+"239: getIntervalWidth"->"149: isAutoWidth" [style=dotted];
+
+"72: getX"->"85: getComparable" [style=dotted];
+
+"257: equals"->"79: <clinit>" [style=dotted];
+
+"257: equals"->"270: equals" [style=dotted];
+
+"257: equals"->"162: equals" [style=dotted];
+
+"257: equals"->"159: getDescription" [style=dotted];
+
+"257: equals"->"131: getKey" [style=dotted];
+
+"257: equals"->"124: equal" [style=dotted];
+
+"117: getItemCount"->"81: getItemCount" [style=dotted];
+
+"168: getValue"->"117: getItemCount" [style=dotted];
+
+"168: getValue"->"84: getValue" [style=dotted];
+
+"168: getValue"->"94: getObject" [style=dotted];
+
+"143: getKey"->"114: getKey" [style=dotted];
+
+"94: getObject"->"90: getObject" [style=dotted];
+
+"114: getKey"->"81: getKey" [style=dotted];
+
+"166: getRowKeys"->"163: getRowKeys" [style=dotted];
+
+"119: getValue"->"111: getObject" [style=dotted];
+
+"119: getValue"->"84: getValue" [style=dotted];
+
+"204: getColumnKeys"->"204: getColumnKeys" [style=dotted];
+
+"104: getColumnCount"->"97: getColumnCount" [style=dotted];
+
+"93: getRowCount"->"86: getRowCount" [style=dotted];
+
+"111: getObject"->"172: getObject" [style=dotted];
+
+"111: getObject"->"132: getIndex" [style=dotted];
+
+"172: getObject"->"132: getIndex" [style=dotted];
+
+"172: getObject"->"53: public void <init>(java.lang.String)" [style=dotted];
+
+"172: getObject"->"94: getObject" [style=dotted];
+
+"132: getIndex"->"270: equals" [style=dotted];
+
+"132: getIndex"->"162: equals" [style=dotted];
+
+"132: getIndex"->"81: getKey" [style=dotted];
+
+}

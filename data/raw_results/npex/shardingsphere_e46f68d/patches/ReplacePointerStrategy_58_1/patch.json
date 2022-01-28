@@ -1,0 +1,5 @@
+{
+    "contents": "(schema.getTables() != null ? schema.getTables() : null).entrySet()",
+    "original_filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+    "patched_lines": [59]
+}

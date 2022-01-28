@@ -1,0 +1,5 @@
+{
+    "contents": "(input != null ? input : \"null\").toLowerCase(java.util.Locale.ENGLISH)",
+    "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+    "patched_lines": [12]
+}

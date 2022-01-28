@@ -1,0 +1,5 @@
+{
+    "contents": "final int endLen = (end != null) ? end.length() : 1",
+    "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+    "patched_lines": [212]
+}

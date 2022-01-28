@@ -1,0 +1,89 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"12: main" [color=gold] [style=bold]
+"88: assignPointsToClusters" [color=red] [style=bold]
+"10: <clinit>" [style=bold]
+"16: testPerformClusterAnalysisDegenerate" [style=bold]
+"62: getPoints"
+"42: public void <init>(int[])" [style=bold]
+"55: cluster" [style=bold]
+"39: public void <init>(java.util.Random)" [style=bold]
+"106: chooseInitialCenters" [style=bold]
+"44: public void <init>(org.apache.commons.math.stat.clustering.Clusterable)" [style=bold]
+"76: equals"
+"0: centroidOf"
+"70: getCenter" [style=bold]
+"152: getNearestCluster" [style=bold]
+"0: distanceFrom"
+"51: getPoint" [style=bold]
+"61: centroidOf"
+"54: addPoint"
+"56: distanceFrom" [style=bold]
+"29: <clinit>" [style=bold]
+"1623: distance" [style=bold]
+"12: main"->"10: <clinit>";
+
+"12: main"->"16: testPerformClusterAnalysisDegenerate";
+
+"10: <clinit>"->"10: <clinit>";
+
+"16: testPerformClusterAnalysisDegenerate"->"62: getPoints" [style=dotted];
+
+"16: testPerformClusterAnalysisDegenerate"->"42: public void <init>(int[])";
+
+"16: testPerformClusterAnalysisDegenerate"->"55: cluster";
+
+"16: testPerformClusterAnalysisDegenerate"->"39: public void <init>(java.util.Random)";
+
+"16: testPerformClusterAnalysisDegenerate"->"10: <clinit>";
+
+"55: cluster"->"106: chooseInitialCenters";
+
+"55: cluster"->"44: public void <init>(org.apache.commons.math.stat.clustering.Clusterable)";
+
+"55: cluster"->"76: equals" [style=dotted];
+
+"55: cluster"->"0: centroidOf" [style=dotted];
+
+"55: cluster"->"70: getCenter";
+
+"55: cluster"->"62: getPoints" [style=dotted];
+
+"55: cluster"->"88: assignPointsToClusters";
+
+"106: chooseInitialCenters"->"152: getNearestCluster";
+
+"106: chooseInitialCenters"->"44: public void <init>(org.apache.commons.math.stat.clustering.Clusterable)";
+
+"106: chooseInitialCenters"->"0: distanceFrom" [style=dotted];
+
+"106: chooseInitialCenters"->"70: getCenter";
+
+"76: equals"->"51: getPoint" [style=dotted];
+
+"0: centroidOf"->"61: centroidOf" [style=dotted];
+
+"88: assignPointsToClusters"->"152: getNearestCluster";
+
+"88: assignPointsToClusters"->"54: addPoint" [style=dotted];
+
+"152: getNearestCluster"->"0: distanceFrom" [style=dotted];
+
+"152: getNearestCluster"->"70: getCenter";
+
+"0: distanceFrom"->"56: distanceFrom" [style=dotted];
+
+"61: centroidOf"->"51: getPoint" [style=dotted];
+
+"61: centroidOf"->"42: public void <init>(int[])" [style=dotted];
+
+"56: distanceFrom"->"29: <clinit>";
+
+"56: distanceFrom"->"51: getPoint";
+
+"56: distanceFrom"->"1623: distance";
+
+"29: <clinit>"->"29: <clinit>";
+
+}

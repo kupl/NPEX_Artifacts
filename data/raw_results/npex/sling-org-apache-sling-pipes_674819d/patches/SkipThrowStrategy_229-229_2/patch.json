@@ -1,0 +1,5 @@
+{
+    "contents": "if (evaluate(expr) == null) {\n    throw new javax.script.ScriptException(\"\");\n}",
+    "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+    "patched_lines": [237]
+}

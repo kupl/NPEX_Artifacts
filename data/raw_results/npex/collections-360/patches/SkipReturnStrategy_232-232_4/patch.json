@@ -1,0 +1,5 @@
+{
+    "contents": "if (iterator == null) {\n    return false;\n}",
+    "original_filepath": "org/apache/commons/collections/iterators/FilterListIterator.java",
+    "patched_lines": [231]
+}

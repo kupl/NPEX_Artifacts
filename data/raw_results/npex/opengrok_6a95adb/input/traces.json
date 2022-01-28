@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "test/org/opensolaris/opengrok/analysis/IteratorReaderTest.java",
+        "line": 69,
+        "method_name": "testFailfastOnNullIterator"
+    }
+]

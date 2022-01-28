@@ -1,0 +1,5 @@
+{
+    "contents": "if (klass == null) {\n    return null;\n}",
+    "original_filepath": "src/org/nutz/lang/Mirror.java",
+    "patched_lines": [613]
+}

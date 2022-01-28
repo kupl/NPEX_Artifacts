@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "src/test/java/org/apache/bcel/generic/MethodGenTestCase.java",
+        "line": 137,
+        "method_name": "testInvalidNullMethodBody"
+    },
+    {
+        "filepath": "src/test/java/org/apache/bcel/generic/MethodGenTestCase.java",
+        "line": 125,
+        "method_name": "testInvalidNullMethodBody_MailDateFormat"
+    }
+]

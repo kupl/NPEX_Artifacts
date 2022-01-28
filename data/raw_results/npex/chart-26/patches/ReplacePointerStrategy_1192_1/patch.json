@@ -1,0 +1,5 @@
+{
+    "contents": "(owner != null ? owner : new org.jfree.chart.ChartRenderingInfo()).getEntityCollection()",
+    "original_filepath": "org/jfree/chart/axis/Axis.java",
+    "patched_lines": [1174]
+}

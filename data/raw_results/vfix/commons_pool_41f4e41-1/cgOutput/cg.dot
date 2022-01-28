@@ -1,0 +1,1057 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"447: returnObject" [color=red] [style=bold]
+"98: <clinit>"
+"199: testReturnObjectThrowsIllegalStateException"
+"66: public void <init>()"
+"1814: public void <init>()" [style=bold]
+"679: close" [style=bold]
+"88: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory)" [style=bold]
+"33: public void <init>()" [style=bold]
+"1816: public void <init>(boolean)" [style=bold]
+"726: isClosed" [style=bold]
+"1415: interuptTakeWaiters"
+"1492: getIdleObjects"
+"1288: next"
+"1241: next"
+"1283: hasNext"
+"1271: hasNext"
+"1178: iterator"
+"590: clear" [style=bold]
+"1015: jmxUnregister" [style=bold]
+"788: stopEvictor" [style=bold]
+"1449: access$000"
+"380: addLast"
+"370: addFirst"
+"1003: size"
+"212: passivateObject"
+"1328: passivateObject"
+"1864: passivateObject"
+"787: passivateObject"
+"82: passivateObject"
+"120: passivateObject"
+"89: validateObject"
+"1848: validateObject"
+"62: validateObject"
+"1302: validateObject"
+"217: validateObject"
+"775: validateObject"
+"214: deallocate"
+"72: getActiveTimeMillis"
+"992: updateStatsReturn"
+"776: reuseCapacity"
+"820: hasBorrowWaiters"
+"609: clear"
+"290: getLifo"
+"951: swallowException"
+"1075: destroy"
+"161: getMaxIdlePerKey"
+"526: whenWaitersAddObject"
+"405: getTestOnReturn"
+"1001: markReturningState"
+"1306: public void <init>(java.lang.Object)"
+"1520: getAllObjects"
+"68: public void <init>()" [style=bold]
+"104: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory, org.apache.commons.pool2.impl.GenericKeyedObjectPoolConfig)" [style=bold]
+"51: interruptWaiters"
+"1271: advance"
+"1277: next"
+"1316: void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque, org.apache.commons.pool2.impl.LinkedBlockingDeque$1)"
+"773: startEvictor" [style=bold]
+"406: offerLast"
+"390: offerFirst"
+"131: passivateObject"
+"55: getObject"
+"26: public void <init>(java.lang.String)"
+"40: public void <init>(java.lang.String, java.lang.Object, java.lang.Object)"
+"61: getObject"
+"63: passivate"
+"1923: doWait"
+"50: validate"
+"140: validateObject"
+"72: returned"
+"28: <clinit>"
+"75: clear"
+"52: clear"
+"90: clear"
+"1198: add"
+"127: getMaxTotalPerKey"
+"1402: getTakeQueueLength"
+"1151: deregister"
+"1254: addIdleObject"
+"974: create"
+"1112: register"
+"652: getNumActive"
+"1387: hasTakeWaiters"
+"828: poll"
+"929: getSwallowedExceptionListener"
+"183: destroyObject"
+"1289: destroyObject"
+"1838: destroyObject"
+"795: destroyObject"
+"52: destroyObject"
+"75: destroyObject"
+"230: invalidate"
+"993: remove"
+"1502: getCreateCount"
+"1234: addObject"
+"270: markReturning"
+"254: getState"
+"31: public void <init>()" [style=bold]
+"239: setConfig" [style=bold]
+"138: public void <init>(org.apache.commons.pool2.impl.BaseObjectPoolConfig, java.lang.String, java.lang.String)" [style=bold]
+"233: getFairness" [style=bold]
+"699: getJmxNamePrefix" [style=bold]
+"59: access$200"
+"1254: succ"
+"1316: private void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque)"
+"1105: void <init>(org.apache.commons.pool2.impl.BaseGenericObjectPool)"
+"97: cancel" [style=bold]
+"77: schedule"
+"271: linkLast"
+"246: linkFirst"
+"111: setValid"
+"145: doWait"
+"83: setActive"
+"43: public void <init>(java.lang.String, java.util.List)"
+"101: fail"
+"106: isValid"
+"68: setReturned"
+"23: private void <init>(java.lang.String, int)"
+"1511: getNumInterested"
+"192: makeObject"
+"1276: makeObject"
+"1821: makeObject"
+"752: makeObject"
+"42: makeObject"
+"59: makeObject"
+"335: getTestOnCreate"
+"717: clearOldest"
+"639: getNumIdle"
+"172: getMaxTotal"
+"1449: access$100"
+"1449: access$200"
+"1449: access$208"
+"1449: access$210"
+"1482: public void <init>(org.apache.commons.pool2.impl.GenericKeyedObjectPool, boolean)"
+"559: pollFirst"
+"106: destroyObject"
+"75: destroy"
+"719: removeFirstOccurrence"
+"757: assertOpen"
+"155: <clinit>" [style=bold]
+"23: public void <init>()" [style=bold]
+"220: setConfig" [style=bold]
+"133: getMinIdlePerKey" [style=bold]
+"81: getMaxTotal" [style=bold]
+"107: getMaxTotalPerKey" [style=bold]
+"159: getMaxIdlePerKey" [style=bold]
+"203: setMinIdlePerKey" [style=bold]
+"187: setMaxTotal" [style=bold]
+"140: setMaxTotalPerKey" [style=bold]
+"181: setMaxIdlePerKey" [style=bold]
+"650: getJmxEnabled" [style=bold]
+"1183: public void <init>(org.apache.commons.pool2.impl.BaseGenericObjectPool, int)" [style=bold]
+"1092: getStackTrace" [style=bold]
+"1040: jmxRegister" [style=bold]
+"1320: nextNode"
+"1326: firstNode"
+"1318: firstNode"
+"1328: nextNode"
+"1232: void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque)"
+"1164: cancel"
+"1159: setScheduledFuture"
+"116: void <init>(org.apache.commons.pool2.impl.EvictionTimer$1)"
+"124: void <init>(java.lang.Object, org.apache.commons.pool2.impl.LinkedBlockingDeque$Node, org.apache.commons.pool2.impl.LinkedBlockingDeque$Node)"
+"118: makeObject"
+"55: public void <init>(java.lang.Object)"
+"36: public void <init>(java.lang.String, java.lang.Object)"
+"43: public void <init>(int, java.lang.Object)"
+"2332: create"
+"672: wrap"
+"2362: wrap"
+"2377: wrap"
+"2323: wrap"
+"2332: wrap"
+"2351: create"
+"668: create"
+"2319: create"
+"2366: create"
+"175: public void <init>(boolean)"
+"294: unlinkFirst"
+"346: unlink"
+"160: equals"
+"1318: equals"
+"78: equals"
+"219: getLifo" [style=bold]
+"712: setEvictorShutdownTimeoutMillis" [style=bold]
+"627: setEvictionPolicy"
+"686: setEvictionPolicyClassName" [style=bold]
+"604: setSoftMinEvictableIdleTimeMillis" [style=bold]
+"489: setTimeBetweenEvictionRunsMillis" [style=bold]
+"563: setMinEvictableIdleTimeMillis" [style=bold]
+"529: setNumTestsPerEvictionRun" [style=bold]
+"459: setTestWhileIdle" [style=bold]
+"422: setTestOnReturn" [style=bold]
+"389: setTestOnBorrow" [style=bold]
+"354: setTestOnCreate" [style=bold]
+"216: setBlockWhenExhausted" [style=bold]
+"274: setMaxWaitMillis" [style=bold]
+"317: setLifo" [style=bold]
+"391: getEvictorShutdownTimeoutMillis" [style=bold]
+"582: getEvictionPolicyClassName" [style=bold]
+"568: getEvictionPolicy" [style=bold]
+"332: getSoftMinEvictableIdleTimeMillis" [style=bold]
+"537: getTimeBetweenEvictionRunsMillis" [style=bold]
+"303: getMinEvictableIdleTimeMillis" [style=bold]
+"363: getNumTestsPerEvictionRun" [style=bold]
+"509: getTestWhileIdle" [style=bold]
+"481: getTestOnReturn" [style=bold]
+"453: getTestOnBorrow" [style=bold]
+"423: getTestOnCreate" [style=bold]
+"625: getBlockWhenExhausted" [style=bold]
+"275: getMaxWaitMillis" [style=bold]
+"674: getJmxNameBase" [style=bold]
+"59: access$500"
+"59: access$400"
+"116: private void <init>()"
+"29: <clinit>"
+"39: public void <init>(boolean, boolean, long)"
+"31: <clinit>"
+"69: reset"
+"2336: create"
+"2340: wrap"
+"2372: create"
+"197: public void <init>(int, boolean)"
+"320: unlinkLast"
+"155: hashCode"
+"1312: hashCode"
+"103: hashCode"
+"646: setEvictionPolicyClassName" [style=bold]
+"36: private void <init>()"
+"42: public void <init>(boolean)"
+"65: <clinit>" [style=bold]
+"668: setEvictionPolicy" [style=bold]
+"2: main"->"98: <clinit>" [style=dotted];
+
+"2: main"->"199: testReturnObjectThrowsIllegalStateException" [style=dotted];
+
+"2: main"->"66: public void <init>()" [style=dotted];
+
+"98: <clinit>"->"98: <clinit>" [style=dotted];
+
+"199: testReturnObjectThrowsIllegalStateException"->"1814: public void <init>()" [style=dotted];
+
+"199: testReturnObjectThrowsIllegalStateException"->"679: close" [style=dotted];
+
+"199: testReturnObjectThrowsIllegalStateException"->"447: returnObject" [style=dotted];
+
+"199: testReturnObjectThrowsIllegalStateException"->"88: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory)" [style=dotted];
+
+"66: public void <init>()"->"33: public void <init>()" [style=dotted];
+
+"1814: public void <init>()"->"1816: public void <init>(boolean)";
+
+"679: close"->"726: isClosed";
+
+"679: close"->"1415: interuptTakeWaiters" [style=dotted];
+
+"679: close"->"1492: getIdleObjects" [style=dotted];
+
+"679: close"->"1288: next" [style=dotted];
+
+"679: close"->"1241: next" [style=dotted];
+
+"679: close"->"1283: hasNext" [style=dotted];
+
+"679: close"->"1271: hasNext" [style=dotted];
+
+"679: close"->"1178: iterator" [style=dotted];
+
+"679: close"->"590: clear";
+
+"679: close"->"1015: jmxUnregister";
+
+"679: close"->"788: stopEvictor";
+
+"447: returnObject"->"1449: access$000" [style=dotted];
+
+"447: returnObject"->"380: addLast" [style=dotted];
+
+"447: returnObject"->"370: addFirst" [style=dotted];
+
+"447: returnObject"->"1003: size" [style=dotted];
+
+"447: returnObject"->"212: passivateObject" [style=dotted];
+
+"447: returnObject"->"1328: passivateObject" [style=dotted];
+
+"447: returnObject"->"1864: passivateObject" [style=dotted];
+
+"447: returnObject"->"787: passivateObject" [style=dotted];
+
+"447: returnObject"->"82: passivateObject" [style=dotted];
+
+"447: returnObject"->"120: passivateObject" [style=dotted];
+
+"447: returnObject"->"89: validateObject" [style=dotted];
+
+"447: returnObject"->"1848: validateObject" [style=dotted];
+
+"447: returnObject"->"62: validateObject" [style=dotted];
+
+"447: returnObject"->"1302: validateObject" [style=dotted];
+
+"447: returnObject"->"217: validateObject" [style=dotted];
+
+"447: returnObject"->"775: validateObject" [style=dotted];
+
+"447: returnObject"->"214: deallocate" [style=dotted];
+
+"447: returnObject"->"72: getActiveTimeMillis" [style=dotted];
+
+"447: returnObject"->"992: updateStatsReturn" [style=dotted];
+
+"447: returnObject"->"776: reuseCapacity" [style=dotted];
+
+"447: returnObject"->"820: hasBorrowWaiters" [style=dotted];
+
+"447: returnObject"->"609: clear" [style=dotted];
+
+"447: returnObject"->"726: isClosed";
+
+"447: returnObject"->"290: getLifo" [style=dotted];
+
+"447: returnObject"->"951: swallowException" [style=dotted];
+
+"447: returnObject"->"1075: destroy" [style=dotted];
+
+"447: returnObject"->"161: getMaxIdlePerKey" [style=dotted];
+
+"447: returnObject"->"526: whenWaitersAddObject" [style=dotted];
+
+"447: returnObject"->"405: getTestOnReturn" [style=dotted];
+
+"447: returnObject"->"1001: markReturningState" [style=dotted];
+
+"447: returnObject"->"1306: public void <init>(java.lang.Object)" [style=dotted];
+
+"447: returnObject"->"1492: getIdleObjects" [style=dotted];
+
+"447: returnObject"->"1520: getAllObjects" [style=dotted];
+
+"88: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory)"->"68: public void <init>()";
+
+"88: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory)"->"104: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory, org.apache.commons.pool2.impl.GenericKeyedObjectPoolConfig)";
+
+"1415: interuptTakeWaiters"->"51: interruptWaiters" [style=dotted];
+
+"1288: next"->"1271: advance" [style=dotted];
+
+"1241: next"->"1277: next" [style=dotted];
+
+"1271: hasNext"->"1283: hasNext" [style=dotted];
+
+"1271: hasNext"->"1271: hasNext" [style=dotted];
+
+"1178: iterator"->"1316: void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque, org.apache.commons.pool2.impl.LinkedBlockingDeque$1)" [style=dotted];
+
+"590: clear"->"609: clear" [style=dotted];
+
+"590: clear"->"1288: next" [style=dotted];
+
+"590: clear"->"1241: next" [style=dotted];
+
+"590: clear"->"1283: hasNext" [style=dotted];
+
+"590: clear"->"1271: hasNext" [style=dotted];
+
+"1015: jmxUnregister"->"951: swallowException" [style=dotted];
+
+"788: stopEvictor"->"773: startEvictor";
+
+"380: addLast"->"406: offerLast" [style=dotted];
+
+"370: addFirst"->"390: offerFirst" [style=dotted];
+
+"212: passivateObject"->"131: passivateObject" [style=dotted];
+
+"1328: passivateObject"->"212: passivateObject" [style=dotted];
+
+"1328: passivateObject"->"1328: passivateObject" [style=dotted];
+
+"1328: passivateObject"->"1864: passivateObject" [style=dotted];
+
+"1328: passivateObject"->"787: passivateObject" [style=dotted];
+
+"1328: passivateObject"->"82: passivateObject" [style=dotted];
+
+"1328: passivateObject"->"120: passivateObject" [style=dotted];
+
+"787: passivateObject"->"55: getObject" [style=dotted];
+
+"787: passivateObject"->"26: public void <init>(java.lang.String)" [style=dotted];
+
+"787: passivateObject"->"40: public void <init>(java.lang.String, java.lang.Object, java.lang.Object)" [style=dotted];
+
+"787: passivateObject"->"61: getObject" [style=dotted];
+
+"82: passivateObject"->"55: getObject" [style=dotted];
+
+"82: passivateObject"->"63: passivate" [style=dotted];
+
+"82: passivateObject"->"61: getObject" [style=dotted];
+
+"1848: validateObject"->"1923: doWait" [style=dotted];
+
+"62: validateObject"->"55: getObject" [style=dotted];
+
+"62: validateObject"->"50: validate" [style=dotted];
+
+"62: validateObject"->"61: getObject" [style=dotted];
+
+"1302: validateObject"->"217: validateObject" [style=dotted];
+
+"1302: validateObject"->"1302: validateObject" [style=dotted];
+
+"1302: validateObject"->"1848: validateObject" [style=dotted];
+
+"1302: validateObject"->"775: validateObject" [style=dotted];
+
+"1302: validateObject"->"62: validateObject" [style=dotted];
+
+"1302: validateObject"->"89: validateObject" [style=dotted];
+
+"217: validateObject"->"140: validateObject" [style=dotted];
+
+"775: validateObject"->"72: returned" [style=dotted];
+
+"775: validateObject"->"26: public void <init>(java.lang.String)" [style=dotted];
+
+"775: validateObject"->"40: public void <init>(java.lang.String, java.lang.Object, java.lang.Object)" [style=dotted];
+
+"775: validateObject"->"61: getObject" [style=dotted];
+
+"775: validateObject"->"55: getObject" [style=dotted];
+
+"214: deallocate"->"28: <clinit>" [style=dotted];
+
+"214: deallocate"->"75: clear" [style=dotted];
+
+"214: deallocate"->"52: clear" [style=dotted];
+
+"214: deallocate"->"90: clear" [style=dotted];
+
+"992: updateStatsReturn"->"1198: add" [style=dotted];
+
+"776: reuseCapacity"->"127: getMaxTotalPerKey" [style=dotted];
+
+"776: reuseCapacity"->"1402: getTakeQueueLength" [style=dotted];
+
+"776: reuseCapacity"->"1492: getIdleObjects" [style=dotted];
+
+"776: reuseCapacity"->"1288: next" [style=dotted];
+
+"776: reuseCapacity"->"1241: next" [style=dotted];
+
+"776: reuseCapacity"->"1283: hasNext" [style=dotted];
+
+"776: reuseCapacity"->"1271: hasNext" [style=dotted];
+
+"776: reuseCapacity"->"1151: deregister" [style=dotted];
+
+"776: reuseCapacity"->"951: swallowException" [style=dotted];
+
+"776: reuseCapacity"->"1254: addIdleObject" [style=dotted];
+
+"776: reuseCapacity"->"974: create" [style=dotted];
+
+"776: reuseCapacity"->"1112: register" [style=dotted];
+
+"776: reuseCapacity"->"652: getNumActive" [style=dotted];
+
+"820: hasBorrowWaiters"->"1387: hasTakeWaiters" [style=dotted];
+
+"820: hasBorrowWaiters"->"1492: getIdleObjects" [style=dotted];
+
+"820: hasBorrowWaiters"->"1288: next" [style=dotted];
+
+"820: hasBorrowWaiters"->"1241: next" [style=dotted];
+
+"820: hasBorrowWaiters"->"1283: hasNext" [style=dotted];
+
+"820: hasBorrowWaiters"->"1271: hasNext" [style=dotted];
+
+"609: clear"->"1112: register" [style=dotted];
+
+"609: clear"->"828: poll" [style=dotted];
+
+"609: clear"->"1492: getIdleObjects" [style=dotted];
+
+"609: clear"->"1151: deregister" [style=dotted];
+
+"609: clear"->"951: swallowException" [style=dotted];
+
+"609: clear"->"1075: destroy" [style=dotted];
+
+"951: swallowException"->"929: getSwallowedExceptionListener" [style=dotted];
+
+"1075: destroy"->"1112: register" [style=dotted];
+
+"1075: destroy"->"183: destroyObject" [style=dotted];
+
+"1075: destroy"->"1289: destroyObject" [style=dotted];
+
+"1075: destroy"->"1838: destroyObject" [style=dotted];
+
+"1075: destroy"->"795: destroyObject" [style=dotted];
+
+"1075: destroy"->"52: destroyObject" [style=dotted];
+
+"1075: destroy"->"75: destroyObject" [style=dotted];
+
+"1075: destroy"->"1306: public void <init>(java.lang.Object)" [style=dotted];
+
+"1075: destroy"->"230: invalidate" [style=dotted];
+
+"1075: destroy"->"61: getObject" [style=dotted];
+
+"1075: destroy"->"55: getObject" [style=dotted];
+
+"1075: destroy"->"993: remove" [style=dotted];
+
+"1075: destroy"->"1502: getCreateCount" [style=dotted];
+
+"1075: destroy"->"1520: getAllObjects" [style=dotted];
+
+"1075: destroy"->"1492: getIdleObjects" [style=dotted];
+
+"1075: destroy"->"1151: deregister" [style=dotted];
+
+"526: whenWaitersAddObject"->"1387: hasTakeWaiters" [style=dotted];
+
+"526: whenWaitersAddObject"->"951: swallowException" [style=dotted];
+
+"526: whenWaitersAddObject"->"1234: addObject" [style=dotted];
+
+"1001: markReturningState"->"28: <clinit>" [style=dotted];
+
+"1001: markReturningState"->"270: markReturning" [style=dotted];
+
+"1001: markReturningState"->"254: getState" [style=dotted];
+
+"68: public void <init>()"->"31: public void <init>()";
+
+"104: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory, org.apache.commons.pool2.impl.GenericKeyedObjectPoolConfig)"->"239: setConfig";
+
+"104: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory, org.apache.commons.pool2.impl.GenericKeyedObjectPoolConfig)"->"1015: jmxUnregister";
+
+"104: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory, org.apache.commons.pool2.impl.GenericKeyedObjectPoolConfig)"->"138: public void <init>(org.apache.commons.pool2.impl.BaseObjectPoolConfig, java.lang.String, java.lang.String)";
+
+"104: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory, org.apache.commons.pool2.impl.GenericKeyedObjectPoolConfig)"->"233: getFairness";
+
+"104: public void <init>(org.apache.commons.pool2.KeyedPooledObjectFactory, org.apache.commons.pool2.impl.GenericKeyedObjectPoolConfig)"->"699: getJmxNamePrefix";
+
+"51: interruptWaiters"->"1288: next" [style=dotted];
+
+"51: interruptWaiters"->"1241: next" [style=dotted];
+
+"51: interruptWaiters"->"1283: hasNext" [style=dotted];
+
+"51: interruptWaiters"->"1271: hasNext" [style=dotted];
+
+"51: interruptWaiters"->"1178: iterator" [style=dotted];
+
+"1271: advance"->"59: access$200" [style=dotted];
+
+"1271: advance"->"1254: succ" [style=dotted];
+
+"1277: next"->"1288: next" [style=dotted];
+
+"1277: next"->"1241: next" [style=dotted];
+
+"1316: void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque, org.apache.commons.pool2.impl.LinkedBlockingDeque$1)"->"1316: private void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque)" [style=dotted];
+
+"773: startEvictor"->"1105: void <init>(org.apache.commons.pool2.impl.BaseGenericObjectPool)" [style=dotted];
+
+"773: startEvictor"->"97: cancel";
+
+"773: startEvictor"->"77: schedule" [style=dotted];
+
+"406: offerLast"->"271: linkLast" [style=dotted];
+
+"390: offerFirst"->"246: linkFirst" [style=dotted];
+
+"131: passivateObject"->"111: setValid" [style=dotted];
+
+"131: passivateObject"->"145: doWait" [style=dotted];
+
+"131: passivateObject"->"83: setActive" [style=dotted];
+
+"131: passivateObject"->"61: getObject" [style=dotted];
+
+"131: passivateObject"->"55: getObject" [style=dotted];
+
+"40: public void <init>(java.lang.String, java.lang.Object, java.lang.Object)"->"43: public void <init>(java.lang.String, java.util.List)" [style=dotted];
+
+"63: passivate"->"101: fail" [style=dotted];
+
+"50: validate"->"101: fail" [style=dotted];
+
+"140: validateObject"->"145: doWait" [style=dotted];
+
+"140: validateObject"->"106: isValid" [style=dotted];
+
+"140: validateObject"->"61: getObject" [style=dotted];
+
+"140: validateObject"->"55: getObject" [style=dotted];
+
+"72: returned"->"68: setReturned" [style=dotted];
+
+"28: <clinit>"->"28: <clinit>" [style=dotted];
+
+"28: <clinit>"->"23: private void <init>(java.lang.String, int)" [style=dotted];
+
+"1151: deregister"->"1511: getNumInterested" [style=dotted];
+
+"1151: deregister"->"1502: getCreateCount" [style=dotted];
+
+"1254: addIdleObject"->"120: passivateObject" [style=dotted];
+
+"1254: addIdleObject"->"380: addLast" [style=dotted];
+
+"1254: addIdleObject"->"370: addFirst" [style=dotted];
+
+"1254: addIdleObject"->"290: getLifo" [style=dotted];
+
+"1254: addIdleObject"->"1492: getIdleObjects" [style=dotted];
+
+"1254: addIdleObject"->"212: passivateObject" [style=dotted];
+
+"1254: addIdleObject"->"1328: passivateObject" [style=dotted];
+
+"1254: addIdleObject"->"1864: passivateObject" [style=dotted];
+
+"1254: addIdleObject"->"787: passivateObject" [style=dotted];
+
+"1254: addIdleObject"->"82: passivateObject" [style=dotted];
+
+"974: create"->"1306: public void <init>(java.lang.Object)" [style=dotted];
+
+"974: create"->"61: getObject" [style=dotted];
+
+"974: create"->"55: getObject" [style=dotted];
+
+"974: create"->"217: validateObject" [style=dotted];
+
+"974: create"->"1302: validateObject" [style=dotted];
+
+"974: create"->"1848: validateObject" [style=dotted];
+
+"974: create"->"775: validateObject" [style=dotted];
+
+"974: create"->"62: validateObject" [style=dotted];
+
+"974: create"->"89: validateObject" [style=dotted];
+
+"974: create"->"192: makeObject" [style=dotted];
+
+"974: create"->"1276: makeObject" [style=dotted];
+
+"974: create"->"1821: makeObject" [style=dotted];
+
+"974: create"->"752: makeObject" [style=dotted];
+
+"974: create"->"42: makeObject" [style=dotted];
+
+"974: create"->"59: makeObject" [style=dotted];
+
+"974: create"->"1520: getAllObjects" [style=dotted];
+
+"974: create"->"1502: getCreateCount" [style=dotted];
+
+"974: create"->"335: getTestOnCreate" [style=dotted];
+
+"974: create"->"717: clearOldest" [style=dotted];
+
+"974: create"->"639: getNumIdle" [style=dotted];
+
+"974: create"->"172: getMaxTotal" [style=dotted];
+
+"974: create"->"127: getMaxTotalPerKey" [style=dotted];
+
+"974: create"->"1449: access$100" [style=dotted];
+
+"974: create"->"1449: access$200" [style=dotted];
+
+"974: create"->"1449: access$208" [style=dotted];
+
+"974: create"->"1449: access$210" [style=dotted];
+
+"1112: register"->"1511: getNumInterested" [style=dotted];
+
+"1112: register"->"1482: public void <init>(org.apache.commons.pool2.impl.GenericKeyedObjectPool, boolean)" [style=dotted];
+
+"652: getNumActive"->"1003: size" [style=dotted];
+
+"652: getNumActive"->"1492: getIdleObjects" [style=dotted];
+
+"652: getNumActive"->"1520: getAllObjects" [style=dotted];
+
+"828: poll"->"559: pollFirst" [style=dotted];
+
+"183: destroyObject"->"106: destroyObject" [style=dotted];
+
+"1289: destroyObject"->"183: destroyObject" [style=dotted];
+
+"1289: destroyObject"->"1289: destroyObject" [style=dotted];
+
+"1289: destroyObject"->"1838: destroyObject" [style=dotted];
+
+"1289: destroyObject"->"795: destroyObject" [style=dotted];
+
+"1289: destroyObject"->"52: destroyObject" [style=dotted];
+
+"1289: destroyObject"->"75: destroyObject" [style=dotted];
+
+"1838: destroyObject"->"1923: doWait" [style=dotted];
+
+"795: destroyObject"->"55: getObject" [style=dotted];
+
+"795: destroyObject"->"26: public void <init>(java.lang.String)" [style=dotted];
+
+"795: destroyObject"->"40: public void <init>(java.lang.String, java.lang.Object, java.lang.Object)" [style=dotted];
+
+"795: destroyObject"->"61: getObject" [style=dotted];
+
+"52: destroyObject"->"55: getObject" [style=dotted];
+
+"52: destroyObject"->"75: destroy" [style=dotted];
+
+"52: destroyObject"->"61: getObject" [style=dotted];
+
+"230: invalidate"->"28: <clinit>" [style=dotted];
+
+"993: remove"->"719: removeFirstOccurrence" [style=dotted];
+
+"1234: addObject"->"757: assertOpen" [style=dotted];
+
+"1234: addObject"->"1151: deregister" [style=dotted];
+
+"1234: addObject"->"1254: addIdleObject" [style=dotted];
+
+"1234: addObject"->"974: create" [style=dotted];
+
+"1234: addObject"->"1112: register" [style=dotted];
+
+"270: markReturning"->"28: <clinit>" [style=dotted];
+
+"31: public void <init>()"->"155: <clinit>";
+
+"31: public void <init>()"->"23: public void <init>()";
+
+"239: setConfig"->"220: setConfig";
+
+"239: setConfig"->"133: getMinIdlePerKey";
+
+"239: setConfig"->"81: getMaxTotal";
+
+"239: setConfig"->"107: getMaxTotalPerKey";
+
+"239: setConfig"->"159: getMaxIdlePerKey";
+
+"239: setConfig"->"203: setMinIdlePerKey";
+
+"239: setConfig"->"187: setMaxTotal";
+
+"239: setConfig"->"140: setMaxTotalPerKey";
+
+"239: setConfig"->"181: setMaxIdlePerKey";
+
+"138: public void <init>(org.apache.commons.pool2.impl.BaseObjectPoolConfig, java.lang.String, java.lang.String)"->"233: getFairness";
+
+"138: public void <init>(org.apache.commons.pool2.impl.BaseObjectPoolConfig, java.lang.String, java.lang.String)"->"650: getJmxEnabled";
+
+"138: public void <init>(org.apache.commons.pool2.impl.BaseObjectPoolConfig, java.lang.String, java.lang.String)"->"1183: public void <init>(org.apache.commons.pool2.impl.BaseGenericObjectPool, int)";
+
+"138: public void <init>(org.apache.commons.pool2.impl.BaseObjectPoolConfig, java.lang.String, java.lang.String)"->"1092: getStackTrace";
+
+"138: public void <init>(org.apache.commons.pool2.impl.BaseObjectPoolConfig, java.lang.String, java.lang.String)"->"1040: jmxRegister";
+
+"138: public void <init>(org.apache.commons.pool2.impl.BaseObjectPoolConfig, java.lang.String, java.lang.String)"->"23: public void <init>()";
+
+"1254: succ"->"1320: nextNode" [style=dotted];
+
+"1254: succ"->"1326: firstNode" [style=dotted];
+
+"1254: succ"->"1318: firstNode" [style=dotted];
+
+"1254: succ"->"1328: nextNode" [style=dotted];
+
+"1316: private void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque)"->"1232: void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque)" [style=dotted];
+
+"97: cancel"->"1164: cancel" [style=dotted];
+
+"77: schedule"->"1159: setScheduledFuture" [style=dotted];
+
+"77: schedule"->"116: void <init>(org.apache.commons.pool2.impl.EvictionTimer$1)" [style=dotted];
+
+"271: linkLast"->"124: void <init>(java.lang.Object, org.apache.commons.pool2.impl.LinkedBlockingDeque$Node, org.apache.commons.pool2.impl.LinkedBlockingDeque$Node)" [style=dotted];
+
+"246: linkFirst"->"124: void <init>(java.lang.Object, org.apache.commons.pool2.impl.LinkedBlockingDeque$Node, org.apache.commons.pool2.impl.LinkedBlockingDeque$Node)" [style=dotted];
+
+"192: makeObject"->"118: makeObject" [style=dotted];
+
+"1276: makeObject"->"192: makeObject" [style=dotted];
+
+"1276: makeObject"->"1276: makeObject" [style=dotted];
+
+"1276: makeObject"->"1821: makeObject" [style=dotted];
+
+"1276: makeObject"->"752: makeObject" [style=dotted];
+
+"1276: makeObject"->"42: makeObject" [style=dotted];
+
+"1276: makeObject"->"59: makeObject" [style=dotted];
+
+"1821: makeObject"->"55: public void <init>(java.lang.Object)" [style=dotted];
+
+"1821: makeObject"->"1923: doWait" [style=dotted];
+
+"752: makeObject"->"55: public void <init>(java.lang.Object)" [style=dotted];
+
+"752: makeObject"->"68: setReturned" [style=dotted];
+
+"752: makeObject"->"26: public void <init>(java.lang.String)" [style=dotted];
+
+"752: makeObject"->"36: public void <init>(java.lang.String, java.lang.Object)" [style=dotted];
+
+"42: makeObject"->"43: public void <init>(int, java.lang.Object)" [style=dotted];
+
+"42: makeObject"->"55: public void <init>(java.lang.Object)" [style=dotted];
+
+"59: makeObject"->"2332: create" [style=dotted];
+
+"59: makeObject"->"672: wrap" [style=dotted];
+
+"59: makeObject"->"2362: wrap" [style=dotted];
+
+"59: makeObject"->"2377: wrap" [style=dotted];
+
+"59: makeObject"->"2323: wrap" [style=dotted];
+
+"59: makeObject"->"2332: wrap" [style=dotted];
+
+"59: makeObject"->"2351: create" [style=dotted];
+
+"59: makeObject"->"668: create" [style=dotted];
+
+"59: makeObject"->"2319: create" [style=dotted];
+
+"59: makeObject"->"2366: create" [style=dotted];
+
+"717: clearOldest"->"951: swallowException" [style=dotted];
+
+"717: clearOldest"->"1075: destroy" [style=dotted];
+
+"717: clearOldest"->"1288: next" [style=dotted];
+
+"717: clearOldest"->"1241: next" [style=dotted];
+
+"717: clearOldest"->"1283: hasNext" [style=dotted];
+
+"717: clearOldest"->"1271: hasNext" [style=dotted];
+
+"717: clearOldest"->"1178: iterator" [style=dotted];
+
+"717: clearOldest"->"1492: getIdleObjects" [style=dotted];
+
+"639: getNumIdle"->"1003: size" [style=dotted];
+
+"639: getNumIdle"->"1492: getIdleObjects" [style=dotted];
+
+"639: getNumIdle"->"1288: next" [style=dotted];
+
+"639: getNumIdle"->"1241: next" [style=dotted];
+
+"639: getNumIdle"->"1283: hasNext" [style=dotted];
+
+"639: getNumIdle"->"1271: hasNext" [style=dotted];
+
+"639: getNumIdle"->"1178: iterator" [style=dotted];
+
+"1482: public void <init>(org.apache.commons.pool2.impl.GenericKeyedObjectPool, boolean)"->"175: public void <init>(boolean)" [style=dotted];
+
+"559: pollFirst"->"294: unlinkFirst" [style=dotted];
+
+"106: destroyObject"->"145: doWait" [style=dotted];
+
+"106: destroyObject"->"83: setActive" [style=dotted];
+
+"106: destroyObject"->"111: setValid" [style=dotted];
+
+"106: destroyObject"->"61: getObject" [style=dotted];
+
+"106: destroyObject"->"55: getObject" [style=dotted];
+
+"719: removeFirstOccurrence"->"346: unlink" [style=dotted];
+
+"719: removeFirstOccurrence"->"160: equals" [style=dotted];
+
+"719: removeFirstOccurrence"->"1318: equals" [style=dotted];
+
+"719: removeFirstOccurrence"->"78: equals" [style=dotted];
+
+"757: assertOpen"->"726: isClosed" [style=dotted];
+
+"155: <clinit>"->"155: <clinit>";
+
+"220: setConfig"->"219: getLifo";
+
+"220: setConfig"->"712: setEvictorShutdownTimeoutMillis";
+
+"220: setConfig"->"627: setEvictionPolicy" [style=dotted];
+
+"220: setConfig"->"686: setEvictionPolicyClassName";
+
+"220: setConfig"->"604: setSoftMinEvictableIdleTimeMillis";
+
+"220: setConfig"->"489: setTimeBetweenEvictionRunsMillis";
+
+"220: setConfig"->"563: setMinEvictableIdleTimeMillis";
+
+"220: setConfig"->"529: setNumTestsPerEvictionRun";
+
+"220: setConfig"->"459: setTestWhileIdle";
+
+"220: setConfig"->"422: setTestOnReturn";
+
+"220: setConfig"->"389: setTestOnBorrow";
+
+"220: setConfig"->"354: setTestOnCreate";
+
+"220: setConfig"->"216: setBlockWhenExhausted";
+
+"220: setConfig"->"274: setMaxWaitMillis";
+
+"220: setConfig"->"317: setLifo";
+
+"220: setConfig"->"391: getEvictorShutdownTimeoutMillis";
+
+"220: setConfig"->"582: getEvictionPolicyClassName";
+
+"220: setConfig"->"568: getEvictionPolicy";
+
+"220: setConfig"->"332: getSoftMinEvictableIdleTimeMillis";
+
+"220: setConfig"->"537: getTimeBetweenEvictionRunsMillis";
+
+"220: setConfig"->"303: getMinEvictableIdleTimeMillis";
+
+"220: setConfig"->"363: getNumTestsPerEvictionRun";
+
+"220: setConfig"->"509: getTestWhileIdle";
+
+"220: setConfig"->"481: getTestOnReturn";
+
+"220: setConfig"->"453: getTestOnBorrow";
+
+"220: setConfig"->"423: getTestOnCreate";
+
+"220: setConfig"->"625: getBlockWhenExhausted";
+
+"220: setConfig"->"275: getMaxWaitMillis";
+
+"1040: jmxRegister"->"674: getJmxNameBase";
+
+"1326: firstNode"->"59: access$500" [style=dotted];
+
+"1318: firstNode"->"59: access$400" [style=dotted];
+
+"1232: void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque)"->"59: access$200" [style=dotted];
+
+"1232: void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque)"->"1326: firstNode" [style=dotted];
+
+"1232: void <init>(org.apache.commons.pool2.impl.LinkedBlockingDeque)"->"1318: firstNode" [style=dotted];
+
+"116: void <init>(org.apache.commons.pool2.impl.EvictionTimer$1)"->"116: private void <init>()" [style=dotted];
+
+"118: makeObject"->"29: <clinit>" [style=dotted];
+
+"118: makeObject"->"55: public void <init>(java.lang.Object)" [style=dotted];
+
+"118: makeObject"->"39: public void <init>(boolean, boolean, long)" [style=dotted];
+
+"118: makeObject"->"145: doWait" [style=dotted];
+
+"55: public void <init>(java.lang.Object)"->"28: <clinit>" [style=dotted];
+
+"55: public void <init>(java.lang.Object)"->"31: <clinit>" [style=dotted];
+
+"36: public void <init>(java.lang.String, java.lang.Object)"->"43: public void <init>(java.lang.String, java.util.List)" [style=dotted];
+
+"43: public void <init>(int, java.lang.Object)"->"69: reset" [style=dotted];
+
+"2332: create"->"2336: create" [style=dotted];
+
+"672: wrap"->"55: public void <init>(java.lang.Object)" [style=dotted];
+
+"2362: wrap"->"55: public void <init>(java.lang.Object)" [style=dotted];
+
+"2377: wrap"->"55: public void <init>(java.lang.Object)" [style=dotted];
+
+"2323: wrap"->"55: public void <init>(java.lang.Object)" [style=dotted];
+
+"2332: wrap"->"2340: wrap" [style=dotted];
+
+"2366: create"->"2372: create" [style=dotted];
+
+"175: public void <init>(boolean)"->"197: public void <init>(int, boolean)" [style=dotted];
+
+"346: unlink"->"294: unlinkFirst" [style=dotted];
+
+"346: unlink"->"320: unlinkLast" [style=dotted];
+
+"160: equals"->"155: hashCode" [style=dotted];
+
+"160: equals"->"1312: hashCode" [style=dotted];
+
+"160: equals"->"103: hashCode" [style=dotted];
+
+"78: equals"->"160: equals" [style=dotted];
+
+"78: equals"->"1318: equals" [style=dotted];
+
+"78: equals"->"78: equals" [style=dotted];
+
+"686: setEvictionPolicyClassName"->"646: setEvictionPolicyClassName";
+
+"489: setTimeBetweenEvictionRunsMillis"->"773: startEvictor";
+
+"29: <clinit>"->"29: <clinit>" [style=dotted];
+
+"39: public void <init>(boolean, boolean, long)"->"29: <clinit>" [style=dotted];
+
+"31: <clinit>"->"31: <clinit>" [style=dotted];
+
+"31: <clinit>"->"36: private void <init>()" [style=dotted];
+
+"2340: wrap"->"55: public void <init>(java.lang.Object)" [style=dotted];
+
+"197: public void <init>(int, boolean)"->"42: public void <init>(boolean)" [style=dotted];
+
+"103: hashCode"->"155: hashCode" [style=dotted];
+
+"103: hashCode"->"1312: hashCode" [style=dotted];
+
+"103: hashCode"->"103: hashCode" [style=dotted];
+
+"646: setEvictionPolicyClassName"->"65: <clinit>";
+
+"646: setEvictionPolicyClassName"->"668: setEvictionPolicy";
+
+"65: <clinit>"->"65: <clinit>";
+
+}

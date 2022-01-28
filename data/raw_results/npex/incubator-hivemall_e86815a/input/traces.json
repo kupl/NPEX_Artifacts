@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "core/src/test/java/hivemall/classifier/GeneralClassifierUDTFTest.java",
+        "line": 968,
+        "method_name": "testNPE_HIVEMALL296"
+    }
+]

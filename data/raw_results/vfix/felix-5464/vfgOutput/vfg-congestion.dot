@@ -1,0 +1,5 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"211: virtualinvoke input.<java.io.InputStream: void close()>()" [label=0] [style=bold] [color=red]
+}

@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheckTest.java",
+        "line": 58,
+        "method_name": "testModifiedControlVariable"
+    }
+]

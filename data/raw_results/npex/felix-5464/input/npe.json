@@ -1,0 +1,9 @@
+{
+	"filepath": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+	"line": 211,
+	"deref_field": "input",
+	"sink_field": "close",
+	"npe_class": "ClassScanner",
+	"npe_method": "processClass",
+	"jvmti_identify_succeed": true
+}

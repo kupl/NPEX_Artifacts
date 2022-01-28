@@ -1,0 +1,41 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"55: createRuleDefinitionFrom" [color=red]
+"93: testInvalidRuleDefinitionReading_whenNoCondition"
+"35: public void <init>()"
+"41: read" [style=bold]
+"36: void <init>()" [style=bold]
+"49: read"
+"29: void <init>()"
+"74: setActions"
+"58: setCondition"
+"66: setPriority"
+"50: setDescription"
+"42: setName"
+"2: main"->"93: testInvalidRuleDefinitionReading_whenNoCondition" [style=dotted];
+
+"2: main"->"35: public void <init>()" [style=dotted];
+
+"93: testInvalidRuleDefinitionReading_whenNoCondition"->"41: read" [style=dotted];
+
+"35: public void <init>()"->"36: void <init>()" [style=dotted];
+
+"41: read"->"49: read" [style=dotted];
+
+"49: read"->"55: createRuleDefinitionFrom" [style=dotted];
+
+"55: createRuleDefinitionFrom"->"29: void <init>()" [style=dotted];
+
+"55: createRuleDefinitionFrom"->"74: setActions" [style=dotted];
+
+"55: createRuleDefinitionFrom"->"58: setCondition" [style=dotted];
+
+"55: createRuleDefinitionFrom"->"66: setPriority" [style=dotted];
+
+"55: createRuleDefinitionFrom"->"50: setDescription" [style=dotted];
+
+"55: createRuleDefinitionFrom"->"42: setName" [style=dotted];
+
+}

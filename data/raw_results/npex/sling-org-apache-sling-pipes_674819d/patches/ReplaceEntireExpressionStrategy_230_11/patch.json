@@ -1,0 +1,5 @@
+{
+    "contents": "if (result != null ? !result.getClass().getName().startsWith(\"java.lang.\") : false) {\n    // special case of the date in which case jdk.nashorn.api.scripting.ScriptObjectMirror will\n    // be returned\n    org.apache.sling.pipes.PipeBindings.JsDate jsDate = ((javax.script.Invocable) (engine)).getInterface(result, org.apache.sling.pipes.PipeBindings.JsDate.class);\n    if (jsDate != null) {\n        java.util.Date date = new java.util.Date(jsDate.getTime() + ((jsDate.getTimezoneOffset() * 60) * 1000));\n        java.util.Calendar cal = java.util.Calendar.getInstance();\n        cal.setTime(date);\n        return cal;\n    }\n}",
+    "original_filepath": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+    "patched_lines": [238]
+}

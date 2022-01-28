@@ -1,0 +1,10 @@
+{
+    "filepath": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/classic/MinimalHttpClient.java",
+    "line": 145,
+    "sink_field": "setAttribute",
+    "npe_class": "MinimalHttpClient",
+    "npe_method": "doExecute",
+    "jvmti_identify_succeed": true,
+    "deref_field": "context",
+    "nullpointer": "context"
+}

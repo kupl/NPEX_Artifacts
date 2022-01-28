@@ -1,0 +1,52 @@
+[
+    {
+        "filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+        "line": 1159,
+        "method_name": "parseField"
+    },
+    {
+        "filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+        "line": 850,
+        "method_name": "deserialze"
+    },
+    {
+        "filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+        "line": 288,
+        "method_name": "deserialze"
+    },
+    {
+        "filepath": "src/main/java/com/alibaba/fastjson/parser/DefaultJSONParser.java",
+        "line": 690,
+        "method_name": "parseObject"
+    },
+    {
+        "filepath": "src/main/java/com/alibaba/fastjson/JSON.java",
+        "line": 383,
+        "method_name": "parseObject"
+    },
+    {
+        "filepath": "src/main/java/com/alibaba/fastjson/JSON.java",
+        "line": 351,
+        "method_name": "parseObject"
+    },
+    {
+        "filepath": "src/main/java/com/alibaba/fastjson/JSON.java",
+        "line": 265,
+        "method_name": "parseObject"
+    },
+    {
+        "filepath": "src/test/java/com/alibaba/fastjson/deserializer/issue2711/TestIssue.java",
+        "line": 18,
+        "method_name": "testDeserializeGenericsUnwrapped"
+    },
+    {
+        "filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+        "line": 121,
+        "method_name": "parseField"
+    },
+    {
+        "filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+        "line": 1156,
+        "method_name": "parseField"
+    }
+]

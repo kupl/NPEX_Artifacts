@@ -1,0 +1,5 @@
+{
+    "contents": "if (schema == null) {\n    throw new org.apache.avro.SchemaParseException(\"\");\n}",
+    "original_filepath": "lang/java/avro/src/main/java/org/apache/avro/Schema.java",
+    "patched_lines": [1234]
+}

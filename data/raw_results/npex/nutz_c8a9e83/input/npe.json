@@ -1,0 +1,10 @@
+{
+    "filepath": "src/org/nutz/lang/Mirror.java",
+    "line": 606,
+    "sink_field": "getAnnotation",
+    "npe_class": "Mirror",
+    "npe_method": "getAnnotation",
+    "jvmti_identify_succeed": true,
+    "deref_field": "cc",
+    "nullpointer": "cc"
+}

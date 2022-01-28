@@ -1,0 +1,32 @@
+[
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+        "line": 136,
+        "method_name": "setAppearanceValue"
+    },
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDTextField.java",
+        "line": 263,
+        "method_name": "constructAppearances"
+    },
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDTerminalField.java",
+        "line": 225,
+        "method_name": "applyChange"
+    },
+    {
+        "filepath": "org/apache/pdfbox/pdmodel/interactive/form/PDTextField.java",
+        "line": 218,
+        "method_name": "setValue"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 64,
+        "method_name": "testPDFBOX3479"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 17,
+        "method_name": "main"
+    }
+]

@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"62: $r0 = interfaceinvoke mi.<org.apache.shiro.aop.MethodInvocation: java.lang.Object getThis()>()" [label=1] [style=bold] [color=gold]
+"62: $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Class getClass()>()" [label=1] [style=bold] [color=red]
+"62: $r0 = interfaceinvoke mi.<org.apache.shiro.aop.MethodInvocation: java.lang.Object getThis()>()"->"62: $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Class getClass()>()";
+
+}

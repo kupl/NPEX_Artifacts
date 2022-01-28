@@ -1,0 +1,2677 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"880: createTransformer" [color=red] [style=bold]
+"96: <clinit>"
+"1779: testWrite"
+"70: public void <init>()"
+"48: <clinit>" [style=bold]
+"85: getTestFile" [style=bold]
+"237: parseXml"
+"1046: write" [style=bold]
+"298: setRootElementName" [style=bold]
+"243: public void <init>()" [style=bold]
+"1058: write"
+"640: beginRead" [style=bold]
+"655: endRead" [style=bold]
+"515: getDocument" [style=bold]
+"63: public void <init>()" [style=bold]
+"79: public void <init>(java.lang.Class)" [style=bold]
+"33: public void <init>()" [style=bold]
+"1696: initLogger" [style=bold]
+"211: createTransformer" [style=bold]
+"133: getEncoding"
+"229: transform"
+"909: createDocument"
+"551: getSynchronizer" [style=bold]
+"39: beginRead"
+"46: beginRead" [style=bold]
+"48: endRead"
+"51: endRead" [style=bold]
+"526: getDocumentHelper" [style=bold]
+"165: getDocument"
+"77: public void <init>(org.apache.commons.configuration2.HierarchicalConfiguration)" [style=bold]
+"235: createLoggerForClass" [style=bold]
+"101: void <init>(org.apache.commons.logging.Log)" [style=bold]
+"113: newDummyLogger" [style=bold]
+"260: createTransformerFactory" [style=bold]
+"275: createTransformer" [style=bold]
+"60: public void <init>(java.lang.Throwable)"
+"113: forNewDocument"
+"88: getValue"
+"30: getRootNode"
+"40: getRootNode"
+"113: getNodeHandler"
+"174: getNodeHandler"
+"1141: processDocument"
+"1154: handleRemovedNodes"
+"1126: public void <init>(org.apache.commons.configuration2.XMLDocumentHelper, org.apache.commons.configuration2.convert.ListDelimiterHandler)"
+"247: createCopy"
+"184: getReference" [style=bold]
+"934: initRootElementText"
+"816: getModel" [style=bold]
+"144: getListDelimiterHandler"
+"201: getRootElementName"
+"537: getReferenceHandler" [style=bold]
+"41: <clinit>" [style=bold]
+"156: <clinit>"
+"148: append"
+"691: createNodeModel" [style=bold]
+"88: protected void <init>(org.apache.commons.configuration2.tree.NodeModel)" [style=bold]
+"329: createDocumentBuilderFactory"
+"91: void <init>(org.w3c.dom.Document, java.util.Map, java.lang.String, java.lang.String)"
+"296: createDocumentBuilder"
+"339: emptyElementMapping"
+"80: getRootNode" [style=bold]
+"90: getRootNode"
+"757: getReferenceNodeHandler" [style=bold]
+"135: getParentModel"
+"694: getTrackedNodeHandler"
+"146: getSelector"
+"45: <clinit>" [style=bold]
+"67: walkDFS"
+"1336: updateAttributes"
+"193: removedReferences"
+"1283: removeReference"
+"29: next"
+"628: next"
+"301: next"
+"279: next"
+"143: next"
+"64: hasNext"
+"617: hasNext"
+"328: hasNext"
+"304: hasNext"
+"133: hasNext"
+"722: protected void <init>()"
+"178: getElementMapping"
+"314: copyDocument"
+"198: getSourceSystemID"
+"188: getSourcePublicID"
+"354: createElementMapping"
+"100: getReferenceTracker" [style=bold]
+"176: getReference" [style=bold]
+"222: getRootElementNameInternal"
+"276: getRootElementNameInternal"
+"251: getSubConfigurationParentModel" [style=bold]
+"38: private void <init>(java.lang.String, int)" [style=bold]
+"154: private void <init>(java.lang.String, int)"
+"57: <clinit>" [style=bold]
+"82: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)" [style=bold]
+"705: obtainRootNode"
+"190: protected void <init>(org.apache.commons.configuration2.tree.NodeModel)" [style=bold]
+"621: createChangeListener" [style=bold]
+"768: getTreeData" [style=bold]
+"124: getParentModelSupport"
+"186: getNodeModel"
+"99: getNodeModel"
+"57: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode, org.apache.commons.configuration2.tree.NodeHandler)"
+"186: getTrackedNode"
+"216: getDetachedNodeModel"
+"90: getNodeTracker"
+"42: public void <init>()" [style=bold]
+"173: checkParameters" [style=bold]
+"112: dfs"
+"1357: clearAttributes"
+"216: toString"
+"214: toString"
+"667: toString"
+"320: toString"
+"106: toString"
+"170: toString"
+"187: toString"
+"94: toString"
+"973: toString"
+"213: toString"
+"320: toString"
+"134: getAttributes"
+"186: getRemovedReferences"
+"77: next"
+"578: nextKey"
+"334: next"
+"317: next"
+"112: setNextElement"
+"49: access$100"
+"31: public void <init>()" [style=bold]
+"371: createElementMappingForNodes"
+"37: nodeName" [style=bold]
+"68: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode, java.util.Map, java.util.Map, org.apache.commons.configuration2.tree.NodeTracker, org.apache.commons.configuration2.tree.ReferenceTracker)" [style=bold]
+"83: public void <init>()" [style=bold]
+"844: createTreeData" [style=bold]
+"1068: initialRootNode" [style=bold]
+"52: getNodeModel"
+"136: getNodeModel"
+"108: getNodeModel"
+"128: public void <init>()" [style=bold]
+"643: getTrackedNode"
+"159: getRootSelector"
+"149: getParent"
+"233: getNodeModel"
+"37: void <init>()" [style=bold]
+"320: getTrackedNodeData"
+"488: getNode"
+"500: getDetachedModel"
+"37: getChildren" [style=bold]
+"850: visitAfterChildren"
+"932: visitAfterChildren"
+"48: visitAfterChildren"
+"854: terminate"
+"57: terminate" [style=bold]
+"785: visitBeforeChildren" [style=bold]
+"850: visitBeforeChildren"
+"942: visitBeforeChildren"
+"40: visitBeforeChildren"
+"866: visitBeforeChildren"
+"722: visitBeforeChildren"
+"494: visitBeforeChildren"
+"179: getTypeName"
+"164: getValue"
+"136: getBeanDeclaration"
+"151: isNestedBeanDeclaration"
+"138: getAttributeEnd"
+"128: getAttributeStart"
+"158: getIndexEnd"
+"148: getIndexStart"
+"118: getEscapedDelimiter"
+"108: getPropertyDelimiter"
+"93: getName"
+"101: getNode"
+"112: getAttributeName"
+"124: isAttributeResult"
+"117: appendPropertyRepresentation"
+"82: getEventType"
+"34: getSource"
+"157: getLocationStrategy"
+"144: getFileSystem"
+"229: sourceURLAsString"
+"111: getBasePath"
+"100: getFileName"
+"593: nextKey"
+"373: initNextElement"
+"102: getChildKey"
+"43: nodeName"
+"234: createInverseMapping" [style=bold]
+"72: private void <init>(java.util.Map, java.util.List)" [style=bold]
+"861: createTreeDataForRootAndTracker" [style=bold]
+"73: public void <init>()" [style=bold]
+"272: detachAllTrackedNodes"
+"402: public void <init>()" [style=bold]
+"556: create" [style=bold]
+"454: installDefaultInterpolator" [style=bold]
+"80: public void <init>()" [style=bold]
+"49: <clinit>" [style=bold]
+"57: <clinit>" [style=bold]
+"50: public void <init>(java.lang.String)"
+"102: getRootNode"
+"55: getChildren" [style=bold]
+"903: visitAfterChildren"
+"877: isDefined"
+"790: visitBeforeChildren" [style=bold]
+"882: visitBeforeChildren"
+"963: handleAttributeKeys"
+"37: getValue" [style=bold]
+"222: nodeKey"
+"200: nodeKey"
+"255: getExpressionEngine"
+"37: getAttributes" [style=bold]
+"728: visitBeforeChildren"
+"499: visitBeforeChildren"
+"86: getSource"
+"665: currentKey"
+"894: checkAttribute"
+"911: checkIndex"
+"746: findNextIndices"
+"431: castListener"
+"78: getEventType"
+"78: getNodeName"
+"1109: createParentMapping" [style=bold]
+"84: private void <init>(java.util.Map)" [style=bold]
+"563: detach"
+"510: isDetached"
+"432: private void <init>(java.util.List, java.util.Map)" [style=bold]
+"43: void <init>(org.apache.commons.configuration2.tree.ImmutableNode$Builder, org.apache.commons.configuration2.tree.ImmutableNode$1)"
+"94: <clinit>" [style=bold]
+"285: installInterpolator" [style=bold]
+"212: getDefaultPrefixLookups" [style=bold]
+"331: initListeners" [style=bold]
+"42: public void <init>()" [style=bold]
+"73: void <init>()" [style=bold]
+"50: public void <init>()" [style=bold]
+"99: getChildren" [style=bold]
+"951: isLeafNode"
+"988: storeInterpolatedNode"
+"927: pop"
+"540: addAttributes"
+"474: value"
+"141: interpolate"
+"758: interpolate"
+"462: name"
+"414: public void <init>(int)"
+"37: getChildrenCount" [style=bold]
+"917: push"
+"1036: interpolateAttributes"
+"966: handleLeafNode"
+"214: attributeKey"
+"252: attributeKey"
+"49: getValue"
+"81: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngine, java.lang.String)"
+"121: append"
+"117: <clinit>"
+"120: getAttributes"
+"778: updateNode"
+"794: insertNewChildNodes"
+"63: access$200"
+"63: access$300"
+"63: access$400"
+"694: isPropertyKey"
+"352: constructAttributeKey"
+"49: access$500"
+"332: isAttributeKey"
+"49: access$300"
+"773: nextKeyPart"
+"187: length"
+"49: access$200"
+"88: getListener"
+"783: updateParentMapping" [style=bold]
+"475: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode, int, org.apache.commons.configuration2.tree.InMemoryNodeModel)"
+"64: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode$Builder)" [style=bold]
+"37: void <init>(org.apache.commons.text.lookup.StringLookup)" [style=bold]
+"213: getLookup" [style=bold]
+"223: getPrefix" [style=bold]
+"66: <clinit>" [style=bold]
+"58: values" [style=bold]
+"269: setInterpolator" [style=bold]
+"277: create" [style=bold]
+"211: withDefaultLookup" [style=bold]
+"48: public void <init>(org.apache.commons.configuration2.ImmutableConfiguration)" [style=bold]
+"228: withDefaultLookups" [style=bold]
+"192: withPrefixLookups" [style=bold]
+"156: public void <init>()" [style=bold]
+"191: fromSpecification" [style=bold]
+"63: public void <init>()" [style=bold]
+"40: public void <init>()" [style=bold]
+"138: public void <init>()" [style=bold]
+"487: addChild"
+"937: peek"
+"621: ensureAttributesExist"
+"256: getInterpolator"
+"77: interpolate"
+"356: interpolate"
+"147: getInterpolator"
+"635: initChildrenCollection"
+"110: getChildrenCount"
+"1011: interpolateAttributes"
+"1050: valueChanged"
+"176: appendAttribute"
+"433: trim"
+"524: escapeDelimiters"
+"513: getSymbols"
+"136: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols)"
+"66: <clinit>"
+"1214: update"
+"1173: insert"
+"514: removeNodeFromReplacementMapping"
+"485: removeAttributeMarkers"
+"801: nextDelimiterPos"
+"49: access$400"
+"470: hasLeadingDelimiter"
+"95: walkBFS" [style=bold]
+"785: void <init>(java.util.Map)" [style=bold]
+"370: access$000"
+"571: createChildren" [style=bold]
+"370: access$100"
+"370: access$200"
+"201: private void <init>(java.lang.String, int, java.lang.String, org.apache.commons.configuration2.interpol.Lookup)" [style=bold]
+"52: clone"
+"321: clone"
+"47: clone"
+"730: clone"
+"746: clone"
+"56: void <init>(org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder, org.apache.commons.configuration2.interpol.InterpolatorSpecification$1)"
+"289: reset" [style=bold]
+"304: checkLookup" [style=bold]
+"171: withPrefixLookup" [style=bold]
+"96: getInterpolator" [style=bold]
+"154: createInterpolator" [style=bold]
+"342: initSubstitutor" [style=bold]
+"609: ensureChildrenExist"
+"399: looksLikeSingleVariable"
+"528: resolveSingleVariable"
+"41: <clinit>"
+"62: getMatchingChildrenCount"
+"37: getAttributeValue" [style=bold]
+"389: trimLeft"
+"410: trimRight"
+"105: getExpressionEngine"
+"173: getSymbols"
+"152: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols, org.apache.commons.configuration2.tree.NodeMatcher)"
+"231: createDefaultSmybols"
+"63: <clinit>"
+"89: escape"
+"1233: updateElement"
+"101: isListNode"
+"136: isFirstListItem"
+"170: listValue"
+"1300: getElement"
+"838: escapedPosition"
+"500: unescapeDelimiters"
+"141: bfs" [style=bold]
+"592: createAttributes" [style=bold]
+"396: clone"
+"47: clone"
+"324: clone"
+"74: public void <init>(java.lang.Throwable)"
+"567: setSynchronizer"
+"433: cloneInterpolator"
+"222: cloneNodeModel"
+"657: cloneNodeModel"
+"54: <clinit>"
+"457: cloneSynchronizer"
+"77: private void <init>(org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder)" [style=bold]
+"554: setParentInterpolator" [style=bold]
+"451: registerLookups" [style=bold]
+"262: addDefaultLookups" [style=bold]
+"106: getParentInterpolator" [style=bold]
+"118: getPrefixLookups" [style=bold]
+"129: getDefaultLookups" [style=bold]
+"486: resolve"
+"171: extractVariableName"
+"55: void <init>(java.lang.String, int)"
+"41: void <init>(java.lang.String, int)"
+"73: getMatchingChildren"
+"132: getAttributeValue"
+"456: hasTrailingDelimiter"
+"268: public void <init>()"
+"383: create"
+"367: setAttributeEnd"
+"354: setAttributeStart"
+"340: setIndexEnd"
+"328: setIndexStart"
+"314: setEscapedDelimiter"
+"298: setPropertyDelimiter"
+"117: escapeString"
+"85: escapeString"
+"1246: updateElement"
+"204: hasListReference"
+"37: getChild" [style=bold]
+"30: getParent"
+"216: nameEquals"
+"86: public void <init>(java.lang.String, java.lang.Throwable)"
+"105: escapeList"
+"59: escapeList"
+"37: getChildren" [style=bold]
+"65: getElement"
+"881: escapeOffset"
+"311: getParameters"
+"110: getParameters"
+"132: <clinit>"
+"204: public void <init>(org.apache.commons.configuration2.io.FileBased, org.apache.commons.configuration2.io.FileHandler)"
+"242: getContent"
+"319: getLookups"
+"306: getDefaultLookups"
+"483: findConfigurationLookup"
+"99: public void <init>(org.apache.commons.configuration2.tree.InMemoryNodeModelSupport, org.apache.commons.configuration2.tree.NodeSelector, boolean)"
+"498: trackNode"
+"71: void <init>()"
+"410: clone"
+"141: access$000"
+"141: access$100"
+"141: access$200"
+"141: access$300"
+"46: lookup"
+"44: lookup"
+"75: lookup"
+"329: getParentInterpolator"
+"292: fetchLookupForPrefix"
+"34: void <init>(java.lang.String, int, org.apache.commons.configuration2.tree.NodeNameMatchers$1)"
+"55: matches"
+"41: matches"
+"40: void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder, org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$1)"
+"99: getDelimiter"
+"1375: findTextNodeForUpdate"
+"98: getChild"
+"115: getParent"
+"92: getChildren"
+"483: createDefensiveCopies"
+"134: void <init>()"
+"215: private void <init>(org.apache.commons.configuration2.io.FileBased, org.apache.commons.configuration2.io.FileLocator)"
+"489: getFileLocator"
+"1526: checkSourceHandler"
+"64: getConfiguration"
+"266: finalize"
+"105: trackNode"
+"160: updateNodeTracker"
+"988: getProperty"
+"228: nullSafeLookup"
+"34: private void <init>(java.lang.String, int)"
+"62: matches"
+"47: matches"
+"92: private void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder)"
+"212: handleReplacements"
+"511: fetchPrefixLookups"
+"564: fetchDefaultLookups"
+"162: isReleaseTrackedNodeOnFinalize"
+"247: close"
+"427: trackDataForAddedObserver"
+"183: getPropertyInternal"
+"284: getPropertyInternal"
+"38: <clinit>"
+"243: access$000"
+"243: access$100"
+"243: access$200"
+"243: access$300"
+"243: access$400"
+"243: access$500"
+"739: untrackNode"
+"521: observerAdded"
+"462: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)"
+"89: select"
+"86: getParentKey"
+"788: fetchNodeList"
+"828: valueFromResult"
+"35: private void <init>(java.lang.String, int)"
+"159: untrackNode"
+"188: getFilteredResults"
+"447: resolveKey"
+"137: getAttributeValue"
+"534: observerRemoved"
+"184: query"
+"196: query"
+"371: findNodesForKey"
+"444: iterator"
+"556: <clinit>"
+"338: createContext"
+"546: createResult"
+"518: convertResults"
+"73: createNodeResult"
+"450: processSubNodes"
+"498: findChildNodesByName"
+"679: isAttribute"
+"89: createAttributeResult"
+"550: public void <init>(org.apache.commons.configuration2.tree.DefaultConfigurationKey)"
+"44: public void <init>()"
+"426: getContextFactory"
+"44: createContext"
+"58: private void <init>(java.lang.Object, java.lang.String)"
+"717: hasIndex"
+"706: getIndex"
+"37: getMatchingChildren" [style=bold]
+"951: isAttributeEmulatingMode"
+"124: wrapNode"
+"148: public void <init>(java.lang.Object, org.apache.commons.configuration2.tree.NodeHandler)"
+"2: main"->"96: <clinit>" [style=dotted];
+
+"2: main"->"1779: testWrite" [style=dotted];
+
+"2: main"->"70: public void <init>()" [style=dotted];
+
+"96: <clinit>"->"48: <clinit>" [style=dotted];
+
+"96: <clinit>"->"96: <clinit>" [style=dotted];
+
+"96: <clinit>"->"85: getTestFile" [style=dotted];
+
+"1779: testWrite"->"237: parseXml" [style=dotted];
+
+"1779: testWrite"->"1046: write" [style=dotted];
+
+"1779: testWrite"->"298: setRootElementName" [style=dotted];
+
+"1779: testWrite"->"243: public void <init>()" [style=dotted];
+
+"70: public void <init>()"->"48: <clinit>" [style=dotted];
+
+"70: public void <init>()"->"85: getTestFile" [style=dotted];
+
+"48: <clinit>"->"48: <clinit>";
+
+"85: getTestFile"->"48: <clinit>";
+
+"1046: write"->"880: createTransformer";
+
+"1046: write"->"1058: write" [style=dotted];
+
+"298: setRootElementName"->"640: beginRead";
+
+"298: setRootElementName"->"655: endRead";
+
+"298: setRootElementName"->"515: getDocument";
+
+"243: public void <init>()"->"63: public void <init>()";
+
+"243: public void <init>()"->"79: public void <init>(java.lang.Class)";
+
+"243: public void <init>()"->"33: public void <init>()";
+
+"243: public void <init>()"->"1696: initLogger";
+
+"880: createTransformer"->"211: createTransformer";
+
+"880: createTransformer"->"133: getEncoding" [style=dotted];
+
+"1058: write"->"229: transform" [style=dotted];
+
+"1058: write"->"909: createDocument" [style=dotted];
+
+"640: beginRead"->"551: getSynchronizer";
+
+"640: beginRead"->"39: beginRead" [style=dotted];
+
+"640: beginRead"->"46: beginRead";
+
+"655: endRead"->"551: getSynchronizer";
+
+"655: endRead"->"48: endRead" [style=dotted];
+
+"655: endRead"->"51: endRead";
+
+"515: getDocument"->"526: getDocumentHelper";
+
+"515: getDocument"->"165: getDocument" [style=dotted];
+
+"63: public void <init>()"->"77: public void <init>(org.apache.commons.configuration2.HierarchicalConfiguration)";
+
+"79: public void <init>(java.lang.Class)"->"235: createLoggerForClass";
+
+"79: public void <init>(java.lang.Class)"->"101: void <init>(org.apache.commons.logging.Log)";
+
+"1696: initLogger"->"113: newDummyLogger";
+
+"211: createTransformer"->"260: createTransformerFactory";
+
+"211: createTransformer"->"275: createTransformer";
+
+"229: transform"->"60: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"909: createDocument"->"113: forNewDocument" [style=dotted];
+
+"909: createDocument"->"88: getValue" [style=dotted];
+
+"909: createDocument"->"30: getRootNode" [style=dotted];
+
+"909: createDocument"->"40: getRootNode" [style=dotted];
+
+"909: createDocument"->"113: getNodeHandler" [style=dotted];
+
+"909: createDocument"->"174: getNodeHandler" [style=dotted];
+
+"909: createDocument"->"165: getDocument" [style=dotted];
+
+"909: createDocument"->"1141: processDocument" [style=dotted];
+
+"909: createDocument"->"1154: handleRemovedNodes" [style=dotted];
+
+"909: createDocument"->"1126: public void <init>(org.apache.commons.configuration2.XMLDocumentHelper, org.apache.commons.configuration2.convert.ListDelimiterHandler)" [style=dotted];
+
+"909: createDocument"->"247: createCopy" [style=dotted];
+
+"909: createDocument"->"184: getReference" [style=dotted];
+
+"909: createDocument"->"934: initRootElementText" [style=dotted];
+
+"909: createDocument"->"816: getModel" [style=dotted];
+
+"909: createDocument"->"144: getListDelimiterHandler" [style=dotted];
+
+"909: createDocument"->"201: getRootElementName" [style=dotted];
+
+"909: createDocument"->"537: getReferenceHandler" [style=dotted];
+
+"551: getSynchronizer"->"41: <clinit>";
+
+"39: beginRead"->"156: <clinit>" [style=dotted];
+
+"39: beginRead"->"148: append" [style=dotted];
+
+"48: endRead"->"156: <clinit>" [style=dotted];
+
+"48: endRead"->"148: append" [style=dotted];
+
+"526: getDocumentHelper"->"537: getReferenceHandler";
+
+"526: getDocumentHelper"->"184: getReference";
+
+"526: getDocumentHelper"->"30: getRootNode" [style=dotted];
+
+"77: public void <init>(org.apache.commons.configuration2.HierarchicalConfiguration)"->"691: createNodeModel";
+
+"77: public void <init>(org.apache.commons.configuration2.HierarchicalConfiguration)"->"88: protected void <init>(org.apache.commons.configuration2.tree.NodeModel)";
+
+"113: newDummyLogger"->"101: void <init>(org.apache.commons.logging.Log)";
+
+"275: createTransformer"->"60: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"113: forNewDocument"->"329: createDocumentBuilderFactory" [style=dotted];
+
+"113: forNewDocument"->"91: void <init>(org.w3c.dom.Document, java.util.Map, java.lang.String, java.lang.String)" [style=dotted];
+
+"113: forNewDocument"->"296: createDocumentBuilder" [style=dotted];
+
+"113: forNewDocument"->"339: emptyElementMapping" [style=dotted];
+
+"30: getRootNode"->"80: getRootNode" [style=dotted];
+
+"40: getRootNode"->"90: getRootNode" [style=dotted];
+
+"113: getNodeHandler"->"757: getReferenceNodeHandler" [style=dotted];
+
+"174: getNodeHandler"->"135: getParentModel" [style=dotted];
+
+"174: getNodeHandler"->"694: getTrackedNodeHandler" [style=dotted];
+
+"174: getNodeHandler"->"146: getSelector" [style=dotted];
+
+"1141: processDocument"->"45: <clinit>" [style=dotted];
+
+"1141: processDocument"->"67: walkDFS" [style=dotted];
+
+"1141: processDocument"->"30: getRootNode" [style=dotted];
+
+"1141: processDocument"->"1336: updateAttributes" [style=dotted];
+
+"1154: handleRemovedNodes"->"193: removedReferences" [style=dotted];
+
+"1154: handleRemovedNodes"->"1283: removeReference" [style=dotted];
+
+"1154: handleRemovedNodes"->"29: next" [style=dotted];
+
+"1154: handleRemovedNodes"->"628: next" [style=dotted];
+
+"1154: handleRemovedNodes"->"301: next" [style=dotted];
+
+"1154: handleRemovedNodes"->"279: next" [style=dotted];
+
+"1154: handleRemovedNodes"->"143: next" [style=dotted];
+
+"1154: handleRemovedNodes"->"64: hasNext" [style=dotted];
+
+"1154: handleRemovedNodes"->"617: hasNext" [style=dotted];
+
+"1154: handleRemovedNodes"->"328: hasNext" [style=dotted];
+
+"1154: handleRemovedNodes"->"304: hasNext" [style=dotted];
+
+"1154: handleRemovedNodes"->"133: hasNext" [style=dotted];
+
+"1126: public void <init>(org.apache.commons.configuration2.XMLDocumentHelper, org.apache.commons.configuration2.convert.ListDelimiterHandler)"->"722: protected void <init>()" [style=dotted];
+
+"1126: public void <init>(org.apache.commons.configuration2.XMLDocumentHelper, org.apache.commons.configuration2.convert.ListDelimiterHandler)"->"178: getElementMapping" [style=dotted];
+
+"1126: public void <init>(org.apache.commons.configuration2.XMLDocumentHelper, org.apache.commons.configuration2.convert.ListDelimiterHandler)"->"165: getDocument" [style=dotted];
+
+"247: createCopy"->"314: copyDocument" [style=dotted];
+
+"247: createCopy"->"91: void <init>(org.w3c.dom.Document, java.util.Map, java.lang.String, java.lang.String)" [style=dotted];
+
+"247: createCopy"->"198: getSourceSystemID" [style=dotted];
+
+"247: createCopy"->"188: getSourcePublicID" [style=dotted];
+
+"247: createCopy"->"165: getDocument" [style=dotted];
+
+"247: createCopy"->"354: createElementMapping" [style=dotted];
+
+"184: getReference"->"100: getReferenceTracker";
+
+"184: getReference"->"176: getReference";
+
+"201: getRootElementName"->"640: beginRead" [style=dotted];
+
+"201: getRootElementName"->"655: endRead" [style=dotted];
+
+"201: getRootElementName"->"222: getRootElementNameInternal" [style=dotted];
+
+"201: getRootElementName"->"276: getRootElementNameInternal" [style=dotted];
+
+"537: getReferenceHandler"->"251: getSubConfigurationParentModel";
+
+"537: getReferenceHandler"->"757: getReferenceNodeHandler";
+
+"41: <clinit>"->"41: <clinit>";
+
+"41: <clinit>"->"38: private void <init>(java.lang.String, int)";
+
+"156: <clinit>"->"156: <clinit>" [style=dotted];
+
+"156: <clinit>"->"154: private void <init>(java.lang.String, int)" [style=dotted];
+
+"691: createNodeModel"->"57: <clinit>";
+
+"691: createNodeModel"->"82: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)";
+
+"691: createNodeModel"->"705: obtainRootNode" [style=dotted];
+
+"88: protected void <init>(org.apache.commons.configuration2.tree.NodeModel)"->"190: protected void <init>(org.apache.commons.configuration2.tree.NodeModel)";
+
+"88: protected void <init>(org.apache.commons.configuration2.tree.NodeModel)"->"621: createChangeListener";
+
+"296: createDocumentBuilder"->"60: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"757: getReferenceNodeHandler"->"768: getTreeData";
+
+"135: getParentModel"->"124: getParentModelSupport" [style=dotted];
+
+"135: getParentModel"->"186: getNodeModel" [style=dotted];
+
+"135: getParentModel"->"99: getNodeModel" [style=dotted];
+
+"694: getTrackedNodeHandler"->"57: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode, org.apache.commons.configuration2.tree.NodeHandler)" [style=dotted];
+
+"694: getTrackedNodeHandler"->"186: getTrackedNode" [style=dotted];
+
+"694: getTrackedNodeHandler"->"113: getNodeHandler" [style=dotted];
+
+"694: getTrackedNodeHandler"->"216: getDetachedNodeModel" [style=dotted];
+
+"694: getTrackedNodeHandler"->"90: getNodeTracker" [style=dotted];
+
+"45: <clinit>"->"45: <clinit>";
+
+"45: <clinit>"->"42: public void <init>()";
+
+"67: walkDFS"->"45: <clinit>" [style=dotted];
+
+"67: walkDFS"->"173: checkParameters" [style=dotted];
+
+"67: walkDFS"->"112: dfs" [style=dotted];
+
+"1336: updateAttributes"->"1357: clearAttributes" [style=dotted];
+
+"1336: updateAttributes"->"216: toString" [style=dotted];
+
+"1336: updateAttributes"->"214: toString" [style=dotted];
+
+"1336: updateAttributes"->"667: toString" [style=dotted];
+
+"1336: updateAttributes"->"320: toString" [style=dotted];
+
+"1336: updateAttributes"->"106: toString" [style=dotted];
+
+"1336: updateAttributes"->"170: toString" [style=dotted];
+
+"1336: updateAttributes"->"187: toString" [style=dotted];
+
+"1336: updateAttributes"->"94: toString" [style=dotted];
+
+"1336: updateAttributes"->"973: toString" [style=dotted];
+
+"1336: updateAttributes"->"213: toString" [style=dotted];
+
+"1336: updateAttributes"->"320: toString" [style=dotted];
+
+"1336: updateAttributes"->"29: next" [style=dotted];
+
+"1336: updateAttributes"->"628: next" [style=dotted];
+
+"1336: updateAttributes"->"301: next" [style=dotted];
+
+"1336: updateAttributes"->"279: next" [style=dotted];
+
+"1336: updateAttributes"->"143: next" [style=dotted];
+
+"1336: updateAttributes"->"64: hasNext" [style=dotted];
+
+"1336: updateAttributes"->"617: hasNext" [style=dotted];
+
+"1336: updateAttributes"->"328: hasNext" [style=dotted];
+
+"1336: updateAttributes"->"304: hasNext" [style=dotted];
+
+"1336: updateAttributes"->"133: hasNext" [style=dotted];
+
+"1336: updateAttributes"->"134: getAttributes" [style=dotted];
+
+"193: removedReferences"->"100: getReferenceTracker" [style=dotted];
+
+"193: removedReferences"->"186: getRemovedReferences" [style=dotted];
+
+"29: next"->"77: next" [style=dotted];
+
+"628: next"->"578: nextKey" [style=dotted];
+
+"301: next"->"334: next" [style=dotted];
+
+"279: next"->"317: next" [style=dotted];
+
+"143: next"->"29: next" [style=dotted];
+
+"143: next"->"628: next" [style=dotted];
+
+"143: next"->"301: next" [style=dotted];
+
+"143: next"->"279: next" [style=dotted];
+
+"143: next"->"143: next" [style=dotted];
+
+"64: hasNext"->"112: setNextElement" [style=dotted];
+
+"617: hasNext"->"49: access$100" [style=dotted];
+
+"304: hasNext"->"64: hasNext" [style=dotted];
+
+"304: hasNext"->"617: hasNext" [style=dotted];
+
+"304: hasNext"->"328: hasNext" [style=dotted];
+
+"304: hasNext"->"304: hasNext" [style=dotted];
+
+"304: hasNext"->"133: hasNext" [style=dotted];
+
+"133: hasNext"->"64: hasNext" [style=dotted];
+
+"133: hasNext"->"617: hasNext" [style=dotted];
+
+"133: hasNext"->"328: hasNext" [style=dotted];
+
+"133: hasNext"->"304: hasNext" [style=dotted];
+
+"133: hasNext"->"133: hasNext" [style=dotted];
+
+"722: protected void <init>()"->"31: public void <init>()" [style=dotted];
+
+"314: copyDocument"->"211: createTransformer" [style=dotted];
+
+"314: copyDocument"->"229: transform" [style=dotted];
+
+"354: createElementMapping"->"371: createElementMappingForNodes" [style=dotted];
+
+"222: getRootElementNameInternal"->"816: getModel" [style=dotted];
+
+"222: getRootElementNameInternal"->"37: nodeName" [style=dotted];
+
+"222: getRootElementNameInternal"->"30: getRootNode" [style=dotted];
+
+"222: getRootElementNameInternal"->"40: getRootNode" [style=dotted];
+
+"222: getRootElementNameInternal"->"113: getNodeHandler" [style=dotted];
+
+"222: getRootElementNameInternal"->"174: getNodeHandler" [style=dotted];
+
+"276: getRootElementNameInternal"->"515: getDocument" [style=dotted];
+
+"251: getSubConfigurationParentModel"->"816: getModel";
+
+"57: <clinit>"->"68: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode, java.util.Map, java.util.Map, org.apache.commons.configuration2.tree.NodeTracker, org.apache.commons.configuration2.tree.ReferenceTracker)";
+
+"57: <clinit>"->"83: public void <init>()";
+
+"57: <clinit>"->"57: <clinit>";
+
+"82: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)"->"844: createTreeData";
+
+"82: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)"->"57: <clinit>";
+
+"82: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)"->"1068: initialRootNode";
+
+"705: obtainRootNode"->"52: getNodeModel" [style=dotted];
+
+"705: obtainRootNode"->"30: getRootNode" [style=dotted];
+
+"705: obtainRootNode"->"40: getRootNode" [style=dotted];
+
+"705: obtainRootNode"->"113: getNodeHandler" [style=dotted];
+
+"705: obtainRootNode"->"174: getNodeHandler" [style=dotted];
+
+"705: obtainRootNode"->"136: getNodeModel" [style=dotted];
+
+"705: obtainRootNode"->"108: getNodeModel" [style=dotted];
+
+"190: protected void <init>(org.apache.commons.configuration2.tree.NodeModel)"->"128: public void <init>()";
+
+"186: getNodeModel"->"57: <clinit>" [style=dotted];
+
+"186: getNodeModel"->"82: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)" [style=dotted];
+
+"186: getNodeModel"->"643: getTrackedNode" [style=dotted];
+
+"186: getNodeModel"->"186: getNodeModel" [style=dotted];
+
+"186: getNodeModel"->"99: getNodeModel" [style=dotted];
+
+"186: getNodeModel"->"159: getRootSelector" [style=dotted];
+
+"186: getNodeModel"->"149: getParent" [style=dotted];
+
+"99: getNodeModel"->"233: getNodeModel" [style=dotted];
+
+"57: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode, org.apache.commons.configuration2.tree.NodeHandler)"->"37: void <init>()" [style=dotted];
+
+"186: getTrackedNode"->"320: getTrackedNodeData" [style=dotted];
+
+"186: getTrackedNode"->"488: getNode" [style=dotted];
+
+"216: getDetachedNodeModel"->"320: getTrackedNodeData" [style=dotted];
+
+"216: getDetachedNodeModel"->"500: getDetachedModel" [style=dotted];
+
+"112: dfs"->"45: <clinit>" [style=dotted];
+
+"112: dfs"->"29: next" [style=dotted];
+
+"112: dfs"->"628: next" [style=dotted];
+
+"112: dfs"->"301: next" [style=dotted];
+
+"112: dfs"->"279: next" [style=dotted];
+
+"112: dfs"->"143: next" [style=dotted];
+
+"112: dfs"->"64: hasNext" [style=dotted];
+
+"112: dfs"->"617: hasNext" [style=dotted];
+
+"112: dfs"->"328: hasNext" [style=dotted];
+
+"112: dfs"->"304: hasNext" [style=dotted];
+
+"112: dfs"->"133: hasNext" [style=dotted];
+
+"112: dfs"->"37: getChildren" [style=dotted];
+
+"112: dfs"->"850: visitAfterChildren" [style=dotted];
+
+"112: dfs"->"932: visitAfterChildren" [style=dotted];
+
+"112: dfs"->"48: visitAfterChildren" [style=dotted];
+
+"112: dfs"->"854: terminate" [style=dotted];
+
+"112: dfs"->"57: terminate" [style=dotted];
+
+"112: dfs"->"785: visitBeforeChildren" [style=dotted];
+
+"112: dfs"->"850: visitBeforeChildren" [style=dotted];
+
+"112: dfs"->"942: visitBeforeChildren" [style=dotted];
+
+"112: dfs"->"40: visitBeforeChildren" [style=dotted];
+
+"112: dfs"->"866: visitBeforeChildren" [style=dotted];
+
+"112: dfs"->"722: visitBeforeChildren" [style=dotted];
+
+"112: dfs"->"494: visitBeforeChildren" [style=dotted];
+
+"112: dfs"->"112: dfs" [style=dotted];
+
+"216: toString"->"179: getTypeName" [style=dotted];
+
+"216: toString"->"164: getValue" [style=dotted];
+
+"216: toString"->"136: getBeanDeclaration" [style=dotted];
+
+"216: toString"->"151: isNestedBeanDeclaration" [style=dotted];
+
+"214: toString"->"138: getAttributeEnd" [style=dotted];
+
+"214: toString"->"128: getAttributeStart" [style=dotted];
+
+"214: toString"->"158: getIndexEnd" [style=dotted];
+
+"214: toString"->"148: getIndexStart" [style=dotted];
+
+"214: toString"->"118: getEscapedDelimiter" [style=dotted];
+
+"214: toString"->"108: getPropertyDelimiter" [style=dotted];
+
+"106: toString"->"93: getName" [style=dotted];
+
+"187: toString"->"101: getNode" [style=dotted];
+
+"187: toString"->"112: getAttributeName" [style=dotted];
+
+"187: toString"->"124: isAttributeResult" [style=dotted];
+
+"94: toString"->"117: appendPropertyRepresentation" [style=dotted];
+
+"94: toString"->"82: getEventType" [style=dotted];
+
+"94: toString"->"34: getSource" [style=dotted];
+
+"973: toString"->"222: getRootElementNameInternal" [style=dotted];
+
+"973: toString"->"276: getRootElementNameInternal" [style=dotted];
+
+"213: toString"->"157: getLocationStrategy" [style=dotted];
+
+"213: toString"->"144: getFileSystem" [style=dotted];
+
+"213: toString"->"133: getEncoding" [style=dotted];
+
+"213: toString"->"229: sourceURLAsString" [style=dotted];
+
+"213: toString"->"111: getBasePath" [style=dotted];
+
+"213: toString"->"100: getFileName" [style=dotted];
+
+"320: toString"->"320: toString" [style=dotted];
+
+"77: next"->"112: setNextElement" [style=dotted];
+
+"578: nextKey"->"593: nextKey" [style=dotted];
+
+"334: next"->"373: initNextElement" [style=dotted];
+
+"317: next"->"102: getChildKey" [style=dotted];
+
+"317: next"->"29: next" [style=dotted];
+
+"317: next"->"628: next" [style=dotted];
+
+"317: next"->"301: next" [style=dotted];
+
+"317: next"->"279: next" [style=dotted];
+
+"317: next"->"143: next" [style=dotted];
+
+"112: setNextElement"->"29: next" [style=dotted];
+
+"112: setNextElement"->"628: next" [style=dotted];
+
+"112: setNextElement"->"301: next" [style=dotted];
+
+"112: setNextElement"->"279: next" [style=dotted];
+
+"112: setNextElement"->"143: next" [style=dotted];
+
+"112: setNextElement"->"64: hasNext" [style=dotted];
+
+"112: setNextElement"->"617: hasNext" [style=dotted];
+
+"112: setNextElement"->"328: hasNext" [style=dotted];
+
+"112: setNextElement"->"304: hasNext" [style=dotted];
+
+"112: setNextElement"->"133: hasNext" [style=dotted];
+
+"371: createElementMappingForNodes"->"371: createElementMappingForNodes" [style=dotted];
+
+"37: nodeName"->"43: nodeName" [style=dotted];
+
+"68: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode, java.util.Map, java.util.Map, org.apache.commons.configuration2.tree.NodeTracker, org.apache.commons.configuration2.tree.ReferenceTracker)"->"37: void <init>()";
+
+"68: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode, java.util.Map, java.util.Map, org.apache.commons.configuration2.tree.NodeTracker, org.apache.commons.configuration2.tree.ReferenceTracker)"->"234: createInverseMapping";
+
+"83: public void <init>()"->"72: private void <init>(java.util.Map, java.util.List)";
+
+"844: createTreeData"->"90: getNodeTracker" [style=dotted];
+
+"844: createTreeData"->"861: createTreeDataForRootAndTracker";
+
+"844: createTreeData"->"73: public void <init>()";
+
+"844: createTreeData"->"272: detachAllTrackedNodes" [style=dotted];
+
+"1068: initialRootNode"->"402: public void <init>()";
+
+"1068: initialRootNode"->"556: create";
+
+"52: getNodeModel"->"99: getNodeModel" [style=dotted];
+
+"52: getNodeModel"->"186: getNodeModel" [style=dotted];
+
+"136: getNodeModel"->"99: getNodeModel" [style=dotted];
+
+"108: getNodeModel"->"186: getNodeModel" [style=dotted];
+
+"128: public void <init>()"->"454: installDefaultInterpolator";
+
+"128: public void <init>()"->"1696: initLogger";
+
+"128: public void <init>()"->"80: public void <init>()";
+
+"128: public void <init>()"->"49: <clinit>";
+
+"128: public void <init>()"->"57: <clinit>";
+
+"643: getTrackedNode"->"186: getTrackedNode" [style=dotted];
+
+"643: getTrackedNode"->"90: getNodeTracker" [style=dotted];
+
+"233: getNodeModel"->"640: beginRead" [style=dotted];
+
+"233: getNodeModel"->"655: endRead" [style=dotted];
+
+"233: getNodeModel"->"816: getModel" [style=dotted];
+
+"320: getTrackedNodeData"->"50: public void <init>(java.lang.String)" [style=dotted];
+
+"488: getNode"->"500: getDetachedModel" [style=dotted];
+
+"488: getNode"->"102: getRootNode" [style=dotted];
+
+"37: getChildren"->"55: getChildren";
+
+"850: visitAfterChildren"->"903: visitAfterChildren" [style=dotted];
+
+"854: terminate"->"877: isDefined" [style=dotted];
+
+"785: visitBeforeChildren"->"790: visitBeforeChildren";
+
+"850: visitBeforeChildren"->"882: visitBeforeChildren" [style=dotted];
+
+"942: visitBeforeChildren"->"963: handleAttributeKeys" [style=dotted];
+
+"942: visitBeforeChildren"->"37: getValue" [style=dotted];
+
+"942: visitBeforeChildren"->"222: nodeKey" [style=dotted];
+
+"942: visitBeforeChildren"->"200: nodeKey" [style=dotted];
+
+"942: visitBeforeChildren"->"255: getExpressionEngine" [style=dotted];
+
+"866: visitBeforeChildren"->"37: getValue" [style=dotted];
+
+"866: visitBeforeChildren"->"37: getAttributes" [style=dotted];
+
+"722: visitBeforeChildren"->"728: visitBeforeChildren" [style=dotted];
+
+"494: visitBeforeChildren"->"499: visitBeforeChildren" [style=dotted];
+
+"151: isNestedBeanDeclaration"->"136: getBeanDeclaration" [style=dotted];
+
+"124: isAttributeResult"->"112: getAttributeName" [style=dotted];
+
+"34: getSource"->"86: getSource" [style=dotted];
+
+"593: nextKey"->"617: hasNext" [style=dotted];
+
+"593: nextKey"->"665: currentKey" [style=dotted];
+
+"593: nextKey"->"894: checkAttribute" [style=dotted];
+
+"593: nextKey"->"911: checkIndex" [style=dotted];
+
+"593: nextKey"->"746: findNextIndices" [style=dotted];
+
+"373: initNextElement"->"431: castListener" [style=dotted];
+
+"373: initNextElement"->"78: getEventType" [style=dotted];
+
+"373: initNextElement"->"29: next" [style=dotted];
+
+"373: initNextElement"->"628: next" [style=dotted];
+
+"373: initNextElement"->"301: next" [style=dotted];
+
+"373: initNextElement"->"279: next" [style=dotted];
+
+"373: initNextElement"->"143: next" [style=dotted];
+
+"373: initNextElement"->"64: hasNext" [style=dotted];
+
+"373: initNextElement"->"617: hasNext" [style=dotted];
+
+"373: initNextElement"->"328: hasNext" [style=dotted];
+
+"373: initNextElement"->"304: hasNext" [style=dotted];
+
+"373: initNextElement"->"133: hasNext" [style=dotted];
+
+"43: nodeName"->"78: getNodeName" [style=dotted];
+
+"234: createInverseMapping"->"29: next" [style=dotted];
+
+"234: createInverseMapping"->"628: next" [style=dotted];
+
+"234: createInverseMapping"->"301: next" [style=dotted];
+
+"234: createInverseMapping"->"279: next" [style=dotted];
+
+"234: createInverseMapping"->"143: next" [style=dotted];
+
+"234: createInverseMapping"->"64: hasNext" [style=dotted];
+
+"234: createInverseMapping"->"617: hasNext" [style=dotted];
+
+"234: createInverseMapping"->"328: hasNext" [style=dotted];
+
+"234: createInverseMapping"->"304: hasNext" [style=dotted];
+
+"234: createInverseMapping"->"133: hasNext" [style=dotted];
+
+"861: createTreeDataForRootAndTracker"->"68: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode, java.util.Map, java.util.Map, org.apache.commons.configuration2.tree.NodeTracker, org.apache.commons.configuration2.tree.ReferenceTracker)";
+
+"861: createTreeDataForRootAndTracker"->"83: public void <init>()";
+
+"861: createTreeDataForRootAndTracker"->"1109: createParentMapping";
+
+"73: public void <init>()"->"84: private void <init>(java.util.Map)";
+
+"272: detachAllTrackedNodes"->"84: private void <init>(java.util.Map)" [style=dotted];
+
+"272: detachAllTrackedNodes"->"563: detach" [style=dotted];
+
+"272: detachAllTrackedNodes"->"510: isDetached" [style=dotted];
+
+"272: detachAllTrackedNodes"->"29: next" [style=dotted];
+
+"272: detachAllTrackedNodes"->"628: next" [style=dotted];
+
+"272: detachAllTrackedNodes"->"301: next" [style=dotted];
+
+"272: detachAllTrackedNodes"->"279: next" [style=dotted];
+
+"272: detachAllTrackedNodes"->"143: next" [style=dotted];
+
+"272: detachAllTrackedNodes"->"64: hasNext" [style=dotted];
+
+"272: detachAllTrackedNodes"->"617: hasNext" [style=dotted];
+
+"272: detachAllTrackedNodes"->"328: hasNext" [style=dotted];
+
+"272: detachAllTrackedNodes"->"304: hasNext" [style=dotted];
+
+"272: detachAllTrackedNodes"->"133: hasNext" [style=dotted];
+
+"402: public void <init>()"->"432: private void <init>(java.util.List, java.util.Map)";
+
+"556: create"->"43: void <init>(org.apache.commons.configuration2.tree.ImmutableNode$Builder, org.apache.commons.configuration2.tree.ImmutableNode$1)" [style=dotted];
+
+"454: installDefaultInterpolator"->"94: <clinit>";
+
+"454: installDefaultInterpolator"->"285: installInterpolator";
+
+"454: installDefaultInterpolator"->"212: getDefaultPrefixLookups";
+
+"80: public void <init>()"->"331: initListeners";
+
+"49: <clinit>"->"49: <clinit>";
+
+"49: <clinit>"->"42: public void <init>()";
+
+"57: <clinit>"->"57: <clinit>";
+
+"57: <clinit>"->"73: void <init>()";
+
+"57: <clinit>"->"50: public void <init>()";
+
+"57: <clinit>"->"49: <clinit>";
+
+"102: getRootNode"->"768: getTreeData" [style=dotted];
+
+"102: getRootNode"->"80: getRootNode" [style=dotted];
+
+"55: getChildren"->"99: getChildren";
+
+"903: visitAfterChildren"->"951: isLeafNode" [style=dotted];
+
+"903: visitAfterChildren"->"556: create" [style=dotted];
+
+"903: visitAfterChildren"->"988: storeInterpolatedNode" [style=dotted];
+
+"903: visitAfterChildren"->"927: pop" [style=dotted];
+
+"790: visitBeforeChildren"->"99: getChildren";
+
+"790: visitBeforeChildren"->"29: next" [style=dotted];
+
+"790: visitBeforeChildren"->"628: next" [style=dotted];
+
+"790: visitBeforeChildren"->"301: next" [style=dotted];
+
+"790: visitBeforeChildren"->"279: next" [style=dotted];
+
+"790: visitBeforeChildren"->"143: next" [style=dotted];
+
+"790: visitBeforeChildren"->"64: hasNext" [style=dotted];
+
+"790: visitBeforeChildren"->"617: hasNext" [style=dotted];
+
+"790: visitBeforeChildren"->"328: hasNext" [style=dotted];
+
+"790: visitBeforeChildren"->"304: hasNext" [style=dotted];
+
+"790: visitBeforeChildren"->"133: hasNext" [style=dotted];
+
+"882: visitBeforeChildren"->"951: isLeafNode" [style=dotted];
+
+"882: visitBeforeChildren"->"540: addAttributes" [style=dotted];
+
+"882: visitBeforeChildren"->"474: value" [style=dotted];
+
+"882: visitBeforeChildren"->"141: interpolate" [style=dotted];
+
+"882: visitBeforeChildren"->"758: interpolate" [style=dotted];
+
+"882: visitBeforeChildren"->"462: name" [style=dotted];
+
+"882: visitBeforeChildren"->"414: public void <init>(int)" [style=dotted];
+
+"882: visitBeforeChildren"->"37: getValue" [style=dotted];
+
+"882: visitBeforeChildren"->"37: nodeName" [style=dotted];
+
+"882: visitBeforeChildren"->"37: getChildrenCount" [style=dotted];
+
+"882: visitBeforeChildren"->"917: push" [style=dotted];
+
+"882: visitBeforeChildren"->"1036: interpolateAttributes" [style=dotted];
+
+"882: visitBeforeChildren"->"966: handleLeafNode" [style=dotted];
+
+"963: handleAttributeKeys"->"37: getAttributes" [style=dotted];
+
+"963: handleAttributeKeys"->"214: attributeKey" [style=dotted];
+
+"963: handleAttributeKeys"->"252: attributeKey" [style=dotted];
+
+"963: handleAttributeKeys"->"255: getExpressionEngine" [style=dotted];
+
+"963: handleAttributeKeys"->"29: next" [style=dotted];
+
+"963: handleAttributeKeys"->"628: next" [style=dotted];
+
+"963: handleAttributeKeys"->"301: next" [style=dotted];
+
+"963: handleAttributeKeys"->"279: next" [style=dotted];
+
+"963: handleAttributeKeys"->"143: next" [style=dotted];
+
+"963: handleAttributeKeys"->"64: hasNext" [style=dotted];
+
+"963: handleAttributeKeys"->"617: hasNext" [style=dotted];
+
+"963: handleAttributeKeys"->"328: hasNext" [style=dotted];
+
+"963: handleAttributeKeys"->"304: hasNext" [style=dotted];
+
+"963: handleAttributeKeys"->"133: hasNext" [style=dotted];
+
+"37: getValue"->"49: getValue" [style=dotted];
+
+"222: nodeKey"->"37: nodeName" [style=dotted];
+
+"200: nodeKey"->"81: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngine, java.lang.String)" [style=dotted];
+
+"200: nodeKey"->"320: toString" [style=dotted];
+
+"200: nodeKey"->"121: append" [style=dotted];
+
+"200: nodeKey"->"37: nodeName" [style=dotted];
+
+"255: getExpressionEngine"->"117: <clinit>" [style=dotted];
+
+"37: getAttributes"->"120: getAttributes" [style=dotted];
+
+"728: visitBeforeChildren"->"778: updateNode" [style=dotted];
+
+"728: visitBeforeChildren"->"794: insertNewChildNodes" [style=dotted];
+
+"499: visitBeforeChildren"->"63: access$200" [style=dotted];
+
+"499: visitBeforeChildren"->"63: access$300" [style=dotted];
+
+"499: visitBeforeChildren"->"63: access$400" [style=dotted];
+
+"665: currentKey"->"694: isPropertyKey" [style=dotted];
+
+"665: currentKey"->"352: constructAttributeKey" [style=dotted];
+
+"894: checkAttribute"->"49: access$500" [style=dotted];
+
+"894: checkAttribute"->"332: isAttributeKey" [style=dotted];
+
+"911: checkIndex"->"158: getIndexEnd" [style=dotted];
+
+"911: checkIndex"->"148: getIndexStart" [style=dotted];
+
+"911: checkIndex"->"49: access$300" [style=dotted];
+
+"746: findNextIndices"->"49: access$100" [style=dotted];
+
+"746: findNextIndices"->"773: nextKeyPart" [style=dotted];
+
+"746: findNextIndices"->"187: length" [style=dotted];
+
+"746: findNextIndices"->"108: getPropertyDelimiter" [style=dotted];
+
+"746: findNextIndices"->"49: access$200" [style=dotted];
+
+"746: findNextIndices"->"49: access$300" [style=dotted];
+
+"431: castListener"->"88: getListener" [style=dotted];
+
+"1109: createParentMapping"->"57: <clinit>";
+
+"1109: createParentMapping"->"783: updateParentMapping";
+
+"563: detach"->"57: <clinit>" [style=dotted];
+
+"563: detach"->"475: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode, int, org.apache.commons.configuration2.tree.InMemoryNodeModel)" [style=dotted];
+
+"563: detach"->"82: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)" [style=dotted];
+
+"563: detach"->"488: getNode" [style=dotted];
+
+"510: isDetached"->"500: getDetachedModel" [style=dotted];
+
+"43: void <init>(org.apache.commons.configuration2.tree.ImmutableNode$Builder, org.apache.commons.configuration2.tree.ImmutableNode$1)"->"64: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode$Builder)" [style=dotted];
+
+"94: <clinit>"->"94: <clinit>";
+
+"94: <clinit>"->"37: void <init>(org.apache.commons.text.lookup.StringLookup)";
+
+"94: <clinit>"->"213: getLookup";
+
+"94: <clinit>"->"223: getPrefix";
+
+"94: <clinit>"->"66: <clinit>";
+
+"94: <clinit>"->"58: values";
+
+"285: installInterpolator"->"94: <clinit>";
+
+"285: installInterpolator"->"269: setInterpolator";
+
+"285: installInterpolator"->"277: create";
+
+"285: installInterpolator"->"211: withDefaultLookup";
+
+"285: installInterpolator"->"48: public void <init>(org.apache.commons.configuration2.ImmutableConfiguration)";
+
+"285: installInterpolator"->"228: withDefaultLookups";
+
+"285: installInterpolator"->"192: withPrefixLookups";
+
+"285: installInterpolator"->"156: public void <init>()";
+
+"285: installInterpolator"->"191: fromSpecification";
+
+"212: getDefaultPrefixLookups"->"94: <clinit>";
+
+"331: initListeners"->"63: public void <init>()";
+
+"42: public void <init>()"->"40: public void <init>()";
+
+"73: void <init>()"->"138: public void <init>()";
+
+"951: isLeafNode"->"37: getChildren" [style=dotted];
+
+"988: storeInterpolatedNode"->"487: addChild" [style=dotted];
+
+"988: storeInterpolatedNode"->"937: peek" [style=dotted];
+
+"540: addAttributes"->"621: ensureAttributesExist" [style=dotted];
+
+"141: interpolate"->"758: interpolate" [style=dotted];
+
+"141: interpolate"->"141: interpolate" [style=dotted];
+
+"758: interpolate"->"256: getInterpolator" [style=dotted];
+
+"758: interpolate"->"77: interpolate" [style=dotted];
+
+"758: interpolate"->"356: interpolate" [style=dotted];
+
+"758: interpolate"->"147: getInterpolator" [style=dotted];
+
+"414: public void <init>(int)"->"402: public void <init>()" [style=dotted];
+
+"414: public void <init>(int)"->"635: initChildrenCollection" [style=dotted];
+
+"37: getChildrenCount"->"110: getChildrenCount" [style=dotted];
+
+"1036: interpolateAttributes"->"1011: interpolateAttributes" [style=dotted];
+
+"966: handleLeafNode"->"88: getValue" [style=dotted];
+
+"966: handleLeafNode"->"556: create" [style=dotted];
+
+"966: handleLeafNode"->"540: addAttributes" [style=dotted];
+
+"966: handleLeafNode"->"474: value" [style=dotted];
+
+"966: handleLeafNode"->"462: name" [style=dotted];
+
+"966: handleLeafNode"->"402: public void <init>()" [style=dotted];
+
+"966: handleLeafNode"->"37: nodeName" [style=dotted];
+
+"966: handleLeafNode"->"37: getValue" [style=dotted];
+
+"966: handleLeafNode"->"988: storeInterpolatedNode" [style=dotted];
+
+"966: handleLeafNode"->"1050: valueChanged" [style=dotted];
+
+"966: handleLeafNode"->"1011: interpolateAttributes" [style=dotted];
+
+"966: handleLeafNode"->"141: interpolate" [style=dotted];
+
+"966: handleLeafNode"->"758: interpolate" [style=dotted];
+
+"214: attributeKey"->"81: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngine, java.lang.String)" [style=dotted];
+
+"214: attributeKey"->"320: toString" [style=dotted];
+
+"214: attributeKey"->"176: appendAttribute" [style=dotted];
+
+"49: getValue"->"88: getValue" [style=dotted];
+
+"81: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngine, java.lang.String)"->"433: trim" [style=dotted];
+
+"121: append"->"524: escapeDelimiters" [style=dotted];
+
+"121: append"->"108: getPropertyDelimiter" [style=dotted];
+
+"121: append"->"513: getSymbols" [style=dotted];
+
+"121: append"->"332: isAttributeKey" [style=dotted];
+
+"121: append"->"433: trim" [style=dotted];
+
+"117: <clinit>"->"117: <clinit>" [style=dotted];
+
+"117: <clinit>"->"136: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols)" [style=dotted];
+
+"117: <clinit>"->"66: <clinit>" [style=dotted];
+
+"120: getAttributes"->"134: getAttributes" [style=dotted];
+
+"778: updateNode"->"184: getReference" [style=dotted];
+
+"778: updateNode"->"1214: update" [style=dotted];
+
+"794: insertNewChildNodes"->"37: getChildren" [style=dotted];
+
+"794: insertNewChildNodes"->"1173: insert" [style=dotted];
+
+"794: insertNewChildNodes"->"29: next" [style=dotted];
+
+"794: insertNewChildNodes"->"628: next" [style=dotted];
+
+"794: insertNewChildNodes"->"301: next" [style=dotted];
+
+"794: insertNewChildNodes"->"279: next" [style=dotted];
+
+"794: insertNewChildNodes"->"143: next" [style=dotted];
+
+"794: insertNewChildNodes"->"64: hasNext" [style=dotted];
+
+"794: insertNewChildNodes"->"617: hasNext" [style=dotted];
+
+"794: insertNewChildNodes"->"328: hasNext" [style=dotted];
+
+"794: insertNewChildNodes"->"304: hasNext" [style=dotted];
+
+"794: insertNewChildNodes"->"133: hasNext" [style=dotted];
+
+"794: insertNewChildNodes"->"184: getReference" [style=dotted];
+
+"63: access$400"->"514: removeNodeFromReplacementMapping" [style=dotted];
+
+"352: constructAttributeKey"->"332: isAttributeKey" [style=dotted];
+
+"352: constructAttributeKey"->"138: getAttributeEnd" [style=dotted];
+
+"352: constructAttributeKey"->"128: getAttributeStart" [style=dotted];
+
+"352: constructAttributeKey"->"513: getSymbols" [style=dotted];
+
+"49: access$500"->"485: removeAttributeMarkers" [style=dotted];
+
+"332: isAttributeKey"->"513: getSymbols" [style=dotted];
+
+"332: isAttributeKey"->"138: getAttributeEnd" [style=dotted];
+
+"332: isAttributeKey"->"128: getAttributeStart" [style=dotted];
+
+"49: access$300"->"513: getSymbols" [style=dotted];
+
+"773: nextKeyPart"->"801: nextDelimiterPos" [style=dotted];
+
+"773: nextKeyPart"->"187: length" [style=dotted];
+
+"773: nextKeyPart"->"128: getAttributeStart" [style=dotted];
+
+"773: nextKeyPart"->"49: access$100" [style=dotted];
+
+"773: nextKeyPart"->"49: access$300" [style=dotted];
+
+"773: nextKeyPart"->"49: access$400" [style=dotted];
+
+"49: access$200"->"470: hasLeadingDelimiter" [style=dotted];
+
+"783: updateParentMapping"->"45: <clinit>";
+
+"783: updateParentMapping"->"95: walkBFS";
+
+"783: updateParentMapping"->"785: void <init>(java.util.Map)";
+
+"783: updateParentMapping"->"57: <clinit>";
+
+"64: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode$Builder)"->"370: access$000" [style=dotted];
+
+"64: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode$Builder)"->"571: createChildren";
+
+"64: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode$Builder)"->"370: access$100" [style=dotted];
+
+"64: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode$Builder)"->"370: access$200" [style=dotted];
+
+"66: <clinit>"->"66: <clinit>";
+
+"66: <clinit>"->"201: private void <init>(java.lang.String, int, java.lang.String, org.apache.commons.configuration2.interpol.Lookup)";
+
+"66: <clinit>"->"37: void <init>(org.apache.commons.text.lookup.StringLookup)";
+
+"58: values"->"66: <clinit>";
+
+"58: values"->"52: clone" [style=dotted];
+
+"58: values"->"321: clone" [style=dotted];
+
+"58: values"->"47: clone" [style=dotted];
+
+"58: values"->"730: clone" [style=dotted];
+
+"58: values"->"746: clone" [style=dotted];
+
+"277: create"->"56: void <init>(org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder, org.apache.commons.configuration2.interpol.InterpolatorSpecification$1)" [style=dotted];
+
+"277: create"->"289: reset";
+
+"211: withDefaultLookup"->"304: checkLookup";
+
+"228: withDefaultLookups"->"211: withDefaultLookup";
+
+"228: withDefaultLookups"->"29: next" [style=dotted];
+
+"228: withDefaultLookups"->"628: next" [style=dotted];
+
+"228: withDefaultLookups"->"301: next" [style=dotted];
+
+"228: withDefaultLookups"->"279: next" [style=dotted];
+
+"228: withDefaultLookups"->"143: next" [style=dotted];
+
+"228: withDefaultLookups"->"64: hasNext" [style=dotted];
+
+"228: withDefaultLookups"->"617: hasNext" [style=dotted];
+
+"228: withDefaultLookups"->"328: hasNext" [style=dotted];
+
+"228: withDefaultLookups"->"304: hasNext" [style=dotted];
+
+"228: withDefaultLookups"->"133: hasNext" [style=dotted];
+
+"192: withPrefixLookups"->"171: withPrefixLookup";
+
+"192: withPrefixLookups"->"29: next" [style=dotted];
+
+"192: withPrefixLookups"->"628: next" [style=dotted];
+
+"192: withPrefixLookups"->"301: next" [style=dotted];
+
+"192: withPrefixLookups"->"279: next" [style=dotted];
+
+"192: withPrefixLookups"->"143: next" [style=dotted];
+
+"192: withPrefixLookups"->"64: hasNext" [style=dotted];
+
+"192: withPrefixLookups"->"617: hasNext" [style=dotted];
+
+"192: withPrefixLookups"->"328: hasNext" [style=dotted];
+
+"192: withPrefixLookups"->"304: hasNext" [style=dotted];
+
+"192: withPrefixLookups"->"133: hasNext" [style=dotted];
+
+"191: fromSpecification"->"94: <clinit>";
+
+"191: fromSpecification"->"96: getInterpolator";
+
+"191: fromSpecification"->"154: createInterpolator";
+
+"138: public void <init>()"->"342: initSubstitutor";
+
+"487: addChild"->"609: ensureChildrenExist" [style=dotted];
+
+"356: interpolate"->"399: looksLikeSingleVariable" [style=dotted];
+
+"356: interpolate"->"528: resolveSingleVariable" [style=dotted];
+
+"147: getInterpolator"->"256: getInterpolator" [style=dotted];
+
+"147: getInterpolator"->"147: getInterpolator" [style=dotted];
+
+"110: getChildrenCount"->"41: <clinit>" [style=dotted];
+
+"110: getChildrenCount"->"62: getMatchingChildrenCount" [style=dotted];
+
+"110: getChildrenCount"->"99: getChildren" [style=dotted];
+
+"1011: interpolateAttributes"->"37: getAttributes" [style=dotted];
+
+"1011: interpolateAttributes"->"1050: valueChanged" [style=dotted];
+
+"1011: interpolateAttributes"->"141: interpolate" [style=dotted];
+
+"1011: interpolateAttributes"->"758: interpolate" [style=dotted];
+
+"1011: interpolateAttributes"->"29: next" [style=dotted];
+
+"1011: interpolateAttributes"->"628: next" [style=dotted];
+
+"1011: interpolateAttributes"->"301: next" [style=dotted];
+
+"1011: interpolateAttributes"->"279: next" [style=dotted];
+
+"1011: interpolateAttributes"->"143: next" [style=dotted];
+
+"1011: interpolateAttributes"->"64: hasNext" [style=dotted];
+
+"1011: interpolateAttributes"->"617: hasNext" [style=dotted];
+
+"1011: interpolateAttributes"->"328: hasNext" [style=dotted];
+
+"1011: interpolateAttributes"->"304: hasNext" [style=dotted];
+
+"1011: interpolateAttributes"->"133: hasNext" [style=dotted];
+
+"1011: interpolateAttributes"->"37: getAttributeValue" [style=dotted];
+
+"176: appendAttribute"->"352: constructAttributeKey" [style=dotted];
+
+"433: trim"->"389: trimLeft" [style=dotted];
+
+"433: trim"->"410: trimRight" [style=dotted];
+
+"524: escapeDelimiters"->"118: getEscapedDelimiter" [style=dotted];
+
+"524: escapeDelimiters"->"108: getPropertyDelimiter" [style=dotted];
+
+"524: escapeDelimiters"->"513: getSymbols" [style=dotted];
+
+"513: getSymbols"->"105: getExpressionEngine" [style=dotted];
+
+"513: getSymbols"->"173: getSymbols" [style=dotted];
+
+"136: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols)"->"152: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols, org.apache.commons.configuration2.tree.NodeMatcher)" [style=dotted];
+
+"66: <clinit>"->"66: <clinit>" [style=dotted];
+
+"66: <clinit>"->"231: createDefaultSmybols" [style=dotted];
+
+"1214: update"->"63: <clinit>" [style=dotted];
+
+"1214: update"->"89: escape" [style=dotted];
+
+"1214: update"->"37: getValue" [style=dotted];
+
+"1214: update"->"1233: updateElement" [style=dotted];
+
+"1214: update"->"101: isListNode" [style=dotted];
+
+"1214: update"->"136: isFirstListItem" [style=dotted];
+
+"1214: update"->"170: listValue" [style=dotted];
+
+"1173: insert"->"63: <clinit>" [style=dotted];
+
+"1173: insert"->"1300: getElement" [style=dotted];
+
+"1173: insert"->"89: escape" [style=dotted];
+
+"1173: insert"->"88: getValue" [style=dotted];
+
+"1173: insert"->"78: getNodeName" [style=dotted];
+
+"1173: insert"->"101: isListNode" [style=dotted];
+
+"1173: insert"->"1336: updateAttributes" [style=dotted];
+
+"485: removeAttributeMarkers"->"513: getSymbols" [style=dotted];
+
+"485: removeAttributeMarkers"->"138: getAttributeEnd" [style=dotted];
+
+"485: removeAttributeMarkers"->"128: getAttributeStart" [style=dotted];
+
+"801: nextDelimiterPos"->"49: access$300" [style=dotted];
+
+"801: nextDelimiterPos"->"838: escapedPosition" [style=dotted];
+
+"801: nextDelimiterPos"->"108: getPropertyDelimiter" [style=dotted];
+
+"49: access$400"->"500: unescapeDelimiters" [style=dotted];
+
+"470: hasLeadingDelimiter"->"513: getSymbols" [style=dotted];
+
+"470: hasLeadingDelimiter"->"118: getEscapedDelimiter" [style=dotted];
+
+"470: hasLeadingDelimiter"->"108: getPropertyDelimiter" [style=dotted];
+
+"95: walkBFS"->"45: <clinit>";
+
+"95: walkBFS"->"173: checkParameters";
+
+"95: walkBFS"->"141: bfs";
+
+"785: void <init>(java.util.Map)"->"31: public void <init>()";
+
+"370: access$000"->"592: createAttributes" [style=dotted];
+
+"52: clone"->"396: clone" [style=dotted];
+
+"52: clone"->"47: clone" [style=dotted];
+
+"321: clone"->"331: initListeners" [style=dotted];
+
+"47: clone"->"324: clone" [style=dotted];
+
+"746: clone"->"41: <clinit>" [style=dotted];
+
+"746: clone"->"74: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"746: clone"->"567: setSynchronizer" [style=dotted];
+
+"746: clone"->"433: cloneInterpolator" [style=dotted];
+
+"746: clone"->"655: endRead" [style=dotted];
+
+"746: clone"->"222: cloneNodeModel" [style=dotted];
+
+"746: clone"->"657: cloneNodeModel" [style=dotted];
+
+"746: clone"->"551: getSynchronizer" [style=dotted];
+
+"746: clone"->"321: clone" [style=dotted];
+
+"746: clone"->"640: beginRead" [style=dotted];
+
+"746: clone"->"54: <clinit>" [style=dotted];
+
+"746: clone"->"457: cloneSynchronizer" [style=dotted];
+
+"56: void <init>(org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder, org.apache.commons.configuration2.interpol.InterpolatorSpecification$1)"->"77: private void <init>(org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder)" [style=dotted];
+
+"171: withPrefixLookup"->"304: checkLookup";
+
+"154: createInterpolator"->"94: <clinit>";
+
+"154: createInterpolator"->"554: setParentInterpolator";
+
+"154: createInterpolator"->"451: registerLookups";
+
+"154: createInterpolator"->"262: addDefaultLookups";
+
+"154: createInterpolator"->"106: getParentInterpolator";
+
+"154: createInterpolator"->"118: getPrefixLookups";
+
+"154: createInterpolator"->"129: getDefaultLookups";
+
+"154: createInterpolator"->"138: public void <init>()";
+
+"528: resolveSingleVariable"->"94: <clinit>" [style=dotted];
+
+"528: resolveSingleVariable"->"486: resolve" [style=dotted];
+
+"528: resolveSingleVariable"->"171: extractVariableName" [style=dotted];
+
+"41: <clinit>"->"41: <clinit>" [style=dotted];
+
+"41: <clinit>"->"55: void <init>(java.lang.String, int)" [style=dotted];
+
+"41: <clinit>"->"41: void <init>(java.lang.String, int)" [style=dotted];
+
+"62: getMatchingChildrenCount"->"73: getMatchingChildren" [style=dotted];
+
+"37: getAttributeValue"->"132: getAttributeValue" [style=dotted];
+
+"389: trimLeft"->"470: hasLeadingDelimiter" [style=dotted];
+
+"389: trimLeft"->"108: getPropertyDelimiter" [style=dotted];
+
+"389: trimLeft"->"513: getSymbols" [style=dotted];
+
+"410: trimRight"->"456: hasTrailingDelimiter" [style=dotted];
+
+"410: trimRight"->"108: getPropertyDelimiter" [style=dotted];
+
+"410: trimRight"->"513: getSymbols" [style=dotted];
+
+"152: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols, org.apache.commons.configuration2.tree.NodeMatcher)"->"41: <clinit>" [style=dotted];
+
+"231: createDefaultSmybols"->"268: public void <init>()" [style=dotted];
+
+"231: createDefaultSmybols"->"383: create" [style=dotted];
+
+"231: createDefaultSmybols"->"367: setAttributeEnd" [style=dotted];
+
+"231: createDefaultSmybols"->"354: setAttributeStart" [style=dotted];
+
+"231: createDefaultSmybols"->"340: setIndexEnd" [style=dotted];
+
+"231: createDefaultSmybols"->"328: setIndexStart" [style=dotted];
+
+"231: createDefaultSmybols"->"314: setEscapedDelimiter" [style=dotted];
+
+"231: createDefaultSmybols"->"298: setPropertyDelimiter" [style=dotted];
+
+"63: <clinit>"->"63: <clinit>" [style=dotted];
+
+"89: escape"->"117: escapeString" [style=dotted];
+
+"89: escape"->"85: escapeString" [style=dotted];
+
+"1233: updateElement"->"1336: updateAttributes" [style=dotted];
+
+"1233: updateElement"->"1246: updateElement" [style=dotted];
+
+"1233: updateElement"->"1300: getElement" [style=dotted];
+
+"101: isListNode"->"204: hasListReference" [style=dotted];
+
+"101: isListNode"->"37: getChild" [style=dotted];
+
+"101: isListNode"->"37: getChildrenCount" [style=dotted];
+
+"101: isListNode"->"30: getParent" [style=dotted];
+
+"101: isListNode"->"216: nameEquals" [style=dotted];
+
+"136: isFirstListItem"->"216: nameEquals" [style=dotted];
+
+"136: isFirstListItem"->"37: getChild" [style=dotted];
+
+"136: isFirstListItem"->"30: getParent" [style=dotted];
+
+"170: listValue"->"63: <clinit>" [style=dotted];
+
+"170: listValue"->"86: public void <init>(java.lang.String, java.lang.Throwable)" [style=dotted];
+
+"170: listValue"->"105: escapeList" [style=dotted];
+
+"170: listValue"->"59: escapeList" [style=dotted];
+
+"170: listValue"->"88: getValue" [style=dotted];
+
+"170: listValue"->"29: next" [style=dotted];
+
+"170: listValue"->"628: next" [style=dotted];
+
+"170: listValue"->"301: next" [style=dotted];
+
+"170: listValue"->"279: next" [style=dotted];
+
+"170: listValue"->"143: next" [style=dotted];
+
+"170: listValue"->"64: hasNext" [style=dotted];
+
+"170: listValue"->"617: hasNext" [style=dotted];
+
+"170: listValue"->"328: hasNext" [style=dotted];
+
+"170: listValue"->"304: hasNext" [style=dotted];
+
+"170: listValue"->"133: hasNext" [style=dotted];
+
+"170: listValue"->"78: getNodeName" [style=dotted];
+
+"170: listValue"->"37: getChildren" [style=dotted];
+
+"170: listValue"->"30: getParent" [style=dotted];
+
+"1300: getElement"->"65: getElement" [style=dotted];
+
+"1300: getElement"->"165: getDocument" [style=dotted];
+
+"1300: getElement"->"184: getReference" [style=dotted];
+
+"838: escapedPosition"->"49: access$300" [style=dotted];
+
+"838: escapedPosition"->"118: getEscapedDelimiter" [style=dotted];
+
+"838: escapedPosition"->"881: escapeOffset" [style=dotted];
+
+"500: unescapeDelimiters"->"108: getPropertyDelimiter" [style=dotted];
+
+"500: unescapeDelimiters"->"118: getEscapedDelimiter" [style=dotted];
+
+"500: unescapeDelimiters"->"513: getSymbols" [style=dotted];
+
+"141: bfs"->"29: next" [style=dotted];
+
+"141: bfs"->"628: next" [style=dotted];
+
+"141: bfs"->"301: next" [style=dotted];
+
+"141: bfs"->"279: next" [style=dotted];
+
+"141: bfs"->"143: next" [style=dotted];
+
+"141: bfs"->"64: hasNext" [style=dotted];
+
+"141: bfs"->"617: hasNext" [style=dotted];
+
+"141: bfs"->"328: hasNext" [style=dotted];
+
+"141: bfs"->"304: hasNext" [style=dotted];
+
+"141: bfs"->"133: hasNext" [style=dotted];
+
+"141: bfs"->"37: getChildren";
+
+"141: bfs"->"854: terminate" [style=dotted];
+
+"141: bfs"->"57: terminate";
+
+"141: bfs"->"785: visitBeforeChildren";
+
+"141: bfs"->"850: visitBeforeChildren" [style=dotted];
+
+"141: bfs"->"942: visitBeforeChildren" [style=dotted];
+
+"141: bfs"->"40: visitBeforeChildren" [style=dotted];
+
+"141: bfs"->"866: visitBeforeChildren" [style=dotted];
+
+"141: bfs"->"722: visitBeforeChildren" [style=dotted];
+
+"141: bfs"->"494: visitBeforeChildren" [style=dotted];
+
+"396: clone"->"311: getParameters" [style=dotted];
+
+"396: clone"->"110: getParameters" [style=dotted];
+
+"47: clone"->"324: clone" [style=dotted];
+
+"324: clone"->"132: <clinit>" [style=dotted];
+
+"324: clone"->"204: public void <init>(org.apache.commons.configuration2.io.FileBased, org.apache.commons.configuration2.io.FileHandler)" [style=dotted];
+
+"324: clone"->"242: getContent" [style=dotted];
+
+"324: clone"->"396: clone" [style=dotted];
+
+"433: cloneInterpolator"->"285: installInterpolator" [style=dotted];
+
+"433: cloneInterpolator"->"319: getLookups" [style=dotted];
+
+"433: cloneInterpolator"->"306: getDefaultLookups" [style=dotted];
+
+"433: cloneInterpolator"->"147: getInterpolator" [style=dotted];
+
+"433: cloneInterpolator"->"256: getInterpolator" [style=dotted];
+
+"433: cloneInterpolator"->"483: findConfigurationLookup" [style=dotted];
+
+"222: cloneNodeModel"->"149: getParent" [style=dotted];
+
+"222: cloneNodeModel"->"99: public void <init>(org.apache.commons.configuration2.tree.InMemoryNodeModelSupport, org.apache.commons.configuration2.tree.NodeSelector, boolean)" [style=dotted];
+
+"222: cloneNodeModel"->"498: trackNode" [style=dotted];
+
+"222: cloneNodeModel"->"816: getModel" [style=dotted];
+
+"222: cloneNodeModel"->"159: getRootSelector" [style=dotted];
+
+"657: cloneNodeModel"->"57: <clinit>" [style=dotted];
+
+"657: cloneNodeModel"->"82: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)" [style=dotted];
+
+"657: cloneNodeModel"->"40: getRootNode" [style=dotted];
+
+"657: cloneNodeModel"->"30: getRootNode" [style=dotted];
+
+"657: cloneNodeModel"->"113: getNodeHandler" [style=dotted];
+
+"657: cloneNodeModel"->"174: getNodeHandler" [style=dotted];
+
+"657: cloneNodeModel"->"816: getModel" [style=dotted];
+
+"54: <clinit>"->"71: void <init>()" [style=dotted];
+
+"54: <clinit>"->"54: <clinit>" [style=dotted];
+
+"457: cloneSynchronizer"->"41: <clinit>" [style=dotted];
+
+"457: cloneSynchronizer"->"50: public void <init>(java.lang.String)" [style=dotted];
+
+"457: cloneSynchronizer"->"54: <clinit>" [style=dotted];
+
+"457: cloneSynchronizer"->"410: clone" [style=dotted];
+
+"77: private void <init>(org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder)"->"141: access$000" [style=dotted];
+
+"77: private void <init>(org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder)"->"141: access$100" [style=dotted];
+
+"77: private void <init>(org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder)"->"141: access$200" [style=dotted];
+
+"77: private void <init>(org.apache.commons.configuration2.interpol.InterpolatorSpecification$Builder)"->"141: access$300" [style=dotted];
+
+"486: resolve"->"486: resolve" [style=dotted];
+
+"486: resolve"->"46: lookup" [style=dotted];
+
+"486: resolve"->"44: lookup" [style=dotted];
+
+"486: resolve"->"75: lookup" [style=dotted];
+
+"486: resolve"->"29: next" [style=dotted];
+
+"486: resolve"->"628: next" [style=dotted];
+
+"486: resolve"->"301: next" [style=dotted];
+
+"486: resolve"->"279: next" [style=dotted];
+
+"486: resolve"->"143: next" [style=dotted];
+
+"486: resolve"->"64: hasNext" [style=dotted];
+
+"486: resolve"->"617: hasNext" [style=dotted];
+
+"486: resolve"->"328: hasNext" [style=dotted];
+
+"486: resolve"->"304: hasNext" [style=dotted];
+
+"486: resolve"->"133: hasNext" [style=dotted];
+
+"486: resolve"->"329: getParentInterpolator" [style=dotted];
+
+"486: resolve"->"292: fetchLookupForPrefix" [style=dotted];
+
+"171: extractVariableName"->"94: <clinit>" [style=dotted];
+
+"55: void <init>(java.lang.String, int)"->"34: void <init>(java.lang.String, int, org.apache.commons.configuration2.tree.NodeNameMatchers$1)" [style=dotted];
+
+"41: void <init>(java.lang.String, int)"->"34: void <init>(java.lang.String, int, org.apache.commons.configuration2.tree.NodeNameMatchers$1)" [style=dotted];
+
+"73: getMatchingChildren"->"55: matches" [style=dotted];
+
+"73: getMatchingChildren"->"41: matches" [style=dotted];
+
+"73: getMatchingChildren"->"29: next" [style=dotted];
+
+"73: getMatchingChildren"->"628: next" [style=dotted];
+
+"73: getMatchingChildren"->"301: next" [style=dotted];
+
+"73: getMatchingChildren"->"279: next" [style=dotted];
+
+"73: getMatchingChildren"->"143: next" [style=dotted];
+
+"73: getMatchingChildren"->"64: hasNext" [style=dotted];
+
+"73: getMatchingChildren"->"617: hasNext" [style=dotted];
+
+"73: getMatchingChildren"->"328: hasNext" [style=dotted];
+
+"73: getMatchingChildren"->"304: hasNext" [style=dotted];
+
+"73: getMatchingChildren"->"133: hasNext" [style=dotted];
+
+"73: getMatchingChildren"->"99: getChildren" [style=dotted];
+
+"132: getAttributeValue"->"134: getAttributes" [style=dotted];
+
+"456: hasTrailingDelimiter"->"513: getSymbols" [style=dotted];
+
+"456: hasTrailingDelimiter"->"118: getEscapedDelimiter" [style=dotted];
+
+"456: hasTrailingDelimiter"->"108: getPropertyDelimiter" [style=dotted];
+
+"383: create"->"66: <clinit>" [style=dotted];
+
+"383: create"->"40: void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder, org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$1)" [style=dotted];
+
+"117: escapeString"->"99: getDelimiter" [style=dotted];
+
+"1246: updateElement"->"1375: findTextNodeForUpdate" [style=dotted];
+
+"204: hasListReference"->"184: getReference" [style=dotted];
+
+"37: getChild"->"98: getChild" [style=dotted];
+
+"30: getParent"->"115: getParent" [style=dotted];
+
+"216: nameEquals"->"78: getNodeName" [style=dotted];
+
+"105: escapeList"->"99: getDelimiter" [style=dotted];
+
+"105: escapeList"->"89: escape" [style=dotted];
+
+"105: escapeList"->"29: next" [style=dotted];
+
+"105: escapeList"->"628: next" [style=dotted];
+
+"105: escapeList"->"301: next" [style=dotted];
+
+"105: escapeList"->"279: next" [style=dotted];
+
+"105: escapeList"->"143: next" [style=dotted];
+
+"105: escapeList"->"64: hasNext" [style=dotted];
+
+"105: escapeList"->"617: hasNext" [style=dotted];
+
+"105: escapeList"->"328: hasNext" [style=dotted];
+
+"105: escapeList"->"304: hasNext" [style=dotted];
+
+"105: escapeList"->"133: hasNext" [style=dotted];
+
+"37: getChildren"->"92: getChildren" [style=dotted];
+
+"881: escapeOffset"->"49: access$300" [style=dotted];
+
+"881: escapeOffset"->"108: getPropertyDelimiter" [style=dotted];
+
+"881: escapeOffset"->"118: getEscapedDelimiter" [style=dotted];
+
+"311: getParameters"->"110: getParameters" [style=dotted];
+
+"110: getParameters"->"483: createDefensiveCopies" [style=dotted];
+
+"132: <clinit>"->"132: <clinit>" [style=dotted];
+
+"132: <clinit>"->"134: void <init>()" [style=dotted];
+
+"204: public void <init>(org.apache.commons.configuration2.io.FileBased, org.apache.commons.configuration2.io.FileHandler)"->"132: <clinit>" [style=dotted];
+
+"204: public void <init>(org.apache.commons.configuration2.io.FileBased, org.apache.commons.configuration2.io.FileHandler)"->"215: private void <init>(org.apache.commons.configuration2.io.FileBased, org.apache.commons.configuration2.io.FileLocator)" [style=dotted];
+
+"204: public void <init>(org.apache.commons.configuration2.io.FileBased, org.apache.commons.configuration2.io.FileHandler)"->"489: getFileLocator" [style=dotted];
+
+"204: public void <init>(org.apache.commons.configuration2.io.FileBased, org.apache.commons.configuration2.io.FileHandler)"->"1526: checkSourceHandler" [style=dotted];
+
+"483: findConfigurationLookup"->"306: getDefaultLookups" [style=dotted];
+
+"483: findConfigurationLookup"->"64: getConfiguration" [style=dotted];
+
+"483: findConfigurationLookup"->"29: next" [style=dotted];
+
+"483: findConfigurationLookup"->"628: next" [style=dotted];
+
+"483: findConfigurationLookup"->"301: next" [style=dotted];
+
+"483: findConfigurationLookup"->"279: next" [style=dotted];
+
+"483: findConfigurationLookup"->"143: next" [style=dotted];
+
+"483: findConfigurationLookup"->"64: hasNext" [style=dotted];
+
+"483: findConfigurationLookup"->"617: hasNext" [style=dotted];
+
+"483: findConfigurationLookup"->"328: hasNext" [style=dotted];
+
+"483: findConfigurationLookup"->"304: hasNext" [style=dotted];
+
+"483: findConfigurationLookup"->"133: hasNext" [style=dotted];
+
+"99: public void <init>(org.apache.commons.configuration2.tree.InMemoryNodeModelSupport, org.apache.commons.configuration2.tree.NodeSelector, boolean)"->"266: finalize" [style=dotted];
+
+"498: trackNode"->"105: trackNode" [style=dotted];
+
+"498: trackNode"->"160: updateNodeTracker" [style=dotted];
+
+"498: trackNode"->"80: getRootNode" [style=dotted];
+
+"498: trackNode"->"90: getNodeTracker" [style=dotted];
+
+"410: clone"->"74: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"75: lookup"->"64: getConfiguration" [style=dotted];
+
+"75: lookup"->"988: getProperty" [style=dotted];
+
+"292: fetchLookupForPrefix"->"94: <clinit>" [style=dotted];
+
+"292: fetchLookupForPrefix"->"228: nullSafeLookup" [style=dotted];
+
+"34: void <init>(java.lang.String, int, org.apache.commons.configuration2.tree.NodeNameMatchers$1)"->"34: private void <init>(java.lang.String, int)" [style=dotted];
+
+"55: matches"->"62: matches" [style=dotted];
+
+"41: matches"->"47: matches" [style=dotted];
+
+"40: void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder, org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$1)"->"92: private void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder)" [style=dotted];
+
+"1375: findTextNodeForUpdate"->"29: next" [style=dotted];
+
+"1375: findTextNodeForUpdate"->"628: next" [style=dotted];
+
+"1375: findTextNodeForUpdate"->"301: next" [style=dotted];
+
+"1375: findTextNodeForUpdate"->"279: next" [style=dotted];
+
+"1375: findTextNodeForUpdate"->"143: next" [style=dotted];
+
+"1375: findTextNodeForUpdate"->"64: hasNext" [style=dotted];
+
+"1375: findTextNodeForUpdate"->"617: hasNext" [style=dotted];
+
+"1375: findTextNodeForUpdate"->"328: hasNext" [style=dotted];
+
+"1375: findTextNodeForUpdate"->"304: hasNext" [style=dotted];
+
+"1375: findTextNodeForUpdate"->"133: hasNext" [style=dotted];
+
+"98: getChild"->"99: getChildren" [style=dotted];
+
+"115: getParent"->"212: handleReplacements" [style=dotted];
+
+"115: getParent"->"80: getRootNode" [style=dotted];
+
+"92: getChildren"->"41: <clinit>" [style=dotted];
+
+"92: getChildren"->"73: getMatchingChildren" [style=dotted];
+
+"483: createDefensiveCopies"->"511: fetchPrefixLookups" [style=dotted];
+
+"483: createDefensiveCopies"->"564: fetchDefaultLookups" [style=dotted];
+
+"266: finalize"->"162: isReleaseTrackedNodeOnFinalize" [style=dotted];
+
+"266: finalize"->"247: close" [style=dotted];
+
+"105: trackNode"->"427: trackDataForAddedObserver" [style=dotted];
+
+"105: trackNode"->"84: private void <init>(java.util.Map)" [style=dotted];
+
+"160: updateNodeTracker"->"68: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode, java.util.Map, java.util.Map, org.apache.commons.configuration2.tree.NodeTracker, org.apache.commons.configuration2.tree.ReferenceTracker)" [style=dotted];
+
+"988: getProperty"->"640: beginRead" [style=dotted];
+
+"988: getProperty"->"655: endRead" [style=dotted];
+
+"988: getProperty"->"183: getPropertyInternal" [style=dotted];
+
+"988: getProperty"->"284: getPropertyInternal" [style=dotted];
+
+"228: nullSafeLookup"->"38: <clinit>" [style=dotted];
+
+"62: matches"->"37: nodeName" [style=dotted];
+
+"47: matches"->"37: nodeName" [style=dotted];
+
+"92: private void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder)"->"243: access$000" [style=dotted];
+
+"92: private void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder)"->"243: access$100" [style=dotted];
+
+"92: private void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder)"->"243: access$200" [style=dotted];
+
+"92: private void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder)"->"243: access$300" [style=dotted];
+
+"92: private void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder)"->"243: access$400" [style=dotted];
+
+"92: private void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngineSymbols$Builder)"->"243: access$500" [style=dotted];
+
+"247: close"->"739: untrackNode" [style=dotted];
+
+"247: close"->"146: getSelector" [style=dotted];
+
+"247: close"->"135: getParentModel" [style=dotted];
+
+"427: trackDataForAddedObserver"->"521: observerAdded" [style=dotted];
+
+"427: trackDataForAddedObserver"->"462: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)" [style=dotted];
+
+"427: trackDataForAddedObserver"->"50: public void <init>(java.lang.String)" [style=dotted];
+
+"427: trackDataForAddedObserver"->"89: select" [style=dotted];
+
+"183: getPropertyInternal"->"86: getParentKey" [style=dotted];
+
+"183: getPropertyInternal"->"988: getProperty" [style=dotted];
+
+"284: getPropertyInternal"->"788: fetchNodeList" [style=dotted];
+
+"284: getPropertyInternal"->"29: next" [style=dotted];
+
+"284: getPropertyInternal"->"628: next" [style=dotted];
+
+"284: getPropertyInternal"->"301: next" [style=dotted];
+
+"284: getPropertyInternal"->"279: next" [style=dotted];
+
+"284: getPropertyInternal"->"143: next" [style=dotted];
+
+"284: getPropertyInternal"->"64: hasNext" [style=dotted];
+
+"284: getPropertyInternal"->"617: hasNext" [style=dotted];
+
+"284: getPropertyInternal"->"328: hasNext" [style=dotted];
+
+"284: getPropertyInternal"->"304: hasNext" [style=dotted];
+
+"284: getPropertyInternal"->"133: hasNext" [style=dotted];
+
+"284: getPropertyInternal"->"113: getNodeHandler" [style=dotted];
+
+"284: getPropertyInternal"->"174: getNodeHandler" [style=dotted];
+
+"284: getPropertyInternal"->"828: valueFromResult" [style=dotted];
+
+"284: getPropertyInternal"->"816: getModel" [style=dotted];
+
+"38: <clinit>"->"38: <clinit>" [style=dotted];
+
+"38: <clinit>"->"35: private void <init>(java.lang.String, int)" [style=dotted];
+
+"739: untrackNode"->"159: untrackNode" [style=dotted];
+
+"739: untrackNode"->"160: updateNodeTracker" [style=dotted];
+
+"739: untrackNode"->"90: getNodeTracker" [style=dotted];
+
+"521: observerAdded"->"500: getDetachedModel" [style=dotted];
+
+"521: observerAdded"->"475: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode, int, org.apache.commons.configuration2.tree.InMemoryNodeModel)" [style=dotted];
+
+"462: public void <init>(org.apache.commons.configuration2.tree.ImmutableNode)"->"475: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode, int, org.apache.commons.configuration2.tree.InMemoryNodeModel)" [style=dotted];
+
+"89: select"->"29: next" [style=dotted];
+
+"89: select"->"628: next" [style=dotted];
+
+"89: select"->"301: next" [style=dotted];
+
+"89: select"->"279: next" [style=dotted];
+
+"89: select"->"143: next" [style=dotted];
+
+"89: select"->"64: hasNext" [style=dotted];
+
+"89: select"->"617: hasNext" [style=dotted];
+
+"89: select"->"328: hasNext" [style=dotted];
+
+"89: select"->"304: hasNext" [style=dotted];
+
+"89: select"->"133: hasNext" [style=dotted];
+
+"89: select"->"188: getFilteredResults" [style=dotted];
+
+"788: fetchNodeList"->"816: getModel" [style=dotted];
+
+"788: fetchNodeList"->"30: getRootNode" [style=dotted];
+
+"788: fetchNodeList"->"40: getRootNode" [style=dotted];
+
+"788: fetchNodeList"->"113: getNodeHandler" [style=dotted];
+
+"788: fetchNodeList"->"174: getNodeHandler" [style=dotted];
+
+"788: fetchNodeList"->"447: resolveKey" [style=dotted];
+
+"828: valueFromResult"->"124: isAttributeResult" [style=dotted];
+
+"828: valueFromResult"->"37: getValue" [style=dotted];
+
+"828: valueFromResult"->"101: getNode" [style=dotted];
+
+"828: valueFromResult"->"137: getAttributeValue" [style=dotted];
+
+"159: untrackNode"->"320: getTrackedNodeData" [style=dotted];
+
+"159: untrackNode"->"84: private void <init>(java.util.Map)" [style=dotted];
+
+"159: untrackNode"->"534: observerRemoved" [style=dotted];
+
+"188: getFilteredResults"->"447: resolveKey" [style=dotted];
+
+"188: getFilteredResults"->"101: getNode" [style=dotted];
+
+"188: getFilteredResults"->"124: isAttributeResult" [style=dotted];
+
+"188: getFilteredResults"->"29: next" [style=dotted];
+
+"188: getFilteredResults"->"628: next" [style=dotted];
+
+"188: getFilteredResults"->"301: next" [style=dotted];
+
+"188: getFilteredResults"->"279: next" [style=dotted];
+
+"188: getFilteredResults"->"143: next" [style=dotted];
+
+"188: getFilteredResults"->"64: hasNext" [style=dotted];
+
+"188: getFilteredResults"->"617: hasNext" [style=dotted];
+
+"188: getFilteredResults"->"328: hasNext" [style=dotted];
+
+"188: getFilteredResults"->"304: hasNext" [style=dotted];
+
+"188: getFilteredResults"->"133: hasNext" [style=dotted];
+
+"447: resolveKey"->"255: getExpressionEngine" [style=dotted];
+
+"447: resolveKey"->"184: query" [style=dotted];
+
+"447: resolveKey"->"196: query" [style=dotted];
+
+"137: getAttributeValue"->"124: isAttributeResult" [style=dotted];
+
+"137: getAttributeValue"->"37: getAttributeValue" [style=dotted];
+
+"137: getAttributeValue"->"112: getAttributeName" [style=dotted];
+
+"137: getAttributeValue"->"101: getNode" [style=dotted];
+
+"534: observerRemoved"->"500: getDetachedModel" [style=dotted];
+
+"534: observerRemoved"->"475: private void <init>(org.apache.commons.configuration2.tree.ImmutableNode, int, org.apache.commons.configuration2.tree.InMemoryNodeModel)" [style=dotted];
+
+"184: query"->"371: findNodesForKey" [style=dotted];
+
+"184: query"->"444: iterator" [style=dotted];
+
+"184: query"->"81: public void <init>(org.apache.commons.configuration2.tree.DefaultExpressionEngine, java.lang.String)" [style=dotted];
+
+"196: query"->"556: <clinit>" [style=dotted];
+
+"196: query"->"338: createContext" [style=dotted];
+
+"196: query"->"546: createResult" [style=dotted];
+
+"196: query"->"518: convertResults" [style=dotted];
+
+"371: findNodesForKey"->"73: createNodeResult" [style=dotted];
+
+"371: findNodesForKey"->"37: getAttributeValue" [style=dotted];
+
+"371: findNodesForKey"->"450: processSubNodes" [style=dotted];
+
+"371: findNodesForKey"->"498: findChildNodesByName" [style=dotted];
+
+"371: findNodesForKey"->"617: hasNext" [style=dotted];
+
+"371: findNodesForKey"->"679: isAttribute" [style=dotted];
+
+"371: findNodesForKey"->"694: isPropertyKey" [style=dotted];
+
+"371: findNodesForKey"->"593: nextKey" [style=dotted];
+
+"371: findNodesForKey"->"89: createAttributeResult" [style=dotted];
+
+"444: iterator"->"550: public void <init>(org.apache.commons.configuration2.tree.DefaultConfigurationKey)" [style=dotted];
+
+"556: <clinit>"->"44: public void <init>()" [style=dotted];
+
+"338: createContext"->"426: getContextFactory" [style=dotted];
+
+"338: createContext"->"44: createContext" [style=dotted];
+
+"546: createResult"->"73: createNodeResult" [style=dotted];
+
+"518: convertResults"->"556: <clinit>" [style=dotted];
+
+"518: convertResults"->"29: next" [style=dotted];
+
+"518: convertResults"->"628: next" [style=dotted];
+
+"518: convertResults"->"301: next" [style=dotted];
+
+"518: convertResults"->"279: next" [style=dotted];
+
+"518: convertResults"->"143: next" [style=dotted];
+
+"518: convertResults"->"64: hasNext" [style=dotted];
+
+"518: convertResults"->"617: hasNext" [style=dotted];
+
+"518: convertResults"->"328: hasNext" [style=dotted];
+
+"518: convertResults"->"304: hasNext" [style=dotted];
+
+"518: convertResults"->"133: hasNext" [style=dotted];
+
+"518: convertResults"->"546: createResult" [style=dotted];
+
+"73: createNodeResult"->"58: private void <init>(java.lang.Object, java.lang.String)" [style=dotted];
+
+"450: processSubNodes"->"717: hasIndex" [style=dotted];
+
+"450: processSubNodes"->"29: next" [style=dotted];
+
+"450: processSubNodes"->"628: next" [style=dotted];
+
+"450: processSubNodes"->"301: next" [style=dotted];
+
+"450: processSubNodes"->"279: next" [style=dotted];
+
+"450: processSubNodes"->"143: next" [style=dotted];
+
+"450: processSubNodes"->"64: hasNext" [style=dotted];
+
+"450: processSubNodes"->"617: hasNext" [style=dotted];
+
+"450: processSubNodes"->"328: hasNext" [style=dotted];
+
+"450: processSubNodes"->"304: hasNext" [style=dotted];
+
+"450: processSubNodes"->"133: hasNext" [style=dotted];
+
+"450: processSubNodes"->"371: findNodesForKey" [style=dotted];
+
+"450: processSubNodes"->"730: clone" [style=dotted];
+
+"450: processSubNodes"->"706: getIndex" [style=dotted];
+
+"498: findChildNodesByName"->"37: getMatchingChildren" [style=dotted];
+
+"679: isAttribute"->"951: isAttributeEmulatingMode" [style=dotted];
+
+"679: isAttribute"->"617: hasNext" [style=dotted];
+
+"89: createAttributeResult"->"58: private void <init>(java.lang.Object, java.lang.String)" [style=dotted];
+
+"44: createContext"->"124: wrapNode" [style=dotted];
+
+"37: getMatchingChildren"->"73: getMatchingChildren" [style=dotted];
+
+"951: isAttributeEmulatingMode"->"49: access$300" [style=dotted];
+
+"951: isAttributeEmulatingMode"->"128: getAttributeStart" [style=dotted];
+
+"951: isAttributeEmulatingMode"->"108: getPropertyDelimiter" [style=dotted];
+
+"951: isAttributeEmulatingMode"->"138: getAttributeEnd" [style=dotted];
+
+"124: wrapNode"->"148: public void <init>(java.lang.Object, org.apache.commons.configuration2.tree.NodeHandler)" [style=dotted];
+
+}

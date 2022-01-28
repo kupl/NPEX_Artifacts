@@ -1,0 +1,5 @@
+{
+    "contents": "for (java.lang.String s : value != null ? value.split(\",\") : new java.lang.String[]{  }) {\n    org.apache.cxf.jaxrs.utils.JAXRSUtils.addStructuredPartToMap(queries, sep, name, s, decode, decodePlus);\n}",
+    "original_filepath": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+    "patched_lines": [1325]
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "line": 66,
+        "method_name": "withValue"
+    },
+    {
+        "filepath": "core/src/test/java/org/truth0/subjects/MapTest.java",
+        "line": 139,
+        "method_name": "failMapHasKeyWithPresentValueNullExpected"
+    }
+]

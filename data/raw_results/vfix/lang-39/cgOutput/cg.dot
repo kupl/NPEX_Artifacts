@@ -1,0 +1,23 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"6: main" [color=gold] [style=bold]
+"3611: replaceEach" [color=red] [style=bold]
+"3: <clinit>" [style=bold]
+"11: testReplace_StringStringArrayStringArray" [style=bold]
+"3501: replaceEach" [style=bold]
+"6: main"->"3: <clinit>";
+
+"6: main"->"11: testReplace_StringStringArrayStringArray";
+
+"3: <clinit>"->"3: <clinit>";
+
+"11: testReplace_StringStringArrayStringArray"->"3: <clinit>";
+
+"11: testReplace_StringStringArrayStringArray"->"3501: replaceEach";
+
+"3501: replaceEach"->"3611: replaceEach";
+
+"3611: replaceEach"->"3611: replaceEach";
+
+}

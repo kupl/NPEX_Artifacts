@@ -1,0 +1,5 @@
+{
+    "contents": "final int size = (openStatements != null) ? openStatements.size() : 0",
+    "original_filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+    "patched_lines": [198]
+}

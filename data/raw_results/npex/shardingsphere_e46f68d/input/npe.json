@@ -1,0 +1,10 @@
+{
+    "filepath": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+    "line": 58,
+    "sink_field": "entrySet",
+    "npe_class": "SchemaYamlSwapper",
+    "npe_method": "convertSchema",
+    "jvmti_identify_succeed": true,
+    "deref_field": "getTables",
+    "nullpointer": "schema.getTables()"
+}

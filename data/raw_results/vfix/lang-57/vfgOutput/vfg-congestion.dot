@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"250: $r0 = <org.apache.commons.lang3.LocaleUtils: java.util.Set cAvailableLocaleSet>" [label=1] [style=bold] [color=gold]
+"250: $z0 = interfaceinvoke $r0.<java.util.Set: boolean contains(java.lang.Object)>(locale)" [label=1] [style=bold] [color=red]
+"250: $r0 = <org.apache.commons.lang3.LocaleUtils: java.util.Set cAvailableLocaleSet>"->"250: $z0 = interfaceinvoke $r0.<java.util.Set: boolean contains(java.lang.Object)>(locale)";
+
+}

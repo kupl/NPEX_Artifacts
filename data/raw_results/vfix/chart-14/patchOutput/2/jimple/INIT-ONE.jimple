@@ -1,0 +1,68 @@
+    public boolean removeDomainMarker(int, org.jfree.chart.plot.Marker, org.jfree.chart.util.Layer, boolean)
+    {
+        org.jfree.chart.plot.CategoryPlot this;
+        int index;
+        org.jfree.chart.plot.Marker marker;
+        org.jfree.chart.util.Layer layer, $r0;
+        boolean notify, removed;
+        java.lang.Integer $r1, $r4;
+        java.util.Map $r2, $r5;
+        java.lang.Object $r3, $r6;
+        java.util.ArrayList markers;
+
+        this := @this: org.jfree.chart.plot.CategoryPlot;
+
+        index := @parameter0: int;
+
+        marker := @parameter1: org.jfree.chart.plot.Marker;
+
+        layer := @parameter2: org.jfree.chart.util.Layer;
+
+        notify := @parameter3: boolean;
+
+        $r0 = <org.jfree.chart.util.Layer: org.jfree.chart.util.Layer FOREGROUND>;
+
+        if layer != $r0 goto label1;
+
+        $r5 = this.<org.jfree.chart.plot.CategoryPlot: java.util.Map foregroundDomainMarkers>;
+
+        $r4 = new java.lang.Integer;
+
+        specialinvoke $r4.<java.lang.Integer: void <init>(int)>(index);
+
+        $r6 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r4);
+
+        markers = (java.util.ArrayList) $r6;
+
+        goto label2;
+
+     label1:
+        $r2 = this.<org.jfree.chart.plot.CategoryPlot: java.util.Map backgroundDomainMarkers>;
+
+        $r1 = new java.lang.Integer;
+
+        specialinvoke $r1.<java.lang.Integer: void <init>(int)>(index);
+
+        $r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>($r1);
+
+        markers = (java.util.ArrayList) $r3;
+
+     label2:
+        if markers != null goto label3;
+
+        markers = new java.util.ArrayList;
+
+        specialinvoke markers.<java.util.ArrayList: void <init>()>();
+
+     label3:
+        removed = virtualinvoke markers.<java.util.ArrayList: boolean remove(java.lang.Object)>(marker);
+
+        if removed == 0 goto label4;
+
+        if notify == 0 goto label4;
+
+        virtualinvoke this.<org.jfree.chart.plot.CategoryPlot: void fireChangeEvent()>();
+
+     label4:
+        return removed;
+    }

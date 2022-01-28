@@ -1,0 +1,5 @@
+{
+    "contents": "return executorService != null ? executorService.schedule(command, delay, unit) : null",
+    "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+    "patched_lines": [120]
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "(this.dataset != null ? this.dataset : null).getKeys()",
+    "original_filepath": "org/jfree/chart/plot/PiePlot.java",
+    "patched_lines": [1385]
+}

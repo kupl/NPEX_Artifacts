@@ -1,0 +1,11 @@
+{
+    "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+    "line": 66,
+    "deref_field": "expected",
+    "npe_class": "MapSubject",
+    "npe_method": "withValue",
+    "sink_field": null,
+    "jvmti_identify_succeed": null,
+    "is_original": true,
+    "nullpointer": "expected"
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "if (iccData == null) {\n    throw new java.io.IOException();\n}",
+    "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+    "patched_lines": [259]
+}

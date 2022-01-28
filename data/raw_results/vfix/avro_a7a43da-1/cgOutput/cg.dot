@@ -1,0 +1,926 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"1227: parse" [color=red] [style=bold]
+"31: public void <init>()"
+"87: testParseEmptySchema"
+"957: public void <init>()" [style=bold]
+"1022: parse" [style=bold]
+"1101: public void <init>()" [style=bold]
+"81: <clinit>" [style=bold]
+"22: public void <init>(java.lang.Throwable)"
+"1029: parse" [style=bold]
+"114: <clinit>" [style=bold]
+"1159: void <init>()" [style=bold]
+"1136: void <init>()" [style=bold]
+"1098: put"
+"109: put"
+"602: void <init>()" [style=bold]
+"599: void <init>()" [style=bold]
+"93: <clinit>" [style=bold]
+"22: public void <init>(java.lang.Throwable)"
+"574: close"
+"80: access$1500"
+"80: access$1600"
+"110: void <init>(org.apache.avro.JsonProperties$1)"
+"1129: put"
+"138: reap"
+"151: void <init>(org.apache.avro.util.WeakIdentityHashMap, java.lang.Object)"
+"96: private void <init>(java.lang.String, int)" [style=bold]
+"92: $values" [style=bold]
+"23: public void <init>(java.lang.String)"
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"
+"1582: add"
+"293: next"
+"271: next"
+"297: hasNext"
+"269: hasNext"
+"1558: public void <init>(int)"
+"892: public void <init>(org.apache.avro.Schema$Name, java.lang.String, int)"
+"816: public void <init>(org.apache.avro.Schema)"
+"788: public void <init>(org.apache.avro.Schema)"
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"
+"541: addAlias"
+"268: addAlias"
+"133: addProp"
+"641: setFields"
+"227: setFields"
+"176: addProp"
+"401: public void <init>(java.lang.String, org.apache.avro.Schema, java.lang.String, org.codehaus.jackson.JsonNode, org.apache.avro.Schema$Field$Order)"
+"203: getType"
+"612: public void <init>(org.apache.avro.Schema$Name, java.lang.String, boolean)"
+"1098: get"
+"105: get"
+"57: containsKey"
+"483: public void <init>(java.lang.String, java.lang.String)"
+"1105: space"
+"1125: add"
+"1110: get"
+"1104: space"
+"378: <clinit>"
+"28: <clinit>"
+"1373: getRequiredText"
+"1382: getOptionalText"
+"479: access$700"
+"110: create"
+"377: valueOf"
+"1350: parseAliases"
+"374: access$1402"
+"55: fromSchemaIgnoreInvalid"
+"111: private void <init>()"
+"125: remove"
+"44: access$000"
+"23: public void <init>(java.lang.String)"
+"539: getFullName"
+"263: getFullName"
+"1571: lock"
+"104: void <init>(org.apache.avro.Schema$Type)"
+"1576: ensureUnlocked"
+"301: next"
+"237: <clinit>"
+"235: access$200"
+"235: access$100"
+"529: public void <init>(org.apache.avro.Schema$Type, org.apache.avro.Schema$Name, java.lang.String)"
+"80: access$200"
+"544: addAlias"
+"424: name"
+"266: iterator"
+"1554: public void <init>()"
+"374: access$800"
+"374: access$802"
+"120: void <init>(java.util.Set)"
+"80: access$100"
+"80: access$300"
+"380: private void <init>(java.lang.String, int)"
+"377: $values"
+"345: void <init>(org.apache.avro.LogicalTypes$1)"
+"329: void <init>(org.apache.avro.LogicalTypes$1)"
+"313: void <init>(org.apache.avro.LogicalTypes$1)"
+"297: void <init>(org.apache.avro.LogicalTypes$1)"
+"281: void <init>(org.apache.avro.LogicalTypes$1)"
+"42: public void <init>(java.lang.String)"
+"35: <clinit>"
+"110: <clinit>"
+"951: public void <init>()"
+"947: public void <init>()"
+"943: public void <init>()"
+"939: public void <init>()"
+"935: public void <init>()"
+"931: public void <init>()"
+"927: public void <init>()"
+"923: public void <init>()"
+"59: fromSchemaImpl"
+"479: access$500"
+"247: getName"
+"536: getName"
+"23: public void <init>(java.lang.String)"
+"1143: validateName"
+"266: void <init>(org.apache.avro.generic.GenericData$Array)"
+"1167: validateDefault"
+"347: private void <init>()"
+"331: private void <init>()"
+"315: private void <init>()"
+"299: private void <init>()"
+"283: private void <init>()"
+"92: values" [style=bold]
+"320: validate"
+"304: validate"
+"336: validate"
+"288: validate"
+"206: validate"
+"352: validate"
+"86: validate"
+"159: void <init>(org.apache.avro.Schema, org.apache.avro.LogicalTypes$1)"
+"129: getProp"
+"92: access$000" [style=bold]
+"479: access$600"
+"1177: isValidDefault"
+"897: getFixedSize"
+"308: getFixedSize"
+"231: maxPrecision"
+"173: private void <init>(org.apache.avro.Schema)"
+"140: getJsonProp"
+"432: defaultValue"
+"428: schema"
+"277: get"
+"634: getFields"
+"219: getFields"
+"859: getTypes"
+"298: getTypes"
+"293: getValueType"
+"819: getValueType"
+"791: getElementType"
+"288: getElementType"
+"251: getInt"
+"247: hasProperty"
+"148: getObjectProp"
+"91: toObject"
+"95: toObject"
+"627: getField"
+"211: getField"
+"2: main"->"31: public void <init>()" [style=dotted];
+
+"2: main"->"87: testParseEmptySchema" [style=dotted];
+
+"87: testParseEmptySchema"->"957: public void <init>()" [style=dotted];
+
+"87: testParseEmptySchema"->"1022: parse" [style=dotted];
+
+"957: public void <init>()"->"1101: public void <init>()";
+
+"1022: parse"->"81: <clinit>";
+
+"1022: parse"->"22: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"1022: parse"->"1029: parse";
+
+"1022: parse"->"114: <clinit>";
+
+"81: <clinit>"->"81: <clinit>";
+
+"81: <clinit>"->"1159: void <init>()";
+
+"81: <clinit>"->"1136: void <init>()";
+
+"81: <clinit>"->"1098: put" [style=dotted];
+
+"81: <clinit>"->"109: put" [style=dotted];
+
+"81: <clinit>"->"602: void <init>()";
+
+"81: <clinit>"->"599: void <init>()";
+
+"81: <clinit>"->"114: <clinit>";
+
+"81: <clinit>"->"93: <clinit>";
+
+"22: public void <init>(java.lang.Throwable)"->"22: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"1029: parse"->"81: <clinit>";
+
+"1029: parse"->"22: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"1029: parse"->"574: close" [style=dotted];
+
+"1029: parse"->"114: <clinit>";
+
+"1029: parse"->"80: access$1500" [style=dotted];
+
+"1029: parse"->"80: access$1600" [style=dotted];
+
+"1029: parse"->"1227: parse";
+
+"114: <clinit>"->"114: <clinit>";
+
+"114: <clinit>"->"110: void <init>(org.apache.avro.JsonProperties$1)" [style=dotted];
+
+"1098: put"->"1129: put" [style=dotted];
+
+"109: put"->"138: reap" [style=dotted];
+
+"109: put"->"1098: put" [style=dotted];
+
+"109: put"->"109: put" [style=dotted];
+
+"109: put"->"151: void <init>(org.apache.avro.util.WeakIdentityHashMap, java.lang.Object)" [style=dotted];
+
+"93: <clinit>"->"93: <clinit>";
+
+"93: <clinit>"->"96: private void <init>(java.lang.String, int)";
+
+"93: <clinit>"->"92: $values";
+
+"80: access$1500"->"81: <clinit>" [style=dotted];
+
+"80: access$1500"->"114: <clinit>" [style=dotted];
+
+"80: access$1600"->"81: <clinit>" [style=dotted];
+
+"80: access$1600"->"114: <clinit>" [style=dotted];
+
+"1227: parse"->"81: <clinit>";
+
+"1227: parse"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"1227: parse"->"846: public void <init>(org.apache.avro.Schema$LockableArrayList)" [style=dotted];
+
+"1227: parse"->"1582: add" [style=dotted];
+
+"1227: parse"->"293: next" [style=dotted];
+
+"1227: parse"->"271: next" [style=dotted];
+
+"1227: parse"->"297: hasNext" [style=dotted];
+
+"1227: parse"->"269: hasNext" [style=dotted];
+
+"1227: parse"->"1558: public void <init>(int)" [style=dotted];
+
+"1227: parse"->"892: public void <init>(org.apache.avro.Schema$Name, java.lang.String, int)" [style=dotted];
+
+"1227: parse"->"816: public void <init>(org.apache.avro.Schema)" [style=dotted];
+
+"1227: parse"->"788: public void <init>(org.apache.avro.Schema)" [style=dotted];
+
+"1227: parse"->"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)" [style=dotted];
+
+"1227: parse"->"541: addAlias" [style=dotted];
+
+"1227: parse"->"268: addAlias" [style=dotted];
+
+"1227: parse"->"133: addProp" [style=dotted];
+
+"1227: parse"->"641: setFields" [style=dotted];
+
+"1227: parse"->"227: setFields" [style=dotted];
+
+"1227: parse"->"176: addProp" [style=dotted];
+
+"1227: parse"->"401: public void <init>(java.lang.String, org.apache.avro.Schema, java.lang.String, org.codehaus.jackson.JsonNode, org.apache.avro.Schema$Field$Order)" [style=dotted];
+
+"1227: parse"->"203: getType" [style=dotted];
+
+"1227: parse"->"612: public void <init>(org.apache.avro.Schema$Name, java.lang.String, boolean)" [style=dotted];
+
+"1227: parse"->"1098: get" [style=dotted];
+
+"1227: parse"->"105: get" [style=dotted];
+
+"1227: parse"->"57: containsKey" [style=dotted];
+
+"1227: parse"->"483: public void <init>(java.lang.String, java.lang.String)" [style=dotted];
+
+"1227: parse"->"1105: space" [style=dotted];
+
+"1227: parse"->"1125: add" [style=dotted];
+
+"1227: parse"->"1110: get" [style=dotted];
+
+"1227: parse"->"1104: space" [style=dotted];
+
+"1227: parse"->"114: <clinit>";
+
+"1227: parse"->"378: <clinit>" [style=dotted];
+
+"1227: parse"->"93: <clinit>";
+
+"1227: parse"->"28: <clinit>" [style=dotted];
+
+"1227: parse"->"1373: getRequiredText" [style=dotted];
+
+"1227: parse"->"1382: getOptionalText" [style=dotted];
+
+"1227: parse"->"479: access$700" [style=dotted];
+
+"1227: parse"->"110: create" [style=dotted];
+
+"1227: parse"->"1227: parse";
+
+"1227: parse"->"377: valueOf" [style=dotted];
+
+"1227: parse"->"1350: parseAliases" [style=dotted];
+
+"1227: parse"->"374: access$1402" [style=dotted];
+
+"1227: parse"->"55: fromSchemaIgnoreInvalid" [style=dotted];
+
+"110: void <init>(org.apache.avro.JsonProperties$1)"->"111: private void <init>()" [style=dotted];
+
+"1129: put"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"138: reap"->"125: remove" [style=dotted];
+
+"151: void <init>(org.apache.avro.util.WeakIdentityHashMap, java.lang.Object)"->"44: access$000" [style=dotted];
+
+"92: $values"->"93: <clinit>";
+
+"23: public void <init>(java.lang.String)"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"93: <clinit>" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"1098: put" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"109: put" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"539: getFullName" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"263: getFullName" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"203: getType" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"293: next" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"271: next" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"297: hasNext" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"269: hasNext" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"1571: lock" [style=dotted];
+
+"846: public void <init>(org.apache.avro.Schema$LockableArrayList)"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"1582: add"->"1576: ensureUnlocked" [style=dotted];
+
+"293: next"->"301: next" [style=dotted];
+
+"271: next"->"237: <clinit>" [style=dotted];
+
+"271: next"->"235: access$200" [style=dotted];
+
+"269: hasNext"->"237: <clinit>" [style=dotted];
+
+"269: hasNext"->"235: access$100" [style=dotted];
+
+"892: public void <init>(org.apache.avro.Schema$Name, java.lang.String, int)"->"93: <clinit>" [style=dotted];
+
+"892: public void <init>(org.apache.avro.Schema$Name, java.lang.String, int)"->"529: public void <init>(org.apache.avro.Schema$Type, org.apache.avro.Schema$Name, java.lang.String)" [style=dotted];
+
+"816: public void <init>(org.apache.avro.Schema)"->"93: <clinit>" [style=dotted];
+
+"816: public void <init>(org.apache.avro.Schema)"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"788: public void <init>(org.apache.avro.Schema)"->"93: <clinit>" [style=dotted];
+
+"788: public void <init>(org.apache.avro.Schema)"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"93: <clinit>" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"1098: put" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"109: put" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"293: next" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"271: next" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"297: hasNext" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"269: hasNext" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"1571: lock" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"529: public void <init>(org.apache.avro.Schema$Type, org.apache.avro.Schema$Name, java.lang.String)" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"81: <clinit>" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"114: <clinit>" [style=dotted];
+
+"746: public void <init>(org.apache.avro.Schema$Name, java.lang.String, org.apache.avro.Schema$LockableArrayList)"->"80: access$200" [style=dotted];
+
+"541: addAlias"->"544: addAlias" [style=dotted];
+
+"268: addAlias"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"133: addProp"->"176: addProp" [style=dotted];
+
+"641: setFields"->"1571: lock" [style=dotted];
+
+"641: setFields"->"1582: add" [style=dotted];
+
+"641: setFields"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"641: setFields"->"1098: put" [style=dotted];
+
+"641: setFields"->"109: put" [style=dotted];
+
+"641: setFields"->"424: name" [style=dotted];
+
+"641: setFields"->"293: next" [style=dotted];
+
+"641: setFields"->"271: next" [style=dotted];
+
+"641: setFields"->"297: hasNext" [style=dotted];
+
+"641: setFields"->"269: hasNext" [style=dotted];
+
+"641: setFields"->"266: iterator" [style=dotted];
+
+"641: setFields"->"1554: public void <init>()" [style=dotted];
+
+"641: setFields"->"374: access$800" [style=dotted];
+
+"641: setFields"->"374: access$802" [style=dotted];
+
+"227: setFields"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"176: addProp"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"176: addProp"->"1098: put" [style=dotted];
+
+"176: addProp"->"109: put" [style=dotted];
+
+"176: addProp"->"1098: get" [style=dotted];
+
+"176: addProp"->"105: get" [style=dotted];
+
+"401: public void <init>(java.lang.String, org.apache.avro.Schema, java.lang.String, org.codehaus.jackson.JsonNode, org.apache.avro.Schema$Field$Order)"->"81: <clinit>" [style=dotted];
+
+"401: public void <init>(java.lang.String, org.apache.avro.Schema, java.lang.String, org.codehaus.jackson.JsonNode, org.apache.avro.Schema$Field$Order)"->"120: void <init>(java.util.Set)" [style=dotted];
+
+"401: public void <init>(java.lang.String, org.apache.avro.Schema, java.lang.String, org.codehaus.jackson.JsonNode, org.apache.avro.Schema$Field$Order)"->"114: <clinit>" [style=dotted];
+
+"401: public void <init>(java.lang.String, org.apache.avro.Schema, java.lang.String, org.codehaus.jackson.JsonNode, org.apache.avro.Schema$Field$Order)"->"80: access$100" [style=dotted];
+
+"401: public void <init>(java.lang.String, org.apache.avro.Schema, java.lang.String, org.codehaus.jackson.JsonNode, org.apache.avro.Schema$Field$Order)"->"80: access$200" [style=dotted];
+
+"401: public void <init>(java.lang.String, org.apache.avro.Schema, java.lang.String, org.codehaus.jackson.JsonNode, org.apache.avro.Schema$Field$Order)"->"80: access$300" [style=dotted];
+
+"612: public void <init>(org.apache.avro.Schema$Name, java.lang.String, boolean)"->"93: <clinit>" [style=dotted];
+
+"612: public void <init>(org.apache.avro.Schema$Name, java.lang.String, boolean)"->"529: public void <init>(org.apache.avro.Schema$Type, org.apache.avro.Schema$Name, java.lang.String)" [style=dotted];
+
+"1098: get"->"1110: get" [style=dotted];
+
+"105: get"->"138: reap" [style=dotted];
+
+"105: get"->"1098: get" [style=dotted];
+
+"105: get"->"105: get" [style=dotted];
+
+"105: get"->"151: void <init>(org.apache.avro.util.WeakIdentityHashMap, java.lang.Object)" [style=dotted];
+
+"57: containsKey"->"138: reap" [style=dotted];
+
+"57: containsKey"->"57: containsKey" [style=dotted];
+
+"57: containsKey"->"151: void <init>(org.apache.avro.util.WeakIdentityHashMap, java.lang.Object)" [style=dotted];
+
+"483: public void <init>(java.lang.String, java.lang.String)"->"81: <clinit>" [style=dotted];
+
+"483: public void <init>(java.lang.String, java.lang.String)"->"114: <clinit>" [style=dotted];
+
+"483: public void <init>(java.lang.String, java.lang.String)"->"80: access$200" [style=dotted];
+
+"1125: add"->"1129: put" [style=dotted];
+
+"1110: get"->"81: <clinit>" [style=dotted];
+
+"1110: get"->"483: public void <init>(java.lang.String, java.lang.String)" [style=dotted];
+
+"1110: get"->"1098: get" [style=dotted];
+
+"1110: get"->"105: get" [style=dotted];
+
+"1110: get"->"114: <clinit>" [style=dotted];
+
+"1110: get"->"110: create" [style=dotted];
+
+"378: <clinit>"->"378: <clinit>" [style=dotted];
+
+"378: <clinit>"->"380: private void <init>(java.lang.String, int)" [style=dotted];
+
+"378: <clinit>"->"377: $values" [style=dotted];
+
+"28: <clinit>"->"28: <clinit>" [style=dotted];
+
+"28: <clinit>"->"345: void <init>(org.apache.avro.LogicalTypes$1)" [style=dotted];
+
+"28: <clinit>"->"329: void <init>(org.apache.avro.LogicalTypes$1)" [style=dotted];
+
+"28: <clinit>"->"313: void <init>(org.apache.avro.LogicalTypes$1)" [style=dotted];
+
+"28: <clinit>"->"297: void <init>(org.apache.avro.LogicalTypes$1)" [style=dotted];
+
+"28: <clinit>"->"281: void <init>(org.apache.avro.LogicalTypes$1)" [style=dotted];
+
+"28: <clinit>"->"42: public void <init>(java.lang.String)" [style=dotted];
+
+"28: <clinit>"->"35: <clinit>" [style=dotted];
+
+"1373: getRequiredText"->"81: <clinit>" [style=dotted];
+
+"1373: getRequiredText"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"1373: getRequiredText"->"114: <clinit>" [style=dotted];
+
+"1373: getRequiredText"->"1382: getOptionalText" [style=dotted];
+
+"110: create"->"110: <clinit>" [style=dotted];
+
+"110: create"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"110: create"->"951: public void <init>()" [style=dotted];
+
+"110: create"->"947: public void <init>()" [style=dotted];
+
+"110: create"->"943: public void <init>()" [style=dotted];
+
+"110: create"->"939: public void <init>()" [style=dotted];
+
+"110: create"->"935: public void <init>()" [style=dotted];
+
+"110: create"->"931: public void <init>()" [style=dotted];
+
+"110: create"->"927: public void <init>()" [style=dotted];
+
+"110: create"->"923: public void <init>()" [style=dotted];
+
+"1350: parseAliases"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"1350: parseAliases"->"293: next" [style=dotted];
+
+"1350: parseAliases"->"271: next" [style=dotted];
+
+"1350: parseAliases"->"297: hasNext" [style=dotted];
+
+"1350: parseAliases"->"269: hasNext" [style=dotted];
+
+"55: fromSchemaIgnoreInvalid"->"28: <clinit>" [style=dotted];
+
+"55: fromSchemaIgnoreInvalid"->"59: fromSchemaImpl" [style=dotted];
+
+"125: remove"->"138: reap" [style=dotted];
+
+"125: remove"->"125: remove" [style=dotted];
+
+"125: remove"->"151: void <init>(org.apache.avro.util.WeakIdentityHashMap, java.lang.Object)" [style=dotted];
+
+"539: getFullName"->"479: access$500" [style=dotted];
+
+"263: getFullName"->"247: getName" [style=dotted];
+
+"263: getFullName"->"536: getName" [style=dotted];
+
+"104: void <init>(org.apache.avro.Schema$Type)"->"81: <clinit>" [style=dotted];
+
+"104: void <init>(org.apache.avro.Schema$Type)"->"120: void <init>(java.util.Set)" [style=dotted];
+
+"104: void <init>(org.apache.avro.Schema$Type)"->"114: <clinit>" [style=dotted];
+
+"237: <clinit>"->"237: <clinit>" [style=dotted];
+
+"529: public void <init>(org.apache.avro.Schema$Type, org.apache.avro.Schema$Name, java.lang.String)"->"479: access$500" [style=dotted];
+
+"529: public void <init>(org.apache.avro.Schema$Type, org.apache.avro.Schema$Name, java.lang.String)"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"529: public void <init>(org.apache.avro.Schema$Type, org.apache.avro.Schema$Name, java.lang.String)"->"57: containsKey" [style=dotted];
+
+"529: public void <init>(org.apache.avro.Schema$Type, org.apache.avro.Schema$Name, java.lang.String)"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"80: access$200"->"81: <clinit>" [style=dotted];
+
+"80: access$200"->"114: <clinit>" [style=dotted];
+
+"80: access$200"->"1143: validateName" [style=dotted];
+
+"544: addAlias"->"479: access$700" [style=dotted];
+
+"544: addAlias"->"483: public void <init>(java.lang.String, java.lang.String)" [style=dotted];
+
+"266: iterator"->"266: void <init>(org.apache.avro.generic.GenericData$Array)" [style=dotted];
+
+"80: access$100"->"81: <clinit>" [style=dotted];
+
+"80: access$100"->"114: <clinit>" [style=dotted];
+
+"80: access$300"->"81: <clinit>" [style=dotted];
+
+"80: access$300"->"114: <clinit>" [style=dotted];
+
+"80: access$300"->"1167: validateDefault" [style=dotted];
+
+"377: $values"->"378: <clinit>" [style=dotted];
+
+"345: void <init>(org.apache.avro.LogicalTypes$1)"->"347: private void <init>()" [style=dotted];
+
+"329: void <init>(org.apache.avro.LogicalTypes$1)"->"331: private void <init>()" [style=dotted];
+
+"313: void <init>(org.apache.avro.LogicalTypes$1)"->"315: private void <init>()" [style=dotted];
+
+"297: void <init>(org.apache.avro.LogicalTypes$1)"->"299: private void <init>()" [style=dotted];
+
+"281: void <init>(org.apache.avro.LogicalTypes$1)"->"283: private void <init>()" [style=dotted];
+
+"35: <clinit>"->"35: <clinit>" [style=dotted];
+
+"110: <clinit>"->"93: <clinit>" [style=dotted];
+
+"110: <clinit>"->"110: <clinit>" [style=dotted];
+
+"110: <clinit>"->"92: values" [style=dotted];
+
+"951: public void <init>()"->"93: <clinit>" [style=dotted];
+
+"951: public void <init>()"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"947: public void <init>()"->"93: <clinit>" [style=dotted];
+
+"947: public void <init>()"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"943: public void <init>()"->"93: <clinit>" [style=dotted];
+
+"943: public void <init>()"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"939: public void <init>()"->"93: <clinit>" [style=dotted];
+
+"939: public void <init>()"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"935: public void <init>()"->"93: <clinit>" [style=dotted];
+
+"935: public void <init>()"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"931: public void <init>()"->"93: <clinit>" [style=dotted];
+
+"931: public void <init>()"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"927: public void <init>()"->"93: <clinit>" [style=dotted];
+
+"927: public void <init>()"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"923: public void <init>()"->"93: <clinit>" [style=dotted];
+
+"923: public void <init>()"->"104: void <init>(org.apache.avro.Schema$Type)" [style=dotted];
+
+"59: fromSchemaImpl"->"28: <clinit>" [style=dotted];
+
+"59: fromSchemaImpl"->"320: validate" [style=dotted];
+
+"59: fromSchemaImpl"->"304: validate" [style=dotted];
+
+"59: fromSchemaImpl"->"336: validate" [style=dotted];
+
+"59: fromSchemaImpl"->"288: validate" [style=dotted];
+
+"59: fromSchemaImpl"->"206: validate" [style=dotted];
+
+"59: fromSchemaImpl"->"352: validate" [style=dotted];
+
+"59: fromSchemaImpl"->"86: validate" [style=dotted];
+
+"59: fromSchemaImpl"->"1098: get" [style=dotted];
+
+"59: fromSchemaImpl"->"105: get" [style=dotted];
+
+"59: fromSchemaImpl"->"57: containsKey" [style=dotted];
+
+"59: fromSchemaImpl"->"159: void <init>(org.apache.avro.Schema, org.apache.avro.LogicalTypes$1)" [style=dotted];
+
+"59: fromSchemaImpl"->"129: getProp" [style=dotted];
+
+"247: getName"->"93: <clinit>" [style=dotted];
+
+"247: getName"->"92: access$000" [style=dotted];
+
+"536: getName"->"479: access$600" [style=dotted];
+
+"23: public void <init>(java.lang.String)"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"1143: validateName"->"81: <clinit>" [style=dotted];
+
+"1143: validateName"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"1143: validateName"->"114: <clinit>" [style=dotted];
+
+"1167: validateDefault"->"81: <clinit>" [style=dotted];
+
+"1167: validateDefault"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"1167: validateDefault"->"114: <clinit>" [style=dotted];
+
+"1167: validateDefault"->"1177: isValidDefault" [style=dotted];
+
+"347: private void <init>()"->"42: public void <init>(java.lang.String)" [style=dotted];
+
+"331: private void <init>()"->"42: public void <init>(java.lang.String)" [style=dotted];
+
+"315: private void <init>()"->"42: public void <init>(java.lang.String)" [style=dotted];
+
+"299: private void <init>()"->"42: public void <init>(java.lang.String)" [style=dotted];
+
+"283: private void <init>()"->"42: public void <init>(java.lang.String)" [style=dotted];
+
+"92: values"->"93: <clinit>";
+
+"320: validate"->"93: <clinit>" [style=dotted];
+
+"320: validate"->"203: getType" [style=dotted];
+
+"320: validate"->"86: validate" [style=dotted];
+
+"304: validate"->"93: <clinit>" [style=dotted];
+
+"304: validate"->"203: getType" [style=dotted];
+
+"304: validate"->"86: validate" [style=dotted];
+
+"336: validate"->"93: <clinit>" [style=dotted];
+
+"336: validate"->"203: getType" [style=dotted];
+
+"336: validate"->"86: validate" [style=dotted];
+
+"288: validate"->"93: <clinit>" [style=dotted];
+
+"288: validate"->"203: getType" [style=dotted];
+
+"288: validate"->"86: validate" [style=dotted];
+
+"206: validate"->"93: <clinit>" [style=dotted];
+
+"206: validate"->"897: getFixedSize" [style=dotted];
+
+"206: validate"->"308: getFixedSize" [style=dotted];
+
+"206: validate"->"203: getType" [style=dotted];
+
+"206: validate"->"231: maxPrecision" [style=dotted];
+
+"206: validate"->"86: validate" [style=dotted];
+
+"352: validate"->"93: <clinit>" [style=dotted];
+
+"352: validate"->"203: getType" [style=dotted];
+
+"352: validate"->"86: validate" [style=dotted];
+
+"86: validate"->"35: <clinit>" [style=dotted];
+
+"86: validate"->"129: getProp" [style=dotted];
+
+"159: void <init>(org.apache.avro.Schema, org.apache.avro.LogicalTypes$1)"->"173: private void <init>(org.apache.avro.Schema)" [style=dotted];
+
+"129: getProp"->"140: getJsonProp" [style=dotted];
+
+"1177: isValidDefault"->"110: <clinit>" [style=dotted];
+
+"1177: isValidDefault"->"432: defaultValue" [style=dotted];
+
+"1177: isValidDefault"->"424: name" [style=dotted];
+
+"1177: isValidDefault"->"428: schema" [style=dotted];
+
+"1177: isValidDefault"->"266: iterator" [style=dotted];
+
+"1177: isValidDefault"->"277: get" [style=dotted];
+
+"1177: isValidDefault"->"293: next" [style=dotted];
+
+"1177: isValidDefault"->"271: next" [style=dotted];
+
+"1177: isValidDefault"->"297: hasNext" [style=dotted];
+
+"1177: isValidDefault"->"269: hasNext" [style=dotted];
+
+"1177: isValidDefault"->"634: getFields" [style=dotted];
+
+"1177: isValidDefault"->"219: getFields" [style=dotted];
+
+"1177: isValidDefault"->"859: getTypes" [style=dotted];
+
+"1177: isValidDefault"->"298: getTypes" [style=dotted];
+
+"1177: isValidDefault"->"293: getValueType" [style=dotted];
+
+"1177: isValidDefault"->"819: getValueType" [style=dotted];
+
+"1177: isValidDefault"->"791: getElementType" [style=dotted];
+
+"1177: isValidDefault"->"288: getElementType" [style=dotted];
+
+"1177: isValidDefault"->"203: getType" [style=dotted];
+
+"1177: isValidDefault"->"81: <clinit>" [style=dotted];
+
+"1177: isValidDefault"->"114: <clinit>" [style=dotted];
+
+"1177: isValidDefault"->"1177: isValidDefault" [style=dotted];
+
+"308: getFixedSize"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"231: maxPrecision"->"93: <clinit>" [style=dotted];
+
+"231: maxPrecision"->"897: getFixedSize" [style=dotted];
+
+"231: maxPrecision"->"308: getFixedSize" [style=dotted];
+
+"231: maxPrecision"->"203: getType" [style=dotted];
+
+"173: private void <init>(org.apache.avro.Schema)"->"42: public void <init>(java.lang.String)" [style=dotted];
+
+"173: private void <init>(org.apache.avro.Schema)"->"251: getInt" [style=dotted];
+
+"173: private void <init>(org.apache.avro.Schema)"->"247: hasProperty" [style=dotted];
+
+"140: getJsonProp"->"1098: get" [style=dotted];
+
+"140: getJsonProp"->"105: get" [style=dotted];
+
+"634: getFields"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"219: getFields"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"298: getTypes"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"293: getValueType"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"288: getElementType"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"251: getInt"->"148: getObjectProp" [style=dotted];
+
+"247: hasProperty"->"148: getObjectProp" [style=dotted];
+
+"148: getObjectProp"->"91: toObject" [style=dotted];
+
+"148: getObjectProp"->"1098: get" [style=dotted];
+
+"148: getObjectProp"->"105: get" [style=dotted];
+
+"91: toObject"->"95: toObject" [style=dotted];
+
+"95: toObject"->"93: <clinit>" [style=dotted];
+
+"95: toObject"->"1098: put" [style=dotted];
+
+"95: toObject"->"428: schema" [style=dotted];
+
+"95: toObject"->"1582: add" [style=dotted];
+
+"95: toObject"->"293: next" [style=dotted];
+
+"95: toObject"->"271: next" [style=dotted];
+
+"95: toObject"->"297: hasNext" [style=dotted];
+
+"95: toObject"->"269: hasNext" [style=dotted];
+
+"95: toObject"->"22: public void <init>(java.lang.Throwable)" [style=dotted];
+
+"95: toObject"->"277: get" [style=dotted];
+
+"95: toObject"->"627: getField" [style=dotted];
+
+"95: toObject"->"211: getField" [style=dotted];
+
+"95: toObject"->"203: getType" [style=dotted];
+
+"95: toObject"->"293: getValueType" [style=dotted];
+
+"95: toObject"->"819: getValueType" [style=dotted];
+
+"95: toObject"->"791: getElementType" [style=dotted];
+
+"95: toObject"->"288: getElementType" [style=dotted];
+
+"95: toObject"->"859: getTypes" [style=dotted];
+
+"95: toObject"->"298: getTypes" [style=dotted];
+
+"95: toObject"->"114: <clinit>" [style=dotted];
+
+"95: toObject"->"95: toObject" [style=dotted];
+
+"627: getField"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+"627: getField"->"1098: get" [style=dotted];
+
+"627: getField"->"105: get" [style=dotted];
+
+"211: getField"->"23: public void <init>(java.lang.String)" [style=dotted];
+
+}

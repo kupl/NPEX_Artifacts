@@ -1,0 +1,103 @@
+    public com.alibaba.dubbo.common.URL addParameters(java.util.Map)
+    {
+        com.alibaba.dubbo.common.URL this, $r3;
+        java.util.Map parameters, $r2, $r10;
+        java.util.Map$Entry entry;
+        java.lang.String value, $r4, $r5, $r6, $r7, $r8;
+        int $i0, $i1;
+        java.util.Set $r0;
+        boolean $z0, $z1, hasAndEqual;
+        java.util.HashMap $r1;
+        java.lang.Object $r9, $r11, $r12, $r13, $r14;
+        java.util.Iterator map;
+
+        this := @this: com.alibaba.dubbo.common.URL;
+
+        parameters := @parameter0: java.util.Map;
+
+        if parameters == null goto label1;
+
+        $i0 = interfaceinvoke parameters.<java.util.Map: int size()>();
+
+        if $i0 != 0 goto label2;
+
+     label1:
+        return this;
+
+     label2:
+        hasAndEqual = 1;
+
+        $r0 = interfaceinvoke parameters.<java.util.Map: java.util.Set entrySet()>();
+
+        map = interfaceinvoke $r0.<java.util.Set: java.util.Iterator iterator()>();
+
+     label3:
+        $z0 = interfaceinvoke map.<java.util.Iterator: boolean hasNext()>();
+
+        if $z0 == 0 goto label7;
+
+        $r9 = interfaceinvoke map.<java.util.Iterator: java.lang.Object next()>();
+
+        entry = (java.util.Map$Entry) $r9;
+
+        $r10 = virtualinvoke this.<com.alibaba.dubbo.common.URL: java.util.Map getParameters()>();
+
+        $r11 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getKey()>();
+
+        $r12 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r11);
+
+        value = (java.lang.String) $r12;
+
+        if value != null goto label4;
+
+        $r14 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getValue()>();
+
+        if $r14 != null goto label5;
+
+     label4:
+        $r13 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getValue()>();
+
+        $z1 = virtualinvoke value.<java.lang.String: boolean equals(java.lang.Object)>($r13);
+
+        if $z1 != 0 goto label6;
+
+     label5:
+        hasAndEqual = 0;
+
+        goto label7;
+
+     label6:
+        goto label3;
+
+     label7:
+        if hasAndEqual == 0 goto label8;
+
+        return this;
+
+     label8:
+        $r1 = new java.util.HashMap;
+
+        $r2 = virtualinvoke this.<com.alibaba.dubbo.common.URL: java.util.Map getParameters()>();
+
+        specialinvoke $r1.<java.util.HashMap: void <init>(java.util.Map)>($r2);
+
+        interfaceinvoke $r1.<java.util.Map: void putAll(java.util.Map)>(parameters);
+
+        $r3 = new com.alibaba.dubbo.common.URL;
+
+        $r8 = this.<com.alibaba.dubbo.common.URL: java.lang.String protocol>;
+
+        $r7 = this.<com.alibaba.dubbo.common.URL: java.lang.String username>;
+
+        $r6 = this.<com.alibaba.dubbo.common.URL: java.lang.String password>;
+
+        $r5 = this.<com.alibaba.dubbo.common.URL: java.lang.String host>;
+
+        $i1 = this.<com.alibaba.dubbo.common.URL: int port>;
+
+        $r4 = this.<com.alibaba.dubbo.common.URL: java.lang.String path>;
+
+        specialinvoke $r3.<com.alibaba.dubbo.common.URL: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.util.Map)>($r8, $r7, $r6, $r5, $i1, $r4, $r1);
+
+        return $r3;
+    }

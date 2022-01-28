@@ -1,0 +1,5 @@
+{
+    "contents": "return channel != null ? decode9(channel, remoteAddress, values) : new org.traccar.model.Position()",
+    "original_filepath": "src/org/traccar/protocol/SuntechProtocolDecoder.java",
+    "patched_lines": [172]
+}

@@ -1,0 +1,17 @@
+    public boolean contains(java.lang.String)
+    {
+        org.apache.pdfbox.pdmodel.font.encoding.Encoding this;
+        java.lang.String name;
+        java.util.Set $r0;
+        boolean $z0;
+
+        this := @this: org.apache.pdfbox.pdmodel.font.encoding.Encoding;
+
+        name := @parameter0: java.lang.String;
+
+        $r0 = this.<org.apache.pdfbox.pdmodel.font.encoding.Encoding: java.util.Set names>;
+
+        $z0 = interfaceinvoke $r0.<java.util.Set: boolean contains(java.lang.Object)>(name);
+
+        return $z0;
+    }

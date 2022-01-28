@@ -1,0 +1,38 @@
+    private static void assignPointsToClusters(java.util.Collection, java.util.Collection)
+    {
+        java.util.Collection clusters, points;
+        org.apache.commons.math.stat.clustering.Clusterable p;
+        java.util.Iterator l3;
+        org.apache.commons.math.stat.clustering.Cluster cluster;
+        boolean $z0;
+        java.lang.Object $r0;
+
+        clusters := @parameter0: java.util.Collection;
+
+        points := @parameter1: java.util.Collection;
+
+        l3 = interfaceinvoke points.<java.util.Collection: java.util.Iterator iterator()>();
+
+        goto label3;
+
+     label1:
+        $r0 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>();
+
+        p = (org.apache.commons.math.stat.clustering.Clusterable) $r0;
+
+        cluster = staticinvoke <org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer: org.apache.commons.math.stat.clustering.Cluster getNearestCluster(java.util.Collection,org.apache.commons.math.stat.clustering.Clusterable)>(clusters, p);
+
+        if cluster != null goto label2;
+
+        return;
+
+     label2:
+        virtualinvoke cluster.<org.apache.commons.math.stat.clustering.Cluster: void addPoint(org.apache.commons.math.stat.clustering.Clusterable)>(p);
+
+     label3:
+        $z0 = interfaceinvoke l3.<java.util.Iterator: boolean hasNext()>();
+
+        if $z0 != 0 goto label1;
+
+        return;
+    }

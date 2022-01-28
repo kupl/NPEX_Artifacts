@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"884: $r0 = this.<org.apache.commons.configuration2.XMLConfiguration: org.apache.commons.configuration2.io.FileLocator locator>" [label=1] [style=bold] [color=gold]
+"884: $r1 = virtualinvoke $r0.<org.apache.commons.configuration2.io.FileLocator: java.lang.String getEncoding()>()" [label=1] [style=bold] [color=red]
+"884: $r0 = this.<org.apache.commons.configuration2.XMLConfiguration: org.apache.commons.configuration2.io.FileLocator locator>"->"884: $r1 = virtualinvoke $r0.<org.apache.commons.configuration2.io.FileLocator: java.lang.String getEncoding()>()";
+
+}

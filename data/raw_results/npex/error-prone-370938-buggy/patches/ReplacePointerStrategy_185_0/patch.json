@@ -1,0 +1,5 @@
+{
+    "contents": "computeBase(context, method != null ? method : null)",
+    "original_filepath": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+    "patched_lines": [184]
+}

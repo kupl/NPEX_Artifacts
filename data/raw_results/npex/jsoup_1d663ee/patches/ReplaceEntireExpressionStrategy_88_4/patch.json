@@ -1,0 +1,5 @@
+{
+    "contents": "java.lang.String oldVal = (parent != null) ? parent.get(this.key) : \"\"",
+    "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+    "patched_lines": [95]
+}

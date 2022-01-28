@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "jgrapht-core/src/test/java/org/jgrapht/generate/WattsStrogatzGraphGeneratorTest.java",
+        "line": 193,
+        "method_name": "testNonIntegerVertices"
+    }
+]

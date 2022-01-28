@@ -1,0 +1,11 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"287: $r0 = interfaceinvoke resource.<org.apache.sling.api.resource.Resource: java.lang.Object adaptTo(java.lang.Class)>(class "Lorg/apache/sling/api/resource/ValueMap;")" [label=1] [style=bold] [color=gold]
+"287: props = (org.apache.sling.api.resource.ValueMap) $r0" [label=1] [style=bold]
+"288: $z0 = interfaceinvoke props.<org.apache.sling.api.resource.ValueMap: boolean containsKey(java.lang.Object)>("jcr:data")" [label=1] [style=bold] [color=red]
+"287: $r0 = interfaceinvoke resource.<org.apache.sling.api.resource.Resource: java.lang.Object adaptTo(java.lang.Class)>(class "Lorg/apache/sling/api/resource/ValueMap;")"->"287: props = (org.apache.sling.api.resource.ValueMap) $r0";
+
+"287: props = (org.apache.sling.api.resource.ValueMap) $r0"->"288: $z0 = interfaceinvoke props.<org.apache.sling.api.resource.ValueMap: boolean containsKey(java.lang.Object)>("jcr:data")";
+
+}

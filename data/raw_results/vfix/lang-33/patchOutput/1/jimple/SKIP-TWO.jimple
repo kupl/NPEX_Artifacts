@@ -1,0 +1,51 @@
+    public static java.lang.Class[] toClass(java.lang.Object[])
+    {
+        java.lang.Object[] array;
+        java.lang.Class[] classes, $r2;
+        int $i0, $i1, $i2, i;
+        java.lang.Object $r0;
+        java.lang.Class $r1;
+
+        array := @parameter0: java.lang.Object[];
+
+        if array != null goto label1;
+
+        return null;
+
+     label1:
+        $i0 = lengthof array;
+
+        if $i0 != 0 goto label2;
+
+        $r2 = <org.apache.commons.lang3.ArrayUtils: java.lang.Class[] EMPTY_CLASS_ARRAY>;
+
+        return $r2;
+
+     label2:
+        $i1 = lengthof array;
+
+        classes = newarray (java.lang.Class)[$i1];
+
+        i = 0;
+
+        goto label5;
+
+     label3:
+        $r0 = array[i];
+
+        if $r0 == null goto label4;
+
+        $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Class getClass()>();
+
+        classes[i] = $r1;
+
+     label4:
+        i = i + 1;
+
+     label5:
+        $i2 = lengthof array;
+
+        if i < $i2 goto label3;
+
+        return classes;
+    }

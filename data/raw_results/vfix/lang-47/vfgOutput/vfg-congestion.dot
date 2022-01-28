@@ -1,0 +1,21 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"1331: $r5 = virtualinvoke this.<org.apache.commons.lang3.text.StrBuilder: java.lang.String getNullText()>()" [label=3] [color=gold]
+"1317: $r5 = virtualinvoke obj.<java.lang.Object: java.lang.String toString()>()" [label=3] [style=bold] [color=gold]
+"1319: strLen = virtualinvoke $r5.<java.lang.String: int length()>()" [label=2] [style=bold] [color=red]
+"1321: virtualinvoke $r5.<java.lang.String: void getChars(int,int,char[],int)>(0, width, $r3, $i8)" [label=2] [color=red]
+"1324: virtualinvoke $r5.<java.lang.String: void getChars(int,int,char[],int)>(0, strLen, $r1, $i2)" [label=2] [color=red]
+"1331: $r5 = virtualinvoke this.<org.apache.commons.lang3.text.StrBuilder: java.lang.String getNullText()>()"->"1319: strLen = virtualinvoke $r5.<java.lang.String: int length()>()" [style=dotted];
+
+"1331: $r5 = virtualinvoke this.<org.apache.commons.lang3.text.StrBuilder: java.lang.String getNullText()>()"->"1321: virtualinvoke $r5.<java.lang.String: void getChars(int,int,char[],int)>(0, width, $r3, $i8)" [style=dotted];
+
+"1331: $r5 = virtualinvoke this.<org.apache.commons.lang3.text.StrBuilder: java.lang.String getNullText()>()"->"1324: virtualinvoke $r5.<java.lang.String: void getChars(int,int,char[],int)>(0, strLen, $r1, $i2)" [style=dotted];
+
+"1317: $r5 = virtualinvoke obj.<java.lang.Object: java.lang.String toString()>()"->"1319: strLen = virtualinvoke $r5.<java.lang.String: int length()>()";
+
+"1317: $r5 = virtualinvoke obj.<java.lang.Object: java.lang.String toString()>()"->"1321: virtualinvoke $r5.<java.lang.String: void getChars(int,int,char[],int)>(0, width, $r3, $i8)" [style=dotted];
+
+"1317: $r5 = virtualinvoke obj.<java.lang.Object: java.lang.String toString()>()"->"1324: virtualinvoke $r5.<java.lang.String: void getChars(int,int,char[],int)>(0, strLen, $r1, $i2)" [style=dotted];
+
+}

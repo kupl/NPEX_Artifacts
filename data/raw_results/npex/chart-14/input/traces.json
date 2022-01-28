@@ -1,0 +1,32 @@
+[
+    {
+        "filepath": "org/jfree/chart/plot/CategoryPlot.java",
+        "line": 2166,
+        "method_name": "removeDomainMarker"
+    },
+    {
+        "filepath": "org/jfree/chart/plot/CategoryPlot.java",
+        "line": 2139,
+        "method_name": "removeDomainMarker"
+    },
+    {
+        "filepath": "org/jfree/chart/plot/CategoryPlot.java",
+        "line": 2122,
+        "method_name": "removeDomainMarker"
+    },
+    {
+        "filepath": "org/jfree/chart/plot/CategoryPlot.java",
+        "line": 2106,
+        "method_name": "removeDomainMarker"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 13,
+        "method_name": "testRemoveDomainMarker"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 8,
+        "method_name": "main"
+    }
+]

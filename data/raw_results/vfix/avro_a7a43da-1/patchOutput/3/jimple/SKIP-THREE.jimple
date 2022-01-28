@@ -1,0 +1,682 @@
+    static org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode, org.apache.avro.Schema$Names)
+    {
+        org.codehaus.jackson.JsonNode schema, fieldTypeNode, orderNode, $r23, $r29, fieldsNode, field, space#74, name#112, tmp$1138120874, tmp$1029194503, tmp$1437823663;
+        org.apache.avro.Schema$Names names;
+        java.lang.String savedSpace, fieldName, fieldDoc, prop, $r4, $r10, $r11, $r18, $r33, $r37, $r39, $r40, $r48, $r53, $r58, $r63, $r71, $r78, $r83, $r87, $r91, $r92, $r97, type, doc, space, fieldsNode#104, field#107;
+        org.apache.avro.Schema fieldSchema, $r8, $r41, $r66, $r73, result, ret0;
+        java.util.Iterator i, l9, space#91, type#111;
+        boolean $z0, $z1, $z2, $z3, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z15, $z16, $z17, $z18, $z19, $z20, $z21, $z22, $z23, $z24, $z25, $z26, $z28, $z29, $z30, $z31, $z32, $z33;
+        java.lang.StringBuilder $r2, $r3, $r16, $r17, $r44, $r45, $r46, $r47, $r51, $r52, $r56, $r57, $r61, $r62, $r69, $r70, $r76, $r77, $r81, $r82, $r95, $r96, tmp$2085037952, tmp$1988803621, tmp$1709119431, tmp$708475645, tmp$1523210501, tmp$1955825316, tmp$141950375, tmp$1886321570, tmp$30741291, tmp$1213766951;
+        int $i0, $i1, $i2;
+        java.lang.Object $r7, $r20, $r21, $r24, $r27, $r86, $r89, defaultValue;
+        org.apache.avro.LogicalType $r19;
+        java.util.Set $r22, $r25, $r28, fieldsNode#105;
+        org.apache.avro.Schema$Type $r30, $r31, $r35, $r36, $r90;
+        java.lang.Double $r34;
+        double $d0;
+        java.util.Locale $r38;
+        java.util.Map $r88, $r98;
+        org.apache.avro.Schema$Name name, tmp$557846330;
+        org.apache.avro.Schema$Field$Order order;
+        org.apache.avro.SchemaParseException tmp$2079557469, tmp$268876647, tmp$1311635916, tmp$1295590680, tmp$1909969581, tmp$1411255721, tmp$273872451, tmp$768437311, tmp$605242341, tmp$1695339711;
+        java.util.ArrayList tmp$1396382183;
+        org.apache.avro.Schema$RecordSchema tmp$1689461901;
+        org.codehaus.jackson.node.DoubleNode tmp$846909722;
+        org.apache.avro.Schema$Field tmp$3447980;
+        org.apache.avro.Schema$LockableArrayList tmp$573869428, tmp$871165114;
+        org.apache.avro.Schema$EnumSchema tmp$796117214;
+        org.apache.avro.Schema$ArraySchema tmp$434785506;
+        org.apache.avro.Schema$MapSchema tmp$218320533;
+        org.apache.avro.Schema$FixedSchema tmp$311946782;
+        org.apache.avro.Schema$UnionSchema tmp$1235083193;
+
+        schema := @parameter0: org.codehaus.jackson.JsonNode;
+
+        names := @parameter1: org.apache.avro.Schema$Names;
+
+        if schema != null goto label01;
+
+        ret0 = new org.apache.avro.Schema;
+
+        specialinvoke ret0.<org.apache.avro.Schema$DoubleSchema: void <init>()>();
+
+        return ret0;
+
+     label01:
+        $z0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isTextual()>();
+
+        if $z0 == 0 goto label03;
+
+        $r92 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>();
+
+        result = virtualinvoke names.<org.apache.avro.Schema$Names: org.apache.avro.Schema get(java.lang.Object)>($r92);
+
+        if result != null goto label02;
+
+        tmp$2079557469 = new org.apache.avro.SchemaParseException;
+
+        tmp$2085037952 = new java.lang.StringBuilder;
+
+        specialinvoke tmp$2085037952.<java.lang.StringBuilder: void <init>()>();
+
+        $r95 = virtualinvoke tmp$2085037952.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Undefined name: ");
+
+        $r96 = virtualinvoke $r95.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(schema);
+
+        $r97 = virtualinvoke $r96.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke tmp$2079557469.<org.apache.avro.SchemaParseException: void <init>(java.lang.String)>($r97);
+
+        throw tmp$2079557469;
+
+     label02:
+        return result;
+
+     label03:
+        $z1 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isObject()>();
+
+        if $z1 == 0 goto label43;
+
+        type = staticinvoke <org.apache.avro.Schema: java.lang.String getRequiredText(org.codehaus.jackson.JsonNode,java.lang.String,java.lang.String)>(schema, "type", "No type");
+
+        name = null;
+
+        savedSpace = virtualinvoke names.<org.apache.avro.Schema$Names: java.lang.String space()>();
+
+        doc = null;
+
+        $z5 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("record");
+
+        if $z5 != 0 goto label04;
+
+        $z28 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("error");
+
+        if $z28 != 0 goto label04;
+
+        $z29 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("enum");
+
+        if $z29 != 0 goto label04;
+
+        $z30 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("fixed");
+
+        if $z30 == 0 goto label06;
+
+     label04:
+        space = staticinvoke <org.apache.avro.Schema: java.lang.String getOptionalText(org.codehaus.jackson.JsonNode,java.lang.String)>(schema, "namespace");
+
+        doc = staticinvoke <org.apache.avro.Schema: java.lang.String getOptionalText(org.codehaus.jackson.JsonNode,java.lang.String)>(schema, "doc");
+
+        if space != null goto label05;
+
+        space = virtualinvoke names.<org.apache.avro.Schema$Names: java.lang.String space()>();
+
+     label05:
+        tmp$557846330 = new org.apache.avro.Schema$Name;
+
+        $r10 = staticinvoke <org.apache.avro.Schema: java.lang.String getRequiredText(org.codehaus.jackson.JsonNode,java.lang.String,java.lang.String)>(schema, "name", "No name in schema");
+
+        specialinvoke tmp$557846330.<org.apache.avro.Schema$Name: void <init>(java.lang.String,java.lang.String)>($r10, space);
+
+        name = tmp$557846330;
+
+        $r11 = staticinvoke <org.apache.avro.Schema$Name: java.lang.String access$700(org.apache.avro.Schema$Name)>(tmp$557846330);
+
+        if $r11 == null goto label06;
+
+        $r91 = staticinvoke <org.apache.avro.Schema$Name: java.lang.String access$700(org.apache.avro.Schema$Name)>(tmp$557846330);
+
+        virtualinvoke names.<org.apache.avro.Schema$Names: void space(java.lang.String)>($r91);
+
+     label06:
+        $r98 = <org.apache.avro.Schema: java.util.Map PRIMITIVES>;
+
+        $z31 = interfaceinvoke $r98.<java.util.Map: boolean containsKey(java.lang.Object)>(type);
+
+        if $z31 == 0 goto label07;
+
+        $r88 = <org.apache.avro.Schema: java.util.Map PRIMITIVES>;
+
+        $r89 = interfaceinvoke $r88.<java.util.Map: java.lang.Object get(java.lang.Object)>(type);
+
+        $r90 = (org.apache.avro.Schema$Type) $r89;
+
+        result = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema create(org.apache.avro.Schema$Type)>($r90);
+
+        goto label37;
+
+     label07:
+        $z6 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("record");
+
+        if $z6 != 0 goto label08;
+
+        $z19 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("error");
+
+        if $z19 == 0 goto label22;
+
+     label08:
+        tmp$1396382183 = new java.util.ArrayList;
+
+        specialinvoke tmp$1396382183.<java.util.ArrayList: void <init>()>();
+
+        tmp$1689461901 = new org.apache.avro.Schema$RecordSchema;
+
+        $z7 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("error");
+
+        specialinvoke tmp$1689461901.<org.apache.avro.Schema$RecordSchema: void <init>(org.apache.avro.Schema$Name,java.lang.String,boolean)>(name, doc, $z7);
+
+        result = tmp$1689461901;
+
+        if name == null goto label09;
+
+        virtualinvoke names.<org.apache.avro.Schema$Names: void add(org.apache.avro.Schema)>(tmp$1689461901);
+
+     label09:
+        fieldsNode = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("fields");
+
+        if fieldsNode == null goto label10;
+
+        $z8 = virtualinvoke fieldsNode.<org.codehaus.jackson.JsonNode: boolean isArray()>();
+
+        if $z8 != 0 goto label11;
+
+     label10:
+        tmp$268876647 = new org.apache.avro.SchemaParseException;
+
+        tmp$1988803621 = new java.lang.StringBuilder;
+
+        specialinvoke tmp$1988803621.<java.lang.StringBuilder: void <init>()>();
+
+        $r16 = virtualinvoke tmp$1988803621.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Record has no fields: ");
+
+        $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(schema);
+
+        $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke tmp$268876647.<org.apache.avro.SchemaParseException: void <init>(java.lang.String)>($r18);
+
+        throw tmp$268876647;
+
+     label11:
+        l9 = virtualinvoke fieldsNode.<org.codehaus.jackson.JsonNode: java.util.Iterator iterator()>();
+
+     label12:
+        $z9 = interfaceinvoke l9.<java.util.Iterator: boolean hasNext()>();
+
+        if $z9 == 0 goto label21;
+
+        $r24 = interfaceinvoke l9.<java.util.Iterator: java.lang.Object next()>();
+
+        field = (org.codehaus.jackson.JsonNode) $r24;
+
+        fieldName = staticinvoke <org.apache.avro.Schema: java.lang.String getRequiredText(org.codehaus.jackson.JsonNode,java.lang.String,java.lang.String)>(field, "name", "No field name");
+
+        fieldDoc = staticinvoke <org.apache.avro.Schema: java.lang.String getOptionalText(org.codehaus.jackson.JsonNode,java.lang.String)>(field, "doc");
+
+        fieldTypeNode = virtualinvoke field.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("type");
+
+        if fieldTypeNode != null goto label13;
+
+        tmp$1311635916 = new org.apache.avro.SchemaParseException;
+
+        tmp$1709119431 = new java.lang.StringBuilder;
+
+        specialinvoke tmp$1709119431.<java.lang.StringBuilder: void <init>()>();
+
+        $r51 = virtualinvoke tmp$1709119431.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("No field type: ");
+
+        $r52 = virtualinvoke $r51.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(field);
+
+        $r53 = virtualinvoke $r52.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke tmp$1311635916.<org.apache.avro.SchemaParseException: void <init>(java.lang.String)>($r53);
+
+        throw tmp$1311635916;
+
+     label13:
+        $z13 = virtualinvoke fieldTypeNode.<org.codehaus.jackson.JsonNode: boolean isTextual()>();
+
+        if $z13 == 0 goto label14;
+
+        $r40 = virtualinvoke fieldTypeNode.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>();
+
+        $r41 = virtualinvoke names.<org.apache.avro.Schema$Names: org.apache.avro.Schema get(java.lang.Object)>($r40);
+
+        if $r41 != null goto label14;
+
+        tmp$1295590680 = new org.apache.avro.SchemaParseException;
+
+        tmp$708475645 = new java.lang.StringBuilder;
+
+        specialinvoke tmp$708475645.<java.lang.StringBuilder: void <init>()>();
+
+        $r44 = virtualinvoke tmp$708475645.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(fieldTypeNode);
+
+        $r45 = virtualinvoke $r44.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" is not a defined name. The type of the \"");
+
+        $r46 = virtualinvoke $r45.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(fieldName);
+
+        $r47 = virtualinvoke $r46.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\" field must be a defined name or a {\"type\": ...} expression.");
+
+        $r48 = virtualinvoke $r47.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke tmp$1295590680.<org.apache.avro.SchemaParseException: void <init>(java.lang.String)>($r48);
+
+        throw tmp$1295590680;
+
+     label14:
+        fieldSchema = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(fieldTypeNode, names);
+
+        order = <org.apache.avro.Schema$Field$Order: org.apache.avro.Schema$Field$Order ASCENDING>;
+
+        orderNode = virtualinvoke field.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("order");
+
+        if orderNode == null goto label15;
+
+        $r37 = virtualinvoke orderNode.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>();
+
+        $r38 = <java.util.Locale: java.util.Locale ENGLISH>;
+
+        $r39 = virtualinvoke $r37.<java.lang.String: java.lang.String toUpperCase(java.util.Locale)>($r38);
+
+        order = staticinvoke <org.apache.avro.Schema$Field$Order: org.apache.avro.Schema$Field$Order valueOf(java.lang.String)>($r39);
+
+     label15:
+        defaultValue = virtualinvoke field.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("default");
+
+        if defaultValue == null goto label17;
+
+        $r30 = <org.apache.avro.Schema$Type: org.apache.avro.Schema$Type FLOAT>;
+
+        $r31 = virtualinvoke fieldSchema.<org.apache.avro.Schema: org.apache.avro.Schema$Type getType()>();
+
+        $z16 = virtualinvoke $r30.<org.apache.avro.Schema$Type: boolean equals(java.lang.Object)>($r31);
+
+        if $z16 != 0 goto label16;
+
+        $r35 = <org.apache.avro.Schema$Type: org.apache.avro.Schema$Type DOUBLE>;
+
+        $r36 = virtualinvoke fieldSchema.<org.apache.avro.Schema: org.apache.avro.Schema$Type getType()>();
+
+        $z18 = virtualinvoke $r35.<org.apache.avro.Schema$Type: boolean equals(java.lang.Object)>($r36);
+
+        if $z18 == 0 goto label17;
+
+     label16:
+        tmp$1138120874 = (org.codehaus.jackson.JsonNode) defaultValue;
+
+        $z17 = virtualinvoke tmp$1138120874.<org.codehaus.jackson.JsonNode: boolean isTextual()>();
+
+        if $z17 == 0 goto label17;
+
+        tmp$846909722 = new org.codehaus.jackson.node.DoubleNode;
+
+        tmp$1029194503 = (org.codehaus.jackson.JsonNode) defaultValue;
+
+        $r33 = virtualinvoke tmp$1029194503.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>();
+
+        $r34 = staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>($r33);
+
+        $d0 = virtualinvoke $r34.<java.lang.Double: double doubleValue()>();
+
+        specialinvoke tmp$846909722.<org.codehaus.jackson.node.DoubleNode: void <init>(double)>($d0);
+
+        defaultValue = tmp$846909722;
+
+     label17:
+        tmp$3447980 = new org.apache.avro.Schema$Field;
+
+        tmp$1437823663 = (org.codehaus.jackson.JsonNode) defaultValue;
+
+        specialinvoke tmp$3447980.<org.apache.avro.Schema$Field: void <init>(java.lang.String,org.apache.avro.Schema,java.lang.String,org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Field$Order)>(fieldName, fieldSchema, fieldDoc, tmp$1437823663, order);
+
+        i = virtualinvoke field.<org.codehaus.jackson.JsonNode: java.util.Iterator getFieldNames()>();
+
+     label18:
+        $z32 = interfaceinvoke i.<java.util.Iterator: boolean hasNext()>();
+
+        if $z32 == 0 goto label20;
+
+        $r27 = interfaceinvoke i.<java.util.Iterator: java.lang.Object next()>();
+
+        prop = (java.lang.String) $r27;
+
+        $r28 = <org.apache.avro.Schema: java.util.Set FIELD_RESERVED>;
+
+        $z15 = interfaceinvoke $r28.<java.util.Set: boolean contains(java.lang.Object)>(prop);
+
+        if $z15 != 0 goto label19;
+
+        $r29 = virtualinvoke field.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>(prop);
+
+        virtualinvoke tmp$3447980.<org.apache.avro.Schema$Field: void addProp(java.lang.String,org.codehaus.jackson.JsonNode)>(prop, $r29);
+
+     label19:
+        goto label18;
+
+     label20:
+        $r25 = staticinvoke <org.apache.avro.Schema: java.util.Set parseAliases(org.codehaus.jackson.JsonNode)>(field);
+
+        staticinvoke <org.apache.avro.Schema$Field: java.util.Set access$1402(org.apache.avro.Schema$Field,java.util.Set)>(tmp$3447980, $r25);
+
+        interfaceinvoke tmp$1396382183.<java.util.List: boolean add(java.lang.Object)>(tmp$3447980);
+
+        goto label12;
+
+     label21:
+        virtualinvoke tmp$1689461901.<org.apache.avro.Schema: void setFields(java.util.List)>(tmp$1396382183);
+
+        goto label37;
+
+     label22:
+        $z20 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("enum");
+
+        if $z20 == 0 goto label28;
+
+        space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("symbols");
+
+        if space#74 == null goto label23;
+
+        $z25 = virtualinvoke space#74.<org.codehaus.jackson.JsonNode: boolean isArray()>();
+
+        if $z25 != 0 goto label24;
+
+     label23:
+        tmp$1909969581 = new org.apache.avro.SchemaParseException;
+
+        tmp$1523210501 = new java.lang.StringBuilder;
+
+        specialinvoke tmp$1523210501.<java.lang.StringBuilder: void <init>()>();
+
+        $r81 = virtualinvoke tmp$1523210501.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Enum has no symbols: ");
+
+        $r82 = virtualinvoke $r81.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(schema);
+
+        $r83 = virtualinvoke $r82.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke tmp$1909969581.<org.apache.avro.SchemaParseException: void <init>(java.lang.String)>($r83);
+
+        throw tmp$1909969581;
+
+     label24:
+        tmp$573869428 = new org.apache.avro.Schema$LockableArrayList;
+
+        $i2 = virtualinvoke space#74.<org.codehaus.jackson.JsonNode: int size()>();
+
+        specialinvoke tmp$573869428.<org.apache.avro.Schema$LockableArrayList: void <init>(int)>($i2);
+
+        l9 = virtualinvoke space#74.<org.codehaus.jackson.JsonNode: java.util.Iterator iterator()>();
+
+     label25:
+        $z26 = interfaceinvoke l9.<java.util.Iterator: boolean hasNext()>();
+
+        if $z26 == 0 goto label26;
+
+        $r86 = interfaceinvoke l9.<java.util.Iterator: java.lang.Object next()>();
+
+        field = (org.codehaus.jackson.JsonNode) $r86;
+
+        $r87 = virtualinvoke field.<org.codehaus.jackson.JsonNode: java.lang.String getTextValue()>();
+
+        virtualinvoke tmp$573869428.<org.apache.avro.Schema$LockableArrayList: boolean add(java.lang.Object)>($r87);
+
+        goto label25;
+
+     label26:
+        tmp$796117214 = new org.apache.avro.Schema$EnumSchema;
+
+        specialinvoke tmp$796117214.<org.apache.avro.Schema$EnumSchema: void <init>(org.apache.avro.Schema$Name,java.lang.String,org.apache.avro.Schema$LockableArrayList)>(name, doc, tmp$573869428);
+
+        result = tmp$796117214;
+
+        if name == null goto label27;
+
+        virtualinvoke names.<org.apache.avro.Schema$Names: void add(org.apache.avro.Schema)>(tmp$796117214);
+
+     label27:
+        goto label37;
+
+     label28:
+        $z21 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("array");
+
+        if $z21 == 0 goto label30;
+
+        space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("items");
+
+        if space#74 != null goto label29;
+
+        tmp$1411255721 = new org.apache.avro.SchemaParseException;
+
+        tmp$1955825316 = new java.lang.StringBuilder;
+
+        specialinvoke tmp$1955825316.<java.lang.StringBuilder: void <init>()>();
+
+        $r76 = virtualinvoke tmp$1955825316.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Array has no items type: ");
+
+        $r77 = virtualinvoke $r76.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(schema);
+
+        $r78 = virtualinvoke $r77.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke tmp$1411255721.<org.apache.avro.SchemaParseException: void <init>(java.lang.String)>($r78);
+
+        throw tmp$1411255721;
+
+     label29:
+        tmp$434785506 = new org.apache.avro.Schema$ArraySchema;
+
+        $r73 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names);
+
+        specialinvoke tmp$434785506.<org.apache.avro.Schema$ArraySchema: void <init>(org.apache.avro.Schema)>($r73);
+
+        result = tmp$434785506;
+
+        goto label37;
+
+     label30:
+        $z22 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("map");
+
+        if $z22 == 0 goto label32;
+
+        space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("values");
+
+        if space#74 != null goto label31;
+
+        tmp$273872451 = new org.apache.avro.SchemaParseException;
+
+        tmp$141950375 = new java.lang.StringBuilder;
+
+        specialinvoke tmp$141950375.<java.lang.StringBuilder: void <init>()>();
+
+        $r69 = virtualinvoke tmp$141950375.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Map has no values type: ");
+
+        $r70 = virtualinvoke $r69.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(schema);
+
+        $r71 = virtualinvoke $r70.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke tmp$273872451.<org.apache.avro.SchemaParseException: void <init>(java.lang.String)>($r71);
+
+        throw tmp$273872451;
+
+     label31:
+        tmp$218320533 = new org.apache.avro.Schema$MapSchema;
+
+        $r66 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(space#74, names);
+
+        specialinvoke tmp$218320533.<org.apache.avro.Schema$MapSchema: void <init>(org.apache.avro.Schema)>($r66);
+
+        result = tmp$218320533;
+
+        goto label37;
+
+     label32:
+        $z23 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("fixed");
+
+        if $z23 == 0 goto label36;
+
+        space#74 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>("size");
+
+        if space#74 == null goto label33;
+
+        $z24 = virtualinvoke space#74.<org.codehaus.jackson.JsonNode: boolean isInt()>();
+
+        if $z24 != 0 goto label34;
+
+     label33:
+        tmp$768437311 = new org.apache.avro.SchemaParseException;
+
+        tmp$1886321570 = new java.lang.StringBuilder;
+
+        specialinvoke tmp$1886321570.<java.lang.StringBuilder: void <init>()>();
+
+        $r61 = virtualinvoke tmp$1886321570.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Invalid or no size: ");
+
+        $r62 = virtualinvoke $r61.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(schema);
+
+        $r63 = virtualinvoke $r62.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke tmp$768437311.<org.apache.avro.SchemaParseException: void <init>(java.lang.String)>($r63);
+
+        throw tmp$768437311;
+
+     label34:
+        tmp$311946782 = new org.apache.avro.Schema$FixedSchema;
+
+        $i1 = virtualinvoke space#74.<org.codehaus.jackson.JsonNode: int getIntValue()>();
+
+        specialinvoke tmp$311946782.<org.apache.avro.Schema$FixedSchema: void <init>(org.apache.avro.Schema$Name,java.lang.String,int)>(name, doc, $i1);
+
+        result = tmp$311946782;
+
+        if name == null goto label35;
+
+        virtualinvoke names.<org.apache.avro.Schema$Names: void add(org.apache.avro.Schema)>(tmp$311946782);
+
+     label35:
+        goto label37;
+
+     label36:
+        tmp$605242341 = new org.apache.avro.SchemaParseException;
+
+        tmp$30741291 = new java.lang.StringBuilder;
+
+        specialinvoke tmp$30741291.<java.lang.StringBuilder: void <init>()>();
+
+        $r56 = virtualinvoke tmp$30741291.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Type not supported: ");
+
+        $r57 = virtualinvoke $r56.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(type);
+
+        $r58 = virtualinvoke $r57.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke tmp$605242341.<org.apache.avro.SchemaParseException: void <init>(java.lang.String)>($r58);
+
+        throw tmp$605242341;
+
+     label37:
+        space#91 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator getFieldNames()>();
+
+     label38:
+        $z33 = interfaceinvoke space#91.<java.util.Iterator: boolean hasNext()>();
+
+        if $z33 == 0 goto label40;
+
+        $r21 = interfaceinvoke space#91.<java.util.Iterator: java.lang.Object next()>();
+
+        fieldsNode#104 = (java.lang.String) $r21;
+
+        $r22 = <org.apache.avro.Schema: java.util.Set SCHEMA_RESERVED>;
+
+        $z12 = interfaceinvoke $r22.<java.util.Set: boolean contains(java.lang.Object)>(fieldsNode#104);
+
+        if $z12 != 0 goto label39;
+
+        $r23 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: org.codehaus.jackson.JsonNode get(java.lang.String)>(fieldsNode#104);
+
+        virtualinvoke result.<org.apache.avro.Schema: void addProp(java.lang.String,org.codehaus.jackson.JsonNode)>(fieldsNode#104, $r23);
+
+     label39:
+        goto label38;
+
+     label40:
+        $r19 = staticinvoke <org.apache.avro.LogicalTypes: org.apache.avro.LogicalType fromSchemaIgnoreInvalid(org.apache.avro.Schema)>(result);
+
+        result.<org.apache.avro.Schema: org.apache.avro.LogicalType logicalType> = $r19;
+
+        virtualinvoke names.<org.apache.avro.Schema$Names: void space(java.lang.String)>(savedSpace);
+
+        $z10 = result instanceof org.apache.avro.Schema$NamedSchema;
+
+        if $z10 == 0 goto label42;
+
+        fieldsNode#105 = staticinvoke <org.apache.avro.Schema: java.util.Set parseAliases(org.codehaus.jackson.JsonNode)>(schema);
+
+        if fieldsNode#105 == null goto label42;
+
+        l9 = interfaceinvoke fieldsNode#105.<java.util.Set: java.util.Iterator iterator()>();
+
+     label41:
+        $z11 = interfaceinvoke l9.<java.util.Iterator: boolean hasNext()>();
+
+        if $z11 == 0 goto label42;
+
+        $r20 = interfaceinvoke l9.<java.util.Iterator: java.lang.Object next()>();
+
+        field#107 = (java.lang.String) $r20;
+
+        virtualinvoke result.<org.apache.avro.Schema: void addAlias(java.lang.String)>(field#107);
+
+        goto label41;
+
+     label42:
+        return result;
+
+     label43:
+        $z2 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: boolean isArray()>();
+
+        if $z2 == 0 goto label46;
+
+        tmp$871165114 = new org.apache.avro.Schema$LockableArrayList;
+
+        $i0 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: int size()>();
+
+        specialinvoke tmp$871165114.<org.apache.avro.Schema$LockableArrayList: void <init>(int)>($i0);
+
+        type#111 = virtualinvoke schema.<org.codehaus.jackson.JsonNode: java.util.Iterator iterator()>();
+
+     label44:
+        $z3 = interfaceinvoke type#111.<java.util.Iterator: boolean hasNext()>();
+
+        if $z3 == 0 goto label45;
+
+        $r7 = interfaceinvoke type#111.<java.util.Iterator: java.lang.Object next()>();
+
+        name#112 = (org.codehaus.jackson.JsonNode) $r7;
+
+        $r8 = staticinvoke <org.apache.avro.Schema: org.apache.avro.Schema parse(org.codehaus.jackson.JsonNode,org.apache.avro.Schema$Names)>(name#112, names);
+
+        virtualinvoke tmp$871165114.<org.apache.avro.Schema$LockableArrayList: boolean add(java.lang.Object)>($r8);
+
+        goto label44;
+
+     label45:
+        tmp$1235083193 = new org.apache.avro.Schema$UnionSchema;
+
+        specialinvoke tmp$1235083193.<org.apache.avro.Schema$UnionSchema: void <init>(org.apache.avro.Schema$LockableArrayList)>(tmp$871165114);
+
+        return tmp$1235083193;
+
+     label46:
+        tmp$1695339711 = new org.apache.avro.SchemaParseException;
+
+        tmp$1213766951 = new java.lang.StringBuilder;
+
+        specialinvoke tmp$1213766951.<java.lang.StringBuilder: void <init>()>();
+
+        $r2 = virtualinvoke tmp$1213766951.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Schema not yet supported: ");
+
+        $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(schema);
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        specialinvoke tmp$1695339711.<org.apache.avro.SchemaParseException: void <init>(java.lang.String)>($r4);
+
+        throw tmp$1695339711;
+    }

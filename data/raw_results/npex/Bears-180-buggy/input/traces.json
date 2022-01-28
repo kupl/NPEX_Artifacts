@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line": 110,
+        "method_name": "getBlobId"
+    },
+    {
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line": 120,
+        "method_name": "getGoogleStorageObject"
+    },
+    {
+        "filepath": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+        "line": 74,
+        "method_name": "exists"
+    },
+    {
+        "filepath": "spring-cloud-gcp-storage/src/test/java/org/springframework/cloud/gcp/storage/GoogleStorageTests.java",
+        "line": 99,
+        "method_name": "testValidObjectWithUnderscore"
+    }
+]

@@ -1,0 +1,10 @@
+{
+	"filepath": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+	"line": 98,
+	"sink_field": "iterator",
+	"npe_class": "UnaryExpression$2",
+	"npe_method": "toString",
+	"jvmti_identify_succeed": true,
+  "deref_field": "inList",
+  "nullpointer": "inList"
+}

@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "rt/frontend/jaxrs/src/test/java/org/apache/cxf/jaxrs/impl/UriInfoImplTest.java",
+        "line": 310,
+        "method_name": "testGetQueryParameters"
+    }
+]

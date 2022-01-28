@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "johnzon-jsonb/src/test/java/org/apache/johnzon/jsonb/SerializerTest.java",
+        "line": 98,
+        "method_name": "nullValuesInEnumList"
+    }
+]

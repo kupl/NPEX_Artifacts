@@ -1,0 +1,10 @@
+{
+    "filepath": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/async/H2AsyncClientBuilder.java",
+    "line": 341,
+    "sink_field": "add",
+    "npe_class": "H2AsyncClientBuilder",
+    "npe_method": "addExecInterceptorFirst",
+    "jvmti_identify_succeed": true,
+    "deref_field": "execInterceptors",
+    "nullpointer": "execInterceptors"
+}

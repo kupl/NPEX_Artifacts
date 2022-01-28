@@ -1,0 +1,89 @@
+    public java.util.Enumeration getResourcesLocal(java.lang.String)
+    {
+        org.apache.felix.framework.BundleRevisionImpl this;
+        java.util.List contentPath;
+        java.util.ArrayList $r0;
+        boolean $z0, $z1, $z2;
+        java.lang.Object $r1;
+        org.apache.felix.framework.cache.Content $r2;
+        int $i0, $i1, $i2, i, $i3;
+        java.net.URL $r3, $r5;
+        java.util.Enumeration $r4;
+        java.lang.String name;
+
+        this := @this: org.apache.felix.framework.BundleRevisionImpl;
+
+        name := @parameter0: java.lang.String;
+
+        $r0 = new java.util.ArrayList;
+
+        specialinvoke $r0.<java.util.ArrayList: void <init>()>();
+
+        contentPath = virtualinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.util.List getContentPath()>();
+
+        $z0 = virtualinvoke name.<java.lang.String: boolean equals(java.lang.Object)>("/");
+
+        if $z0 == 0 goto label3;
+
+        i = 0;
+
+        goto label2;
+
+     label1:
+        $i2 = i + 1;
+
+        $r5 = specialinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.net.URL createURL(int,java.lang.String)>($i2, name);
+
+        interfaceinvoke $r0.<java.util.List: boolean add(java.lang.Object)>($r5);
+
+        i = i + 1;
+
+     label2:
+        $i1 = interfaceinvoke contentPath.<java.util.List: int size()>();
+
+        if i < $i1 goto label1;
+
+        goto label8;
+
+     label3:
+        $z1 = virtualinvoke name.<java.lang.String: boolean startsWith(java.lang.String)>("/");
+
+        if $z1 == 0 goto label4;
+
+        name = virtualinvoke name.<java.lang.String: java.lang.String substring(int)>(1);
+
+     label4:
+        i = 0;
+
+        goto label7;
+
+     label5:
+        $r1 = interfaceinvoke contentPath.<java.util.List: java.lang.Object get(int)>(i);
+
+        $r2 = (org.apache.felix.framework.cache.Content) $r1;
+
+        $z2 = interfaceinvoke $r2.<org.apache.felix.framework.cache.Content: boolean hasEntry(java.lang.String)>(name);
+
+        if $z2 == 0 goto label6;
+
+        $i0 = i + 1;
+
+        $r3 = specialinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.net.URL createURL(int,java.lang.String)>($i0, name);
+
+        interfaceinvoke $r0.<java.util.List: boolean add(java.lang.Object)>($r3);
+
+     label6:
+        i = i + 1;
+
+     label7:
+        if contentPath == null goto label8;
+
+        $i3 = interfaceinvoke contentPath.<java.util.List: int size()>();
+
+        if i < $i3 goto label5;
+
+     label8:
+        $r4 = staticinvoke <java.util.Collections: java.util.Enumeration enumeration(java.util.Collection)>($r0);
+
+        return $r4;
+    }

@@ -1,0 +1,5 @@
+{
+    "contents": "for (int i = 0; i < (filters != null ? filters.size() : 0); i++) {\n    org.apache.pdfbox.cos.COSName nextFilter = filters.get(i);\n    if (stopFilters.contains(nextFilter.getName())) {\n        break;\n    } else {\n        org.apache.pdfbox.filter.Filter filter = org.apache.pdfbox.filter.FilterFactory.INSTANCE.getFilter(nextFilter);\n        filter.decode(is, os, stream, i);\n        org.apache.pdfbox.io.IOUtils.closeQuietly(is);\n        is = new java.io.ByteArrayInputStream(os.toByteArray());\n        os.reset();\n    }\n}",
+    "original_filepath": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+    "patched_lines": [264]
+}

@@ -1,0 +1,86 @@
+    private static void parseClass(java.lang.Class, java.util.List, java.lang.Class)
+    {
+        java.lang.Class 'annotation', cl;
+        java.util.List jpaAnnotated;
+        boolean $z0, $z1, $z3;
+        java.lang.String $r0;
+        java.lang.Class[] $r1;
+        int $i0, l4, l5;
+        java.lang.reflect.Field[] l3;
+        java.lang.reflect.Field field;
+        java.lang.reflect.Method[] l3#5;
+        java.lang.reflect.Method field#8;
+
+        'annotation' := @parameter0: java.lang.Class;
+
+        jpaAnnotated := @parameter1: java.util.List;
+
+        cl := @parameter2: java.lang.Class;
+
+        if cl != null goto label1;
+
+        return;
+
+     label1:
+        l3 = virtualinvoke cl.<java.lang.Class: java.lang.reflect.Field[] getDeclaredFields()>();
+
+        l4 = lengthof l3;
+
+        l5 = 0;
+
+     label2:
+        if l5 >= l4 goto label4;
+
+        field = l3[l5];
+
+        $z3 = virtualinvoke field.<java.lang.reflect.Field: boolean isAnnotationPresent(java.lang.Class)>('annotation');
+
+        if $z3 == 0 goto label3;
+
+        virtualinvoke field.<java.lang.reflect.Field: void setAccessible(boolean)>(1);
+
+        interfaceinvoke jpaAnnotated.<java.util.List: boolean add(java.lang.Object)>(field);
+
+     label3:
+        l5 = l5 + 1;
+
+        goto label2;
+
+     label4:
+        l3#5 = virtualinvoke cl.<java.lang.Class: java.lang.reflect.Method[] getDeclaredMethods()>();
+
+        l4 = lengthof l3#5;
+
+        l5 = 0;
+
+     label5:
+        if l5 >= l4 goto label7;
+
+        field#8 = l3#5[l5];
+
+        $z0 = virtualinvoke field#8.<java.lang.reflect.Method: boolean isAnnotationPresent(java.lang.Class)>('annotation');
+
+        if $z0 == 0 goto label6;
+
+        $r0 = virtualinvoke field#8.<java.lang.reflect.Method: java.lang.String getName()>();
+
+        $z1 = virtualinvoke $r0.<java.lang.String: boolean startsWith(java.lang.String)>("set");
+
+        if $z1 == 0 goto label6;
+
+        $r1 = virtualinvoke field#8.<java.lang.reflect.Method: java.lang.Class[] getParameterTypes()>();
+
+        $i0 = lengthof $r1;
+
+        if $i0 != 1 goto label6;
+
+        interfaceinvoke jpaAnnotated.<java.util.List: boolean add(java.lang.Object)>(field#8);
+
+     label6:
+        l5 = l5 + 1;
+
+        goto label5;
+
+     label7:
+        return;
+    }

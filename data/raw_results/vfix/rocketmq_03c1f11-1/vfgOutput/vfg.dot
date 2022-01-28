@@ -1,0 +1,14 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"1216: mqConsumerInner = (org.apache.rocketmq.client.impl.consumer.MQConsumerInner) $r1" [style=bold]
+"1216: $r1 = interfaceinvoke $r0.<java.util.concurrent.ConcurrentMap: java.lang.Object get(java.lang.Object)>(consumerGroup)" [style=bold] [color=gold]
+"1218: consumerRunningInfo = interfaceinvoke mqConsumerInner.<org.apache.rocketmq.client.impl.consumer.MQConsumerInner: org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo consumerRunningInfo()>()" [style=bold] [color=red]
+"1231: $r8 = interfaceinvoke mqConsumerInner.<org.apache.rocketmq.client.impl.consumer.MQConsumerInner: org.apache.rocketmq.common.protocol.heartbeat.ConsumeType consumeType()>()" [color=red]
+"1216: $r1 = interfaceinvoke $r0.<java.util.concurrent.ConcurrentMap: java.lang.Object get(java.lang.Object)>(consumerGroup)"->"1216: mqConsumerInner = (org.apache.rocketmq.client.impl.consumer.MQConsumerInner) $r1";
+
+"1216: mqConsumerInner = (org.apache.rocketmq.client.impl.consumer.MQConsumerInner) $r1"->"1218: consumerRunningInfo = interfaceinvoke mqConsumerInner.<org.apache.rocketmq.client.impl.consumer.MQConsumerInner: org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo consumerRunningInfo()>()";
+
+"1216: mqConsumerInner = (org.apache.rocketmq.client.impl.consumer.MQConsumerInner) $r1"->"1231: $r8 = interfaceinvoke mqConsumerInner.<org.apache.rocketmq.client.impl.consumer.MQConsumerInner: org.apache.rocketmq.common.protocol.heartbeat.ConsumeType consumeType()>()" [style=dotted];
+
+}

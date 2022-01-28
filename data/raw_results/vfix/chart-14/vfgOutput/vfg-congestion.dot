@@ -1,0 +1,17 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"2159: $r6 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r4)" [label=1] [style=bold] [color=gold]
+"2159: markers = (java.util.ArrayList) $r6" [label=1] [style=bold]
+"2163: $r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>($r1)" [label=1] [color=gold]
+"2163: markers = (java.util.ArrayList) $r3" [label=1]
+"2166: removed = virtualinvoke markers.<java.util.ArrayList: boolean remove(java.lang.Object)>(marker)" [label=2] [style=bold] [color=red]
+"2159: $r6 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r4)"->"2159: markers = (java.util.ArrayList) $r6";
+
+"2159: markers = (java.util.ArrayList) $r6"->"2166: removed = virtualinvoke markers.<java.util.ArrayList: boolean remove(java.lang.Object)>(marker)";
+
+"2163: $r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>($r1)"->"2163: markers = (java.util.ArrayList) $r3" [style=dotted];
+
+"2163: markers = (java.util.ArrayList) $r3"->"2166: removed = virtualinvoke markers.<java.util.ArrayList: boolean remove(java.lang.Object)>(marker)" [style=dotted];
+
+}

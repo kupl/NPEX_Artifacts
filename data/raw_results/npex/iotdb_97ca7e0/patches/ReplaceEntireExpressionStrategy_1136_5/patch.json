@@ -1,0 +1,5 @@
+{
+    "contents": "if ((node != null ? node.getChildren().size() : -1) > 0) {\n    for (org.apache.iotdb.db.metadata.mnode.MNode child : node.getChildren().values()) {\n        if (!java.util.regex.Pattern.matches(nodeReg.replace(\"*\", \".*\"), child.getName())) {\n            continue;\n        }\n        if (idx == length) {\n            res.add(parent + node.getName());\n        } else {\n            findChildNodePathInNextLevel(child, nodes, idx + 1, (parent + node.getName()) + org.apache.iotdb.db.conf.IoTDBConstant.PATH_SEPARATOR, res, length);\n        }\n    }\n} else if (idx == length) {\n    java.lang.String nodeName = node.getName();\n    res.add(parent + nodeName);\n}",
+    "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+    "patched_lines": [1151]
+}

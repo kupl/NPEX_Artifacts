@@ -1,0 +1,5 @@
+{
+    "contents": "(identAST != null ? identAST : new com.puppycrawl.tools.checkstyle.api.DetailAST()).getType()",
+    "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+    "patched_lines": [285]
+}

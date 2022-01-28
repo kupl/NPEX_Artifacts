@@ -1,0 +1,5 @@
+{
+    "contents": "if (expected != null) {\n    if (((actual == null) && (key != null)) || (!actual.equals(expected))) {\n        fail(\"has key/value pair\", com.google.common.collect.ImmutableList.of(key, expected), \"actually has key/value pair\", com.google.common.collect.ImmutableList.of(key, actual));\n    }\n}",
+    "original_filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+    "patched_lines": [65]
+}

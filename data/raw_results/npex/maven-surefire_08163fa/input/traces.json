@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+        "line": 194,
+        "method_name": "focusOnClass"
+    },
+    {
+        "filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+        "line": 88,
+        "method_name": "getString"
+    },
+    {
+        "filepath": "surefire-providers/common-java5/src/test/java/org/apache/maven/surefire/report/SmartStackTraceParserTest.java",
+        "line": 353,
+        "method_name": "testNullStackTrace"
+    }
+]

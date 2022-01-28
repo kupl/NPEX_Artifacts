@@ -1,0 +1,58 @@
+    public org.apache.hc.core5.net.URIBuilder appendPathSegments(java.util.List)
+    {
+        org.apache.hc.core5.net.URIBuilder this;
+        java.util.List pathSegments, $r1;
+        int $i0;
+        java.util.ArrayList $r0;
+        boolean $z2, $z3, $z4;
+
+        this := @this: org.apache.hc.core5.net.URIBuilder;
+
+        pathSegments := @parameter0: java.util.List;
+
+        if pathSegments == null goto label1;
+
+        $z2 = 1;
+
+        goto label2;
+
+     label1:
+        $z2 = 0;
+
+     label2:
+        if pathSegments != null goto label3;
+
+        pathSegments = new java.util.Vector;
+
+        specialinvoke pathSegments.<java.util.Vector: void <init>()>();
+
+     label3:
+        $i0 = interfaceinvoke pathSegments.<java.util.List: int size()>();
+
+        if $i0 <= 0 goto label4;
+
+        $z3 = 1;
+
+        goto label5;
+
+     label4:
+        $z3 = 0;
+
+     label5:
+        $z4 = $z2 & $z3;
+
+        if $z4 == 0 goto label6;
+
+        $r0 = new java.util.ArrayList;
+
+        $r1 = virtualinvoke this.<org.apache.hc.core5.net.URIBuilder: java.util.List getPathSegments()>();
+
+        specialinvoke $r0.<java.util.ArrayList: void <init>(java.util.Collection)>($r1);
+
+        interfaceinvoke $r0.<java.util.List: boolean addAll(java.util.Collection)>(pathSegments);
+
+        virtualinvoke this.<org.apache.hc.core5.net.URIBuilder: org.apache.hc.core5.net.URIBuilder setPathSegments(java.util.List)>($r0);
+
+     label6:
+        return this;
+    }

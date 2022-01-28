@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "org/apache/commons/lang3/text/StrBuilder.java",
+        "line": 1319,
+        "method_name": "appendFixedWidthPadRight"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 15,
+        "method_name": "testLang412Right"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 9,
+        "method_name": "main"
+    }
+]

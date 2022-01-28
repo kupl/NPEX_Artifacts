@@ -1,0 +1,5 @@
+{
+    "contents": "if (node == null) {\n    node = null;\n}",
+    "original_filepath": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+    "patched_lines": [1152]
+}

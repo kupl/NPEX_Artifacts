@@ -1,0 +1,5 @@
+{
+    "contents": "if (mirror.getExtendsBound() == null) {\n    return null;\n}",
+    "original_filepath": "src/main/java/com/squareup/javapoet/WildcardTypeName.java",
+    "patched_lines": [93]
+}

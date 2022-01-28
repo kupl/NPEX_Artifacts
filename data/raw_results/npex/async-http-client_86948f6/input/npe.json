@@ -1,0 +1,10 @@
+{
+    "filepath": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+    "line": 347,
+    "sink_field": "getQuery",
+    "npe_class": "RequestBuilderBase",
+    "npe_method": "setQueryParams",
+    "jvmti_identify_succeed": true,
+    "deref_field": "uri",
+    "nullpointer": "this.uri"
+}

@@ -1,0 +1,35 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"11: main" [color=gold] [style=bold]
+"902: toClass" [color=red] [style=bold]
+"7: <clinit>" [style=bold]
+"16: testToClass_object" [style=bold]
+"57: <clinit>" [style=bold]
+"54: <clinit>" [style=bold]
+"115: addAbbreviation" [style=bold]
+"11: main"->"7: <clinit>";
+
+"11: main"->"16: testToClass_object";
+
+"7: <clinit>"->"7: <clinit>";
+
+"16: testToClass_object"->"57: <clinit>";
+
+"16: testToClass_object"->"7: <clinit>";
+
+"16: testToClass_object"->"54: <clinit>";
+
+"16: testToClass_object"->"902: toClass";
+
+"57: <clinit>"->"57: <clinit>";
+
+"57: <clinit>"->"115: addAbbreviation";
+
+"54: <clinit>"->"54: <clinit>";
+
+"902: toClass"->"54: <clinit>";
+
+"115: addAbbreviation"->"57: <clinit>";
+
+}

@@ -1,0 +1,17 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"208: this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys> = null" [style=bold] [color=gold]
+"574: $i0 = lengthof $r0" [style=bold] [color=red]
+"574: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>" [style=bold]
+"690: $i0 = lengthof $r0" [color=red]
+"690: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>"
+"574: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>"->"574: $i0 = lengthof $r0";
+
+"208: this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys> = null"->"574: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>";
+
+"690: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>"->"690: $i0 = lengthof $r0" [style=dotted];
+
+"208: this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys> = null"->"690: $r0 = this.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>" [style=dotted];
+
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line": 79,
+        "method_name": "lambda$isSingleIdAttribute$0"
+    },
+    {
+        "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+        "line": 80,
+        "method_name": "isSingleIdAttribute"
+    },
+    {
+        "filepath": "src/test/java/org/springframework/data/jpa/util/JpaMetamodelUnitTests.java",
+        "line": 48,
+        "method_name": "skipsEntityTypesWithoutJavaTypeForIdentifierLookup"
+    }
+]

@@ -1,0 +1,14 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"116: keyValues = (java.util.List) $r1" [style=bold]
+"116: $r1 = interfaceinvoke $r0.<java.util.Map: java.lang.Object get(java.lang.Object)>(keys)" [style=bold] [color=gold]
+"117: $z0 = interfaceinvoke keyValues.<java.util.List: boolean isEmpty()>()" [style=bold] [color=red]
+"118: $r2 = interfaceinvoke keyValues.<java.util.List: java.lang.Object get(int)>(0)" [color=red]
+"116: $r1 = interfaceinvoke $r0.<java.util.Map: java.lang.Object get(java.lang.Object)>(keys)"->"116: keyValues = (java.util.List) $r1";
+
+"116: keyValues = (java.util.List) $r1"->"117: $z0 = interfaceinvoke keyValues.<java.util.List: boolean isEmpty()>()";
+
+"116: keyValues = (java.util.List) $r1"->"118: $r2 = interfaceinvoke keyValues.<java.util.List: java.lang.Object get(int)>(0)" [style=dotted];
+
+}

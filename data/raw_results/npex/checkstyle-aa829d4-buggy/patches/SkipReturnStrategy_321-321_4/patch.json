@@ -1,0 +1,5 @@
+{
+    "contents": "if (targetAST == null) {\n    return;\n}",
+    "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+    "patched_lines": [312]
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "if (executorService == null) {\n    return null;\n}",
+    "original_filepath": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+    "patched_lines": [120]
+}

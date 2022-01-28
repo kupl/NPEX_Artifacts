@@ -1,0 +1,5 @@
+{
+    "contents": "(templateMode != null ? templateMode : null).isMarkup()",
+    "original_filepath": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+    "patched_lines": [127]
+}

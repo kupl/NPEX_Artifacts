@@ -1,0 +1,5 @@
+{
+    "contents": "(contentPath != null ? contentPath : java.util.Collections.emptyList()).size()",
+    "original_filepath": "org/apache/felix/framework/BundleRevisionImpl.java",
+    "patched_lines": [517]
+}

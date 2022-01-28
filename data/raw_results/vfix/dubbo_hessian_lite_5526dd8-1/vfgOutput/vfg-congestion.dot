@@ -1,0 +1,11 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"968: $r12 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r11)" [label=1] [style=bold] [color=gold]
+"968: value = (java.lang.String) $r12" [label=1] [style=bold]
+"971: $z1 = virtualinvoke value.<java.lang.String: boolean equals(java.lang.Object)>($r13)" [label=1] [style=bold] [color=red]
+"968: $r12 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r11)"->"968: value = (java.lang.String) $r12";
+
+"968: value = (java.lang.String) $r12"->"971: $z1 = virtualinvoke value.<java.lang.String: boolean equals(java.lang.Object)>($r13)";
+
+}

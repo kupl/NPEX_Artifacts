@@ -1,0 +1,5 @@
+{
+    "contents": "// get text range of target\nfinal int firstLine = (targetAST != null) ? targetAST.getLineNo() : 0",
+    "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+    "patched_lines": [312]
+}

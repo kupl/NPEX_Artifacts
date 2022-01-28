@@ -1,0 +1,206 @@
+    private org.traccar.model.Position decode9(org.jboss.netty.channel.Channel, java.net.SocketAddress, java.lang.String[]) throws java.text.ParseException
+    {
+        org.traccar.protocol.SuntechProtocolDecoder this;
+        org.jboss.netty.channel.Channel channel;
+        java.net.SocketAddress remoteAddress;
+        java.lang.String[] values, $r10;
+        java.lang.String type, $r0, $r1, $r2, $r3, $r4, $r5, $r6, $r9, $r11, $r15, $r16, $r17, $r19;
+        org.traccar.DeviceSession deviceSession;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6;
+        long $l0;
+        int $i1, $i2, $i3, $i4, index#2, index#35, $i5;
+        double $d0, $d1, $d2, $d3, $d4;
+        java.lang.Integer $r7;
+        org.traccar.model.Position $r8, ret0;
+        java.text.SimpleDateFormat $r12;
+        java.util.TimeZone $r13;
+        java.lang.StringBuilder $r14, $r18;
+        java.util.Date $r20;
+
+        this := @this: org.traccar.protocol.SuntechProtocolDecoder;
+
+        channel := @parameter0: org.jboss.netty.channel.Channel;
+
+        remoteAddress := @parameter1: java.net.SocketAddress;
+
+        values := @parameter2: java.lang.String[];
+
+        index#2 = 1 + 1;
+
+        type = values[1];
+
+        $z0 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("Location");
+
+        if $z0 != 0 goto label1;
+
+        $z4 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("Emergency");
+
+        if $z4 != 0 goto label1;
+
+        $z5 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("Alert");
+
+        if $z5 != 0 goto label1;
+
+        return null;
+
+     label1:
+        $r8 = new org.traccar.model.Position;
+
+        specialinvoke $r8.<org.traccar.model.Position: void <init>()>();
+
+        $r9 = virtualinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: java.lang.String getProtocolName()>();
+
+        virtualinvoke $r8.<org.traccar.model.Position: void setProtocol(java.lang.String)>($r9);
+
+        $z6 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("Emergency");
+
+        if $z6 != 0 goto label2;
+
+        $z3 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("Alert");
+
+        if $z3 == 0 goto label3;
+
+     label2:
+        virtualinvoke $r8.<org.traccar.model.Position: void set(java.lang.String,java.lang.String)>("alarm", "general");
+
+     label3:
+        $r10 = newarray (java.lang.String)[1];
+
+        index#35 = index#2 + 1;
+
+        $r11 = values[index#2];
+
+        $r10[0] = $r11;
+
+        if channel != null goto label4;
+
+        ret0 = new org.traccar.model.Position;
+
+        specialinvoke ret0.<org.traccar.model.Position: void <init>()>();
+
+        return ret0;
+
+     label4:
+        deviceSession = virtualinvoke this.<org.traccar.protocol.SuntechProtocolDecoder: org.traccar.DeviceSession getDeviceSession(org.jboss.netty.channel.Channel,java.net.SocketAddress,java.lang.String[])>(channel, remoteAddress, $r10);
+
+        if deviceSession != null goto label5;
+
+        return null;
+
+     label5:
+        $l0 = virtualinvoke deviceSession.<org.traccar.DeviceSession: long getDeviceId()>();
+
+        virtualinvoke $r8.<org.traccar.model.Position: void setDeviceId(long)>($l0);
+
+        $z1 = virtualinvoke type.<java.lang.String: boolean equals(java.lang.Object)>("Alert");
+
+        if $z1 == 0 goto label6;
+
+        $i4 = this.<org.traccar.protocol.SuntechProtocolDecoder: int protocolType>;
+
+        if $i4 != 0 goto label7;
+
+     label6:
+        $i1 = index#35;
+
+        index#35 = index#35 + 1;
+
+        $r0 = values[$i1];
+
+        virtualinvoke $r8.<org.traccar.model.Position: void set(java.lang.String,java.lang.String)>("versionFw", $r0);
+
+     label7:
+        $r12 = new java.text.SimpleDateFormat;
+
+        specialinvoke $r12.<java.text.SimpleDateFormat: void <init>(java.lang.String)>("yyyyMMddHH:mm:ss");
+
+        $r13 = staticinvoke <java.util.TimeZone: java.util.TimeZone getTimeZone(java.lang.String)>("UTC");
+
+        virtualinvoke $r12.<java.text.DateFormat: void setTimeZone(java.util.TimeZone)>($r13);
+
+        $r14 = new java.lang.StringBuilder;
+
+        index#2 = index#35 + 1;
+
+        $r15 = values[index#35];
+
+        $r16 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r15);
+
+        specialinvoke $r14.<java.lang.StringBuilder: void <init>(java.lang.String)>($r16);
+
+        index#35 = index#2 + 1;
+
+        $r17 = values[index#2];
+
+        $r18 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r17);
+
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        $r20 = virtualinvoke $r12.<java.text.DateFormat: java.util.Date parse(java.lang.String)>($r19);
+
+        virtualinvoke $r8.<org.traccar.model.Position: void setTime(java.util.Date)>($r20);
+
+        $i5 = this.<org.traccar.protocol.SuntechProtocolDecoder: int protocolType>;
+
+        if $i5 != 1 goto label8;
+
+        index#35 = index#35 + 1;
+
+     label8:
+        index#2 = index#35 + 1;
+
+        $r1 = values[index#35];
+
+        $d0 = staticinvoke <java.lang.Double: double parseDouble(java.lang.String)>($r1);
+
+        virtualinvoke $r8.<org.traccar.model.Position: void setLatitude(double)>($d0);
+
+        index#35 = index#2 + 1;
+
+        $r2 = values[index#2];
+
+        $d1 = staticinvoke <java.lang.Double: double parseDouble(java.lang.String)>($r2);
+
+        virtualinvoke $r8.<org.traccar.model.Position: void setLongitude(double)>($d1);
+
+        index#2 = index#35 + 1;
+
+        $r3 = values[index#35];
+
+        $d2 = staticinvoke <java.lang.Double: double parseDouble(java.lang.String)>($r3);
+
+        $d3 = staticinvoke <org.traccar.helper.UnitsConverter: double knotsFromKph(double)>($d2);
+
+        virtualinvoke $r8.<org.traccar.model.Position: void setSpeed(double)>($d3);
+
+        index#35 = index#2 + 1;
+
+        $r4 = values[index#2];
+
+        $d4 = staticinvoke <java.lang.Double: double parseDouble(java.lang.String)>($r4);
+
+        virtualinvoke $r8.<org.traccar.model.Position: void setCourse(double)>($d4);
+
+        index#2 = index#35 + 1;
+
+        $r5 = values[index#35];
+
+        $z2 = virtualinvoke $r5.<java.lang.String: boolean equals(java.lang.Object)>("1");
+
+        virtualinvoke $r8.<org.traccar.model.Position: void setValid(boolean)>($z2);
+
+        $i2 = this.<org.traccar.protocol.SuntechProtocolDecoder: int protocolType>;
+
+        if $i2 != 1 goto label9;
+
+        $r6 = values[index#2];
+
+        $i3 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($r6);
+
+        $r7 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i3);
+
+        virtualinvoke $r8.<org.traccar.model.Position: void set(java.lang.String,java.lang.Integer)>("odometer", $r7);
+
+     label9:
+        return $r8;
+    }

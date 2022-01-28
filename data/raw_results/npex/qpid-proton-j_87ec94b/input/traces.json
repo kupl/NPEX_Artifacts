@@ -1,0 +1,12 @@
+[
+    {
+        "filepath": "proton-j/src/test/java/org/apache/qpid/proton/codec/MapTypeCodecTest.java",
+        "line": 179,
+        "method_name": "doTestEncodeMapWithUnknownEntryKeyTypeTestImpl"
+    },
+    {
+        "filepath": "proton-j/src/test/java/org/apache/qpid/proton/codec/MapTypeCodecTest.java",
+        "line": 174,
+        "method_name": "testEncodeSubMapWithUnknownEntryKeyType"
+    }
+]

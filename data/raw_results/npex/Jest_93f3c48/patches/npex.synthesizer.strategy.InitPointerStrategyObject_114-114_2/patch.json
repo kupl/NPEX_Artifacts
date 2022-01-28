@@ -1,0 +1,5 @@
+{
+    "contents": "if (discoveredServerList == null) {\n    discoveredServerList = new java.util.HashSet();\n}",
+    "original_filepath": "jest-common/src/main/java/io/searchbox/client/config/discovery/NodeChecker.java",
+    "patched_lines": [115]
+}

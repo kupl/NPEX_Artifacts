@@ -1,0 +1,5 @@
+{
+    "contents": "((T) (factory.invoke(null, value != null ? value.toUpperCase(java.util.Locale.ENGLISH) : \"NULL\")))",
+    "original_filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+    "patched_lines": [64]
+}

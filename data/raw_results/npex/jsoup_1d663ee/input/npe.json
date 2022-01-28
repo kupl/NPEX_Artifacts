@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+    "line": 88,
+    "sink_field": "get",
+    "npe_class": "Attribute",
+    "npe_method": "setValue",
+    "jvmti_identify_succeed": true,
+    "deref_field": "parent",
+    "nullpointer": "parent"
+}

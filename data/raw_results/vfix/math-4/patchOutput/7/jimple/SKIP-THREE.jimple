@@ -1,0 +1,28 @@
+    public void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D, org.apache.commons.math3.geometry.euclidean.threed.Vector3D) throws org.apache.commons.math3.exception.MathIllegalArgumentException
+    {
+        org.apache.commons.math3.geometry.euclidean.threed.SubLine this;
+        org.apache.commons.math3.geometry.euclidean.threed.Vector3D start, end;
+        org.apache.commons.math3.geometry.euclidean.threed.Line $r0;
+        org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet $r1;
+
+        this := @this: org.apache.commons.math3.geometry.euclidean.threed.SubLine;
+
+        start := @parameter0: org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
+
+        end := @parameter1: org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
+
+        $r0 = new org.apache.commons.math3.geometry.euclidean.threed.Line;
+
+        specialinvoke $r0.<org.apache.commons.math3.geometry.euclidean.threed.Line: void <init>(org.apache.commons.math3.geometry.euclidean.threed.Vector3D,org.apache.commons.math3.geometry.euclidean.threed.Vector3D)>(start, end);
+
+        if end != null goto label1;
+
+        return;
+
+     label1:
+        $r1 = staticinvoke <org.apache.commons.math3.geometry.euclidean.threed.SubLine: org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet buildIntervalSet(org.apache.commons.math3.geometry.euclidean.threed.Vector3D,org.apache.commons.math3.geometry.euclidean.threed.Vector3D)>(start, end);
+
+        specialinvoke this.<org.apache.commons.math3.geometry.euclidean.threed.SubLine: void <init>(org.apache.commons.math3.geometry.euclidean.threed.Line,org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet)>($r0, $r1);
+
+        return;
+    }

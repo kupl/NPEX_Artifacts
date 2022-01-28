@@ -1,0 +1,5 @@
+{
+    "contents": "if (value != null) {\n    java.lang.String prot = protocol.toString();\n    if (prot.equals(\"#\")) {\n        // allows anchor links\n        if (isValidAnchor(value)) {\n            return true;\n        } else {\n            continue;\n        }\n    }\n    prot += \":\";\n    if (org.jsoup.internal.Normalizer.lowerCase(value).startsWith(prot)) {\n        return true;\n    }\n}",
+    "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
+    "patched_lines": [538]
+}

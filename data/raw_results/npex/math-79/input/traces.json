@@ -1,0 +1,22 @@
+[
+    {
+        "filepath": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+        "line": 91,
+        "method_name": "assignPointsToClusters"
+    },
+    {
+        "filepath": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+        "line": 57,
+        "method_name": "cluster"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 22,
+        "method_name": "testPerformClusterAnalysisDegenerate"
+    },
+    {
+        "filepath": "Main.java",
+        "line": 13,
+        "method_name": "main"
+    }
+]

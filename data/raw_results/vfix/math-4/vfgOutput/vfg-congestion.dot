@@ -1,0 +1,37 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"114: $r1 = virtualinvoke point.<org.apache.commons.math3.geometry.euclidean.threed.Vector3D: org.apache.commons.math3.geometry.euclidean.threed.Vector3D subtract(org.apache.commons.math3.geometry.Vector)>($r0)" [label=2] [style=bold] [color=red]
+"129: $r1 = (org.apache.commons.math3.geometry.euclidean.threed.Vector3D) point" [label=2] [style=bold]
+"129: $d0 = virtualinvoke this.<org.apache.commons.math3.geometry.euclidean.threed.Line: double getAbscissa(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)>($r1)" [label=2] [style=bold]
+"113: v1D = virtualinvoke $r1.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.threed.Vector3D intersection(org.apache.commons.math3.geometry.euclidean.threed.Line)>($r0)" [label=4] [style=bold] [color=gold]
+"119: $r7 = virtualinvoke $r5.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(v1D)" [label=1]
+"122: $r12 = v1D" [label=1] [color=red]
+"124: $r13 = v1D" [label=1] [color=red]
+"116: $r4 = virtualinvoke $r2.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(v1D)" [label=1] [style=bold]
+"139: $r3 = virtualinvoke $r0.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(end)" [label=0] [style=bold]
+"138: $r2 = virtualinvoke $r0.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(start)" [label=0] [style=bold]
+"56: $r1 = staticinvoke <org.apache.commons.math3.geometry.euclidean.threed.SubLine: org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet buildIntervalSet(org.apache.commons.math3.geometry.euclidean.threed.Vector3D,org.apache.commons.math3.geometry.euclidean.threed.Vector3D)>(start, end)" [label=0] [style=bold]
+"129: $r1 = (org.apache.commons.math3.geometry.euclidean.threed.Vector3D) point"->"129: $d0 = virtualinvoke this.<org.apache.commons.math3.geometry.euclidean.threed.Line: double getAbscissa(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)>($r1)";
+
+"113: v1D = virtualinvoke $r1.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.threed.Vector3D intersection(org.apache.commons.math3.geometry.euclidean.threed.Line)>($r0)"->"119: $r7 = virtualinvoke $r5.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(v1D)" [style=dotted];
+
+"113: v1D = virtualinvoke $r1.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.threed.Vector3D intersection(org.apache.commons.math3.geometry.euclidean.threed.Line)>($r0)"->"122: $r12 = v1D" [style=dotted];
+
+"113: v1D = virtualinvoke $r1.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.threed.Vector3D intersection(org.apache.commons.math3.geometry.euclidean.threed.Line)>($r0)"->"124: $r13 = v1D" [style=dotted];
+
+"113: v1D = virtualinvoke $r1.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.threed.Vector3D intersection(org.apache.commons.math3.geometry.euclidean.threed.Line)>($r0)"->"116: $r4 = virtualinvoke $r2.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(v1D)";
+
+"129: $d0 = virtualinvoke this.<org.apache.commons.math3.geometry.euclidean.threed.Line: double getAbscissa(org.apache.commons.math3.geometry.euclidean.threed.Vector3D)>($r1)"->"114: $r1 = virtualinvoke point.<org.apache.commons.math3.geometry.euclidean.threed.Vector3D: org.apache.commons.math3.geometry.euclidean.threed.Vector3D subtract(org.apache.commons.math3.geometry.Vector)>($r0)";
+
+"119: $r7 = virtualinvoke $r5.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(v1D)"->"129: $r1 = (org.apache.commons.math3.geometry.euclidean.threed.Vector3D) point" [style=dotted];
+
+"116: $r4 = virtualinvoke $r2.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(v1D)"->"129: $r1 = (org.apache.commons.math3.geometry.euclidean.threed.Vector3D) point";
+
+"139: $r3 = virtualinvoke $r0.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(end)"->"129: $r1 = (org.apache.commons.math3.geometry.euclidean.threed.Vector3D) point";
+
+"138: $r2 = virtualinvoke $r0.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(start)"->"129: $r1 = (org.apache.commons.math3.geometry.euclidean.threed.Vector3D) point";
+
+"56: $r1 = staticinvoke <org.apache.commons.math3.geometry.euclidean.threed.SubLine: org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet buildIntervalSet(org.apache.commons.math3.geometry.euclidean.threed.Vector3D,org.apache.commons.math3.geometry.euclidean.threed.Vector3D)>(start, end)"->"139: $r3 = virtualinvoke $r0.<org.apache.commons.math3.geometry.euclidean.threed.Line: org.apache.commons.math3.geometry.euclidean.oned.Vector1D toSubSpace(org.apache.commons.math3.geometry.Vector)>(end)";
+
+}

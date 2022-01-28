@@ -1,0 +1,5 @@
+{
+    "contents": "if (boundingBoxes != null) {\n    int idx = glyphIndex - getFirstChar();\n    if ((idx >= 0) && (idx < boundingBoxes.length)) {\n        bbox = boundingBoxes[idx];\n    }\n}",
+    "original_filepath": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+    "patched_lines": [138]
+}

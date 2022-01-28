@@ -1,0 +1,5 @@
+{
+    "contents": "(channel != null ? channel.getPipeline() : null).get(org.jboss.netty.handler.codec.http.HttpRequestDecoder.class)",
+    "original_filepath": "src/org/traccar/BaseProtocolDecoder.java",
+    "patched_lines": [110]
+}

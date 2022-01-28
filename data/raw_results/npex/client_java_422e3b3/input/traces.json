@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "simpleclient_spring_boot/src/test/java/io/prometheus/client/spring/boot/PrometheusMvcEndpointTest.java",
+        "line": 36,
+        "method_name": "testNameParamIsNull"
+    }
+]

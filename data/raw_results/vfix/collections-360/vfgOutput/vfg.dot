@@ -1,0 +1,8 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"232: $z3 = interfaceinvoke $r2.<java.util.ListIterator: boolean hasNext()>()" [style=bold] [color=red]
+"232: $r2 = this.<org.apache.commons.collections.iterators.FilterListIterator: java.util.ListIterator iterator>" [style=bold] [color=gold]
+"232: $r2 = this.<org.apache.commons.collections.iterators.FilterListIterator: java.util.ListIterator iterator>"->"232: $z3 = interfaceinvoke $r2.<java.util.ListIterator: boolean hasNext()>()";
+
+}

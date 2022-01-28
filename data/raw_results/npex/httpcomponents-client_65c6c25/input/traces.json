@@ -1,0 +1,7 @@
+[
+    {
+        "filepath": "httpclient5-testing/src/test/java/org/apache/hc/client5/testing/sync/TestMinimalClientRequestExecution.java",
+        "line": 111,
+        "method_name": "testNonCompliantURIWithoutContext"
+    }
+]

@@ -1,0 +1,14 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"507: contentPath = virtualinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.util.List getContentPath()>()" [style=bold] [color=gold]
+"526: $i3 = interfaceinvoke contentPath.<java.util.List: int size()>()" [style=bold] [color=red]
+"528: $r1 = interfaceinvoke contentPath.<java.util.List: java.lang.Object get(int)>(i)" [color=red]
+"511: $i1 = interfaceinvoke contentPath.<java.util.List: int size()>()" [color=red]
+"507: contentPath = virtualinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.util.List getContentPath()>()"->"511: $i1 = interfaceinvoke contentPath.<java.util.List: int size()>()" [style=dotted];
+
+"507: contentPath = virtualinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.util.List getContentPath()>()"->"528: $r1 = interfaceinvoke contentPath.<java.util.List: java.lang.Object get(int)>(i)" [style=dotted];
+
+"507: contentPath = virtualinvoke this.<org.apache.felix.framework.BundleRevisionImpl: java.util.List getContentPath()>()"->"526: $i3 = interfaceinvoke contentPath.<java.util.List: int size()>()";
+
+}

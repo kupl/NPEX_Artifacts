@@ -1,0 +1,14 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"66: $d0 = virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: double solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double)>($r0, min, max)" [style=bold]
+"66: $r0 = this.<org.apache.commons.math.analysis.solvers.BisectionSolver: org.apache.commons.math.analysis.UnivariateRealFunction f>" [style=bold] [color=gold]
+"89: fmin = interfaceinvoke f.<org.apache.commons.math.analysis.UnivariateRealFunction: double value(double)>(min)" [style=bold] [color=red]
+"90: fm = interfaceinvoke f.<org.apache.commons.math.analysis.UnivariateRealFunction: double value(double)>(m)" [color=red]
+"66: $r0 = this.<org.apache.commons.math.analysis.solvers.BisectionSolver: org.apache.commons.math.analysis.UnivariateRealFunction f>"->"66: $d0 = virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: double solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double)>($r0, min, max)";
+
+"66: $d0 = virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: double solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double)>($r0, min, max)"->"89: fmin = interfaceinvoke f.<org.apache.commons.math.analysis.UnivariateRealFunction: double value(double)>(min)";
+
+"66: $d0 = virtualinvoke this.<org.apache.commons.math.analysis.solvers.BisectionSolver: double solve(org.apache.commons.math.analysis.UnivariateRealFunction,double,double)>($r0, min, max)"->"90: fm = interfaceinvoke f.<org.apache.commons.math.analysis.UnivariateRealFunction: double value(double)>(m)" [style=dotted];
+
+}

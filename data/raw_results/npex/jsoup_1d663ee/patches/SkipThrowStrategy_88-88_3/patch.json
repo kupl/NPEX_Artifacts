@@ -1,0 +1,5 @@
+{
+    "contents": "if (parent == null) {\n    throw new java.lang.RuntimeException();\n}",
+    "original_filepath": "src/main/java/org/jsoup/nodes/Attribute.java",
+    "patched_lines": [95]
+}

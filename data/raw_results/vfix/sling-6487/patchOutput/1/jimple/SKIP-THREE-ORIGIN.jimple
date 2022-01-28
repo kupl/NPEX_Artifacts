@@ -1,0 +1,55 @@
+    public org.thymeleaf.templateresolver.TemplateResolution resolveTemplate(org.thymeleaf.IEngineConfiguration, java.lang.String, java.lang.String, java.util.Map)
+    {
+        org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolver this;
+        org.thymeleaf.IEngineConfiguration engineConfiguration;
+        java.lang.String ownerTemplate, template;
+        java.util.Map templateResolutionAttributes;
+        org.thymeleaf.templatemode.TemplateMode templateMode;
+        org.thymeleaf.cache.NonCacheableCacheEntryValidity validity;
+        org.apache.sling.scripting.thymeleaf.internal.SlingTemplateResource $r0;
+        boolean $z0, $z1, $z2;
+        org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolverConfiguration $r1;
+        org.thymeleaf.templateresolver.TemplateResolution $r2;
+
+        this := @this: org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolver;
+
+        engineConfiguration := @parameter0: org.thymeleaf.IEngineConfiguration;
+
+        ownerTemplate := @parameter1: java.lang.String;
+
+        template := @parameter2: java.lang.String;
+
+        templateResolutionAttributes := @parameter3: java.util.Map;
+
+        $r0 = new org.apache.sling.scripting.thymeleaf.internal.SlingTemplateResource;
+
+        specialinvoke $r0.<org.apache.sling.scripting.thymeleaf.internal.SlingTemplateResource: void <init>(org.apache.sling.api.resource.Resource)>(null);
+
+        templateMode = virtualinvoke this.<org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolver: org.thymeleaf.templatemode.TemplateMode fakeProvideTemplateMode()>();
+
+        $z0 = virtualinvoke templateMode.<org.thymeleaf.templatemode.TemplateMode: boolean isMarkup()>();
+
+        if $z0 == 0 goto label1;
+
+        $r1 = this.<org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolver: org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolverConfiguration configuration>;
+
+        $z1 = interfaceinvoke $r1.<org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolverConfiguration: boolean useDecoupledLogic()>();
+
+        if $z1 == 0 goto label1;
+
+        $z2 = 1;
+
+        goto label2;
+
+     label1:
+        $z2 = 0;
+
+     label2:
+        validity = <org.thymeleaf.cache.NonCacheableCacheEntryValidity: org.thymeleaf.cache.NonCacheableCacheEntryValidity INSTANCE>;
+
+        $r2 = new org.thymeleaf.templateresolver.TemplateResolution;
+
+        specialinvoke $r2.<org.thymeleaf.templateresolver.TemplateResolution: void <init>(org.thymeleaf.templateresource.ITemplateResource,boolean,org.thymeleaf.templatemode.TemplateMode,boolean,org.thymeleaf.cache.ICacheEntryValidity)>($r0, 0, templateMode, $z2, validity);
+
+        return $r2;
+    }

@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
+    "line": 11,
+    "sink_field": "toLowerCase",
+    "npe_class": "Normalizer",
+    "npe_method": "lowerCase",
+    "jvmti_identify_succeed": true,
+    "deref_field": "input",
+    "nullpointer": "input"
+}

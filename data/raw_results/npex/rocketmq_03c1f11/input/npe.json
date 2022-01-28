@@ -1,0 +1,10 @@
+{
+    "filepath": "client/src/main/java/org/apache/rocketmq/client/impl/factory/MQClientInstance.java",
+    "line": 1218,
+    "sink_field": "consumerRunningInfo",
+    "npe_class": "MQClientInstance",
+    "npe_method": "consumerRunningInfo",
+    "jvmti_identify_succeed": true,
+    "deref_field": "mqConsumerInner",
+    "nullpointer": "mqConsumerInner"
+}

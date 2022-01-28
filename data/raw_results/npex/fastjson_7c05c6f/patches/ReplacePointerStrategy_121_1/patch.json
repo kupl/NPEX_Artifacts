@@ -1,0 +1,5 @@
+{
+    "contents": "(fieldValues != null ? fieldValues : null).put(fieldInfo.name, value)",
+    "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+    "patched_lines": [108]
+}

@@ -1,0 +1,5 @@
+{
+    "contents": "if (line != null) {\n    int equalSign = line.indexOf('=');\n}",
+    "original_filepath": "org/apache/commons/collections/ExtendedProperties.java",
+    "patched_lines": [576]
+}

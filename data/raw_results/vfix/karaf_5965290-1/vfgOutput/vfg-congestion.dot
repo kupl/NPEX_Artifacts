@@ -1,0 +1,8 @@
+digraph "vfg-congestion" {
+    label="vfg-congestion";
+node [shape=box];
+"102: level = virtualinvoke tokenizer.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser$Tokenizer: java.lang.String nextToken(java.lang.String)>("123456789")" [label=1] [style=bold] [color=gold]
+"103: $z0 = virtualinvoke level.<java.lang.String: boolean matches(java.lang.String)>("[123456789]")" [label=1] [style=bold] [color=red]
+"102: level = virtualinvoke tokenizer.<org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser$Tokenizer: java.lang.String nextToken(java.lang.String)>("123456789")"->"103: $z0 = virtualinvoke level.<java.lang.String: boolean matches(java.lang.String)>("[123456789]")";
+
+}

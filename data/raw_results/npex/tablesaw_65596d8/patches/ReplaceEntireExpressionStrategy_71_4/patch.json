@@ -1,0 +1,5 @@
+{
+    "contents": "return original.get(rowNumber) != null ? original.get(rowNumber).equals(temp.get(temp.size() - 1)) : true",
+    "original_filepath": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+    "patched_lines": [72]
+}

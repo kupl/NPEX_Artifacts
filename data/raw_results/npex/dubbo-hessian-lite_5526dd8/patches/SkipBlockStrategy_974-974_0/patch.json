@@ -1,0 +1,5 @@
+{
+    "contents": "if (value != null) {\n    if (!value.equals(entry.getValue())) {\n        hasAndEqual = false;\n        break;\n    }\n}",
+    "original_filepath": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+    "patched_lines": [979]
+}

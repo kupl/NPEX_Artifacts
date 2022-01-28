@@ -1,0 +1,5 @@
+{
+    "contents": "if (end == null) {\n    return true;\n}",
+    "original_filepath": "src/main/java/org/apache/commons/io/IOCase.java",
+    "patched_lines": [212]
+}

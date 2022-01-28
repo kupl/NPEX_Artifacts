@@ -1,0 +1,39 @@
+digraph "CallGraph" {
+    label="CallGraph";
+node [shape=box];
+"2: main" [color=gold] [style=bold]
+"195: checkEndsWith" [color=red] [style=bold]
+"38: <clinit>" [style=bold]
+"195: test_checkEndsWith_functionality" [style=bold]
+"36: public void <init>()" [style=bold]
+"43: <clinit>" [style=bold]
+"97: private void <init>(java.lang.String, int, java.lang.String, boolean)" [style=bold]
+"88: <clinit>" [style=bold]
+"147: isSystemWindows" [style=bold]
+"2: main"->"38: <clinit>";
+
+"2: main"->"195: test_checkEndsWith_functionality";
+
+"2: main"->"36: public void <init>()";
+
+"38: <clinit>"->"38: <clinit>";
+
+"195: test_checkEndsWith_functionality"->"43: <clinit>";
+
+"195: test_checkEndsWith_functionality"->"195: checkEndsWith";
+
+"43: <clinit>"->"43: <clinit>";
+
+"43: <clinit>"->"97: private void <init>(java.lang.String, int, java.lang.String, boolean)";
+
+"43: <clinit>"->"88: <clinit>";
+
+"43: <clinit>"->"147: isSystemWindows";
+
+"88: <clinit>"->"88: <clinit>";
+
+"88: <clinit>"->"147: isSystemWindows";
+
+"147: isSystemWindows"->"88: <clinit>";
+
+}

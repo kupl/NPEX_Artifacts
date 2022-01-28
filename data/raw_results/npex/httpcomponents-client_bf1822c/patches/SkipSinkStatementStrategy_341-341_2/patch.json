@@ -1,0 +1,5 @@
+{
+    "contents": "if (execInterceptors != null) {\n    execInterceptors.add(new org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder.ExecInterceptorEntry(org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder.ExecInterceptorEntry.Postion.FIRST, name, interceptor, null));\n}",
+    "original_filepath": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/async/H2AsyncClientBuilder.java",
+    "patched_lines": [345]
+}

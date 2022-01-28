@@ -1,0 +1,35 @@
+digraph "vfg" {
+    label="vfg";
+node [shape=box];
+"196: endLen = virtualinvoke end.<java.lang.String: int length()>()" [style=bold] [color=red]
+"211: virtualinvoke $r9.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", null)" [style=bold] [color=gold]
+"204: $z8 = virtualinvoke $r8.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("", "")" [style=bold] [color=gold]
+"203: $z7 = virtualinvoke $r7.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("", "ABC")" [style=bold] [color=gold]
+"202: $z6 = virtualinvoke $r6.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "ABCD")" [style=bold] [color=gold]
+"201: $z5 = virtualinvoke $r5.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "C")" [style=bold] [color=gold]
+"200: $z4 = virtualinvoke $r4.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "BC")" [style=bold] [color=gold]
+"199: $z3 = virtualinvoke $r3.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "ABC")" [style=bold] [color=gold]
+"198: $z2 = virtualinvoke $r2.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "AB")" [style=bold] [color=gold]
+"197: $z1 = virtualinvoke $r1.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "A")" [style=bold] [color=gold]
+"196: $z0 = virtualinvoke $r0.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "")" [style=bold] [color=gold]
+"211: virtualinvoke $r9.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", null)"->"196: endLen = virtualinvoke end.<java.lang.String: int length()>()";
+
+"204: $z8 = virtualinvoke $r8.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("", "")"->"196: endLen = virtualinvoke end.<java.lang.String: int length()>()";
+
+"203: $z7 = virtualinvoke $r7.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("", "ABC")"->"196: endLen = virtualinvoke end.<java.lang.String: int length()>()";
+
+"202: $z6 = virtualinvoke $r6.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "ABCD")"->"196: endLen = virtualinvoke end.<java.lang.String: int length()>()";
+
+"201: $z5 = virtualinvoke $r5.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "C")"->"196: endLen = virtualinvoke end.<java.lang.String: int length()>()";
+
+"200: $z4 = virtualinvoke $r4.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "BC")"->"196: endLen = virtualinvoke end.<java.lang.String: int length()>()";
+
+"199: $z3 = virtualinvoke $r3.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "ABC")"->"196: endLen = virtualinvoke end.<java.lang.String: int length()>()";
+
+"198: $z2 = virtualinvoke $r2.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "AB")"->"196: endLen = virtualinvoke end.<java.lang.String: int length()>()";
+
+"197: $z1 = virtualinvoke $r1.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "A")"->"196: endLen = virtualinvoke end.<java.lang.String: int length()>()";
+
+"196: $z0 = virtualinvoke $r0.<org.apache.commons.io.IOCase: boolean checkEndsWith(java.lang.String,java.lang.String)>("ABC", "")"->"196: endLen = virtualinvoke end.<java.lang.String: int length()>()";
+
+}
