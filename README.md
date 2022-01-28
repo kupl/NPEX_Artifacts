@@ -19,6 +19,7 @@ VFix as it is not publically available (we obtained its executable via personal 
 * Data (`~/Workspace/data/`): All experimental data of NPEX, VFix, Genesis.
   * NPEX's learned model (`~/Workspace/data/models_learned`): a set of learned model used in our experiment.
   * NPEX's raw results (`~/Workspace/data/raw_results/npex`)
+  * Patch correctness (`~/Workspace/data/labels`): correctness results that we manually evaluated for NPEX-generated patches.
   * VFix's raw results (`~/Workspace/data/raw_results/vfix`) 
   * Genesis's raw results (`~/Workspace/data/raw_results/genesis`)
 
@@ -30,7 +31,7 @@ reproducing our results require about 150GB.
 Download link for the Docker image: [[here]](link_to_vbox_image) (18 GB)
 Please see [INSTALL.md](./INSTALL.md) for the full installation instructions and basic usage of NPEX.
 
-# Reproducing the Results in the Paper
+# Reproducing Our Results in the Paper
 We provide a python script to reproduce the results of Table 1 in the paper.
 ### Build all benchmarks
 ```
@@ -42,6 +43,7 @@ We expect all commands are executed on `~/Workspace/benchmarks` directory.
 ```
 python3.8 ../scripts/run.py run 
 ```
+The results of NPEX are stored as `result.json` for each bug directory (e.g., `Workspace/benchmarks/Ours/aries-jpa_7712046/result.json').
 This procedures contains all steps of NPEX's patch generation: 
 (1) fault-localization, (2) patch enumeration, (3) specification inference, and (4) patch validation.
 We combine all steps to single script for conveniently reproducing results. 
@@ -51,9 +53,7 @@ For those who want to run NPEX step by step, please see INSTALL.md.
 ```
 python3.8 ../scripts/run.py evaluate 
 ```
-This procedures contains all steps of NPEX's patch generation: 
-(1) fault-localization, (2) patch enumeration, (3) specification inference, and (4) patch validation.
-We combine all steps to single script for conveniently reproducing results. 
-For those who want to run NPEX step by step, please see INSTALL.md.
+This script collects all our results (i.e., patch validation results for each bug) and evaluate the results whether the validated patch is correct or not by `Workspace/data/labels`. The result table is stored at `evaluate.results`. 
+
 
 
