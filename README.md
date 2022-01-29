@@ -24,15 +24,18 @@ VFix as it is not publically available (we obtained its executable via personal 
   * Genesis's raw results (`~/Workspace/data/raw_results/genesis`)
 
 # Download & Installation
-We provide a Docker image containing all resources to reproduce the main results of our paper.
-We have already setup all the environment to run the tools in the image, so we expect no further requirements except hard disk size;
-reproducing our results require about 150GB.
+We have packaged our artifacts in a Docker image containing all resources to reproduce the main results of our paper.
+We have already setup all the environment to run the tool in the image, so we expect no further requirements except for hard disk size;
+about 150GB of storage space is required to fully reproduce our results.
 
-Download link for the Docker image: [[here]](link_to_vbox_image) (18 GB)
+* Download link for the Docker image: [[here]](https://doi.org/10.6084/m9.figshare.19087652.v1) (18 GB)
+* The source codes of NPEX are also available on GitHub: [[here]](https://github.com/kupl/NPEX)
+
+
 Please see [INSTALL.md](./INSTALL.md) for the full installation instructions and basic usage of NPEX.
 
 # Reproducing Our Results in the Paper
-We provide a python script to reproduce the results of Table 1 in the paper.
+We provide a python script to reproduce the results of Table 2 in the paper.
 ### Build all benchmarks
 ```
 cd benchmarks && python3.8 scripts/run.py prepare
