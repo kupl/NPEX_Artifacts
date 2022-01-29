@@ -28,8 +28,23 @@ We have packaged our artifacts in a Docker image containing all resources to rep
 We have already setup all the environment to run the tool in the image, so we expect no further requirements except for hard disk size;
 about 150GB of storage space is required to fully reproduce our results.
 
-* Download link for the Docker image: [[here]](https://doi.org/10.6084/m9.figshare.19087652.v1) (18 GB)
+* Download link for the Docker image: [[here]](https://doi.org/10.6084/m9.figshare.19087652.v1) (20 GB)
 * The source codes of NPEX are also available on GitHub: [[here]](https://github.com/kupl/NPEX)
+
+After downloading the docker image tar (npex-artifacts.tar), please run the following command to load a docker image:
+```
+docker load -i npex-artifacts.tar
+```
+You will get the id of the image on the shell:
+```
+Loaded image ID: sha256:574c743ea07b...
+```
+After then, please run the following command to run a container from the image:
+```
+docker run -e LC_ALL=C.UTF-8 -v /etc/localtime:/etc/localtime:ro -e TZ=Asia/Seoul -it 574c743ea07b /bin/bash
+```
+Please run `git pull` at `~/Workspace` and `~/Workspace/toosl/npex` in the container. We will update it if there is a problem.
+
 
 
 Please see [INSTALL.md](./INSTALL.md) for the full installation instructions and basic usage of NPEX.
