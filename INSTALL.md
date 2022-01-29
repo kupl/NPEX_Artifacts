@@ -1,4 +1,28 @@
-# Build from Source Codes
+# Installation Guides
+## Using a Docker Image
+### Step 1. Download the Image
+We have published our artifact on figshare [(link)](https://doi.org/10.6084/m9.figshare.19087652.v1).
+
+Firstly, please run the following command to download the docker image (`npex-artifacts.tar`) from shell:
+```
+$ wget https://figshare.com/ndownloader/files/33920795
+```
+Now load the image from the artifact tar:
+```
+$ docker load -i npex-artifacts.tar
+```
+Please check the following image id is printed on the shell: `Loaded image ID: sha256:574c743ea07b...`
+
+Finally, run the following command to run a docker container from the image.
+```
+$ docker run -it 574c743ea07b
+```
+
+That's all! You are ready to use our artifact.
+
+## 
+
+## Building NPEX from Source Codes 
 If you want to build NPEX from source codes, please see https://github.com/kupl/npex.
 
 # Running NPEX
