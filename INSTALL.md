@@ -1,6 +1,5 @@
 # Installation Guides
 ## Using a Docker Image
-### Step 1. Download the Image
 We have published our artifact on figshare [(link)](https://doi.org/10.6084/m9.figshare.19087652.v1).
 
 Firstly, please run the following command to download the docker image (`npex-artifacts.tar`) from shell:
@@ -22,10 +21,16 @@ That's all! You are ready to use our artifact.
 
 ## 
 
-## Building NPEX from Source Codes 
-If you want to build NPEX from source codes, please see https://github.com/kupl/npex.
+## Building NPEX from Source Codes
+The NPEX source codes are avilable on the GitHub repository: https://github.com/kupl/npex.
 
-# Running NPEX
+If you want to build NPEX from source codes, first clone the source codes:
+```
+$ git clone https://github.com/kupl/NPEX --recursive
+```
+For further instructions, please see the repository!
+
+# Getting Started
 We explain how use NPEX to fix a given NPE.
 Let's consider fixing NPE in [aries-jpa_7712046](benchmarks/Ours/aries-jpa_7712046).
 If you type ```mvn test``` at the project, the test will fail with NPE.
