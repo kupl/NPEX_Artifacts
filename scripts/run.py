@@ -27,6 +27,7 @@ def check_build(target: Target):
     utils.remove_if_exists(f"{target.bug_dir}/infer-out-reduced")
 
     utils.execute(f"{NPEX_analyzer_script} --capture", dir=target.bug_dir)
+    utils.execute(f"{NPEX_analyzer_script} --capture", dir=target.bug_dir)
     is_captured = utils.execute(f"{INFER} npex", dir=target.bug_dir).return_code == 0
 
     utils.execute(f"{NPEX_CMD} build {target.bug_dir}", dir=target.bug_dir)
