@@ -50,16 +50,20 @@ Please see [INSTALL.md](./INSTALL.md) for the full installation instructions and
 
 # Reproducing Our Results in the Paper
 We provide a python script to reproduce the results of Table 2 in the paper.
+We expect all commands are executed on `~/Workspace` directory.
+
 ### Build all benchmarks
 ```
 python3.8 scripts/run.py prepare
 ```
-We expect all commands are executed on `~/Workspace` directory.
+All benchmarks should be successfully built in this procedure.
 
 ### Running NPEX
 ```
 python3.8 scripts/run.py run 
 ```
+This procedure takes quite a long time since we have 119 benchmarks.
+
 The results of NPEX are stored as `result.json` for each bug directory (e.g., `Workspace/benchmarks/Ours/aries-jpa_7712046/result.json').
 This procedures contains all steps of NPEX's patch generation: 
 (1) fault-localization, (2) patch enumeration, (3) specification inference, and (4) patch validation.
