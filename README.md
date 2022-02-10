@@ -43,9 +43,8 @@ After then, please run the following command to run a container from the image:
 ```
 docker run -e LC_ALL=C.UTF-8 -v /etc/localtime:/etc/localtime:ro -e TZ=Asia/Seoul -it 574c743ea07b /bin/bash
 ```
-Please run `git pull` at `~/Workspace` and `~/Workspace/toosl/npex` in the container. We will update it if there is a problem.
-
-
+Please run `cd ~/Workspace/; git pull; cd tools/npex; git pull; cd npex-analyzer; git pull; make` in the container.
+We will update our repositories if there is a problem.
 
 Please see [INSTALL.md](./INSTALL.md) for the full installation instructions and basic usage of NPEX.
 
@@ -53,13 +52,13 @@ Please see [INSTALL.md](./INSTALL.md) for the full installation instructions and
 We provide a python script to reproduce the results of Table 2 in the paper.
 ### Build all benchmarks
 ```
-cd benchmarks && python3.8 scripts/run.py prepare
+python3.8 scripts/run.py prepare
 ```
-We expect all commands are executed on `~/Workspace/benchmarks` directory.
+We expect all commands are executed on `~/Workspace` directory.
 
 ### Running NPEX
 ```
-python3.8 ../scripts/run.py run 
+python3.8 scripts/run.py run 
 ```
 The results of NPEX are stored as `result.json` for each bug directory (e.g., `Workspace/benchmarks/Ours/aries-jpa_7712046/result.json').
 This procedures contains all steps of NPEX's patch generation: 
@@ -69,7 +68,7 @@ For those who want to run NPEX step by step, please see INSTALL.md.
 
 ### Generating Table
 ```
-python3.8 ../scripts/run.py evaluate 
+python3.8 scripts/run.py evaluate 
 ```
 This script collects all our results (i.e., patch validation results for each bug) and evaluate the results whether the validated patch is correct or not by `Workspace/data/labels`. The result table is stored at `evaluate.results`. 
 
