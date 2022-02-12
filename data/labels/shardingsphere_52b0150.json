@@ -6,7 +6,7 @@
             "original_filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
             "patched_line": 130,
             "strategy": "SkipReturnStrategy",
-            "patch_id": "SkipReturnStrategy_129-129_5--2--2"
+            "patch_id": "SkipReturnStrategy_129-129_5"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.TEST_FAIL",
@@ -19,7 +19,7 @@
             "original_filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
             "patched_line": 130,
             "strategy": "SkipBlockStrategy",
-            "patch_id": "SkipBlockStrategy_129-129_0--3--3"
+            "patch_id": "SkipBlockStrategy_129-129_0"
         },
         "label": "LabelOverall.CORRECT",
         "detail": "LabelDetail.MANUAL_CORRECT",
@@ -32,7 +32,7 @@
             "original_filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
             "patched_line": 130,
             "strategy": "SkipContinueStrategy",
-            "patch_id": "SkipContinueStrategy_129-129_1--4--4"
+            "patch_id": "SkipContinueStrategy_129-129_3"
         },
         "label": "LabelOverall.CORRECT",
         "detail": "LabelDetail.MANUAL_CORRECT",
@@ -45,7 +45,7 @@
             "original_filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
             "patched_line": 130,
             "strategy": "SkipBreakStrategy",
-            "patch_id": "SkipBreakStrategy_129-128_2--5--5"
+            "patch_id": "SkipBreakStrategy_129-128_1"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.MANUAL_INCORRECT",
@@ -58,7 +58,7 @@
             "original_filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
             "patched_line": 130,
             "strategy": "ReplaceEntireExpressionStrategy",
-            "patch_id": "ReplaceEntireExpressionStrategy_129_0--6--6"
+            "patch_id": "ReplaceEntireExpressionStrategy_129_1"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.COMPILE_FAIL",
@@ -71,10 +71,36 @@
             "original_filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
             "patched_line": 130,
             "strategy": "SkipReturnStrategy",
-            "patch_id": "SkipReturnStrategy_129-129_4--7--7"
+            "patch_id": "SkipReturnStrategy_129-129_4--7--7--2--2"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_52b0150",
+        "patch": {
+            "contents": "if (metaData.getRuleSchemaMetaData().getSchemaMetaData().get(each.getLogicName()) == null) {\n    return java.util.Collections.emptyList();\n}",
+            "original_filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
+            "patched_line": 130,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_129-129_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "description": null
+    },
+    {
+        "bug_id": "shardingsphere_52b0150",
+        "patch": {
+            "contents": "result.add(metaData.getRuleSchemaMetaData().getSchemaMetaData().get(each.getLogicName()) != null ? new org.apache.shardingsphere.infra.executor.sql.context.PrimaryKeyMetaData(each.getLogicName(), metaData.getRuleSchemaMetaData().getSchemaMetaData().get(each.getLogicName()).getPrimaryKeyColumns()) : null)",
+            "original_filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
+            "patched_line": 130,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_129_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
         "description": null
     }
 ]

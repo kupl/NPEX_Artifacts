@@ -1,0 +1,5 @@
+bug_id,label,detail,description,patch_id
+easy-rules_72d7bff,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipSinkStatementStrategy_59-59_0
+easy-rules_72d7bff,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_59-59_1
+easy-rules_72d7bff,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,SkipReturnStrategy_59-59_2
+easy-rules_72d7bff,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_59_0

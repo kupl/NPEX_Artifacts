@@ -128,5 +128,96 @@
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.COMPILE_FAIL",
         "description": null
+    },
+    {
+        "bug_id": "pdfbox-2812",
+        "patch": {
+            "contents": "org.apache.pdfbox.pdmodel.common.PDStream iccData = (pdCS.getPDStream() != null) ? pdCS.getPDStream() : new org.apache.pdfbox.pdmodel.common.PDStream()",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+            "patched_line": 256,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_249_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2812",
+        "patch": {
+            "contents": "if (pdCS.getPDStream() == null) {\n    return null;\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+            "patched_line": 256,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_249-249_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2812",
+        "patch": {
+            "contents": "if (pdCS.getPDStream() != null) {\n    org.apache.pdfbox.pdmodel.common.PDStream iccData = pdCS.getPDStream();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+            "patched_line": 256,
+            "strategy": "SkipSinkStatementStrategy",
+            "patch_id": "SkipSinkStatementStrategy_249-249_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2812",
+        "patch": {
+            "contents": "if (pdCS.getPDStream() == null) {\n    throw new java.io.IOException();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+            "patched_line": 256,
+            "strategy": "SkipThrowStrategy",
+            "patch_id": "SkipThrowStrategy_249-249_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2812",
+        "patch": {
+            "contents": "if (pdCS.getPDStream() == null) {\n    return new org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace();\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+            "patched_line": 256,
+            "strategy": "SkipReturnStrategy",
+            "patch_id": "SkipReturnStrategy_249-249_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2812",
+        "patch": {
+            "contents": "org.apache.pdfbox.pdmodel.common.PDStream iccData = (pdCS.getPDStream() != null) ? pdCS.getPDStream() : null",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+            "patched_line": 256,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_249_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "pdfbox-2812",
+        "patch": {
+            "contents": "if (pdCS.getPDStream() != null) {\n    java.awt.color.ICC_ColorSpace ics = ((java.awt.color.ICC_ColorSpace) (cs));\n    org.apache.pdfbox.pdmodel.graphics.color.PDICCBased pdCS = new org.apache.pdfbox.pdmodel.graphics.color.PDICCBased(doc);\n    retval = pdCS;\n    org.apache.pdfbox.cos.COSArray ranges = new org.apache.pdfbox.cos.COSArray();\n    for (int i = 0; i < cs.getNumComponents(); i++) {\n        ranges.add(new org.apache.pdfbox.cos.COSFloat(ics.getMinValue(i)));\n        ranges.add(new org.apache.pdfbox.cos.COSFloat(ics.getMaxValue(i)));\n    }\n    org.apache.pdfbox.pdmodel.common.PDStream iccData = pdCS.getPDStream();\n    java.io.OutputStream output = null;\n    try {\n        output = iccData.createOutputStream();\n        output.write(ics.getProfile().getData());\n    } finally {\n        if (output != null) {\n            output.close();\n        }\n    }\n    pdCS.setNumberOfComponents(cs.getNumComponents());\n}",
+            "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+            "patched_line": 248,
+            "strategy": "SkipBlockStrategy",
+            "patch_id": "SkipBlockStrategy_240-263_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
     }
 ]

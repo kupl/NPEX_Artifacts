@@ -11,4 +11,11 @@
 | pdfbox-2812 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | InitPointerStrategy_253-253_2         |
 | pdfbox-2812 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_253_0          |
 | pdfbox-2812 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipReturnStrategy_253-253_6          |
+| pdfbox-2812 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | ReplacePointerStrategy_249_1          |
+| pdfbox-2812 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipReturnStrategy_249-249_3          |
+| pdfbox-2812 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipSinkStatementStrategy_249-249_1   |
+| pdfbox-2812 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | SkipThrowStrategy_249-249_2           |
+| pdfbox-2812 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipReturnStrategy_249-249_4          |
+| pdfbox-2812 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL    |             | ReplacePointerStrategy_249_0          |
+| pdfbox-2812 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL |             | SkipBlockStrategy_240-263_0           |
 + ----------------------------------------------------------------------------------------------------------------------- +

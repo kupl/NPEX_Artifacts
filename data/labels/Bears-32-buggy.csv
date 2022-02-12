@@ -6,4 +6,4 @@ Bears-32-buggy,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,SkipSinkStatem
 Bears-32-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,ReplaceEntireExpressionStrategy_282_4
 Bears-32-buggy,LabelOverall.CORRECT,LabelDetail.MANUAL_CORRECT,,SkipReturnStrategy_282-282_2
 Bears-32-buggy,LabelOverall.OVERFITTING,LabelDetail.COMPILE_FAIL,,ReplacePointerStrategy_282_1
-Bears-32-buggy,LabelOverall.OVERFITTING,LabelDetail.MANUAL_INCORRECT,,ReplacePointerStrategy_282_0
+Bears-32-buggy,LabelOverall.OVERFITTING,LabelDetail.TEST_FAIL,,ReplacePointerStrategy_282_0

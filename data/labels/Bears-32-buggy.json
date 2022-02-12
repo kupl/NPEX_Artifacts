@@ -100,7 +100,7 @@
             "patch_id": "ReplacePointerStrategy_282_0"
         },
         "label": "LabelOverall.OVERFITTING",
-        "detail": "LabelDetail.MANUAL_INCORRECT",
+        "detail": "LabelDetail.TEST_FAIL",
         "description": null
     }
 ]

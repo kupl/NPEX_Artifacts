@@ -6,7 +6,7 @@
             "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
             "patched_line": 367,
             "strategy": "SkipReturnParam",
-            "patch_id": "SkipReturnParam_368-418_3"
+            "patch_id": "SkipReturnParam_368-418_2"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.TEST_FAIL",
@@ -19,7 +19,7 @@
             "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
             "patched_line": 402,
             "strategy": "ReplaceEntireExpressionStrategy",
-            "patch_id": "ReplaceEntireExpressionStrategy_419_3"
+            "patch_id": "ReplaceEntireExpressionStrategy_419_5"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.TEST_FAIL",
@@ -71,7 +71,7 @@
             "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
             "patched_line": 402,
             "strategy": "npex.synthesizer.strategy.InitPointerStrategyObject",
-            "patch_id": "npex.synthesizer.strategy.InitPointerStrategyObject_418-418_2"
+            "patch_id": "InitPointerStrategy_418-418_4"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.TEST_FAIL",
@@ -84,7 +84,7 @@
             "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
             "patched_line": 402,
             "strategy": "ReplaceEntireExpressionStrategy",
-            "patch_id": "ReplaceEntireExpressionStrategy_419_6"
+            "patch_id": "ReplaceEntireExpressionStrategy_419_10"
         },
         "label": "LabelOverall.CORRECT",
         "detail": "LabelDetail.MANUAL_CORRECT",
@@ -97,7 +97,7 @@
             "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
             "patched_line": 402,
             "strategy": "ReplaceEntireExpressionStrategy",
-            "patch_id": "ReplaceEntireExpressionStrategy_419_0"
+            "patch_id": "ReplaceEntireExpressionStrategy_419_8"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.TEST_FAIL",
@@ -123,7 +123,59 @@
             "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
             "patched_line": 402,
             "strategy": "ReplaceEntireExpressionStrategy",
-            "patch_id": "ReplaceEntireExpressionStrategy_419_5"
+            "patch_id": "ReplaceEntireExpressionStrategy_419_9"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders != null ? inHeaders.getAlgorithm() : null)",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_419_7"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "(inHeaders != null ? inHeaders : null).getAlgorithm()",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_419_0"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders != null ? inHeaders.getAlgorithm() : \"NULL\")",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_419_6"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "cxf_aebfb0d",
+        "patch": {
+            "contents": "if (inHeaders == null) {\n    inHeaders = null;\n}",
+            "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+            "patched_line": 402,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_418-418_3"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.TEST_FAIL",
