@@ -40,7 +40,6 @@
 | aries-jpa_7712046                    | Ours    | CORRECT   | 27       | 0.65          | 206.19           | OFit      |
 | async-http-client_86948f6            | Ours    | CORRECT   | 10       | 3.32          | 82.52            | Corr      |
 | avro_a7a43da                         | Ours    | NO_PATCH  | 7        | 10.92         | 180.06           | OFit      |
-| chart-2                              | Ours    | NO_PATCH  | 9        | 5.55          | 16.06            | OFit      |
 | client_java_422e3b3                  | Ours    | INCORRECT | 9        | 1.54          | 53.54            | OFit      |
 | commons-bcel_1faf7d9                 | Ours    | INCORRECT | 11       | 718.66        | 886.35           | NoPatch   |
 | commons-collections_a270ff6          | Ours    | NO_PATCH  | 7        | 0.00          | 0.00             | OFit      |
@@ -69,8 +68,6 @@
 | logging-log4j2_2d266d9               | Ours    | INCORRECT | 6        | 9.55          | 126.32           | OFit      |
 | logging-log4j2_cd881ce               | Ours    | INCORRECT | 11       | 10.64         | 193.54           | OFit      |
 | logging-log4j2_d1c02ee               | Ours    | CORRECT   | 18       | 13.89         | 387.32           | OFit      |
-| math-70                              | Ours    | NO_PATCH  | 20       | 2.64          | 34.63            | OFit      |
-| math-79                              | Ours    | NO_PATCH  | 7        | 2.20          | 9.61             | OFit      |
 | maven-doxia_16836d8                  | Ours    | INCORRECT | 7        | 2.27          | 47.73            | NoPatch   |
 | maven-release_6b1f658                | Ours    | INCORRECT | 19       | 1.76          | 174.47           | Corr      |
 | maven-surefire_08163fa               | Ours    | INCORRECT | 18       | 1.32          | 140.55           | NoPatch   |
@@ -79,16 +76,13 @@
 | nutz_c8a9e83                         | Ours    | NO_PATCH  | 30       | 7.20          | 146.49           | OFit      |
 | opengrok_6a95adb                     | Ours    | INCORRECT | 6        | 4.75          | 23.92            | NoPatch   |
 | opennlp_cb6ee2c                      | Ours    | CORRECT   | 11       | 4.54          | 274.43           | Corr      |
-| pdfbox-2266                          | Ours    | INCORRECT | 8        | 3.84          | 16.32            | OFit      |
-| pdfbox-2812                          | Ours    | INCORRECT | 17       | 3.61          | 37.60            | NoPatch   |
-| pdfbox-2951                          | Ours    | INCORRECT | 10       | 3.82          | 20.39            | OFit      |
 | pdfbox_bdab232                       | Ours    | CORRECT   | 13       | 8.90          | 297.17           | Corr      |
 | picocli_758f4c0                      | Ours    | INCORRECT | 9        | 1.03          | 56.78            | NoPatch   |
 | qpid-proton-j_6422e24                | Ours    | NO_PATCH  | 21       | 6.72          | 186.97           | OFit      |
 | qpid-proton-j_87ec94b                | Ours    | INCORRECT | 11       | 3.90          | 63.25            | Corr      |
 | rocketmq_03c1f11                     | Ours    | CORRECT   | 12       | 8.73          | 91.48            | Corr      |
 | shardingsphere_48237c8               | Ours    | NO_PATCH  | 9        | 34.55         | 849.71           | OFit      |
-| shardingsphere_52b0150               | Ours    | NO_PATCH  | 7        | 34.56         | 785.82           | OFit      |
+| shardingsphere_52b0150               | Ours    | INCORRECT | 7        | 34.56         | 785.82           | OFit      |
 | shardingsphere_e46f68d               | Ours    | CORRECT   | 11       | 30.40         | 1210.82          | Corr      |
 | shiro_3ca513f                        | Ours    | CORRECT   | 8        | 1.84          | 118.51           | OFit      |
 | sling-org-apache-sling-pipes_674819d | Ours    | CORRECT   | 21       | 0.50          | 99.98            | Corr      |
@@ -99,6 +93,7 @@
 | chart-14                             | VFix    | CORRECT   | 10       | 4.90          | 31.98            | OFit      |
 | chart-15                             | VFix    | CORRECT   | 11       | 40.00         | 292.32           | OFit      |
 | chart-16                             | VFix    | INCORRECT | 13       | 4.69          | 33.54            | OFit      |
+| chart-2                              | VFix    | NO_PATCH  | 9        | 5.55          | 16.06            | OFit      |
 | chart-25                             | VFix    | NO_PATCH  | 8        | 0.00          | 0.00             | Corr      |
 | chart-26                             | VFix    | CORRECT   | 16       | 4.69          | 44.89            | OFit      |
 | chart-4                              | VFix    | CORRECT   | 10       | 6.10          | 36.47            | OFit      |
@@ -112,8 +107,13 @@
 | lang-47                              | VFix    | CORRECT   | 17       | 1.05          | 37.17            | OFit      |
 | lang-57                              | VFix    | INCORRECT | 11       | 1.12          | 19.30            | OFit      |
 | math-4                               | VFix    | CORRECT   | 26       | 6.76          | 57.47            | OFit      |
+| math-70                              | VFix    | NO_PATCH  | 20       | 2.64          | 34.63            | OFit      |
+| math-79                              | VFix    | NO_PATCH  | 7        | 2.20          | 9.61             | OFit      |
+| pdfbox-2266                          | VFix    | INCORRECT | 8        | 3.84          | 16.32            | OFit      |
 | pdfbox-2477                          | VFix    | CORRECT   | 5        | 1.72          | 13.67            | Corr      |
+| pdfbox-2812                          | VFix    | INCORRECT | 17       | 3.61          | 37.60            | NoPatch   |
 | pdfbox-2948                          | VFix    | CORRECT   | 10       | 3.82          | 27.37            | Corr      |
+| pdfbox-2951                          | VFix    | INCORRECT | 10       | 3.82          | 20.39            | OFit      |
 | pdfbox-2965                          | VFix    | CORRECT   | 10       | 3.97          | 24.86            | Corr      |
 | pdfbox-2995                          | VFix    | CORRECT   | 11       | 3.55          | 27.32            | OFit      |
 | pdfbox-3479                          | VFix    | NO_PATCH  | 14       | 0.00          | 0.00             | Corr      |
