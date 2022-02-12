@@ -21,6 +21,7 @@ NPEX_CMD = f"{JAVA_15} --enable-preview -cp {NPEX_JAR} npex.driver.Main"
 
 
 vfix_benches = [
+        "chart-2", "math-70", "math-79", "pdfbox-2266", "pdfbox-2812", "pdfbox-2951",
     "chart-14", "chart-15", "chart-16", "chart-25", "chart-26", "chart-4", "collections-360", "collections-39",
     "felix-4960", "felix-5464", "lang-20", "lang-33", "lang-39", "lang-47", "lang-57", "math-4", "pdfbox-2477",
     "pdfbox-2948", "pdfbox-2965", "pdfbox-2995", "pdfbox-3479", "pdfbox-3572", "sling-4982", "sling-6487"
