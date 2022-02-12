@@ -8,10 +8,10 @@ as additional inputs for patch validation.
 The key idea of NPEX is to learn a statistical model that predicts how developers would handle
 NPEs by mining null-handling patterns from existing codebases, and to use a variant of
 symbolic execution that can infer the repair specification from the buggy program using the model.
-For more technical details, please consult our [paper](link_to_paper).
+For more technical details, please consult our paper.
 
 # Contents of the Artifact
-The artifact (provided in form of an VirtualBox image) contains the following:
+The artifact contains the following:
 * Benchmarks (`~/Workspace/benchmarks/`): all the benchmarks we used in our paper's experiment.
 * Tools (`~/Workspace/tools/`): A source code of our tool (NPEX) and a modified version of Genesis in binary (JAR). We could not provide
 VFix as it is not publically available (we obtained its executable via personal contacts with the authors).
@@ -43,8 +43,7 @@ After then, please run the following command to run a container from the image:
 ```
 docker run -e LC_ALL=C.UTF-8 -v /etc/localtime:/etc/localtime:ro -e TZ=Asia/Seoul -it 574c743ea07b /bin/bash
 ```
-Please run `cd ~/Workspace/; git pull; cd tools/npex; git pull; cd npex-analyzer; git pull; make` in the container.
-We will update our repositories if there is a problem.
+
 
 Please see [INSTALL.md](./INSTALL.md) for the full installation instructions and basic usage of NPEX.
 
@@ -64,7 +63,7 @@ python3.8 scripts/run.py run
 ```
 This procedure takes quite a long time since we have 119 benchmarks.
 
-The results of NPEX are stored as `result.json` for each bug directory (e.g., `Workspace/benchmarks/Ours/aries-jpa_7712046/result.json').
+The results of NPEX are stored as `result.json` for each bug directory (e.g., `~/Workspace/benchmarks/Ours/aries-jpa_7712046/result.json').
 This procedures contains all steps of NPEX's patch generation: 
 (1) fault-localization, (2) patch enumeration, (3) specification inference, and (4) patch validation.
 We combine all steps to single script for conveniently reproducing results. 
