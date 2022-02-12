@@ -1,5 +1,5 @@
 {
-    "contents": "(execInterceptors != null ? execInterceptors : new java.util.LinkedList()).add(new org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder.ExecInterceptorEntry(org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder.ExecInterceptorEntry.Postion.FIRST, name, interceptor, null))",
+    "contents": "(execInterceptors != null ? execInterceptors : null).add(new org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder.ExecInterceptorEntry(org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder.ExecInterceptorEntry.Postion.FIRST, name, interceptor, null))",
     "original_filepath": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/async/H2AsyncClientBuilder.java",
     "patched_lines": [345]
 }

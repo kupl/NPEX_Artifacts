@@ -1,0 +1,5 @@
+{
+    "contents": "if (fieldValues != null) {\n    fieldObject = fieldInfo.field.get(object);\n    if (fieldObject == null) {\n        fieldObject = ((com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer) (fieldValueDeser)).createInstance(parser, fieldInfo.fieldType);\n        fieldDeser.setValue(object, fieldObject);\n    }\n    lexer.nextTokenWithColon(defaultFieldDeserializer.getFastMatchToken());\n    unwrappedFieldDeser.parseField(parser, fieldObject, objectType, fieldValues);\n    fieldIndex = i;\n}",
+    "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+    "patched_lines": [1143]
+}

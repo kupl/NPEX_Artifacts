@@ -1,5 +1,5 @@
 {
-    "contents": "if (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) == null) {\n    return null;\n}",
+    "contents": "if (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) == null) {\n    return java.lang.Object.class;\n}",
     "original_filepath": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
     "patched_lines": [77]
 }

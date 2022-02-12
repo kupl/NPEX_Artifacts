@@ -1,0 +1,5 @@
+{
+    "contents": "matrix.transformPoint(rect != null ? rect.getWidth() : 0.0F, rect.getHeight())",
+    "original_filepath": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+    "patched_lines": [132]
+}

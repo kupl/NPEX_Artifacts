@@ -1,5 +1,5 @@
 {
-    "contents": "if (level != null ? !level.matches(\"[123456789]\") : false) {\n    visitor.text(\"h\" + level);\n    return;\n}",
+    "contents": "!(level != null ? level.matches(\"[123456789]\") : false)",
     "original_filepath": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
     "patched_lines": [104]
 }

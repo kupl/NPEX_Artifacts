@@ -1296,7 +1296,7 @@ public void processConnectRequest(org.apache.zookeeper.server.ServerCnxn cnxn, j
     long sessionId = connReq.getSessionId();
     int tokensNeeded = 1;
     if (/* NPEX_PATCH_BEGINS */
-    (connThrottle != null ? connThrottle : new org.apache.zookeeper.server.BlueThrottle()).isConnectionWeightEnabled()) {
+    (connThrottle != null ? connThrottle : null).isConnectionWeightEnabled()) {
         if (sessionId == 0) {
             if (localSessionEnabled) {
                 tokensNeeded = connThrottle.getRequiredTokensForLocal();

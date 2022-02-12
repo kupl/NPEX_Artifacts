@@ -84,6 +84,7 @@ public class KMeansPlusPlusClusterer<T extends Clusterable<T>> {
      * @param clusters the {@link Cluster}s to add the points to
      * @param points the points to add to the given {@link Cluster}s
      */
+    private static <T extends Clusterable<T>> void
 /**
  * Adds the given points to the closest {@link Cluster}.
  *

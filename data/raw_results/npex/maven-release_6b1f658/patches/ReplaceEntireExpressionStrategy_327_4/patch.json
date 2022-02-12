@@ -1,0 +1,5 @@
+{
+    "contents": "return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy != null ? policy.getReleaseVersion(request).getVersion() : \"\"",
+    "original_filepath": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+    "patched_lines": [324]
+}

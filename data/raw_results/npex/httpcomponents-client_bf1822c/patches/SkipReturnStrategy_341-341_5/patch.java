@@ -343,7 +343,7 @@ public final org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder addExecI
     org.apache.hc.core5.util.Args.notNull(interceptor, "Interceptor");
     /* NPEX_PATCH_BEGINS */
     if (execInterceptors == null) {
-        return null;
+        return new org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder();
     }
     execInterceptors.add(new org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder.ExecInterceptorEntry(org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder.ExecInterceptorEntry.Postion.FIRST, name, interceptor, null));
     return this;

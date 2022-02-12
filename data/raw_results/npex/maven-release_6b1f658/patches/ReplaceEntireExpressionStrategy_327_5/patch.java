@@ -321,7 +321,7 @@ private java.lang.String resolveSuggestedVersion(java.lang.String baseVersion, j
     org.apache.maven.shared.release.policy.version.VersionPolicy policy = versionPolicies.get(policyId);
     org.apache.maven.shared.release.policy.version.VersionPolicyRequest request = new org.apache.maven.shared.release.policy.version.VersionPolicyRequest().setVersion(baseVersion);
     /* NPEX_PATCH_BEGINS */
-    return policy != null ? convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy.getReleaseVersion(request).getVersion() : "null";
+    return convertToSnapshot ? policy.getDevelopmentVersion(request).getVersion() : policy != null ? policy.getReleaseVersion(request).getVersion() : "null";
 }
 
     private String getDevelopmentVersion( String projectId, ReleaseDescriptor releaseDescriptor )

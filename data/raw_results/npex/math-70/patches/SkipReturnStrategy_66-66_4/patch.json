@@ -1,0 +1,5 @@
+{
+    "contents": "if (f == null) {\n    return 1.0;\n}",
+    "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+    "patched_lines": [69]
+}

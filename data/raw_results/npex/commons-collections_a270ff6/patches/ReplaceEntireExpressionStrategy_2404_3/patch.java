@@ -2396,7 +2396,7 @@ public void remove() {
         subtree = subtree(prefix, offset, lengthInBits);
     }
     /* NPEX_PATCH_BEGINS */
-    if (lengthInBits >= (subtree != null ? subtree.bitIndex : 1)) {
+    if (lengthInBits >= (subtree != null ? subtree.bitIndex : -1)) {
         lastOne = true;
     }
 }

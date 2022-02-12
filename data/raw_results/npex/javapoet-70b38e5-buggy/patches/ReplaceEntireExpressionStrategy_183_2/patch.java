@@ -181,7 +181,7 @@ public void wildcardMirrorSuperType() throws java.lang.Exception {
     javax.lang.model.type.TypeMirror string = elements.getTypeElement(java.lang.String.class.getName()).asType();
     javax.lang.model.type.WildcardType wildcard = types.getWildcardType(null, string);
     /* NPEX_PATCH_BEGINS */
-    com.squareup.javapoet.TypeName type = (wildcard != null) ? com.squareup.javapoet.TypeName.get(wildcard) : new com.squareup.javapoet.TypeName();
+    com.squareup.javapoet.TypeName type = (wildcard != null) ? com.squareup.javapoet.TypeName.get(wildcard) : null;
     com.google.common.truth.Truth.assertThat(type.toString()).isEqualTo("? super java.lang.String");
 }
 

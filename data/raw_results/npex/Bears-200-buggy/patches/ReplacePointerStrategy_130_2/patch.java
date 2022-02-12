@@ -137,6 +137,6 @@ public enum ErrorCode {
  */
 public org.axonframework.common.AxonException convert(java.lang.String source, java.lang.Throwable throwable) {
     return convert(/* NPEX_PATCH_BEGINS */
-    org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source != null ? source : "", throwable));
+    org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(source != null ? source : "NULL", throwable));
 }
 }

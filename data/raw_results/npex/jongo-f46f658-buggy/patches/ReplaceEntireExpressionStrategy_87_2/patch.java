@@ -82,8 +82,8 @@ public class JacksonObjectIdUpdater implements ObjectIdUpdater {
     }
     
 private static boolean isObjectId(com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition property) {
-    /* NPEX_PATCH_BEGINS */
-    boolean isObjectId = ((property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.ObjectId.class) != null) || (property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.MongoObjectId.class) != null)) || (property.getField() != null ? org.bson.types.ObjectId.class.isAssignableFrom(property.getField().getRawType()) : true);
+    boolean isObjectId = ((property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.ObjectId.class) != null) || (property.getPrimaryMember().getAnnotation(org.jongo.marshall.jackson.oid.MongoObjectId.class) != null)) || /* NPEX_PATCH_BEGINS */
+    org.bson.types.ObjectId.class.isAssignableFrom(property.getField() != null ? property.getField().getRawType() : java.lang.Object.class);
     return isObjectId;
 }
     

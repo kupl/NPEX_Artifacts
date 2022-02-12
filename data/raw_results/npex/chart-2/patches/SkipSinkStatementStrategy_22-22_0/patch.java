@@ -20,7 +20,7 @@ public static void testBug2849731_2() {
     org.jfree.data.Range r = org.jfree.data.general.DatasetUtilities.iterateDomainBounds(d);
     /* NPEX_PATCH_BEGINS */
     if (r != null) {
-        if (Main.eql(1.0, r.getLowerBound())) {
+        if (Main.eql(1.0, r.getLowerBound(), Main)) {
             java.lang.System.out.println("PASS");
         } else {
             Main.pass = false;

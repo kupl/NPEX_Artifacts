@@ -1,5 +1,5 @@
 {
-    "contents": "if (worldObjects == null) {\n    return null;\n}",
+    "contents": "if (worldObjects == null) {\n    return java.util.Collections.emptyList();\n}",
     "original_filepath": "src/main/java/hu/oe/nik/szfmv/detector/classes/Detector.java",
     "patched_lines": [64]
 }

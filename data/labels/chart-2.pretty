@@ -1,10 +1,13 @@
 + ---------------------------------------------------------------------------------------------------------------------- +
 | bug_id  | label                    | detail                       | description | patch_id                             |
 + ---------------------------------------------------------------------------------------------------------------------- +
-| chart-2 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_22_1 |
-| chart-2 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_22_3 |
-| chart-2 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_22-22_1           |
+| chart-2 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_22_6 |
+| chart-2 | LabelOverall.OVERFITTING | LabelDetail.MANUAL_INCORRECT |             | SkipReturnStrategy_22-22_2           |
 | chart-2 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | SkipSinkStatementStrategy_22-22_0    |
+| chart-2 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_22_5 |
+| chart-2 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_22_4 |
 | chart-2 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_22_2 |
-| chart-2 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_22_0 |
+| chart-2 | LabelOverall.OVERFITTING | LabelDetail.COMPILE_FAIL     |             | InitPointerStrategy_22-22_1          |
+| chart-2 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplaceEntireExpressionStrategy_22_3 |
+| chart-2 | LabelOverall.OVERFITTING | LabelDetail.TEST_FAIL        |             | ReplacePointerStrategy_22_0          |
 + ---------------------------------------------------------------------------------------------------------------------- +

@@ -1,5 +1,5 @@
 {
-    "contents": "(block != null ? block : new com.puppycrawl.tools.checkstyle.api.DetailAST()).getLineNo()",
+    "contents": "(block != null ? block : null).getLineNo()",
     "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
     "patched_lines": [295]
 }

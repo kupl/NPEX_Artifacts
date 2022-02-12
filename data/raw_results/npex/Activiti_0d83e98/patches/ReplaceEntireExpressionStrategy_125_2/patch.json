@@ -1,0 +1,5 @@
+{
+    "contents": "(org.activiti.engine.impl.context.Context.getCommandContext() != null ? org.activiti.engine.impl.context.Context.getCommandContext().getSession(org.activiti.engine.impl.variable.EntityManagerSession.class) : null).getEntityManager()",
+    "original_filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/JPAEntityMappings.java",
+    "patched_lines": [126]
+}

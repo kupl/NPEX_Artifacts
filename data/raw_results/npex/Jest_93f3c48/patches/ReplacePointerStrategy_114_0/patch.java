@@ -112,7 +112,7 @@ public class NodeChecker extends AbstractScheduledService {
 protected void removeNodeAndUpdateServers(final java.lang.String hostToRemove) {
     io.searchbox.client.config.discovery.NodeChecker.log.warn("Removing host {}", hostToRemove);
     /* NPEX_PATCH_BEGINS */
-    (discoveredServerList != null ? discoveredServerList : new java.util.HashSet()).remove(hostToRemove);
+    (discoveredServerList != null ? discoveredServerList : java.util.Collections.emptySet()).remove(hostToRemove);
     if (io.searchbox.client.config.discovery.NodeChecker.log.isInfoEnabled()) {
         io.searchbox.client.config.discovery.NodeChecker.log.info("Discovered server pool is now: {}", org.apache.commons.lang3.StringUtils.join(discoveredServerList, ","));
     }

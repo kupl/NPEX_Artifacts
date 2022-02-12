@@ -1,0 +1,5 @@
+{
+    "contents": "if (stackTrace == null) {\n    return \"null\";\n}",
+    "original_filepath": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+    "patched_lines": [86]
+}

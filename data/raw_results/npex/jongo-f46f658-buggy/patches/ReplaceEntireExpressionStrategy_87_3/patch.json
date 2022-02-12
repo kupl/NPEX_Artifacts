@@ -1,0 +1,5 @@
+{
+    "contents": "org.bson.types.ObjectId.class.isAssignableFrom(property.getField() != null ? property.getField().getRawType() : null)",
+    "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+    "patched_lines": [86]
+}

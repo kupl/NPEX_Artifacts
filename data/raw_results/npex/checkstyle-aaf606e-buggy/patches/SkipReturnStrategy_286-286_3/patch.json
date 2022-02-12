@@ -1,0 +1,5 @@
+{
+    "contents": "if (block == null) {\n    return true;\n}",
+    "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+    "patched_lines": [295]
+}

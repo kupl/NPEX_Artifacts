@@ -18,8 +18,8 @@ public static void testBug2849731_2() {
     s.add(1.0, java.lang.Double.NaN, java.lang.Double.NaN, java.lang.Double.NaN, 1.5, java.lang.Double.NaN);
     d.addSeries(s);
     org.jfree.data.Range r = org.jfree.data.general.DatasetUtilities.iterateDomainBounds(d);
-    /* NPEX_PATCH_BEGINS */
-    if (r != null ? Main.eql(1.0, r.getLowerBound()) : true) {
+    if (/* NPEX_PATCH_BEGINS */
+    Main.eql(1.0, r != null ? r.getLowerBound() : java.lang.Double.NaN)) {
         java.lang.System.out.println("PASS");
     } else {
         Main.pass = false;

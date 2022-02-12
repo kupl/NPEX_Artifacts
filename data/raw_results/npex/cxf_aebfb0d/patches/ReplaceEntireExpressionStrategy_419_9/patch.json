@@ -1,0 +1,5 @@
+{
+    "contents": "if ((signatureAlgo == org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE) && (inHeaders != null ? org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders.getAlgorithm()) : false)) {\n    theVerifier = new org.apache.cxf.rs.security.jose.jws.NoneJwsSignatureVerifier();\n} else {\n    java.security.cert.X509Certificate[] certs = org.apache.cxf.rs.security.jose.common.KeyManagementUtils.loadX509CertificateOrChain(m, props);\n    if ((certs != null) && (certs.length > 0)) {\n        theVerifier = org.apache.cxf.rs.security.jose.jws.JwsUtils.getPublicKeySignatureVerifier(certs[0], signatureAlgo);\n    }\n}",
+    "original_filepath": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+    "patched_lines": [402]
+}

@@ -79,7 +79,7 @@ public class BisectionSolver extends UnivariateRealSolverImpl {
 public double solve(final org.apache.commons.math.analysis.UnivariateRealFunction f, double min, double max) throws org.apache.commons.math.MaxIterationsExceededException, org.apache.commons.math.FunctionEvaluationException {
     /* NPEX_PATCH_BEGINS */
     if (f == null) {
-        return 0.0;
+        return java.lang.Double.NaN;
     }
     clearResult();
     verifyInterval(min, max);

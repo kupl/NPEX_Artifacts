@@ -1,0 +1,5 @@
+{
+    "contents": "(connThrottle != null ? connThrottle : new org.apache.zookeeper.server.BlueThrottle()).isConnectionWeightEnabled()",
+    "original_filepath": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+    "patched_lines": [1299]
+}

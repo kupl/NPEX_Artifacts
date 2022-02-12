@@ -1,0 +1,5 @@
+{
+    "contents": "(f != null ? f : null).value(min)",
+    "original_filepath": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+    "patched_lines": [90]
+}

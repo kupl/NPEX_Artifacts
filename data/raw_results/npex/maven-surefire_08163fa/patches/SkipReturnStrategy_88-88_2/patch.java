@@ -84,7 +84,7 @@ public java.lang.String getString() {
     final java.lang.StringBuilder result = new java.lang.StringBuilder();
     /* NPEX_PATCH_BEGINS */
     if (stackTrace == null) {
-        return null;
+        return "";
     }
     final java.util.List<java.lang.StackTraceElement> stackTraceElements = org.apache.maven.surefire.report.SmartStackTraceParser.focusOnClass(stackTrace, testClass);
     java.util.Collections.reverse(stackTraceElements);

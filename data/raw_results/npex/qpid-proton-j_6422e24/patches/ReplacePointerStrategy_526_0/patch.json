@@ -1,0 +1,5 @@
+{
+    "contents": "(tpSession != null ? tpSession : null).hasOutgoingCredit()",
+    "original_filepath": "proton-j/src/main/java/org/apache/qpid/proton/engine/impl/TransportImpl.java",
+    "patched_lines": [521]
+}

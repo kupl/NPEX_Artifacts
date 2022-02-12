@@ -328,7 +328,7 @@ public abstract class AbstractLogger implements ExtendedLogger, Serializable {
 protected void enter(final java.lang.String fqcn, final java.lang.String format, final java.lang.Object... params) {
     if (isEnabled(org.apache.logging.log4j.Level.TRACE, org.apache.logging.log4j.spi.AbstractLogger.ENTRY_MARKER, ((java.lang.Object) (null)), null)) {
         logMessage(fqcn, org.apache.logging.log4j.Level.TRACE, org.apache.logging.log4j.spi.AbstractLogger.ENTRY_MARKER, /* NPEX_PATCH_BEGINS */
-        entryMsg(format, params != null ? params.length : 1, params), null);
+        entryMsg(format, params != null ? params.length : 0, params), null);
     }
 }
 

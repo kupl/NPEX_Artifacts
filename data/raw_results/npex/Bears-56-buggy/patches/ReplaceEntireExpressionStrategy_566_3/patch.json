@@ -1,5 +1,5 @@
 {
-    "contents": "if ((targetType != null ? targetType.getSimpleName().equals(ref.getSimpleName()) : false) && (!targetType.equals(ref))) {\n    return true;\n}",
+    "contents": "(targetType != null ? targetType.getSimpleName() : \"null\").equals(ref.getSimpleName())",
     "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
     "patched_lines": [574]
 }

@@ -1,7 +1,7 @@
 [
     {
         "filepath": "org/apache/commons/lang3/StringUtils.java",
-        "line": 3676,
+        "line": 3677,
         "method_name": "replaceEach"
     },
     {

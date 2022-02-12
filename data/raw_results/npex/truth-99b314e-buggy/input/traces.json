@@ -1,6 +1,6 @@
 [
     {
-        "filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+        "filepath": "core/target/classes/org/truth0/subjects/MapSubject.java",
         "line": 66,
         "method_name": "withValue"
     },

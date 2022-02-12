@@ -310,7 +310,7 @@ public void visitToken(com.puppycrawl.tools.checkstyle.api.DetailAST aAST) {
         }
         // get text range of target
         final int firstLine = /* NPEX_PATCH_BEGINS */
-        (targetAST != null ? targetAST : new com.puppycrawl.tools.checkstyle.api.DetailAST()).getLineNo();
+        (targetAST != null ? targetAST : null).getLineNo();
         final int firstColumn = targetAST.getColumnNo();
         final com.puppycrawl.tools.checkstyle.api.DetailAST nextAST = targetAST.getNextSibling();
         final int lastLine;

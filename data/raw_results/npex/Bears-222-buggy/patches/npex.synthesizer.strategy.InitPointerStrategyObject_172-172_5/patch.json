@@ -1,5 +1,0 @@
-{
-    "contents": "if (viAdj == null) {\n    viAdj = new java.util.ArrayList();\n}",
-    "original_filepath": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
-    "patched_lines": [176]
-}

@@ -1,0 +1,5 @@
+{
+    "contents": "if (property.getField() == null) {\n    return false;\n}",
+    "original_filepath": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+    "patched_lines": [86]
+}

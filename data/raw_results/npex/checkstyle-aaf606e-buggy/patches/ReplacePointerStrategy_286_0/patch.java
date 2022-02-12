@@ -292,7 +292,7 @@ private static boolean isSingleLineFor(com.puppycrawl.tools.checkstyle.api.Detai
     } else if ((literalFor.getParent().getType() == com.puppycrawl.tools.checkstyle.api.TokenTypes.SLIST) && (literalFor.getLastChild().getType() != com.puppycrawl.tools.checkstyle.api.TokenTypes.SLIST)) {
         final com.puppycrawl.tools.checkstyle.api.DetailAST block = com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck.findExpressionBlockInForLoop(literalFor);
         result = literalFor.getLineNo() == /* NPEX_PATCH_BEGINS */
-        (block != null ? block : new com.puppycrawl.tools.checkstyle.api.DetailAST()).getLineNo();
+        (block != null ? block : null).getLineNo();
     }
     return result;
 }

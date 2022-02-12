@@ -6,7 +6,7 @@
             "original_filepath": "Main.java",
             "patched_line": 22,
             "strategy": "ReplaceEntireExpressionStrategy",
-            "patch_id": "ReplaceEntireExpressionStrategy_22_1"
+            "patch_id": "ReplaceEntireExpressionStrategy_22_1--2"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.TEST_FAIL",
@@ -19,7 +19,7 @@
             "original_filepath": "Main.java",
             "patched_line": 22,
             "strategy": "ReplaceEntireExpressionStrategy",
-            "patch_id": "ReplaceEntireExpressionStrategy_22_3"
+            "patch_id": "ReplaceEntireExpressionStrategy_22_6"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.TEST_FAIL",
@@ -32,7 +32,7 @@
             "original_filepath": "Main.java",
             "patched_line": 22,
             "strategy": "SkipReturnStrategy",
-            "patch_id": "SkipReturnStrategy_22-22_1"
+            "patch_id": "SkipReturnStrategy_22-22_2"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.MANUAL_INCORRECT",
@@ -58,7 +58,7 @@
             "original_filepath": "Main.java",
             "patched_line": 22,
             "strategy": "ReplaceEntireExpressionStrategy",
-            "patch_id": "ReplaceEntireExpressionStrategy_22_2"
+            "patch_id": "ReplaceEntireExpressionStrategy_22_5"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.TEST_FAIL",
@@ -71,7 +71,72 @@
             "original_filepath": "Main.java",
             "patched_line": 22,
             "strategy": "ReplaceEntireExpressionStrategy",
-            "patch_id": "ReplaceEntireExpressionStrategy_22_0"
+            "patch_id": "ReplaceEntireExpressionStrategy_22_0--3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "Main.eql(1.0, r != null ? r.getLowerBound() : 1.0)",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_22_4"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "Main.eql(1.0, r != null ? r.getLowerBound() : 0.0)",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_22_2"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "if (r == null) {\n    r = null;\n}",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "InitPointerStrategy",
+            "patch_id": "InitPointerStrategy_22-22_1"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.COMPILE_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "Main.eql(1.0, r != null ? r.getLowerBound() : java.lang.Double.NaN)",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "ReplaceEntireExpressionStrategy",
+            "patch_id": "ReplaceEntireExpressionStrategy_22_3"
+        },
+        "label": "LabelOverall.OVERFITTING",
+        "detail": "LabelDetail.TEST_FAIL",
+        "description": null
+    },
+    {
+        "bug_id": "chart-2",
+        "patch": {
+            "contents": "(r != null ? r : null).getLowerBound()",
+            "original_filepath": "Main.java",
+            "patched_line": 22,
+            "strategy": "ReplacePointerStrategy",
+            "patch_id": "ReplacePointerStrategy_22_0"
         },
         "label": "LabelOverall.OVERFITTING",
         "detail": "LabelDetail.TEST_FAIL",

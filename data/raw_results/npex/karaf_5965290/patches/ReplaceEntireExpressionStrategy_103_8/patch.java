@@ -101,7 +101,7 @@ public class WikiParser {
 private void parseHeading(org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser.Tokenizer tokenizer) {
     java.lang.String level = tokenizer.nextToken("123456789");
     if (/* NPEX_PATCH_BEGINS */
-    !(level != null ? level.matches("[123456789]") : true)) {
+    !(level != null ? level.matches("[123456789]") : "[123456789]" == null)) {
         visitor.text("h" + level);
         return;
     }

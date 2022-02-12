@@ -173,7 +173,7 @@ public static com.squareup.javapoet.TypeName get(javax.lang.model.type.TypeMirro
         protected com.squareup.javapoet.TypeName defaultAction(javax.lang.model.type.TypeMirror e, java.lang.Void p) {
             throw new java.lang.IllegalArgumentException("Unexpected type mirror: " + e);
         }
-    }, null) : new com.squareup.javapoet.TypeName();
+    }, null) : null;
 }
 
   /** Returns a type name equivalent to {@code type}. */

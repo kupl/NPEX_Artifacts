@@ -1,29 +1,29 @@
  | patch_id |correctness |Test-validation |NPEX-validation |
  |--- | --- | --- | --- | 
- | [SkipThrowStrategy_39-39_4](./patches/SkipThrowStrategy_39-39_4/patch.java#L40) | X | X | X | 
- | [SkipBreakStrategy_33-32_1](./patches/SkipBreakStrategy_33-32_1/patch.java#L34) | O | O | O | 
- | [SkipReturnParam_39-39_1](./patches/SkipReturnParam_39-39_1/patch.java#L40) | X | X | X | 
- | [SkipReturnStrategy_33-33_8](./patches/SkipReturnStrategy_33-33_8/patch.java#L34) | X | X | X | 
- | [ReplacePointerStrategy_32_1](./patches/ReplacePointerStrategy_32_1/patch.java#L33) | X | X | X | 
  | [ReplacePointerStrategy_32_0](./patches/ReplacePointerStrategy_32_0/patch.java#L33) | X | X | X | 
- | [InitPointerStrategy_39-39_3](./patches/InitPointerStrategy_39-39_3/patch.java#L40) | X | X | X | 
- | [SkipReturnParam_31-32_2](./patches/SkipReturnParam_31-32_2/patch.java#L32) | X | X | X | 
- | [InitPointerStrategy_33-33_4](./patches/InitPointerStrategy_33-33_4/patch.java#L34) | X | X | X | 
- | [SkipBlockStrategy_33-33_0](./patches/SkipBlockStrategy_33-33_0/patch.java#L34) | X | X | X | 
- | [SkipThrowStrategy_33-33_6](./patches/SkipThrowStrategy_33-33_6/patch.java#L34) | X | X | X | 
- | [ReplaceEntireExpressionStrategy_39_4](./patches/ReplaceEntireExpressionStrategy_39_4/patch.java#L40) | X | X | X | 
- | [SkipReturnStrategy_33-33_7](./patches/SkipReturnStrategy_33-33_7/patch.java#L34) | X | O | X | 
- | [ReplacePointerStrategy_33_0](./patches/ReplacePointerStrategy_33_0/patch.java#L34) | X | X | X | 
- | [SkipSinkStatementStrategy_32-32_0](./patches/SkipSinkStatementStrategy_32-32_0/patch.java#L33) | X | X | X | 
- | [InitPointerStrategy_32-32_3](./patches/InitPointerStrategy_32-32_3/patch.java#L33) | X | X | X | 
- | [InitPointerStrategy_33-33_3](./patches/InitPointerStrategy_33-33_3/patch.java#L34) | X | O | X | 
- | [InitPointerStrategy_39-39_2](./patches/InitPointerStrategy_39-39_2/patch.java#L40) | X | X | X | 
  | [SkipReturnParam_31-32_1](./patches/SkipReturnParam_31-32_1/patch.java#L32) | X | X | X | 
- | [ReplacePointerStrategy_39_0](./patches/ReplacePointerStrategy_39_0/patch.java#L40) | X | X | X | 
- | [InitPointerStrategy_32-32_4](./patches/InitPointerStrategy_32-32_4/patch.java#L33) | X | X | X | 
- | [SkipSinkStatementStrategy_39-39_0](./patches/SkipSinkStatementStrategy_39-39_0/patch.java#L40) | X | X | X | 
- | [ReplacePointerStrategy_39_1](./patches/ReplacePointerStrategy_39_1/patch.java#L40) | X | X | X | 
- | [SkipThrowStrategy_32-32_5](./patches/SkipThrowStrategy_32-32_5/patch.java#L33) | X | X | X | 
- | [ReplaceEntireExpressionStrategy_39_5](./patches/ReplaceEntireExpressionStrategy_39_5/patch.java#L40) | X | X | X | 
- | [ReplacePointerStrategy_33_1](./patches/ReplacePointerStrategy_33_1/patch.java#L34) | X | X | X | 
  | [SkipContinueStrategy_33-33_5](./patches/SkipContinueStrategy_33-33_5/patch.java#L34) | X | X | X | 
+ | [SkipBreakStrategy_33-32_1](./patches/SkipBreakStrategy_33-32_1/patch.java#L34) | O | O | O | 
+ | [ReplacePointerStrategy_33_0](./patches/ReplacePointerStrategy_33_0/patch.java#L34) | X | X | X | 
+ | [ReplacePointerStrategy_39_0](./patches/ReplacePointerStrategy_39_0/patch.java#L40) | X | X | X | 
+ | [SkipReturnStrategy_33-33_8](./patches/SkipReturnStrategy_33-33_8/patch.java#L34) | X | X | X | 
+ | [InitPointerStrategy_39-39_2](./patches/InitPointerStrategy_39-39_2/patch.java#L40) | X | X | X | 
+ | [SkipReturnParam_39-39_1](./patches/SkipReturnParam_39-39_1/patch.java#L40) | X | X | X | 
+ | [ReplaceEntireExpressionStrategy_39_4](./patches/ReplaceEntireExpressionStrategy_39_4/patch.java#L40) | X | X | X | 
+ | [ReplacePointerStrategy_33_1](./patches/ReplacePointerStrategy_33_1/patch.java#L34) | X | X | X | 
+ | [ReplacePointerStrategy_32_1](./patches/ReplacePointerStrategy_32_1/patch.java#L33) | X | X | X | 
+ | [InitPointerStrategy_33-33_3](./patches/InitPointerStrategy_33-33_3/patch.java#L34) | X | O | X | 
+ | [ReplaceEntireExpressionStrategy_39_5](./patches/ReplaceEntireExpressionStrategy_39_5/patch.java#L40) | X | X | X | 
+ | [InitPointerStrategy_32-32_3](./patches/InitPointerStrategy_32-32_3/patch.java#L33) | X | X | X | 
+ | [SkipSinkStatementStrategy_39-39_0](./patches/SkipSinkStatementStrategy_39-39_0/patch.java#L40) | X | X | X | 
+ | [InitPointerStrategy_32-32_4](./patches/InitPointerStrategy_32-32_4/patch.java#L33) | X | X | X | 
+ | [InitPointerStrategy_33-33_4](./patches/InitPointerStrategy_33-33_4/patch.java#L34) | X | X | X | 
+ | [InitPointerStrategy_39-39_3](./patches/InitPointerStrategy_39-39_3/patch.java#L40) | X | X | X | 
+ | [ReplacePointerStrategy_39_1](./patches/ReplacePointerStrategy_39_1/patch.java#L40) | X | X | X | 
+ | [SkipThrowStrategy_39-39_4](./patches/SkipThrowStrategy_39-39_4/patch.java#L40) | X | X | X | 
+ | [SkipThrowStrategy_33-33_6](./patches/SkipThrowStrategy_33-33_6/patch.java#L34) | X | X | X | 
+ | [SkipThrowStrategy_32-32_5](./patches/SkipThrowStrategy_32-32_5/patch.java#L33) | X | X | X | 
+ | [SkipSinkStatementStrategy_32-32_0](./patches/SkipSinkStatementStrategy_32-32_0/patch.java#L33) | X | X | X | 
+ | [SkipReturnStrategy_33-33_7](./patches/SkipReturnStrategy_33-33_7/patch.java#L34) | X | O | X | 
+ | [SkipBlockStrategy_33-33_0](./patches/SkipBlockStrategy_33-33_0/patch.java#L34) | X | X | X | 
+ | [SkipReturnParam_31-32_2](./patches/SkipReturnParam_31-32_2/patch.java#L32) | X | X | X | 

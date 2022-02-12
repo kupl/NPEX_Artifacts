@@ -1,0 +1,5 @@
+{
+    "contents": "(block != null ? block : null).traverse(sink)",
+    "original_filepath": "doxia-modules/doxia-module-confluence/src/main/java/org/apache/maven/doxia/module/confluence/parser/AbstractFatherBlock.java",
+    "patched_lines": [73]
+}

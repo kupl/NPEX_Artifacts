@@ -1,0 +1,5 @@
+{
+    "contents": "(r != null ? r : null).getLowerBound()",
+    "original_filepath": "Main.java",
+    "patched_lines": [22]
+}

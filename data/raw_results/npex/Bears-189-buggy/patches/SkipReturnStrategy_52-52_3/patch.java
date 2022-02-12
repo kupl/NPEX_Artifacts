@@ -62,7 +62,7 @@ private java.util.List<hu.oe.nik.szfmv.environment.WorldObject> getTheObjectsWhi
     java.util.List<hu.oe.nik.szfmv.environment.WorldObject> noticeableObjects = new java.util.ArrayList<hu.oe.nik.szfmv.environment.WorldObject>();
     /* NPEX_PATCH_BEGINS */
     if (worldObjects == null) {
-        return null;
+        return java.util.Collections.emptyList();
     }
     for (int x = 0; x < worldObjects.size(); x++) {
         hu.oe.nik.szfmv.environment.WorldObject actualObject = worldObjects.get(x);

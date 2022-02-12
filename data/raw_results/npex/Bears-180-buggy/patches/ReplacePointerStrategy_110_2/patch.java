@@ -108,7 +108,7 @@ public class GoogleStorageResourceObject implements WritableResource {
 private com.google.cloud.storage.BlobId getBlobId() throws java.io.IOException {
     java.net.URI uri = getURI();
     return /* NPEX_PATCH_BEGINS */
-    com.google.cloud.storage.BlobId.of(uri.getHost() != null ? uri.getHost() : "", uri.getPath().substring(1, uri.getPath().length()));
+    com.google.cloud.storage.BlobId.of(uri.getHost() != null ? uri.getHost() : "NULL", uri.getPath().substring(1, uri.getPath().length()));
 }
 
 	/**

@@ -1,0 +1,5 @@
+{
+    "contents": "if (this.categoryKeys == null) {\n    return 0;\n}",
+    "original_filepath": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+    "patched_lines": [583]
+}

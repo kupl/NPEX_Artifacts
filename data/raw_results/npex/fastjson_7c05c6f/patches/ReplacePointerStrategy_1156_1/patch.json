@@ -1,0 +1,5 @@
+{
+    "contents": "unwrappedFieldDeser.parseField(parser, fieldObject, objectType, fieldValues != null ? fieldValues : null)",
+    "original_filepath": "src/main/java/com/alibaba/fastjson/parser/deserializer/JavaBeanDeserializer.java",
+    "patched_lines": [1149]
+}

@@ -1,5 +1,5 @@
 {
-    "contents": "if (((java.lang.Integer) (map.get(\"priority\"))) == null) {\n    return null;\n}",
+    "contents": "if (((java.lang.Integer) (map.get(\"priority\"))) == null) {\n    return new org.jeasy.rules.mvel.MVELRuleDefinition();\n}",
     "original_filepath": "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java",
     "patched_lines": [60]
 }

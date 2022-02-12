@@ -61,7 +61,7 @@ private java.util.List<hu.oe.nik.szfmv.environment.WorldObject> getTheObjectsWhi
     java.awt.Shape sensorVision = createTriangle(a, b, c);
     java.util.List<hu.oe.nik.szfmv.environment.WorldObject> noticeableObjects = new java.util.ArrayList<hu.oe.nik.szfmv.environment.WorldObject>();
     for (int x = 0; x < /* NPEX_PATCH_BEGINS */
-    (worldObjects != null ? worldObjects : new java.util.ArrayList()).size(); x++) {
+    (worldObjects != null ? worldObjects : java.util.Collections.emptyList()).size(); x++) {
         hu.oe.nik.szfmv.environment.WorldObject actualObject = worldObjects.get(x);
         if (actualObject.getShape().intersects(sensorVision.getBounds())) {
             noticeableObjects.add(actualObject);

@@ -1,5 +1,5 @@
 {
-    "contents": "if (input == null) {\n    return null;\n}",
+    "contents": "if (input == null) {\n    return \"\";\n}",
     "original_filepath": "src/main/java/org/jsoup/internal/Normalizer.java",
     "patched_lines": [12]
 }

@@ -519,7 +519,7 @@ private boolean processTransportWorkSender(org.apache.qpid.proton.engine.impl.De
     boolean wasDone = delivery.isDone();
     /* NPEX_PATCH_BEGINS */
     if (tpSession == null) {
-        throw new java.lang.IllegalArgumentException();
+        throw new java.lang.NumberFormatException();
     }
     if (((((((!delivery.isDone()) && ((delivery.getDataLength() > 0) || (delivery != snd.current()))) && tpSession.hasOutgoingCredit()) && tpLink.hasCredit()) && tpSession.isLocalChannelSet()) && (tpLink.getLocalHandle() != null)) && (!_frameWriter.isFull())) {
         org.apache.qpid.proton.engine.impl.DeliveryImpl inProgress = tpLink.getInProgressDelivery();

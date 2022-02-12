@@ -107,7 +107,7 @@ public abstract class Encoding implements COSObjectable
  */
 public boolean contains(java.lang.String name) {
     /* NPEX_PATCH_BEGINS */
-    return names != null ? names.contains(name) : true;
+    return names != null ? names.contains(name) : name == null;
 }
 
     /**

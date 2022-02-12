@@ -1,0 +1,5 @@
+{
+    "contents": "// If the subtree's bitIndex is less than the\n// length of our prefix, it's the last item\n// in the prefix tree.\nif (lengthInBits >= (subtree != null ? subtree.bitIndex : 1)) {\n    lastOne = true;\n}",
+    "original_filepath": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+    "patched_lines": [2399]
+}

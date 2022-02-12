@@ -256,7 +256,7 @@ public class LocaleUtils {
  */
 public static boolean isAvailableLocale(java.util.Locale locale) {
     /* NPEX_PATCH_BEGINS */
-    return org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet.contains(locale) : true;
+    return org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet != null ? org.apache.commons.lang3.LocaleUtils.cAvailableLocaleSet.contains(locale) : locale == null;
 }
 
     //-----------------------------------------------------------------------

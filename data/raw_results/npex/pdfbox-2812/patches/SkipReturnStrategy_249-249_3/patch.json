@@ -1,0 +1,5 @@
+{
+    "contents": "if (pdCS.getPDStream() == null) {\n    return null;\n}",
+    "original_filepath": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+    "patched_lines": [256]
+}

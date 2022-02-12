@@ -1,5 +1,5 @@
 {
-    "contents": "(targetAST != null ? targetAST : new com.puppycrawl.tools.checkstyle.api.DetailAST()).getLineNo()",
+    "contents": "(targetAST != null ? targetAST : null).getLineNo()",
     "original_filepath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
     "patched_lines": [313]
 }

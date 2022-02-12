@@ -1,0 +1,5 @@
+{
+    "contents": "if (targetType == null) {\n    return true;\n}",
+    "original_filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+    "patched_lines": [574]
+}

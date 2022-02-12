@@ -91,7 +91,7 @@ public final class WildcardTypeName extends TypeName {
 public static com.squareup.javapoet.TypeName get(javax.lang.model.type.WildcardType mirror) {
     /* NPEX_PATCH_BEGINS */
     if (mirror.getExtendsBound() == null) {
-        return null;
+        return new com.squareup.javapoet.TypeName();
     }
     com.squareup.javapoet.TypeName extendsBound = com.squareup.javapoet.TypeName.get(mirror.getExtendsBound());
     com.squareup.javapoet.TypeName superBound = com.squareup.javapoet.TypeName.get(mirror.getSuperBound());

@@ -128,7 +128,7 @@ private static java.util.List<org.apache.shardingsphere.infra.executor.sql.conte
     for (org.apache.shardingsphere.infra.route.context.RouteMapper each : tableMappers) {
         /* NPEX_PATCH_BEGINS */
         if (metaData.getRuleSchemaMetaData().getSchemaMetaData().get(each.getLogicName()) == null) {
-            return new java.util.ArrayList();
+            return java.util.Collections.emptyList();
         }
         result.add(new org.apache.shardingsphere.infra.executor.sql.context.PrimaryKeyMetaData(each.getLogicName(), metaData.getRuleSchemaMetaData().getSchemaMetaData().get(each.getLogicName()).getPrimaryKeyColumns()));
     }

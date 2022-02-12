@@ -398,8 +398,8 @@ public static org.apache.cxf.rs.security.jose.jws.JwsSignatureVerifier loadSigna
         }
     } else {
         org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm signatureAlgo = org.apache.cxf.rs.security.jose.jws.JwsUtils.getSignatureAlgorithm(m, props, null, null);
-        /* NPEX_PATCH_BEGINS */
-        if ((signatureAlgo == org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE) && (inHeaders != null ? org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders.getAlgorithm()) : false)) {
+        if ((signatureAlgo == org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE) && /* NPEX_PATCH_BEGINS */
+        org.apache.cxf.rs.security.jose.jwa.SignatureAlgorithm.NONE.getJwaName().equals(inHeaders != null ? inHeaders.getAlgorithm() : "null")) {
             theVerifier = new org.apache.cxf.rs.security.jose.jws.NoneJwsSignatureVerifier();
         } else {
             java.security.cert.X509Certificate[] certs = org.apache.cxf.rs.security.jose.common.KeyManagementUtils.loadX509CertificateOrChain(m, props);

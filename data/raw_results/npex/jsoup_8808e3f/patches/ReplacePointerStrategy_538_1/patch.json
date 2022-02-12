@@ -1,5 +1,0 @@
-{
-    "contents": "isValidAnchor(value != null ? value : \"null\")",
-    "original_filepath": "src/main/java/org/jsoup/safety/Whitelist.java",
-    "patched_lines": [541]
-}

@@ -185,9 +185,8 @@ public class MethodGen extends FieldGenOrMethodGen {
  * 		constant pool
  */
 public MethodGen(final org.apache.bcel.classfile.Method m, final java.lang.String class_name, final org.apache.bcel.generic.ConstantPoolGen cp) {
-    /* may be overridden anyway */
-    this(m.getAccessFlags(), org.apache.bcel.generic.Type.getReturnType(m.getSignature()), org.apache.bcel.generic.Type.getArgumentTypes(m.getSignature()), null, m.getName(), class_name, (m.getAccessFlags() & (org.apache.bcel.Const.ACC_ABSTRACT | org.apache.bcel.Const.ACC_NATIVE)) == 0 ? /* NPEX_PATCH_BEGINS */
-    new org.apache.bcel.generic.InstructionList(m.getCode() != null ? m.getCode().getCode() : new byte[]{  }) : null, cp);
+    /* NPEX_PATCH_BEGINS */
+    this(m.getAccessFlags(), org.apache.bcel.generic.Type.getReturnType(m.getSignature()), org.apache.bcel.generic.Type.getArgumentTypes(m.getSignature()), null, m.getName(), class_name, (m.getAccessFlags() & (org.apache.bcel.Const.ACC_ABSTRACT | org.apache.bcel.Const.ACC_NATIVE)) == 0 ? m.getCode() != null ? new org.apache.bcel.generic.InstructionList(m.getCode().getCode()) : null : null, cp);
     final org.apache.bcel.classfile.Attribute[] attributes = m.getAttributes();
     for (final org.apache.bcel.classfile.Attribute attribute : attributes) {
         org.apache.bcel.classfile.Attribute a = attribute;

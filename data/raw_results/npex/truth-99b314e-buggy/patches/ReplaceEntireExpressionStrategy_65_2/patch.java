@@ -62,7 +62,7 @@ public class MapSubject<S extends MapSubject<S, K, V, M>, K, V, M extends Map<K,
 public void withValue(V expected) {
     V actual = getSubject().get(key);
     if (((actual == null) && (key != null)) || /* NPEX_PATCH_BEGINS */
-    (!(expected != null ? actual.equals(expected) : true))) {
+    (!(expected != null ? actual.equals(expected) : expected == null))) {
         fail("has key/value pair", com.google.common.collect.ImmutableList.of(key, expected), "actually has key/value pair", com.google.common.collect.ImmutableList.of(key, actual));
     }
 }

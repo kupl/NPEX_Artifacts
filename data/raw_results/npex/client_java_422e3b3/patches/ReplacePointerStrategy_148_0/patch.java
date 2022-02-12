@@ -146,7 +146,7 @@ public class CollectorRegistry {
 
 private java.util.Iterator<io.prometheus.client.Collector> includedCollectorIterator(java.util.Set<java.lang.String> includedNames) {
     if (/* NPEX_PATCH_BEGINS */
-    (includedNames != null ? includedNames : new java.util.HashSet()).isEmpty()) {
+    (includedNames != null ? includedNames : java.util.Collections.emptySet()).isEmpty()) {
         return collectors().iterator();
     } else {
         java.util.HashSet<io.prometheus.client.Collector> collectors = new java.util.HashSet<io.prometheus.client.Collector>();

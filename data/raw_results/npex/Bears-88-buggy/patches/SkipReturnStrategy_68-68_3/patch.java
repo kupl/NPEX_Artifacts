@@ -75,7 +75,7 @@ public class RepositoryBeanNameGenerator implements BeanNameGenerator, BeanClass
 private java.lang.Class<?> getRepositoryInterfaceFrom(org.springframework.beans.factory.config.BeanDefinition beanDefinition) {
     /* NPEX_PATCH_BEGINS */
     if (beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class) == null) {
-        return null;
+        return java.lang.Object.class;
     }
     java.lang.Object value = beanDefinition.getConstructorArgumentValues().getArgumentValue(0, java.lang.Class.class).getValue();
     if (value instanceof java.lang.Class<?>) {

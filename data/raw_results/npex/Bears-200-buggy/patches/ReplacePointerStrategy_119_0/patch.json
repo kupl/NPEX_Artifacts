@@ -1,0 +1,5 @@
+{
+    "contents": "convert(null != null ? null : null, throwable)",
+    "original_filepath": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+    "patched_lines": [127]
+}

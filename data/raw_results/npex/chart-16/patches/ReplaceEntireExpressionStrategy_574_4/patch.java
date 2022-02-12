@@ -580,7 +580,7 @@ public class DefaultIntervalCategoryDataset extends AbstractSeriesDataset
 public int getCategoryIndex(java.lang.Comparable category) {
     int result = -1;
     /* NPEX_PATCH_BEGINS */
-    for (int i = 0; i < (this.categoryKeys != null ? this.categoryKeys.length : 1); i++) {
+    for (int i = 0; i < (this.categoryKeys != null ? this.categoryKeys.length : 0); i++) {
         if (category.equals(this.categoryKeys[i])) {
             result = i;
             break;

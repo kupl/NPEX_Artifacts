@@ -517,7 +517,7 @@ private boolean processTransportWorkSender(org.apache.qpid.proton.engine.impl.De
     org.apache.qpid.proton.engine.impl.SessionImpl session = snd.getSession();
     /* NPEX_PATCH_BEGINS */
     if (session.getTransportSession() == null) {
-        throw new java.lang.IllegalArgumentException();
+        throw new org.apache.qpid.proton.engine.TransportException();
     }
     org.apache.qpid.proton.engine.impl.TransportSession tpSession = session.getTransportSession();
     boolean wasDone = delivery.isDone();

@@ -136,7 +136,7 @@ public java.awt.Rectangle getBoundingBox(int glyphIndex, int size) {
     if (glyphIndex < 256) {
         int idx = glyphIndex - getFirstChar();
         /* NPEX_PATCH_BEGINS */
-        if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : 1))) {
+        if ((idx >= 0) && (idx < (boundingBoxes != null ? boundingBoxes.length : 0))) {
             bbox = boundingBoxes[idx];
         }
     } else if (this.additionalEncodings != null) {

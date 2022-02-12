@@ -570,8 +570,8 @@ public class ImportScannerImpl extends CtScanner implements ImportScanner {
  * @return true if the ref should be imported.
  */
 protected boolean isTypeInCollision(spoon.reflect.reference.CtReference ref, boolean fqnMode) {
-    /* NPEX_PATCH_BEGINS */
-    if ((targetType != null ? targetType.getSimpleName().equals(ref.getSimpleName()) : true) && (!targetType.equals(ref))) {
+    if (/* NPEX_PATCH_BEGINS */
+    (targetType != null ? targetType.getSimpleName() : "NULL").equals(ref.getSimpleName()) && (!targetType.equals(ref))) {
         return true;
     }
     try {

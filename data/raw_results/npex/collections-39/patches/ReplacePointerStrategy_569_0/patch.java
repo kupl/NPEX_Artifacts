@@ -573,7 +573,7 @@ public synchronized void load(java.io.InputStream input, java.lang.String enc) t
         while (true) {
             java.lang.String line = reader.readProperty();
             int equalSign = /* NPEX_PATCH_BEGINS */
-            (line != null ? line : "null").indexOf('=');
+            (line != null ? line : "").indexOf('=');
             if (equalSign > 0) {
                 java.lang.String key = line.substring(0, equalSign).trim();
                 java.lang.String value = line.substring(equalSign + 1).trim();

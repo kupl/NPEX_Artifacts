@@ -10,7 +10,7 @@ public final class Normalizer {
 public static java.lang.String lowerCase(final java.lang.String input) {
     /* NPEX_PATCH_BEGINS */
     if (input == null) {
-        return null;
+        return "";
     }
     return input.toLowerCase(java.util.Locale.ENGLISH);
 }

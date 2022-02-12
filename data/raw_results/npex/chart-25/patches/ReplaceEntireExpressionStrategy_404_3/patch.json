@@ -1,0 +1,5 @@
+{
+    "contents": "double value = (meanValue != null) ? meanValue.doubleValue() : java.lang.Double.NaN",
+    "original_filepath": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+    "patched_lines": [410]
+}

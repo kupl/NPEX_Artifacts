@@ -1,0 +1,5 @@
+{
+    "contents": "(discoveredServerList != null ? discoveredServerList : null).remove(hostToRemove)",
+    "original_filepath": "jest-common/src/main/java/io/searchbox/client/config/discovery/NodeChecker.java",
+    "patched_lines": [115]
+}

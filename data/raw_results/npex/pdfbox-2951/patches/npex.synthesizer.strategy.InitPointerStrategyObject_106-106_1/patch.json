@@ -1,5 +1,0 @@
-{
-    "contents": "if (names == null) {\n    names = new java.util.HashSet();\n}",
-    "original_filepath": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
-    "patched_lines": [110]
-}

@@ -43,7 +43,7 @@ public class EnumConverter<T extends Enum<T>> implements Converter<T>, Converter
 public java.lang.String toString(final T instance) {
     /* NPEX_PATCH_BEGINS */
     if (instance == null) {
-        return null;
+        return "null";
     }
     return instance.name();
 }

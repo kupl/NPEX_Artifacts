@@ -109,7 +109,7 @@ public boolean contains(java.lang.String name) {
     // we have to wait until all add() calls are done before building the name cache
     // otherwise /Differences won't be accounted for
     return /* NPEX_PATCH_BEGINS */
-    (names != null ? names : new java.util.HashSet()).contains(name);
+    (names != null ? names : null).contains(name);
 }
 
     /**

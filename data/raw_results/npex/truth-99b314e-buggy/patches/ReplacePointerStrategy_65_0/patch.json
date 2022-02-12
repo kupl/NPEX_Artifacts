@@ -1,0 +1,5 @@
+{
+    "contents": "actual.equals(expected != null ? expected : null)",
+    "original_filepath": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+    "patched_lines": [65]
+}

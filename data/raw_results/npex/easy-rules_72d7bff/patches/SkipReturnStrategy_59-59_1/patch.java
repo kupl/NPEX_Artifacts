@@ -58,7 +58,7 @@ private static org.jeasy.rules.mvel.MVELRuleDefinition createRuleDefinitionFrom(
     ruleDefinition.setDescription(((java.lang.String) (map.get("description"))));
     /* NPEX_PATCH_BEGINS */
     if (((java.lang.Integer) (map.get("priority"))) == null) {
-        return new org.jeasy.rules.mvel.MVELRuleDefinition();
+        return null;
     }
     ruleDefinition.setPriority(((java.lang.Integer) (map.get("priority"))));
     ruleDefinition.setCondition(((java.lang.String) (map.get("condition"))));

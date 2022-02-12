@@ -1,0 +1,5 @@
+{
+    "contents": "result.add(metaData.getRuleSchemaMetaData().getSchemaMetaData().get(each.getLogicName()) != null ? new org.apache.shardingsphere.infra.executor.sql.context.PrimaryKeyMetaData(each.getLogicName(), metaData.getRuleSchemaMetaData().getSchemaMetaData().get(each.getLogicName()).getPrimaryKeyColumns()) : null)",
+    "original_filepath": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
+    "patched_lines": [130]
+}
