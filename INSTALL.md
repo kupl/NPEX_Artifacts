@@ -14,9 +14,8 @@ Please check the following image id is printed on the shell: `Loaded image ID: s
 
 Finally, run the following command to run a docker container from the image.
 ```
-$ docker run -it 574c743ea07b
+$ docker run -e LC_ALL=C.UTF-8 -v /etc/localtime:/etc/localtime:ro -e TZ=Asia/Seoul -it 574c743ea07b /bin/bash
 ```
-
 That's all! You are ready to use our artifact.
 
 ## 
