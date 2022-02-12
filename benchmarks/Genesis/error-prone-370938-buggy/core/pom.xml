@@ -217,50 +217,6 @@
     </plugins>
   </build>
 
-  <profiles>
-    <!-- run annotation processor -->
-    <profile>
-      <id>run-annotation-processor</id>
-      <dependencies>
-        <dependency>
-          <groupId>com.google.errorprone</groupId>
-          <artifactId>error_prone_docgen</artifactId>
-          <version>${project.version}</version>
-        </dependency>
-        <dependency>
-          <groupId>com.google.guava</groupId>
-          <artifactId>guava</artifactId>
-          <version>18.0</version>
-        </dependency>
-      </dependencies>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>1.1.1</version>
-            <executions>
-              <execution>
-                <phase>site</phase>
-                <goals>
-                  <goal>java</goal>
-                </goals>
-                <configuration>
-                  <mainClass>com.google.errorprone.DocGen</mainClass>
-                  <arguments>
-                    <argument>${basedir}/target/generated-sources/annotations/bugPatterns.txt</argument>
-                    <argument>${basedir}/target/generated-wiki/</argument>
-                    <argument>${basedir}/src/test/resources/</argument>
-                  </arguments>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
-
   <properties>
     <!-- put javac.jar on bootclasspath when executing tests -->
     <argLine>-Xbootclasspath/p:${settings.localRepository}/com/google/errorprone/javac/1.8.0-u20/javac-1.8.0-u20.jar</argLine>
