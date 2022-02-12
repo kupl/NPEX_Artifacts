@@ -351,6 +351,17 @@ class Result:
             source = "Genesis"
         else:
             source = "Ours"
+
+        if self.has_correct:
+            if self.incorrect_passed:
+                base = "OFit"
+            else:
+                base = "Corr"
+        elif self.incorrect_passed:
+            base = "OFit"
+        else:
+            base = "NoPatch"
+
         return {
             "bug_id": self.bug_id,
             "source": source,
@@ -358,7 +369,7 @@ class Result:
             "#patches": str(self.n_patches),
             "time_to_infer": f"{self.infer_time:.2f}",
             "time_to_validate": f"{self.verify_time:.2f}",
-            "NPEX_Base": "O" if self.has_correct and self.incorrect_passed is False else "X"
+            "NPEX_Base": base
         }
 
     @staticmethod
@@ -388,6 +399,7 @@ class Result:
                 correct_patch_passed = True
             elif patch_passed in weak_correct_patches:
                 weak_correct_passed = True
+                incorrect_patch_passed = True
 
         compile_time = raw_result.time_to_capture_original + \
             raw_result.time_to_capture_patches
