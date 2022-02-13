@@ -28,7 +28,7 @@ We have packaged our artifacts in a Docker image containing all resources to rep
 We have already setup all the environment to run the tool in the image, so we expect no further requirements except for hard disk size;
 about 150GB of storage space is required to fully reproduce our results.
 
-* Download link for the Docker image: [[here]](https://doi.org/10.6084/m9.figshare.19087652.v1) (20 GB)
+* Download link for the Docker image: [[here]](https://figshare.com/articles/dataset/A_Replication_Package_for_NPEX_Repairing_Java_Null_Pointer_Exceptions_without_Tests_/19087652/2?file=34052735) (20 GB)
 * The source codes of NPEX are also available on GitHub: [[here]](https://github.com/kupl/NPEX)
 
 After downloading the docker image tar (npex-artifacts.tar), please run the following command to load a docker image:
