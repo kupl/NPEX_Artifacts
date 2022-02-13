@@ -37,11 +37,11 @@ docker load -i npex-artifacts.tar
 ```
 You will get the id of the image on the shell:
 ```
-Loaded image ID: sha256:574c743ea07b...
+Loaded image ID: sha256:a4efa01ca064...
 ```
 After then, please run the following command to run a container from the image:
 ```
-docker run -e LC_ALL=C.UTF-8 -v /etc/localtime:/etc/localtime:ro -e TZ=Asia/Seoul -it 574c743ea07b /bin/bash
+docker run -e LC_ALL=C.UTF-8 -v /etc/localtime:/etc/localtime:ro -e TZ=Asia/Seoul -it a4efa01ca064 /bin/bash
 ```
 
 
